@@ -50,8 +50,8 @@ function EmUnderline({ children }: { children: React.ReactNode }) {
   return (
     <span className="relative inline-block px-0.5">
       <span className="relative z-10">{children}</span>
-      <svg aria-hidden className="pointer-events-none absolute left-[-2%] right-[-2%] bottom-[-0.25em] h-[0.7em] w-[104%]" viewBox="0 0 100 20" preserveAspectRatio="none">
-        <path d="M2 15 Q 25 12 50 14 T 98 15" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3.15" strokeLinecap="round" strokeLinejoin="round" />
+      <svg aria-hidden className="pointer-events-none absolute left-[-1%] right-[-1%] bottom-[-0.18em] h-[0.55em] w-[102%]" viewBox="0 0 100 20" preserveAspectRatio="none">
+        <path d="M2 14 L 98 14" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3.15" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     </span>
   );
