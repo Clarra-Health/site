@@ -10,11 +10,6 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
           alt="Built for Midlife"
           className="block h-auto w-full"
         />
-        <div className="container">
-          <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">About</span>
-          </div>
-        </div>
       </section>
 
       {/* Manifesto image full-bleed under hero */}
