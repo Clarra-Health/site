@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const heroImg =
-  "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F42ea6fe0eb1348a6a2594646dea8abb0?format=webp&width=1600";
+  "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa2a0a8b647f74cc78187125b6302a29b?format=webp&width=1600";
 
 export default function Solutions() {
   return (
@@ -11,7 +11,7 @@ export default function Solutions() {
         <div className="container grid items-center gap-10 py-12 md:grid-cols-2 md:py-16">
           <div>
             <h1 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-5xl">
-              Clarra Solutions
+              How Clarra Works
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
               An AI-native platform redefining midlife health with proactive, personalized, data-driven care.
