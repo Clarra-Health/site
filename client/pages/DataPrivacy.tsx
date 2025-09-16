@@ -10,7 +10,11 @@ export default function DataPrivacy() {
               How We Protect Your Data
             </h1>
             <p className="mt-4 text-lg sm:text-xl md:text-2xl font-semibold text-[#1f2d3a]">
-              Your trust is non‑negotiable. Here’s how we keep your information safe and in your control.
+              <span className="relative inline-block align-baseline">
+                <span className="relative z-10">Your trust is non‑negotiable</span>
+                <span aria-hidden className="absolute left-0 right-0 -bottom-[0.05em] h-[0.06em] bg-[hsl(25_97%_66%)]"></span>
+              </span>
+              . Here’s how we keep your information safe and in your control.
             </p>
           </div>
 
