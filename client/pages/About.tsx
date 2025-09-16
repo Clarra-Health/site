@@ -8,9 +8,13 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">About</span>
-            <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F652d7e2f96da4d14b4ac56187a3eb8a2?format=webp&width=800" alt="Built for Midlife" className="mt-2 mx-auto h-auto w-full max-w-4xl" />
           </div>
         </div>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F652d7e2f96da4d14b4ac56187a3eb8a2?format=webp&width=1600"
+          alt="Built for Midlife"
+          className="block h-auto w-full"
+        />
       </section>
 
       {/* Manifesto image full-bleed under hero */}
