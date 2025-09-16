@@ -29,19 +29,6 @@ export default function Solutions() {
         />
       </section>
 
-      <section className="py-8">
-        <div className="container">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb71a4860bd13431381bb23b001e1a1f4?format=webp&width=2000"
-            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb71a4860bd13431381bb23b001e1a1f4?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb71a4860bd13431381bb23b001e1a1f4?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb71a4860bd13431381bb23b001e1a1f4?format=webp&width=2400 2400w"
-            sizes="100vw"
-            alt="Clarra brand color bubbles"
-            className="block w-full h-auto rounded-3xl border border-border shadow-sm"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-      </section>
 
       <FeatureGrid
         title="The Clarra Solution"
