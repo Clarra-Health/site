@@ -35,7 +35,19 @@ export default function Contact() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="flex items-center justify-center gap-3">
               <h1 className="font-display text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Contact us.</h1>
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F170b844262144b8e847aa3e84070e87a?format=webp&width=160" alt="Clarra logo" className="h-12 w-auto" />
+              <svg
+                className="h-12 w-12"
+                viewBox="0 0 64 64"
+                fill="none"
+                aria-label="Clarra mark"
+                role="img"
+              >
+                <circle cx="32" cy="16" r="12" fill="#22c55e"/>
+                <circle cx="18" cy="30" r="12" fill="#94d9da"/>
+                <circle cx="46" cy="30" r="12" fill="#94d9da"/>
+                <path d="M32 56c10 0 18-8 18-18 0-1.3-.13-2.5-.37-3.7C45.5 37 39.2 40 32 40s-13.5-3-17.6-5.7c-.24 1.2-.37 2.4-.37 3.7 0 10 8 18 18 18Z" fill="#1f858b"/>
+                <path d="M26.5 24c0 3.2 2.6 5.8 5.8 5.8S38 27.2 38 24c0-1.3-.44-2.6-1.2-3.6-1.9 2.3-3.9 2.3-5.8 0-.8 1-1.2 2.3-1.2 3.6Z" fill="#ffffff"/>
+              </svg>
             </div>
             <p className="mt-4 text-lg sm:text-xl text-muted-foreground">
               Investor, innovator, media, influencer — or simply excited to join Clarra? Reach out. We’re here for every conversation, big or small.
