@@ -22,7 +22,7 @@ export default function Index() {
               to="/waitlist"
               className="inline-flex items-center justify-center rounded-md bg-[#b9e3e2] px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] shadow-sm transition hover:bg-[#b9e3e2]/90"
             >
-              Join the waitlist
+              Join The Waitlist
             </Link>
             <Link
               to="/how-it-works"
@@ -65,7 +65,7 @@ export default function Index() {
               <Feature icon={<IconShield />} title="Clinical-grade" description="Privacy-first, secure, and aligned with best practices." iconBg="bg-[#1f2d3a]" />
             </div>
             <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-              <Link to="/waitlist" className="inline-flex items-center justify-center rounded-full bg-[hsl(25_97%_66%)] px-8 py-3 text-base font-semibold text-white shadow-sm transition hover:opacity-90">Join the waitlist</Link>
+              <Link to="/waitlist" className="inline-flex items-center justify-center rounded-full bg-[hsl(25_97%_66%)] px-8 py-3 text-base font-semibold text-white shadow-sm transition hover:opacity-90">Join The Waitlist</Link>
               <Link to="/how-it-works" className="inline-flex items-center justify-center rounded-full bg-[#4fb7b3] px-8 py-3 text-base font-semibold text-white shadow-sm transition hover:opacity-90">How Clarra Works</Link>
             </div>
           </div>
