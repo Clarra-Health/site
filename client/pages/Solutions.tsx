@@ -31,7 +31,7 @@ export default function Solutions() {
 
 
       <FeatureGrid
-        title="How Clarra Works for You"
+        title="Transforming Data into Care"
         subtitle="More than tracking, more than tips — Clarra delivers personalized care pathways, real insights, and community that actually understands."
         features={[
           {
