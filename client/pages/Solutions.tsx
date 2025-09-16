@@ -8,7 +8,7 @@ export default function Solutions() {
     <>
       <section className="py-8">
         <div className="container">
-          <h1 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-5xl text-center uppercase">Transforming Data into Care</h1>
+          <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a] text-center">Transforming Data into Care</h1>
         </div>
       </section>
 
