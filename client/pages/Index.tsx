@@ -5,44 +5,26 @@ export default function Index() {
     <>
       {/* Hero */}
       <section className="relative isolate min-h-[calc(100vh-4rem)] overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7ed6fa0fb93b465d8da01c5c92552d3f?format=webp&width=1600"
-            alt="Clarra — supportive midlife health, smiling woman on teal background"
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div className="container h-full">
-          <div className="grid h-full items-center md:grid-cols-2 md:py-10">
-            <div className="hidden md:block" />
-            <div className="w-full max-w-[740px] md:col-start-2 md:text-left lg:mr-6">
-              <h1 className="text-[44px] font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-                <span className="block uppercase">
-                  A new era of midlife health —
-                  <span className="relative inline-block mx-1 align-baseline">
-                    <span className="relative z-10">redefined</span>
-                    <span aria-hidden className="pointer-events-none absolute -inset-x-2 -inset-y-1 rounded-full border-4 border-[hsl(25_97%_66%)]" />
-                  </span>
-                  <span> with clarity and care</span>
-                </span>
-              </h1>
-              <p className="mt-6 text-3xl font-semibold text-foreground md:max-w-2xl">
-                Your menopause, your way. Clarra adapts to your unique patterns with personalized insights and support.
-              </p>
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row md:justify-start">
-                <Link
-                  to="/waitlist"
-                  className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-10 py-5 text-xl font-semibold text-white shadow-sm transition hover:opacity-90"
-                >
-                  Join the waitlist
-                </Link>
-                <Link
-                  to="/how-it-works"
-                  className="inline-flex items-center justify-center rounded-md border border-[hsl(210_29%_24%)] bg-background/80 px-10 py-5 text-xl font-semibold text-[hsl(210_29%_24%)] backdrop-blur hover:bg-background"
-                >
-                  How it works
-                </Link>
-              </div>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F5ebd666e8a024475849d469c19f77183?format=webp&width=1600"
+          alt="Clarra hero"
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
+        />
+        <div className="absolute inset-x-0 bottom-0 z-10">
+          <div className="container pb-8">
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center md:justify-end">
+              <Link
+                to="/waitlist"
+                className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-10 py-5 text-xl font-semibold text-white shadow-sm transition hover:opacity-90"
+              >
+                Join the wait list
+              </Link>
+              <Link
+                to="/how-it-works"
+                className="inline-flex items-center justify-center rounded-md border border-[hsl(210_29%_24%)] bg-background/80 px-10 py-5 text-xl font-semibold text-[hsl(210_29%_24%)] backdrop-blur hover:bg-background"
+              >
+                How it works
+              </Link>
             </div>
           </div>
         </div>
