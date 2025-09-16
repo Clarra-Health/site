@@ -31,16 +31,49 @@ export default function Solutions() {
 
 
       <FeatureGrid
-        title="The Clarra Solution"
+        title="How Clarra Works for You"
+        subtitle="More than tracking, more than tips — Clarra delivers personalized care pathways, real insights, and community that actually understands."
         features={[
-          "AI‑powered 24/7 chat for real‑time, empathetic support",
-          "Predictive algorithm to forecast symptom patterns",
-          "Hormone flow tracking with intuitive visualizations",
-          "Comprehensive symptom tracking across hot flashes, mood, sleep, libido, joints and more",
-          "Personalized insights that move care from reactive to proactive",
-          "Community spaces for connection and support",
-          "Evidence‑based wellness guidance",
-          "Expert access and care pathways",
+          {
+            title: "Always‑on, human‑like support",
+            description:
+              "A 24/7 AI companion that listens, responds, and supports you with empathy — anytime you need it.",
+          },
+          {
+            title: "Your hormone story, made visible",
+            description:
+              "Beautiful, intuitive tracking that turns confusing data into clear patterns you can actually use.",
+          },
+          {
+            title: "Insights that stay one step ahead",
+            description:
+              "Smart predictions that anticipate what’s coming — so you can prepare, not just react.",
+          },
+          {
+            title: "The full picture of your health",
+            description:
+              "Track hot flashes, sleep, mood, energy, libido, joints and more — because menopause is more than one symptom.",
+          },
+          {
+            title: "Guidance you can actually trust",
+            description:
+              "Wellness advice grounded in science, not fads — so you know what works and why.",
+          },
+          {
+            title: "Care that evolves with you",
+            description:
+              "From personalized nudges to proactive strategies, Clarra adapts as your body and needs change.",
+          },
+          {
+            title: "A space that feels like home",
+            description:
+              "Connect with others navigating the same journey, share stories, and find strength together.",
+          },
+          {
+            title: "Direct pathways to real experts",
+            description:
+              "When you’re ready for professional care, Clarra connects you to the right specialists without the guesswork.",
+          },
         ]}
       />
 
@@ -101,19 +134,29 @@ function StatsGrid({ title, items }: { title: string; items: { k: string; v: str
   );
 }
 
-function FeatureGrid({ title, features }: { title: string; features: string[] }) {
+function FeatureGrid({ title, subtitle, features }: { title: string; subtitle?: string; features: { title: string; description: string }[] }) {
   return (
-    <section className="py-10">
+    <section className="py-12">
       <div className="container">
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-          {features.map((f, i) => (
-            <li key={i} className="flex items-start gap-3 rounded-xl border border-border bg-card p-4">
-              <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary" />
-              <span className="text-sm text-foreground">{f}</span>
-            </li>
+        <div className="mx-auto max-w-5xl text-center">
+          <h2 className="font-display text-5xl sm:text-6xl uppercase tracking-tight text-[#1f2d3a]">{title}</h2>
+          {subtitle && (
+            <p className="mt-3 text-base sm:text-lg text-muted-foreground">{subtitle}</p>
+          )}
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          {features.map((item, i) => (
+            <div key={i} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
+              <div className="flex items-start gap-3">
+                <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-primary" />
+                <div>
+                  <p className="font-semibold">{item.title}</p>
+                  <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
+                </div>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
