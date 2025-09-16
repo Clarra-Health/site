@@ -32,6 +32,19 @@ export default function Index() {
         </div>
       </section>
 
+      {/* App Showcase */}
+      <section className="py-16">
+        <div className="container">
+          <Link to="/solutions" className="block">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F65d7ea1502b74f718219d09502a2bd0c?format=webp&width=1200"
+              alt="Chat with Clarra - Available on iOS and Android. Features: Hormone Health Insights, Tailored Health Plans, Data-Driven Care, Smart Symptom Tracking, Syncs with Wearables, Community Support"
+              className="mx-auto h-auto w-full max-w-4xl transition-transform hover:scale-105"
+            />
+          </Link>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="relative pt-10 pb-20">
         <div className="container">
