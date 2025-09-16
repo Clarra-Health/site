@@ -6,6 +6,12 @@ const heroImg =
 export default function Solutions() {
   return (
     <>
+      <section className="py-8">
+        <div className="container">
+          <h1 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-5xl">Transforming Data into Care</h1>
+        </div>
+      </section>
+
       <section className="py-0">
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7cb14dfadac447cca048ebcec463813c?format=webp&width=2000"
