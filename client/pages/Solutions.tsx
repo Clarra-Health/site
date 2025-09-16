@@ -147,8 +147,8 @@ function FeatureGrid({ title, subtitle, features }: { title: string; subtitle?: 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {features.map((item, i) => (
             <div key={i} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
-              <div className="flex items-start gap-3">
-                <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-primary" />
+              <div className="flex items-start gap-4">
+                <span className="mt-1.5 inline-block h-5 w-5 rounded-full bg-primary ring-2 ring-white/70 shadow" />
                 <div>
                   <p className="font-semibold">{item.title}</p>
                   <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
