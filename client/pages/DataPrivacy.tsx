@@ -38,13 +38,13 @@ export default function DataPrivacy() {
 
           </div>
 
+          <div className="mx-auto mt-8 max-w-5xl">
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9542412492fb49d087ef5801e522cfaf?format=webp&width=800" alt="Data for Good" className="w-full h-auto rounded-3xl border border-border" />
+          </div>
+
           <section className="mt-12 overflow-hidden rounded-3xl border border-border bg-[hsl(25_97%_66%)] p-8 text-white shadow-sm">
             <div className="mx-auto max-w-4xl text-center">
               <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold">Data for Good</h2>
-              <p className="mt-4 text-lg sm:text-xl font-semibold text-white/95">
-                Individually, your data is yours. Together, anonymized and aggregated, our data is power — a resource that can transform menopause research, close the gender health gap, and improve outcomes for millions of women worldwide. By joining Clarra, you are part of a collective movement to make midlife health visible, valued, and finally understood.
-              </p>
-
               <div className="mx-auto my-6 h-px w-24 bg-white/60" />
 
               <h3 className="font-display text-2xl sm:text-3xl font-extrabold">Closing the Gender Health Gap</h3>
