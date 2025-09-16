@@ -10,6 +10,7 @@ import Layout from "./components/layout/Layout";
 import Index from "./pages/Index";
 import Solutions from "./pages/Solutions";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -25,10 +26,9 @@ const App = () => (
           <Route element={<Layout />}>
             <Route index element={<Index />} />
             <Route path="solutions" element={<Solutions />} />
-            <Route path="pricing" element={<Placeholder />} />
             <Route path="about" element={<About />} />
             <Route path="careers" element={<Placeholder />} />
-            <Route path="contact" element={<Placeholder />} />
+            <Route path="contact" element={<Contact />} />
             <Route path="security" element={<Placeholder />} />
             <Route path="accessibility" element={<Placeholder />} />
             <Route path="terms" element={<Placeholder />} />
