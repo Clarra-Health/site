@@ -11,27 +11,35 @@ export default function Index() {
             alt="Clarra — supportive midlife health, smiling woman on teal background"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent" />
         </div>
         <div className="container h-full">
-          <div className="grid h-full items-center md:py-10">
-            <div className="max-w-3xl md:ml-auto md:text-right">
-              <h1 className="text-[44px] font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-                <span className="block uppercase">A new era of midlife health — redefined with clarity and care</span>
+          <div className="grid h-full items-center md:py-10 md:justify-items-end">
+            <div className="w-full max-w-3xl md:ml-0 md:text-right lg:mr-6">
+              <h1 className="text-[44px] font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+                <span className="block uppercase">
+                  A new era of midlife health —
+                  <span className="relative inline-block px-1">
+                    <span className="relative z-10"> redefined</span>
+                    <svg aria-hidden="true" className="pointer-events-none absolute -inset-1 -z-0 h-[1.8em] w-[5.8em]" viewBox="0 0 280 90" fill="none">
+                      <ellipse cx="140" cy="45" rx="130" ry="36" stroke="hsl(25 97% 66%)" strokeWidth="6"/>
+                    </svg>
+                  </span>
+                  <span> with clarity and care</span>
+                </span>
               </h1>
-              <p className="mt-5 text-lg font-semibold text-white/90 md:ml-auto md:max-w-xl">
+              <p className="mt-5 text-2xl font-semibold text-foreground md:ml-auto md:max-w-2xl">
                 Your menopause, your way. Clarra adapts to your unique patterns with personalized insights and support.
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-end">
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row md:justify-end">
                 <Link
                   to="/waitlist"
-                  className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:opacity-90"
+                  className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-8 py-4 text-lg font-semibold text-white shadow-sm transition hover:opacity-90"
                 >
                   Join the waitlist
                 </Link>
                 <Link
                   to="/how-it-works"
-                  className="inline-flex items-center justify-center rounded-md border border-[hsl(210_29%_24%)] bg-background/80 px-6 py-3 text-base font-semibold text-[hsl(210_29%_24%)] backdrop-blur hover:bg-background"
+                  className="inline-flex items-center justify-center rounded-md border border-[hsl(210_29%_24%)] bg-background/80 px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] backdrop-blur hover:bg-background"
                 >
                   How it works
                 </Link>
