@@ -38,9 +38,13 @@ export default function Index() {
       <section className="py-0">
         <Link to="/solutions" className="block focus:outline-none focus:ring-0">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F65d7ea1502b74f718219d09502a2bd0c?format=webp&width=1600"
-            alt="Chat with Clarra - Available on iOS and Android. Features: Hormone Health Insights, Tailored Health Plans, Data-Driven Care, Smart Symptom Tracking, Syncs with Wearables, Community Support"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F49d52b64263f4bb1860c5e267103d92d?format=webp&width=2000"
+            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F49d52b64263f4bb1860c5e267103d92d?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F49d52b64263f4bb1860c5e267103d92d?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F49d52b64263f4bb1860c5e267103d92d?format=webp&width=2400 2400w"
+            sizes="100vw"
+            alt="Chat with Clarra promo with benefits around device: Hormone Health Insights, Tailored Plans, Data-Driven Care, Wearables Sync, Smart Tracking, Community Support"
             className="block w-full h-auto"
+            loading="eager"
+            decoding="async"
           />
         </Link>
       </section>
