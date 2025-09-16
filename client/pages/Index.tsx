@@ -93,7 +93,7 @@ export default function Index() {
       {/* CTA */}
       <section className="relative py-20">
         <div className="container">
-          <div className="relative overflow-hidden rounded-3xl border border-transparent bg-[#4fb7b3] p-10 text-primary-foreground">
+          <div className="relative overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-primary to-fuchsia-600 p-10 text-primary-foreground">
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_20%_10%,white/20,transparent)]" />
             <div className="grid items-center gap-6 md:grid-cols-2">
               <div>
@@ -102,10 +102,10 @@ export default function Index() {
               </div>
               <div className="flex justify-start md:justify-end">
                 <Link
-                  to="/waitlist"
-                  className="inline-flex items-center justify-center rounded-md bg-[#b9e3e2] px-6 py-3 text-sm font-semibold text-[hsl(210_29%_24%)] transition hover:bg-[#b9e3e2]/90"
+                  to="/get-started"
+                  className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-sm font-medium text-primary transition hover:bg-white/90"
                 >
-                  Join the wait list
+                  Get started
                 </Link>
               </div>
             </div>
