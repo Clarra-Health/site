@@ -19,7 +19,6 @@ export default function SiteFooter() {
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               <li><Link to="/solutions" className="hover:text-foreground">Solutions</Link></li>
               <li><Link to="/pricing" className="hover:text-foreground">Pricing</Link></li>
-              <li><Link to="/research" className="hover:text-foreground">Research</Link></li>
             </ul>
           </div>
           <div>
