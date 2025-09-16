@@ -8,8 +8,8 @@ export default function Solutions() {
     <>
       <section className="py-0">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa2a0a8b647f74cc78187125b6302a29b?format=webp&width=1600"
-          alt="How it works overview"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7cb14dfadac447cca048ebcec463813c?format=webp&width=800"
+          alt="Transforming data into care"
           className="block w-full h-auto"
         />
       </section>
