@@ -36,7 +36,7 @@ export default function Contact() {
             <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">
               <span className="relative z-10">Contact us.</span>
               <svg aria-hidden className="pointer-events-none absolute left-[-3%] right-[-3%] bottom-[-0.35em] h-[0.85em] w-[106%] z-0" viewBox="0 0 100 20" preserveAspectRatio="none">
-                <path d="M2 15 Q 50 12 98 15" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M2 15 Q 50 12 98 15" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5.25" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </h1>
             <p className="mt-4 text-lg sm:text-xl text-muted-foreground">
