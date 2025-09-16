@@ -6,7 +6,7 @@ export default function Index() {
       {/* Hero */}
       <section className="relative isolate min-h-[calc(100vh-4rem)] overflow-hidden pt-16 md:pt-20">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F5ebd666e8a024475849d469c19f77183?format=webp&width=1600"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F159f86344c114d34ba592bcee3524489?format=webp&width=800"
           alt="Clarra hero"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
