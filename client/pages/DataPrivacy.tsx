@@ -38,11 +38,41 @@ export default function DataPrivacy() {
 
           </div>
 
-          <section className="mt-12 overflow-hidden rounded-3xl border border-border bg-accent p-8 text-accent-foreground shadow-sm">
-            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold">Data for Good</h2>
-            <p className="mt-4 max-w-4xl text-lg sm:text-xl font-semibold">
-              Individually, your data is yours. Together, anonymized and aggregated, our data is power — a resource that can transform menopause research, close the gender health gap, and improve outcomes for millions of women worldwide. By joining Clarra, you are part of a collective movement to make midlife health visible, valued, and finally understood.
-            </p>
+          <section className="mt-12 overflow-hidden rounded-3xl border border-border bg-[hsl(25_97%_66%)] p-8 text-white shadow-sm">
+            <div className="mx-auto max-w-4xl text-center">
+              <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold">Data for Good</h2>
+              <p className="mt-4 text-lg sm:text-xl font-semibold text-white/95">
+                Individually, your data is yours. Together, anonymized and aggregated, our data is power — a resource that can transform menopause research, close the gender health gap, and improve outcomes for millions of women worldwide. By joining Clarra, you are part of a collective movement to make midlife health visible, valued, and finally understood.
+              </p>
+
+              <div className="mx-auto my-6 h-px w-24 bg-white/60" />
+
+              <h3 className="font-display text-2xl sm:text-3xl font-extrabold">Closing the Gender Health Gap</h3>
+              <p className="mt-2 text-[15px] leading-7 text-white/95">
+                For too long, women’s midlife health has been overlooked in research and underfunded in innovation. By contributing data — securely and anonymously — Clarra users help build the evidence needed to finally close this gap and put menopause where it belongs: at the center of women’s health.
+              </p>
+
+              <div className="mx-auto my-6 h-px w-24 bg-white/60" />
+
+              <h3 className="font-display text-2xl sm:text-3xl font-extrabold">Collective Impact, Community Power</h3>
+              <p className="mt-2 text-[15px] leading-7 text-white/95">
+                One woman’s experience is powerful. A community’s shared experience is transformative. By pooling anonymized data, Clarra creates a collective resource that can inform clinical trials, shape policy, and accelerate the development of new solutions for midlife health.
+              </p>
+
+              <div className="mx-auto my-6 h-px w-24 bg-white/60" />
+
+              <h3 className="font-display text-2xl sm:text-3xl font-extrabold">Changing the Face of Menopause</h3>
+              <p className="mt-2 text-[15px] leading-7 text-white/95">
+                Menopause is not a niche event — it’s a global transition experienced by over a billion women. Data for Good allows us to move beyond silence and stigma, replacing invisibility with visibility, uncertainty with clarity, and isolation with progress.
+              </p>
+
+              <div className="mx-auto my-6 h-px w-24 bg-white/60" />
+
+              <h3 className="font-display text-2xl sm:text-3xl font-extrabold">Our Commitment</h3>
+              <p className="mt-2 text-[15px] leading-7 text-white/95">
+                We will never compromise on privacy, security, or trust. Human rights and women’s rights are at the core of Clarra’s mission. Data for Good is about partnership — we do this with you, not for you. Every insight generated, every breakthrough achieved, is built on a foundation of respect, transparency, and shared purpose.
+              </p>
+            </div>
           </section>
         </div>
       </section>
