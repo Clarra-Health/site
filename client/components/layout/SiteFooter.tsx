@@ -34,7 +34,7 @@ export default function SiteFooter() {
           <div>
             <p className="text-sm font-medium">Product</p>
             <ul className="mt-3 space-y-2 text-sm text-primary-foreground/80">
-              <li><Link to="/how-it-works" className="hover:text-primary-foreground">How it works</Link></li>
+              <li><Link to="/how-it-works" className="hover:text-primary-foreground">How Clarra Works</Link></li>
             </ul>
           </div>
           <div>
