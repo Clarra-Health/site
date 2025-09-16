@@ -10,23 +10,22 @@ export default function Index() {
           alt="Clarra hero"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
-      </section>
-      {/* Hero CTAs below image (no overlap) */}
-      <section className="py-6">
-        <div className="container">
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:justify-start">
-            <Link
-              to="/waitlist"
-              className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-10 py-5 text-xl font-semibold text-white shadow-sm transition hover:opacity-90"
-            >
-              Join the wait list
-            </Link>
-            <Link
-              to="/how-it-works"
-              className="inline-flex items-center justify-center rounded-md border border-[hsl(210_29%_24%)] bg-background px-10 py-5 text-xl font-semibold text-[hsl(210_29%_24%)] hover:bg-background/90"
-            >
-              How it works
-            </Link>
+        <div className="absolute inset-x-0 bottom-10 z-10">
+          <div className="container">
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <Link
+                to="/waitlist"
+                className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-10 py-5 text-xl font-semibold text-white shadow-sm transition hover:opacity-90"
+              >
+                Join the wait list
+              </Link>
+              <Link
+                to="/how-it-works"
+                className="inline-flex items-center justify-center rounded-md border border-[hsl(210_29%_24%)] bg-background/90 px-10 py-5 text-xl font-semibold text-[hsl(210_29%_24%)] backdrop-blur-sm hover:bg-background"
+              >
+                How it works
+              </Link>
+            </div>
           </div>
         </div>
       </section>
