@@ -47,16 +47,10 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
       {/* Manifesto image full-bleed under hero */}
       <section className="py-0">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7c845c6292c349ad98a4409c64fd78a3?format=webp&width=1600"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2b4fcb1387af4f70a01d92ca9963e303?format=webp&width=1600"
           alt="We're putting menopause at the centre of women's health — where it always belonged."
           className="block h-auto w-full"
         />
-        <div className="container py-6">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="pointer-events-none cursor-default inline-flex items-center rounded-full bg-[hsl(25_97%_66%)] px-4 py-2 text-sm font-semibold text-white">Our Vision</span>
-            <span className="pointer-events-none cursor-default inline-flex items-center rounded-full bg-[#1f2d3a] px-4 py-2 text-sm font-semibold text-white">Our Mission</span>
-          </div>
-        </div>
       </section>
 
       <section className="py-10">
