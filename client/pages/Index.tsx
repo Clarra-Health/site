@@ -82,17 +82,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Logos */}
-      <section className="py-10">
-        <div className="container">
-          <p className="text-center text-xs uppercase tracking-wider text-muted-foreground">Trusted guidance, grounded in research</p>
-          <div className="mx-auto mt-6 grid max-w-4xl grid-cols-2 items-center gap-x-8 gap-y-6 opacity-70 sm:grid-cols-4">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <div key={i} className="h-8 rounded-md bg-muted" />
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Features */}
       <section className="relative py-20">
@@ -138,17 +127,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section className="py-20">
-        <div className="container">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-lg italic text-muted-foreground">
-              “Carra helped me finally understand what was happening and what to do about it. I feel supported, seen, and in control.”
-            </p>
-            <p className="mt-4 text-sm font-medium">— Jordan, 48</p>
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="relative py-20">
