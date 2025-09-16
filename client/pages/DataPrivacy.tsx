@@ -10,9 +10,11 @@ export default function DataPrivacy() {
               How We Protect Your Data
             </h1>
             <p className="mt-4 text-lg sm:text-xl md:text-2xl font-semibold text-[#1f2d3a]">
-              <span className="relative inline-block align-baseline">
+              <span className="relative inline-block align-baseline px-1">
+                <svg aria-hidden className="pointer-events-none absolute left-[-4%] right-[-4%] bottom-[-0.35em] h-[0.7em] w-[108%] -z-10" viewBox="0 0 100 20" preserveAspectRatio="none">
+                  <path d="M2 15 C 20 5, 40 25, 60 10 S 98 15, 98 15" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
                 <span className="relative z-10">Your trust is non‑negotiable</span>
-                <span aria-hidden className="absolute left-0 right-0 -bottom-[0.05em] h-[0.06em] bg-[hsl(25_97%_66%)]"></span>
               </span>
               . Here’s how we keep your information safe and in your control.
             </p>
