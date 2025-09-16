@@ -4,16 +4,13 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate min-h-[calc(100vh-4rem)] overflow-hidden pt-16 md:pt-20">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=2400 2400w"
-          sizes="100vw"
-          alt="Clarra hero"
-          className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
-          loading="eager"
-          decoding="async"
+      <section className="relative isolate overflow-hidden pt-16 md:pt-20">
+        <div
+          className="absolute inset-0 -z-10 bg-no-repeat bg-cover bg-center"
+          style={{ backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=2000')" }}
+          aria-hidden="true"
         />
+        <div className="h-[60vh] sm:min-h-[calc(100vh-4rem)]" />
       </section>
 
       {/* Hero CTAs below image */}
