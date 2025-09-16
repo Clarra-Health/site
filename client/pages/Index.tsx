@@ -51,17 +51,23 @@ export default function Index() {
 
 
       {/* Features */}
-      <section className="relative pt-10 pb-20">
+      <section className="relative py-12">
         <div className="container">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Built for every stage</h2>
-            <p className="mt-3 text-muted-foreground">From first symptoms to long-term care, Clarra adapts to your needs with continuous, personalized support.</p>
-          </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <Feature icon={<IconSpark />} title="Symptom tracking" description="Effortless daily check-ins help you connect triggers and trends." />
-            <Feature icon={<IconWand />} title="AI care plans" description="Evidence-based recommendations tailored to your goals." />
-            <Feature icon={<IconChat />} title="Coaching & chat" description="Compassionate, always-on support with human oversight." />
-            <Feature icon={<IconShield />} title="Clinical-grade" description="Privacy-first, secure, and aligned with best practices." />
+          <div className="rounded-3xl border border-border bg-secondary/60 p-8 sm:p-10 shadow-sm">
+            <div className="mx-auto text-center">
+              <h2 className="font-display text-5xl sm:text-6xl uppercase tracking-tight text-[#1f2d3a]">Built for every stage</h2>
+              <p className="mt-3 text-base sm:text-lg text-foreground/80">From first symptoms to long-term care, Clarra adapts to your needs with continuous, personalized support.</p>
+            </div>
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <Feature icon={<IconSpark />} title="Symptom tracking" description="Effortless daily check-ins help you connect triggers and trends." iconBg="bg-[#7cc9a2]" />
+              <Feature icon={<IconWand />} title="AI care plans" description="Evidence-based recommendations tailored to your goals." iconBg="bg-[hsl(25_97%_66%)]" />
+              <Feature icon={<IconChat />} title="Coaching & chat" description="Compassionate, always-on support with human oversight." iconBg="bg-[#4fb7b3]" />
+              <Feature icon={<IconShield />} title="Clinical-grade" description="Privacy-first, secure, and aligned with best practices." iconBg="bg-[#1f2d3a]" />
+            </div>
+            <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+              <Link to="/waitlist" className="inline-flex items-center justify-center rounded-full bg-[hsl(25_97%_66%)] px-8 py-3 text-base font-semibold text-white shadow-sm transition hover:opacity-90">Join the waitlist</Link>
+              <Link to="/how-it-works" className="inline-flex items-center justify-center rounded-full bg-[#4fb7b3] px-8 py-3 text-base font-semibold text-white shadow-sm transition hover:opacity-90">How Clarra Works</Link>
+            </div>
           </div>
         </div>
       </section>
@@ -101,16 +107,16 @@ function Avatar({ color = "bg-primary" }: { color?: string }) {
   );
 }
 
-function Feature({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
+function Feature({ icon, title, description, iconBg = "bg-primary" }: { icon: React.ReactNode; title: string; description: string; iconBg?: string }) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-      <div className="flex items-center gap-3">
-        <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-secondary text-foreground">
+    <div className="rounded-2xl border border-border bg-card/80 p-6 shadow-sm transition hover:shadow-md">
+      <div className="flex items-center gap-4">
+        <span className={`inline-flex h-12 w-12 items-center justify-center rounded-full text-white ${iconBg} ring-2 ring-white/70 shadow`}>
           {icon}
         </span>
-        <p className="font-medium">{title}</p>
+        <p className="font-semibold">{title}</p>
       </div>
-      <p className="mt-3 text-sm text-muted-foreground">{description}</p>
+      <p className="mt-3 text-sm text-foreground/80">{description}</p>
     </div>
   );
 }
