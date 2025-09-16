@@ -17,7 +17,7 @@ export default function Index() {
       {/* Primary CTAs */}
       <section className="py-8">
         <div className="container">
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row md:justify-end md:items-end">
             <Link
               to="/waitlist"
               className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm transition hover:opacity-90"
