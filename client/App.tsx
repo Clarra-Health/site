@@ -34,6 +34,7 @@ const App = () => (
             <Route path="privacy" element={<Placeholder />} />
             <Route path="get-started" element={<Placeholder />} />
             <Route path="waitlist" element={<Placeholder />} />
+            <Route path="how-it-works" element={<Placeholder />} />
             <Route path="*" element={<NotFound />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
