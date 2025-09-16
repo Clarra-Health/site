@@ -45,6 +45,17 @@ export default function Index() {
         </Link>
       </section>
 
+      {/* Additional showcase image */}
+      <section className="py-8">
+        <div className="container">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F30793d7b4b82439592a209e796adbc36?format=webp&width=1600"
+            alt="Transforming data into care"
+            className="w-full h-auto rounded-3xl border border-border shadow-sm"
+          />
+        </div>
+      </section>
+
       {/* Features */}
       <section className="relative pt-10 pb-20">
         <div className="container">
