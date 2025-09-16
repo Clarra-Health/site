@@ -6,6 +6,14 @@ const heroImg =
 export default function Solutions() {
   return (
     <>
+      <section className="py-0">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa2a0a8b647f74cc78187125b6302a29b?format=webp&width=1600"
+          alt="How it works overview"
+          className="block w-full h-auto"
+        />
+      </section>
+
       <FeatureGrid
         title="The Clarra Solution"
         features={[
