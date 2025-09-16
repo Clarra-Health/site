@@ -53,6 +53,42 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
         />
       </section>
 
+      {/* Clarra's Commitment bubbles */}
+      <section className="py-12">
+        <div className="container">
+          <div className="mx-auto max-w-5xl text-center">
+            <h2 className="font-display text-5xl sm:text-6xl uppercase tracking-tight text-[#1f2d3a]">Clarra's Commitment</h2>
+            <p className="mt-2 text-base sm:text-lg text-muted-foreground">Bold principles that guide every product decision.</p>
+          </div>
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-3xl bg-gradient-to-br from-[#4fb7b3] to-[#7cc9a2] p-6 text-white shadow-md ring-2 ring-white/30">
+              <h3 className="text-xl font-extrabold">AI‑Native Insights</h3>
+              <p className="mt-2 text-sm opacity-95">predictive, personalized, evidence‑based.</p>
+            </div>
+            <div className="rounded-3xl bg-gradient-to-br from-[hsl(25_97%_66%)] to-[#ffb07a] p-6 text-white shadow-md ring-2 ring-white/30">
+              <h3 className="text-xl font-extrabold">Empathy &amp; Inclusion</h3>
+              <p className="mt-2 text-sm opacity-95">designed for diverse experiences.</p>
+            </div>
+            <div className="rounded-3xl bg-gradient-to-br from-[#1f2d3a] to-[#2c3e50] p-6 text-white shadow-md ring-2 ring-white/30">
+              <h3 className="text-xl font-extrabold">Scientific Rigor</h3>
+              <p className="mt-2 text-sm opacity-95">built with researchers and clinicians.</p>
+            </div>
+            <div className="rounded-3xl bg-gradient-to-br from-[#7cc9a2] to-[#4fb7b3] p-6 text-[#1f2d3a] shadow-md ring-2 ring-white/30">
+              <h3 className="text-xl font-extrabold">Clarity &amp; Action</h3>
+              <p className="mt-2 text-sm opacity-90">from tracking to clear next steps.</p>
+            </div>
+            <div className="rounded-3xl bg-gradient-to-br from-[#2c3e50] to-[#1f2d3a] p-6 text-white shadow-md ring-2 ring-white/30">
+              <h3 className="text-xl font-extrabold">Data Transparency</h3>
+              <p className="mt-2 text-sm opacity-95">privacy‑first, user‑owned.</p>
+            </div>
+            <div className="rounded-3xl bg-gradient-to-br from-[#ffb07a] to-[hsl(25_97%_66%)] p-6 text-white shadow-md ring-2 ring-white/30">
+              <h3 className="text-xl font-extrabold">Community</h3>
+              <p className="mt-2 text-sm opacity-95">support that makes menopause visible.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }
