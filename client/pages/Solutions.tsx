@@ -42,6 +42,50 @@ export default function Solutions() {
           "Expert access and care pathways",
         ]}
       />
+
+      {/* Plans */}
+      <section className="py-12">
+        <div className="container">
+          <div className="mx-auto max-w-5xl text-center">
+            <h2 className="font-display text-5xl sm:text-6xl uppercase tracking-tight text-[#1f2d3a]">Choose your plan</h2>
+            <p className="mt-3 text-base sm:text-lg text-muted-foreground">Free to start. Super‑powered with Premium.</p>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {/* Free Plan */}
+            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+              <div className="flex items-baseline justify-between">
+                <h3 className="text-xl font-semibold">Free Plan</h3>
+                <span className="text-sm text-muted-foreground">$0</span>
+              </div>
+              <ul className="mt-4 space-y-3 text-sm">
+                <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-primary" />Smart symptom tracking with conversational daily check-ins</li>
+                <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-primary" />Personalized insights into triggers and trends over time</li>
+                <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-primary" />Basic AI guidance for managing common symptoms</li>
+                <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-primary" />Secure data storage with full user control</li>
+              </ul>
+            </div>
+
+            {/* Premium Plan */}
+            <div className="relative rounded-2xl border border-transparent bg-gradient-to-br from-[hsl(25_97%_66%)] to-[#4fb7b3] p-6 text-white shadow-md ring-4 ring-white/30">
+              <span className="absolute right-4 top-4 rounded-full bg-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide">Most popular</span>
+              <div className="flex items-baseline justify-between">
+                <h3 className="text-2xl font-extrabold">Premium Plan</h3>
+                <span className="text-lg font-semibold">$9.99/month</span>
+              </div>
+              <p className="mt-2 text-sm opacity-90">Everything in the Free Plan, plus:</p>
+              <ul className="mt-4 space-y-3 text-sm">
+                <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-white" />AI-powered care plans tailored to your goals and health patterns</li>
+                <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-white" />Deeper predictive insights using hormones + wearable integrations</li>
+                <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-white" />Coaching &amp; chat with expert-reviewed support</li>
+                <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-white" />Clinical-grade reporting you can share with your provider</li>
+                <li className="flex items-start gap-3"><span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-white" />Priority features and early access to new tools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }
