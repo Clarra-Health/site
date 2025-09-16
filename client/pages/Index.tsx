@@ -20,18 +20,18 @@ export default function Index() {
       </section>
 
       {/* Hero CTAs below image */}
-      <section className="py-8">
+      <section className="py-8 bg-[#b9e3e2]">
         <div className="container">
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               to="/waitlist"
-              className="inline-flex items-center justify-center rounded-md bg-[#b9e3e2] px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] shadow-sm transition hover:bg-[#b9e3e2]/90"
+              className="inline-flex items-center justify-center rounded-md bg-white px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
             >
               Join The Waitlist
             </Link>
             <Link
               to="/how-it-works"
-              className="inline-flex items-center justify-center rounded-md bg-[#b9e3e2] px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] shadow-sm transition hover:bg-[#b9e3e2]/90"
+              className="inline-flex items-center justify-center rounded-md bg-white px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
             >
               How Clarra Works
             </Link>
