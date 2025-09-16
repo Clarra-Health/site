@@ -33,6 +33,7 @@ const App = () => (
             <Route path="terms" element={<Placeholder />} />
             <Route path="privacy" element={<Placeholder />} />
             <Route path="get-started" element={<Placeholder />} />
+            <Route path="waitlist" element={<Placeholder />} />
             <Route path="*" element={<NotFound />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
