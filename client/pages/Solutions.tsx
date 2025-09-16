@@ -11,7 +11,7 @@ export default function Solutions() {
           <div className="mx-auto max-w-5xl text-center">
             <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Transforming Data into Care</h1>
             <p className="mt-4 mx-auto max-w-3xl text-xl sm:text-[1.4rem] leading-relaxed font-medium text-muted-foreground">
-              Clarra is an AI-native health platform built for women in midlife. Instead of endless logs and clunky symptom trackers with little guidance, you simply chat with Clarra — your midlife health partner. Behind the scenes, Clarra connects your symptoms, hormones, and wearable data to reveal patterns and deliver what matters most: personalized pathways, predictive insights, and clear next steps.
+              Clarra is an AI-native health platform built for women in midlife. Instead of endless logs and health apps that track but don’t help, you simply chat with Clarra — <strong className="font-semibold">your midlife health partner</strong>. Behind the scenes, Clarra connects your symptoms, hormones, and wearable data to reveal patterns and deliver what matters most: <strong className="font-semibold">personalized pathways</strong>, <strong className="font-semibold">predictive insights</strong>, and <strong className="font-semibold">clear next steps</strong>.
             </p>
           </div>
         </div>
