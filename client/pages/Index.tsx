@@ -7,29 +7,39 @@ export default function Index() {
       <section className="relative isolate min-h-[calc(100vh-4rem)] overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F04be675fc0344387a5284e7d510f8a73?format=webp&width=1600"
-            alt="Smiling woman with teal background"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7ed6fa0fb93b465d8da01c5c92552d3f?format=webp&width=1600"
+            alt="Clarra — supportive midlife health, smiling woman on teal background"
             className="h-full w-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/30 to-transparent" />
         </div>
-      </section>
-
-      {/* Primary CTAs */}
-      <section className="py-8">
-        <div className="container">
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row md:justify-end md:items-end">
-            <Link
-              to="/waitlist"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm transition hover:opacity-90"
-            >
-              Join the wait list
-            </Link>
-            <Link
-              to="/how-it-works"
-              className="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
-            >
-              See how it works
-            </Link>
+        <div className="container h-full">
+          <div className="grid h-full items-center md:py-10">
+            <div className="max-w-3xl md:ml-auto md:text-right">
+              <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+                <span className="block uppercase">A new era of</span>
+                <span className="block uppercase">midlife health —</span>
+                <span className="mt-2 block uppercase text-foreground/95">redefined with clarity</span>
+                <span className="block uppercase text-foreground/95">and care</span>
+              </h1>
+              <p className="mt-5 text-base text-foreground/90 sm:text-lg md:ml-auto md:max-w-xl">
+                Your menopause, your way. Clarra adapts to your unique patterns with personalized insights and support.
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-end">
+                <Link
+                  to="/waitlist"
+                  className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+                >
+                  Join the waitlist
+                </Link>
+                <Link
+                  to="/how-it-works"
+                  className="inline-flex items-center justify-center rounded-md border border-[hsl(210_29%_24%)] bg-background/80 px-6 py-3 text-sm font-semibold text-[hsl(210_29%_24%)] backdrop-blur hover:bg-background"
+                >
+                  How it works
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -86,7 +96,7 @@ export default function Index() {
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_20%_10%,white/20,transparent)]" />
             <div className="grid items-center gap-6 md:grid-cols-2">
               <div>
-                <h3 className="text-2xl font-semibold tracking-tight">Begin your midlife care journey with Carra</h3>
+                <h3 className="text-2xl font-semibold tracking-tight">Begin your midlife care journey with Clarra</h3>
                 <p className="mt-2 text-primary-foreground/90">Personalized guidance in minutes. Evidence-based. Judgment-free.</p>
               </div>
               <div className="flex justify-start md:justify-end">
