@@ -11,6 +11,7 @@ import Index from "./pages/Index";
 import Solutions from "./pages/Solutions";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import DataPrivacy from "./pages/DataPrivacy";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="careers" element={<Placeholder />} />
             <Route path="contact" element={<Contact />} />
             <Route path="security" element={<Placeholder />} />
+            <Route path="how-we-protect-your-data" element={<DataPrivacy />} />
             <Route path="accessibility" element={<Placeholder />} />
             <Route path="terms" element={<Placeholder />} />
             <Route path="privacy" element={<Placeholder />} />
