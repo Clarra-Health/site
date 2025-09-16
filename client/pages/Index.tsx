@@ -11,8 +11,8 @@ export default function Index() {
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
         <div className="absolute inset-x-0 bottom-0 z-10">
-          <div className="container pb-8">
-            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center md:justify-end">
+          <div className="container pb-14">
+            <div className="flex flex-col items-start gap-4 sm:flex-row sm:justify-start">
               <Link
                 to="/waitlist"
                 className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-10 py-5 text-xl font-semibold text-white shadow-sm transition hover:opacity-90"
