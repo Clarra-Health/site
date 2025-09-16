@@ -4,23 +4,16 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden pt-16 md:pt-20 sm:min-h-[calc(100vh-4rem)]">
-        <picture>
-          <source
-            media="(max-width: 640px)"
-            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=1200 1200w"
-            sizes="100vw"
-          />
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=2000"
-            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=2400 2400w"
-            sizes="100vw"
-            alt="Clarra hero"
-            className="block w-full h-auto sm:absolute sm:inset-0 sm:-z-10 sm:h-full sm:w-full sm:object-cover sm:object-center"
-            loading="eager"
-            decoding="async"
-          />
-        </picture>
+      <section className="py-0">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=2000"
+          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F46ad3497ede8448b920eb8a1bee9353e?format=webp&width=2400 2400w"
+          sizes="100vw"
+          alt="Clarra hero"
+          className="block w-full h-auto"
+          loading="eager"
+          decoding="async"
+        />
       </section>
 
       {/* Hero CTAs below image */}
