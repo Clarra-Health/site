@@ -57,7 +57,7 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
       <section className="py-12">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
-            <h2 className="font-display text-5xl sm:text-6xl uppercase tracking-tight text-[#1f2d3a]">Clarra's Commitment</h2>
+            <h2 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Clarra's Commitment</h2>
             <p className="mt-2 text-base sm:text-lg text-muted-foreground">Bold principles that guide every product decision.</p>
           </div>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
