@@ -16,32 +16,7 @@ export default function Index() {
           loading="eager"
           decoding="async"
         />
-        <div className="container">
-          <div className="grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-2 items-end sm:items-center gap-6">
-            {/* Person image */}
-            <div className="order-2 sm:order-1 flex justify-center sm:justify-start">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F0e930140a36948cfbee7da299f5e8c21?format=webp&width=1400"
-                sizes="(max-width: 640px) 70vw, 35vw"
-                alt="Woman representing Clarra audience"
-                className="h-auto w-[70%] sm:w-[80%] lg:w-[65%] max-w-[560px] object-contain"
-                loading="eager"
-                decoding="async"
-              />
-            </div>
-            {/* Text overlay */}
-            <div className="order-1 sm:order-2 flex justify-center sm:justify-end">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F19136c3469a8492e9f208cad8ca264f1?format=webp&width=1400"
-                sizes="(max-width: 640px) 90vw, 50vw"
-                alt="Compassionate, personalized care — perimenopause, menopause, midlife."
-                className="h-auto w-[90%] sm:w-full max-w-[720px] object-contain"
-                loading="eager"
-                decoding="async"
-              />
-            </div>
-          </div>
-        </div>
+        <div className="h-[60vh] sm:min-h-[calc(100vh-4rem)]" />
       </section>
 
       {/* Hero CTAs below image */}
