@@ -4,78 +4,40 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-32 -left-24 h-80 w-80 rounded-full bg-[radial-gradient(ellipse_at_center,theme(colors.accent)/60,transparent_60%)]" />
-          <div className="absolute -bottom-32 -right-24 h-96 w-96 rounded-full bg-[radial-gradient(ellipse_at_center,theme(colors.primary)/30,transparent_60%)]" />
+      <section className="relative isolate min-h-[calc(100vh-4rem)] overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F04be675fc0344387a5284e7d510f8a73?format=webp&width=1600"
+            alt="Smiling woman with teal background representing compassionate midlife care"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-background/10" />
         </div>
-        <div className="container relative grid gap-10 py-16 md:grid-cols-2 md:gap-12 md:py-24 lg:py-28">
-          <div className="flex flex-col justify-center">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-background/70 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
-              <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" />
-              AI-native midlife care
-            </div>
-            <h1 className="mt-5 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              Compassionate, personalized care for perimenopause and menopause.
-            </h1>
-            <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
-              Carra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                to="/get-started"
-                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm transition hover:opacity-90"
-              >
-                Get started
-              </Link>
-              <Link
-                to="/solutions"
-                className="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
-              >
-                See how it works
-              </Link>
-            </div>
-            <div className="mt-10 grid max-w-xl grid-cols-3 items-center gap-6 opacity-80">
-              <div className="text-center">
-                <div className="text-3xl font-semibold">94%</div>
-                <div className="text-xs text-muted-foreground">report improved clarity</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-semibold">2x</div>
-                <div className="text-xs text-muted-foreground">faster care pathways</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-semibold">24/7</div>
-                <div className="text-xs text-muted-foreground">AI support</div>
-              </div>
-            </div>
-          </div>
-          <div className="relative">
-            <div className="absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-br from-primary/10 to-accent/40 blur-2xl" />
-            <div className="mx-auto max-w-md rounded-3xl border border-border bg-card p-4 shadow-2xl sm:max-w-lg">
-              <div className="rounded-2xl bg-gradient-to-br from-white to-secondary/40 p-6 dark:from-card dark:to-muted/30">
-                <div className="grid gap-4">
-                  <Card title="Daily check-in">
-                    <div className="flex items-start gap-3">
-                      <Avatar color="bg-fuchsia-500" />
-                      <p className="text-sm">How are you feeling today? Any hot flashes, sleep changes, or mood shifts I should note?</p>
-                    </div>
-                  </Card>
-                  <Card title="Insights">
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center gap-2"><Dot /> Pattern suggests late-afternoon triggers</li>
-                      <li className="flex items-center gap-2"><Dot /> Consider magnesium glycinate 200–400mg</li>
-                      <li className="flex items-center gap-2"><Dot /> Schedule consult for HRT discussion</li>
-                    </ul>
-                  </Card>
-                  <Card title="Today’s plan">
-                    <div className="flex flex-wrap gap-2">
-                      <Tag>Breathwork 5m</Tag>
-                      <Tag>Protein 20g lunch</Tag>
-                      <Tag>Bedtime routine</Tag>
-                    </div>
-                  </Card>
-                </div>
+        <div className="container h-full">
+          <div className="grid h-full items-center md:py-8">
+            <div className="max-w-3xl md:ml-auto md:text-right">
+              <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+                <span className="block uppercase">A New Era of</span>
+                <span className="block uppercase">Midlife Health</span>
+                <span className="mt-2 block uppercase text-foreground/90">Redefined with Clarity</span>
+                <span className="block uppercase text-foreground/90">and Care</span>
+              </h1>
+              <p className="mt-5 text-base text-muted-foreground sm:text-lg md:ml-auto md:max-w-xl">
+                Your menopause, your way. Carra adapts to your unique patterns with personalized insights and support.
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-end">
+                <Link
+                  to="/waitlist"
+                  className="inline-flex items-center justify-center rounded-md bg-destructive px-6 py-3 text-sm font-semibold text-destructive-foreground shadow-sm transition hover:opacity-90"
+                >
+                  Join the waitlist
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
+                >
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
