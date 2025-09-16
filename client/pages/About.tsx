@@ -61,7 +61,7 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
             <p className="mt-2 text-base sm:text-lg text-muted-foreground">Bold principles that guide every product decision.</p>
           </div>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-3xl bg-gradient-to-br from-[#4fb7b3] to-[#7cc9a2] p-6 text-white shadow-md ring-2 ring-white/30">
+            <div className="rounded-3xl bg-[#b9e3e2] p-6 text-white shadow-md ring-2 ring-white/30">
               <h3 className="text-xl font-extrabold">AI‑Native Insights</h3>
               <p className="mt-2 text-sm opacity-95">predictive, personalized, evidence‑based.</p>
             </div>
@@ -73,11 +73,11 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
               <h3 className="text-xl font-extrabold">Scientific Rigor</h3>
               <p className="mt-2 text-sm opacity-95">built with researchers and clinicians.</p>
             </div>
-            <div className="rounded-3xl bg-gradient-to-br from-[#7cc9a2] to-[#4fb7b3] p-6 text-[#1f2d3a] shadow-md ring-2 ring-white/30">
+            <div className="rounded-3xl bg-[#b9e3e2] p-6 text-white shadow-md ring-2 ring-white/30">
               <h3 className="text-xl font-extrabold">Clarity &amp; Action</h3>
               <p className="mt-2 text-sm opacity-90">from tracking to clear next steps.</p>
             </div>
-            <div className="rounded-3xl bg-gradient-to-br from-[#2c3e50] to-[#1f2d3a] p-6 text-white shadow-md ring-2 ring-white/30">
+            <div className="rounded-3xl bg-[#56d257] p-6 text-white shadow-md ring-2 ring-white/30">
               <h3 className="text-xl font-extrabold">Data Transparency</h3>
               <p className="mt-2 text-sm opacity-95">privacy‑first, user‑owned.</p>
             </div>
