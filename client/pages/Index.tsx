@@ -61,7 +61,7 @@ export default function Index() {
             </div>
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               <Feature icon={<IconSpark />} title="Symptom tracking" description="Simple, conversational check-ins turn daily experiences into meaningful insights. Clarra makes it effortless to spot triggers, trends, and patterns — no endless logging required" iconBg="bg-[#7cc9a2]" />
-              <Feature icon={<IconWand />} title="AI care plans" description="Evidence-based recommendations tailored to your goals." iconBg="bg-[hsl(25_97%_66%)]" />
+              <Feature icon={<IconWand />} title="AI care plans" description="Powered by AI and grounded in evidence, Clarra builds care pathways tailored to your goals. From sleep routines to bone health, your plan adapts as your needs evolve." iconBg="bg-[hsl(25_97%_66%)]" />
               <Feature icon={<IconChat />} title="Coaching & chat" description="Compassionate, always-on support with human oversight." iconBg="bg-[#4fb7b3]" />
               <Feature icon={<IconShield />} title="Clinical-grade" description="Privacy-first, secure, and aligned with best practices." iconBg="bg-[#1f2d3a]" />
             </div>
