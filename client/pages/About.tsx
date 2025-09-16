@@ -7,18 +7,32 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
       <section className="pt-4 pb-0 mb-0">
         <div className="container mb-4">
           <h2 className="font-display text-center leading-tight text-[#1f2d3a] text-3xl sm:text-5xl md:text-6xl font-extrabold">
-            The problem isn’t <span className="border-b-4 border-[#1f2d3a] pb-1">menopause</span>. The problem is a system that treats it as
-            <span className="relative inline-block px-2 align-baseline">
-              <span aria-hidden className="pointer-events-none absolute inset-[-6px] rounded-full border-4 border-[hsl(25_97%_66%)]"></span>
-              <span className="relative">invisible</span>
+            The problem isn’t
+            <span className="relative inline-block align-baseline ml-2">
+              <span className="relative z-10">menopause</span>
+              <span aria-hidden className="absolute left-0 right-0 -bottom-[0.18em] h-[0.12em] bg-[#1f2d3a]"></span>
+            </span>
+            . The problem is a system that treats it as
+            <span className="relative inline-block px-1 align-baseline">
+              <svg aria-hidden className="pointer-events-none absolute -inset-[0.25em] -z-10" viewBox="0 0 100 50" preserveAspectRatio="none">
+                <path d="M5,25 C20,5 80,5 95,25 C80,45 20,45 5,25 Z" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3" strokeLinecap="round"/>
+              </svg>
+              <span className="relative z-10">invisible</span>
             </span>
             .
           </h2>
           <p className="font-display mt-3 text-center leading-tight text-[#1f2d3a] text-2xl sm:text-3xl">
-            Clarra <span className="border-b-4 border-[#1f2d3a] pb-1">changes the story</span> — built around
-            <span className="relative inline-block px-2 align-baseline">
-              <span aria-hidden className="pointer-events-none absolute inset-[-6px] rounded-full border-4 border-[hsl(25_97%_66%)]"></span>
-              <span className="relative">you</span>
+            Clarra
+            <span className="relative inline-block align-baseline ml-2">
+              <span className="relative z-10">changes the story</span>
+              <span aria-hidden className="absolute left-0 right-0 -bottom-[0.18em] h-[0.12em] bg-[#1f2d3a]"></span>
+            </span>
+            — built around
+            <span className="relative inline-block px-1 align-baseline">
+              <svg aria-hidden className="pointer-events-none absolute -inset-[0.25em] -z-10" viewBox="0 0 100 50" preserveAspectRatio="none">
+                <path d="M5,25 C20,5 80,5 95,25 C80,45 20,45 5,25 Z" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3" strokeLinecap="round"/>
+              </svg>
+              <span className="relative z-10">you</span>
             </span>
             .
           </p>
