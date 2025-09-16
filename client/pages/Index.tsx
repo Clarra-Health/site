@@ -22,7 +22,7 @@ export default function Index() {
               to="/waitlist"
               className="inline-flex items-center justify-center rounded-md bg-[#b9e3e2] px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] shadow-sm transition hover:bg-[#b9e3e2]/90"
             >
-              Join the wait list
+              Join the waitlist
             </Link>
             <Link
               to="/how-it-works"
@@ -61,31 +61,14 @@ export default function Index() {
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="relative overflow-hidden py-20">
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-secondary/40 to-transparent" />
+      {/* How it works (image) */}
+      <section className="py-8">
         <div className="container">
-          <div className="grid items-center gap-10 md:grid-cols-2">
-            <div className="order-2 md:order-1">
-              <ol className="space-y-6">
-                <Step n={1} title="Check in daily" text="Quick reflections help Clarra learn what matters most to you." />
-                <Step n={2} title="Get tailored insights" text="Understand patterns and get recommendations that fit your life." />
-                <Step n={3} title="Access specialists" text="When needed, connect with clinicians who understand midlife care." />
-              </ol>
-            </div>
-            <div className="order-1 md:order-2">
-              <div className="relative mx-auto max-w-md rounded-3xl border border-border bg-card p-4 shadow-xl">
-                <div className="rounded-2xl bg-gradient-to-b from-card to-muted/30 p-6">
-                  <div className="grid gap-3">
-                    <Row label="Hot flashes" value="3 today" />
-                    <Row label="Sleep quality" value="6/10" />
-                    <Row label="Mood" value="Steady" />
-                    <Row label="Energy" value="7/10" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa2a0a8b647f74cc78187125b6302a29b?format=webp&width=1600"
+            alt="How it works overview"
+            className="w-full h-auto rounded-3xl border border-border shadow-sm"
+          />
         </div>
       </section>
 

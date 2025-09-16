@@ -45,14 +45,6 @@ export default function SiteFooter() {
               <li><Link to="/contact" className="hover:text-primary-foreground">Contact</Link></li>
             </ul>
           </div>
-          <div>
-            <p className="text-sm font-medium">Legal</p>
-            <ul className="mt-3 space-y-2 text-sm text-primary-foreground/80">
-              <li><Link to="/terms" className="hover:text-primary-foreground">Terms</Link></li>
-              <li><Link to="/privacy" className="hover:text-primary-foreground">Privacy</Link></li>
-              <li><Link to="/how-we-protect-your-data" className="hover:text-primary-foreground">Data Privacy</Link></li>
-            </ul>
-          </div>
         </div>
         <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-primary/40 pt-6 md:flex-row md:items-center">
           <p className="text-xs text-primary-foreground/80">© {new Date().getFullYear()} Carra Health, Inc. All rights reserved.</p>

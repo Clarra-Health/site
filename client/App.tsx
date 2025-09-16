@@ -33,8 +33,6 @@ const App = () => (
             <Route path="security" element={<Placeholder />} />
             <Route path="how-we-protect-your-data" element={<DataPrivacy />} />
             <Route path="accessibility" element={<Placeholder />} />
-            <Route path="terms" element={<Placeholder />} />
-            <Route path="privacy" element={<Placeholder />} />
             <Route path="get-started" element={<Placeholder />} />
             <Route path="waitlist" element={<Placeholder />} />
             <Route path="how-it-works" element={<Solutions />} />
