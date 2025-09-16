@@ -25,7 +25,7 @@ export default function SiteHeader() {
               key={item.to}
               to={item.to}
               className={({ isActive }) =>
-                `transition-colors hover:text-foreground ${isActive ? "text-foreground" : "text-muted-foreground"}`
+                `transition-colors hover:text-primary ${isActive ? "text-primary" : "text-muted-foreground"}`
               }
             >
               {item.label}
@@ -59,7 +59,7 @@ export default function SiteHeader() {
                 to={item.to}
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
-                  `block rounded-md px-3 py-2 text-sm transition-colors ${isActive ? "bg-accent text-accent-foreground" : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"}`
+                  `block rounded-md px-3 py-2 text-sm transition-colors ${isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-primary hover:text-primary-foreground"}`
                 }
               >
                 {item.label}
