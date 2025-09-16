@@ -65,9 +65,13 @@ export default function Index() {
               <Feature icon={<IconChat />} title="Coaching & chat" description="Compassionate, always-on support — blending AI intelligence with human oversight. Clarra’s chat keeps you connected, guided, and never left alone on the journey." iconBg="bg-[#4fb7b3]" />
               <Feature icon={<IconShield />} title="Clinical-grade" description="Privacy-first and secure by design. Clarra follows best practices in health data protection, ensuring your information is safe, transparent, and always under your control." iconBg="bg-[#1f2d3a]" />
             </div>
-            <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-              <Link to="/waitlist" className="inline-flex items-center justify-center rounded-full bg-[hsl(25_97%_66%)] px-8 py-3 text-base font-semibold text-white shadow-sm transition hover:opacity-90">Join The Waitlist</Link>
-              <Link to="/how-it-works" className="inline-flex items-center justify-center rounded-full bg-[#4fb7b3] px-8 py-3 text-base font-semibold text-white shadow-sm transition hover:opacity-90">How Clarra Works</Link>
+            <div className="mt-10 flex items-center justify-center">
+              <Link
+                to="/how-it-works"
+                className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-12 py-6 text-2xl font-semibold text-white shadow-sm transition hover:opacity-90"
+              >
+                Learn More
+              </Link>
             </div>
           </div>
         </div>
