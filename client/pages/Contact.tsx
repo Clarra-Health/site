@@ -35,7 +35,7 @@ export default function Contact() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="flex items-center justify-center gap-3">
               <h1 className="font-display text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Contact us.</h1>
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7cd6f27029df4136ab5083285580c15b" alt="Clarra logo" className="h-12 w-auto" />
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F170b844262144b8e847aa3e84070e87a?format=webp&width=160" alt="Clarra logo" className="h-12 w-auto" />
             </div>
             <p className="mt-4 text-lg sm:text-xl text-muted-foreground">
               Investor, innovator, media, influencer — or simply excited to join Clarra? Reach out. We’re here for every conversation, big or small.
