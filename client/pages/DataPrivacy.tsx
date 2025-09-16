@@ -44,7 +44,6 @@ export default function DataPrivacy() {
 
           <section className="mt-12 overflow-hidden rounded-3xl border border-border bg-[hsl(25_97%_66%)] p-8 text-white shadow-sm">
             <div className="mx-auto max-w-4xl text-center">
-              <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold">Data for Good</h2>
               <div className="mx-auto my-6 h-px w-24 bg-white/60" />
 
               <h3 className="font-display text-2xl sm:text-3xl font-extrabold">Closing the Gender Health Gap</h3>
