@@ -34,7 +34,7 @@ export default function Contact() {
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-display text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Contact us.</h1>
-            <p className="mt-3 text-muted-foreground">
+            <p className="mt-4 text-lg sm:text-xl text-muted-foreground">
               Investor, innovator, media, influencer — or simply excited to join Clarra? Reach out. We’re here for every conversation, big or small.
             </p>
           </div>
