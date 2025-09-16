@@ -55,7 +55,7 @@ export default function Index() {
         <div className="container">
           <div className="rounded-3xl border border-border bg-secondary/60 p-8 sm:p-10 shadow-sm">
             <div className="mx-auto text-center">
-              <h2 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">BUILT FOR MIDLIFE</h2>
+              <h2 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Support at Every Stage</h2>
               <p className="mt-3 text-base sm:text-lg text-foreground/80">From your first signs of perimenopause to postmenopausal bone health, Clarra adapts to your needs with continuous, personalized support —</p>
               <p className="text-base sm:text-lg text-foreground/90">every stage, every step.</p>
             </div>
