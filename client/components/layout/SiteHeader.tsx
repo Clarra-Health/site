@@ -6,6 +6,7 @@ const nav = [
   { to: "/about", label: "About" },
   { to: "/how-it-works", label: "How it works" },
   { to: "/contact", label: "Contact" },
+  { to: "/how-we-protect-your-data", label: "Data Privacy" },
 ];
 
 export default function SiteHeader() {
