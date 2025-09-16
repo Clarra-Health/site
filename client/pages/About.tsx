@@ -10,12 +10,12 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
             The problem isn’t
             <span className="relative inline-block align-baseline ml-2">
               <span className="relative z-10">menopause</span>
-              <span aria-hidden className="absolute left-0 right-0 -bottom-[0.18em] h-[0.12em] bg-[#1f2d3a]"></span>
+              <span aria-hidden className="absolute left-0 right-0 -bottom-[0.1em] h-[0.08em] bg-[#1f2d3a]"></span>
             </span>
             . The problem is a system that treats it as
             <span className="relative inline-block px-1 align-baseline">
-              <svg aria-hidden className="pointer-events-none absolute -inset-[0.25em] -z-10" viewBox="0 0 100 50" preserveAspectRatio="none">
-                <path d="M5,25 C20,5 80,5 95,25 C80,45 20,45 5,25 Z" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3" strokeLinecap="round"/>
+              <svg aria-hidden className="pointer-events-none absolute -inset-[0.15em] -z-10" viewBox="0 0 100 50" preserveAspectRatio="none">
+                <path d="M5,25 C20,5 80,5 95,25 C80,45 20,45 5,25 Z" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="2" strokeLinecap="round"/>
               </svg>
               <span className="relative z-10">invisible</span>
             </span>
@@ -25,12 +25,12 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
             Clarra
             <span className="relative inline-block align-baseline ml-2">
               <span className="relative z-10">changes the story</span>
-              <span aria-hidden className="absolute left-0 right-0 -bottom-[0.18em] h-[0.12em] bg-[#1f2d3a]"></span>
+              <span aria-hidden className="absolute left-0 right-0 -bottom-[0.1em] h-[0.08em] bg-[#1f2d3a]"></span>
             </span>
             — built around
             <span className="relative inline-block px-1 align-baseline">
-              <svg aria-hidden className="pointer-events-none absolute -inset-[0.25em] -z-10" viewBox="0 0 100 50" preserveAspectRatio="none">
-                <path d="M5,25 C20,5 80,5 95,25 C80,45 20,45 5,25 Z" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3" strokeLinecap="round"/>
+              <svg aria-hidden className="pointer-events-none absolute -inset-[0.15em] -z-10" viewBox="0 0 100 50" preserveAspectRatio="none">
+                <path d="M5,25 C20,5 80,5 95,25 C80,45 20,45 5,25 Z" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="2" strokeLinecap="round"/>
               </svg>
               <span className="relative z-10">you</span>
             </span>
@@ -47,10 +47,16 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
       {/* Manifesto image full-bleed under hero */}
       <section className="py-0">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4f198657d8744680a420e73f8ccfa43e?format=webp&width=1600"
-          alt="The problem isn’t menopause... Clarra changes the story"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7c845c6292c349ad98a4409c64fd78a3?format=webp&width=1600"
+          alt="We're putting menopause at the centre of women's health — where it always belonged."
           className="block h-auto w-full"
         />
+        <div className="container py-6">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="pointer-events-none cursor-default inline-flex items-center rounded-full bg-[hsl(25_97%_66%)] px-4 py-2 text-sm font-semibold text-white">Our Vision</span>
+            <span className="pointer-events-none cursor-default inline-flex items-center rounded-full bg-[#1f2d3a] px-4 py-2 text-sm font-semibold text-white">Our Mission</span>
+          </div>
+        </div>
       </section>
 
       <section className="py-10">
