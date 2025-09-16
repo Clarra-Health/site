@@ -25,7 +25,7 @@ export default function SiteFooter() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-3">
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1f066c9308e94551a866d68b560c5311?format=webp&width=160" alt="Clarra" className="h-10 w-auto bg-transparent" />
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1f066c9308e94551a866d68b560c5311?format=webp&width=280" alt="Clarra" className="h-[4.375rem] w-auto bg-transparent" />
             </div>
             <p className="mt-4 max-w-xs text-sm text-primary-foreground/80">
               AI-native digital health for midlife care: personalized support for perimenopause and menopause by Clarra.
