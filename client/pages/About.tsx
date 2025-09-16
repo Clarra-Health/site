@@ -53,13 +53,6 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
         />
       </section>
 
-      <section className="py-10">
-        <div className="container">
-          <div className="mx-auto max-w-4xl text-left text-sm text-muted-foreground">
-            <p>Clarra is an AI‑native digital health company focused on perimenopause and menopause. We partner with clinicians, researchers, and employers to deliver equitable, science‑informed care.</p>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
