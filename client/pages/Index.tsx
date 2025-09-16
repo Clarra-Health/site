@@ -15,7 +15,7 @@ export default function Index() {
       </section>
 
       {/* Hero CTAs below image */}
-      <section className="py-8">
+      <section className="py-8 bg-[#4fb7b3]">
         <div className="container">
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
