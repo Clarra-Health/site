@@ -16,8 +16,8 @@ export default function Solutions() {
 
       <section className="py-0">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7cb14dfadac447cca048ebcec463813c?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7cb14dfadac447cca048ebcec463813c?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7cb14dfadac447cca048ebcec463813c?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7cb14dfadac447cca048ebcec463813c?format=webp&width=2400 2400w"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F399faf7c5e414605af86de871dbb12af?format=webp&width=2000"
+          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F399faf7c5e414605af86de871dbb12af?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F399faf7c5e414605af86de871dbb12af?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F399faf7c5e414605af86de871dbb12af?format=webp&width=2400 2400w"
           sizes="100vw"
           alt="Transforming data into care"
           className="block w-full h-auto"
