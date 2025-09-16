@@ -139,7 +139,7 @@ function FeatureGrid({ title, subtitle, features }: { title: string; subtitle?: 
     <section className="py-12">
       <div className="container">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="font-display text-5xl sm:text-6xl uppercase tracking-tight text-[#1f2d3a]">{title}</h2>
+          <h2 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">{title}</h2>
           {subtitle && (
             <p className="mt-3 text-base sm:text-lg text-muted-foreground">{subtitle}</p>
           )}
