@@ -14,6 +14,25 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Primary CTAs */}
+      <section className="py-8">
+        <div className="container">
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link
+              to="/waitlist"
+              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm transition hover:opacity-90"
+            >
+              Join the wait list
+            </Link>
+            <Link
+              to="/how-it-works"
+              className="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
+            >
+              See how it works
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Features */}
       <section className="relative py-20">
