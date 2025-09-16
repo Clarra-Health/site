@@ -16,7 +16,7 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
       {/* Manifesto image full-bleed under hero */}
       <section className="py-0">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4f198657d8744680a420e73f8ccfa43e?format=webp&width=1600"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F652d7e2f96da4d14b4ac56187a3eb8a2?format=webp&width=800"
           alt="The problem isn’t menopause... Clarra changes the story"
           className="block h-auto w-full"
         />
