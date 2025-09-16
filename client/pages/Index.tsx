@@ -20,7 +20,7 @@ export default function Index() {
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               to="/waitlist"
-              className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-12 py-6 text-2xl font-semibold text-white shadow-sm transition hover:opacity-90"
+              className="inline-flex items-center justify-center rounded-md bg-[#b9e3e2] px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] shadow-sm transition hover:bg-[#b9e3e2]/90"
             >
               Join the wait list
             </Link>
