@@ -4,16 +4,44 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="py-0">
+      <section className="relative isolate overflow-hidden pt-16 md:pt-20">
+        {/* Background pattern */}
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F48103155ed0147c388c127b9115b052c?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F48103155ed0147c388c127b9115b052c?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F48103155ed0147c388c127b9115b052c?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F48103155ed0147c388c127b9115b052c?format=webp&width=2400 2400w"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=2000"
+          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=2400 2400w"
           sizes="100vw"
-          alt="Compassionate, personalized care — perimenopause, menopause, midlife. Clarra hero."
-          className="block w-full h-auto"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
           loading="eager"
           decoding="async"
         />
+        <div className="container">
+          <div className="grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-2 items-end sm:items-center gap-6">
+            {/* Person image */}
+            <div className="order-2 sm:order-1 flex justify-center sm:justify-start">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F0e930140a36948cfbee7da299f5e8c21?format=webp&width=1400"
+                sizes="(max-width: 640px) 70vw, 35vw"
+                alt="Woman representing Clarra audience"
+                className="h-auto w-[70%] sm:w-[80%] lg:w-[65%] max-w-[560px] object-contain"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+            {/* Text overlay */}
+            <div className="order-1 sm:order-2 flex justify-center sm:justify-end">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F19136c3469a8492e9f208cad8ca264f1?format=webp&width=1400"
+                sizes="(max-width: 640px) 90vw, 50vw"
+                alt="Compassionate, personalized care — perimenopause, menopause, midlife."
+                className="h-auto w-[90%] sm:w-full max-w-[720px] object-contain"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Hero CTAs below image */}
