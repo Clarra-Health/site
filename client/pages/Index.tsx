@@ -8,39 +8,9 @@ export default function Index() {
         <div className="absolute inset-0 -z-10">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F04be675fc0344387a5284e7d510f8a73?format=webp&width=1600"
-            alt="Smiling woman with teal background representing compassionate midlife care"
+            alt="Smiling woman with teal background"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-background/10" />
-        </div>
-        <div className="container h-full">
-          <div className="grid h-full items-center md:py-8">
-            <div className="max-w-3xl md:ml-auto md:text-right">
-              <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-                <span className="block uppercase">A New Era of</span>
-                <span className="block uppercase">Midlife Health</span>
-                <span className="mt-2 block uppercase text-foreground/90">Redefined with Clarity</span>
-                <span className="block uppercase text-foreground/90">and Care</span>
-              </h1>
-              <p className="mt-5 text-base text-muted-foreground sm:text-lg md:ml-auto md:max-w-xl">
-                Your menopause, your way. Carra adapts to your unique patterns with personalized insights and support.
-              </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-end">
-                <Link
-                  to="/waitlist"
-                  className="inline-flex items-center justify-center rounded-md bg-destructive px-6 py-3 text-sm font-semibold text-destructive-foreground shadow-sm transition hover:opacity-90"
-                >
-                  Join the waitlist
-                </Link>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
-                >
-                  Contact us
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
