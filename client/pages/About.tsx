@@ -71,7 +71,7 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
             </div>
             <div className="rounded-3xl bg-gradient-to-br from-[#1f2d3a] to-[#2c3e50] p-6 text-white shadow-md ring-2 ring-white/30">
               <h3 className="text-xl font-extrabold">Scientific Rigor</h3>
-              <p className="mt-2 text-sm opacity-95">built with researchers and clinicians.</p>
+              <p className="mt-2 text-sm opacity-95">Guided by leading science and clinical expertise.</p>
             </div>
             <div className="rounded-3xl bg-[#b9e3e2] p-6 text-white shadow-md ring-2 ring-white/30">
               <h3 className="text-xl font-extrabold">Clarity &amp; Action</h3>
