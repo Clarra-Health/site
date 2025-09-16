@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate mt-16 min-h-[calc(100vh-4rem)] overflow-hidden md:mt-16">
+      <section className="relative isolate min-h-[calc(100vh-4rem)] overflow-hidden pt-16 md:pt-20">
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F5ebd666e8a024475849d469c19f77183?format=webp&width=1600"
           alt="Clarra hero"
