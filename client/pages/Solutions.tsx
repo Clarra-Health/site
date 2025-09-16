@@ -51,7 +51,7 @@ function EmUnderline({ children }: { children: React.ReactNode }) {
     <span className="relative inline-block px-0.5">
       <span className="relative z-10">{children}</span>
       <svg aria-hidden className="pointer-events-none absolute left-[-2%] right-[-2%] bottom-[-0.25em] h-[0.7em] w-[104%]" viewBox="0 0 100 20" preserveAspectRatio="none">
-        <path d="M2 15 Q 25 12 50 14 T 98 15" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M2 15 Q 25 12 50 14 T 98 15" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3.15" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     </span>
   );
@@ -62,7 +62,7 @@ function EmCircle({ children }: { children: React.ReactNode }) {
     <span className="relative inline-block px-1">
       <span className="relative z-10">{children}</span>
       <svg aria-hidden className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]" viewBox="0 0 100 60" preserveAspectRatio="none">
-        <ellipse cx="50" cy="30" rx="47" ry="26" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="4.5" />
+        <ellipse cx="50" cy="30" rx="47" ry="26" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3.15" />
       </svg>
     </span>
   );
@@ -138,7 +138,7 @@ function Timeline() {
   const items = [
     { year: "Year 1", text: "Launch chatbot, tracking, predictive insights, community. Premium tier live." },
     { year: "Years 2–3", text: "Hormone flow tracking, telehealth, wellness modules, research pilots." },
-    { year: "Years 3–5", text: "Fertility expansion, wearables, EU/Asia rollout." },
+    { year: "Years 3��5", text: "Fertility expansion, wearables, EU/Asia rollout." },
     { year: "Year 5+", text: "Post‑menopausal wellness, insurer and employer integrations, global scale." },
   ];
   return (
