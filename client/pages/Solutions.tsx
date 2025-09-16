@@ -77,6 +77,19 @@ export default function Solutions() {
         ]}
       />
 
+      <section className="py-8">
+        <div className="container">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F3820b53463f048ec82235f78a6e6dcf8?format=webp&width=2000"
+            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F3820b53463f048ec82235f78a6e6dcf8?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F3820b53463f048ec82235f78a6e6dcf8?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F3820b53463f048ec82235f78a6e6dcf8?format=webp&width=2400 2400w"
+            sizes="100vw"
+            alt="Clarra chat illustration"
+            className="block w-full h-auto rounded-3xl border border-border shadow-sm"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
 
     </>
   );
