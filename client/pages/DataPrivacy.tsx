@@ -5,11 +5,11 @@ export default function DataPrivacy() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-secondary/40 to-transparent" />
         <div className="container">
           <div className="mx-auto max-w-4xl text-center">
-            <span className="inline-flex items-center rounded-full bg-accent px-4 py-1 text-xs font-medium text-accent-foreground">Data Privacy</span>
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F5863347009694d46ab6ddbdebaeaf4c2?format=webp&width=200" alt="Clarra" className="mx-auto h-14 w-auto" />
             <h1 className="font-display mt-3 text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">
               How We Protect Your Data
             </h1>
-            <p className="mt-3 text-base text-muted-foreground">
+            <p className="mt-4 text-lg sm:text-xl md:text-2xl font-semibold text-[#1f2d3a]">
               Your trust is non‑negotiable. Here’s how we keep your information safe and in your control.
             </p>
           </div>
@@ -36,13 +36,14 @@ export default function DataPrivacy() {
               </p>
             </article>
 
-            <article className="rounded-3xl border border-border bg-accent p-6 sm:p-8 text-accent-foreground shadow-sm">
-              <h2 className="font-display text-3xl sm:text-4xl font-extrabold">Data for Good</h2>
-              <p className="mt-3 text-[15px] leading-7">
-                Individually, your data is yours. Together, anonymized and aggregated, our data is power — a resource that can transform menopause research, close the gender health gap, and improve outcomes for millions of women worldwide. By joining Clarra, you are part of a collective movement to make midlife health visible, valued, and finally understood.
-              </p>
-            </article>
           </div>
+
+          <section className="mt-12 overflow-hidden rounded-3xl border border-border bg-accent p-8 text-accent-foreground shadow-sm">
+            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold">Data for Good</h2>
+            <p className="mt-4 max-w-4xl text-lg sm:text-xl font-semibold">
+              Individually, your data is yours. Together, anonymized and aggregated, our data is power — a resource that can transform menopause research, close the gender health gap, and improve outcomes for millions of women worldwide. By joining Clarra, you are part of a collective movement to make midlife health visible, valued, and finally understood.
+            </p>
+          </section>
         </div>
       </section>
     </>
