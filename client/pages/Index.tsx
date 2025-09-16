@@ -72,6 +72,16 @@ export default function Index() {
         </div>
       </section>
 
+      {/* How it works (image) */}
+      <section className="py-8">
+        <div className="container">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa2a0a8b647f74cc78187125b6302a29b?format=webp&width=1600"
+            alt="How it works overview"
+            className="w-full h-auto rounded-3xl border border-border shadow-sm"
+          />
+        </div>
+      </section>
 
 
     </>
