@@ -32,6 +32,7 @@ export default function SiteFooter() {
             <ul className="mt-3 space-y-2 text-sm text-primary-foreground/80">
               <li><Link to="/terms" className="hover:text-primary-foreground">Terms</Link></li>
               <li><Link to="/privacy" className="hover:text-primary-foreground">Privacy</Link></li>
+              <li><Link to="/how-we-protect-your-data" className="hover:text-primary-foreground">Data Privacy</Link></li>
             </ul>
           </div>
         </div>
