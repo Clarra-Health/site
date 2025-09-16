@@ -26,7 +26,7 @@ export default function Index() {
             </Link>
             <Link
               to="/how-it-works"
-              className="inline-flex items-center justify-center rounded-md bg-secondary px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] hover:bg-secondary/90"
+              className="inline-flex items-center justify-center rounded-md bg-[#b9e3e2] px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] shadow-sm transition hover:bg-[#b9e3e2]/90"
             >
               How it works
             </Link>
