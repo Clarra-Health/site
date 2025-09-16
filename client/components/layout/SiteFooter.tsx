@@ -17,7 +17,7 @@ export default function SiteFooter() {
           <div>
             <p className="text-sm font-medium">Product</p>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              <li><Link to="/solutions" className="hover:text-foreground">Solutions</Link></li>
+              <li><Link to="/how-it-works" className="hover:text-foreground">How it works</Link></li>
               <li><Link to="/pricing" className="hover:text-foreground">Pricing</Link></li>
             </ul>
           </div>
