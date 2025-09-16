@@ -4,7 +4,7 @@ export default function About() {
 WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS BELONGED.`;
   return (
     <>
-      <section className="py-20 mb-[-3px] md:mb-0">
+      <section className="pt-20 pb-0 mb-0">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">About</span>
