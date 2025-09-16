@@ -17,28 +17,31 @@ export default function Index() {
           decoding="async"
         />
         <div className="container">
-          <div className="grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-2 items-end sm:items-center gap-6">
+          <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-end sm:items-center gap-4 sm:gap-8">
             {/* Person */}
-            <div className="order-2 sm:order-1 flex justify-center sm:justify-start">
+            <div className="order-2 sm:order-1 sm:col-span-5 flex justify-center sm:justify-start sm:self-end">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ff4c7c80bf93b43a3960e582065c74d35?format=webp&width=1400"
                 sizes="(max-width: 640px) 70vw, 35vw"
                 alt="Woman representing Clarra audience"
-                className="h-auto w-[70%] sm:w-[80%] lg:w-[65%] max-w-[560px] object-contain mix-blend-multiply"
+                className="h-auto w-[72%] sm:w-full max-w-[520px] object-contain mix-blend-multiply drop-shadow"
                 loading="eager"
                 decoding="async"
               />
             </div>
             {/* Headline artwork */}
-            <div className="order-1 sm:order-2 flex justify-center sm:justify-end">
+            <div className="order-1 sm:order-2 sm:col-span-7 flex flex-col items-center sm:items-end justify-center sm:justify-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F5670c69cce9440ce851b09533f348d09?format=webp&width=1400"
                 sizes="(max-width: 640px) 90vw, 50vw"
                 alt="Compassionate, personalized care — perimenopause, menopause, midlife."
-                className="h-auto w-[90%] sm:w-full max-w-[720px] object-contain mix-blend-multiply"
+                className="h-auto w-[92%] sm:w-full max-w-[720px] object-contain mix-blend-multiply"
                 loading="eager"
                 decoding="async"
               />
+              <p className="mt-4 hidden sm:block max-w-[620px] text-base font-semibold text-[hsl(210_29%_24%)]/95">
+                Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
+              </p>
             </div>
           </div>
         </div>
