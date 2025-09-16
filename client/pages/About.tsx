@@ -10,7 +10,7 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
             The problem isn’t
             <span className="relative inline-block align-baseline ml-2">
               <span className="relative z-10">menopause</span>
-              <span aria-hidden className="absolute left-0 right-0 -bottom-[0.1em] h-[0.08em] bg-[#1f2d3a]"></span>
+              <span aria-hidden className="absolute left-0 right-0 -bottom-[0.05em] h-[0.06em] bg-[hsl(25_97%_66%)]"></span>
             </span>
             . The problem is a system that treats it as
             <span className="relative inline-block px-1 align-baseline">
