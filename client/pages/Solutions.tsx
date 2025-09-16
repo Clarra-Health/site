@@ -11,7 +11,7 @@ export default function Solutions() {
           <div className="mx-auto max-w-5xl text-center">
             <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Transforming Data into Care</h1>
             <p className="mt-4 mx-auto max-w-3xl text-xl sm:text-[1.4rem] leading-relaxed font-medium text-muted-foreground">
-              Clarra is an AI-native health platform built for women in midlife. Instead of endless logs and health apps that track but don’t help, you simply chat with Clarra — <strong className="font-semibold">your midlife health partner</strong>. Behind the scenes, Clarra connects your symptoms, hormones, and wearable data to reveal patterns and deliver what matters most: <strong className="font-semibold">personalized pathways</strong>, <strong className="font-semibold">predictive insights</strong>, and <strong className="font-semibold">clear next steps</strong>.
+              Clarra is an <EmUnderline>AI-native</EmUnderline> health platform built for women in midlife. Instead of endless logs and health apps that track but don’t help, you simply chat with Clarra — <EmCircle><strong className="font-semibold">your midlife health partner.</strong></EmCircle> Behind the scenes, Clarra connects your symptoms, hormones, and wearable data to reveal patterns and deliver what matters most: <EmUnderline><strong className="font-semibold">personalized pathways</strong></EmUnderline>, <EmUnderline><strong className="font-semibold">predictive insights</strong></EmUnderline>, and <EmUnderline><strong className="font-semibold">clear next steps</strong></EmUnderline>.
             </p>
           </div>
         </div>
@@ -43,6 +43,28 @@ export default function Solutions() {
         ]}
       />
     </>
+  );
+}
+
+function EmUnderline({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="relative inline-block px-0.5">
+      <span className="relative z-10">{children}</span>
+      <svg aria-hidden className="pointer-events-none absolute left-[-2%] right-[-2%] bottom-[-0.25em] h-[0.7em] w-[104%]" viewBox="0 0 100 20" preserveAspectRatio="none">
+        <path d="M2 15 Q 25 12 50 14 T 98 15" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </span>
+  );
+}
+
+function EmCircle({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="relative inline-block px-1">
+      <span className="relative z-10">{children}</span>
+      <svg aria-hidden className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]" viewBox="0 0 100 60" preserveAspectRatio="none">
+        <ellipse cx="50" cy="30" rx="47" ry="26" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="4.5" />
+      </svg>
+    </span>
   );
 }
 
