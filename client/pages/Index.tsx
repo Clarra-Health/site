@@ -16,25 +16,22 @@ export default function Index() {
         <div className="container h-full">
           <div className="grid h-full items-center md:py-10">
             <div className="max-w-3xl md:ml-auto md:text-right">
-              <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-                <span className="block uppercase">A new era of</span>
-                <span className="block uppercase">midlife health —</span>
-                <span className="mt-2 block uppercase text-foreground/95">redefined with clarity</span>
-                <span className="block uppercase text-foreground/95">and care</span>
+              <h1 className="text-[44px] font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+                <span className="block uppercase">A new era of midlife health — redefined with clarity and care</span>
               </h1>
-              <p className="mt-5 text-base text-foreground/90 sm:text-lg md:ml-auto md:max-w-xl">
+              <p className="mt-5 text-lg font-semibold text-foreground md:ml-auto md:max-w-xl">
                 Your menopause, your way. Clarra adapts to your unique patterns with personalized insights and support.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-end">
                 <Link
                   to="/waitlist"
-                  className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+                  className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:opacity-90"
                 >
                   Join the waitlist
                 </Link>
                 <Link
                   to="/how-it-works"
-                  className="inline-flex items-center justify-center rounded-md border border-[hsl(210_29%_24%)] bg-background/80 px-6 py-3 text-sm font-semibold text-[hsl(210_29%_24%)] backdrop-blur hover:bg-background"
+                  className="inline-flex items-center justify-center rounded-md border border-[hsl(210_29%_24%)] bg-background/80 px-6 py-3 text-base font-semibold text-[hsl(210_29%_24%)] backdrop-blur hover:bg-background"
                 >
                   How it works
                 </Link>
@@ -49,7 +46,7 @@ export default function Index() {
         <div className="container">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Built for every stage</h2>
-            <p className="mt-3 text-muted-foreground">From first symptoms to long-term care, Carra adapts to your needs with continuous, personalized support.</p>
+            <p className="mt-3 text-muted-foreground">From first symptoms to long-term care, Clarra adapts to your needs with continuous, personalized support.</p>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <Feature icon={<IconSpark />} title="Symptom tracking" description="Effortless daily check-ins help you connect triggers and trends." />
@@ -67,7 +64,7 @@ export default function Index() {
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="order-2 md:order-1">
               <ol className="space-y-6">
-                <Step n={1} title="Check in daily" text="Quick reflections help Carra learn what matters most to you." />
+                <Step n={1} title="Check in daily" text="Quick reflections help Clarra learn what matters most to you." />
                 <Step n={2} title="Get tailored insights" text="Understand patterns and get recommendations that fit your life." />
                 <Step n={3} title="Access specialists" text="When needed, connect with clinicians who understand midlife care." />
               </ol>
