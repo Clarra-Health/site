@@ -11,15 +11,15 @@ export default function Index() {
             alt="Clarra — supportive midlife health, smiling woman on teal background"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent" />
         </div>
         <div className="container h-full">
           <div className="grid h-full items-center md:py-10">
             <div className="max-w-3xl md:ml-auto md:text-right">
-              <h1 className="text-[44px] font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+              <h1 className="text-[44px] font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
                 <span className="block uppercase">A new era of midlife health — redefined with clarity and care</span>
               </h1>
-              <p className="mt-5 text-lg font-semibold text-foreground md:ml-auto md:max-w-xl">
+              <p className="mt-5 text-lg font-semibold text-white/90 md:ml-auto md:max-w-xl">
                 Your menopause, your way. Clarra adapts to your unique patterns with personalized insights and support.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-end">
