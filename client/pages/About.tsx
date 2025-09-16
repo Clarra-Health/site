@@ -8,7 +8,7 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">About</span>
-            <h1 className="mt-2 text-6xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-6xl">Built for Midlife</h1>
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F652d7e2f96da4d14b4ac56187a3eb8a2?format=webp&width=800" alt="Built for Midlife" className="mt-2 mx-auto h-auto w-full max-w-4xl" />
           </div>
         </div>
       </section>
@@ -16,7 +16,7 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
       {/* Manifesto image full-bleed under hero */}
       <section className="py-0">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F652d7e2f96da4d14b4ac56187a3eb8a2?format=webp&width=800"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4f198657d8744680a420e73f8ccfa43e?format=webp&width=1600"
           alt="The problem isn’t menopause... Clarra changes the story"
           className="block h-auto w-full"
         />
