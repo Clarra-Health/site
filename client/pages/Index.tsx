@@ -63,7 +63,7 @@ export default function Index() {
               <Feature icon={<IconSpark />} title="Symptom tracking" description="Simple, conversational check-ins turn daily experiences into meaningful insights. Clarra makes it effortless to spot triggers, trends, and patterns — no endless logging required" iconBg="bg-[#7cc9a2]" />
               <Feature icon={<IconWand />} title="AI care plans" description="Powered by AI and grounded in evidence, Clarra builds care pathways tailored to your goals. From sleep routines to bone health, your plan adapts as your needs evolve." iconBg="bg-[hsl(25_97%_66%)]" />
               <Feature icon={<IconChat />} title="Coaching & chat" description="Compassionate, always-on support — blending AI intelligence with human oversight. Clarra’s chat keeps you connected, guided, and never left alone on the journey." iconBg="bg-[#4fb7b3]" />
-              <Feature icon={<IconShield />} title="Clinical-grade" description="Privacy-first, secure, and aligned with best practices." iconBg="bg-[#1f2d3a]" />
+              <Feature icon={<IconShield />} title="Clinical-grade" description="Privacy-first and secure by design. Clarra follows best practices in health data protection, ensuring your information is safe, transparent, and always under your control." iconBg="bg-[#1f2d3a]" />
             </div>
             <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
               <Link to="/waitlist" className="inline-flex items-center justify-center rounded-full bg-[hsl(25_97%_66%)] px-8 py-3 text-base font-semibold text-white shadow-sm transition hover:opacity-90">Join The Waitlist</Link>
