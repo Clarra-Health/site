@@ -4,9 +4,9 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden pt-12 md:pt-14 pb-[1.7rem] sm:pb-[2.55rem]" style={{ backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F790f0b632d2648d2813199a7e89aae3b?format=webp&width=2000')", backgroundSize: "200%", backgroundPosition: "center 150%", backgroundRepeat: "no-repeat" }}>
+      <section className="relative isolate overflow-hidden pt-10 md:pt-12 pb-0" style={{ backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F790f0b632d2648d2813199a7e89aae3b?format=webp&width=2000')", backgroundSize: "200%", backgroundPosition: "center 150%", backgroundRepeat: "no-repeat" }}>
         <div className="container">
-          <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-start">
+          <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-12 items-start">
             <div className="sm:col-span-12 sm:col-start-1" >
               <h1 className="font-display text-[#1f2d3a] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-[0.95]">
                 AI-POWERED {""}
@@ -21,7 +21,7 @@ export default function Index() {
               <p className="mt-3 sm:mt-4 text-lg sm:text-xl font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra connects the dots between symptoms, insights, and support—so midlife health finally makes sense.
               </p>
-              <div className="mt-6 sm:mt-7 mb-[1.3rem] sm:mb-[1.7rem] flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 sm:mt-6 mb-0 flex flex-col gap-3 sm:flex-row">
                 <Link
                   to="/waitlist"
                   className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
