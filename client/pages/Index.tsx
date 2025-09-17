@@ -7,17 +7,17 @@ export default function Index() {
       <section className="relative isolate overflow-hidden pt-12 md:pt-14 pb-[1.7rem] sm:pb-[2.55rem]">
         <div className="container">
           <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-start">
-            <div className="hidden sm:flex sm:col-span-5 justify-start">
+            <div className="hidden sm:flex sm:col-span-6 justify-start">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=1200"
                 alt="Woman in teal shirt (transparent)"
-                className="h-auto w-[80%] max-w-[520px] object-contain"
+                className="h-auto w-full object-contain"
                 loading="eager"
                 decoding="async"
                 style={{ WebkitMaskImage: "radial-gradient(closest-side, rgba(255,255,255,1) 78%, rgba(255,255,255,0) 100%)", maskImage: "radial-gradient(closest-side, rgba(255,255,255,1) 78%, rgba(255,255,255,0) 100%)" }}
               />
             </div>
-            <div className="sm:col-span-7 sm:col-start-6">
+            <div className="sm:col-span-6 sm:col-start-7">
               <h1 className="font-display text-[#1f2d3a] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-[0.95]">
                 <span className="block">COMPASSIONATE,</span>
                 <span className="block">
