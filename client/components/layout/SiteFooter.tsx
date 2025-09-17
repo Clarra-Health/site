@@ -6,16 +6,16 @@ export default function SiteFooter() {
     <footer className="border-t border-transparent bg-primary text-primary-foreground">
       <div className="container py-10">
         {pathname !== "/contact" && (
-          <div className="mb-10 rounded-xl border border-white/10 bg-[#1f2d3a] p-8 text-white shadow-sm">
+          <div className="mb-10 rounded-xl border border-white/10 bg-[#b9e3e2] p-8 text-[#1f2d3a] shadow-sm">
             <div className="grid gap-6 md:grid-cols-2 md:items-center">
               <div>
-                <h3 className="font-display text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-white">Get in touch.</h3>
-                <p className="mt-3 text-sm sm:text-base text-white/90">
+                <h3 className="font-display text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Get in touch.</h3>
+                <p className="mt-3 text-sm sm:text-base text-[#1f2d3a]/90">
                   Investors, researchers, media, builders — let’s talk. We’re forming partnerships to bring Clarra to life. No question is too small.
                 </p>
               </div>
               <div className="flex md:justify-end">
-                <Link to="/contact" className="inline-flex items-center justify-center rounded-full bg-[#b9e3e2] px-12 py-6 text-2xl font-semibold text-[#1f2d3a] shadow-sm transition hover:bg-[#b9e3e2]/90">
+                <Link to="/contact" className="inline-flex items-center justify-center rounded-full bg-[#1f2d3a] px-12 py-6 text-2xl font-semibold text-white shadow-sm transition hover:bg-[#1f2d3a]/90">
                   Contact us
                 </Link>
               </div>
