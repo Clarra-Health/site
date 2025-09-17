@@ -30,7 +30,7 @@ export default function Contact() {
 
   return (
     <>
-      <section className="py-12">
+      <section className="relative py-12" style={{ backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Facf6f4e800394eeeb9f0d3c135a45409?format=webp&width=2000')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">
