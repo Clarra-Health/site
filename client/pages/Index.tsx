@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden pt-16 md:pt-20">
+      <section className="relative isolate overflow-hidden pt-12 md:pt-14">
         {/* Background pattern */}
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=2000"
@@ -17,7 +17,7 @@ export default function Index() {
           decoding="async"
         />
         <div className="container">
-          <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-center">
+          <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-start">
             <div className="sm:col-span-7 sm:col-start-6">
               <h1 className="font-display text-[#1f2d3a] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-[0.95]">
                 <span className="block">COMPASSIONATE,</span>
@@ -36,33 +36,28 @@ export default function Index() {
                 </span>
                 <span className="block">MENOPAUSE, MIDLIFE.</span>
               </h1>
-              <p className="mt-4 text-base sm:text-lg font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
+              <p className="mt-3 sm:mt-4 text-base sm:text-lg font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
               </p>
+              <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  to="/waitlist"
+                  className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
+                >
+                  Join The Waitlist
+                </Link>
+                <Link
+                  to="/how-it-works"
+                  className="inline-flex items-center justify-center rounded-md bg-white/95 px-6 py-3 text-base font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white"
+                >
+                  How Clarra Works
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Hero CTAs below image */}
-      <section className="py-8 bg-[#b9e3e2]">
-        <div className="container">
-          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link
-              to="/waitlist"
-              className="inline-flex items-center justify-center rounded-md bg-white px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
-            >
-              Join The Waitlist
-            </Link>
-            <Link
-              to="/how-it-works"
-              className="inline-flex items-center justify-center rounded-md bg-white px-12 py-6 text-2xl font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
-            >
-              How Clarra Works
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* App Showcase (full-bleed) */}
       <section className="py-0">
