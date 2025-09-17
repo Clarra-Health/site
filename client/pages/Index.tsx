@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden pt-12 md:pt-14">
+      <section className="relative isolate overflow-hidden pt-12 md:pt-14 pb-12 sm:pb-16">
         {/* Background pattern */}
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=2000"
@@ -24,8 +24,8 @@ export default function Index() {
                 <span className="block">
                   <span className="relative inline-block px-1 align-baseline">
                     <span className="relative z-10">PERSONALIZED</span>
-                    <svg aria-hidden className="pointer-events-none absolute left-0 right-0 bottom-[-0.08em] h-[0.72em] w-full" viewBox="0 0 100 40" preserveAspectRatio="none">
-                      <ellipse cx="50" cy="20" rx="44" ry="12" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5"/>
+                    <svg aria-hidden className="pointer-events-none absolute left-[-4%] right-[-4%] bottom-[-0.02em] h-[0.74em] w-[108%]" viewBox="0 0 100 40" preserveAspectRatio="none">
+                      <ellipse cx="50" cy="20" rx="49" ry="12" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5"/>
                     </svg>
                   </span>
                   <span className="ml-2">CARE</span>
@@ -39,7 +39,7 @@ export default function Index() {
               <p className="mt-3 sm:mt-4 text-lg sm:text-xl font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
               </p>
-              <div className="mt-6 sm:mt-7 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 sm:mt-7 mb-10 sm:mb-12 flex flex-col gap-3 sm:flex-row">
                 <Link
                   to="/waitlist"
                   className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
