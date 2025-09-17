@@ -39,7 +39,7 @@ export default function Contact() {
                 <path d="M2 15 Q 50 12 98 15" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="2.756" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </h1>
-            <p className="mt-4 text-2xl sm:text-3xl text-[#1f2d3a]">
+            <p className="mt-4 text-xl sm:text-2xl text-[#1f2d3a]">
               Investor, innovator, media, influencer — or simply excited to join Clarra? Reach out. We’re here for every conversation, big or small.
             </p>
           </div>
