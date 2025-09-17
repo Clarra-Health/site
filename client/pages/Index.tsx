@@ -18,6 +18,16 @@ export default function Index() {
         />
         <div className="container">
           <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-start">
+            <div className="hidden sm:flex sm:col-span-5 justify-start">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fcc6fcb5e7fbf4f9a9c176638d50cb9f9?format=webp&width=1200"
+                alt="Clarra audience woman"
+                className="h-auto w-[80%] max-w-[520px] object-contain"
+                loading="eager"
+                decoding="async"
+                style={{ WebkitMaskImage: "radial-gradient(closest-side, rgba(255,255,255,1) 78%, rgba(255,255,255,0) 100%)", maskImage: "radial-gradient(closest-side, rgba(255,255,255,1) 78%, rgba(255,255,255,0) 100%)" }}
+              />
+            </div>
             <div className="sm:col-span-7 sm:col-start-6">
               <h1 className="font-display text-[#1f2d3a] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-[0.95]">
                 <span className="block">COMPASSIONATE,</span>
