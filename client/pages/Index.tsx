@@ -5,23 +5,12 @@ export default function Index() {
     <>
       {/* Hero */}
       <section className="relative isolate overflow-hidden pt-12 md:pt-14 pb-[1.7rem] sm:pb-[2.55rem]">
-        {/* Background pattern */}
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=2400 2400w"
-          sizes="100vw"
-          alt="Clarra hero background"
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
-          loading="eager"
-          decoding="async"
-        />
         <div className="container">
           <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-start">
             <div className="hidden sm:flex sm:col-span-5 justify-start">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fcc6fcb5e7fbf4f9a9c176638d50cb9f9?format=webp&width=1200"
-                alt="Clarra audience woman"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=1200"
+                alt="Woman in teal shirt (transparent)"
                 className="h-auto w-[80%] max-w-[520px] object-contain"
                 loading="eager"
                 decoding="async"
@@ -68,62 +57,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Secondary section under hero */}
-      <section aria-label="Clarra secondary hero" className="py-10 sm:py-12">
-        <div className="container">
-          <div className="relative overflow-hidden rounded-3xl border border-border shadow-sm">
-            <picture>
-              <img
-                className="absolute inset-0 -z-10 h-full w-full object-cover"
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F77868292c94a446db17f31fc7c4a8f0f?format=webp&width=2000"
-                srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F77868292c94a446db17f31fc7c4a8f0f?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F77868292c94a446db17f31fc7c4a8f0f?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F77868292c94a446db17f31fc7c4a8f0f?format=webp&width=2400 2400w"
-                sizes="100vw"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-              />
-            </picture>
-
-            <div className="relative z-10 px-6 py-12 sm:px-10 sm:py-16">
-              <h2 className="font-display text-[#1f2d3a] text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight leading-[1.02]">
-                <span className="block">COMPASSIONATE,</span>
-                <span className="block">
-                  <span className="relative inline-block px-1 align-baseline">
-                    <span className="relative z-10">PERSONALIZED</span>
-                    <svg aria-hidden className="pointer-events-none absolute left-[-2%] right-[-2%] bottom-[-0.08em] h-[0.8em] w-[104%]" viewBox="0 0 100 40" preserveAspectRatio="none">
-                      <ellipse cx="50" cy="20" rx="45" ry="14" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5"/>
-                    </svg>
-                  </span>
-                  <span className="ml-2">CARE</span>
-                </span>
-                <span className="block">PERIMENOPAUSE, MIDLIFE.</span>
-              </h2>
-              <p className="mt-4 text-sm sm:text-base font-medium text-[hsl(210_29%_24%)]/95 max-w-2xl">
-                Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
-              </p>
-              <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                <Link to="/waitlist" className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90">
-                  Join The Waitlist
-                </Link>
-                <Link to="/how-it-works" className="inline-flex items-center justify-center rounded-md bg-white/95 px-6 py-3 text-base font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white">
-                  How Clarra Works
-                </Link>
-              </div>
-              <div className="hidden sm:block absolute inset-y-6 right-6">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F593076d3c3a8428697773cb1af51a4aa?format=webp&width=1000"
-                  alt="Clarra audience woman"
-                  className="h-full max-h-[420px] w-auto object-contain"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ WebkitMaskImage: "radial-gradient(closest-side, rgba(255,255,255,1) 78%, rgba(255,255,255,0) 100%)", maskImage: "radial-gradient(closest-side, rgba(255,255,255,1) 78%, rgba(255,255,255,0) 100%)" }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* App Showcase (full-bleed) */}
       <section className="py-0">
