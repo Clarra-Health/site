@@ -58,6 +58,52 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Secondary section under hero */}
+      <section aria-label="Clarra secondary hero" className="py-10 sm:py-12">
+        <div className="container">
+          <div className="relative overflow-hidden rounded-3xl border border-border shadow-sm">
+            <picture>
+              <img
+                className="absolute inset-0 -z-10 h-full w-full object-cover"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=2000"
+                srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=2400 2400w"
+                sizes="100vw"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+
+            <div className="relative z-10 px-6 py-12 sm:px-10 sm:py-16">
+              <h2 className="font-display text-[#1f2d3a] text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight leading-[1.02]">
+                <span className="block">COMPASSIONATE,</span>
+                <span className="block">
+                  <span className="relative inline-block px-1 align-baseline">
+                    <span className="relative z-10">PERSONALIZED</span>
+                    <svg aria-hidden className="pointer-events-none absolute left-[-2%] right-[-2%] bottom-[-0.08em] h-[0.8em] w-[104%]" viewBox="0 0 100 40" preserveAspectRatio="none">
+                      <ellipse cx="50" cy="20" rx="45" ry="14" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5"/>
+                    </svg>
+                  </span>
+                  <span className="ml-2">CARE</span>
+                </span>
+                <span className="block">PERIMENOPAUSE, MIDLIFE.</span>
+              </h2>
+              <p className="mt-4 text-sm sm:text-base font-medium text-[hsl(210_29%_24%)]/95 max-w-2xl">
+                Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
+              </p>
+              <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                <Link to="/waitlist" className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90">
+                  Join The Waitlist
+                </Link>
+                <Link to="/how-it-works" className="inline-flex items-center justify-center rounded-md bg-white/95 px-6 py-3 text-base font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white">
+                  How Clarra Works
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* App Showcase (full-bleed) */}
       <section className="py-0">
