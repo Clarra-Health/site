@@ -79,8 +79,8 @@ export default function Solutions() {
 
       <section className="py-0">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ff808474f72fe4bb9a1fe77d773f9d14b?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ff808474f72fe4bb9a1fe77d773f9d14b?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ff808474f72fe4bb9a1fe77d773f9d14b?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ff808474f72fe4bb9a1fe77d773f9d14b?format=webp&width=2400 2400w"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc331af4f16ed4c3a8aed5762a8bc8b33?format=webp&width=2000"
+          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc331af4f16ed4c3a8aed5762a8bc8b33?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc331af4f16ed4c3a8aed5762a8bc8b33?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc331af4f16ed4c3a8aed5762a8bc8b33?format=webp&width=2400 2400w"
           sizes="100vw"
           alt="Chat with Clarra promo"
           className="block w-full h-auto"
