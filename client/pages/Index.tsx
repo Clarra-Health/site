@@ -24,7 +24,7 @@ export default function Index() {
                 <span className="block">
                   <span className="relative inline-block px-1 align-baseline">
                     <span className="relative z-10">PERSONALIZED</span>
-                    <svg aria-hidden className="pointer-events-none absolute left-[-2%] right-[-2%] bottom-[-0.1em] h-[0.8em] w-[104%]" viewBox="0 0 100 40" preserveAspectRatio="none">
+                    <svg aria-hidden className="pointer-events-none absolute left-0 right-0 bottom-[-0.08em] h-[0.72em] w-full" viewBox="0 0 100 40" preserveAspectRatio="none">
                       <ellipse cx="50" cy="20" rx="48" ry="13" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="6"/>
                     </svg>
                   </span>
