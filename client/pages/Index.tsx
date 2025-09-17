@@ -39,16 +39,16 @@ export default function Index() {
               <p className="mt-3 sm:mt-4 text-lg sm:text-xl font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
               </p>
-              <div className="mt-8 sm:mt-9 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 sm:mt-7 flex flex-col gap-3 sm:flex-row">
                 <Link
                   to="/waitlist"
-                  className="inline-flex items-center justify-center rounded-md bg-white px-10 py-5 text-xl font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
+                  className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
                 >
                   Join The Waitlist
                 </Link>
                 <Link
                   to="/how-it-works"
-                  className="inline-flex items-center justify-center rounded-md bg-white/95 px-10 py-5 text-xl font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white"
+                  className="inline-flex items-center justify-center rounded-md bg-white/95 px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white"
                 >
                   How Clarra Works
                 </Link>
