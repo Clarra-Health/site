@@ -82,8 +82,7 @@ export default function Waitlist() {
           </form>
 
           <p className="mt-4 text-center text-xs text-[#1f2d3a]/70">
-            By joining, you agree to occasional emails. See our {" "}
-            <Link to="/how-we-protect-your-data" className="underline">Data Privacy</Link>.
+            By joining, you agree to occasional emails. We respect your privacy.
           </p>
         </div>
       </div>

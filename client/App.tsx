@@ -11,7 +11,6 @@ import Index from "./pages/Index";
 import Solutions from "./pages/Solutions";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import DataPrivacy from "./pages/DataPrivacy";
 import Placeholder from "./pages/Placeholder";
 import Waitlist from "./pages/Waitlist";
 import NotFound from "./pages/NotFound";
@@ -31,9 +30,6 @@ const App = () => (
             <Route path="about" element={<About />} />
             <Route path="careers" element={<Placeholder />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="security" element={<Placeholder />} />
-            <Route path="how-we-protect-your-data" element={<DataPrivacy />} />
-            <Route path="accessibility" element={<Placeholder />} />
             <Route path="get-started" element={<Placeholder />} />
             <Route path="waitlist" element={<Waitlist />} />
             <Route path="how-it-works" element={<Solutions />} />
