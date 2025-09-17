@@ -24,8 +24,8 @@ export default function Index() {
                 <span className="block">
                   <span className="relative inline-block px-1 align-baseline">
                     <span className="relative z-10">PERSONALIZED</span>
-                    <svg aria-hidden className="pointer-events-none absolute left-[-1%] right-[-1%] bottom-[-0.05em] h-[0.85em] w-[102%]" viewBox="0 0 100 40" preserveAspectRatio="none">
-                      <ellipse cx="50" cy="20" rx="47" ry="14" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="6"/>
+                    <svg aria-hidden className="pointer-events-none absolute left-[-2%] right-[-2%] bottom-[-0.1em] h-[0.8em] w-[104%]" viewBox="0 0 100 40" preserveAspectRatio="none">
+                      <ellipse cx="50" cy="20" rx="48" ry="13" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="6"/>
                     </svg>
                   </span>
                   <span className="ml-2">CARE</span>
@@ -36,10 +36,10 @@ export default function Index() {
                 </span>
                 <span className="block">MENOPAUSE, MIDLIFE.</span>
               </h1>
-              <p className="mt-3 sm:mt-4 text-base sm:text-lg font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
+              <p className="mt-3 sm:mt-4 text-lg sm:text-xl font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
               </p>
-              <div className="mt-10 sm:mt-12 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-8 sm:mt-9 flex flex-col gap-3 sm:flex-row">
                 <Link
                   to="/waitlist"
                   className="inline-flex items-center justify-center rounded-md bg-white px-10 py-5 text-xl font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
