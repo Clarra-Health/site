@@ -5,8 +5,8 @@ const nav = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/how-it-works", label: "How Clarra Works" },
-  { to: "/waitlist", label: "Waitlist" },
   { to: "/contact", label: "Contact" },
+  { to: "/waitlist", label: "Waitlist" },
 ];
 
 export default function SiteHeader() {
