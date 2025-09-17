@@ -122,11 +122,6 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="mx-auto mt-6 max-w-3xl text-center">
-            <p className="text-xs text-muted-foreground">
-              Looking for something else? Start with our <Link to="/how-it-works" className="underline">How it works</Link> page.
-            </p>
-          </div>
         </div>
       </section>
     </>
