@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden bg-transparent pt-12 md:pt-14 pb-[1.7rem] sm:pb-[2.55rem]">
+      <section className="relative isolate overflow-hidden pt-12 md:pt-14 pb-[1.7rem] sm:pb-[2.55rem]" style={{ backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F790f0b632d2648d2813199a7e89aae3b?format=webp&width=2000')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         <div className="container">
           <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-start">
             <div className="sm:col-span-12 sm:col-start-1" >
