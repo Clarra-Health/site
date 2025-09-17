@@ -11,7 +11,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=1200"
                 alt="Woman in teal shirt (transparent)"
-                className="block absolute bottom-0 left-0 h-auto w-[220%] max-w-none object-contain -translate-x-[60%]"
+                className="block absolute bottom-0 left-0 h-auto w-[220%] max-w-none object-contain translate-x-[300%]"
                 loading="eager"
                 decoding="async"
               />
