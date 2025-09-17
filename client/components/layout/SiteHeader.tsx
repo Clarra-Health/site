@@ -14,10 +14,10 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/70 backdrop-blur">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-24 items-center justify-between">
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-2">
-            <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1f066c9308e94551a866d68b560c5311?format=webp&width=160" alt="Clarra" className="h-10 w-auto md:h-12 bg-transparent" />
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1f066c9308e94551a866d68b560c5311?format=webp&width=160" alt="Clarra" className="h-20 w-auto md:h-24 bg-transparent" />
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-8 text-sm">
