@@ -6,7 +6,7 @@ export default function SiteFooter() {
     <footer className="border-t border-transparent bg-primary text-primary-foreground">
       <div className="container py-10">
         {pathname !== "/contact" && (
-          <div className="mb-10 rounded-xl border border-white/10 bg-[#b9e3e2] p-8 text-[#1f2d3a] shadow-sm">
+          <div className="mb-10 rounded-xl border border-white/10 bg-[#eaf7f6] p-8 text-[#1f2d3a] shadow-sm">
             <div className="grid gap-6 md:grid-cols-2 md:items-center">
               <div>
                 <h3 className="font-display text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Get in touch.</h3>
