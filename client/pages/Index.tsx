@@ -7,16 +7,7 @@ export default function Index() {
       <section className="relative isolate overflow-hidden bg-transparent pt-12 md:pt-14 pb-[1.7rem] sm:pb-[2.55rem]">
         <div className="container">
           <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-start">
-            <div className="hidden sm:flex sm:col-span-6 relative items-end justify-start overflow-hidden min-h-[60vh] sm:min-h-[calc(100vh-4rem)]">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F311a01179f304b0d930751a76f0f160a?format=webp&width=1600"
-                alt="Woman in teal shirt (transparent), left of hero text"
-                className="block absolute bottom-0 left-0 h-full w-auto max-w-none object-contain transform origin-bottom-left scale-[0.5]"
-                loading="eager"
-                decoding="async"
-              />
-            </div>
-            <div className="sm:col-span-6 sm:col-start-7">
+            <div className="sm:col-span-12 sm:col-start-1" >
               <h1 className="font-display text-[#1f2d3a] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-[0.95]">
                 AI-POWERED {""}
                 <span className="relative inline-block px-1 align-baseline">
