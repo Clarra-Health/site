@@ -5,6 +5,7 @@ const nav = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/how-it-works", label: "How Clarra Works" },
+  { to: "/waitlist", label: "Waitlist" },
   { to: "/how-we-protect-your-data", label: "Data Privacy" },
   { to: "/contact", label: "Contact" },
 ];
