@@ -67,10 +67,10 @@ export default function Index() {
               <p className="text-base sm:text-lg text-foreground/90">every stage, every step.</p>
             </div>
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <Feature icon={<IconSpark />} title="Symptom tracking" description="Simple, conversational check-ins turn daily experiences into meaningful insights. Clarra makes it effortless to spot triggers, trends, and patterns — no endless logging required" iconBg="bg-[#56d257]" />
-              <Feature icon={<IconWand />} title="AI care plans" description="Powered by AI and grounded in evidence, Clarra builds care pathways tailored to your goals. From sleep routines to bone health, your plan adapts as your needs evolve." iconBg="bg-[#56d257]" />
-              <Feature icon={<IconChat />} title="Coaching & chat" description="Compassionate, always-on support — blending AI intelligence with human oversight. Clarra’s chat keeps you connected, guided, and never left alone on the journey." iconBg="bg-[#56d257]" />
-              <Feature icon={<IconShield />} title="Clinical-grade" description="Privacy-first and secure by design. Clarra follows best practices in health data protection, ensuring your information is safe, transparent, and always under your control." iconBg="bg-[#56d257]" />
+              <Feature icon={<IconSpark />} title="Symptom tracking" description="Conversational check-ins make it easy to spot triggers and patterns — no endless logging." iconBg="bg-[#56d257]" />
+              <Feature icon={<IconWand />} title="AI care plans" description="Smart, evidence-based plans that evolve with your goals, from sleep to bone health." iconBg="bg-[#56d257]" />
+              <Feature icon={<IconChat />} title="Coaching & chat" description="Always-on guidance that blends AI insights with human support, so you’re never on your own." iconBg="bg-[#56d257]" />
+              <Feature icon={<IconShield />} title="Data secure" description="Privacy-first, secure by design. Your health data stays safe, transparent, and under your control." iconBg="bg-[#56d257]" />
             </div>
             <div className="mt-10 flex items-center justify-center">
               <Link
