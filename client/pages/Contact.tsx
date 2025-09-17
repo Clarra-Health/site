@@ -107,7 +107,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="inline-flex h-16 w-16 items-center justify-center rounded-xl bg-primary text-[hsl(25_97%_66%)] shadow-sm transition hover:opacity-90"
+              className="inline-flex h-16 w-16 items-center justify-center rounded-xl bg-[hsl(25_97%_66%)] text-white shadow-sm transition hover:opacity-90"
             >
               <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5Zm.02 6.5H2v11h3V10ZM9 10H6v11h3v-5.5c0-3 4-3.2 4 0V21h3v-6.5c0-6-6.5-5.8-7-2.8V10Z"/></svg>
             </a>
