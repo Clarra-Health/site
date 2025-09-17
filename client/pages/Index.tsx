@@ -24,8 +24,8 @@ export default function Index() {
                 <span className="block">
                   <span className="relative inline-block px-1 align-baseline">
                     <span className="relative z-10">PERSONALIZED</span>
-                    <svg aria-hidden className="pointer-events-none absolute left-[-3%] right-[-3%] bottom-[-0.15em] h-[0.9em] w-[106%]" viewBox="0 0 100 40" preserveAspectRatio="none">
-                      <ellipse cx="50" cy="20" rx="46" ry="16" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="6"/>
+                    <svg aria-hidden className="pointer-events-none absolute left-[-1%] right-[-1%] bottom-[-0.05em] h-[0.85em] w-[102%]" viewBox="0 0 100 40" preserveAspectRatio="none">
+                      <ellipse cx="50" cy="20" rx="47" ry="14" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="6"/>
                     </svg>
                   </span>
                   <span className="ml-2">CARE</span>
@@ -39,16 +39,16 @@ export default function Index() {
               <p className="mt-3 sm:mt-4 text-base sm:text-lg font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
               </p>
-              <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-10 sm:mt-12 flex flex-col gap-3 sm:flex-row">
                 <Link
                   to="/waitlist"
-                  className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
+                  className="inline-flex items-center justify-center rounded-md bg-white px-10 py-5 text-xl font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
                 >
                   Join The Waitlist
                 </Link>
                 <Link
                   to="/how-it-works"
-                  className="inline-flex items-center justify-center rounded-md bg-white/95 px-6 py-3 text-base font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white"
+                  className="inline-flex items-center justify-center rounded-md bg-white/95 px-10 py-5 text-xl font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white"
                 >
                   How Clarra Works
                 </Link>
@@ -63,8 +63,8 @@ export default function Index() {
       <section className="py-0">
         <Link to="/solutions" className="block focus:outline-none focus:ring-0">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F49d52b64263f4bb1860c5e267103d92d?format=webp&width=2000"
-            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F49d52b64263f4bb1860c5e267103d92d?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F49d52b64263f4bb1860c5e267103d92d?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F49d52b64263f4bb1860c5e267103d92d?format=webp&width=2400 2400w"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F0dc6d560fb034c85a72823a4075350fa?format=webp&width=2000"
+            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F0dc6d560fb034c85a72823a4075350fa?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F0dc6d560fb034c85a72823a4075350fa?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F0dc6d560fb034c85a72823a4075350fa?format=webp&width=2400 2400w"
             sizes="100vw"
             alt="Chat with Clarra promo with benefits around device: Hormone Health Insights, Tailored Plans, Data-Driven Care, Wearables Sync, Smart Tracking, Community Support"
             className="block w-full h-auto"
