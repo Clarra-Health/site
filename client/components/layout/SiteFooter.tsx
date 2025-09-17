@@ -15,7 +15,7 @@ export default function SiteFooter() {
                 </p>
               </div>
               <div className="flex md:justify-end">
-                <Link to="/contact" className="inline-flex items-center justify-center rounded-full bg-[#b9e3e2] px-6 py-3 text-sm font-semibold text-[#1f2d3a] shadow-sm transition hover:bg-[#b9e3e2]/90">
+                <Link to="/contact" className="inline-flex items-center justify-center rounded-full bg-[#b9e3e2] px-12 py-6 text-2xl font-semibold text-[#1f2d3a] shadow-sm transition hover:bg-[#b9e3e2]/90">
                   Contact us
                 </Link>
               </div>
@@ -41,7 +41,7 @@ export default function SiteFooter() {
             <p className="text-sm font-medium">Company</p>
             <ul className="mt-3 space-y-2 text-sm text-primary-foreground/80">
               <li><Link to="/about" className="hover:text-primary-foreground">About</Link></li>
-              <li><Link to="/careers" className="hover:text-primary-foreground">Careers</Link></li>
+              <li><Link to="/how-we-protect-your-data" className="hover:text-primary-foreground">Data Privacy</Link></li>
               <li><Link to="/contact" className="hover:text-primary-foreground">Contact</Link></li>
             </ul>
           </div>
@@ -51,6 +51,7 @@ export default function SiteFooter() {
           <div className="flex items-center gap-4 text-xs text-primary-foreground/80">
             <Link to="/security" className="hover:text-primary-foreground">Security</Link>
             <Link to="/accessibility" className="hover:text-primary-foreground">Accessibility</Link>
+            <Link to="/how-we-protect-your-data" className="hover:text-primary-foreground">Data Privacy</Link>
           </div>
         </div>
       </div>
