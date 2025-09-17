@@ -11,31 +11,17 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fe97db9f9b23249ce81d75a3767614b58?format=webp&width=1600"
                 alt="Woman in teal shirt (transparent), left of hero text"
-                className="block h-auto w-full max-w-none object-contain"
+                className="block h-auto w-[600%] max-w-none object-contain"
                 loading="eager"
                 decoding="async"
               />
             </div>
             <div className="sm:col-span-6 sm:col-start-7">
               <h1 className="font-display text-[#1f2d3a] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-[0.95]">
-                <span className="block">COMPASSIONATE,</span>
-                <span className="block">
-                  <span className="relative inline-block px-1 align-baseline">
-                    <span className="relative z-10">PERSONALIZED</span>
-                    <svg aria-hidden className="pointer-events-none absolute left-[-10%] right-[-10%] bottom-[0.06em] h-[0.74em] w-[124%]" viewBox="0 0 100 40" preserveAspectRatio="none">
-                      <ellipse cx="50" cy="20" rx="58" ry="12" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5"/>
-                    </svg>
-                  </span>
-                  <span className="ml-2">CARE</span>
-                </span>
-                <span className="block mt-1">
-                  <span className="inline-block h-[3px] w-14 align-middle bg-[hsl(210_29%_24%)] mr-3" />
-                  PERIMENOPAUSE,
-                </span>
-                <span className="block">MENOPAUSE, MIDLIFE.</span>
+                AI-POWERED COMPASSIONATE CARE FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
               </h1>
               <p className="mt-3 sm:mt-4 text-lg sm:text-xl font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
-                Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
+                Clarra connects the dots between symptoms, insights, and support—so midlife health finally makes sense..
               </p>
               <div className="mt-6 sm:mt-7 mb-[1.3rem] sm:mb-[1.7rem] flex flex-col gap-3 sm:flex-row">
                 <Link
