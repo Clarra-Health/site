@@ -16,7 +16,32 @@ export default function Index() {
           loading="eager"
           decoding="async"
         />
-        <div className="h-[60vh] sm:min-h-[calc(100vh-4rem)]" />
+        <div className="container">
+          <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-center">
+            <div className="sm:col-span-7 sm:col-start-6">
+              <h1 className="font-display text-[#1f2d3a] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-[0.95]">
+                <span className="block">COMPASSIONATE,</span>
+                <span className="block">
+                  <span className="relative inline-block px-1 align-baseline">
+                    <span className="relative z-10">PERSONALIZED</span>
+                    <svg aria-hidden className="pointer-events-none absolute left-[-3%] right-[-3%] bottom-[-0.15em] h-[0.9em] w-[106%]" viewBox="0 0 100 40" preserveAspectRatio="none">
+                      <ellipse cx="50" cy="20" rx="46" ry="16" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="6"/>
+                    </svg>
+                  </span>
+                  <span className="ml-2">CARE</span>
+                </span>
+                <span className="block mt-1">
+                  <span className="inline-block h-[3px] w-14 align-middle bg-[hsl(210_29%_24%)] mr-3" />
+                  PERIMENOPAUSE,
+                </span>
+                <span className="block">MENOPAUSE, MIDLIFE.</span>
+              </h1>
+              <p className="mt-4 text-base sm:text-lg font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
+                Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Hero CTAs below image */}
