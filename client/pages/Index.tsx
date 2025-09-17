@@ -25,7 +25,7 @@ export default function Index() {
                   <span className="relative inline-block px-1 align-baseline">
                     <span className="relative z-10">PERSONALIZED</span>
                     <svg aria-hidden className="pointer-events-none absolute left-0 right-0 bottom-[-0.08em] h-[0.72em] w-full" viewBox="0 0 100 40" preserveAspectRatio="none">
-                      <ellipse cx="50" cy="20" rx="48" ry="13" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="6"/>
+                      <ellipse cx="50" cy="20" rx="44" ry="12" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5"/>
                     </svg>
                   </span>
                   <span className="ml-2">CARE</span>
