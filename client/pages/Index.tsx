@@ -21,8 +21,8 @@ export default function Index() {
                 AI-POWERED {""}
                 <span className="relative inline-block px-1 align-baseline">
                   <span className="relative z-10">COMPASSIONATE</span>
-                  <svg aria-hidden className="pointer-events-none absolute left-[-14%] right-[-14%] top-[-18%] bottom-[-18%] h-[136%] w-[128%]" viewBox="0 0 100 40" preserveAspectRatio="none">
-                    <ellipse cx="50" cy="20" rx="58" ry="16" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5" strokeLinecap="round" />
+                  <svg aria-hidden className="pointer-events-none absolute left-[-6%] right-[-6%] top-[-18%] bottom-[-18%] h-[136%] w-[112%]" viewBox="0 0 100 40" preserveAspectRatio="none">
+                    <ellipse cx="50" cy="20" rx="50" ry="16" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5" strokeLinecap="round" />
                   </svg>
                 </span>{" "}
                 CARE FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
