@@ -13,6 +13,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import DataPrivacy from "./pages/DataPrivacy";
 import Placeholder from "./pages/Placeholder";
+import Waitlist from "./pages/Waitlist";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,7 +35,7 @@ const App = () => (
             <Route path="how-we-protect-your-data" element={<DataPrivacy />} />
             <Route path="accessibility" element={<Placeholder />} />
             <Route path="get-started" element={<Placeholder />} />
-            <Route path="waitlist" element={<Placeholder />} />
+            <Route path="waitlist" element={<Waitlist />} />
             <Route path="how-it-works" element={<Solutions />} />
             <Route path="*" element={<NotFound />} />
           </Route>
