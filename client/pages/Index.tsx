@@ -9,7 +9,7 @@ export default function Index() {
           <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-start">
             <div className="hidden sm:flex sm:col-span-6 items-end justify-start overflow-hidden min-h-[60vh] sm:min-h-[calc(100vh-4rem)]">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fe97db9f9b23249ce81d75a3767614b58?format=webp&width=1600"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F137f582b94c94e0197d0c973cf7ad3a1?format=webp&width=1600"
                 alt="Woman in teal shirt (transparent), left of hero text"
                 className="block h-auto w-[600%] max-w-none object-contain transform translate-x-[350%] translate-y-[200%]"
                 loading="eager"
