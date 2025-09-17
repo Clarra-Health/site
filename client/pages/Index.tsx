@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden pt-12 md:pt-14 pb-8 sm:pb-12">
+      <section className="relative isolate overflow-hidden pt-12 md:pt-14 pb-[1.7rem] sm:pb-[2.55rem]">
         {/* Background pattern */}
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=2000"
@@ -39,7 +39,7 @@ export default function Index() {
               <p className="mt-3 sm:mt-4 text-lg sm:text-xl font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra combines clinical expertise with an empathetic AI to help you understand symptoms, get tailored plans, and access specialist support—anytime.
               </p>
-              <div className="mt-6 sm:mt-7 mb-6 sm:mb-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 sm:mt-7 mb-[1.3rem] sm:mb-[1.7rem] flex flex-col gap-3 sm:flex-row">
                 <Link
                   to="/waitlist"
                   className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
