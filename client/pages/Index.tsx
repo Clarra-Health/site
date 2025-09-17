@@ -7,11 +7,11 @@ export default function Index() {
       <section className="relative isolate overflow-hidden pt-12 md:pt-14 pb-[1.7rem] sm:pb-[2.55rem]">
         <div className="container">
           <div className="mx-auto max-w-6xl grid min-h-[60vh] sm:min-h-[calc(100vh-4rem)] grid-cols-1 sm:grid-cols-12 items-start">
-            <div className="hidden sm:flex sm:col-span-6 relative items-end justify-start overflow-hidden">
+            <div className="hidden sm:flex sm:col-span-6 relative items-end justify-start overflow-visible min-h-[60vh] sm:min-h-[calc(100vh-4rem)]">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=1200"
                 alt="Woman in teal shirt (transparent)"
-                className="block absolute bottom-0 left-0 h-auto w-[200%] max-w-none object-contain"
+                className="block absolute bottom-0 left-0 h-auto w-[300%] max-w-none object-contain -translate-x-[170%]"
                 loading="eager"
                 decoding="async"
               />
