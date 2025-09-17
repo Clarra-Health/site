@@ -7,10 +7,10 @@ export default function Index() {
       <section className="relative isolate overflow-hidden pt-12 md:pt-14 pb-[1.7rem] sm:pb-[2.55rem]">
         {/* Background pattern */}
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1a3fd7ae97384047acea7383454d007f?format=webp&width=2400 2400w"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=2000"
+          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=2400 2400w"
           sizes="100vw"
-          alt=""
+          alt="Clarra hero background"
           aria-hidden="true"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
           loading="eager"
@@ -112,7 +112,7 @@ export default function Index() {
               </div>
               <div className="hidden sm:block absolute inset-y-6 right-6">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fcc6fcb5e7fbf4f9a9c176638d50cb9f9?format=webp&width=1000"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F593076d3c3a8428697773cb1af51a4aa?format=webp&width=1000"
                   alt="Clarra audience woman"
                   className="h-full max-h-[420px] w-auto object-contain"
                   loading="lazy"
