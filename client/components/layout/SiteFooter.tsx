@@ -31,14 +31,14 @@ export default function SiteFooter() {
               AI-native digital health for midlife care: personalized support for perimenopause and menopause by Clarra.
             </p>
           </div>
-          <div>
+          <div className="md:justify-self-end md:mt-2">
             <p className="text-lg font-semibold uppercase tracking-wide">Product</p>
             <ul className="mt-4 space-y-2 text-base text-primary-foreground/80">
               <li><Link to="/how-it-works" className="hover:text-primary-foreground">How Clarra Works</Link></li>
               <li><Link to="/waitlist" className="hover:text-primary-foreground">Waitlist</Link></li>
             </ul>
           </div>
-          <div>
+          <div className="md:justify-self-end md:mt-2">
             <p className="text-lg font-semibold uppercase tracking-wide">Company</p>
             <ul className="mt-4 space-y-2 text-base text-primary-foreground/80">
               <li><Link to="/about" className="hover:text-primary-foreground">About</Link></li>
