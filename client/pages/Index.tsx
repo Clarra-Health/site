@@ -110,6 +110,16 @@ export default function Index() {
                   How Clarra Works
                 </Link>
               </div>
+              <div className="hidden sm:block absolute inset-y-6 right-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fcc6fcb5e7fbf4f9a9c176638d50cb9f9?format=webp&width=1000"
+                  alt="Clarra audience woman"
+                  className="h-full max-h-[420px] w-auto object-contain"
+                  loading="lazy"
+                  decoding="async"
+                  style={{ WebkitMaskImage: "radial-gradient(closest-side, rgba(255,255,255,1) 78%, rgba(255,255,255,0) 100%)", maskImage: "radial-gradient(closest-side, rgba(255,255,255,1) 78%, rgba(255,255,255,0) 100%)" }}
+                />
+              </div>
             </div>
           </div>
         </div>
