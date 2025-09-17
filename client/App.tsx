@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import Placeholder from "./pages/Placeholder";
 import Waitlist from "./pages/Waitlist";
 import NotFound from "./pages/NotFound";
+import DataPrivacy from "./pages/DataPrivacy";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="get-started" element={<Placeholder />} />
             <Route path="waitlist" element={<Waitlist />} />
             <Route path="how-it-works" element={<Solutions />} />
+            <Route path="how-we-protect-your-data" element={<DataPrivacy />} />
             <Route path="*" element={<NotFound />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
