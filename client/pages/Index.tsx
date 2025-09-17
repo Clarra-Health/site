@@ -11,7 +11,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6eae28ffe31d48ad9f8e6749ffbb8d31?format=webp&width=1200"
                 alt="Woman in teal shirt (transparent)"
-                className="block absolute bottom-0 left-0 h-auto w-[300%] max-w-none object-contain -translate-x-[170%]"
+                className="block absolute bottom-0 left-0 h-auto w-[220%] max-w-none object-contain -translate-x-[60%]"
                 loading="eager"
                 decoding="async"
               />
@@ -22,8 +22,8 @@ export default function Index() {
                 <span className="block">
                   <span className="relative inline-block px-1 align-baseline">
                     <span className="relative z-10">PERSONALIZED</span>
-                    <svg aria-hidden className="pointer-events-none absolute left-[-4%] right-[-4%] bottom-[0.06em] h-[0.74em] w-[108%]" viewBox="0 0 100 40" preserveAspectRatio="none">
-                      <ellipse cx="50" cy="20" rx="49" ry="12" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5"/>
+                    <svg aria-hidden className="pointer-events-none absolute left-[-10%] right-[-10%] bottom-[0.06em] h-[0.74em] w-[124%]" viewBox="0 0 100 40" preserveAspectRatio="none">
+                      <ellipse cx="50" cy="20" rx="58" ry="12" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="5"/>
                     </svg>
                   </span>
                   <span className="ml-2">CARE</span>
