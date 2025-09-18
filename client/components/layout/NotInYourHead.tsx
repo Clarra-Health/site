@@ -51,7 +51,7 @@ function renderWithHighlight(text: string, highlight: string) {
   return (
     <>
       {before}
-      <span className="text-[#7a0c24] font-medium">{mid}</span>
+      <span className="text-[hsl(25_97%_50%)] font-medium">{mid}</span>
       {after}
     </>
   );
