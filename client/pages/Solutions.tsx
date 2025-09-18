@@ -272,10 +272,12 @@ function FeatureGrid({ title, subtitle, features }: { title: string; subtitle?: 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {features.map((item, i) => (
             <div key={i} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
-              <div className="flex items-start gap-4">
-                <span className="mt-1 inline-block h-6 w-6 rounded-full bg-[#56d257] ring-2 ring-white/70 shadow" />
+              <div className="flex items-start gap-5">
+                <span className="inline-grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-[#56d257] text-white ring-2 ring-white/70 shadow">
+                  <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                </span>
                 <div>
-                  <p className="font-semibold">{item.title}</p>
+                  <p className="font-semibold text-base sm:text-lg">{item.title}</p>
                   <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
                 </div>
               </div>
