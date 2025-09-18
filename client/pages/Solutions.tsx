@@ -33,31 +33,16 @@ export default function Solutions() {
               </p>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {[
-                  { label: "Real‑time hormone trends (estrogen, progesterone, LH)", icon: "activity", color: "bg-[hsl(25_97%_66%)]" },
-                  { label: "Cycle‑aware insights that anticipate what’s next", icon: "timer", color: "bg-[#56d257]" },
-                  { label: "Sleep, mood, and symptoms in context—not in isolation", icon: "moon", color: "bg-[#1f2d3a]" },
-                  { label: "Personalized actions you can take today", icon: "check", color: "bg-[#b9e3e2]" },
-                  { label: "Shareable summaries for your clinician", icon: "share", color: "bg-[hsl(25_97%_66%)]" },
+                  "Real‑time hormone trends (estrogen, progesterone, LH)",
+                  "Cycle‑aware insights that anticipate what’s next",
+                  "Sleep, mood, and symptoms in context—not in isolation",
+                  "Personalized actions you can take today",
+                  "Shareable summaries for your clinician",
+                  "Next‑gen digital OS powered by AI",
                 ].map((t, i) => (
-                  <div key={i} className="flex items-center gap-5 rounded-2xl border border-border bg-card p-5 shadow-sm">
-                    <span className={`inline-grid h-14 w-14 shrink-0 place-items-center rounded-2xl text-white ${t.color}`}>
-                      {t.icon === "activity" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                      )}
-                      {t.icon === "timer" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="10" y1="2" x2="14" y2="2"/><line x1="12" y1="14" x2="12" y2="8"/><circle cx="12" cy="14" r="8"/></svg>
-                      )}
-                      {t.icon === "moon" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
-                      )}
-                      {t.icon === "check" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                      )}
-                      {t.icon === "share" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-                      )}
-                    </span>
-                    <span className="text-base sm:text-lg text-foreground/90">{t.label}</span>
+                  <div key={i} className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm">
+                    <span className="mt-1 inline-block h-6 w-6 rounded-full bg-[#56d257] ring-2 ring-white/70 shadow" />
+                    <span className="text-base sm:text-lg text-foreground/90">{t}</span>
                   </div>
                 ))}
               </div>
