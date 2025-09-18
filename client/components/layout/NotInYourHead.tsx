@@ -27,7 +27,7 @@ export default function NotInYourHead() {
         <div className="mx-auto max-w-5xl text-center">
           <div className="grid gap-8 sm:grid-cols-2">
             {items.map((it) => (
-              <div key={it.k} className="text-[17px] leading-7">
+              <div key={it.k} className="text-[28px] leading-9">
                 <div className="border-t border-border mb-3 mx-auto w-full" />
                 <p className="text-foreground">
                   {renderWithHighlight(it.k, it.highlight)}
