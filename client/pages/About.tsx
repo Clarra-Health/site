@@ -49,7 +49,7 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
             <p className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#1f2d3a]">
-              At Clarra, <span className="relative inline-block align-baseline"><span className="relative z-10">we believe AI can redefine what healthcare looks like for women in midlife.</span><span aria-hidden className="absolute left-0 right-0 -bottom-[0.08em] h-[0.08em] bg-[hsl(25_97%_66%)]"></span></span> Every year, 47 million women worldwide enter menopause without the solutions they deserve—and we’re here to change that.
+              At Clarra,{"\u00A0"}<span className="relative inline-block align-baseline"><span className="relative z-10">we believe AI can redefine what healthcare looks like for women in midlife.</span><span aria-hidden className="absolute left-0 right-0 -bottom-[0.08em] h-[0.08em] bg-[hsl(25_97%_66%)]"></span></span> Every year, 47 million women worldwide enter menopause without the solutions they deserve—and we’re here to change that.
             </p>
             <div className="mt-4 space-y-4 text-base sm:text-lg text-foreground/85">
               <p>
