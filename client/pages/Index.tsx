@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import NotInYourHead from "@/components/layout/NotInYourHead";
 
 export default function Index() {
   return (
@@ -84,7 +85,27 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Not In Your Head (home only) */}
+      <NotInYourHead />
 
+      {/* Mission Section */}
+      <section className="py-12">
+        <div className="container">
+          <div className="mx-auto max-w-5xl text-center">
+            <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">
+              Clarra’s mission is to harness the power of AI to transform women’s health—addressing the reality that 47 million women worldwide enter menopause each year without the healthcare solutions they need.
+            </h2>
+            <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
+              <p>
+                By integrating biomarkers, wearable data, and lived symptoms, Clarra builds a whole view of health that goes beyond fragmented tracking. Our AI translates this data into actionable insights—detecting risks earlier, anticipating challenges, and guiding personalized next steps.
+              </p>
+              <p>
+                Designed to be accurate, accessible, and scalable, Clarra puts technology to work for us—not the other way around. With this holistic approach, we enable women and healthcare providers to act sooner, improve outcomes, and finally deliver the standard of care women deserve throughout midlife and beyond.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </>
   );
