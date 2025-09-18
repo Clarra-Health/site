@@ -66,7 +66,7 @@ export default function Solutions() {
         </div>
       </section>
 
-      <section className="py-12 bg-[#b9e3e2]">
+      <section className="py-8">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
             <h2 className="font-display text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">24/7 Answers. Zero Wait.</h2>
