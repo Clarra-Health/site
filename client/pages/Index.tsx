@@ -46,8 +46,8 @@ export default function Index() {
       <section className="py-0">
         <Link to="/solutions" className="block focus:outline-none focus:ring-0">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc331af4f16ed4c3a8aed5762a8bc8b33?format=webp&width=2000"
-            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc331af4f16ed4c3a8aed5762a8bc8b33?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc331af4f16ed4c3a8aed5762a8bc8b33?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc331af4f16ed4c3a8aed5762a8bc8b33?format=webp&width=2400 2400w"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9b876ea6526843a4836f5167f1c6dffa?format=webp&width=2000"
+            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9b876ea6526843a4836f5167f1c6dffa?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9b876ea6526843a4836f5167f1c6dffa?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9b876ea6526843a4836f5167f1c6dffa?format=webp&width=2400 2400w"
             sizes="100vw"
             alt="Chat with Clarra promo"
             className="block w-full h-auto"
