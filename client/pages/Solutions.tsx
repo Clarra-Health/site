@@ -57,6 +57,13 @@ export default function Solutions() {
           <div className="mx-auto max-w-5xl text-center">
             <h2 className="font-display text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">24/7 Answers. Zero Wait.</h2>
             <p className="mt-3 text-base sm:text-lg text-foreground/85">Powered by AI trained on women’s health, Clarra delivers instant, personalized insights—anytime, anywhere.</p>
+            <div className="mt-6 overflow-hidden rounded-3xl border border-border bg-[#b9e3e2] shadow-sm">
+              <div className="relative h-24 sm:h-28">
+                <span aria-hidden className="absolute -top-6 -left-6 h-24 w-24 rounded-full bg-[hsl(25_97%_66%)]/90" />
+                <span aria-hidden className="absolute -bottom-8 left-1/2 h-28 w-28 -translate-x-1/2 rounded-full bg-[#56d257]/80" />
+                <span aria-hidden className="absolute -right-6 -top-4 h-20 w-20 rounded-full bg-[#1f2d3a]/90" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
