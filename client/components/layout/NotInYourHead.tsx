@@ -25,8 +25,7 @@ export default function NotInYourHead() {
     <section className="py-12">
       <div className="container">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="font-display text-4xl sm:text-5xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">It&apos;s not in your head</h2>
-          <div className="mt-8 grid gap-8 sm:grid-cols-2">
+          <div className="grid gap-8 sm:grid-cols-2">
             {items.map((it) => (
               <div key={it.k} className="text-[17px] leading-7">
                 <div className="border-t border-border mb-3 mx-auto w-full" />
