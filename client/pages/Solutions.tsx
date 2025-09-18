@@ -130,11 +130,11 @@ export default function Solutions() {
 
 function PhoneMockHormone() {
   return (
-    <div className="relative w-[320px] sm:w-[360px] rounded-[2.2rem] border border-border bg-white shadow-xl overflow-hidden">
-      {/* top bar */}
-      <div className="absolute left-1/2 top-0 h-6 w-40 -translate-x-1/2 rounded-b-2xl bg-black/80" />
-      <div className="p-4 pt-8">
-        <div className="rounded-xl bg-[#b9e3e2]/30 p-3 ring-1 ring-[#b9e3e2]">
+    <div className="relative w-[360px] sm:w-[420px] md:w-[500px] lg:w-[560px] rounded-[3rem] border-2 border-border bg-white shadow-2xl overflow-hidden">
+      {/* notch */}
+      <div className="absolute left-1/2 top-0 -translate-x-1/2 h-7 w-44 rounded-b-2xl bg-black/80 sm:h-8 sm:w-48 md:h-9 md:w-52" />
+      <div className="p-5 pt-12 sm:p-6 sm:pt-14">
+        <div className="rounded-2xl bg-[#b9e3e2]/30 p-4 ring-1 ring-[#b9e3e2]">
           {/* simple hormone chart */}
           <svg viewBox="0 0 320 180" className="block w-full h-auto">
             <defs>
@@ -168,14 +168,14 @@ function PhoneMockHormone() {
           </svg>
         </div>
         {/* mini cards */}
-        <div className="mt-3 grid grid-cols-2 gap-2">
+        <div className="mt-4 grid grid-cols-2 gap-3">
           {[
             { k: "Sleep", v: "+12%", c: "#56d257" },
             { k: "Mood", v: "Stable", c: "#1f2d3a" },
             { k: "Energy", v: "↑", c: "hsl(25 97% 66%)" },
             { k: "Stress", v: "↓", c: "#6c63ff" },
           ].map((x) => (
-            <div key={x.k} className="rounded-lg border border-border p-2 text-xs">
+            <div key={x.k} className="rounded-xl border border-border p-3 text-sm">
               <div className="flex items-center justify-between">
                 <span className="font-medium text-[#1f2d3a]">{x.k}</span>
                 <span style={{ color: x.c }} className="font-semibold">{x.v}</span>
@@ -184,6 +184,8 @@ function PhoneMockHormone() {
           ))}
         </div>
       </div>
+      {/* home indicator */}
+      <div className="pointer-events-none absolute bottom-3 left-1/2 h-1.5 w-28 -translate-x-1/2 rounded-full bg-black/70 opacity-70" />
     </div>
   );
 }
