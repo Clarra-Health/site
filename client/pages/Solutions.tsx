@@ -130,62 +130,56 @@ export default function Solutions() {
 
 function PhoneMockHormone() {
   return (
-    <div className="relative w-[360px] sm:w-[420px] md:w-[500px] lg:w-[560px] rounded-[3rem] border-2 border-border bg-white shadow-2xl overflow-hidden">
-      {/* notch */}
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 h-7 w-44 rounded-b-2xl bg-black/80 sm:h-8 sm:w-48 md:h-9 md:w-52" />
-      <div className="p-5 pt-12 sm:p-6 sm:pt-14">
-        <div className="rounded-2xl bg-[#b9e3e2]/30 p-4 ring-1 ring-[#b9e3e2]">
-          {/* simple hormone chart */}
-          <svg viewBox="0 0 320 180" className="block w-full h-auto">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0%" stopColor="hsl(25 97% 66%)" stopOpacity="0.5" />
-                <stop offset="100%" stopColor="hsl(25 97% 66%)" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient id="g2" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0%" stopColor="#56d257" stopOpacity="0.5" />
-                <stop offset="100%" stopColor="#56d257" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient id="g3" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0%" stopColor="#6c63ff" stopOpacity="0.5" />
-                <stop offset="100%" stopColor="#6c63ff" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-            <rect x="0" y="0" width="320" height="180" fill="#fff" rx="10" />
-            {/* axes */}
-            <line x1="24" y1="150" x2="300" y2="150" stroke="#e5e7eb" strokeWidth="2" />
-            <line x1="24" y1="20" x2="24" y2="150" stroke="#e5e7eb" strokeWidth="2" />
-            {/* estrogen curve */}
-            <path d="M24 140 C 70 60, 120 60, 150 140 S 230 140, 300 60" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3" />
-            {/* progesterone */}
-            <path d="M24 150 C 110 150, 150 100, 210 70 S 250 110, 300 110" fill="none" stroke="#56d257" strokeWidth="3" />
-            {/* LH spike */}
-            <path d="M170 150 L 180 30 L 190 150" fill="none" stroke="#6c63ff" strokeWidth="3" />
-            {/* labels */}
-            <text x="34" y="36" fontSize="10" fill="#1f2d3a">Estrogen</text>
-            <text x="214" y="64" fontSize="10" fill="#1f2d3a">Progesterone</text>
-            <text x="192" y="28" fontSize="10" fill="#1f2d3a">LH</text>
-          </svg>
-        </div>
-        {/* mini cards */}
-        <div className="mt-4 grid grid-cols-2 gap-3">
-          {[
-            { k: "Sleep", v: "+12%", c: "#56d257" },
-            { k: "Mood", v: "Stable", c: "#1f2d3a" },
-            { k: "Energy", v: "↑", c: "hsl(25 97% 66%)" },
-            { k: "Stress", v: "↓", c: "#6c63ff" },
-          ].map((x) => (
-            <div key={x.k} className="rounded-xl border border-border p-3 text-sm">
-              <div className="flex items-center justify-between">
-                <span className="font-medium text-[#1f2d3a]">{x.k}</span>
-                <span style={{ color: x.c }} className="font-semibold">{x.v}</span>
+    <div className="relative w-[360px] sm:w-[440px] md:w-[560px] lg:w-[620px]">
+      {/* metal frame */}
+      <div className="relative rounded-[3.2rem] bg-gradient-to-br from-[#9aa3af] via-[#e5e7eb] to-[#8b95a5] p-[10px] shadow-[0_10px_40px_rgba(0,0,0,0.35)]">
+        {/* bezel */}
+        <div className="relative rounded-[2.7rem] bg-black p-2">
+          {/* side buttons */}
+          <span className="absolute -left-1 top-28 h-10 w-1.5 rounded-md bg-[#9aa3af]" />
+          <span className="absolute -left-1 top-44 h-10 w-1.5 rounded-md bg-[#9aa3af]" />
+          <span className="absolute -right-1 top-36 h-16 w-1.5 rounded-md bg-[#9aa3af]" />
+
+          {/* screen */}
+          <div className="relative rounded-[2rem] bg-white overflow-hidden">
+            {/* dynamic island */}
+            <div className="absolute left-1/2 top-2 -translate-x-1/2 h-7 w-40 rounded-2xl bg-black/90 sm:h-8 sm:w-44" />
+            <div className="p-5 pt-12 sm:p-6 sm:pt-14">
+              <div className="rounded-2xl bg-[#b9e3e2]/30 p-4 ring-1 ring-[#b9e3e2]">
+                {/* simple hormone chart */}
+                <svg viewBox="0 0 320 180" className="block w-full h-auto">
+                  <rect x="0" y="0" width="320" height="180" fill="#fff" rx="10" />
+                  <line x1="24" y1="150" x2="300" y2="150" stroke="#e5e7eb" strokeWidth="2" />
+                  <line x1="24" y1="20" x2="24" y2="150" stroke="#e5e7eb" strokeWidth="2" />
+                  <path d="M24 140 C 70 60, 120 60, 150 140 S 230 140, 300 60" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3" />
+                  <path d="M24 150 C 110 150, 150 100, 210 70 S 250 110, 300 110" fill="none" stroke="#56d257" strokeWidth="3" />
+                  <path d="M170 150 L 180 30 L 190 150" fill="none" stroke="#6c63ff" strokeWidth="3" />
+                  <text x="34" y="36" fontSize="10" fill="#1f2d3a">Estrogen</text>
+                  <text x="214" y="64" fontSize="10" fill="#1f2d3a">Progesterone</text>
+                  <text x="192" y="28" fontSize="10" fill="#1f2d3a">LH</text>
+                </svg>
+              </div>
+              <div className="mt-4 grid grid-cols-2 gap-3">
+                {[
+                  { k: "Sleep", v: "+12%", c: "#56d257" },
+                  { k: "Mood", v: "Stable", c: "#1f2d3a" },
+                  { k: "Energy", v: "↑", c: "hsl(25 97% 66%)" },
+                  { k: "Stress", v: "↓", c: "#6c63ff" },
+                ].map((x) => (
+                  <div key={x.k} className="rounded-xl border border-border p-3 text-sm">
+                    <div className="flex items-center justify-between">
+                      <span className="font-medium text-[#1f2d3a]">{x.k}</span>
+                      <span style={{ color: x.c }} className="font-semibold">{x.v}</span>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
+            {/* home indicator */}
+            <div className="pointer-events-none absolute bottom-3 left-1/2 h-1.5 w-28 -translate-x-1/2 rounded-full bg-black/70 opacity-70" />
+          </div>
         </div>
       </div>
-      {/* home indicator */}
-      <div className="pointer-events-none absolute bottom-3 left-1/2 h-1.5 w-28 -translate-x-1/2 rounded-full bg-black/70 opacity-70" />
     </div>
   );
 }
