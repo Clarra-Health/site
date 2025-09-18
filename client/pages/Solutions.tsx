@@ -38,6 +38,7 @@ export default function Solutions() {
                   { label: "Sleep, mood, and symptoms in context—not in isolation", icon: "moon", color: "bg-[#1f2d3a]" },
                   { label: "Personalized actions you can take today", icon: "check", color: "bg-[#b9e3e2]" },
                   { label: "Shareable summaries for your clinician", icon: "share", color: "bg-[hsl(25_97%_66%)]" },
+                  { label: "Next‑gen digital OS powered by AI", icon: "cpu", color: "bg-[#56d257]" },
                 ].map((t, i) => (
                   <div key={i} className="flex items-center gap-5 rounded-2xl border border-border bg-card p-5 shadow-sm">
                     <span className={`inline-grid h-14 w-14 shrink-0 place-items-center rounded-2xl text-white ${t.color}`}>
@@ -55,6 +56,13 @@ export default function Solutions() {
                       )}
                       {t.icon === "share" && (
                         <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                      )}
+                      {t.icon === "cpu" && (
+                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <rect x="4" y="4" width="16" height="16" rx="2" />
+                          <rect x="9" y="9" width="6" height="6" />
+                          <path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2" />
+                        </svg>
                       )}
                     </span>
                     <span className="text-base sm:text-lg text-foreground/90">{t.label}</span>
