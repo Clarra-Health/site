@@ -10,9 +10,9 @@ const nav = [
     to: "/who-we-help",
     label: "Who We Help",
     children: [
-      { to: "/who-we-help/you", label: "Woman" },
-      { to: "/who-we-help/clinicians-researchers", label: "Clinicians/Researchers" },
-      { to: "/who-we-help/payers", label: "Payers" },
+      { to: "/who-we-help/you", label: "For Woman" },
+      { to: "/who-we-help/clinicians-researchers", label: "For Clinicians/ Researchers" },
+      { to: "/who-we-help/payers", label: "For Payers" },
     ],
   },
   { to: "/how-we-protect-your-data", label: "Data Privacy" },
