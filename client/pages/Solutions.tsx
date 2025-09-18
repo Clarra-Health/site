@@ -19,8 +19,8 @@ export default function Solutions() {
 
       <section className="py-0">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9b876ea6526843a4836f5167f1c6dffa?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9b876ea6526843a4836f5167f1c6dffa?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9b876ea6526843a4836f5167f1c6dffa?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9b876ea6526843a4836f5167f1c6dffa?format=webp&width=2400 2400w"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b4601547e454989b698e119d84f31ce?format=webp&width=2000"
+          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b4601547e454989b698e119d84f31ce?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b4601547e454989b698e119d84f31ce?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b4601547e454989b698e119d84f31ce?format=webp&width=2400 2400w"
           sizes="100vw"
           alt="Our Tech illustration"
           className="block w-full h-auto"
