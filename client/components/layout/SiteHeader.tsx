@@ -3,8 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 
 const nav = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/how-it-works", label: "How Clarra Works" },
+  { to: "/about", label: "Meet Clarra" },
+  { to: "/how-it-works", label: "Our Tech" },
   { to: "/how-we-protect-your-data", label: "Data Privacy" },
   { to: "/contact", label: "Contact" },
   { to: "/waitlist", label: "Waitlist" },
