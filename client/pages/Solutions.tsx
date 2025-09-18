@@ -52,9 +52,9 @@ export default function Solutions() {
         </div>
       </section>
 
-      <section className="py-8">
+      <section className="py-12 bg-[#b9e3e2]">
         <div className="container">
-          <div className="mx-auto max-w-5xl text-center overflow-hidden rounded-3xl border border-border bg-[#b9e3e2] p-8 sm:p-10">
+          <div className="mx-auto max-w-5xl text-center">
             <h2 className="font-display text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">24/7 Answers. Zero Wait.</h2>
             <p className="mt-3 text-base sm:text-lg text-[#1f2d3a]/90">Powered by AI trained on women’s health, Clarra delivers instant, personalized insights—anytime, anywhere.</p>
           </div>
