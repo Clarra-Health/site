@@ -15,6 +15,10 @@ import Placeholder from "./pages/Placeholder";
 import Waitlist from "./pages/Waitlist";
 import NotFound from "./pages/NotFound";
 import DataPrivacy from "./pages/DataPrivacy";
+import WhoWeHelp from "./pages/WhoWeHelp";
+import WhoWeHelpYou from "./pages/WhoWeHelpYou";
+import WhoWeHelpCliniciansResearchers from "./pages/WhoWeHelpCliniciansResearchers";
+import WhoWeHelpPayers from "./pages/WhoWeHelpPayers";
 
 const queryClient = new QueryClient();
 
