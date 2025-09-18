@@ -35,6 +35,7 @@ export default function SiteFooter() {
             <p className="text-lg font-semibold uppercase tracking-wide">Product</p>
             <ul className="mt-4 space-y-2 text-base text-primary-foreground/80">
               <li><Link to="/how-it-works" className="hover:text-primary-foreground">Our Tech</Link></li>
+              <li><Link to="/who-we-help" className="hover:text-primary-foreground">Who We Help</Link></li>
               <li><Link to="/waitlist" className="hover:text-primary-foreground">Waitlist</Link></li>
             </ul>
           </div>
