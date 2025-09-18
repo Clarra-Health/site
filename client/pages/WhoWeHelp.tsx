@@ -11,9 +11,9 @@ export default function WhoWeHelp() {
           </p>
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <AudienceCard title="Woman" to="/who-we-help/you" description="Personalized guidance, insights, and support through perimenopause, menopause, and beyond." />
-          <AudienceCard title="Clinicians/Researchers" to="/who-we-help/clinicians-researchers" description="Tools and data to enhance care, advance research, and close evidence gaps for women’s health." />
-          <AudienceCard title="Payers" to="/who-we-help/payers" description="Smarter benefits and outcomes with prevention-first pathways and real-time insights." />
+          <AudienceCard title="For Woman" to="/who-we-help/you" description="Personalized guidance, insights, and support through perimenopause, menopause, and beyond." />
+          <AudienceCard title="For Clinicians/ Researchers" to="/who-we-help/clinicians-researchers" description="Tools and data to enhance care, advance research, and close evidence gaps for women’s health." />
+          <AudienceCard title="For Payers" to="/who-we-help/payers" description="Smarter benefits and outcomes with prevention-first pathways and real-time insights." />
         </div>
       </div>
     </section>
