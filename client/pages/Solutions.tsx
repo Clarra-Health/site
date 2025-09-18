@@ -130,7 +130,7 @@ export default function Solutions() {
 
 function PhoneMockHormone() {
   return (
-    <div className="relative w-[360px] sm:w-[440px] md:w-[560px] lg:w-[620px]">
+    <div className="relative w-[320px] sm:w-[360px]">
       {/* metal frame */}
       <div className="relative rounded-[3.2rem] bg-gradient-to-br from-[#9aa3af] via-[#e5e7eb] to-[#8b95a5] p-[10px] shadow-[0_10px_40px_rgba(0,0,0,0.35)]">
         {/* bezel */}
