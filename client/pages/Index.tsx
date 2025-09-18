@@ -93,7 +93,7 @@ export default function Index() {
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
             <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">
-              Clarra’s mission is to harness <EmUnderline>the power of AI</EmUnderline> to <EmUnderline>transform women’s health</EmUnderline>—addressing the fact that <EmCircle>47 million</EmCircle> women worldwide enter menopause each year <EmUnderline>without</EmUnderline> the <EmCircle>care</EmCircle> they need.
+              Clarra’s mission is to harness <EmUnderline>the power of AI</EmUnderline> to <EmUnderline>transform women’s health</EmUnderline>—addressing the fact that <EmCircle scale={0.67}>47 million</EmCircle> women worldwide enter menopause each year <EmUnderline>without</EmUnderline> the <EmCircle scale={0.25}>care</EmCircle> they need.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
               <p>
@@ -209,22 +209,34 @@ function IconShield() {
   );
 }
 
-function EmUnderline({ children }: { children: React.ReactNode }) {
+function EmUnderline({ children, offsetScale = 0.8 }: { children: React.ReactNode; offsetScale?: number }) {
   return (
     <span className="relative inline-block px-0.5 align-baseline">
       <span className="relative z-10">{children}</span>
-      <svg aria-hidden className="pointer-events-none absolute left-[-1%] right-[-1%] bottom-[-0.18em] h-[0.55em] w-[102%]" viewBox="0 0 100 20" preserveAspectRatio="none">
+      <svg
+        aria-hidden
+        className="pointer-events-none absolute left-[-1%] right-[-1%] h-[0.55em] w-[102%]"
+        viewBox="0 0 100 20"
+        preserveAspectRatio="none"
+        style={{ bottom: `calc(-0.18em * ${offsetScale})` }}
+      >
         <path d="M2 14 L 98 14" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3.15" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     </span>
   );
 }
 
-function EmCircle({ children }: { children: React.ReactNode }) {
+function EmCircle({ children, scale = 1 }: { children: React.ReactNode; scale?: number }) {
   return (
     <span className="relative inline-block px-1">
       <span className="relative z-10">{children}</span>
-      <svg aria-hidden className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]" viewBox="0 0 100 60" preserveAspectRatio="none">
+      <svg
+        aria-hidden
+        className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]"
+        viewBox="0 0 100 60"
+        preserveAspectRatio="none"
+        style={{ transform: `scale(${scale})`, transformOrigin: "center" }}
+      >
         <ellipse cx="50" cy="30" rx="47" ry="26" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3.15" />
       </svg>
     </span>
