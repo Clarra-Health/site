@@ -32,7 +32,7 @@ export default function Index() {
                   to="/how-it-works"
                   className="inline-flex items-center justify-center rounded-md bg-white/95 px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white"
                 >
-                  How Clarra Works
+                  Our Tech
                 </Link>
               </div>
             </div>
