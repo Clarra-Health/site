@@ -23,8 +23,8 @@ export default function WhoWeHelp() {
         <div className="container">
           <div className="mx-auto max-w-5xl">
             <img
-              src="https://images.pexels.com/photos/4063791/pexels-photo-4063791.jpeg"
-              alt="Two happy women in their 40s smiling together at a cafe"
+              src="https://images.pexels.com/photos/4051137/pexels-photo-4051137.jpeg"
+              alt="Two happy women chatting together indoors, bright and cheerful"
               className="block w-full h-auto rounded-2xl shadow-md object-cover"
               loading="lazy"
               decoding="async"
