@@ -89,8 +89,8 @@ export default function Index() {
       <section className="py-6">
         <div className="container">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F434854dc7cc44c6e912a5b2e128c6e3f?format=webp&width=1600"
-            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F434854dc7cc44c6e912a5b2e128c6e3f?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F434854dc7cc44c6e912a5b2e128c6e3f?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F434854dc7cc44c6e912a5b2e128c6e3f?format=webp&width=1600 1600w"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=1600"
+            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=1600 1600w"
             sizes="100vw"
             alt="47 million graphic"
             className="block w-full h-auto rounded-2xl shadow"
