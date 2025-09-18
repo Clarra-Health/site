@@ -157,7 +157,7 @@ function Feature({ icon, title, description, iconBg = "bg-primary" }: { icon: Re
   return (
     <div className="rounded-2xl border border-border bg-card/80 p-6 shadow-sm transition hover:shadow-md">
       <div className="flex items-center gap-4">
-        <span className={`inline-flex h-12 w-12 items-center justify-center rounded-full text-white ${iconBg} ring-2 ring-white/70 shadow`}>
+        <span className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl text-white ${iconBg} ring-2 ring-white/80 shadow-md`}>
           {icon}
         </span>
         <p className="font-semibold">{title}</p>
@@ -192,32 +192,31 @@ function Step({ n, title, text }: { n: number; title: string; text: string }) {
 
 function IconSpark() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83" />
+    <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden>
+      <path d="M12 2l2.6 5.3 5.9.9-4.3 4.2 1 5.9L12 15.9 6.8 18.3l1-5.9-4.3-4.2 5.9-.9L12 2z" />
     </svg>
   );
 }
 function IconWand() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="m3 21 9-9" />
-      <path d="M12.2 6.1 11 4l1.2-2.1L14.3 3l-2.1 1.1Z" />
-      <path d="m18.4 10.9-1.1-2.1 1.1-2.1 2.1 1.1-2.1 1Z" />
-      <path d="m5.6 10.9-2.1-1.1L4.6 7.7l1.1 2.1-1.1 1.1Z" />
+    <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden>
+      <path d="M3 21l8.5-8.5 3 3L6 24 3 21z" />
+      <path d="M14.5 4.5l2.5-2.5L19.5 4.5 17 7z" />
+      <path d="M19 9l1.5-1.5L22 9l-1.5 1.5L19 9z" />
     </svg>
   );
 }
 function IconChat() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" />
+    <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden>
+      <path d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H9l-5 4V5z" />
     </svg>
   );
 }
 function IconShield() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+    <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden>
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
     </svg>
   );
 }
