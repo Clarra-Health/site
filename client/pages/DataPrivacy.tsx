@@ -45,7 +45,7 @@ export default function DataPrivacy() {
           </div>
 
           <div className="mx-auto mt-8 max-w-5xl">
-            <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9542412492fb49d087ef5801e522cfaf?format=webp&width=800" alt="Data for Good" className="w-full h-auto rounded-3xl border border-border" />
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F8f351b6639164bae82ce995179daef21?format=webp&width=1600" alt="Data for Good" className="w-full h-auto rounded-3xl border border-border" />
           </div>
 
           <section className="mt-12 overflow-hidden rounded-3xl border border-border bg-[hsl(25_97%_66%)] p-8 text-white shadow-sm">
