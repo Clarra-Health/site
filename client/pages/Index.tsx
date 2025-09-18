@@ -193,23 +193,25 @@ function Step({ n, title, text }: { n: number; title: string; text: string }) {
 function IconSpark() {
   return (
     <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden>
-      <path d="M12 2l2.6 5.3 5.9.9-4.3 4.2 1 5.9L12 15.9 6.8 18.3l1-5.9-4.3-4.2 5.9-.9L12 2z" />
+      <path d="M3 20h18v2H3z" />
+      <rect x="5" y="11" width="3" height="7" rx="1" />
+      <rect x="10.5" y="8" width="3" height="10" rx="1" />
+      <rect x="16" y="5" width="3" height="13" rx="1" />
     </svg>
   );
 }
 function IconWand() {
   return (
     <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden>
-      <path d="M3 21l8.5-8.5 3 3L6 24 3 21z" />
-      <path d="M14.5 4.5l2.5-2.5L19.5 4.5 17 7z" />
-      <path d="M19 9l1.5-1.5L22 9l-1.5 1.5L19 9z" />
+      <path d="M12 2c-3.9 0-7 3-7 6.7 0 2 1 3.7 2.7 4.9-.2 1.1-.7 2.4-1.6 3.6-.4.5.2 1.2.8 1 1.9-.6 3.5-1.5 4.6-2.4.9.2 1.8.3 2.8.3 3.9 0 7-3 7-6.7S15.9 2 12 2z" />
     </svg>
   );
 }
 function IconChat() {
   return (
     <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden>
-      <path d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H9l-5 4V5z" />
+      <path d="M2 6a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H9l-4 3V6z" />
+      <path d="M9 10h10a3 3 0 0 1 3 3v4l-3 2v-2h-7a3 3 0 0 1-3-3v-4z" />
     </svg>
   );
 }
@@ -217,6 +219,8 @@ function IconShield() {
   return (
     <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden>
       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      <rect x="8" y="10" width="8" height="7" rx="2" />
+      <path d="M11 12h2v3h-2z" />
     </svg>
   );
 }
