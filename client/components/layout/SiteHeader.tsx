@@ -10,7 +10,7 @@ const nav = [
     to: "/who-we-help",
     label: "Who We Help",
     children: [
-      { to: "/who-we-help/you", label: "You" },
+      { to: "/who-we-help/you", label: "Woman" },
       { to: "/who-we-help/clinicians-researchers", label: "Clinicians/Researchers" },
       { to: "/who-we-help/payers", label: "Payers" },
     ],
