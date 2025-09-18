@@ -6,19 +6,19 @@ export default function NotInYourHead() {
       highlight: "90%",
     },
     {
-      k: "Symptoms last up to 15 years, 8.5 on average",
+      k: "Symptoms can last up to 10 years",
       s: "",
-      highlight: "last up to 15 years",
+      highlight: "10 years",
     },
     {
-      k: "There are more than 34 symptoms",
+      k: "There are more than 100 symptoms",
       s: "",
-      highlight: "34",
+      highlight: "100",
     },
     {
-      k: "Symptoms start in your forties",
+      k: "It takes an average of 7 years to be diagnosed with a menopause-related condition",
       s: "",
-      highlight: "forties",
+      highlight: "7 years",
     },
   ];
   return (
