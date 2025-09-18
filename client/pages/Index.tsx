@@ -78,7 +78,7 @@ export default function Index() {
                 to="/how-it-works"
                 className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-12 py-6 text-2xl font-semibold text-white shadow-sm transition hover:opacity-90"
               >
-                Learn More
+                Meet Clarra
               </Link>
             </div>
           </div>
@@ -86,18 +86,16 @@ export default function Index() {
       </section>
 
       {/* 47 Million image (home only) */}
-      <section className="py-6">
-        <div className="container">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=1600"
-            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=1600 1600w"
-            sizes="100vw"
-            alt="47 million graphic"
-            className="block w-full h-auto rounded-2xl shadow"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
+      <section className="py-0">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=2000"
+          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=2400 2400w"
+          sizes="100vw"
+          alt="47 million graphic"
+          className="block w-full h-auto"
+          loading="lazy"
+          decoding="async"
+        />
       </section>
 
       {/* Not In Your Head (home only) */}
