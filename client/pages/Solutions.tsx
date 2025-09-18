@@ -6,7 +6,7 @@ const heroImg =
 export default function Solutions() {
   return (
     <>
-      <section className="py-8">
+      <section className="py-8 bg-[#b9e3e2]">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
             <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">NOT ANOTHER SYMPTOM TRACKER</h1>
@@ -31,22 +31,36 @@ export default function Solutions() {
               <p className="mt-3 text-base sm:text-lg text-foreground/85">
                 Built for midlife, Clarra brings biomarkers, wearables, and lived symptoms together to reveal what’s driving your day-to-day. See trends, spot patterns, and get clear next steps—without the overwhelm.
               </p>
-              <ul className="mt-6 space-y-3">
+              <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {[
-                  "Real‑time hormone trends (estrogen, progesterone, LH)",
-                  "Cycle‑aware insights that anticipate what’s next",
-                  "Sleep, mood, and symptoms in context—not in isolation",
-                  "Personalized actions you can take today",
-                  "Shareable summaries for your clinician",
-                ].map((t) => (
-                  <li key={t} className="flex items-center gap-3">
-                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#56d257] ring-2 ring-white/70 shadow" />
-                    <span className="inline-flex items-center rounded-full bg-[#b9e3e2] px-4 py-2 text-sm font-medium text-[#1f2d3a]">
-                      {t}
+                  { label: "Real‑time hormone trends (estrogen, progesterone, LH)", icon: "activity", color: "bg-[hsl(25_97%_66%)]" },
+                  { label: "Cycle‑aware insights that anticipate what’s next", icon: "timer", color: "bg-[#56d257]" },
+                  { label: "Sleep, mood, and symptoms in context—not in isolation", icon: "moon", color: "bg-[#1f2d3a]" },
+                  { label: "Personalized actions you can take today", icon: "check", color: "bg-[#b9e3e2]" },
+                  { label: "Shareable summaries for your clinician", icon: "share", color: "bg-[hsl(25_97%_66%)]" },
+                ].map((t, i) => (
+                  <div key={i} className="flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-sm">
+                    <span className={`inline-flex h-12 w-12 items-center justify-center rounded-xl text-white ${t.color}`}>
+                      {t.icon === "activity" && (
+                        <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                      )}
+                      {t.icon === "timer" && (
+                        <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="10" y1="2" x2="14" y2="2"/><line x1="12" y1="14" x2="12" y2="8"/><circle cx="12" cy="14" r="8"/></svg>
+                      )}
+                      {t.icon === "moon" && (
+                        <svg viewBox="0 0 24 24" className="h-6 w-6" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+                      )}
+                      {t.icon === "check" && (
+                        <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                      )}
+                      {t.icon === "share" && (
+                        <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                      )}
                     </span>
-                  </li>
+                    <span className="text-sm sm:text-base text-foreground/90">{t.label}</span>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>
