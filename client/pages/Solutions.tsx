@@ -17,6 +17,41 @@ export default function Solutions() {
         </div>
       </section>
 
+      {/* Hormone tracking section (brand colors) */}
+      <section className="py-12">
+        <div className="container">
+          <div className="mx-auto max-w-6xl grid gap-10 md:grid-cols-2 md:items-center">
+            <div className="justify-self-center">
+              <PhoneMockHormone />
+            </div>
+            <div>
+              <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-[#1f2d3a]">
+                Clarra turns your hormone story into care
+              </h2>
+              <p className="mt-3 text-base sm:text-lg text-foreground/85">
+                Built for midlife, Clarra brings biomarkers, wearables, and lived symptoms together to reveal what’s driving your day-to-day. See trends, spot patterns, and get clear next steps—without the overwhelm.
+              </p>
+              <ul className="mt-6 space-y-3">
+                {[
+                  "Real‑time hormone trends (estrogen, progesterone, LH)",
+                  "Cycle‑aware insights that anticipate what’s next",
+                  "Sleep, mood, and symptoms in context—not in isolation",
+                  "Personalized actions you can take today",
+                  "Shareable summaries for your clinician",
+                ].map((t) => (
+                  <li key={t} className="flex items-center gap-3">
+                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#56d257] ring-2 ring-white/70 shadow" />
+                    <span className="inline-flex items-center rounded-full bg-[#b9e3e2] px-4 py-2 text-sm font-medium text-[#1f2d3a]">
+                      {t}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-0">
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b4601547e454989b698e119d84f31ce?format=webp&width=2000"
