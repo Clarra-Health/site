@@ -38,18 +38,17 @@ export default function SiteHeader() {
                 <NavigationMenu>
                   <NavigationMenuList>
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger asChild>
-                        <NavLink
-                          to={item.to}
-                          className={({ isActive }) =>
-                            `transition-colors hover:text-primary ${isActive ? "text-primary" : "text-muted-foreground"}`
-                          }
-                        >
-                          {item.label}
-                        </NavLink>
+                      <NavigationMenuTrigger className="bg-transparent p-0 hover:bg-transparent text-muted-foreground data-[state=open]:text-primary">
+                        {item.label}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="w-[260px] p-2">
+                          <Link
+                            to={(item as any).to}
+                            className="block rounded-md px-3 py-2 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
+                          >
+                            {(item as any).label}
+                          </Link>
                           {(item as any).children.map((child: any) => (
                             <Link
                               key={child.to}
