@@ -2,21 +2,37 @@ import { Link } from "react-router-dom";
 
 export default function WhoWeHelp() {
   return (
-    <section className="py-10">
-      <div className="container">
-        <div className="mx-auto max-w-5xl text-center">
-          <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Who We Help</h1>
-          <p className="mt-4 mx-auto max-w-2xl text-lg text-muted-foreground">
-            Clarra supports people navigating midlife health, the clinicians and researchers who care for them, and the organizations investing in better outcomes.
-          </p>
+    <>
+      <section className="py-10">
+        <div className="container">
+          <div className="mx-auto max-w-5xl text-center">
+            <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Who We Help</h1>
+            <p className="mt-4 mx-auto max-w-2xl text-lg text-muted-foreground">
+              Clarra supports people navigating midlife health, the clinicians and researchers who care for them, and the organizations investing in better outcomes.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <AudienceCard title="For Woman" to="/who-we-help/you" description="Personalized guidance, insights, and support through perimenopause, menopause, and beyond." />
+            <AudienceCard title="For Clinicians/ Researchers" to="/who-we-help/clinicians-researchers" description="Tools and data to enhance care, advance research, and close evidence gaps for women’s health." />
+            <AudienceCard title="For Payers" to="/who-we-help/payers" description="Smarter benefits and outcomes with prevention-first pathways and real-time insights." />
+          </div>
         </div>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <AudienceCard title="For Woman" to="/who-we-help/you" description="Personalized guidance, insights, and support through perimenopause, menopause, and beyond." />
-          <AudienceCard title="For Clinicians/ Researchers" to="/who-we-help/clinicians-researchers" description="Tools and data to enhance care, advance research, and close evidence gaps for women’s health." />
-          <AudienceCard title="For Payers" to="/who-we-help/payers" description="Smarter benefits and outcomes with prevention-first pathways and real-time insights." />
+      </section>
+
+      <section className="py-10">
+        <div className="container">
+          <div className="mx-auto max-w-5xl">
+            <img
+              src="https://images.pexels.com/photos/4063791/pexels-photo-4063791.jpeg"
+              alt="Two happy women in their 40s smiling together at a cafe"
+              className="block w-full h-auto rounded-2xl shadow-md object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
