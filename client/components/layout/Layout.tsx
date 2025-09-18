@@ -10,6 +10,7 @@ export default function Layout() {
       <main className="flex-1">
         <Outlet />
       </main>
+      <NotInYourHead />
       <SiteFooter />
     </div>
   );
