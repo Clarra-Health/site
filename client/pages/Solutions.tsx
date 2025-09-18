@@ -128,6 +128,66 @@ export default function Solutions() {
   );
 }
 
+function PhoneMockHormone() {
+  return (
+    <div className="relative w-[320px] sm:w-[360px] rounded-[2.2rem] border border-border bg-white shadow-xl overflow-hidden">
+      {/* top bar */}
+      <div className="absolute left-1/2 top-0 h-6 w-40 -translate-x-1/2 rounded-b-2xl bg-black/80" />
+      <div className="p-4 pt-8">
+        <div className="rounded-xl bg-[#b9e3e2]/30 p-3 ring-1 ring-[#b9e3e2]">
+          {/* simple hormone chart */}
+          <svg viewBox="0 0 320 180" className="block w-full h-auto">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stopColor="hsl(25 97% 66%)" stopOpacity="0.5" />
+                <stop offset="100%" stopColor="hsl(25 97% 66%)" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient id="g2" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stopColor="#56d257" stopOpacity="0.5" />
+                <stop offset="100%" stopColor="#56d257" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient id="g3" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stopColor="#6c63ff" stopOpacity="0.5" />
+                <stop offset="100%" stopColor="#6c63ff" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="320" height="180" fill="#fff" rx="10" />
+            {/* axes */}
+            <line x1="24" y1="150" x2="300" y2="150" stroke="#e5e7eb" strokeWidth="2" />
+            <line x1="24" y1="20" x2="24" y2="150" stroke="#e5e7eb" strokeWidth="2" />
+            {/* estrogen curve */}
+            <path d="M24 140 C 70 60, 120 60, 150 140 S 230 140, 300 60" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3" />
+            {/* progesterone */}
+            <path d="M24 150 C 110 150, 150 100, 210 70 S 250 110, 300 110" fill="none" stroke="#56d257" strokeWidth="3" />
+            {/* LH spike */}
+            <path d="M170 150 L 180 30 L 190 150" fill="none" stroke="#6c63ff" strokeWidth="3" />
+            {/* labels */}
+            <text x="34" y="36" fontSize="10" fill="#1f2d3a">Estrogen</text>
+            <text x="214" y="64" fontSize="10" fill="#1f2d3a">Progesterone</text>
+            <text x="192" y="28" fontSize="10" fill="#1f2d3a">LH</text>
+          </svg>
+        </div>
+        {/* mini cards */}
+        <div className="mt-3 grid grid-cols-2 gap-2">
+          {[
+            { k: "Sleep", v: "+12%", c: "#56d257" },
+            { k: "Mood", v: "Stable", c: "#1f2d3a" },
+            { k: "Energy", v: "↑", c: "hsl(25 97% 66%)" },
+            { k: "Stress", v: "↓", c: "#6c63ff" },
+          ].map((x) => (
+            <div key={x.k} className="rounded-lg border border-border p-2 text-xs">
+              <div className="flex items-center justify-between">
+                <span className="font-medium text-[#1f2d3a]">{x.k}</span>
+                <span style={{ color: x.c }} className="font-semibold">{x.v}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function EmUnderline({ children }: { children: React.ReactNode }) {
   return (
     <span className="relative inline-block px-0.5">
