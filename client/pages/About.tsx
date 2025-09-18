@@ -44,17 +44,8 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
         />
       </section>
 
-      {/* Manifesto image full-bleed under hero */}
-      <section className="py-0">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2b4fcb1387af4f70a01d92ca9963e303?format=webp&width=1600"
-          alt="We're putting menopause at the centre of women's health — where it always belonged."
-          className="block h-auto w-full"
-        />
-      </section>
-
       {/* Meet Clarra mission intro */}
-      <section className="py-10">
+      <section className="py-10 bg-[#b9e3e2]">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
             <p className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#1f2d3a]">
@@ -62,7 +53,7 @@ WE’RE PUTTING MENOPAUSE AT THE CENTER OF WOMEN’S HEALTH — WHERE IT ALWAYS 
             </p>
             <div className="mt-4 space-y-4 text-base sm:text-lg text-foreground/85">
               <p>
-                By bringing together biomarkers, wearable data, and lived symptoms, Clarra creates a comprehensive view of health that makes care more proactive and precise. Our AI doesn’t just just track symptoms—it translates data into clear insights, helping detect risks sooner, anticipate challenges, and support smarter decisions.
+                By bringing together biomarkers, wearable data, and lived symptoms, Clarra creates a comprehensive view of health that makes care more proactive and precise. Our AI doesn’t just track symptoms—it translates data into clear insights, helping detect risks sooner, anticipate challenges, and support smarter decisions.
               </p>
               <p>
                 Our vision is simple: a system that is accurate, accessible, and scalable, where technology works for women and providers alike. With Clarra, midlife health is no longer invisible—it is understood, supported, and elevated to the standard of care women deserve.
