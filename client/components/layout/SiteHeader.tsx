@@ -1,14 +1,24 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent } from "@/components/ui/navigation-menu";
 
 const nav = [
   { to: "/", label: "Home" },
   { to: "/about", label: "Meet Clarra" },
   { to: "/how-it-works", label: "Our Tech" },
+  {
+    to: "/who-we-help",
+    label: "Who We Help",
+    children: [
+      { to: "/who-we-help/you", label: "You" },
+      { to: "/who-we-help/clinicians-researchers", label: "Clinicians/Researchers" },
+      { to: "/who-we-help/payers", label: "Payers" },
+    ],
+  },
   { to: "/how-we-protect-your-data", label: "Data Privacy" },
   { to: "/contact", label: "Contact" },
   { to: "/waitlist", label: "Waitlist" },
-];
+] as const;
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -21,17 +31,51 @@ export default function SiteHeader() {
             <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1f066c9308e94551a866d68b560c5311?format=webp&width=160" alt="Clarra" className="h-20 w-auto md:h-24 bg-transparent" />
           </Link>
         </div>
-        <nav className="hidden md:flex items-center gap-8 text-sm">
+        <nav className="hidden md:flex items-center gap-6 text-sm">
           {nav.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              className={({ isActive }) =>
-                `transition-colors hover:text-primary ${isActive ? "text-primary" : "text-muted-foreground"}`
-              }
-            >
-              {item.label}
-            </NavLink>
+            item && (item as any).children ? (
+              <div key={item.to} className="relative">
+                <NavigationMenu>
+                  <NavigationMenuList>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger asChild>
+                        <NavLink
+                          to={item.to}
+                          className={({ isActive }) =>
+                            `transition-colors hover:text-primary ${isActive ? "text-primary" : "text-muted-foreground"}`
+                          }
+                        >
+                          {item.label}
+                        </NavLink>
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="w-[260px] p-2">
+                          {(item as any).children.map((child: any) => (
+                            <Link
+                              key={child.to}
+                              to={child.to}
+                              className="block rounded-md px-3 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground"
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
+              </div>
+            ) : (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                className={({ isActive }) =>
+                  `transition-colors hover:text-primary ${isActive ? "text-primary" : "text-muted-foreground"}`
+                }
+              >
+                {item.label}
+              </NavLink>
+            )
           ))}
         </nav>
         <div className="hidden md:flex items-center gap-3">
@@ -56,16 +100,33 @@ export default function SiteHeader() {
         <div className="md:hidden border-t border-border bg-background">
           <div className="container py-3 space-y-1">
             {nav.map((item) => (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                onClick={() => setOpen(false)}
-                className={({ isActive }) =>
-                  `block rounded-md px-3 py-2 text-sm transition-colors ${isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-primary hover:text-primary-foreground"}`
-                }
-              >
-                {item.label}
-              </NavLink>
+              <div key={item.to}>
+                <NavLink
+                  to={item.to}
+                  onClick={() => setOpen(false)}
+                  className={({ isActive }) =>
+                    `block rounded-md px-3 py-2 text-sm transition-colors ${isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-primary hover:text-primary-foreground"}`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+                {(item as any).children && (
+                  <div className="ml-3 mt-1 space-y-1">
+                    {(item as any).children.map((child: any) => (
+                      <NavLink
+                        key={child.to}
+                        to={child.to}
+                        onClick={() => setOpen(false)}
+                        className={({ isActive }) =>
+                          `block rounded-md px-3 py-2 text-sm transition-colors ${isActive ? "bg-accent text-accent-foreground" : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"}`
+                        }
+                      >
+                        {child.label}
+                      </NavLink>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
             <div className="flex gap-2 pt-2">
               <a href="https://www.linkedin.com/in/clarra-health-663668384/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-border text-foreground">
