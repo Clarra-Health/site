@@ -19,7 +19,7 @@ export default function Index() {
                 </span>{" "}
                 CARE FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
               </h1>
-              <p className="mt-3 sm:mt-4 text-lg sm:text-xl font-semibold text-[hsl(210_29%_24%)]/95 max-w-xl">
+              <p className="mt-3 sm:mt-4 text-lg sm:text-xl font-medium text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra connects the dots between symptoms, insights, and support—so midlife health finally makes sense.
               </p>
               <div className="mt-6 sm:mt-6 mb-6 flex flex-col gap-3 sm:flex-row">
