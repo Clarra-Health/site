@@ -13,6 +13,9 @@ export default function SiteFooter() {
                 <p className="mt-3 text-sm sm:text-base text-[#1f2d3a]/90">
                   Investors, researchers, media, builders — let’s talk. We’re forming partnerships to bring Clarra to life. No question is too small.
                 </p>
+                <p className="mt-3 text-sm sm:text-base text-[#1f2d3a]/90">
+                  Email us at <a href="mailto:hello@clarrahealth.com" className="font-semibold underline underline-offset-4 hover:no-underline text-[#1f2d3a]">hello@clarrahealth.com</a>
+                </p>
               </div>
               <div className="flex md:justify-end">
                 <Link to="/contact" className="inline-flex items-center justify-center rounded-full bg-[#1f2d3a] px-12 py-6 text-2xl font-semibold text-white shadow-sm transition hover:bg-[#1f2d3a]/90">
