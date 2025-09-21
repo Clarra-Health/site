@@ -31,21 +31,21 @@ export default function SiteHeader() {
             <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1f066c9308e94551a866d68b560c5311?format=webp&width=160" alt="Clarra" className="h-20 w-auto md:h-24 bg-transparent" />
           </Link>
         </div>
-        <nav className="hidden md:flex items-center gap-6 text-base">
+        <nav className="hidden md:flex items-center gap-6 text-[1.1rem]">
           {nav.map((item) => (
             item && (item as any).children ? (
               <div key={item.to} className="relative">
                 <NavigationMenu>
                   <NavigationMenuList>
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger className="bg-transparent p-0 hover:bg-transparent text-muted-foreground data-[state=open]:text-primary text-base">
+                      <NavigationMenuTrigger className="bg-transparent p-0 hover:bg-transparent text-muted-foreground data-[state=open]:text-primary text-[1.1rem]">
                         {item.label}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="w-[260px] p-2">
                           <Link
                             to={(item as any).to}
-                            className="block rounded-md px-3 py-2 text-base font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
+                            className="block rounded-md px-3 py-2 text-[1.1rem] font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
                           >
                             {(item as any).label}
                           </Link>
@@ -53,7 +53,7 @@ export default function SiteHeader() {
                             <Link
                               key={child.to}
                               to={child.to}
-                              className="block rounded-md px-3 py-2 text-base text-foreground hover:bg-accent hover:text-accent-foreground"
+                              className="block rounded-md px-3 py-2 text-[1.1rem] text-foreground hover:bg-accent hover:text-accent-foreground"
                             >
                               {child.label}
                             </Link>
@@ -104,7 +104,7 @@ export default function SiteHeader() {
                   to={item.to}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `block rounded-md px-3 py-2 text-base transition-colors ${isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-primary hover:text-primary-foreground"}`
+                    `block rounded-md px-3 py-2 text-[1.1rem] transition-colors ${isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-primary hover:text-primary-foreground"}`
                   }
                 >
                   {item.label}
@@ -117,7 +117,7 @@ export default function SiteHeader() {
                         to={child.to}
                         onClick={() => setOpen(false)}
                         className={({ isActive }) =>
-                          `block rounded-md px-3 py-2 text-base transition-colors ${isActive ? "bg-accent text-accent-foreground" : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"}`
+                          `block rounded-md px-3 py-2 text-[1.1rem] transition-colors ${isActive ? "bg-accent text-accent-foreground" : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"}`
                         }
                       >
                         {child.label}
