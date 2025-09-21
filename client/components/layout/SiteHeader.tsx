@@ -50,7 +50,7 @@ export default function SiteHeader() {
                 <NavigationMenu>
                   <NavigationMenuList>
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger className="bg-transparent p-0 hover:bg-transparent text-muted-foreground data-[state=open]:text-primary text-[1.1rem]">
+                      <NavigationMenuTrigger className="p-0 text-muted-foreground text-[1.1rem] data-[state=open]:bg-secondary/50 data-[state=open]:text-secondary-foreground">
                         {item.label}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
@@ -65,7 +65,7 @@ export default function SiteHeader() {
                             <Link
                               key={child.to}
                               to={child.to}
-                              className="block rounded-md px-3 py-2 text-[1.1rem] text-foreground hover:bg-accent hover:text-accent-foreground"
+                              className="block rounded-md px-3 py-2 text-[1.1rem] text-foreground hover:bg-secondary hover:text-secondary-foreground"
                             >
                               {child.label}
                             </Link>
@@ -81,7 +81,7 @@ export default function SiteHeader() {
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
-                  `transition-colors hover:text-primary ${isActive ? "text-primary" : "text-muted-foreground"}`
+                  `rounded-md px-3 py-2 transition-colors ${isActive ? "bg-secondary/50 text-secondary-foreground" : "text-muted-foreground hover:bg-secondary hover:text-secondary-foreground"}`
                 }
               >
                 {item.label}
@@ -148,7 +148,7 @@ export default function SiteHeader() {
                   to={item.to}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `block rounded-md px-3 py-2 text-[1.1rem] transition-colors ${isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-primary hover:text-primary-foreground"}`
+                    `block rounded-md px-3 py-2 text-[1.1rem] transition-colors ${isActive ? "bg-secondary text-secondary-foreground" : "text-muted-foreground hover:bg-secondary hover:text-secondary-foreground"}`
                   }
                 >
                   {item.label}
