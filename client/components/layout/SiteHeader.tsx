@@ -65,7 +65,7 @@ export default function SiteHeader() {
                             <Link
                               key={child.to}
                               to={child.to}
-                              className="block rounded-md px-3 py-2 text-[1.1rem] text-foreground hover:bg-secondary hover:text-secondary-foreground"
+                              className="block rounded-md px-3 py-2 text-[1.1rem] text-foreground hover:text-primary"
                             >
                               {child.label}
                             </Link>
