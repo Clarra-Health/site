@@ -108,24 +108,3 @@
     letter-spacing: 0.02em;
   }
 }
-
-/* Decorative animated wavy background (used on WhoWeHelp pages) */
-.wavy-decor {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 140px;
-  background-image: url("https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffaa4e58f5ead4e97a0c6404a8bd51784?format=webp&width=800");
-  background-repeat: repeat-x;
-  background-size: 800px auto;
-  opacity: 0.35;
-  pointer-events: none;
-}
-.wavy-top { top: -10px; }
-.wavy-bottom { bottom: -10px; transform: scaleY(-1); }
-
-@keyframes wavy-slide { from { background-position-x: 0; } to { background-position-x: 1000px; } }
-@media (prefers-reduced-motion: no-preference) {
-  .wavy-decor { animation: wavy-slide 60s linear infinite; }
-}
-.dark .wavy-decor { opacity: 0.25; }
