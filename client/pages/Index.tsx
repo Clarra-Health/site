@@ -259,7 +259,7 @@ function Feature({
   iconBg?: string;
 }) {
   return (
-    <div className="rounded-2xl border border-border bg-card/80 p-6 shadow-sm transition hover:shadow-md">
+    <div className="rounded-2xl border border-border bg-card/90 p-6 shadow-xl shadow-black/20 transition hover:shadow-2xl hover:shadow-black/30">
       {icon ? (
         <div className="flex items-center gap-4">
           <span
