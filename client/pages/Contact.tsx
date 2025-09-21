@@ -42,6 +42,9 @@ export default function Contact() {
             <p className="mt-4 text-xl sm:text-2xl text-[#1f2d3a]">
               Investor, innovator, media, influencer — or simply excited to join Clarra? Reach out. We’re here for every conversation, big or small.
             </p>
+            <p className="mt-3 text-base sm:text-lg text-[#1f2d3a]/90">
+              Prefer email? <a href="mailto:hello@clarrahealth.com" className="font-semibold underline underline-offset-4 hover:no-underline text-[#1f2d3a]">hello@clarrahealth.com</a>
+            </p>
           </div>
 
           <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-border bg-secondary p-6 sm:p-8">
