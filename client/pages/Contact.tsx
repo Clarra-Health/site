@@ -59,7 +59,7 @@ export default function Contact() {
                   d="M2 15 Q 50 12 98 15"
                   fill="none"
                   stroke="hsl(25 97% 66%)"
-                  strokeWidth="2.756"
+                  strokeWidth="2.067"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
