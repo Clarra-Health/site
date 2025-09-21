@@ -56,19 +56,49 @@ export default function Index() {
         </div>
       </section>
 
-      {/* App Showcase (full-bleed) */}
-      <section className="py-0">
-        <Link to="/solutions" className="block focus:outline-none focus:ring-0">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=2000"
-            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=2400 2400w"
-            sizes="100vw"
-            alt="Chat with Clarra visual"
-            className="block w-full h-auto"
-            loading="eager"
-            decoding="async"
-          />
-        </Link>
+      {/* Hero split: features left, image right */}
+      <section className="py-8">
+        <div className="container">
+          <div className="grid items-center gap-8 sm:grid-cols-2">
+            <div className="sm:order-1">
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-lg text-foreground/90">Tracks 4 key hormones: LH, E3G, PdG, and FSH</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-lg text-foreground/90">Shows your 6 most fertile days & cycle shifts</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-lg text-foreground/90">Predicts & confirms your ovulation</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-lg text-foreground/90">Supports you from fertility to menopause</p>
+                </li>
+              </ul>
+            </div>
+            <div className="sm:order-2 flex justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
+                alt="Chat with Clarra phone mockup"
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Core capabilities - New section above Support at Every Stage */}
@@ -305,6 +335,14 @@ function IconChat() {
     </svg>
   );
 }
+function IconCheck() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M20 6L9 17l-5-5" />
+    </svg>
+  );
+}
+
 function IconShield() {
   return (
     <svg
