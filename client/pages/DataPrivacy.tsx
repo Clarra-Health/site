@@ -6,7 +6,7 @@ export default function DataPrivacy() {
         <div className="container">
           <div className="mx-auto max-w-4xl text-center">
             <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F5863347009694d46ab6ddbdebaeaf4c2?format=webp&width=200" alt="Clarra" className="mx-auto h-14 w-auto" />
-            <h1 className="font-display mt-3 text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">
+            <h1 className="font-display mt-3 text-5xl sm:text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               How We Protect Your Data
             </h1>
             <p className="mt-4 text-lg sm:text-xl md:text-2xl font-semibold text-[#1f2d3a]">
