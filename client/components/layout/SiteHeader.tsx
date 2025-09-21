@@ -148,7 +148,7 @@ export default function SiteHeader() {
                   to={item.to}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `block rounded-md px-3 py-2 text-[1.1rem] transition-colors ${isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-primary hover:text-primary-foreground"}`
+                    `block rounded-md px-3 py-2 text-[1.1rem] transition-colors ${isActive ? "text-primary" : "text-muted-foreground hover:text-primary"}`
                   }
                 >
                   {item.label}
@@ -161,7 +161,7 @@ export default function SiteHeader() {
                         to={child.to}
                         onClick={() => setOpen(false)}
                         className={({ isActive }) =>
-                          `block rounded-md px-3 py-2 text-[1.1rem] transition-colors ${isActive ? "bg-accent text-accent-foreground" : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"}`
+                          `block rounded-md px-3 py-2 text-[1.1rem] transition-colors ${isActive ? "text-primary" : "text-muted-foreground hover:text-primary"}`
                         }
                       >
                         {child.label}
