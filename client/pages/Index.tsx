@@ -71,6 +71,45 @@ export default function Index() {
         </Link>
       </section>
 
+      {/* Core capabilities - New section above Support at Every Stage */}
+      <section className="relative py-12">
+        <div className="container">
+          <div className="rounded-3xl border border-border bg-card/80 p-8 sm:p-10 shadow-sm">
+            <div className="mx-auto text-center">
+              <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">
+                Core capabilities
+              </h2>
+            </div>
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <Feature
+                icon={<IconFlask />}
+                title="Full-spectrum hormone testing"
+                description="Tracks four key hormones (LH, E3G, PdG, FSH) to capture the most comprehensive picture of midlife hormonal transitions available in consumer health."
+                iconBg="bg-[#56d257]"
+              />
+              <Feature
+                icon={<IconSpark />}
+                title="Predictive, preventative outcomes"
+                description="Uses advanced AI to forecast health trajectories and risks early, turning fragmented data into actionable guidance for prevention rather than reaction."
+                iconBg="bg-[#56d257]"
+              />
+              <Feature
+                icon={<IconChat />}
+                title="Conversational AI first"
+                description="An LLM-powered chatbot serves as the primary interface, making complex health insights intuitive, empathetic, and accessible through natural conversation."
+                iconBg="bg-[#56d257]"
+              />
+              <Feature
+                icon={<IconWatch />}
+                title="Seamless wearable integration"
+                description="Incorporates continuous real-world data from mainstream wearables to enrich models and personalize recommendations across sleep, metabolic, and cardiovascular health."
+                iconBg="bg-[#56d257]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="relative py-12">
         <div className="container">
@@ -262,6 +301,26 @@ function Step({ n, title, text }: { n: number; title: string; text: string }) {
         <p className="text-sm text-muted-foreground">{text}</p>
       </div>
     </li>
+  );
+}
+
+function IconFlask() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden>
+      <rect x="11" y="2" width="2" height="6" rx="1" />
+      <path d="M7 10l3.5-2h3L17 10l3 7a2 2 0 0 1-1.8 3H5.8A2 2 0 0 1 4 17l3-7z" />
+      <path d="M9 15h6" stroke="currentColor" strokeWidth="2" />
+    </svg>
+  );
+}
+function IconWatch() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden>
+      <rect x="9" y="2" width="6" height="3" rx="1" />
+      <rect x="7" y="6" width="10" height="12" rx="3" />
+      <rect x="9" y="19" width="6" height="3" rx="1" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
   );
 }
 
