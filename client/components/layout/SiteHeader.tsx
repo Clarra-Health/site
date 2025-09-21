@@ -37,7 +37,7 @@ export default function SiteHeader() {
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1f066c9308e94551a866d68b560c5311?format=webp&width=160"
+              src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fcb13d8bd4dd54d4c9b3a6b34a08291d1?format=webp&width=160"
               alt="Clarra"
               className="h-20 w-auto md:h-24 bg-transparent"
             />
