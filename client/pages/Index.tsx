@@ -9,7 +9,7 @@ export default function Index() {
         <div className="container">
           <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-12 items-start">
             <div className="sm:col-span-12 sm:col-start-1">
-              <h1 className="font-display text-[#1f2d3a] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[0.95]">
+              <h1 className="font-display text-[#1f2d3a] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
                 AI-POWERED {""}
                 <span className="relative inline-block px-1 align-baseline">
                   <span className="relative z-10">COMPASSIONATE</span>
