@@ -57,7 +57,7 @@ export default function SiteHeader() {
                         <div className="w-[260px] p-2">
                           <Link
                             to={(item as any).to}
-                            className="block rounded-md px-3 py-2 text-[1.1rem] font-medium text-foreground hover:bg-secondary hover:text-secondary-foreground"
+                            className="block rounded-md px-3 py-2 text-[1.1rem] font-medium text-foreground hover:text-primary"
                           >
                             {(item as any).label}
                           </Link>
