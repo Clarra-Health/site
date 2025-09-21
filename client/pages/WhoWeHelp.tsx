@@ -6,7 +6,7 @@ export default function WhoWeHelp() {
       <section className="py-10">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
-            <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">Who We Help</h1>
+            <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-[0.01em] text-[#1f2d3a]">Who We Help</h1>
             <p className="mt-4 mx-auto max-w-2xl text-lg text-muted-foreground">
               Clarra supports people navigating midlife health, the clinicians and researchers who care for them, and the organizations investing in better outcomes.
             </p>
