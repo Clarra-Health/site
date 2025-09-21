@@ -81,8 +81,11 @@ export default function Index() {
               </h2>
               <p className="mt-3 text-base sm:text-lg text-foreground/80">
                 From your first signs of perimenopause to postmenopausal bone
-                health, Clarra adapts to your needs with continuous, personalized support —
-                <span className="text-foreground/90">every stage, every step.</span>
+                health, Clarra adapts to your needs with continuous,
+                personalized support —
+                <span className="text-foreground/90">
+                  every stage, every step.
+                </span>
               </p>
             </div>
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
