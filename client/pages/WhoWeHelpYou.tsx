@@ -44,7 +44,7 @@ export default function WhoWeHelpYou() {
           <div className="relative overflow-hidden rounded-2xl border border-border bg-card">
             <div className="aspect-[16/9] sm:aspect-[4/3]">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Faeb9d362cbd54437bc865da98edf66f9?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7f486909aa044d588d0bcbd1e8c5df7a?format=webp&width=800"
                 alt="Smiling person in a home setting"
                 className="h-full w-full object-cover"
                 loading="eager"
