@@ -39,10 +39,16 @@ export default function Contact() {
         const data = await resp.json().catch(() => ({}));
         throw new Error(data?.error || "Failed to send");
       }
-      toast({ title: "Message sent", description: "We’ll get back to you soon." });
+      toast({
+        title: "Message sent",
+        description: "We’ll get back to you soon.",
+      });
       setForm({ firstName: "", lastName: "", email: "", message: "" });
     } catch (err: any) {
-      toast({ title: "Could not send", description: err?.message ?? "Please email hello@clarrahealth.com" });
+      toast({
+        title: "Could not send",
+        description: err?.message ?? "Please email hello@clarrahealth.com",
+      });
     } finally {
       setSubmitting(false);
     }

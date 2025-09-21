@@ -11,7 +11,9 @@ const ContactSchema = z.object({
 export const handleContact: RequestHandler = async (req, res) => {
   const parsed = ContactSchema.safeParse(req.body);
   if (!parsed.success) {
-    return res.status(400).json({ error: "Invalid payload", issues: parsed.error.flatten() });
+    return res
+      .status(400)
+      .json({ error: "Invalid payload", issues: parsed.error.flatten() });
   }
 
   const data = parsed.data;
@@ -28,16 +30,18 @@ export const handleContact: RequestHandler = async (req, res) => {
     });
   }
 
-  const subject = `New contact from ${data.firstName} ${data.lastName ?? ""}`.trim();
+  const subject =
+    `New contact from ${data.firstName} ${data.lastName ?? ""}`.trim();
   const html = `
     <div style="font-family:Inter,system-ui,sans-serif;line-height:1.6">
       <h2 style="margin:0 0 8px">Contact form submission</h2>
       <p><strong>Name:</strong> ${data.firstName} ${data.lastName ?? ""}</p>
       <p><strong>Email:</strong> ${data.email}</p>
       <p><strong>Message:</strong></p>
-      <pre style="white-space:pre-wrap;font-family:inherit;background:#f6f8fa;padding:12px;border-radius:8px">${
-        data.message.replace(/</g, "&lt;")
-      }</pre>
+      <pre style="white-space:pre-wrap;font-family:inherit;background:#f6f8fa;padding:12px;border-radius:8px">${data.message.replace(
+        /</g,
+        "&lt;",
+      )}</pre>
     </div>`;
 
   const resp = await fetch("https://api.resend.com/emails", {
@@ -57,7 +61,9 @@ export const handleContact: RequestHandler = async (req, res) => {
 
   if (!resp.ok) {
     const errText = await resp.text();
-    return res.status(502).json({ error: "Failed to send email", details: errText });
+    return res
+      .status(502)
+      .json({ error: "Failed to send email", details: errText });
   }
 
   return res.json({ ok: true });
