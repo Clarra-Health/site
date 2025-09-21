@@ -1,9 +1,9 @@
 export default function NotInYourHead() {
   const items = [
     {
-      k: "90% of women have symptoms",
+      k: "80% of women have symptoms",
       s: "",
-      highlight: "90%",
+      highlight: "80%",
     },
     {
       k: "Symptoms can last up to 10 years",
