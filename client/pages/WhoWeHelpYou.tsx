@@ -1,15 +1,6 @@
 export default function WhoWeHelpYou() {
   return (
-    <section
-      className="py-16"
-      style={{
-        backgroundImage:
-          'url("https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fba2ae8fed1bd44878ce368c1204fc5e2?format=webp&width=800")',
-        backgroundRepeat: "repeat-x",
-        backgroundPosition: "top center",
-        backgroundSize: "800px auto",
-      }}
-    >
+    <section className="py-10">
       <div className="container">
         <div className="mx-auto max-w-4xl">
           <h1 className="font-display text-5xl sm:text-6xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">For Woman</h1>
