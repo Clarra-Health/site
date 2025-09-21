@@ -76,34 +76,26 @@ export default function Index() {
         <div className="container">
           <div className="rounded-3xl border border-border bg-card/80 p-8 sm:p-10 shadow-sm">
             <div className="mx-auto text-center">
-              <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">
-                Core capabilities
+              <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">
+                NEXT-GEN TECHNOLOGY for better midlife health
               </h2>
             </div>
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid gap-6 sm:grid-cols-2">
               <Feature
-                icon={<IconFlask />}
                 title="Full-spectrum hormone testing"
                 description="Tracks four key hormones (LH, E3G, PdG, FSH) to capture the most comprehensive picture of midlife hormonal transitions available in consumer health."
-                iconBg="bg-[#56d257]"
               />
               <Feature
-                icon={<IconSpark />}
                 title="Predictive, preventative outcomes"
                 description="Uses advanced AI to forecast health trajectories and risks early, turning fragmented data into actionable guidance for prevention rather than reaction."
-                iconBg="bg-[#56d257]"
               />
               <Feature
-                icon={<IconChat />}
                 title="Conversational AI first"
                 description="An LLM-powered chatbot serves as the primary interface, making complex health insights intuitive, empathetic, and accessible through natural conversation."
-                iconBg="bg-[#56d257]"
               />
               <Feature
-                icon={<IconWatch />}
                 title="Seamless wearable integration"
                 description="Incorporates continuous real-world data from mainstream wearables to enrich models and personalize recommendations across sleep, metabolic, and cardiovascular health."
-                iconBg="bg-[#56d257]"
               />
             </div>
           </div>
@@ -261,21 +253,25 @@ function Feature({
   description,
   iconBg = "bg-primary",
 }: {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   title: string;
   description: string;
   iconBg?: string;
 }) {
   return (
     <div className="rounded-2xl border border-border bg-card/80 p-6 shadow-sm transition hover:shadow-md">
-      <div className="flex items-center gap-4">
-        <span
-          className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl text-white ${iconBg} ring-2 ring-white/80 shadow-md`}
-        >
-          {icon}
-        </span>
-        <p className="font-semibold">{title}</p>
-      </div>
+      {icon ? (
+        <div className="flex items-center gap-4">
+          <span
+            className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl text-white ${iconBg} ring-2 ring-white/80 shadow-md`}
+          >
+            {icon}
+          </span>
+          <p className="font-semibold">{title}</p>
+        </div>
+      ) : (
+        <p className="font-semibold text-lg">{title}</p>
+      )}
       <p className="mt-3 text-sm text-foreground/80">{description}</p>
     </div>
   );
