@@ -60,7 +60,7 @@ export default function Index() {
       <section className="py-8">
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
-            <div className="sm:order-1 transform sm:translate-x-[30%]">
+            <div className="sm:order-1 transform sm:-translate-x-[18%]">
               <h3 className="mb-4 text-xl font-semibold text-foreground/90">Clarra features</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -89,7 +89,7 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="sm:order-2 flex justify-center sm:justify-end">
+            <div className="sm:order-2 flex justify-center sm:justify-end transform sm:-translate-x-[25%]">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
                 alt="Chat with Clarra phone mockup"
