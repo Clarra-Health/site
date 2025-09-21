@@ -9,9 +9,32 @@ export default function Solutions() {
       <section className="py-8 bg-[#b9e3e2]">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
-            <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">NOT ANOTHER SYMPTOM TRACKER</h1>
+            <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-[0.01em] text-[#1f2d3a]">
+              NOT ANOTHER SYMPTOM TRACKER
+            </h1>
             <p className="mt-4 mx-auto max-w-3xl text-xl sm:text-[1.4rem] leading-relaxed font-medium text-muted-foreground">
-              Clarra is an <EmUnderline>AI-native</EmUnderline> health platform built for women in midlife. Instead of endless logs and health apps that track but don’t help, you simply chat with Clarra — <EmCircle><strong className="font-semibold">your midlife health partner.</strong></EmCircle> Behind the scenes, Clarra connects your symptoms, hormones, and wearable data to reveal patterns and deliver what matters most: <EmUnderline><strong className="font-semibold">personalized pathways</strong></EmUnderline>, <EmUnderline><strong className="font-semibold">predictive insights</strong></EmUnderline>, and <EmUnderline><strong className="font-semibold">clear next steps</strong></EmUnderline>.
+              Clarra is an <EmUnderline>AI-native</EmUnderline> health platform
+              built for women in midlife. Instead of endless logs and health
+              apps that track but don’t help, you simply chat with Clarra —{" "}
+              <EmCircle>
+                <strong className="font-semibold">
+                  your midlife health partner.
+                </strong>
+              </EmCircle>{" "}
+              Behind the scenes, Clarra connects your symptoms, hormones, and
+              wearable data to reveal patterns and deliver what matters most:{" "}
+              <EmUnderline>
+                <strong className="font-semibold">personalized pathways</strong>
+              </EmUnderline>
+              ,{" "}
+              <EmUnderline>
+                <strong className="font-semibold">predictive insights</strong>
+              </EmUnderline>
+              , and{" "}
+              <EmUnderline>
+                <strong className="font-semibold">clear next steps</strong>
+              </EmUnderline>
+              .
             </p>
           </div>
         </div>
@@ -25,47 +48,143 @@ export default function Solutions() {
               <PhoneMockHormone />
             </div>
             <div>
-              <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-[#1f2d3a]">
+              <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
                 Clarra turns your hormone story into care
               </h2>
               <p className="mt-3 text-base sm:text-lg text-foreground/85">
-                Built for midlife, Clarra brings biomarkers, wearables, and lived symptoms together to reveal what’s driving your day-to-day. See trends, spot patterns, and get clear next steps—without the overwhelm.
+                Built for midlife, Clarra brings biomarkers, wearables, and
+                lived symptoms together to reveal what’s driving your
+                day-to-day. See trends, spot patterns, and get clear next
+                steps—without the overwhelm.
               </p>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {[
-                  { label: "Real‑time hormone trends (estrogen, progesterone, LH)", icon: "activity", color: "bg-[hsl(25_97%_66%)]" },
-                  { label: "Cycle‑aware insights that anticipate what’s next", icon: "timer", color: "bg-[#56d257]" },
-                  { label: "Sleep, mood, and symptoms in context—not in isolation", icon: "moon", color: "bg-[#1f2d3a]" },
-                  { label: "Personalized actions you can take today", icon: "check", color: "bg-[#b9e3e2]" },
-                  { label: "Shareable summaries for your clinician", icon: "share", color: "bg-[hsl(25_97%_66%)]" },
-                  { label: "Next‑gen digital OS powered by AI", icon: "cpu", color: "bg-[#56d257]" },
+                  {
+                    label:
+                      "Real‑time hormone trends (estrogen, progesterone, LH)",
+                    icon: "activity",
+                    color: "bg-[hsl(25_97%_66%)]",
+                  },
+                  {
+                    label: "Cycle‑aware insights that anticipate what’s next",
+                    icon: "timer",
+                    color: "bg-[#56d257]",
+                  },
+                  {
+                    label:
+                      "Sleep, mood, and symptoms in context—not in isolation",
+                    icon: "moon",
+                    color: "bg-[#1f2d3a]",
+                  },
+                  {
+                    label: "Personalized actions you can take today",
+                    icon: "check",
+                    color: "bg-[#b9e3e2]",
+                  },
+                  {
+                    label: "Shareable summaries for your clinician",
+                    icon: "share",
+                    color: "bg-[hsl(25_97%_66%)]",
+                  },
+                  {
+                    label: "Next‑gen digital OS powered by AI",
+                    icon: "cpu",
+                    color: "bg-[#56d257]",
+                  },
                 ].map((t, i) => (
-                  <div key={i} className="flex items-center gap-5 rounded-2xl border border-border bg-card p-5 shadow-sm">
-                    <span className={`inline-grid h-14 w-14 shrink-0 place-items-center rounded-2xl text-white ${t.color}`}>
+                  <div
+                    key={i}
+                    className="flex items-center gap-5 rounded-2xl border border-border bg-card p-5 shadow-sm"
+                  >
+                    <span
+                      className={`inline-grid h-14 w-14 shrink-0 place-items-center rounded-2xl text-white ${t.color}`}
+                    >
                       {t.icon === "activity" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-7 w-7"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
                       )}
                       {t.icon === "timer" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="10" y1="2" x2="14" y2="2"/><line x1="12" y1="14" x2="12" y2="8"/><circle cx="12" cy="14" r="8"/></svg>
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-7 w-7"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <line x1="10" y1="2" x2="14" y2="2" />
+                          <line x1="12" y1="14" x2="12" y2="8" />
+                          <circle cx="12" cy="14" r="8" />
+                        </svg>
                       )}
                       {t.icon === "moon" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-7 w-7"
+                          fill="currentColor"
+                        >
+                          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+                        </svg>
                       )}
                       {t.icon === "check" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-7 w-7"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M20 6L9 17l-5-5" />
+                        </svg>
                       )}
                       {t.icon === "share" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-7 w-7"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <circle cx="18" cy="5" r="3" />
+                          <circle cx="6" cy="12" r="3" />
+                          <circle cx="18" cy="19" r="3" />
+                          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                        </svg>
                       )}
                       {t.icon === "cpu" && (
-                        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-7 w-7"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
                           <rect x="4" y="4" width="16" height="16" rx="2" />
                           <rect x="9" y="9" width="6" height="6" />
                           <path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2" />
                         </svg>
                       )}
                     </span>
-                    <span className="text-base sm:text-lg text-foreground/90">{t.label}</span>
+                    <span className="text-base sm:text-lg text-foreground/90">
+                      {t.label}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -77,8 +196,13 @@ export default function Solutions() {
       <section className="py-8">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
-            <h2 className="font-display text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">24/7 Answers. Zero Wait.</h2>
-            <p className="mt-3 text-base sm:text-lg text-[#1f2d3a]/90">Powered by AI trained on women’s health, Clarra delivers instant, personalized insights—anytime, anywhere.</p>
+            <h2 className="font-display text-5xl sm:text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
+              24/7 Answers. Zero Wait.
+            </h2>
+            <p className="mt-3 text-base sm:text-lg text-[#1f2d3a]/90">
+              Powered by AI trained on women’s health, Clarra delivers instant,
+              personalized insights—anytime, anywhere.
+            </p>
           </div>
         </div>
       </section>
@@ -94,7 +218,6 @@ export default function Solutions() {
           decoding="async"
         />
       </section>
-
 
       <FeatureGrid
         title="Transforming Data into Care"
@@ -154,7 +277,6 @@ export default function Solutions() {
           decoding="async"
         />
       </section>
-
     </>
   );
 }
@@ -179,15 +301,57 @@ function PhoneMockHormone() {
               <div className="rounded-2xl bg-[#b9e3e2]/30 p-4 ring-1 ring-[#b9e3e2]">
                 {/* simple hormone chart */}
                 <svg viewBox="0 0 320 180" className="block w-full h-auto">
-                  <rect x="0" y="0" width="320" height="180" fill="#fff" rx="10" />
-                  <line x1="24" y1="150" x2="300" y2="150" stroke="#e5e7eb" strokeWidth="2" />
-                  <line x1="24" y1="20" x2="24" y2="150" stroke="#e5e7eb" strokeWidth="2" />
-                  <path d="M24 140 C 70 60, 120 60, 150 140 S 230 140, 300 60" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3" />
-                  <path d="M24 150 C 110 150, 150 100, 210 70 S 250 110, 300 110" fill="none" stroke="#56d257" strokeWidth="3" />
-                  <path d="M170 150 L 180 30 L 190 150" fill="none" stroke="#6c63ff" strokeWidth="3" />
-                  <text x="34" y="36" fontSize="10" fill="#1f2d3a">Estrogen</text>
-                  <text x="214" y="64" fontSize="10" fill="#1f2d3a">Progesterone</text>
-                  <text x="192" y="28" fontSize="10" fill="#1f2d3a">LH</text>
+                  <rect
+                    x="0"
+                    y="0"
+                    width="320"
+                    height="180"
+                    fill="#fff"
+                    rx="10"
+                  />
+                  <line
+                    x1="24"
+                    y1="150"
+                    x2="300"
+                    y2="150"
+                    stroke="#e5e7eb"
+                    strokeWidth="2"
+                  />
+                  <line
+                    x1="24"
+                    y1="20"
+                    x2="24"
+                    y2="150"
+                    stroke="#e5e7eb"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M24 140 C 70 60, 120 60, 150 140 S 230 140, 300 60"
+                    fill="none"
+                    stroke="hsl(25 97% 66%)"
+                    strokeWidth="3"
+                  />
+                  <path
+                    d="M24 150 C 110 150, 150 100, 210 70 S 250 110, 300 110"
+                    fill="none"
+                    stroke="#56d257"
+                    strokeWidth="3"
+                  />
+                  <path
+                    d="M170 150 L 180 30 L 190 150"
+                    fill="none"
+                    stroke="#6c63ff"
+                    strokeWidth="3"
+                  />
+                  <text x="34" y="36" fontSize="10" fill="#1f2d3a">
+                    Estrogen
+                  </text>
+                  <text x="214" y="64" fontSize="10" fill="#1f2d3a">
+                    Progesterone
+                  </text>
+                  <text x="192" y="28" fontSize="10" fill="#1f2d3a">
+                    LH
+                  </text>
                 </svg>
               </div>
               <div className="mt-4 grid grid-cols-2 gap-3">
@@ -197,10 +361,15 @@ function PhoneMockHormone() {
                   { k: "Energy", v: "↑", c: "hsl(25 97% 66%)" },
                   { k: "Stress", v: "↓", c: "#6c63ff" },
                 ].map((x) => (
-                  <div key={x.k} className="rounded-xl border border-border p-3 text-sm">
+                  <div
+                    key={x.k}
+                    className="rounded-xl border border-border p-3 text-sm"
+                  >
                     <div className="flex items-center justify-between">
                       <span className="font-medium text-[#1f2d3a]">{x.k}</span>
-                      <span style={{ color: x.c }} className="font-semibold">{x.v}</span>
+                      <span style={{ color: x.c }} className="font-semibold">
+                        {x.v}
+                      </span>
                     </div>
                   </div>
                 ))}
@@ -219,8 +388,20 @@ function EmUnderline({ children }: { children: React.ReactNode }) {
   return (
     <span className="relative inline-block px-0.5">
       <span className="relative z-10">{children}</span>
-      <svg aria-hidden className="pointer-events-none absolute left-[-1%] right-[-1%] bottom-[-0.18em] h-[0.55em] w-[102%]" viewBox="0 0 100 20" preserveAspectRatio="none">
-        <path d="M2 14 L 98 14" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3.15" strokeLinecap="round" strokeLinejoin="round" />
+      <svg
+        aria-hidden
+        className="pointer-events-none absolute left-[-1%] right-[-1%] bottom-[-0.18em] h-[0.55em] w-[102%]"
+        viewBox="0 0 100 20"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M2 14 L 98 14"
+          fill="none"
+          stroke="hsl(25 97% 66%)"
+          strokeWidth="3.15"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     </span>
   );
@@ -230,35 +411,65 @@ function EmCircle({ children }: { children: React.ReactNode }) {
   return (
     <span className="relative inline-block px-1">
       <span className="relative z-10">{children}</span>
-      <svg aria-hidden className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]" viewBox="0 0 100 60" preserveAspectRatio="none">
-        <ellipse cx="50" cy="30" rx="47" ry="26" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="3.15" />
+      <svg
+        aria-hidden
+        className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]"
+        viewBox="0 0 100 60"
+        preserveAspectRatio="none"
+      >
+        <ellipse
+          cx="50"
+          cy="30"
+          rx="47"
+          ry="26"
+          fill="none"
+          stroke="hsl(25 97% 66%)"
+          strokeWidth="3.15"
+        />
       </svg>
     </span>
   );
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <section className="py-10">
       <div className="container">
-        <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
+        <h2 className="text-2xl font-semibold tracking-[0.01em]">{title}</h2>
         <p className="mt-4 text-muted-foreground">{children}</p>
       </div>
     </section>
   );
 }
 
-function StatsGrid({ title, items }: { title: string; items: { k: string; v: string; s?: string }[] }) {
+function StatsGrid({
+  title,
+  items,
+}: {
+  title: string;
+  items: { k: string; v: string; s?: string }[];
+}) {
   return (
     <section className="py-10">
       <div className="container">
         <h3 className="text-xl font-semibold">{title}</h3>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
           {items.map((it) => (
-            <div key={it.k} className="rounded-xl border border-border bg-card p-5">
+            <div
+              key={it.k}
+              className="rounded-xl border border-border bg-card p-5"
+            >
               <div className="text-sm text-muted-foreground">{it.k}</div>
               <div className="mt-1 text-2xl font-semibold">{it.v}</div>
-              {it.s && <div className="mt-1 text-sm text-muted-foreground">{it.s}</div>}
+              {it.s && (
+                <div className="mt-1 text-sm text-muted-foreground">{it.s}</div>
+              )}
             </div>
           ))}
         </div>
@@ -267,26 +478,55 @@ function StatsGrid({ title, items }: { title: string; items: { k: string; v: str
   );
 }
 
-function FeatureGrid({ title, subtitle, features }: { title: string; subtitle?: string; features: { title: string; description: string }[] }) {
+function FeatureGrid({
+  title,
+  subtitle,
+  features,
+}: {
+  title: string;
+  subtitle?: string;
+  features: { title: string; description: string }[];
+}) {
   return (
     <section className="py-12">
       <div className="container">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">{title}</h2>
+          <h2 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-[0.01em] text-[#1f2d3a]">
+            {title}
+          </h2>
           {subtitle && (
-            <p className="mt-3 text-base sm:text-lg text-muted-foreground">{subtitle}</p>
+            <p className="mt-3 text-base sm:text-lg text-muted-foreground">
+              {subtitle}
+            </p>
           )}
         </div>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {features.map((item, i) => (
-            <div key={i} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
+            <div
+              key={i}
+              className="rounded-2xl border border-border bg-card p-5 shadow-sm"
+            >
               <div className="flex items-start gap-5">
                 <span className="inline-grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-[#56d257] text-white ring-2 ring-white/70 shadow">
-                  <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-7 w-7"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M20 6L9 17l-5-5" />
+                  </svg>
                 </span>
                 <div>
-                  <p className="font-semibold text-base sm:text-lg">{item.title}</p>
-                  <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
+                  <p className="font-semibold text-base sm:text-lg">
+                    {item.title}
+                  </p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             </div>
@@ -317,10 +557,22 @@ function StatsList({ title, bullets }: { title: string; bullets: string[] }) {
 
 function Timeline() {
   const items = [
-    { year: "Year 1", text: "Launch chatbot, tracking, predictive insights, community. Premium tier live." },
-    { year: "Years 2–3", text: "Hormone flow tracking, telehealth, wellness modules, research pilots." },
-    { year: "Years 3��5", text: "Fertility expansion, wearables, EU/Asia rollout." },
-    { year: "Year 5+", text: "Post‑menopausal wellness, insurer and employer integrations, global scale." },
+    {
+      year: "Year 1",
+      text: "Launch chatbot, tracking, predictive insights, community. Premium tier live.",
+    },
+    {
+      year: "Years 2–3",
+      text: "Hormone flow tracking, telehealth, wellness modules, research pilots.",
+    },
+    {
+      year: "Years 3��5",
+      text: "Fertility expansion, wearables, EU/Asia rollout.",
+    },
+    {
+      year: "Year 5+",
+      text: "Post‑menopausal wellness, insurer and employer integrations, global scale.",
+    },
   ];
   return (
     <section className="py-10">
@@ -328,7 +580,10 @@ function Timeline() {
         <h3 className="text-xl font-semibold">Product Roadmap</h3>
         <div className="mt-6 grid gap-4 md:grid-cols-4">
           {items.map((it) => (
-            <div key={it.year} className="rounded-xl border border-border bg-card p-5">
+            <div
+              key={it.year}
+              className="rounded-xl border border-border bg-card p-5"
+            >
               <div className="text-sm text-muted-foreground">{it.year}</div>
               <div className="mt-1 text-sm">{it.text}</div>
             </div>

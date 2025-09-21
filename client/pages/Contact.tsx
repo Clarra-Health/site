@@ -30,13 +30,25 @@ export default function Contact() {
     }
     setSubmitting(true);
     try {
-      // In production, wire this up to your backend or Netlify Forms
-      await new Promise((r) => setTimeout(r, 600));
+      const resp = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!resp.ok) {
+        const data = await resp.json().catch(() => ({}));
+        throw new Error(data?.error || "Failed to send");
+      }
       toast({
         title: "Message sent",
         description: "We’ll get back to you soon.",
       });
       setForm({ firstName: "", lastName: "", email: "", message: "" });
+    } catch (err: any) {
+      toast({
+        title: "Could not send",
+        description: err?.message ?? "Please email hello@clarrahealth.com",
+      });
     } finally {
       setSubmitting(false);
     }
@@ -47,7 +59,7 @@ export default function Contact() {
       <section className="py-12">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">
+            <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-[0.01em] text-[#1f2d3a]">
               <span className="relative z-10">Contact us.</span>
               <svg
                 aria-hidden

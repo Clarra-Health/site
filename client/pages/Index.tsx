@@ -167,7 +167,7 @@ export default function Index() {
       <section className="py-12">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
-            <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">
+            <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               Clarra’s mission is to harness{" "}
               <EmUnderline>the power of AI</EmUnderline> to{" "}
               <EmUnderline>transform women’s health</EmUnderline>—addressing the
