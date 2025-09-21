@@ -74,8 +74,8 @@ export default function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link to="/waitlist" className="hover:text-primary-foreground">
-                  Waitlist
+                <Link to="/about" className="hover:text-primary-foreground">
+                  Meet Clarra
                 </Link>
               </li>
             </ul>

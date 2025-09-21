@@ -39,10 +39,10 @@ export default function Index() {
               </p>
               <div className="mt-6 sm:mt-6 mb-6 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  to="/waitlist"
+                  to="/about"
                   className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
                 >
-                  Join The Waitlist
+                  Meet Clarra
                 </Link>
                 <Link
                   to="/how-it-works"
@@ -56,71 +56,92 @@ export default function Index() {
         </div>
       </section>
 
-      {/* App Showcase (full-bleed) */}
-      <section className="py-0">
-        <Link to="/solutions" className="block focus:outline-none focus:ring-0">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=2000"
-            srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=2400 2400w"
-            sizes="100vw"
-            alt="Chat with Clarra visual"
-            className="block w-full h-auto"
-            loading="eager"
-            decoding="async"
-          />
-        </Link>
+      {/* Hero split: features left, image right */}
+      <section className="py-8">
+        <div className="container">
+          <div className="grid items-center gap-8 sm:grid-cols-2">
+            <div className="sm:order-1 transform sm:translate-x-[10%]">
+              <h3 className="mb-4 text-3xl font-semibold text-foreground/90">
+                Clarra features
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-xl text-foreground/90">
+                    Tracks four key hormones (LH, E3G, PdG, FSH) to give the
+                    most complete view of midlife health.
+                  </p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-xl text-foreground/90">
+                    Forecasts risks early to shift care from reactive to
+                    preventative.
+                  </p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-xl text-foreground/90">
+                    Delivers guidance through natural conversation — not
+                    dashboards or data dumps.
+                  </p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-xl text-foreground/90">
+                    Integrates with wearables to turn everyday data into
+                    personalized insights.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div className="sm:order-2 flex justify-center sm:justify-end transform sm:-translate-x-[25%]">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
+                alt="Chat with Clarra phone mockup"
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl transform scale-[1.7]"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Features */}
+      {/* Core capabilities - New section above Support at Every Stage */}
       <section className="relative py-12">
         <div className="container">
-          <div className="rounded-3xl border border-border bg-secondary/60 p-8 sm:p-10 shadow-sm">
+          <div className="rounded-3xl border border-border bg-card/80 p-8 sm:p-10 shadow-sm">
             <div className="mx-auto text-center">
-              <h2 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">
-                Support at Every Stage
+              <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] text-[#1f2d3a]">
+                NEXT-GEN TECHNOLOGY for better midlife health
               </h2>
-              <p className="mt-3 text-base sm:text-lg text-foreground/80">
-                From your first signs of perimenopause to postmenopausal bone
-                health, Clarra adapts to your needs with continuous,
-                personalized support —
-              </p>
-              <p className="text-base sm:text-lg text-foreground/90">
-                every stage, every step.
-              </p>
             </div>
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid gap-6 sm:grid-cols-2">
               <Feature
-                icon={<IconSpark />}
-                title="Symptom tracking"
-                description="Conversational check-ins make it easy to spot triggers and patterns — no endless logging."
-                iconBg="bg-[#56d257]"
+                title="Full-spectrum hormone testing"
+                description="Tracks four key hormones (LH, E3G, PdG, FSH) to capture the most comprehensive picture of midlife hormonal transitions available in consumer health."
               />
               <Feature
-                icon={<IconWand />}
-                title="AI care plans"
-                description="Smart, evidence-based plans that evolve with your goals, from sleep to bone health."
-                iconBg="bg-[#56d257]"
+                title="Predictive, preventative outcomes"
+                description="Uses advanced AI to forecast health trajectories and risks early, turning fragmented data into actionable guidance for prevention rather than reaction."
               />
               <Feature
-                icon={<IconChat />}
-                title="Coaching & chat"
-                description="Always-on guidance that blends AI insights with human support, so you’re never on your own."
-                iconBg="bg-[#56d257]"
+                title="Conversational AI first"
+                description="An LLM-powered chatbot serves as the primary interface, making complex health insights intuitive, empathetic, and accessible through natural conversation."
               />
               <Feature
-                icon={<IconShield />}
-                title="Data secure"
-                description="Privacy-first, secure by design. Your health data stays safe, transparent, and under your control."
-                iconBg="bg-[#56d257]"
+                title="Seamless wearable integration"
+                description="Incorporates continuous real-world data from mainstream wearables to enrich models and personalize recommendations across sleep, metabolic, and cardiovascular health."
               />
-            </div>
-            <div className="mt-10 flex items-center justify-center">
-              <Link
-                to="/how-it-works"
-                className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-12 py-6 text-2xl font-semibold text-white shadow-sm transition hover:opacity-90"
-              >
-                Meet Clarra
-              </Link>
             </div>
           </div>
         </div>
@@ -222,21 +243,25 @@ function Feature({
   description,
   iconBg = "bg-primary",
 }: {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   title: string;
   description: string;
   iconBg?: string;
 }) {
   return (
-    <div className="rounded-2xl border border-border bg-card/80 p-6 shadow-sm transition hover:shadow-md">
-      <div className="flex items-center gap-4">
-        <span
-          className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl text-white ${iconBg} ring-2 ring-white/80 shadow-md`}
-        >
-          {icon}
-        </span>
-        <p className="font-semibold">{title}</p>
-      </div>
+    <div className="rounded-2xl border border-border bg-card/90 p-6 shadow-xl shadow-black/20 transition hover:shadow-2xl hover:shadow-black/30">
+      {icon ? (
+        <div className="flex items-center gap-4">
+          <span
+            className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl text-white ${iconBg} ring-2 ring-white/80 shadow-md`}
+          >
+            {icon}
+          </span>
+          <p className="font-semibold">{title}</p>
+        </div>
+      ) : (
+        <p className="font-semibold text-lg">{title}</p>
+      )}
       <p className="mt-3 text-sm text-foreground/80">{description}</p>
     </div>
   );
@@ -262,6 +287,36 @@ function Step({ n, title, text }: { n: number; title: string; text: string }) {
         <p className="text-sm text-muted-foreground">{text}</p>
       </div>
     </li>
+  );
+}
+
+function IconFlask() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-8 w-8"
+      fill="currentColor"
+      aria-hidden
+    >
+      <rect x="11" y="2" width="2" height="6" rx="1" />
+      <path d="M7 10l3.5-2h3L17 10l3 7a2 2 0 0 1-1.8 3H5.8A2 2 0 0 1 4 17l3-7z" />
+      <path d="M9 15h6" stroke="currentColor" strokeWidth="2" />
+    </svg>
+  );
+}
+function IconWatch() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-8 w-8"
+      fill="currentColor"
+      aria-hidden
+    >
+      <rect x="9" y="2" width="6" height="3" rx="1" />
+      <rect x="7" y="6" width="10" height="12" rx="3" />
+      <rect x="9" y="19" width="6" height="3" rx="1" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
   );
 }
 
@@ -305,6 +360,23 @@ function IconChat() {
     </svg>
   );
 }
+function IconCheck() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-6 w-6"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M20 6L9 17l-5-5" />
+    </svg>
+  );
+}
+
 function IconShield() {
   return (
     <svg

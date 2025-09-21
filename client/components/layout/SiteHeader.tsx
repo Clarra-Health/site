@@ -26,7 +26,6 @@ const nav = [
   },
   { to: "/how-we-protect-your-data", label: "Data Privacy" },
   { to: "/contact", label: "Contact" },
-  { to: "/waitlist", label: "Waitlist" },
 ] as const;
 
 export default function SiteHeader() {
