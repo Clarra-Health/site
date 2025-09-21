@@ -61,7 +61,7 @@ export default function Index() {
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
             <div className="sm:order-1 transform sm:translate-x-[10%]">
-              <h3 className="mb-4 text-xl font-semibold text-foreground/90">Clarra features</h3>
+              <h3 className="mb-4 text-3xl font-semibold text-foreground/90">Clarra features</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
