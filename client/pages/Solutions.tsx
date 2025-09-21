@@ -9,7 +9,7 @@ export default function Solutions() {
       <section className="py-8 bg-[#b9e3e2]">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
-            <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">NOT ANOTHER SYMPTOM TRACKER</h1>
+            <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-[0.01em] text-[#1f2d3a]">NOT ANOTHER SYMPTOM TRACKER</h1>
             <p className="mt-4 mx-auto max-w-3xl text-xl sm:text-[1.4rem] leading-relaxed font-medium text-muted-foreground">
               Clarra is an <EmUnderline>AI-native</EmUnderline> health platform built for women in midlife. Instead of endless logs and health apps that track but don’t help, you simply chat with Clarra — <EmCircle><strong className="font-semibold">your midlife health partner.</strong></EmCircle> Behind the scenes, Clarra connects your symptoms, hormones, and wearable data to reveal patterns and deliver what matters most: <EmUnderline><strong className="font-semibold">personalized pathways</strong></EmUnderline>, <EmUnderline><strong className="font-semibold">predictive insights</strong></EmUnderline>, and <EmUnderline><strong className="font-semibold">clear next steps</strong></EmUnderline>.
             </p>
@@ -25,7 +25,7 @@ export default function Solutions() {
               <PhoneMockHormone />
             </div>
             <div>
-              <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-[#1f2d3a]">
+              <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
                 Clarra turns your hormone story into care
               </h2>
               <p className="mt-3 text-base sm:text-lg text-foreground/85">
@@ -77,7 +77,7 @@ export default function Solutions() {
       <section className="py-8">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
-            <h2 className="font-display text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">24/7 Answers. Zero Wait.</h2>
+            <h2 className="font-display text-5xl sm:text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">24/7 Answers. Zero Wait.</h2>
             <p className="mt-3 text-base sm:text-lg text-[#1f2d3a]/90">Powered by AI trained on women’s health, Clarra delivers instant, personalized insights—anytime, anywhere.</p>
           </div>
         </div>
@@ -241,7 +241,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   return (
     <section className="py-10">
       <div className="container">
-        <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
+        <h2 className="text-2xl font-semibold tracking-[0.01em]">{title}</h2>
         <p className="mt-4 text-muted-foreground">{children}</p>
       </div>
     </section>
@@ -272,7 +272,7 @@ function FeatureGrid({ title, subtitle, features }: { title: string; subtitle?: 
     <section className="py-12">
       <div className="container">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">{title}</h2>
+          <h2 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-[0.01em] text-[#1f2d3a]">{title}</h2>
           {subtitle && (
             <p className="mt-3 text-base sm:text-lg text-muted-foreground">{subtitle}</p>
           )}
