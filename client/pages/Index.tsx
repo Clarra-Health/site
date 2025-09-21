@@ -76,7 +76,7 @@ export default function Index() {
         <div className="container">
           <div className="rounded-3xl border border-border bg-card/80 p-8 sm:p-10 shadow-sm">
             <div className="mx-auto text-center">
-              <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-tight text-[#1f2d3a]">
+              <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] text-[#1f2d3a]">
                 NEXT-GEN TECHNOLOGY for better midlife health
               </h2>
             </div>
@@ -97,61 +97,6 @@ export default function Index() {
                 title="Seamless wearable integration"
                 description="Incorporates continuous real-world data from mainstream wearables to enrich models and personalize recommendations across sleep, metabolic, and cardiovascular health."
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="relative py-12">
-        <div className="container">
-          <div className="rounded-3xl border border-border bg-secondary/60 p-8 sm:p-10 shadow-sm">
-            <div className="mx-auto text-center">
-              <h2 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">
-                Support at Every Stage
-              </h2>
-              <p className="mt-3 text-base sm:text-lg text-foreground/80">
-                From your first signs of perimenopause to postmenopausal bone
-                health, Clarra adapts to your needs with continuous,
-                personalized support —
-              </p>
-              <p className="text-base sm:text-lg text-foreground/90">
-                every stage, every step.
-              </p>
-            </div>
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <Feature
-                icon={<IconSpark />}
-                title="Symptom tracking"
-                description="Conversational check-ins make it easy to spot triggers and patterns — no endless logging."
-                iconBg="bg-[#56d257]"
-              />
-              <Feature
-                icon={<IconWand />}
-                title="AI care plans"
-                description="Smart, evidence-based plans that evolve with your goals, from sleep to bone health."
-                iconBg="bg-[#56d257]"
-              />
-              <Feature
-                icon={<IconChat />}
-                title="Coaching & chat"
-                description="Always-on guidance that blends AI insights with human support, so you’re never on your own."
-                iconBg="bg-[#56d257]"
-              />
-              <Feature
-                icon={<IconShield />}
-                title="Data secure"
-                description="Privacy-first, secure by design. Your health data stays safe, transparent, and under your control."
-                iconBg="bg-[#56d257]"
-              />
-            </div>
-            <div className="mt-10 flex items-center justify-center">
-              <Link
-                to="/how-it-works"
-                className="inline-flex items-center justify-center rounded-md bg-[hsl(25_97%_66%)] px-12 py-6 text-2xl font-semibold text-white shadow-sm transition hover:opacity-90"
-              >
-                Meet Clarra
-              </Link>
             </div>
           </div>
         </div>
