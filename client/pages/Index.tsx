@@ -60,40 +60,40 @@ export default function Index() {
       <section className="py-8">
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
-            <div className="sm:order-1">
+            <div className="sm:order-1 transform sm:translate-x-[30%]">
               <h3 className="mb-4 text-xl font-semibold text-foreground/90">Clarra features</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <span className="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                  <span className="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#22c55e] text-white">
                     <IconCheck />
                   </span>
-                  <p className="text-lg text-foreground/90">Tracks 4 key hormones: LH, E3G, PdG, and FSH</p>
+                  <p className="text-xl text-foreground/90">Tracks four key hormones (LH, E3G, PdG, FSH) to give the most complete view of midlife health.</p>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                  <span className="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#22c55e] text-white">
                     <IconCheck />
                   </span>
-                  <p className="text-lg text-foreground/90">Shows your 6 most fertile days & cycle shifts</p>
+                  <p className="text-xl text-foreground/90">Forecasts risks early to shift care from reactive to preventative.</p>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                  <span className="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#22c55e] text-white">
                     <IconCheck />
                   </span>
-                  <p className="text-lg text-foreground/90">Predicts & confirms your ovulation</p>
+                  <p className="text-xl text-foreground/90">Delivers guidance through natural conversation — not dashboards or data dumps.</p>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                  <span className="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#22c55e] text-white">
                     <IconCheck />
                   </span>
-                  <p className="text-lg text-foreground/90">Supports you from fertility to menopause</p>
+                  <p className="text-xl text-foreground/90">Integrates with wearables to turn everyday data into personalized insights.</p>
                 </li>
               </ul>
             </div>
-            <div className="sm:order-2 flex justify-center">
+            <div className="sm:order-2 flex justify-center sm:justify-end">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
                 alt="Chat with Clarra phone mockup"
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl scale-150"
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl transform scale-[1.7]"
                 loading="eager"
                 decoding="async"
               />
@@ -338,7 +338,7 @@ function IconChat() {
 }
 function IconCheck() {
   return (
-    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
       <path d="M20 6L9 17l-5-5" />
     </svg>
   );
