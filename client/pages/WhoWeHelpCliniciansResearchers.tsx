@@ -3,7 +3,7 @@ export default function WhoWeHelpCliniciansResearchers() {
     <section className="py-10">
       <div className="container">
         <div className="mx-auto max-w-4xl">
-          <h1 className="font-display text-4xl sm:text-5xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">For Clinicians / Researchers</h1>
+          <h1 className="font-display text-4xl sm:text-5xl font-extrabold uppercase tracking-[0.01em] text-[#1f2d3a]">For Clinicians / Researchers</h1>
           <p className="mt-4 text-lg text-muted-foreground">A living dataset and tools that surface the right patterns at the right time — for better care and stronger evidence.</p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             <li className="rounded-xl border border-border bg-card p-5"><p className="font-semibold">Longitudinal symptom data</p><p className="mt-2 text-sm text-muted-foreground">Real‑world signals tied to outcomes, collected continuously.</p></li>
