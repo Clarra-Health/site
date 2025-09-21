@@ -143,16 +143,50 @@ export default function Solutions() {
         ]}
       />
 
-      <section className="py-0">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=2400 2400w"
-          sizes="100vw"
-          alt="Chat with Clarra visual"
-          className="block w-full h-auto"
-          loading="lazy"
-          decoding="async"
-        />
+      {/* Split section replicated from home: features left, phone right */}
+      <section className="py-12">
+        <div className="container">
+          <div className="grid items-center gap-8 sm:grid-cols-2">
+            <div className="sm:order-1">
+              <h3 className="mb-4 text-3xl font-semibold text-foreground/90">Clarra features</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-xl text-foreground/90">Tracks four key hormones (LH, E3G, PdG, FSH) to give the most complete view of midlife health.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-xl text-foreground/90">Forecasts risks early to shift care from reactive to preventative.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-xl text-foreground/90">Delivers guidance through natural conversation — not dashboards or data dumps.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
+                    <IconCheck />
+                  </span>
+                  <p className="text-xl text-foreground/90">Integrates with wearables to turn everyday data into personalized insights.</p>
+                </li>
+              </ul>
+            </div>
+            <div className="sm:order-2 flex justify-center sm:justify-end">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
+                alt="Chat with Clarra phone mockup"
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
     </>
@@ -294,6 +328,14 @@ function FeatureGrid({ title, subtitle, features }: { title: string; subtitle?: 
         </div>
       </div>
     </section>
+  );
+}
+
+function IconCheck() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M20 6L9 17l-5-5" />
+    </svg>
   );
 }
 
