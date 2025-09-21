@@ -4,24 +4,38 @@ import { useToast } from "@/hooks/use-toast";
 
 export default function Contact() {
   const { toast } = useToast();
-  const [form, setForm] = useState({ firstName: "", lastName: "", email: "", message: "" });
+  const [form, setForm] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
   const [submitting, setSubmitting] = useState(false);
 
-  function update<K extends keyof typeof form>(key: K, value: (typeof form)[K]) {
+  function update<K extends keyof typeof form>(
+    key: K,
+    value: (typeof form)[K],
+  ) {
     setForm((f) => ({ ...f, [key]: value }));
   }
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!form.firstName || !form.email || !form.message) {
-      toast({ title: "Please fill required fields", description: "First name, email and message are required." });
+      toast({
+        title: "Please fill required fields",
+        description: "First name, email and message are required.",
+      });
       return;
     }
     setSubmitting(true);
     try {
       // In production, wire this up to your backend or Netlify Forms
       await new Promise((r) => setTimeout(r, 600));
-      toast({ title: "Message sent", description: "We’ll get back to you soon." });
+      toast({
+        title: "Message sent",
+        description: "We’ll get back to you soon.",
+      });
       setForm({ firstName: "", lastName: "", email: "", message: "" });
     } finally {
       setSubmitting(false);
@@ -35,19 +49,44 @@ export default function Contact() {
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-display relative inline-block text-6xl sm:text-7xl font-extrabold uppercase tracking-tight text-[#1f2d3a]">
               <span className="relative z-10">Contact us.</span>
-              <svg aria-hidden className="pointer-events-none absolute left-[-3%] right-[-3%] bottom-[-0.35em] h-[0.85em] w-[106%] z-0" viewBox="0 0 100 20" preserveAspectRatio="none">
-                <path d="M2 15 Q 50 12 98 15" fill="none" stroke="hsl(25 97% 66%)" strokeWidth="2.756" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg
+                aria-hidden
+                className="pointer-events-none absolute left-[-3%] right-[-3%] bottom-[-0.35em] h-[0.85em] w-[106%] z-0"
+                viewBox="0 0 100 20"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M2 15 Q 50 12 98 15"
+                  fill="none"
+                  stroke="hsl(25 97% 66%)"
+                  strokeWidth="2.756"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </h1>
             <p className="mt-4 text-xl sm:text-2xl text-[#1f2d3a]">
-              Investor, innovator, media, influencer — or simply excited to join Clarra? Reach out. We’re here for every conversation, big or small.
+              Investor, innovator, media, influencer — or simply excited to join
+              Clarra? Reach out. We’re here for every conversation, big or
+              small.
+            </p>
+            <p className="mt-3 text-base sm:text-lg text-[#1f2d3a]/90">
+              Prefer email?{" "}
+              <a
+                href="mailto:hello@clarrahealth.com"
+                className="font-semibold underline underline-offset-4 hover:no-underline text-[#1f2d3a]"
+              >
+                hello@clarrahealth.com
+              </a>
             </p>
           </div>
 
           <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-border bg-secondary p-6 sm:p-8">
             <form onSubmit={onSubmit} className="grid gap-6">
               <div>
-                <label className="text-sm font-medium">Name <span className="text-destructive">(required)</span></label>
+                <label className="text-sm font-medium">
+                  Name <span className="text-destructive">(required)</span>
+                </label>
                 <div className="mt-2 grid gap-4 sm:grid-cols-2">
                   <input
                     value={form.firstName}
@@ -66,7 +105,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="text-sm font-medium">Email <span className="text-destructive">(required)</span></label>
+                <label className="text-sm font-medium">
+                  Email <span className="text-destructive">(required)</span>
+                </label>
                 <input
                   type="email"
                   value={form.email}
@@ -78,7 +119,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="text-sm font-medium">Message <span className="text-destructive">(required)</span></label>
+                <label className="text-sm font-medium">
+                  Message <span className="text-destructive">(required)</span>
+                </label>
                 <textarea
                   value={form.message}
                   onChange={(e) => update("message", e.target.value)}
@@ -109,7 +152,14 @@ export default function Contact() {
               aria-label="LinkedIn"
               className="inline-flex h-16 w-16 items-center justify-center rounded-xl bg-[hsl(25_97%_66%)] text-white shadow-sm transition hover:opacity-90"
             >
-              <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5Zm.02 6.5H2v11h3V10ZM9 10H6v11h3v-5.5c0-3 4-3.2 4 0V21h3v-6.5c0-6-6.5-5.8-7-2.8V10Z"/></svg>
+              <svg
+                viewBox="0 0 24 24"
+                className="h-8 w-8"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5Zm.02 6.5H2v11h3V10ZM9 10H6v11h3v-5.5c0-3 4-3.2 4 0V21h3v-6.5c0-6-6.5-5.8-7-2.8V10Z" />
+              </svg>
             </a>
             <a
               href="https://www.instagram.com/chat_with_clarra/"
@@ -118,10 +168,16 @@ export default function Contact() {
               aria-label="Instagram"
               className="inline-flex h-16 w-16 items-center justify-center rounded-xl bg-destructive text-destructive-foreground shadow-sm transition hover:opacity-90"
             >
-              <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor" aria-hidden="true"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2.5A2.5 2.5 0 1 1 12 16a2.5 2.5 0 0 1 0-5.5zM18 6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
+              <svg
+                viewBox="0 0 24 24"
+                className="h-8 w-8"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2.5A2.5 2.5 0 1 1 12 16a2.5 2.5 0 0 1 0-5.5zM18 6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+              </svg>
             </a>
           </div>
-
         </div>
       </section>
     </>
