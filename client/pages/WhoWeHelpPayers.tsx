@@ -42,16 +42,16 @@ export default function WhoWeHelpPayers() {
         </div>
       </section>
 
-      <section className="py-8">
-        <div className="container">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=1200"
-            alt="Smiling woman with Clarra brand wave"
-            className="block w-full h-auto rounded-2xl border border-border shadow-sm"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
+      <section className="py-0">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=2000"
+          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=2000 2000w"
+          sizes="100vw"
+          alt="Smiling woman with Clarra brand wave"
+          className="block w-screen max-w-none h-auto"
+          loading="lazy"
+          decoding="async"
+        />
       </section>
     </>
   );
