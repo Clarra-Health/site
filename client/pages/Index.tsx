@@ -20,9 +20,9 @@ export default function Index() {
                     preserveAspectRatio="none"
                   >
                     <ellipse
-                      cx="50"
+                      cx="52"
                       cy="20"
-                      rx="49"
+                      rx="42"
                       ry="18"
                       fill="none"
                       stroke="hsl(25 97% 66%)"
