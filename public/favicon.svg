@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Solid white background to avoid transparency/cutouts -->
-  <rect width="512" height="512" fill="#ffffff"/>
-  <!-- Logo mark -->
-  <circle cx="256" cy="348" r="164" fill="#4fb7b3"/>
-  <circle cx="164" cy="236" r="140" fill="#b9e3e2"/>
-  <circle cx="348" cy="236" r="140" fill="#b9e3e2"/>
-  <circle cx="256" cy="156" r="120" fill="#56d257"/>
+  <!-- Tighten graphic to fill the square and keep transparency -->
+  <g transform="translate(6.35 0) scale(1.076) translate(-24 -36)">
+    <circle cx="256" cy="348" r="164" fill="#4fb7b3"/>
+    <circle cx="164" cy="236" r="140" fill="#b9e3e2"/>
+    <circle cx="348" cy="236" r="140" fill="#b9e3e2"/>
+    <circle cx="256" cy="156" r="120" fill="#56d257"/>
+  </g>
 </svg>
