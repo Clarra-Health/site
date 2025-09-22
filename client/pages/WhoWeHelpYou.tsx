@@ -14,27 +14,35 @@ export default function WhoWeHelpYou() {
               </p>
               <ul className="mt-10 grid gap-6 sm:grid-cols-2 max-w-4xl mx-auto">
                 <li className="rounded-xl border border-border bg-card p-6 sm:p-8 text-center min-h-36">
-                  <p className="font-semibold text-lg sm:text-xl">Personalized plans</p>
+                  <p className="font-semibold text-lg sm:text-xl">
+                    Personalized plans
+                  </p>
                   <p className="mt-2 text-base text-muted-foreground">
                     AI care plans that evolve with your symptoms, goals, and
                     preferences.
                   </p>
                 </li>
                 <li className="rounded-xl border border-border bg-card p-6 sm:p-8 text-center min-h-36">
-                  <p className="font-semibold text-lg sm:text-xl">Predictive insights</p>
+                  <p className="font-semibold text-lg sm:text-xl">
+                    Predictive insights
+                  </p>
                   <p className="mt-2 text-base text-muted-foreground">
-                    See patterns before they spike — sleep, mood, hot flashes, and
-                    more.
+                    See patterns before they spike — sleep, mood, hot flashes,
+                    and more.
                   </p>
                 </li>
                 <li className="rounded-xl border border-border bg-card p-6 sm:p-8 text-center min-h-36">
-                  <p className="font-semibold text-lg sm:text-xl">Coaching & community</p>
+                  <p className="font-semibold text-lg sm:text-xl">
+                    Coaching & community
+                  </p>
                   <p className="mt-2 text-base text-muted-foreground">
                     On‑demand guidance and a safe space to connect with others.
                   </p>
                 </li>
                 <li className="rounded-xl border border-border bg-card p-6 sm:p-8 text-center min-h-36">
-                  <p className="font-semibold text-lg sm:text-xl">Privacy first</p>
+                  <p className="font-semibold text-lg sm:text-xl">
+                    Privacy first
+                  </p>
                   <p className="mt-2 text-base text-muted-foreground">
                     You control your data. Transparent, secure, and never sold.
                   </p>
