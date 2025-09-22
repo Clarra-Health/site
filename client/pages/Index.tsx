@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden bg-transparent pt-10 md:pt-12 pb-0">
+      <section className="relative isolate z-10 overflow-hidden bg-transparent pt-10 md:pt-12 pb-0">
         <div className="container">
           <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-12 items-start">
             <div className="sm:col-span-12 sm:col-start-1">
@@ -179,11 +179,16 @@ export default function Index() {
             <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               Clarra’s mission is to harness{" "}
               <EmUnderline>the power of AI</EmUnderline> to{" "}
-              <EmUnderline>transform women’s health</EmUnderline>—addressing the
-              fact that <EmCircle scale={0.75}>47 million</EmCircle> women
-              worldwide enter menopause each year{" "}
+              <EmUnderline>transform women’s health</EmUnderline>—{" "}
+              <EmCircle scale={0.75} sx={1.15} x={7.5}>
+                47 million
+              </EmCircle>{" "}
+              women worldwide enter menopause each year{" "}
               <EmUnderline>without</EmUnderline> the{" "}
-              <EmCircle scale={0.75}>care</EmCircle> they need.
+              <EmCircle scale={0.75} sx={1.15} sy={0.85} x={15}>
+                care
+              </EmCircle>{" "}
+              they need.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
               <p>
@@ -434,19 +439,30 @@ function EmUnderline({
 function EmCircle({
   children,
   scale = 1,
+  y = 0.08,
+  x = 0,
+  sx = 1,
+  sy = 1,
 }: {
   children: React.ReactNode;
   scale?: number;
+  y?: number;
+  x?: number; // horizontal shift in percent of width
+  sx?: number; // extra horizontal scale
+  sy?: number; // extra vertical scale
 }) {
   return (
-    <span className="relative inline-block px-1">
+    <span className="relative inline-block px-1 align-baseline">
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]"
+        className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)] overflow-visible"
         viewBox="0 0 100 60"
         preserveAspectRatio="none"
-        style={{ transform: `scale(${scale})`, transformOrigin: "center" }}
+        style={{
+          transform: `translate(${x}%, ${y}em) scale(${scale * sx}, ${scale * sy})`,
+          transformOrigin: "center",
+        }}
       >
         <ellipse
           cx="50"
