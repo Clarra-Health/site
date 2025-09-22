@@ -57,12 +57,12 @@ export default function Index() {
       </section>
 
       {/* Hero split: features left, image right */}
-      <section className="py-8">
+      <section className="py-8 pt-16 sm:pt-8">
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
-            <div className="sm:order-1 transform sm:translate-x-[10%]">
-              <h3 className="mb-4 text-3xl font-semibold text-foreground/90">
-                Clarra features
+            <div className="order-2 sm:order-1 sm:translate-x-[10%]">
+              <h3 className="mb-8 text-3xl font-semibold text-foreground/90">
+                Clarra Features
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -103,14 +103,23 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="sm:order-2 flex justify-center sm:justify-end transform sm:-translate-x-[25%]">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
-                alt="Chat with Clarra phone mockup"
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl transform scale-[1.7]"
-                loading="eager"
-                decoding="async"
-              />
+            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end -translate-x-[25%] sm:-translate-x-[30%] relative overflow-visible">
+              <div className="relative inline-block -translate-y-[10%] sm:translate-y-0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
+                  alt="Chat with Clarra phone mockup"
+                  className="relative z-10 w-full max-w-xs sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl scale-[1.5] sm:scale-[1.7] origin-center mx-auto"
+                  loading="eager"
+                  decoding="async"
+                />
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F37631ab37615445691181eca7cb49ca7?format=webp&width=1200"
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 w-[160%] max-w-none opacity-95 sm:hidden -z-10"
+                  decoding="async"
+                />
+              </div>
             </div>
           </div>
         </div>
