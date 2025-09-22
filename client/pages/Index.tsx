@@ -62,7 +62,7 @@ export default function Index() {
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
             <div className="order-2 sm:order-1 sm:translate-x-[10%]">
-              <h3 className="relative z-20 mb-8 text-3xl font-semibold text-foreground/90">
+              <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90">
                 Clarra Features
               </h3>
               <ul className="space-y-4">
@@ -117,13 +117,13 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F37631ab37615445691181eca7cb49ca7?format=webp&width=1200"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-36 left-[58%] -translate-x-1/2 w-[140vw] max-w-none opacity-95 sm:hidden -z-10"
+                  className="pointer-events-none absolute -bottom-40 left-[60%] -translate-x-1/2 w-[140vw] max-w-none opacity-95 sm:hidden -z-10"
                   decoding="async"
                   style={{
                     WebkitMaskImage:
-                      "radial-gradient(180px_140px_at_14%_78%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,1) 82%), linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 10%, rgba(0,0,0,1) 18%)",
+                      "radial-gradient(220px_160px_at_18%_86%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 78%, rgba(0,0,0,1) 92%), linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 12%, rgba(0,0,0,1) 20%)",
                     maskImage:
-                      "radial-gradient(180px_140px_at_14%_78%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,1) 82%), linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 10%, rgba(0,0,0,1) 18%)",
+                      "radial-gradient(220px_160px_at_18%_86%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 78%, rgba(0,0,0,1) 92%), linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 12%, rgba(0,0,0,1) 20%)",
                     WebkitMaskRepeat: "no-repeat",
                     maskRepeat: "no-repeat",
                   }}
