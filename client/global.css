@@ -99,14 +99,18 @@
     @apply border-border;
   }
 
-  html, body {
+  html,
+  body {
     @apply bg-background text-foreground font-sans;
     max-width: 100%;
     overflow-x: hidden;
   }
 
   /* Ensure media never causes horizontal overflow */
-  img, video, canvas, svg {
+  img,
+  video,
+  canvas,
+  svg {
     max-width: 100%;
     height: auto;
     display: block;

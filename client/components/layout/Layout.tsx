@@ -6,7 +6,10 @@ import SiteFooter from "./SiteFooter";
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
-    if (typeof window !== "undefined" && "scrollRestoration" in window.history) {
+    if (
+      typeof window !== "undefined" &&
+      "scrollRestoration" in window.history
+    ) {
       try {
         window.history.scrollRestoration = "manual";
       } catch {}
