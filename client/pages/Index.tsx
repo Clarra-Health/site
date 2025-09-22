@@ -103,8 +103,8 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end sm:-translate-x-[75%] relative">
-              <div className="relative inline-block">
+            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end sm:-translate-x-[25%] relative">
+              <div className="relative inline-block sm:-translate-y-[10%]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
                   alt="Chat with Clarra phone mockup"
