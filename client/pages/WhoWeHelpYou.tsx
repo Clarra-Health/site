@@ -1,7 +1,7 @@
 export default function WhoWeHelpYou() {
   return (
     <>
-      <section className="py-16 sm:py-24">
+      <section className="py-16 sm:py-24 relative -translate-y-[15%]">
         <div className="container">
           <div className="grid items-center gap-8">
             <div className="mx-auto w-full max-w-4xl text-center">
