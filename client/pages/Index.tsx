@@ -178,8 +178,8 @@ export default function Index() {
               Clarra’s mission is to harness{" "}
               <EmUnderline>the power of AI</EmUnderline> to{" "}
               <EmUnderline>transform women’s health</EmUnderline>{" "}
-              <EmCircle scale={0.75}>47 million</EmCircle> women worldwide enter menopause each year{" "}
-              <EmUnderline>without</EmUnderline> the{" "}
+              <EmCircle scale={0.75}>47 million</EmCircle> women worldwide enter
+              menopause each year <EmUnderline>without</EmUnderline> the{" "}
               <EmCircle scale={0.75}>care</EmCircle> they need.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
