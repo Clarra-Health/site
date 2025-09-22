@@ -118,7 +118,12 @@ export default function Index() {
                   alt=""
                   aria-hidden="true"
                   className="pointer-events-none absolute -bottom-16 left-1/2 -translate-x-[35%] w-[130vw] max-w-none opacity-95 sm:hidden -z-10"
-                  style={{ WebkitMaskImage: "linear-gradient(to right, transparent 0%, transparent 18%, black 22%, black 100%), linear-gradient(to bottom, black 0%, black 72%, transparent 92%)", maskImage: "linear-gradient(to right, transparent 0%, transparent 18%, black 22%, black 100%), linear-gradient(to bottom, black 0%, black 72%, transparent 92%)" }}
+                  style={{
+                    WebkitMaskImage:
+                      "linear-gradient(to right, transparent 0%, transparent 18%, black 22%, black 100%), linear-gradient(to bottom, black 0%, black 72%, transparent 92%)",
+                    maskImage:
+                      "linear-gradient(to right, transparent 0%, transparent 18%, black 22%, black 100%), linear-gradient(to bottom, black 0%, black 72%, transparent 92%)",
+                  }}
                   decoding="async"
                 />
               </div>
