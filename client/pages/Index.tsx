@@ -20,15 +20,23 @@ export default function Index() {
                     viewBox="0 0 100 40"
                     preserveAspectRatio="none"
                   >
-                    <ellipse
-                      cx="52"
-                      cy="20"
-                      rx="47"
-                      ry="15"
+                    <path
+                      d="M3 20 C 22 6, 78 6, 97 18"
                       fill="none"
                       stroke="hsl(25 97% 66%)"
-                      strokeWidth="2.65"
+                      strokeWidth="6"
                       strokeLinecap="round"
+                      strokeLinejoin="round"
+                      transform="rotate(-4 50 20)"
+                    />
+                    <path
+                      d="M3 20 C 22 34, 78 34, 97 22"
+                      fill="none"
+                      stroke="hsl(25 97% 66%)"
+                      strokeWidth="6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      transform="rotate(-4 50 20)"
                     />
                   </svg>
                 </span>{" "}
