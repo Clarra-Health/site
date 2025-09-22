@@ -57,7 +57,7 @@ export default function Index() {
       </section>
 
       {/* Hero split: features left, image right */}
-      <section className="py-8">
+      <section className="py-8 pt-16 sm:pt-8">
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
             <div className="order-2 sm:order-1 sm:translate-x-[10%]">
@@ -103,7 +103,7 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end -translate-x-[25%] sm:translate-x-0 relative">
+            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end -translate-x-[25%] sm:-translate-x-[100%] relative">
               <div className="relative inline-block -translate-y-[10%] sm:translate-y-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
@@ -116,7 +116,7 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F37631ab37615445691181eca7cb49ca7?format=webp&width=1200"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 w-[160%] max-w-none opacity-95 sm:hidden"
+                  className="pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 w-[160%] max-w-none opacity-95 sm:hidden -z-10"
                   decoding="async"
                 />
               </div>
