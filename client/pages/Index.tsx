@@ -438,11 +438,11 @@ function EmCircle({
   scale?: number;
 }) {
   return (
-    <span className="relative inline-block px-1">
+    <span className="relative inline-block px-1 align-baseline">
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]"
+        className="pointer-events-none absolute inset-[-0.5em] h-[calc(100%+1em)] w-[calc(100%+1em)] overflow-visible"
         viewBox="0 0 100 60"
         preserveAspectRatio="none"
         style={{ transform: `scale(${scale})`, transformOrigin: "center" }}
@@ -450,8 +450,8 @@ function EmCircle({
         <ellipse
           cx="50"
           cy="30"
-          rx="47"
-          ry="26"
+          rx="49"
+          ry="29"
           fill="none"
           stroke="hsl(25 97% 66%)"
           strokeWidth="3.15"
