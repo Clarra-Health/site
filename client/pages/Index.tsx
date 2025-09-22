@@ -15,7 +15,7 @@ export default function Index() {
                   <span className="relative z-10">COMPASSIONATE</span>
                   <svg
                     aria-hidden
-                    className="pointer-events-none absolute left-[-7%] right-[-57%] top-[-22%] bottom-[-22%] h-[140%] w-[124%]"
+                    className="pointer-events-none absolute left-[-7%] right-[-62%] top-[-22%] bottom-[-22%] h-[140%] w-[124%]"
                     viewBox="0 0 100 40"
                     preserveAspectRatio="none"
                   >
