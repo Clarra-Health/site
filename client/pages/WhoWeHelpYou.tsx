@@ -4,11 +4,11 @@ export default function WhoWeHelpYou() {
       <section className="py-16 sm:py-24 relative -translate-y-[12%]">
         <div className="container">
           <div className="grid items-center gap-8">
-            <div className="w-full max-w-4xl text-center md:text-right md:justify-self-end">
+            <div className="w-full max-w-4xl text-left">
               <h1 className="font-display text-[4.3125rem] sm:text-[5.175rem] font-extrabold uppercase tracking-[0.01em] text-[#1f2d3a]">
                 For Woman
               </h1>
-              <p className="mt-6 text-xl sm:text-2xl text-muted-foreground max-w-3xl md:ml-auto">
+              <p className="mt-6 text-xl sm:text-2xl text-muted-foreground max-w-3xl">
                 Guidance that adapts to your journey — from first signs of
                 perimenopause to long‑term wellness.
               </p>
