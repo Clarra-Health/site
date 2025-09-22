@@ -9,7 +9,7 @@ export default function Index() {
         <div className="container">
           <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-12 items-start">
             <div className="sm:col-span-12 sm:col-start-1">
-              <h1 className="font-display text-[#1f2d3a] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
+              <h1 className="font-display text-[#1f2d3a] text-[3.6rem] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
                 AI-POWERED {""}
                 <span className="relative inline-block px-1 align-baseline">
                   <span className="relative z-10">COMPASSIONATE</span>
@@ -33,7 +33,7 @@ export default function Index() {
                 </span>{" "}
                 CARE FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
               </h1>
-              <p className="mt-3 sm:mt-4 text-lg sm:text-xl font-medium text-[hsl(210_29%_24%)]/95 max-w-xl">
+              <p className="mt-3 sm:mt-4 text-[1.35rem] sm:text-xl font-medium text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra connects the dots between symptoms, insights, and
                 support—so midlife health finally makes sense.
               </p>
@@ -103,7 +103,7 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end translate-x-0 sm:-translate-x-[30%] relative overflow-visible">
+            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end -translate-x-[20%] sm:-translate-x-[30%] relative overflow-visible">
               <div className="relative inline-block -translate-y-[10%] sm:translate-y-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
