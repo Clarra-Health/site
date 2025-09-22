@@ -62,7 +62,7 @@ export default function Index() {
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
             <div className="order-2 sm:order-1 sm:translate-x-[10%]">
-              <h3 className="mb-8 text-3xl font-semibold text-foreground/90">
+              <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90">
                 Clarra Features
               </h3>
               <ul className="space-y-4">
@@ -114,11 +114,17 @@ export default function Index() {
                   decoding="async"
                 />
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F37631ab37615445691181eca7cb49ca7?format=webp&width=1200"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fbf45102ca2434602812f7c04a6ec255a?format=webp&width=800"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-32 left-1/2 -translate-x-1/2 w-[140vw] max-w-none opacity-95 sm:hidden -z-10"
+                  className="pointer-events-none absolute bottom-0 left-[60%] -translate-x-1/2 w-[120vw] max-w-none opacity-90 sm:hidden -z-10"
                   decoding="async"
+                  style={{
+                    WebkitMaskImage:
+                      "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 18%)",
+                    maskImage:
+                      "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 18%)",
+                  }}
                 />
               </div>
             </div>
