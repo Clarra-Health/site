@@ -1,7 +1,7 @@
 export default function DataPrivacy() {
   return (
     <>
-      <section className="relative overflow-hidden py-16">
+      <section className="relative overflow-hidden pt-16 pb-0">
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-secondary/40 to-transparent" />
         <div className="container">
           <div className="mx-auto max-w-4xl text-center">
@@ -77,16 +77,19 @@ export default function DataPrivacy() {
               </p>
             </article>
           </div>
+        </div>
 
-          <div className="mx-auto mt-8 max-w-5xl">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F8f351b6639164bae82ce995179daef21?format=webp&width=1600"
-              alt="Data for Good"
-              className="w-full h-auto rounded-3xl border border-border"
-            />
-          </div>
+        {/* Full-bleed: Data for Good image */}
+        <div className="mt-0 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F8f351b6639164bae82ce995179daef21?format=webp&width=2000"
+            alt="Data for Good"
+            className="block w-full h-auto"
+          />
+        </div>
 
-          <section className="mt-12 overflow-hidden rounded-3xl border border-border bg-[hsl(25_97%_66%)] p-8 text-white shadow-sm">
+        <section className="mt-0 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-[hsl(25_97%_66%)] text-white">
+          <div className="container py-10">
             <div className="mx-auto max-w-4xl text-center">
               <div className="mx-auto my-6 h-px w-24 bg-white/60" />
 
@@ -141,8 +144,8 @@ export default function DataPrivacy() {
                 purpose.
               </p>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </section>
     </>
   );
