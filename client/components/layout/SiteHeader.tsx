@@ -110,7 +110,7 @@ export default function SiteHeader() {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/chat_with_clarra/"
+            href="https://www.instagram.com/clarrahealth/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -192,7 +192,7 @@ export default function SiteHeader() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/chat_with_clarra/"
+                href="https://www.instagram.com/clarrahealth/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
