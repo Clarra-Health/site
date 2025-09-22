@@ -5,7 +5,7 @@ export default function WhoWeHelpYou() {
         <div className="container">
           <div className="grid items-center gap-8">
             <div className="mx-auto w-full max-w-4xl text-center">
-              <h1 className="font-display text-6xl sm:text-7xl font-extrabold uppercase tracking-[0.01em] text-[#1f2d3a]">
+              <h1 className="font-display text-[4.3125rem] sm:text-[5.175rem] font-extrabold uppercase tracking-[0.01em] text-[#1f2d3a]">
                 For Woman
               </h1>
               <p className="mt-6 text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto">
