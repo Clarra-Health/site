@@ -117,8 +117,14 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F37631ab37615445691181eca7cb49ca7?format=webp&width=1200"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-64 left-[52%] -translate-x-1/2 w-[140vw] max-w-none opacity-80 sm:hidden -z-10"
+                  className="pointer-events-none absolute -bottom-56 left-[46%] -translate-x-1/2 w-[140vw] max-w-none opacity-90 sm:hidden -z-10"
                   decoding="async"
+                  style={{
+                    WebkitMaskImage:
+                      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 8%, rgba(0,0,0,0.85) 16%, rgba(0,0,0,1) 24%)",
+                    maskImage:
+                      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 8%, rgba(0,0,0,0.85) 16%, rgba(0,0,0,1) 24%)",
+                  }}
                 />
               </div>
             </div>
