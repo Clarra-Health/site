@@ -78,15 +78,23 @@ export default function DataPrivacy() {
             </article>
           </div>
 
-          <div className="mx-auto mt-8 max-w-5xl">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F8f351b6639164bae82ce995179daef21?format=webp&width=1600"
-              alt="Data for Good"
-              className="w-full h-auto rounded-3xl border border-border"
-            />
-          </div>
+        </div>
 
-          <section className="mt-12 overflow-hidden rounded-3xl border border-border bg-[hsl(25_97%_66%)] p-8 text-white shadow-sm">
+        {/* Full-bleed: Data for Good image */}
+        <div className="mt-8 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F8f351b6639164bae82ce995179daef21?format=webp&width=2000"
+            alt="Data for Good"
+            className="block w-full h-auto"
+          />
+        </div>
+
+        <div className="container">
+
+        {/* Full-bleed: Data for Good copy section */}
+        </div>
+        <section className="mt-12 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-[hsl(25_97%_66%)] text-white">
+          <div className="container py-10">
             <div className="mx-auto max-w-4xl text-center">
               <div className="mx-auto my-6 h-px w-24 bg-white/60" />
 
@@ -141,7 +149,9 @@ export default function DataPrivacy() {
                 purpose.
               </p>
             </div>
-          </section>
+          </div>
+        </section>
+        <div className="container">
         </div>
       </section>
     </>
