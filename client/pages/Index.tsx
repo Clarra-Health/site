@@ -117,16 +117,8 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F37631ab37615445691181eca7cb49ca7?format=webp&width=1200"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-56 left-[62%] -translate-x-1/2 w-[140vw] max-w-none opacity-95 sm:hidden -z-10"
+                  className="pointer-events-none absolute -bottom-64 left-[52%] -translate-x-1/2 w-[140vw] max-w-none opacity-80 sm:hidden -z-10"
                   decoding="async"
-                  style={{
-                    WebkitMaskImage:
-                      "radial-gradient(340px_220px_at_18%_86%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 82%, rgba(0,0,0,1) 96%), linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 18%, rgba(0,0,0,1) 28%)",
-                    maskImage:
-                      "radial-gradient(340px_220px_at_18%_86%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 82%, rgba(0,0,0,1) 96%), linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 18%, rgba(0,0,0,1) 28%)",
-                    WebkitMaskRepeat: "no-repeat",
-                    maskRepeat: "no-repeat",
-                  }}
                 />
               </div>
             </div>
