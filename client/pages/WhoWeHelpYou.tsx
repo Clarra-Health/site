@@ -48,7 +48,7 @@ export default function WhoWeHelpYou() {
       <section className="py-0">
         <div className="relative w-full">
           <video
-            src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd97658e818dc447bb70585994229e5e9?alt=media&token=269a6a41-5c9f-45ee-bfdc-0f35b23823ca&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
+            src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fcfa9c104cf244bcab4dd81c1bd445b14?alt=media&token=4c0b1729-7f01-4e1d-ac2d-473232f5403e&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
             className="block w-full h-[16.8rem] sm:h-[21.6rem] md:h-96 lg:h-[28.8rem] object-cover"
             autoPlay
             loop
