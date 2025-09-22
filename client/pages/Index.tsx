@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden bg-transparent pt-10 md:pt-12 pb-0">
+      <section className="relative isolate z-10 overflow-hidden bg-transparent pt-10 md:pt-12 pb-0">
         <div className="container">
           <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-12 items-start">
             <div className="sm:col-span-12 sm:col-start-1">
