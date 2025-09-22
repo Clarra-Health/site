@@ -158,14 +158,14 @@ export default function Index() {
 
       {/* 47 Million image (home only) */}
       <section className="py-0">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc98e4ba27ef34274b2f0b55d1bd61242?format=webp&width=2400 2400w"
-          sizes="100vw"
-          alt="47 million graphic"
+        <video
+          src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F5584d878f6ce4248b784f76ddbbd5e8a?alt=media&token=0b0f73c6-e767-40a0-b24a-0365f13d1856&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
           className="block w-full h-auto"
-          loading="lazy"
-          decoding="async"
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-label="It's not in your head — home banner video"
         />
       </section>
 

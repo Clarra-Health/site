@@ -267,14 +267,14 @@ export default function Solutions() {
       />
 
       <section className="py-0">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F300feb1843b7477f8eee8375a98fee01?format=webp&width=2400 2400w"
-          sizes="100vw"
-          alt="Chat with Clarra visual"
+        <video
+          src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd53c0d4e83cd4a11b36b325f004cbd03?alt=media&token=74ad210f-797d-4366-b6b2-1090330d8e0c&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
           className="block w-full h-auto"
-          loading="lazy"
-          decoding="async"
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-label="A new era of midlife health — redefined with clarity and care."
         />
       </section>
     </>
@@ -413,7 +413,7 @@ function EmCircle({ children }: { children: React.ReactNode }) {
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]"
+        className="pointer-events-none absolute left-[-0.35em] right-[-0.35em] top-[-0.385em] bottom-[-0.385em] h-[calc(100%+0.77em)] w-[calc(100%+0.7em)]"
         viewBox="0 0 100 60"
         preserveAspectRatio="none"
       >
