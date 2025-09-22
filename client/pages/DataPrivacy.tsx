@@ -1,7 +1,7 @@
 export default function DataPrivacy() {
   return (
     <>
-      <section className="relative overflow-hidden py-16">
+      <section className="relative overflow-hidden pt-16 pb-0">
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-secondary/40 to-transparent" />
         <div className="container">
           <div className="mx-auto max-w-4xl text-center">
@@ -89,10 +89,6 @@ export default function DataPrivacy() {
           />
         </div>
 
-        <div className="container">
-
-        {/* Full-bleed: Data for Good copy section */}
-        </div>
         <section className="mt-0 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-[hsl(25_97%_66%)] text-white">
           <div className="container py-10">
             <div className="mx-auto max-w-4xl text-center">
@@ -151,8 +147,6 @@ export default function DataPrivacy() {
             </div>
           </div>
         </section>
-        <div className="container">
-        </div>
       </section>
     </>
   );
