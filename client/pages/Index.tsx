@@ -103,7 +103,7 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end -translate-x-[25%] sm:-translate-x-[100%] relative">
+            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end -translate-x-[25%] sm:translate-x-[65%] relative">
               <div className="relative inline-block -translate-y-[10%] sm:translate-y-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
