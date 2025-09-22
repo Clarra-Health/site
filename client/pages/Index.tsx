@@ -103,7 +103,7 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end sm:-translate-x-[30%] relative overflow-visible">
+            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end sm:-translate-x-[30%] relative overflow-visible sm:mx-0 mx-[-2rem]">
               <div className="relative inline-block -translate-y-[10%] sm:translate-y-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
@@ -116,7 +116,7 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F37631ab37615445691181eca7cb49ca7?format=webp&width=1200"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 w-[120vw] max-w-none opacity-95 sm:hidden -z-10"
+                  className="pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 w-screen max-w-none opacity-95 sm:hidden -z-10"
                   decoding="async"
                 />
               </div>
