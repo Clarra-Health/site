@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import NotInYourHead from "@/components/layout/NotInYourHead";
+import AutoPlayVideo from "../components/media/AutoPlayVideo";
 
 export default function Index() {
   return (
@@ -158,14 +159,11 @@ export default function Index() {
 
       {/* 47 Million image (home only) */}
       <section className="py-0">
-        <video
+        <AutoPlayVideo
           src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F5584d878f6ce4248b784f76ddbbd5e8a?alt=media&token=0b0f73c6-e767-40a0-b24a-0365f13d1856&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
           className="block w-full h-auto"
-          autoPlay
-          muted
-          loop
-          playsInline
-          aria-label="It's not in your head — home banner video"
+          ariaLabel="It's not in your head — home banner video"
+          preload="auto"
         />
       </section>
 
@@ -179,16 +177,10 @@ export default function Index() {
             <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               Clarra’s mission is to harness{" "}
               <EmUnderline>the power of AI</EmUnderline> to{" "}
-              <EmUnderline>transform women’s health</EmUnderline>—{" "}
-              <EmCircle scale={0.75} sx={1.15} x={7.5}>
-                47 million
-              </EmCircle>{" "}
-              women worldwide enter menopause each year{" "}
-              <EmUnderline>without</EmUnderline> the{" "}
-              <EmCircle scale={0.75} sx={1.15} sy={0.85} x={15}>
-                care
-              </EmCircle>{" "}
-              they need.
+              <EmUnderline>transform women’s health</EmUnderline>{" "}
+              <EmCircle scale={0.75}>47 million</EmCircle> women worldwide enter
+              menopause each year <EmUnderline>without</EmUnderline> the{" "}
+              <EmCircle scale={0.75}>care</EmCircle> they need.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
               <p>

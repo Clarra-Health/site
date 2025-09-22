@@ -1,3 +1,5 @@
+import AutoPlayVideo from "../components/media/AutoPlayVideo";
+
 export default function WhoWeHelpCliniciansResearchers() {
   return (
     <>
@@ -42,15 +44,11 @@ export default function WhoWeHelpCliniciansResearchers() {
       </section>
 
       <section className="py-0">
-        <video
+        <AutoPlayVideo
           src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fabde6872f9fa4d5e91067f1bdaf091e6?alt=media&token=2e74a67f-20ab-45b5-a223-fb2c7db9a55a&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
-          controls
-          autoPlay
-          loop
-          muted
-          playsInline
           className="block w-full h-auto"
-          aria-label="Clinicians and Researchers overview video"
+          ariaLabel="Clinicians and Researchers overview video"
+          preload="auto"
         />
       </section>
     </>

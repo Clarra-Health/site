@@ -42,12 +42,11 @@ export default function WhoWeHelpPayers() {
         </div>
       </section>
 
+      {/* Full-bleed image above footer */}
       <section className="py-0">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=2000"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F527e573675c94b36bb78399a2ced423d?format=webp&width=2000 2000w"
-          sizes="100vw"
-          alt="Smiling woman with Clarra brand wave"
+          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F694edcbb034d461c98488fbb15190326?format=webp&width=2000"
+          alt="Clarra community member"
           className="block w-screen max-w-none h-auto"
           loading="lazy"
           decoding="async"
