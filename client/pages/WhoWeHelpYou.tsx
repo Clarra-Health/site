@@ -1,7 +1,7 @@
 export default function WhoWeHelpYou() {
   return (
     <>
-      <section className="py-16 sm:py-24 relative -translate-y-[15%]">
+      <section className="py-16 sm:py-24 relative -translate-y-[5%]">
         <div className="container">
           <div className="grid items-center gap-8">
             <div className="mx-auto w-full max-w-4xl text-center">
@@ -45,7 +45,7 @@ export default function WhoWeHelpYou() {
         </div>
       </section>
 
-      <section className="py-0">
+      <section className="py-0 relative -translate-y-[12%]">
         <div className="relative w-full">
           <video
             src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fcfa9c104cf244bcab4dd81c1bd445b14?alt=media&token=4c0b1729-7f01-4e1d-ac2d-473232f5403e&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
