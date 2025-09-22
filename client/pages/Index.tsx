@@ -179,7 +179,12 @@ export default function Index() {
             <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               Clarra’s mission is to harness{" "}
               <EmUnderline>the power of AI</EmUnderline> to{" "}
-              <EmUnderline><span className="whitespace-nowrap sm:whitespace-normal">transform women’s health</span></EmUnderline>—{" "}
+              <EmUnderline>
+                <span className="whitespace-nowrap sm:whitespace-normal">
+                  transform women’s health
+                </span>
+              </EmUnderline>
+              —{" "}
               <EmCircle scale={0.75} sx={1.15} x={7.5}>
                 47 million
               </EmCircle>{" "}
