@@ -49,7 +49,7 @@ export default function WhoWeHelpYou() {
         <div className="relative w-full">
           <video
             src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd97658e818dc447bb70585994229e5e9?alt=media&token=269a6a41-5c9f-45ee-bfdc-0f35b23823ca&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
-            className="block w-full h-56 sm:h-72 md:h-80 lg:h-96 object-cover"
+            className="block w-full h-[16.8rem] sm:h-[21.6rem] md:h-96 lg:h-[28.8rem] object-cover"
             autoPlay
             loop
             muted
