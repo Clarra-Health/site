@@ -81,7 +81,7 @@ export default function DataPrivacy() {
         </div>
 
         {/* Full-bleed: Data for Good image */}
-        <div className="mt-8 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+        <div className="mt-0 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F8f351b6639164bae82ce995179daef21?format=webp&width=2000"
             alt="Data for Good"
@@ -93,7 +93,7 @@ export default function DataPrivacy() {
 
         {/* Full-bleed: Data for Good copy section */}
         </div>
-        <section className="mt-12 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-[hsl(25_97%_66%)] text-white">
+        <section className="mt-0 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-[hsl(25_97%_66%)] text-white">
           <div className="container py-10">
             <div className="mx-auto max-w-4xl text-center">
               <div className="mx-auto my-6 h-px w-24 bg-white/60" />
