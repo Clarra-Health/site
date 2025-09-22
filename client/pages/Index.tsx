@@ -117,8 +117,8 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F37631ab37615445691181eca7cb49ca7?format=webp&width=1200"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-16 left-1/2 -translate-x-[45%] w-[130vw] max-w-none opacity-95 sm:hidden -z-10"
-                  style={{ WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 72%, transparent 92%)", maskImage: "linear-gradient(to bottom, black 0%, black 72%, transparent 92%)" }}
+                  className="pointer-events-none absolute -bottom-16 left-1/2 -translate-x-[35%] w-[130vw] max-w-none opacity-95 sm:hidden -z-10"
+                  style={{ WebkitMaskImage: "linear-gradient(to right, transparent 0%, transparent 18%, black 22%, black 100%), linear-gradient(to bottom, black 0%, black 72%, transparent 92%)", maskImage: "linear-gradient(to right, transparent 0%, transparent 18%, black 22%, black 100%), linear-gradient(to bottom, black 0%, black 72%, transparent 92%)" }}
                   decoding="async"
                 />
               </div>
