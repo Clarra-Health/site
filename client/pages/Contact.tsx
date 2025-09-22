@@ -174,7 +174,7 @@ export default function Contact() {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/chat_with_clarra/"
+              href="https://www.instagram.com/clarrahealth/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
