@@ -117,15 +117,15 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F37631ab37615445691181eca7cb49ca7?format=webp&width=1200"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-80 left-[40%] -translate-x-1/2 w-[140vw] max-w-none opacity-90 sm:hidden -z-10"
+                  className="pointer-events-none absolute -bottom-[28rem] left-[36%] -translate-x-1/2 w-[130vw] max-w-none opacity-90 sm:hidden -z-10"
                   decoding="async"
                   style={{
                     WebkitMaskImage:
-                      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 6%, rgba(0,0,0,1) 14%), radial-gradient(360px_220px_at 12% 86%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 78%, rgba(0,0,0,1) 95%)",
+                      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 4%, rgba(0,0,0,1) 12%)",
                     maskImage:
-                      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 6%, rgba(0,0,0,1) 14%), radial-gradient(360px_220px_at 12% 86%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 78%, rgba(0,0,0,1) 95%)",
-                    WebkitMaskComposite: "destination-in",
-                    maskComposite: "intersect",
+                      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 4%, rgba(0,0,0,1) 12%)",
+                    WebkitMaskRepeat: "no-repeat",
+                    maskRepeat: "no-repeat",
                   }}
                 />
               </div>
