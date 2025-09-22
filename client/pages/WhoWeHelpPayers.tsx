@@ -47,7 +47,9 @@ export default function WhoWeHelpPayers() {
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F694edcbb034d461c98488fbb15190326?format=webp&width=2000"
           alt="Clarra community member"
-          className="block w-full h-auto object-cover"
+          className="block w-screen max-w-none h-auto"
+          loading="lazy"
+          decoding="async"
         />
       </section>
     </>
