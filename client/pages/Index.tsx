@@ -11,22 +11,22 @@ export default function Index() {
             <div className="sm:col-span-12 sm:col-start-1">
               <h1 className="font-display text-[#1f2d3a] text-[3.6rem] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
                 AI-POWERED {""}
-                <span className="relative inline-block px-1 align-baseline">
+                <span className="relative inline-block px-2 align-baseline">
                   <span className="relative z-10">COMPASSIONATE</span>
                   <svg
                     aria-hidden
-                    className="pointer-events-none absolute left-[-6%] right-[-6%] top-[-18%] bottom-[-18%] h-[136%] w-[112%]"
+                    className="pointer-events-none absolute left-[-12%] right-[-12%] top-[-28%] bottom-[-28%] h-[156%] w-[124%]"
                     viewBox="0 0 100 40"
                     preserveAspectRatio="none"
                   >
                     <ellipse
                       cx="50"
                       cy="20"
-                      rx="46"
-                      ry="16"
+                      rx="49"
+                      ry="18"
                       fill="none"
                       stroke="hsl(25 97% 66%)"
-                      strokeWidth="2.5"
+                      strokeWidth="3"
                       strokeLinecap="round"
                     />
                   </svg>
