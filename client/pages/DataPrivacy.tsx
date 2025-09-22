@@ -77,7 +77,6 @@ export default function DataPrivacy() {
               </p>
             </article>
           </div>
-
         </div>
 
         {/* Full-bleed: Data for Good image */}
