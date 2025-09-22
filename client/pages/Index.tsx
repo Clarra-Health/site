@@ -15,14 +15,14 @@ export default function Index() {
                   <span className="relative z-10">COMPASSIONATE</span>
                   <svg
                     aria-hidden
-                    className="pointer-events-none absolute left-[-5%] right-[-52%] top-[-22%] bottom-[-22%] h-[140%] w-[124%]"
+                    className="pointer-events-none absolute left-[-12%] right-[-52%] top-[-22%] bottom-[-22%] h-[140%] w-[124%]"
                     viewBox="0 0 100 40"
                     preserveAspectRatio="none"
                   >
                     <ellipse
                       cx="54"
                       cy="20"
-                      rx="47"
+                      rx="49"
                       ry="15"
                       fill="none"
                       stroke="hsl(25 97% 66%)"
