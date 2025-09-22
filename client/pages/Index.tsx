@@ -433,19 +433,21 @@ function EmUnderline({
 function EmCircle({
   children,
   scale = 1,
+  y = 0.08,
 }: {
   children: React.ReactNode;
   scale?: number;
+  y?: number; // vertical offset in em to better center uppercase text
 }) {
   return (
-    <span className="relative inline-block px-1">
+    <span className="relative inline-block px-1 align-baseline">
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]"
+        className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)] overflow-visible"
         viewBox="0 0 100 60"
         preserveAspectRatio="none"
-        style={{ transform: `scale(${scale})`, transformOrigin: "center" }}
+        style={{ transform: `translateY(${y}em) scale(${scale})`, transformOrigin: "center" }}
       >
         <ellipse
           cx="50"
