@@ -179,10 +179,10 @@ export default function Index() {
             <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               Clarra’s mission is to harness{" "}
               <EmUnderline>the power of AI</EmUnderline> to{" "}
-              <EmUnderline>transform women’s health</EmUnderline>— <EmCircle scale={0.9}>47 million</EmCircle> women
+              <EmUnderline>transform women’s health</EmUnderline>— <EmCircle scale={0.75}>47 million</EmCircle> women
               worldwide enter menopause each year{" "}
               <EmUnderline>without</EmUnderline> the{" "}
-              <EmCircle scale={0.9}>care</EmCircle> they need.
+              <EmCircle scale={0.75}>care</EmCircle> they need.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
               <p>
@@ -438,11 +438,11 @@ function EmCircle({
   scale?: number;
 }) {
   return (
-    <span className="relative inline-block px-1 align-baseline">
+    <span className="relative inline-block px-1">
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className="pointer-events-none absolute inset-[-0.5em] h-[calc(100%+1em)] w-[calc(100%+1em)] overflow-visible"
+        className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)]"
         viewBox="0 0 100 60"
         preserveAspectRatio="none"
         style={{ transform: `scale(${scale})`, transformOrigin: "center" }}
@@ -450,8 +450,8 @@ function EmCircle({
         <ellipse
           cx="50"
           cy="30"
-          rx="49"
-          ry="29"
+          rx="47"
+          ry="26"
           fill="none"
           stroke="hsl(25 97% 66%)"
           strokeWidth="3.15"
