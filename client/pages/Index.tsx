@@ -117,13 +117,13 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F37631ab37615445691181eca7cb49ca7?format=webp&width=1200"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-40 left-[60%] -translate-x-1/2 w-[140vw] max-w-none opacity-95 sm:hidden -z-10"
+                  className="pointer-events-none absolute -bottom-48 left-[61%] -translate-x-1/2 w-[140vw] max-w-none opacity-95 sm:hidden -z-10"
                   decoding="async"
                   style={{
                     WebkitMaskImage:
-                      "radial-gradient(220px_160px_at_18%_86%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 78%, rgba(0,0,0,1) 92%), linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 12%, rgba(0,0,0,1) 20%)",
+                      "radial-gradient(260px_180px_at_22%_90%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 95%), linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 14%, rgba(0,0,0,1) 22%)",
                     maskImage:
-                      "radial-gradient(220px_160px_at_18%_86%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 78%, rgba(0,0,0,1) 92%), linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 12%, rgba(0,0,0,1) 20%)",
+                      "radial-gradient(260px_180px_at_22%_90%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 95%), linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 14%, rgba(0,0,0,1) 22%)",
                     WebkitMaskRepeat: "no-repeat",
                     maskRepeat: "no-repeat",
                   }}
