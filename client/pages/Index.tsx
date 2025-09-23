@@ -185,7 +185,9 @@ export default function Index() {
               <EmUnderline>the power of AI</EmUnderline> to{" "}
               <span className="hidden sm:inline">
                 <EmUnderline>
-                  <span className="whitespace-nowrap">transform women’s health</span>
+                  <span className="whitespace-nowrap">
+                    transform women’s health
+                  </span>
                 </EmUnderline>
               </span>
               <span className="inline sm:hidden">
