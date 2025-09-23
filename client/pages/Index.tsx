@@ -13,7 +13,7 @@ export default function Index() {
               <h1 className="font-display text-[#1f2d3a] text-[3.6rem] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
                 AI-POWERED {""}
                 <span className="relative inline-block px-2 align-baseline">
-                  <span className="relative z-10">COMPASSIONATE</span>
+                  <span className="relative z-10 text-[#fc9a53]">COMPASSIONATE</span>
                   <svg
                     aria-hidden
                     className="hidden sm:block pointer-events-none absolute left-[-5%] right-[-30%] top-[-22%] bottom-[-22%] h-[140%] w-[124%]"
@@ -32,7 +32,7 @@ export default function Index() {
                     />
                   </svg>
                 </span>{" "}
-                CARE FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
+                <span className="text-[#4fb7b3]">CARE</span> FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
               </h1>
               <p className="mt-3 sm:mt-4 text-[1.35rem] sm:text-xl font-medium text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra connects the dots between symptoms, insights, and
@@ -183,18 +183,18 @@ export default function Index() {
             {/* Desktop / tablet version unchanged */}
             <h2 className="hidden sm:inline-block font-display relative text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               Clarra’s mission is to harness{" "}
-              <EmUnderline><span className="text-secondary">the power of AI</span></EmUnderline> to{" "}
+              <EmUnderline><span className="text-[#4fb7b3]">the power of AI</span></EmUnderline> to{" "}
               <EmUnderline>
                 <span className="whitespace-nowrap text-[hsl(25_97%_66%)]">
                   transform women’s health
                 </span>
               </EmUnderline>
               —{" "}
-              <EmUnderline stroke="hsl(var(--secondary))" showOnMobile>
+              <EmUnderline stroke="#4fb7b3" showOnMobile>
                 47 million women
               </EmUnderline>{" "}
               worldwide enter menopause each year without the{" "}
-              <EmUnderline stroke="hsl(var(--secondary))" showOnMobile>
+              <EmUnderline stroke="#4fb7b3" showOnMobile>
                 care
               </EmUnderline>{" "}
               they need.
@@ -202,18 +202,18 @@ export default function Index() {
             {/* Mobile exact layout */}
             <h2 className="sm:hidden font-display text-[#1f2d3a] uppercase font-extrabold tracking-[0.01em] text-5xl leading-[1.02]">
               <span>Clarra’s mission is to harness </span>
-              <span className="text-secondary">the power of AI</span>
+              <span className="text-[#4fb7b3]">the power of AI</span>
               <span> to</span>
               <br />
               <EmUnderline offsetScale={0.85}>
                 <span className="text-[hsl(25_97%_66%)]">TRANSFORM WOMEN’S HEALTH</span>
               </EmUnderline>
               —{" "}
-              <EmUnderline stroke="hsl(var(--secondary))" offsetScale={0.85} showOnMobile>
+              <EmUnderline stroke="#4fb7b3" offsetScale={0.85} showOnMobile>
                 47 MILLION WOMEN
               </EmUnderline>{" "}
               WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT{" "}
-              <EmUnderline stroke="hsl(var(--secondary))" offsetScale={0.8} showOnMobile>THE CARE</EmUnderline>{" "}THEY NEED.
+              <EmUnderline stroke="#4fb7b3" offsetScale={0.8} showOnMobile>THE CARE</EmUnderline>{" "}THEY NEED.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
               <p>
