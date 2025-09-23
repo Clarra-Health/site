@@ -38,7 +38,7 @@ export default function Index() {
                 Clarra connects the dots between symptoms, insights, and
                 support—so midlife health finally makes sense.
               </p>
-              <div className="mt-6 sm:mt-6 mb-6 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 sm:mt-6 mb-6 relative z-20 flex flex-col gap-3 sm:flex-row">
                 <Link
                   to="/about"
                   className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
