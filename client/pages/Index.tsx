@@ -12,7 +12,7 @@ export default function Index() {
             <div className="sm:col-span-12 sm:col-start-1">
               <h1 className="font-display text-[#1f2d3a] text-[3.6rem] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
                 AI-POWERED {""}
-                <span className="relative inline-block px-2 align-baseline">
+                <span className="relative inline-block px-0 sm:px-2 align-baseline">
                   <span className="relative z-10 text-[#4fb7b3]">COMPASSIONATE</span>
                   <svg
                     aria-hidden
