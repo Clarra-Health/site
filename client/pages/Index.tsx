@@ -117,7 +117,7 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fbf45102ca2434602812f7c04a6ec255a?format=webp&width=800"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute bottom-0 left-[60%] -translate-x-1/2 w-[120vw] max-w-none opacity-90 sm:hidden -z-10"
+                  className="pointer-events-none absolute bottom-[-10%] left-[60%] -translate-x-1/2 w-[120vw] max-w-none opacity-90 sm:hidden -z-10"
                   decoding="async"
                   style={{
                     WebkitMaskImage:
@@ -184,7 +184,7 @@ export default function Index() {
               Clarra’s mission is to harness{" "}
               <EmUnderline>the power of AI</EmUnderline> to{" "}
               <EmUnderline>
-                <span className="whitespace-nowrap sm:whitespace-normal">
+                <span className="whitespace-normal sm:whitespace-nowrap">
                   transform women’s health
                 </span>
               </EmUnderline>
