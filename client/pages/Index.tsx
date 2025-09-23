@@ -185,21 +185,32 @@ export default function Index() {
               Clarra’s mission is to harness{" "}
               <EmUnderline>the power of AI</EmUnderline> to{" "}
               <EmUnderline>
-                <span className="whitespace-nowrap">transform women’s health</span>
+                <span className="whitespace-nowrap">
+                  transform women’s health
+                </span>
               </EmUnderline>
               —{" "}
-              <EmCircle scale={0.75} sx={1.15} x={7.5}>47 million</EmCircle>{" "}
+              <EmCircle scale={0.75} sx={1.15} x={7.5}>
+                47 million
+              </EmCircle>{" "}
               women worldwide enter menopause each year without the{" "}
-              <EmCircle scale={0.75} sx={1.15} sy={0.85} x={15}>care</EmCircle>{" "}
+              <EmCircle scale={0.75} sx={1.15} sy={0.85} x={15}>
+                care
+              </EmCircle>{" "}
               they need.
             </h2>
             {/* Mobile exact layout */}
             <h2 className="sm:hidden font-display text-[#1f2d3a] uppercase font-extrabold tracking-[0.01em] text-5xl leading-[1.02]">
               <span>Clarra’s mission is to harness the power of AI to</span>
               <br />
-              <EmUnderline offsetScale={0.85}>TRANSFORM WOMEN’S HEALTH</EmUnderline>
-              — <EmCircle scale={0.9} sx={1.15}>47 MILLION</EmCircle> WOMEN WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT
-              {" "}
+              <EmUnderline offsetScale={0.85}>
+                TRANSFORM WOMEN’S HEALTH
+              </EmUnderline>
+              —{" "}
+              <EmCircle scale={0.9} sx={1.15}>
+                47 MILLION
+              </EmCircle>{" "}
+              WOMEN WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT{" "}
               <EmUnderline offsetScale={0.8}>THE CARE THEY NEED.</EmUnderline>
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
