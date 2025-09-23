@@ -13,7 +13,9 @@ export default function Index() {
               <h1 className="font-display text-[#1f2d3a] text-[3.6rem] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
                 AI-POWERED {""}
                 <span className="relative inline-block px-0 sm:px-2 align-baseline">
-                  <span className="relative z-10 text-[#4fb7b3]">COMPASSIONATE</span>
+                  <span className="relative z-10 text-[#4fb7b3]">
+                    COMPASSIONATE
+                  </span>
                   <svg
                     aria-hidden
                     className="hidden"
@@ -32,7 +34,8 @@ export default function Index() {
                     />
                   </svg>
                 </span>{" "}
-                <span className="text-[#fc9a53]">CARE</span> FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
+                <span className="text-[#fc9a53]">CARE</span> FOR PERIMENOPAUSE,
+                MENOPAUSE & MIDLIFE.
               </h1>
               <p className="mt-3 sm:mt-4 text-[1.35rem] sm:text-xl font-medium text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra connects the dots between symptoms, insights, and
@@ -185,8 +188,8 @@ export default function Index() {
               Clarra’s mission is to harness{" "}
               <span className="text-[#4fb7b3]">the power of AI</span> to{" "}
               <span className="whitespace-nowrap text-[hsl(25_97%_66%)]">
-                  transform women’s health
-                </span>
+                transform women’s health
+              </span>
               —{" "}
               <EmUnderline stroke="#4fb7b3" showOnMobile>
                 47 million women
@@ -203,13 +206,18 @@ export default function Index() {
               <span className="text-[#4fb7b3]">the power of AI</span>
               <span> to</span>
               <br />
-              <span className="text-[hsl(25_97%_66%)]">TRANSFORM WOMEN’S HEALTH</span>
+              <span className="text-[hsl(25_97%_66%)]">
+                TRANSFORM WOMEN’S HEALTH
+              </span>
               —{" "}
               <EmUnderline stroke="#4fb7b3" offsetScale={0.85} showOnMobile>
                 47 MILLION WOMEN
               </EmUnderline>{" "}
               WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT{" "}
-              <EmUnderline stroke="#4fb7b3" offsetScale={0.8} showOnMobile>THE CARE</EmUnderline>{" "}THEY NEED.
+              <EmUnderline stroke="#4fb7b3" offsetScale={0.8} showOnMobile>
+                THE CARE
+              </EmUnderline>{" "}
+              THEY NEED.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
               <p>
