@@ -38,7 +38,7 @@ export default function Index() {
                 Clarra connects the dots between symptoms, insights, and
                 support—so midlife health finally makes sense.
               </p>
-              <div className="mt-6 sm:mt-6 mb-6 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 sm:mt-6 mb-6 relative z-20 flex flex-col gap-3 sm:flex-row">
                 <Link
                   to="/about"
                   className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
@@ -117,7 +117,7 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fbf45102ca2434602812f7c04a6ec255a?format=webp&width=800"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute bottom-0 left-[60%] -translate-x-1/2 w-[120vw] max-w-none opacity-90 sm:hidden -z-10"
+                  className="pointer-events-none absolute bottom-[-10%] left-[60%] -translate-x-1/2 w-[120vw] max-w-none opacity-90 sm:hidden -z-10"
                   decoding="async"
                   style={{
                     WebkitMaskImage:
@@ -184,7 +184,7 @@ export default function Index() {
               Clarra’s mission is to harness{" "}
               <EmUnderline>the power of AI</EmUnderline> to{" "}
               <EmUnderline>
-                <span className="whitespace-nowrap sm:whitespace-normal">
+                <span className="whitespace-normal sm:whitespace-nowrap">
                   transform women’s health
                 </span>
               </EmUnderline>
