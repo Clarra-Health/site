@@ -11,9 +11,9 @@ export default function NotInYourHead() {
       highlight: "10 years",
     },
     {
-      k: "There are more than 100 symptoms",
+      k: "There are more than 60 symptoms",
       s: "",
-      highlight: "100",
+      highlight: "60",
     },
     {
       k: "It takes an average of 7 years to be diagnosed with a menopause-related condition",
