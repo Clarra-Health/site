@@ -183,35 +183,37 @@ export default function Index() {
             {/* Desktop / tablet version unchanged */}
             <h2 className="hidden sm:inline-block font-display relative text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               Clarra’s mission is to harness{" "}
-              <EmUnderline>the power of AI</EmUnderline> to{" "}
+              <EmUnderline><span className="text-secondary">the power of AI</span></EmUnderline> to{" "}
               <EmUnderline>
-                <span className="whitespace-nowrap">
+                <span className="whitespace-nowrap text-[hsl(25_97%_66%)]">
                   transform women’s health
                 </span>
               </EmUnderline>
               —{" "}
-              <EmCircle scale={0.75} sx={1.15} x={7.5}>
-                47 million
-              </EmCircle>{" "}
-              women worldwide enter menopause each year without the{" "}
-              <EmCircle scale={0.75} sx={1.15} sy={0.85} x={15}>
+              <EmUnderline stroke="hsl(var(--secondary))" showOnMobile>
+                47 million women
+              </EmUnderline>{" "}
+              worldwide enter menopause each year without the{" "}
+              <EmUnderline stroke="hsl(var(--secondary))" showOnMobile>
                 care
-              </EmCircle>{" "}
+              </EmUnderline>{" "}
               they need.
             </h2>
             {/* Mobile exact layout */}
             <h2 className="sm:hidden font-display text-[#1f2d3a] uppercase font-extrabold tracking-[0.01em] text-5xl leading-[1.02]">
-              <span>Clarra’s mission is to harness the power of AI to</span>
+              <span>Clarra’s mission is to harness </span>
+              <span className="text-secondary">the power of AI</span>
+              <span> to</span>
               <br />
               <EmUnderline offsetScale={0.85}>
-                TRANSFORM WOMEN’S HEALTH
+                <span className="text-[hsl(25_97%_66%)]">TRANSFORM WOMEN’S HEALTH</span>
               </EmUnderline>
               —{" "}
-              <EmCircle scale={0.9} sx={1.15}>
-                47 MILLION
-              </EmCircle>{" "}
-              WOMEN WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT{" "}
-              <EmUnderline offsetScale={0.8}>THE CARE THEY NEED.</EmUnderline>
+              <EmUnderline stroke="hsl(var(--secondary))" offsetScale={0.85} showOnMobile>
+                47 MILLION WOMEN
+              </EmUnderline>{" "}
+              WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT{" "}
+              <EmUnderline stroke="hsl(var(--secondary))" offsetScale={0.8} showOnMobile>THE CARE</EmUnderline>{" "}THEY NEED.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
               <p>
@@ -432,16 +434,20 @@ function IconShield() {
 function EmUnderline({
   children,
   offsetScale = 0.8,
+  stroke = "hsl(25 97% 66%)",
+  showOnMobile = false,
 }: {
   children: React.ReactNode;
   offsetScale?: number;
+  stroke?: string;
+  showOnMobile?: boolean;
 }) {
   return (
     <span className="relative inline-block px-0.5 align-baseline">
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className="hidden sm:block pointer-events-none absolute left-[-1%] right-[-1%] h-[0.55em] w-[102%]"
+        className={`${showOnMobile ? "" : "hidden sm:block "}pointer-events-none absolute left-[-1%] right-[-1%] h-[0.55em] w-[102%]`}
         viewBox="0 0 100 20"
         preserveAspectRatio="none"
         style={{ bottom: `calc(-0.18em * ${offsetScale})` }}
@@ -449,7 +455,7 @@ function EmUnderline({
         <path
           d="M2 14 L 98 14"
           fill="none"
-          stroke="hsl(25 97% 66%)"
+          stroke={stroke}
           strokeWidth="3.15"
           strokeLinecap="round"
           strokeLinejoin="round"
