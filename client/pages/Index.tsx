@@ -180,11 +180,12 @@ export default function Index() {
       <section className="py-12">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
-            <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
+            {/* Desktop / tablet version unchanged */}
+            <h2 className="hidden sm:inline-block font-display relative text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               Clarra’s mission is to harness{" "}
               <EmUnderline>the power of AI</EmUnderline> to{" "}
               <EmUnderline>
-                <span className="whitespace-normal sm:whitespace-nowrap">
+                <span className="whitespace-nowrap">
                   transform women’s health
                 </span>
               </EmUnderline>
@@ -192,12 +193,25 @@ export default function Index() {
               <EmCircle scale={0.75} sx={1.15} x={7.5}>
                 47 million
               </EmCircle>{" "}
-              women worldwide enter menopause each year{" "}
-              <EmUnderline>without</EmUnderline> the{" "}
+              women worldwide enter menopause each year without the{" "}
               <EmCircle scale={0.75} sx={1.15} sy={0.85} x={15}>
                 care
               </EmCircle>{" "}
               they need.
+            </h2>
+            {/* Mobile exact layout */}
+            <h2 className="sm:hidden font-display text-[#1f2d3a] uppercase font-extrabold tracking-[0.01em] text-5xl leading-[1.02]">
+              <span>Clarra’s mission is to harness the power of AI to</span>
+              <br />
+              <EmUnderline offsetScale={0.85}>
+                TRANSFORM WOMEN’S HEALTH
+              </EmUnderline>
+              —{" "}
+              <EmCircle scale={0.9} sx={1.15}>
+                47 MILLION
+              </EmCircle>{" "}
+              WOMEN WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT{" "}
+              <EmUnderline offsetScale={0.8}>THE CARE THEY NEED.</EmUnderline>
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
               <p>
