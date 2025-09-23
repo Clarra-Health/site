@@ -16,7 +16,7 @@ export default function Index() {
                   <span className="relative z-10">COMPASSIONATE</span>
                   <svg
                     aria-hidden
-                    className="pointer-events-none absolute left-[-5%] right-[-30%] top-[-22%] bottom-[-22%] h-[140%] w-[124%]"
+                    className="hidden sm:block pointer-events-none absolute left-[-5%] right-[-30%] top-[-22%] bottom-[-22%] h-[140%] w-[124%]"
                     viewBox="0 0 100 40"
                     preserveAspectRatio="none"
                   >
@@ -441,7 +441,7 @@ function EmUnderline({
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className="pointer-events-none absolute left-[-1%] right-[-1%] h-[0.55em] w-[102%]"
+        className="hidden sm:block pointer-events-none absolute left-[-1%] right-[-1%] h-[0.55em] w-[102%]"
         viewBox="0 0 100 20"
         preserveAspectRatio="none"
         style={{ bottom: `calc(-0.18em * ${offsetScale})` }}
@@ -479,7 +479,7 @@ function EmCircle({
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className="pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)] overflow-visible"
+        className="hidden sm:block pointer-events-none absolute inset-[-0.35em] h-[calc(100%+0.7em)] w-[calc(100%+0.7em)] overflow-visible"
         viewBox="0 0 100 60"
         preserveAspectRatio="none"
         style={{
