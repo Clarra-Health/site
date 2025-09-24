@@ -34,8 +34,10 @@ export default function Index() {
                     />
                   </svg>
                 </span>{" "}
-                <span className="text-[#fc9a53]">CARE</span> FOR PERIMENOPAUSE,
-                MENOPAUSE & MIDLIFE.
+                <EmUnderline stroke="#2c3e50" showOnMobile>
+                  <span className="text-[#7cc9a2]">CARE</span>
+                </EmUnderline>{" "}
+                FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
               </h1>
               <p className="mt-3 sm:mt-4 text-[1.35rem] sm:text-xl font-medium text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra connects the dots between symptoms, insights, and
@@ -65,7 +67,7 @@ export default function Index() {
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
             <div className="order-2 sm:order-1 sm:translate-x-[10%]">
-              <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90">
+              <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90 mt-[10%] sm:mt-0">
                 Clarra Features
               </h3>
               <ul className="space-y-4">
@@ -107,28 +109,21 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end sm:-translate-x-[30%] relative overflow-visible sm:mx-0 mx-[-2rem]">
-              <div className="relative inline-block -translate-y-[10%] sm:translate-y-0">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
-                  alt="Chat with Clarra phone mockup"
-                  className="relative z-10 w-full max-w-xs sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl scale-[1.5] sm:scale-[1.7] origin-center mx-auto"
-                  loading="eager"
-                  decoding="async"
-                />
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fbf45102ca2434602812f7c04a6ec255a?format=webp&width=800"
-                  alt=""
-                  aria-hidden="true"
-                  className="pointer-events-none absolute bottom-[-10%] left-[60%] -translate-x-1/2 w-[120vw] max-w-none opacity-90 sm:hidden -z-10"
-                  decoding="async"
-                  style={{
-                    WebkitMaskImage:
-                      "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 18%)",
-                    maskImage:
-                      "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 18%)",
-                  }}
-                />
+            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end sm:-translate-x-[30%] relative overflow-visible mx-0">
+              <div className="relative block w-screen sm:w-auto translate-y-0 sm:-translate-y-[6%] mx-[calc(50%-50vw)] sm:mx-0">
+                <picture>
+                  <source
+                    media="(max-width: 639px)"
+                    srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6915630e2bd3451e87a425dbfa50715a?format=webp&width=800"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
+                    alt="Chat with Clarra phone mockup"
+                    className="relative z-10 w-full max-w-none sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl scale-[1.2] sm:scale-[1.7] origin-center mx-auto"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </picture>
               </div>
             </div>
           </div>
@@ -187,17 +182,16 @@ export default function Index() {
             <h2 className="hidden sm:inline-block font-display relative text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               Clarra’s mission is to harness{" "}
               <span className="text-[#4fb7b3]">the power of AI</span> to{" "}
-              <span className="whitespace-nowrap text-[hsl(25_97%_66%)]">
-                transform women’s health
-              </span>
+              <EmUnderline stroke="#2c3e50">
+                <span className="whitespace-nowrap text-[#7cc9a2]">
+                  transform women’s health
+                </span>
+              </EmUnderline>
               —{" "}
               <EmUnderline stroke="#4fb7b3" showOnMobile>
                 47 million women
               </EmUnderline>{" "}
-              worldwide enter menopause each year without the{" "}
-              <EmUnderline stroke="#4fb7b3" showOnMobile>
-                care
-              </EmUnderline>{" "}
+              worldwide enter menopause each year without the <span>care</span>{" "}
               they need.
             </h2>
             {/* Mobile exact layout */}
@@ -206,17 +200,14 @@ export default function Index() {
               <span className="text-[#4fb7b3]">the power of AI</span>
               <span> to</span>
               <br />
-              <span className="text-[hsl(25_97%_66%)]">
-                TRANSFORM WOMEN’S HEALTH
-              </span>
+              <EmUnderline stroke="#2c3e50" showOnMobile>
+                <span className="text-[#7cc9a2]">TRANSFORM WOMEN’S HEALTH</span>
+              </EmUnderline>
               —{" "}
               <EmUnderline stroke="#4fb7b3" offsetScale={0.85} showOnMobile>
                 47 MILLION WOMEN
               </EmUnderline>{" "}
-              WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT{" "}
-              <EmUnderline stroke="#4fb7b3" offsetScale={0.8} showOnMobile>
-                THE CARE
-              </EmUnderline>{" "}
+              WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT <span>THE CARE</span>{" "}
               THEY NEED.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
