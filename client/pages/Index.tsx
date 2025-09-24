@@ -200,7 +200,7 @@ export default function Index() {
               <span className="text-[#4fb7b3]">the power of AI</span>
               <span> to</span>
               <br />
-              <EmUnderline stroke="#2c3e50" showOnMobile>
+              <EmUnderline stroke="#2c3e50" showOnMobile mobileOffsetEm={0.17}>
                 <span className="text-[#7cc9a2]">TRANSFORM WOMEN’S HEALTH</span>
               </EmUnderline>
               —{" "}
@@ -431,16 +431,26 @@ function EmUnderline({
   offsetScale = 0.8,
   stroke = "hsl(25 97% 66%)",
   showOnMobile = false,
+  mobileOffsetEm = 0.22,
 }: {
   children: React.ReactNode;
   offsetScale?: number;
   stroke?: string;
   showOnMobile?: boolean;
+  mobileOffsetEm?: number;
 }) {
   return (
     <span
-      className={`relative inline-block align-baseline ${showOnMobile ? "px-0 sm:px-0.5 underline sm:no-underline [text-decoration-thickness:3px] [text-underline-offset:0.22em]" : "px-0.5"}`}
-      style={showOnMobile ? ({ textDecorationColor: stroke } as React.CSSProperties) : undefined}
+      className={`relative inline-block align-baseline ${showOnMobile ? "px-0 sm:px-0.5 underline sm:no-underline" : "px-0.5"}`}
+      style={
+        showOnMobile
+          ? ({
+              textDecorationColor: stroke,
+              textDecorationThickness: "3px",
+              textUnderlineOffset: `${mobileOffsetEm}em`,
+            } as React.CSSProperties)
+          : undefined
+      }
     >
       <span className="relative z-10">{children}</span>
       <svg
