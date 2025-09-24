@@ -117,7 +117,7 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fe9d9a41e02d84de58ee61b5e0bc3e0c4?format=webp&width=800"
                     alt="Chat with Clarra phone mockup"
-                    className="relative z-10 w-full max-w-[15rem] sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl scale-[1.2] sm:scale-[1.7] origin-center mx-auto"
+                    className="relative z-10 w-full max-w-none sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl scale-[1.2] sm:scale-[1.7] origin-center mx-auto"
                     loading="eager"
                     decoding="async"
                   />
