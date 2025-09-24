@@ -66,11 +66,11 @@ export default function Index() {
       <section className="py-8 pt-16 sm:pt-8">
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
-            <div className="order-2 sm:order-1 sm:translate-x-[10%]">
+            <div className="order-2 sm:order-1 sm:translate-x-[10%] text-center sm:text-left">
               <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90 mt-[10%] sm:mt-0">
                 Clarra Features
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-4 max-w-xl mx-auto sm:mx-0">
                 <li className="flex items-start gap-3">
                   <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
                     <IconCheck />
@@ -200,7 +200,7 @@ export default function Index() {
               <span className="text-[#4fb7b3]">the power of AI</span>
               <span> to</span>
               <br />
-              <EmUnderline stroke="#2c3e50" showOnMobile>
+              <EmUnderline stroke="#2c3e50" showOnMobile mobileOffsetEm={0.17}>
                 <span className="text-[#7cc9a2]">TRANSFORM WOMEN’S HEALTH</span>
               </EmUnderline>
               —{" "}
@@ -431,18 +431,31 @@ function EmUnderline({
   offsetScale = 0.8,
   stroke = "hsl(25 97% 66%)",
   showOnMobile = false,
+  mobileOffsetEm = 0.22,
 }: {
   children: React.ReactNode;
   offsetScale?: number;
   stroke?: string;
   showOnMobile?: boolean;
+  mobileOffsetEm?: number;
 }) {
   return (
-    <span className="relative inline-block px-0.5 align-baseline">
+    <span
+      className={`relative inline-block align-baseline ${showOnMobile ? "px-0 sm:px-0.5 underline sm:no-underline" : "px-0.5"}`}
+      style={
+        showOnMobile
+          ? ({
+              textDecorationColor: stroke,
+              textDecorationThickness: "3px",
+              textUnderlineOffset: `${mobileOffsetEm}em`,
+            } as React.CSSProperties)
+          : undefined
+      }
+    >
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className={`${showOnMobile ? "" : "hidden sm:block "}pointer-events-none absolute left-[-1%] right-[-1%] h-[0.55em] w-[102%]`}
+        className={`hidden sm:block pointer-events-none absolute left-[-1%] right-[-1%] h-[0.55em] w-[102%]`}
         viewBox="0 0 100 20"
         preserveAspectRatio="none"
         style={{ bottom: `calc(-0.18em * ${offsetScale})` }}
