@@ -112,7 +112,7 @@ export default function Index() {
                 <picture>
                   <source
                     media="(max-width: 639px)"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fe1a6b4786aba4b6c984fbead7a04ccbd?format=webp&width=800"
+                    srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6915630e2bd3451e87a425dbfa50715a?format=webp&width=800"
                   />
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fe9d9a41e02d84de58ee61b5e0bc3e0c4?format=webp&width=800"
@@ -122,19 +122,6 @@ export default function Index() {
                     decoding="async"
                   />
                 </picture>
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fbf45102ca2434602812f7c04a6ec255a?format=webp&width=800"
-                  alt=""
-                  aria-hidden="true"
-                  className="pointer-events-none absolute bottom-[-10%] left-[60%] -translate-x-1/2 w-[120vw] max-w-none opacity-90 sm:hidden -z-10"
-                  decoding="async"
-                  style={{
-                    WebkitMaskImage:
-                      "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 18%)",
-                    maskImage:
-                      "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 18%)",
-                  }}
-                />
               </div>
             </div>
           </div>
