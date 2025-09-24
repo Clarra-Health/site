@@ -438,11 +438,14 @@ function EmUnderline({
   showOnMobile?: boolean;
 }) {
   return (
-    <span className="relative inline-block px-0.5 align-baseline">
+    <span
+      className={`relative inline-block align-baseline ${showOnMobile ? "px-0 sm:px-0.5 underline sm:no-underline [text-decoration-thickness:3px] [text-underline-offset:0.22em]" : "px-0.5"}`}
+      style={showOnMobile ? ({ textDecorationColor: stroke } as React.CSSProperties) : undefined}
+    >
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className={`${showOnMobile ? "" : "hidden sm:block "}pointer-events-none absolute ${showOnMobile ? "left-0 right-0 w-full" : "left-[-1%] right-[-1%] w-[102%]"} h-[0.55em]`}
+        className={`hidden sm:block pointer-events-none absolute left-[-1%] right-[-1%] h-[0.55em] w-[102%]`}
         viewBox="0 0 100 20"
         preserveAspectRatio="none"
         style={{ bottom: `calc(-0.18em * ${offsetScale})` }}
