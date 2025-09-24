@@ -192,9 +192,7 @@ export default function Index() {
                 47 million women
               </EmUnderline>{" "}
               worldwide enter menopause each year without the{" "}
-              <EmUnderline stroke="#4fb7b3" showOnMobile>
-                care
-              </EmUnderline>{" "}
+              <span>care</span>{" "}
               they need.
             </h2>
             {/* Mobile exact layout */}
@@ -213,9 +211,7 @@ export default function Index() {
                 47 MILLION WOMEN
               </EmUnderline>{" "}
               WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT{" "}
-              <EmUnderline stroke="#4fb7b3" offsetScale={0.8} showOnMobile>
-                THE CARE
-              </EmUnderline>{" "}
+              <span>THE CARE</span>{" "}
               THEY NEED.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
