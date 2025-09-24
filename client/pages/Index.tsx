@@ -182,9 +182,11 @@ export default function Index() {
             <h2 className="hidden sm:inline-block font-display relative text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
               Clarra’s mission is to harness{" "}
               <span className="text-[#4fb7b3]">the power of AI</span> to{" "}
-              <span className="whitespace-nowrap text-[hsl(25_97%_66%)]">
-                transform women’s health
-              </span>
+              <EmUnderline stroke="#2c3e50">
+                <span className="whitespace-nowrap text-[#7cc9a2]">
+                  transform women’s health
+                </span>
+              </EmUnderline>
               —{" "}
               <EmUnderline stroke="#4fb7b3" showOnMobile>
                 47 million women
@@ -201,9 +203,11 @@ export default function Index() {
               <span className="text-[#4fb7b3]">the power of AI</span>
               <span> to</span>
               <br />
-              <span className="text-[hsl(25_97%_66%)]">
-                TRANSFORM WOMEN’S HEALTH
-              </span>
+              <EmUnderline stroke="#2c3e50" showOnMobile>
+                <span className="text-[#7cc9a2]">
+                  TRANSFORM WOMEN’S HEALTH
+                </span>
+              </EmUnderline>
               —{" "}
               <EmUnderline stroke="#4fb7b3" offsetScale={0.85} showOnMobile>
                 47 MILLION WOMEN
