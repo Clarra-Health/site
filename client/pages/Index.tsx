@@ -442,7 +442,7 @@ function EmUnderline({
       <span className="relative z-10">{children}</span>
       <svg
         aria-hidden
-        className={`${showOnMobile ? "" : "hidden sm:block "}pointer-events-none absolute left-[-1%] right-[-1%] h-[0.55em] w-[102%]`}
+        className={`${showOnMobile ? "" : "hidden sm:block "}pointer-events-none absolute ${showOnMobile ? "left-0 right-0 w-full" : "left-[-1%] right-[-1%] w-[102%]"} h-[0.55em]`}
         viewBox="0 0 100 20"
         preserveAspectRatio="none"
         style={{ bottom: `calc(-0.18em * ${offsetScale})` }}
