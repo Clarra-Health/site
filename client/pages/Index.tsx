@@ -34,7 +34,9 @@ export default function Index() {
                     />
                   </svg>
                 </span>{" "}
-                <span className="text-[#fc9a53]">CARE</span> FOR PERIMENOPAUSE,
+                <EmUnderline stroke="#2c3e50" showOnMobile>
+                  <span className="text-[#7cc9a2]">CARE</span>
+                </EmUnderline> FOR PERIMENOPAUSE,
                 MENOPAUSE & MIDLIFE.
               </h1>
               <p className="mt-3 sm:mt-4 text-[1.35rem] sm:text-xl font-medium text-[hsl(210_29%_24%)]/95 max-w-xl">
