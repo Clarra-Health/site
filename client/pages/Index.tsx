@@ -109,13 +109,19 @@ export default function Index() {
             </div>
             <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end sm:-translate-x-[30%] relative overflow-visible sm:mx-0 mx-[-2rem]">
               <div className="relative inline-block -translate-y-[10%] sm:translate-y-0">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
-                  alt="Chat with Clarra phone mockup"
-                  className="relative z-10 w-full max-w-xs sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl scale-[1.5] sm:scale-[1.7] origin-center mx-auto"
-                  loading="eager"
-                  decoding="async"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 639px)"
+                    srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fe1a6b4786aba4b6c984fbead7a04ccbd?format=webp&width=800"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
+                    alt="Chat with Clarra phone mockup"
+                    className="relative z-10 w-full max-w-xs sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl scale-[1.5] sm:scale-[1.7] origin-center mx-auto"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </picture>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fbf45102ca2434602812f7c04a6ec255a?format=webp&width=800"
                   alt=""
