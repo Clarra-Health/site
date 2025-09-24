@@ -66,11 +66,11 @@ export default function Index() {
       <section className="py-8 pt-16 sm:pt-8">
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
-            <div className="order-2 sm:order-1 sm:translate-x-[10%]">
+            <div className="order-2 sm:order-1 sm:translate-x-[10%] text-center sm:text-left">
               <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90 mt-[10%] sm:mt-0">
                 Clarra Features
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-4 max-w-xl mx-auto sm:mx-0">
                 <li className="flex items-start gap-3">
                   <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
                     <IconCheck />
