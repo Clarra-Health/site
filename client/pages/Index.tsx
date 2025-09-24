@@ -36,8 +36,8 @@ export default function Index() {
                 </span>{" "}
                 <EmUnderline stroke="#2c3e50" showOnMobile>
                   <span className="text-[#7cc9a2]">CARE</span>
-                </EmUnderline> FOR PERIMENOPAUSE,
-                MENOPAUSE & MIDLIFE.
+                </EmUnderline>{" "}
+                FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
               </h1>
               <p className="mt-3 sm:mt-4 text-[1.35rem] sm:text-xl font-medium text-[hsl(210_29%_24%)]/95 max-w-xl">
                 Clarra connects the dots between symptoms, insights, and
@@ -191,8 +191,7 @@ export default function Index() {
               <EmUnderline stroke="#4fb7b3" showOnMobile>
                 47 million women
               </EmUnderline>{" "}
-              worldwide enter menopause each year without the{" "}
-              <span>care</span>{" "}
+              worldwide enter menopause each year without the <span>care</span>{" "}
               they need.
             </h2>
             {/* Mobile exact layout */}
@@ -202,16 +201,13 @@ export default function Index() {
               <span> to</span>
               <br />
               <EmUnderline stroke="#2c3e50" showOnMobile>
-                <span className="text-[#7cc9a2]">
-                  TRANSFORM WOMEN’S HEALTH
-                </span>
+                <span className="text-[#7cc9a2]">TRANSFORM WOMEN’S HEALTH</span>
               </EmUnderline>
               —{" "}
               <EmUnderline stroke="#4fb7b3" offsetScale={0.85} showOnMobile>
                 47 MILLION WOMEN
               </EmUnderline>{" "}
-              WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT{" "}
-              <span>THE CARE</span>{" "}
+              WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT <span>THE CARE</span>{" "}
               THEY NEED.
             </h2>
             <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
