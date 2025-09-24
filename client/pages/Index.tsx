@@ -65,7 +65,7 @@ export default function Index() {
         <div className="container">
           <div className="grid items-center gap-8 sm:grid-cols-2">
             <div className="order-2 sm:order-1 sm:translate-x-[10%]">
-              <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90">
+              <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90 mt-[10%] sm:mt-0">
                 Clarra Features
               </h3>
               <ul className="space-y-4">
@@ -108,7 +108,7 @@ export default function Index() {
               </ul>
             </div>
             <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end sm:-translate-x-[30%] relative overflow-visible mx-0">
-              <div className="relative inline-block translate-y-0 sm:-translate-y-[6%]">
+              <div className="relative block w-screen sm:w-auto translate-y-0 sm:-translate-y-[6%] mx-[calc(50%-50vw)] sm:mx-0">
                 <picture>
                   <source
                     media="(max-width: 639px)"
