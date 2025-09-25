@@ -36,8 +36,6 @@ export default function Index() {
                 </span>{" "}
                 <EmUnderline
                   stroke="#2c3e50"
-                  showOnMobile
-                  mobileOffsetEm={0.198}
                 >
                   <span className="text-[#56d257]">CARE</span>
                 </EmUnderline>{" "}
