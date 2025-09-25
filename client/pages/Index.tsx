@@ -39,7 +39,7 @@ export default function Index() {
                   showOnMobile
                   mobileOffsetEm={0.198}
                 >
-                  <span className="text-[#7cc9a2]">CARE</span>
+                  <span className="text-[#56d257]">CARE</span>
                 </EmUnderline>{" "}
                 FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
               </h1>
@@ -187,7 +187,7 @@ export default function Index() {
               Clarra’s mission is to harness{" "}
               <span className="text-[#4fb7b3]">the power of AI</span> to{" "}
               <EmUnderline stroke="#2c3e50">
-                <span className="whitespace-nowrap text-[#7cc9a2]">
+                <span className="whitespace-nowrap text-[#56d257]">
                   transform women’s health
                 </span>
               </EmUnderline>
@@ -205,7 +205,7 @@ export default function Index() {
               <span> to</span>
               <br />
               <EmUnderline stroke="#2c3e50" showOnMobile mobileOffsetEm={0.17}>
-                <span className="text-[#7cc9a2]">TRANSFORM WOMEN’S HEALTH</span>
+                <span className="text-[#56d257]">TRANSFORM WOMEN’S HEALTH</span>
               </EmUnderline>
               —{" "}
               <EmUnderline
