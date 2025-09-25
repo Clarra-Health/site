@@ -69,8 +69,8 @@ export default function Index() {
       {/* Hero split: features left, image right */}
       <section className="py-8 pt-16 sm:pt-8">
         <div className="container">
-          <div className="grid items-center gap-8 sm:grid-cols-2">
-            <div className="order-2 sm:order-1 sm:translate-x-[10%] text-center sm:text-left">
+          <div className="grid items-center gap-8 md:grid-cols-2">
+            <div className="order-2 md:order-1 md:translate-x-[10%] text-center md:text-left">
               <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90 mt-[10%] sm:mt-0">
                 Clarra Features
               </h3>
@@ -113,8 +113,8 @@ export default function Index() {
                 </li>
               </ul>
             </div>
-            <div className="order-1 sm:order-2 flex justify-center w-full sm:justify-end sm:-translate-x-[30%] relative overflow-visible mx-0">
-              <div className="relative block w-screen sm:w-auto translate-y-0 sm:-translate-y-[6%] mx-[calc(50%-50vw)] sm:mx-0">
+            <div className="order-1 md:order-2 flex justify-center w-full md:justify-end md:-translate-x-[30%] relative overflow-visible mx-0">
+              <div className="relative block w-screen md:w-auto translate-y-0 md:-translate-y-[6%] mx-[calc(50%-50vw)] md:mx-0">
                 <picture>
                   <source
                     media="(max-width: 639px)"
@@ -123,7 +123,7 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
                     alt="Chat with Clarra phone mockup"
-                    className="relative z-10 w-full max-w-none sm:max-w-sm md:max-w-md h-auto drop-shadow-2xl scale-[1.2] sm:scale-[1.7] origin-center mx-auto"
+                    className="relative z-10 w-full max-w-none md:max-w-md h-auto drop-shadow-2xl scale-[1.2] md:scale-[1.7] origin-center mx-auto"
                     loading="eager"
                     decoding="async"
                   />
