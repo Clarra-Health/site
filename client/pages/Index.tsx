@@ -34,7 +34,11 @@ export default function Index() {
                     />
                   </svg>
                 </span>{" "}
-                <EmUnderline stroke="#2c3e50" showOnMobile mobileOffsetEm={0.198}>
+                <EmUnderline
+                  stroke="#2c3e50"
+                  showOnMobile
+                  mobileOffsetEm={0.198}
+                >
                   <span className="text-[#7cc9a2]">CARE</span>
                 </EmUnderline>{" "}
                 FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
@@ -204,7 +208,12 @@ export default function Index() {
                 <span className="text-[#7cc9a2]">TRANSFORM WOMEN’S HEALTH</span>
               </EmUnderline>
               —{" "}
-              <EmUnderline stroke="#4fb7b3" offsetScale={0.85} showOnMobile mobileOffsetEm={0.194}>
+              <EmUnderline
+                stroke="#4fb7b3"
+                offsetScale={0.85}
+                showOnMobile
+                mobileOffsetEm={0.194}
+              >
                 47 MILLION WOMEN
               </EmUnderline>{" "}
               WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT <span>THE CARE</span>{" "}
