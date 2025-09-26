@@ -70,7 +70,7 @@ export default function Index() {
               <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90 mt-[10%] sm:mt-0">
                 Clarra Features
               </h3>
-              <ul className="space-y-4 max-w-xl mx-auto sm:mx-0">
+              <ul className="space-y-4 max-w-xl mx-auto sm:mx-0 px-4 sm:px-0">
                 <li className="flex items-start gap-3">
                   <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
                     <IconCheck />
