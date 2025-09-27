@@ -226,6 +226,88 @@ export default function Index() {
   );
 }
 
+function PosterGrid() {
+  const posters = [
+    {
+      k: "WHAT'S A HOT FLASH?",
+      bg: "from-[hsl(25_45%_40%)] to-[hsl(25_25%_22%)]",
+      fg: "text-white",
+      accent: "text-[#56d257]",
+    },
+    {
+      k: "CHAT WITH CLARRA",
+      bg: "from-[hsl(195_23%_97%)] to-[hsl(179_30%_92%)]",
+      fg: "text-[hsl(210_29%_24%)]",
+      accent: "text-[#22c55e]",
+    },
+    {
+      k: "YOUR DATA IS YOURS. ALWAYS.",
+      bg: "from-[hsl(210_29%_24%)] to-[hsl(210_29%_18%)]",
+      fg: "text-white",
+      accent: "text-[#56d257]",
+    },
+    {
+      k: "ALCOHOL AND PERIMENOPAUSE",
+      bg: "from-white to-[hsl(179_30%_92%)]",
+      fg: "text-[hsl(210_29%_24%)]",
+      accent: "text-black",
+    },
+    {
+      k: "OVER 60 RECOGNIZED SYMPTOMS",
+      bg: "from-white to-white",
+      fg: "text-[hsl(210_29%_24%)]",
+      accent: "text-[#22c55e]",
+    },
+    {
+      k: "5 REASONS FOR HEAVIER PERIODS",
+      bg: "from-[hsl(178_42%_35%)] to-[hsl(178_42%_25%)]",
+      fg: "text-white",
+      accent: "text-[#56d257]",
+    },
+  ];
+  return (
+    <div className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+      {posters.map((p) => (
+        <PosterCard key={p.k} {...p} />
+      ))}
+    </div>
+  );
+}
+
+function PosterCard({
+  k,
+  bg,
+  fg,
+  accent,
+}: {
+  k: string;
+  bg: string;
+  fg: string;
+  accent: string;
+}) {
+  const parts = k.split(" ");
+  const mid = Math.floor(parts.length / 2);
+  return (
+    <div className={`relative aspect-square rounded-2xl overflow-hidden ring-1 ring-black/5 shadow-sm bg-gradient-to-br ${bg}`}>
+      <div className="absolute inset-0 opacity-30">
+        <svg viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="none" aria-hidden>
+          <ellipse cx="20" cy="50" rx="18" ry="42" fill="none" stroke="white" strokeWidth="2" />
+          <ellipse cx="80" cy="50" rx="18" ry="42" fill="none" stroke="white" strokeWidth="2" />
+        </svg>
+      </div>
+      <div className="relative flex h-full items-center justify-center p-4 text-center">
+        <p className={`font-display ${fg} text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight tracking-tight`}>
+          {parts.map((w, i) => (
+            <span key={i} className={i === mid ? accent : undefined}>
+              {w}{" "}
+            </span>
+          ))}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function Card({
   children,
   title,
