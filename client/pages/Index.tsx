@@ -22,7 +22,9 @@ export default function Index() {
               <h1 className="font-display text-[#1f2d3a] text-[3.6rem] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
                 AI-POWERED{" "}
                 <span className="relative inline-block px-0 sm:px-2 align-baseline">
-                  <span className="relative z-10 text-[#4fb7b3]">COMPASSIONATE</span>
+                  <span className="relative z-10 text-[#4fb7b3]">
+                    COMPASSIONATE
+                  </span>
                 </span>{" "}
                 <EmUnderline stroke="#2c3e50">
                   <span className="text-[#56d257]">CARE</span>
@@ -30,7 +32,8 @@ export default function Index() {
                 FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
               </h1>
               <p className="mt-3 sm:mt-4 text-[1.35rem] sm:text-xl font-medium text-[hsl(210_29%_24%)]/95 max-w-xl">
-                Clarra connects the dots between symptoms, insights, and support—so midlife health finally makes sense.
+                Clarra connects the dots between symptoms, insights, and
+                support—so midlife health finally makes sense.
               </p>
               <div className="mt-6 sm:mt-6 mb-6 relative z-20 flex flex-col gap-3 sm:flex-row">
                 <Link
@@ -46,7 +49,6 @@ export default function Index() {
                   Our Tech
                 </Link>
               </div>
-
             </div>
           </div>
         </div>
@@ -66,7 +68,8 @@ export default function Index() {
                     <IconCheck />
                   </span>
                   <p className="text-xl text-foreground/90">
-                    Tracks four key hormones (LH, E3G, PdG, FSH) to give the most complete view of midlife health.
+                    Tracks four key hormones (LH, E3G, PdG, FSH) to give the
+                    most complete view of midlife health.
                   </p>
                 </li>
                 <li className="flex items-start gap-3">
@@ -74,7 +77,8 @@ export default function Index() {
                     <IconCheck />
                   </span>
                   <p className="text-xl text-foreground/90">
-                    Forecasts risks early to shift care from reactive to preventative.
+                    Forecasts risks early to shift care from reactive to
+                    preventative.
                   </p>
                 </li>
                 <li className="flex items-start gap-3">
@@ -82,7 +86,8 @@ export default function Index() {
                     <IconCheck />
                   </span>
                   <p className="text-xl text-foreground/90">
-                    Delivers guidance through natural conversation — not dashboards or data dumps.
+                    Delivers guidance through natural conversation — not
+                    dashboards or data dumps.
                   </p>
                 </li>
                 <li className="flex items-start gap-3">
@@ -90,7 +95,8 @@ export default function Index() {
                     <IconCheck />
                   </span>
                   <p className="text-xl text-foreground/90">
-                    Integrates with wearables to turn everyday data into personalized insights.
+                    Integrates with wearables to turn everyday data into
+                    personalized insights.
                   </p>
                 </li>
               </ul>
