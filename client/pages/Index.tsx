@@ -19,7 +19,6 @@ export default function Index() {
         <div className="container">
           <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-12 items-start">
             <div className="sm:col-span-12 sm:col-start-1">
-              <p className="text-sm tracking-[0.25em] text-foreground/60 uppercase">Answers for every change</p>
               <h1 className="font-display text-[#1f2d3a] text-[3.6rem] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
                 AI-POWERED{" "}
                 <span className="relative inline-block px-0 sm:px-2 align-baseline">
