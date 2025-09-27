@@ -6,33 +6,25 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate z-10 overflow-hidden bg-transparent pt-16 md:pt-20 pb-0">
+      <section className="relative isolate z-10 overflow-hidden pt-16 md:pt-20 pb-0">
+        {/* background inspired by brand: warm depth + teal glow */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10"
+          style={{
+            background:
+              "radial-gradient(1200px 600px at 10% -10%, hsl(25 35% 40% / 0.45), transparent 60%), radial-gradient(900px 500px at 90% 10%, hsl(178 42% 51% / 0.20), transparent 65%), linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--background)) 55%, transparent 100%)",
+          }}
+        />
         <div className="container">
           <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-12 items-start">
             <div className="sm:col-span-12 sm:col-start-1">
               <h1 className="font-display text-[#1f2d3a] text-[3.6rem] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
-                AI-POWERED {""}
+                AI-POWERED{" "}
                 <span className="relative inline-block px-0 sm:px-2 align-baseline">
                   <span className="relative z-10 text-[#4fb7b3]">
                     COMPASSIONATE
                   </span>
-                  <svg
-                    aria-hidden
-                    className="hidden"
-                    viewBox="0 0 100 40"
-                    preserveAspectRatio="none"
-                  >
-                    <ellipse
-                      cx="52"
-                      cy="20"
-                      rx="47"
-                      ry="15"
-                      fill="none"
-                      stroke="hsl(25 97% 66%)"
-                      strokeWidth="2.65"
-                      strokeLinecap="round"
-                    />
-                  </svg>
                 </span>{" "}
                 <EmUnderline stroke="#2c3e50">
                   <span className="text-[#56d257]">CARE</span>
