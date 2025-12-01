@@ -60,12 +60,12 @@ export default function ProductCarouselSection() {
   const currentFeature = features[currentIndex];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white via-primary/3 to-white relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-green-400/10 to-transparent rounded-full blur-3xl -z-10" />
+    <section className="w-full py-32 relative overflow-hidden">
+      {/* Background */}
+      <div className={`absolute inset-0 ${currentFeature.bgColor} transition-all duration-500 -z-10`} />
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-black/10 -z-10" />
 
-      <div className="container">
+      <div className="w-full px-4 md:px-12 lg:px-20">
         {/* Tab Navigation */}
         <div className="flex items-center justify-center gap-2 mb-16 flex-wrap">
           {features.map((feature, index) => (
