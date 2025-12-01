@@ -67,15 +67,15 @@ export default function ProductCarouselSection() {
 
       <div className="w-full px-4 md:px-12 lg:px-20">
         {/* Tab Navigation */}
-        <div className="flex items-center justify-center gap-2 mb-16 flex-wrap">
+        <div className="flex items-center justify-center gap-3 mb-20 flex-wrap">
           {features.map((feature, index) => (
             <button
               key={feature.id}
               onClick={() => setCurrentIndex(index)}
-              className={`px-4 py-2 rounded-full font-semibold text-sm transition-all duration-300 ${
+              className={`px-6 py-3 rounded-full font-bold text-base transition-all duration-300 ${
                 index === currentIndex
-                  ? 'bg-primary text-white shadow-lg scale-105'
-                  : 'bg-white border-2 border-primary/20 text-[#1f2d3a] hover:border-primary/40'
+                  ? 'bg-white text-[#1f2d3a] shadow-2xl scale-110'
+                  : 'bg-white/20 border-2 border-white/40 text-white hover:bg-white/30 hover:border-white/60'
               }`}
             >
               {index + 1}. {feature.title.split(' ')[0]}
