@@ -134,7 +134,7 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9fb0c4cad14c482dac22f89276880946?format=webp&width=800"
                     alt="Clarra app showcasing sleep tracking and AI assistant"
-                    className="w-full max-w-4xl scale-[2.7] origin-top -translate-y-[75%]"
+                    className="w-full max-w-4xl scale-[3.5] origin-top -translate-y-[45%] -translate-x-[15%]"
                   />
                 </div>
               </div>
@@ -193,7 +193,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="text-center mt-16">
+            <div className="text-right mt-16">
               <Link to="/about">
                 <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-12 h-14 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                   Experience Clarra
