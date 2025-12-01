@@ -53,7 +53,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1481f9ea7add407ca9a17c90d9698254?format=webp&width=800"
                   alt="Clarra app mockups"
-                  className="absolute -bottom-[5%] -right-[5%] w-[85%] md:w-[80%] h-auto object-contain drop-shadow-2xl"
+                  className="absolute -bottom-[20%] -right-[20%] w-[180%] md:w-[160%] max-w-none h-auto object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
