@@ -297,16 +297,26 @@ export default function Index() {
 
                     {/* Correlation Graph Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
-                      <div className="h-full flex items-end justify-around gap-1 px-1">
-                        {[{label: 'Sleep', value: 85, color: '#4fb7b3'}, {label: 'Stress', value: 42, color: '#fc9a53'}, {label: 'Mood', value: 72, color: '#7cc9a2'}, {label: 'Cognition', value: 88, color: '#b9e3e2'}].map((item, i) => (
-                          <div key={i} className="flex flex-col items-center gap-1 flex-1">
-                            <div className="w-full flex flex-col items-center gap-0.5">
-                              <div className="w-2 rounded-t" style={{ height: `${item.value * 0.4}px`, backgroundColor: item.color }}></div>
-                              <p className="text-white text-xs font-bold leading-none">{item.value}%</p>
-                              <p className="text-white text-[0.6rem] opacity-75 leading-none">{item.label}</p>
-                            </div>
+                      <div className="h-full flex flex-col justify-between">
+                        <svg className="w-full h-12" viewBox="0 0 200 50" preserveAspectRatio="none">
+                          {/* Sleep line */}
+                          <polyline points="0,35 30,15 60,28 90,12 120,25 150,18 200,30" fill="none" stroke="#4fb7b3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                          {/* Brain fog line */}
+                          <polyline points="0,20 30,32 60,18 90,28 120,15 150,26 200,20" fill="none" stroke="#fc9a53" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                          {/* Intersection points */}
+                          <circle cx="60" cy="23" r="3" fill="#56d257" opacity="0.9" />
+                          <circle cx="120" cy="20" r="3" fill="#56d257" opacity="0.9" />
+                        </svg>
+                        <div className="flex justify-between items-center text-white px-1">
+                          <div className="flex items-center gap-1">
+                            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#4fb7b3' }}></div>
+                            <p className="text-[0.65rem] font-medium">Sleep</p>
                           </div>
-                        ))}
+                          <div className="flex items-center gap-1">
+                            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#fc9a53' }}></div>
+                            <p className="text-[0.65rem] font-medium">Brain Fog</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
