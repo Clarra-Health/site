@@ -659,18 +659,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* 47 Million image (home only) */}
-      <section className="py-0">
-        <AutoPlayVideo
-          src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F5584d878f6ce4248b784f76ddbbd5e8a?alt=media&token=0b0f73c6-e767-40a0-b24a-0365f13d1856&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
-          className="block w-full h-auto"
-          ariaLabel="It's not in your head — home banner video"
-          preload="auto"
-        />
-      </section>
-
-      {/* Not In Your Head (home only) */}
-      <NotInYourHead />
 
       {/* Mission Section */}
       <section className="py-12 md:py-24">
