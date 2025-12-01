@@ -101,22 +101,22 @@ export default function ProductCarouselSection() {
             </p>
 
             {/* Navigation Controls */}
-            <div className="flex items-center gap-4 pt-8">
+            <div className="flex items-center gap-6 pt-12">
               <button
                 onClick={goToPrevious}
-                className="h-14 w-14 rounded-full bg-white border-2 border-primary/30 hover:border-primary hover:shadow-lg hover:scale-110 transition-all flex items-center justify-center text-[#1f2d3a] hover:bg-primary hover:text-white"
+                className="h-16 w-16 rounded-full bg-white/20 border-2 border-white/40 hover:bg-white hover:text-[#1f2d3a] shadow-xl hover:shadow-2xl hover:scale-110 transition-all flex items-center justify-center text-white"
               >
-                <ChevronLeft className="h-6 w-6" />
+                <ChevronLeft className="h-7 w-7" />
               </button>
-              
-              <div className="flex gap-2">
+
+              <div className="flex gap-3">
                 {features.map((_, index) => (
                   <div
                     key={index}
-                    className={`h-2 transition-all duration-300 ${
+                    className={`transition-all duration-300 ${
                       index === currentIndex
-                        ? 'w-8 bg-primary rounded-full'
-                        : 'w-2 bg-primary/20 rounded-full'
+                        ? 'h-3 w-10 bg-white rounded-full'
+                        : 'h-3 w-3 bg-white/40 rounded-full hover:bg-white/60'
                     }`}
                   />
                 ))}
@@ -124,9 +124,9 @@ export default function ProductCarouselSection() {
 
               <button
                 onClick={goToNext}
-                className="h-14 w-14 rounded-full bg-white border-2 border-primary/30 hover:border-primary hover:shadow-lg hover:scale-110 transition-all flex items-center justify-center text-[#1f2d3a] hover:bg-primary hover:text-white"
+                className="h-16 w-16 rounded-full bg-white/20 border-2 border-white/40 hover:bg-white hover:text-[#1f2d3a] shadow-xl hover:shadow-2xl hover:scale-110 transition-all flex items-center justify-center text-white"
               >
-                <ChevronRight className="h-6 w-6" />
+                <ChevronRight className="h-7 w-7" />
               </button>
             </div>
           </div>
