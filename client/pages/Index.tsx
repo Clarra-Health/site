@@ -551,8 +551,8 @@ export default function Index() {
                     {/* Insight Bubble Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="space-y-2">
-                        <div className="bg-accent/30 rounded-lg px-3 py-2">
-                          <p className="text-white text-xs leading-relaxed">Your energy dips correlate with lower sleep quality. Consider a consistent bedtime.</p>
+                        <div className="bg-[#fc9a53] rounded-lg px-3 py-2 shadow-lg transform transition-transform group-hover:scale-105">
+                          <p className="text-white text-xs leading-relaxed font-medium">Your energy dips correlate with lower sleep quality. Consider a consistent bedtime.</p>
                         </div>
                       </div>
                     </div>
