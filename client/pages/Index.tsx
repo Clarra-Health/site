@@ -500,7 +500,7 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Sleep Icon Badge */}
-                <div className="absolute bottom-24 right-6 z-10 flex items-center justify-end gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3 max-w-max">
+                <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
                   <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="9" /><polyline points="12 6 12 12 16 14" />
                   </svg>
@@ -565,7 +565,7 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Cognitive Health Icon Badge */}
-                <div className="absolute bottom-24 right-6 z-10 flex items-center justify-end gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3 max-w-max">
+                <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
                   <svg className="w-7 h-7 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                   </svg>
@@ -630,7 +630,7 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Stress & Energy Icon Badge */}
-                <div className="absolute bottom-24 right-6 z-10 flex items-center justify-end gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3 max-w-max">
+                <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
                   <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <path d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
@@ -695,7 +695,7 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Understanding Change Icon Badge */}
-                <div className="absolute bottom-24 right-6 z-10 flex items-center justify-end gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3 max-w-max">
+                <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
                   <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
                   </svg>
