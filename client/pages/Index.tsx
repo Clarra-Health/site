@@ -688,7 +688,7 @@ export default function Index() {
             <div className="group relative">
               <div className="relative overflow-hidden rounded-2xl mb-8 aspect-[3/4]">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc6430d723a174d20b04dd625cef5c7f4?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fdcae153309b3411183a24e7b381cd42c?format=webp&width=800"
                   alt="Hormone-adaptive guidance"
                   className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
                 />
