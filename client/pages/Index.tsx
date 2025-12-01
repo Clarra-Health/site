@@ -203,7 +203,7 @@ export default function Index() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 bg-gradient-to-b from-primary/5 to-white">
+      <section className="py-24 bg-white">
         <div className="container">
           <div className="mx-auto max-w-4xl text-center mb-20">
             <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] mb-6 leading-tight">
@@ -215,72 +215,99 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#2c3e50] to-[#1f2d3a]" />
+            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-96 cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=500&q=80"
-                alt="Personal insights"
-                className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity"
+                src="https://images.unsplash.com/photo-1512862532381-8c71a3db07a8?auto=format&fit=crop&w=500&q=80"
+                alt="Heart Health"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="relative z-10 h-full flex flex-col justify-center items-center text-center p-6">
-                <div className="mb-4 text-white">
-                  <svg className="h-16 w-16 mx-auto opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.3" />
-                    <path d="M12 8v8M8 12h8" stroke="currentColor" strokeWidth="2" />
-                  </svg>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+              <div className="relative z-10 h-full flex flex-col justify-between p-6">
+                <div className="flex justify-between items-start">
+                  <span className="text-white text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                    Heart Health
+                  </span>
+                  <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-white hover:bg-white/30 transition">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                  </button>
                 </div>
-                <p className="font-display text-white text-lg font-bold leading-tight">Know your normal with personal insights.</p>
+
+                <div>
+                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Listen to what your heart is <span className="italic">telling</span> you</p>
+                </div>
               </div>
             </div>
 
-            <div className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#4fb7b3] to-[#2c9b92]" />
+            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-96 cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80"
-                alt="Data trends"
-                className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity"
+                src="https://images.unsplash.com/photo-1533292182?auto=format&fit=crop&w=500&q=80"
+                alt="Women's Health"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="relative z-10 h-full flex flex-col justify-center items-center text-center p-6">
-                <div className="mb-4 text-white">
-                  <svg className="h-16 w-16 mx-auto opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M3 13h2v8H3zm4-8h2v16H7zm4-2h2v18h-2zm4-2h2v20h-2zm4 4h2v16h-2z" />
-                  </svg>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+              <div className="relative z-10 h-full flex flex-col justify-between p-6">
+                <div className="flex justify-between items-start">
+                  <span className="text-white text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                    Women's Health
+                  </span>
+                  <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-white hover:bg-white/30 transition">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                  </button>
                 </div>
-                <p className="font-display text-white text-lg font-bold leading-tight">Spot changes by building data evidence.</p>
+
+                <div>
+                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Understand the ins and outs of women's health</p>
+                </div>
               </div>
             </div>
 
-            <div className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#b9e3e2] to-[#4fb7b3]" />
+            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-96 cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80"
-                alt="Planning ahead"
-                className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity"
+                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80"
+                alt="Stress Management"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="relative z-10 h-full flex flex-col justify-center items-center text-center p-6">
-                <div className="mb-4 text-white">
-                  <svg className="h-16 w-16 mx-auto opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M11.99 5V1h-1v4H7.58c-.446-1.084-1.494-1.881-2.704-1.881C2.993 3.119 2 4.111 2 5.317s.993 2.198 2.876 2.198c1.21 0 2.258-.797 2.704-1.881h3.41V19h1V9.634h3.41c.446 1.084 1.494 1.881 2.704 1.881 1.883 0 2.876-.992 2.876-2.198s-.993-2.198-2.876-2.198c-1.21 0-2.258.797-2.704 1.881h-3.41V5z" />
-                  </svg>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+              <div className="relative z-10 h-full flex flex-col justify-between p-6">
+                <div className="flex justify-between items-start">
+                  <span className="text-white text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                    Stress
+                  </span>
+                  <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-white hover:bg-white/30 transition">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                  </button>
                 </div>
-                <p className="font-display text-white text-lg font-bold leading-tight">Know when to change and plan ahead.</p>
+
+                <div>
+                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Put your stress to the test</p>
+                </div>
               </div>
             </div>
 
-            <div className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#e8f6fa] to-[#b9e3e2]" />
+            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-96 cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5e2?auto=format&fit=crop&w=500&q=80"
-                alt="Personalized care"
-                className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity"
+                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=500&q=80"
+                alt="Personalized Insights"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="relative z-10 h-full flex flex-col justify-center items-center text-center p-6">
-                <div className="mb-4 text-[#1f2d3a]">
-                  <svg className="h-16 w-16 mx-auto opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                  </svg>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+              <div className="relative z-10 h-full flex flex-col justify-between p-6">
+                <div className="flex justify-between items-start">
+                  <span className="text-white text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                    Personal Insights
+                  </span>
+                  <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-white hover:bg-white/30 transition">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                  </button>
                 </div>
-                <p className="font-display text-[#1f2d3a] text-lg font-bold leading-tight">Get personalized care tailored to you.</p>
+
+                <div>
+                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Get insights tailored just for you</p>
+                </div>
               </div>
             </div>
           </div>
