@@ -391,28 +391,90 @@ export default function Index() {
         </div>
       </section>
 
-      {/* App Features Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div className="flex justify-center lg:justify-start items-center">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc9f5883300134c1790f17441286b029a?format=webp&width=2000"
-                alt="Clarra app mockup"
-                className="w-full h-auto scale-[2.5]"
-              />
-            </div>
-            <div>
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
-                Insights That Matter
-              </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight mb-4">
-                Clinical precision,
-                <span className="block font-serif italic font-light text-primary mt-2">designed for simplicity</span>
+      {/* Meet the Midlife Intelligence Layer Section */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-16 md:mb-24">
+              <h2 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-[#1f2d3a] leading-tight mb-6">
+                Meet the Midlife Intelligence Layer
               </h2>
-              <p className="text-base sm:text-lg text-foreground/80 leading-relaxed max-w-xl">
-                Experience conversational health insights at your fingertips. Clarra's interface makes complex health data feel simple and actionable, designed specifically for how women think about their health and bodies.
+              <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mx-auto">
+                Clarra listens, interprets, and connects the dots across your symptoms, patterns, and daily life.
               </p>
+            </div>
+
+            {/* Three Pillar Blocks */}
+            <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+              {/* Pillar 1: Story Capture */}
+              <div className="group relative rounded-2xl overflow-hidden transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-white/60 to-white/20 backdrop-blur-lg rounded-2xl border border-white/40" />
+                <div className="relative z-10 p-8 md:p-10 flex flex-col h-full">
+                  {/* Icon */}
+                  <div className="mb-6 flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center">
+                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                  {/* Title */}
+                  <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3">
+                    Story Capture
+                  </h3>
+                  {/* Description */}
+                  <p className="text-base text-foreground/75 leading-relaxed">
+                    Your lived experience becomes structured insight.
+                  </p>
+                </div>
+              </div>
+
+              {/* Pillar 2: Pattern Intelligence */}
+              <div className="group relative rounded-2xl overflow-hidden transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-white/60 to-white/20 backdrop-blur-lg rounded-2xl border border-white/40" />
+                <div className="relative z-10 p-8 md:p-10 flex flex-col h-full">
+                  {/* Icon */}
+                  <div className="mb-6 flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center">
+                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg>
+                    </div>
+                  </div>
+                  {/* Title */}
+                  <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3">
+                    Pattern Intelligence
+                  </h3>
+                  {/* Description */}
+                  <p className="text-base text-foreground/75 leading-relaxed">
+                    See relationships across sleep, stress, mood, cognition.
+                  </p>
+                </div>
+              </div>
+
+              {/* Pillar 3: Context-Aware Guidance */}
+              <div className="group relative rounded-2xl overflow-hidden transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-white/60 to-white/20 backdrop-blur-lg rounded-2xl border border-white/40" />
+                <div className="relative z-10 p-8 md:p-10 flex flex-col h-full">
+                  {/* Icon */}
+                  <div className="mb-6 flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center">
+                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5a4 4 0 100-8 4 4 0 000 8z" />
+                      </svg>
+                    </div>
+                  </div>
+                  {/* Title */}
+                  <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3">
+                    Context-Aware Guidance
+                  </h3>
+                  {/* Description */}
+                  <p className="text-base text-foreground/75 leading-relaxed">
+                    Clear next steps based on your real patterns.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
