@@ -41,41 +41,28 @@ export default function Index() {
             </div>
 
             <div className="lg:col-span-6 w-full max-w-lg mx-auto lg:max-w-none lg:pl-8">
-              <div className="grid grid-cols-2 gap-3 sm:gap-4">
-                <div className="space-y-3 sm:space-y-4 mt-8 sm:mt-12">
-                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[4/3]">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1032b528b95f49c3aa2bd1f410d418fb?format=webp&width=800"
-                      alt="Sleep and mood"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                      loading="eager"
-                    />
-                  </div>
-                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[3/4]">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F691c8343a44543aba27bccf71813cf7d?format=webp&width=800"
-                      alt="Hormone Health"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                      loading="eager"
-                    />
-                  </div>
-                </div>
-                <div className="space-y-3 sm:space-y-4">
-                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[3/4]">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa363af82f5f14461ae882311697aaeff?format=webp&width=800"
-                      alt="Woman smiling"
-                      className="w-full h-full object-cover object-right scale-[1.95] hover:scale-[2.0] transition-transform duration-700"
-                      loading="eager"
-                    />
-                  </div>
-                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[4/3]">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F158ff49eec9646b58110a237143353c1?format=webp&width=800"
-                      alt="Healthy lifestyle"
-                      className="w-full h-full object-cover object-top scale-125 hover:scale-150 transition-transform duration-700"
-                      loading="eager"
-                    />
+              <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-video w-full max-w-lg">
+                <div className="relative w-full h-full">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fefa9d50cac5d4ee097b56b9ec8722542?format=webp&width=800"
+                    alt="Woman using phone"
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+                  {/* Chat Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-24">
+                    <div className="space-y-1.5 h-full flex flex-col justify-between overflow-hidden">
+                      <div className="flex gap-2 items-end">
+                        <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0"></div>
+                        <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block max-w-[145px] truncate">How are you feeling?</p>
+                      </div>
+                      <div className="flex gap-2 justify-end items-end">
+                        <p className="text-white text-xs bg-primary/40 rounded-lg px-2 py-1 inline-block max-w-[130px] truncate">Great today...</p>
+                        <div className="w-6 h-6 rounded-full bg-secondary flex-shrink-0"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
