@@ -346,7 +346,7 @@ export default function Index() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-[#1f2d3a] leading-relaxed">
-              Daily brain fog, 4:00 AM hot flashes, dry skin and anxiety...don't face the 65+ symptoms of perimenopause and menopause alone. <span className="text-[#4fb7b3]">Talk to Clarra.</span>
+              Daily brain fog, 4:00 AM hot flashes, dry skin and anxiety...don't face the 65+ symptoms of perimenopause and menopause alone. <span className="text-[#fc9a53]">Talk to Clarra.</span>
             </p>
           </div>
         </div>
@@ -388,7 +388,7 @@ export default function Index() {
             </p>
             <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight max-w-3xl mx-auto">
               Four pillars of
-              <span className="block text-primary">personalized care.</span>
+              <span className="block text-[#fc9a53]">personalized care.</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
