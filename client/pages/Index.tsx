@@ -427,32 +427,38 @@ export default function Index() {
       </section>
 
       {/* Core capabilities - New section above Support at Every Stage */}
-      <section className="relative py-12">
+      <section className="relative py-24 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container">
-          <div className="rounded-3xl border border-border bg-card/80 p-8 sm:p-10 shadow-sm">
-            <div className="mx-auto text-center">
-              <h2 className="font-display relative inline-block text-5xl sm:text-6xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] text-[#1f2d3a]">
-                NEXT-GEN TECHNOLOGY for better midlife health
-              </h2>
-            </div>
-            <div className="mt-10 grid gap-6 sm:grid-cols-2">
-              <Feature
-                title="Full-spectrum hormone testing"
-                description="Tracks four key hormones (LH, E3G, PdG, FSH) to capture the most comprehensive picture of midlife hormonal transitions available in consumer health."
-              />
-              <Feature
-                title="Predictive, preventative outcomes"
-                description="Uses advanced AI to forecast health trajectories and risks early, turning fragmented data into actionable guidance for prevention rather than reaction."
-              />
-              <Feature
-                title="Conversational AI first"
-                description="An LLM-powered chatbot serves as the primary interface, making complex health insights intuitive, empathetic, and accessible through natural conversation."
-              />
-              <Feature
-                title="Seamless wearable integration"
-                description="Incorporates continuous real-world data from mainstream wearables to enrich models and personalize recommendations across sleep, metabolic, and cardiovascular health."
-              />
-            </div>
+          <div className="mx-auto max-w-4xl text-center mb-16">
+            <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] mb-6 leading-tight">
+              NEXT-GEN TECHNOLOGY<br />for better midlife health
+            </h2>
+          </div>
+          <div className="grid gap-8 sm:grid-cols-2">
+            <Feature
+              icon={<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" /></svg>}
+              title="Full-spectrum hormone testing"
+              description="Tracks four key hormones (LH, E3G, PdG, FSH) to capture the most comprehensive picture of midlife hormonal transitions available in consumer health."
+              iconBg="bg-primary"
+            />
+            <Feature
+              icon={<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>}
+              title="Predictive, preventative outcomes"
+              description="Uses advanced AI to forecast health trajectories and risks early, turning fragmented data into actionable guidance for prevention rather than reaction."
+              iconBg="bg-secondary"
+            />
+            <Feature
+              icon={<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h14l4-4V4c0-1.1-.9-2-2-2zm-2 12h-4v4h-2v-4H8v-2h4V8h2v4h4v2z" /></svg>}
+              title="Conversational AI first"
+              description="An LLM-powered chatbot serves as the primary interface, making complex health insights intuitive, empathetic, and accessible through natural conversation."
+              iconBg="bg-primary"
+            />
+            <Feature
+              icon={<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" /></svg>}
+              title="Seamless wearable integration"
+              description="Incorporates continuous real-world data from mainstream wearables to enrich models and personalize recommendations across sleep, metabolic, and cardiovascular health."
+              iconBg="bg-secondary"
+            />
           </div>
         </div>
       </section>
