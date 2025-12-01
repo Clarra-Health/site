@@ -14,9 +14,10 @@ export default function Index() {
     <>
       {/* Hero */}
       <section className="relative isolate z-10 overflow-hidden bg-transparent pt-12 md:pt-24 pb-12 md:pb-24">
-        <div className="container px-4 md:px-6">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-16">
-            <div className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          {/* Left Content */}
+          <div className="px-4 md:px-6 flex flex-col items-center lg:items-start text-center lg:text-left justify-center">
+            <div className="mx-auto max-w-xl">
               <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] font-extrabold text-foreground tracking-tight">
                 Midlife health, made clear.
               </h1>
@@ -33,59 +34,58 @@ export default function Index() {
                 </Link>
               </div>
             </div>
+          </div>
 
-            <div className="lg:col-span-6 w-full mx-auto lg:max-w-none lg:pl-8">
-              <div className="overflow-hidden rounded-3xl shadow-2xl bg-muted w-full h-[600px] md:h-[700px]">
-                <div className="relative w-full h-full">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb5e28fd0173c4fc5a9f55558831a5aa1?format=webp&width=1200"
-                    alt="Woman with phone"
-                    className="w-full h-full object-cover"
-                    style={{ objectPosition: '50% center', filter: 'brightness(1.3)' }}
-                    loading="eager"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/15 to-transparent" />
+          {/* Right Image - Full Bleed */}
+          <div className="overflow-hidden bg-muted w-full h-[600px] md:h-[700px]">
+            <div className="relative w-full h-full">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb5e28fd0173c4fc5a9f55558831a5aa1?format=webp&width=1200"
+                alt="Woman with phone"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: '50% center', filter: 'brightness(1.3)' }}
+                loading="eager"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/15 to-transparent" />
 
-                  {/* Chat Overlay */}
-                  <div className="absolute top-2/3 -translate-y-1/2 right-0 z-20 pr-8 md:pr-12 lg:pr-16 w-full md:w-auto">
-                    <div className="space-y-2 ml-auto md:max-w-xs">
-                      {/* User Message 1 */}
-                      <div className="flex justify-end">
-                        <p className="text-white text-xs bg-white/40 backdrop-blur rounded-2xl px-3 py-2 max-w-[140px]">I'm worried about my energy levels</p>
-                      </div>
+              {/* Chat Overlay */}
+              <div className="absolute top-2/3 -translate-y-1/2 right-0 z-20 pr-8 md:pr-12 lg:pr-16 w-full md:w-auto">
+                <div className="space-y-2 ml-auto md:max-w-xs">
+                  {/* User Message 1 */}
+                  <div className="flex justify-end">
+                    <p className="text-white text-xs bg-white/40 backdrop-blur rounded-2xl px-3 py-2 max-w-[140px]">I'm worried about my energy levels</p>
+                  </div>
 
-                      {/* User Message 2 */}
-                      <div className="flex justify-end">
-                        <p className="text-white text-xs bg-white/40 backdrop-blur rounded-2xl px-3 py-2 max-w-[140px]">It's affecting my daily life</p>
-                      </div>
+                  {/* User Message 2 */}
+                  <div className="flex justify-end">
+                    <p className="text-white text-xs bg-white/40 backdrop-blur rounded-2xl px-3 py-2 max-w-[140px]">It's affecting my daily life</p>
+                  </div>
 
-                      {/* AI Message 1 */}
-                      <div className="flex justify-start gap-2 items-end">
-                        <div className="w-6 h-6 rounded-full flex-shrink-0 overflow-hidden bg-white/20">
-                          <img
-                            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F36749a2f89314dc5b35ffa554852de74?format=webp&width=800"
-                            alt="Clarra"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-3 py-2 max-w-[150px]">
-                          <p className="text-xs">That makes complete sense. Energy fluctuations are really common.</p>
-                        </div>
-                      </div>
+                  {/* AI Message 1 */}
+                  <div className="flex justify-start gap-2 items-end">
+                    <div className="w-6 h-6 rounded-full flex-shrink-0 overflow-hidden bg-white/20">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F36749a2f89314dc5b35ffa554852de74?format=webp&width=800"
+                        alt="Clarra"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="bg-[#4fb7b3] text-white rounded-2xl px-3 py-2 max-w-[150px]">
+                      <p className="text-xs">That makes complete sense. Energy fluctuations are really common.</p>
+                    </div>
+                  </div>
 
-                      {/* AI Message 2 */}
-                      <div className="flex justify-start gap-2 items-end">
-                        <div className="w-6 h-6 rounded-full flex-shrink-0 overflow-hidden bg-white/20">
-                          <img
-                            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F36749a2f89314dc5b35ffa554852de74?format=webp&width=800"
-                            alt="Clarra"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-3 py-2 max-w-[150px]">
-                          <p className="text-xs">Let's work together to understand what's going on.</p>
-                        </div>
-                      </div>
+                  {/* AI Message 2 */}
+                  <div className="flex justify-start gap-2 items-end">
+                    <div className="w-6 h-6 rounded-full flex-shrink-0 overflow-hidden bg-white/20">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F36749a2f89314dc5b35ffa554852de74?format=webp&width=800"
+                        alt="Clarra"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="bg-[#4fb7b3] text-white rounded-2xl px-3 py-2 max-w-[150px]">
+                      <p className="text-xs">Let's work together to understand what's going on.</p>
                     </div>
                   </div>
                 </div>
