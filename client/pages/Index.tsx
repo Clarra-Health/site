@@ -860,7 +860,7 @@ export default function Index() {
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div className="order-2 lg:order-1">
-              <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-6">
+              <p className="text-lg font-semibold text-primary uppercase tracking-widest mb-6">
                 A Founder's Note
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold leading-tight mb-8">
