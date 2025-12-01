@@ -403,13 +403,15 @@ export default function Index() {
       {/* App Features Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center lg:justify-start items-center">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2351232003334bb9adec1c25cc301c3e?format=webp&width=800"
-                alt="Clarra app mockup"
-                className="w-full h-auto scale-[3] origin-center lg:origin-left"
-              />
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div className="order-first lg:order-first flex justify-center lg:justify-start items-center -ml-12 lg:ml-0">
+              <div className="w-96 h-auto">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2351232003334bb9adec1c25cc301c3e?format=webp&width=800"
+                  alt="Clarra app mockup"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
             <div>
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
