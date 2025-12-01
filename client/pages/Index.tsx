@@ -44,7 +44,7 @@ export default function Index() {
         </div>
 
         {/* Right Column - Full Bleed Image */}
-        <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full">
+        <div className="hidden lg:block absolute top-0 right-0 w-full h-full scale-x-150">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=800"
             alt="Clarra app and user"
