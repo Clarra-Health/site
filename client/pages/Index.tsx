@@ -286,7 +286,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4e263f2dafc64dcc9d70e0898943b02d?format=webp&width=800"
                   alt="Woman in professional setting"
-                  className="w-full h-full object-cover scale-[15]"
+                  className="w-full h-full object-cover object-center scale-[1.8]"
                 />
                 <div className="absolute bottom-8 left-8 right-8 grid grid-cols-2 gap-4 pointer-events-none">
                   <div className="bg-[#2c3e50]/90 backdrop-blur-sm rounded-xl p-4 text-white">
