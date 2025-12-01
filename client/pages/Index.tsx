@@ -86,7 +86,7 @@ export default function Index() {
       </section>
 
       {/* Form Meets Function Section */}
-      <section className="py-20 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative z-10">
+      <section className="pt-15 pb-20 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative z-10">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
