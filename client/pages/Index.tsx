@@ -13,46 +13,48 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate z-10 overflow-hidden bg-transparent pt-12 md:pt-24 pb-12 md:pb-24">
-        <div className="container px-4 md:px-6">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-16">
-            <div className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left">
-              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] font-extrabold text-foreground tracking-tight">
+      <section className="relative bg-white pt-20 md:pt-32 pb-20 md:pb-32 overflow-hidden">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Left Column - Text */}
+            <div className="flex flex-col justify-center">
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-[#1f2d3a] leading-tight mb-6">
                 Midlife health, made clear.
               </h1>
-              <p className="mt-6 text-lg sm:text-xl text-foreground/85 max-w-xl leading-relaxed">
+              <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-10 max-w-lg">
                 Clarra connects your symptoms, patterns, and daily experience into meaningful insights you can trust.
               </p>
 
-              <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-start">
-                <Link to="/contact" className="w-full sm:w-auto">
-                  <Button size="lg" className="w-full sm:w-auto text-base px-8 h-14 bg-[#4fb7b3] hover:bg-[#4fb7b3]/90">Start with clarity</Button>
+              <div className="flex flex-col sm:flex-row gap-6 items-start">
+                <Link to="/contact">
+                  <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-12 text-base font-semibold rounded-lg">
+                    Start with clarity
+                  </Button>
                 </Link>
-                <Link to="#" className="w-full sm:w-auto">
-                  <button className="text-base font-semibold text-[#1f2d3a] hover:text-primary transition-colors underline">Join the waitlist</button>
-                </Link>
+                <button className="text-base font-semibold text-[#1f2d3a] hover:text-primary transition-colors pt-2">
+                  Join the waitlist
+                </button>
               </div>
             </div>
 
-            <div className="lg:col-span-6 w-full mx-auto lg:max-w-none lg:pl-8">
-              <div className="relative w-full h-[600px] md:h-[700px] flex items-center justify-center overflow-hidden rounded-3xl">
-                {/* Woman Background Image */}
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2d339653a5634123b272544d72091840?format=webp&width=1200"
-                  alt="Woman using Clarra app"
-                  className="absolute inset-0 w-full h-full object-cover"
-                  style={{ objectPosition: 'center' }}
-                  loading="eager"
-                />
+            {/* Right Column - Image with App Mockups */}
+            <div className="relative h-[600px] md:h-[700px]">
+              {/* Background Image */}
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2d339653a5634123b272544d72091840?format=webp&width=1200"
+                alt="Woman using Clarra app"
+                className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+                style={{ objectPosition: 'center 20%' }}
+                loading="eager"
+              />
 
-                {/* App Mockups - Large and prominent */}
-                <div className="absolute inset-0 flex items-center justify-end">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1481f9ea7add407ca9a17c90d9698254?format=webp&width=800"
-                    alt="Clarra app mockups"
-                    className="w-auto h-full md:h-5/6 object-contain drop-shadow-2xl z-10"
-                  />
-                </div>
+              {/* App Mockups Overlay - Positioned naturally */}
+              <div className="absolute inset-0 flex items-center justify-end pr-6 md:pr-12 rounded-3xl overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1481f9ea7add407ca9a17c90d9698254?format=webp&width=800"
+                  alt="Clarra app mockups"
+                  className="h-2/3 w-auto object-contain drop-shadow-xl"
+                />
               </div>
             </div>
           </div>
