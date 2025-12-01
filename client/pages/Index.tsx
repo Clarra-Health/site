@@ -89,6 +89,273 @@ export default function Index() {
       {/* Product Features Carousel */}
       <ProductCarouselSection />
 
+      {/* Three-Column Feature Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container">
+          <div className="grid md:grid-cols-4 gap-8">
+            {/* Card 1 */}
+            <div className="group relative">
+              <div className="relative overflow-hidden rounded-2xl mb-8 aspect-[3/4]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc60a637f7c7842128abe93525dc2096c?format=webp&width=800"
+                  alt="Sleep and mood"
+                  className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+
+                {/* Sleep Icon Badge */}
+                <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
+                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9" /><polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">Sleep Quality</span>
+                </div>
+
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors hover:bg-black/70 cursor-pointer">
+                      <Plus className="h-6 w-6 text-white" />
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                    <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc60a637f7c7842128abe93525dc2096c?format=webp&width=1200"
+                        alt="Sleep and mood expanded"
+                        className="w-full h-auto"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                      <div className="absolute bottom-6 left-6 right-6 text-white">
+                        <p className="font-display text-3xl font-bold leading-none mb-2">
+                          Sleep & Mood Harmony
+                        </p>
+                        <p className="font-serif text-lg italic opacity-90 font-light mb-4">
+                          Restore your natural rhythm
+                        </p>
+                        <p className="text-base leading-relaxed max-w-lg opacity-95">
+                          Understand how your sleep patterns connect to your emotional well-being. Track restful nights and recognize the profound impact quality sleep has on mood stability throughout your cycle.
+                        </p>
+                      </div>
+                      <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
+                        <Plus className="h-6 w-6 rotate-45" />
+                        <span className="sr-only">Close</span>
+                      </DialogClose>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+
+                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
+                  <p className="font-display text-2xl font-bold leading-tight hidden">
+                    Sleep & Mood Harmony
+                  </p>
+                  <p className="font-serif text-lg italic opacity-90 font-light">
+                    Restore your natural rhythm
+                  </p>
+                </div>
+              </div>
+              <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
+                Sleep & Mood Harmony
+              </h3>
+            </div>
+
+            {/* Card 2 */}
+            <div className="group relative">
+              <div className="relative overflow-hidden rounded-2xl mb-8 aspect-[3/4]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6bb2493097a4497da3c80210e2d3dbf6?format=webp&width=800"
+                  alt="Cognitive and emotional clarity"
+                  className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+
+                {/* Cognitive Health Icon Badge */}
+                <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
+                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">Mental Clarity</span>
+                </div>
+
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors hover:bg-black/70 cursor-pointer">
+                      <Plus className="h-6 w-6 text-white" />
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                    <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6bb2493097a4497da3c80210e2d3dbf6?format=webp&width=1200"
+                        alt="Cognitive clarity expanded"
+                        className="w-full h-auto"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                      <div className="absolute bottom-6 left-6 right-6 text-white">
+                        <p className="font-display text-3xl font-bold leading-none mb-2">
+                          Cognitive & Emotional Clarity
+                        </p>
+                        <p className="font-serif text-lg italic opacity-90 font-light mb-4">
+                          Understand your emotional and mental patterns
+                        </p>
+                        <p className="text-base leading-relaxed max-w-lg opacity-95">
+                          Navigate brain fog, mood shifts, and emotional fluctuations with data-driven insights. Recognize how your cycle influences focus, memory, and emotional resilience.
+                        </p>
+                      </div>
+                      <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
+                        <Plus className="h-6 w-6 rotate-45" />
+                        <span className="sr-only">Close</span>
+                      </DialogClose>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+
+                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
+                  <p className="font-display text-2xl font-bold leading-tight hidden">
+                    Cognitive & Emotional Clarity
+                  </p>
+                  <p className="font-serif text-lg italic opacity-90 font-light">
+                    Understand your emotional and mental patterns
+                  </p>
+                </div>
+              </div>
+              <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
+                Cognitive & Emotional Clarity
+              </h3>
+            </div>
+
+            {/* Card 3 */}
+            <div className="group relative">
+              <div className="relative overflow-hidden rounded-2xl mb-8 aspect-[3/4]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1ca7edaae6d047fe8f9d4b11440157ba?format=webp&width=800"
+                  alt="Stress and energy"
+                  className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+
+                {/* Stress & Energy Icon Badge */}
+                <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
+                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">Daily Energy</span>
+                </div>
+
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors hover:bg-black/70 cursor-pointer">
+                      <Plus className="h-6 w-6 text-white" />
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                    <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1ca7edaae6d047fe8f9d4b11440157ba?format=webp&width=1200"
+                        alt="Stress and energy expanded"
+                        className="w-full h-auto"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                      <div className="absolute bottom-6 left-6 right-6 text-white">
+                        <p className="font-display text-3xl font-bold leading-none mb-2">
+                          Stress, Energy & Daily Performance
+                        </p>
+                        <p className="font-serif text-lg italic opacity-90 font-light mb-4">
+                          Plan your days with confidence
+                        </p>
+                        <p className="text-base leading-relaxed max-w-lg opacity-95">
+                          Optimize your energy levels and manage stress cycles. Know when to push and when to rest, so you can plan workouts, work projects, and social commitments aligned with your natural rhythms.
+                        </p>
+                      </div>
+                      <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
+                        <Plus className="h-6 w-6 rotate-45" />
+                        <span className="sr-only">Close</span>
+                      </DialogClose>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+
+                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
+                  <p className="font-display text-2xl font-bold leading-tight hidden">
+                    Stress, Energy & Daily Performance
+                  </p>
+                  <p className="font-serif text-lg italic opacity-90 font-light">
+                    Plan your days with confidence
+                  </p>
+                </div>
+              </div>
+              <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
+                Stress, Energy & Daily Performance
+              </h3>
+            </div>
+
+            {/* Card 4 */}
+            <div className="group relative">
+              <div className="relative overflow-hidden rounded-2xl mb-8 aspect-[3/4]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fdcae153309b3411183a24e7b381cd42c?format=webp&width=800"
+                  alt="Hormone-adaptive guidance"
+                  className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+
+                {/* Understanding Change Icon Badge */}
+                <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
+                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
+                  </svg>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">Understanding Change</span>
+                </div>
+
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors hover:bg-black/70 cursor-pointer">
+                      <Plus className="h-6 w-6 text-white" />
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                    <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fdcae153309b3411183a24e7b381cd42c?format=webp&width=1200"
+                        alt="Hormone-adaptive guidance expanded"
+                        className="w-full h-auto"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                      <div className="absolute bottom-6 left-6 right-6 text-white">
+                        <p className="font-display text-3xl font-bold leading-none mb-2">
+                          Hormone-Adaptive Guidance
+                        </p>
+                        <p className="font-serif text-lg italic opacity-90 font-light mb-4">
+                          Make sense of shifting patterns through midlife change
+                        </p>
+                        <p className="text-base leading-relaxed max-w-lg opacity-95">
+                          Understand the hormonal shifts driving your symptoms and changes. Clarra's adaptive guidance evolves with your body, recognizing patterns across your cycle and supporting you through every phase of midlife transformation.
+                        </p>
+                      </div>
+                      <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
+                        <Plus className="h-6 w-6 rotate-45" />
+                        <span className="sr-only">Close</span>
+                      </DialogClose>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+
+                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
+                  <p className="font-display text-2xl font-bold leading-tight hidden">
+                    Hormone-Adaptive Guidance
+                  </p>
+                  <p className="font-serif text-lg italic opacity-90 font-light">
+                    Make sense of shifting patterns through midlife change
+                  </p>
+                </div>
+              </div>
+              <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
+                Hormone-Adaptive Guidance
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Form Meets Function Section */}
       <section className="pt-[4.5rem] pb-20 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative z-10">
         <div className="container">
