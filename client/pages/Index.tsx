@@ -493,7 +493,7 @@ export default function Index() {
             <div className="group relative">
               <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ff20cc42fde714790a312a776c03efbaf?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc60a637f7c7842128abe93525dc2096c?format=webp&width=800"
                   alt="Sleep and mood"
                   className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
                 />
@@ -502,9 +502,9 @@ export default function Index() {
                 {/* Sleep Icon Badge */}
                 <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
                   <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    <circle cx="12" cy="12" r="1"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/><path d="M9 12l2 2 4-4" />
                   </svg>
-                  <span className="text-white text-base font-semibold whitespace-nowrap">7.2h Last night</span>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">Sleep Quality</span>
                 </div>
 
                 <Dialog>
