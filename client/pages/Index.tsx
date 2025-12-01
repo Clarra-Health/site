@@ -35,25 +35,23 @@ export default function Index() {
             </div>
 
             <div className="lg:col-span-6 w-full mx-auto lg:max-w-none lg:pl-8">
-              <div className="overflow-hidden rounded-3xl shadow-2xl bg-muted w-full h-[600px] md:h-[700px] relative">
-                <div className="relative w-full h-full">
-                  {/* Woman Background Image */}
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2d339653a5634123b272544d72091840?format=webp&width=1200"
-                    alt="Woman using Clarra app"
-                    className="w-full h-full object-cover"
-                    style={{ objectPosition: '50% center' }}
-                    loading="eager"
-                  />
+              <div className="relative w-full h-[600px] md:h-[700px] flex items-center justify-center">
+                {/* Woman Background Image */}
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2d339653a5634123b272544d72091840?format=webp&width=1200"
+                  alt="Woman using Clarra app"
+                  className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+                  style={{ objectPosition: 'center' }}
+                  loading="eager"
+                />
 
-                  {/* App Mockups Overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1481f9ea7add407ca9a17c90d9698254?format=webp&width=800"
-                      alt="Clarra app mockups"
-                      className="w-auto h-4/5 max-w-xs object-contain drop-shadow-2xl"
-                    />
-                  </div>
+                {/* App Mockups - Positioned over the woman */}
+                <div className="absolute inset-0 flex items-center justify-end pr-8 md:pr-16">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1481f9ea7add407ca9a17c90d9698254?format=webp&width=800"
+                    alt="Clarra app mockups"
+                    className="w-auto h-3/4 object-contain drop-shadow-2xl z-10"
+                  />
                 </div>
               </div>
             </div>
