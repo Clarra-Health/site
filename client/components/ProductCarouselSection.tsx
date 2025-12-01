@@ -341,26 +341,11 @@ export default function ProductCarouselSection() {
                     </div>
                   </div>
 
-                  {/* Insight Box - Center/Bottom */}
-                  <div className="flex justify-center">
-                    <div className="bg-gradient-to-br from-blue-600/80 to-blue-800/80 backdrop-blur-md rounded-2xl p-6 border border-blue-400/40 max-w-md shadow-xl">
-                      <p className="text-white text-sm leading-relaxed">
-                        {currentFeature.insight}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Secondary Metric Card - Bottom Right */}
+                  {/* Insight Box - Bottom Right (replaces accuracy card) */}
                   <div className="flex justify-end">
-                    <div className="bg-gradient-to-br from-teal-700/60 to-teal-900/60 backdrop-blur-md rounded-2xl p-5 border border-teal-600/40 max-w-xs shadow-lg">
-                      <p className="text-xs font-semibold text-teal-200/70 uppercase tracking-wider mb-2">
-                        {currentFeature.metrics.secondary.label}
-                      </p>
-                      <p className="text-3xl font-bold text-white mb-1">
-                        {currentFeature.metrics.secondary.value}
-                      </p>
-                      <p className="text-sm text-teal-100/60">
-                        {currentFeature.metrics.secondary.subtitle}
+                    <div className="bg-gradient-to-br from-teal-600/80 to-teal-800/80 backdrop-blur-md rounded-2xl p-5 border border-teal-500/40 max-w-xs shadow-lg">
+                      <p className="text-white text-xs leading-snug">
+                        {currentFeature.insight}
                       </p>
                     </div>
                   </div>
