@@ -623,18 +623,18 @@ export default function Index() {
             <div className="group relative">
               <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4fa85bca2bdf42f6a8835703155227c0?format=webp&width=800"
-                  alt="Woman smiling"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1ca7edaae6d047fe8f9d4b11440157ba?format=webp&width=800"
+                  alt="Stress and energy"
                   className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
-                {/* Emotional Health Icon Badge */}
+                {/* Stress & Energy Icon Badge */}
                 <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
-                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  <span className="text-white text-base font-semibold whitespace-nowrap">Understanding</span>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">Daily Energy</span>
                 </div>
 
                 <Dialog>
