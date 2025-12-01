@@ -7,70 +7,76 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate z-10 overflow-hidden bg-transparent pt-16 md:pt-24 pb-6">
-        <div className="container">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-12 items-center gap-8">
-            <div className="md:col-span-6">
-              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-extrabold text-foreground">
+      <section className="relative isolate z-10 overflow-hidden bg-transparent pt-12 md:pt-24 pb-12 md:pb-24">
+        <div className="container px-4 md:px-6">
+          <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-16">
+            <div className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left">
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] font-extrabold text-foreground tracking-tight">
                 Midlife care designed for you —
                 <span className="block text-primary mt-2">compassionate, modern, and personalised.</span>
               </h1>
-              <p className="mt-6 text-lg text-foreground/85 max-w-xl">
+              <p className="mt-6 text-lg sm:text-xl text-foreground/85 max-w-xl leading-relaxed">
                 Combining biomarker testing, wearable data and conversational AI to give women clarity and confidence through perimenopause and beyond.
               </p>
 
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Link to="/about">
-                  <Button size="lg">Meet Clarra</Button>
+              <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <Link to="/about" className="w-full sm:w-auto">
+                  <Button size="lg" className="w-full sm:w-auto text-base px-8 h-14">Meet Clarra</Button>
                 </Link>
-                <Link to="/how-it-works">
-                  <Button variant="outline" size="lg">How it works</Button>
+                <Link to="/how-it-works" className="w-full sm:w-auto">
+                  <Button variant="outline" size="lg" className="w-full sm:w-auto text-base px-8 h-14">How it works</Button>
                 </Link>
               </div>
 
-              <div className="mt-8 flex items-center gap-4">
-                <div className="text-sm text-muted-foreground">Trusted by clinicians & women worldwide</div>
+              <div className="mt-10 flex items-center gap-3 text-sm font-medium text-muted-foreground bg-secondary/20 px-4 py-2 rounded-full">
+                <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
+                Trusted by clinicians & women worldwide
               </div>
             </div>
 
-            <div className="md:col-span-6 flex justify-end md:pl-8">
-              <div className="w-full max-w-md grid grid-cols-2 gap-4">
-                <div className="space-y-4 mt-12">
-                  <div className="overflow-hidden rounded-2xl shadow-lg">
+            <div className="lg:col-span-6 w-full max-w-lg mx-auto lg:max-w-none lg:pl-8">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="space-y-3 sm:space-y-4 mt-8 sm:mt-12">
+                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[4/3]">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1032b528b95f49c3aa2bd1f410d418fb?format=webp&width=800"
                       alt="Sleep and mood"
-                      className="w-full h-40 object-cover hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                      loading="eager"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-2xl shadow-lg">
+                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[3/4]">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F691c8343a44543aba27bccf71813cf7d?format=webp&width=800"
                       alt="Hormone Health"
-                      className="w-full h-56 object-cover hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                      loading="eager"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-2xl shadow-lg">
+                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[4/3]">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2688a08a9ab949c7a06076e7a9daece3?format=webp&width=800"
                       alt="Woman portrait"
-                      className="w-full h-40 object-cover hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                      loading="eager"
                     />
                   </div>
                 </div>
-                <div className="space-y-4">
-                  <div className="overflow-hidden rounded-2xl shadow-lg">
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[3/4]">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa363af82f5f14461ae882311697aaeff?format=webp&width=800"
                       alt="Woman smiling"
-                      className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                      loading="eager"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-2xl shadow-lg">
+                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[4/3]">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F8ee0c1c9a0d04391aada4ef04b4065f5?format=webp&width=800"
                       alt="Healthy lifestyle"
-                      className="w-full h-56 object-cover hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                      loading="eager"
                     />
                   </div>
                 </div>
