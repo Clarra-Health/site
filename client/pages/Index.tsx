@@ -53,32 +53,35 @@ export default function Index() {
 
                   {/* Chat Overlay */}
                   <div className="absolute inset-x-0 bottom-0 p-6 z-20">
-                    <div className="space-y-2 max-w-md">
-                      {/* AI Message 1 */}
+                    <div className="space-y-3 max-w-md">
+                      {/* User Message 1 */}
+                      <div className="flex justify-end">
+                        <p className="text-white text-sm bg-white/20 backdrop-blur rounded-2xl px-4 py-2 max-w-[250px]">How's your sleep lately?</p>
+                      </div>
+
+                      {/* User Message 2 */}
+                      <div className="flex justify-end">
+                        <p className="text-white text-sm bg-white/20 backdrop-blur rounded-2xl px-4 py-2 max-w-[250px]">Been struggling, feeling foggy during the day</p>
+                      </div>
+
+                      {/* AI Message with Chart */}
                       <div className="flex justify-start">
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2">
-                          <p className="text-sm">You're not alone in what you're feeling.</p>
+                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-3 max-w-[280px]">
+                          <p className="text-sm font-medium mb-3">I've noticed a pattern in your sleep:</p>
+                          <div className="bg-white/20 rounded-lg h-14 mb-3 flex items-center justify-center px-2">
+                            <svg className="w-full h-full" viewBox="0 0 120 40" preserveAspectRatio="none">
+                              <polyline points="5,25 15,22 25,20 35,18 45,22 55,28 65,32 75,30 85,26 95,24 105,22 115,20" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                              <line x1="5" y1="35" x2="115" y2="35" stroke="white" strokeWidth="1" strokeDasharray="2,2" opacity="0.5" />
+                            </svg>
+                          </div>
+                          <p className="text-sm leading-snug">Consistent decline through the week. Let's explore why.</p>
                         </div>
                       </div>
 
-                      {/* AI Message 2 */}
+                      {/* AI Follow-up Message */}
                       <div className="flex justify-start">
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2">
-                          <p className="text-sm">Together, we can uncover what's really going on with your health.</p>
-                        </div>
-                      </div>
-
-                      {/* AI Message 3 */}
-                      <div className="flex justify-start">
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2">
-                          <p className="text-sm">Let's start by understanding your patterns.</p>
-                        </div>
-                      </div>
-
-                      {/* AI Message 4 */}
-                      <div className="flex justify-start">
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2">
-                          <p className="text-sm">Every conversation brings us closer to real answers.</p>
+                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2 max-w-[280px]">
+                          <p className="text-sm">Your sleep timing and caffeine intake might be connected. Can we dig deeper?</p>
                         </div>
                       </div>
                     </div>
