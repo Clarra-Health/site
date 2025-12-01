@@ -38,7 +38,8 @@ const features = [
     metrics: {
       primary: { label: "INSIGHTS", value: "7", subtitle: "New findings" },
       secondary: { label: "ACCURACY", value: "94%", subtitle: "High confidence" }
-    }
+    },
+    insight: "Your elevated cortisol levels during sleep disruption suggest hormonal transition. Consistent sleep timing and magnesium support can help regulate your cycle and improve energy stability through perimenopause."
   },
   {
     id: 4,
