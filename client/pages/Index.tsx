@@ -85,6 +85,33 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Form Meets Function Section */}
+      <section className="py-24 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5]">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-6">
+                Insights That Matter
+              </p>
+              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight mb-6">
+                Clinical precision,
+                <span className="block font-serif italic font-light text-primary mt-3">designed for simplicity</span>
+              </h2>
+            </div>
+            <div className="space-y-6">
+              <p className="text-lg text-foreground/80 leading-relaxed">
+                Hormonal health is complex. Understanding it shouldn't be. Clarra translates sophisticated biomarker data into clear, actionable insights delivered through conversational AI that feels like talking to a trusted health partner.
+              </p>
+              <Link to="/how-it-works">
+                <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-14 text-lg rounded-full">
+                  How It Works
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Product Showcase Section */}
       <section className="py-24 bg-gradient-to-b from-secondary/10 to-white">
         <div className="container">
