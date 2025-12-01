@@ -407,7 +407,7 @@ export default function Index() {
             <div className="order-first lg:order-first flex justify-center lg:justify-start items-center -ml-48 lg:-ml-32">
               <div className="w-full h-auto">
                 <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd99976510c574ecfb23cd401c35d529d?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc9f5883300134c1790f17441286b029a?format=webp&width=800"
                 alt="Clarra app mockup"
                 className="w-full h-auto scale-125 origin-left"
               />
