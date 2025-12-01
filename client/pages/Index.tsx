@@ -65,7 +65,7 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="py-20 md:py-28 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
+      <section className="py-10 md:py-14 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-[#1f2d3a] leading-tight mb-8">
