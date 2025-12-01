@@ -137,54 +137,57 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <div className="group relative p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
-                  <div className="absolute -top-3 -right-3 h-6 w-6 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">
-                    ✓
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shrink-0 text-white shadow-lg">
-                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-display text-lg font-bold text-[#1f2d3a] mb-1">Clinical Insights</h3>
-                      <p className="text-sm text-foreground/70">Lab-grade hormone tracking delivered daily, deciphered in plain language.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="group relative p-6 rounded-2xl bg-gradient-to-br from-secondary/5 to-primary/5 border border-secondary/10 hover:border-secondary/30 transition-all duration-300 hover:shadow-lg">
-                  <div className="absolute -top-3 -right-3 h-6 w-6 rounded-full bg-secondary text-white flex items-center justify-center text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">
-                    ✓
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-secondary to-secondary/70 flex items-center justify-center shrink-0 text-white shadow-lg">
-                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20 2H4c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h14l4-4V4c0-1.1-.9-2-2-2zm-2 12h-4v4h-2v-4H8v-2h4V8h2v4h4v2z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-display text-lg font-bold text-[#1f2d3a] mb-1">AI Conversations</h3>
-                      <p className="text-sm text-foreground/70">Ask anything. Get personalized answers 24/7 from an AI that truly understands midlife.</p>
+              <div className="space-y-6">
+                {/* Story Capture - Premium Pillar 1 */}
+                <div className="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-white/40 to-white/20 backdrop-blur-md border border-white/30 hover:border-primary/40 transition-all duration-300 hover:shadow-xl p-8">
+                  <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full bg-primary/10 blur-2xl group-hover:bg-primary/20 transition-all" />
+                  <div className="relative z-10">
+                    <div className="flex items-start gap-6 mb-4">
+                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 text-primary">
+                        <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-5h2v5zm4 0h-2V7h2v10zm4 0h-2v-3h2v3z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-2">Story Capture</h3>
+                        <p className="text-base text-foreground/80 leading-relaxed">Your lived experience becomes structured health insight — no tracking apps, no forms, no friction.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="group relative p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
-                  <div className="absolute -top-3 -right-3 h-6 w-6 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">
-                    ✓
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shrink-0 text-white shadow-lg">
-                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
-                      </svg>
+                {/* Pattern Intelligence - Premium Pillar 2 */}
+                <div className="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-primary/5 to-secondary/5 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-xl p-8">
+                  <div className="absolute -bottom-12 -left-12 w-32 h-32 rounded-full bg-secondary/10 blur-3xl group-hover:bg-secondary/20 transition-all" />
+                  <div className="relative z-10">
+                    <div className="flex items-start gap-6 mb-4">
+                      <div className="h-12 w-12 rounded-full bg-secondary/20 flex items-center justify-center shrink-0 text-secondary">
+                        <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-2">Pattern Intelligence</h3>
+                        <p className="text-base text-foreground/80 leading-relaxed">Clarra finds relationships across sleep, stress, mood, cognition, and temperature changes that no wearable or lab test can see.</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="font-display text-lg font-bold text-[#1f2d3a] mb-1">Wearable Integration</h3>
-                      <p className="text-sm text-foreground/70">Connect your smartwatch for continuous insights. Clarra synthesizes all your data into one clear view.</p>
+                  </div>
+                </div>
+
+                {/* Context-Aware Guidance - Premium Pillar 3 */}
+                <div className="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-secondary/10 to-primary/10 backdrop-blur-sm border border-secondary/20 hover:border-secondary/50 transition-all duration-300 hover:shadow-xl p-8">
+                  <div className="absolute -top-8 -right-8 w-28 h-28 rounded-full bg-primary/5 blur-3xl group-hover:bg-primary/15 transition-all" />
+                  <div className="relative z-10">
+                    <div className="flex items-start gap-6 mb-4">
+                      <div className="h-12 w-12 rounded-full bg-primary/15 flex items-center justify-center shrink-0 text-primary">
+                        <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <path d="M13 10l7-7m0 0l-7 7m7-7v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-2">Context-Aware Guidance</h3>
+                        <p className="text-base text-foreground/80 leading-relaxed">Clear next steps based on your unique patterns — not generic advice.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
