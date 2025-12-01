@@ -768,7 +768,7 @@ export default function Index() {
               </Button>
             </Link>
             <Link to="/how-it-works">
-              <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-[#1f2d3a] px-10 py-7 text-xl rounded-full">
+              <Button variant="outline" size="lg" className="bg-transparent border-[#1f2d3a] text-[#1f2d3a] hover:bg-[#1f2d3a] hover:text-white px-10 py-7 text-xl rounded-full">
                 Learn More
               </Button>
             </Link>
