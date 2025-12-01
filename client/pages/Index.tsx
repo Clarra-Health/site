@@ -22,12 +22,16 @@ export default function Index() {
                 Midlife health, made <EmUnderline>clear.</EmUnderline>
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-10 max-w-lg">
-                Clarra connects your symptoms, patterns, and daily experience into meaningful insights you can trust.
+                Clarra connects your symptoms, patterns, and daily experience
+                into meaningful insights you can trust.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-12 text-base font-semibold rounded-lg">
+                  <Button
+                    size="lg"
+                    className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
+                  >
                     Start with clarity
                   </Button>
                 </Link>
@@ -45,7 +49,7 @@ export default function Index() {
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c"
             alt="Woman using Clarra app"
             className="w-full h-full object-cover"
-            style={{ objectPosition: 'center top' }}
+            style={{ objectPosition: "center top" }}
             loading="eager"
           />
         </div>
@@ -56,7 +60,7 @@ export default function Index() {
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c"
             alt="Woman using Clarra app"
             className="w-full h-full object-cover"
-            style={{ objectPosition: 'center top' }}
+            style={{ objectPosition: "center top" }}
             loading="eager"
           />
         </div>
@@ -90,10 +94,19 @@ export default function Index() {
 
                 {/* Sleep Icon Badge */}
                 <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
-                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="9" /><polyline points="12 6 12 12 16 14" />
+                  <svg
+                    className="w-7 h-7 text-white flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="12" cy="12" r="9" />
+                    <polyline points="12 6 12 12 16 14" />
                   </svg>
-                  <span className="text-white text-base font-semibold whitespace-nowrap">Sleep Quality</span>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">
+                    Sleep Quality
+                  </span>
                 </div>
 
                 <Dialog>
@@ -118,7 +131,10 @@ export default function Index() {
                           Restore your natural rhythm
                         </p>
                         <p className="text-base leading-relaxed max-w-lg opacity-95">
-                          Understand how your sleep patterns connect to your emotional well-being. Track restful nights and recognize the profound impact quality sleep has on mood stability throughout your cycle.
+                          Understand how your sleep patterns connect to your
+                          emotional well-being. Track restful nights and
+                          recognize the profound impact quality sleep has on
+                          mood stability throughout your cycle.
                         </p>
                       </div>
                       <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
@@ -155,10 +171,16 @@ export default function Index() {
 
                 {/* Cognitive Health Icon Badge */}
                 <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
-                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    className="w-7 h-7 text-white flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                   </svg>
-                  <span className="text-white text-base font-semibold whitespace-nowrap">Mental Clarity</span>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">
+                    Mental Clarity
+                  </span>
                 </div>
 
                 <Dialog>
@@ -183,7 +205,10 @@ export default function Index() {
                           Understand your emotional and mental patterns
                         </p>
                         <p className="text-base leading-relaxed max-w-lg opacity-95">
-                          Navigate brain fog, mood shifts, and emotional fluctuations with data-driven insights. Recognize how your cycle influences focus, memory, and emotional resilience.
+                          Navigate brain fog, mood shifts, and emotional
+                          fluctuations with data-driven insights. Recognize how
+                          your cycle influences focus, memory, and emotional
+                          resilience.
                         </p>
                       </div>
                       <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
@@ -220,10 +245,18 @@ export default function Index() {
 
                 {/* Stress & Energy Icon Badge */}
                 <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
-                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <svg
+                    className="w-7 h-7 text-white flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  <span className="text-white text-base font-semibold whitespace-nowrap">Daily Energy</span>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">
+                    Daily Energy
+                  </span>
                 </div>
 
                 <Dialog>
@@ -248,7 +281,10 @@ export default function Index() {
                           Plan your days with confidence
                         </p>
                         <p className="text-base leading-relaxed max-w-lg opacity-95">
-                          Optimize your energy levels and manage stress cycles. Know when to push and when to rest, so you can plan workouts, work projects, and social commitments aligned with your natural rhythms.
+                          Optimize your energy levels and manage stress cycles.
+                          Know when to push and when to rest, so you can plan
+                          workouts, work projects, and social commitments
+                          aligned with your natural rhythms.
                         </p>
                       </div>
                       <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
@@ -285,10 +321,18 @@ export default function Index() {
 
                 {/* Understanding Change Icon Badge */}
                 <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3 bg-white/20 backdrop-blur-md rounded-xl px-5 py-3">
-                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <svg
+                    className="w-7 h-7 text-white flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
                   </svg>
-                  <span className="text-white text-base font-semibold whitespace-nowrap">Understanding Change</span>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">
+                    Understanding Change
+                  </span>
                 </div>
 
                 <Dialog>
@@ -313,7 +357,11 @@ export default function Index() {
                           Make sense of shifting patterns through midlife change
                         </p>
                         <p className="text-base leading-relaxed max-w-lg opacity-95">
-                          Understand the hormonal shifts driving your symptoms and changes. Clarra's adaptive guidance evolves with your body, recognizing patterns across your cycle and supporting you through every phase of midlife transformation.
+                          Understand the hormonal shifts driving your symptoms
+                          and changes. Clarra's adaptive guidance evolves with
+                          your body, recognizing patterns across your cycle and
+                          supporting you through every phase of midlife
+                          transformation.
                         </p>
                       </div>
                       <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
@@ -346,7 +394,9 @@ export default function Index() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-[#1f2d3a] leading-relaxed">
-              Daily brain fog, 4:00 AM hot flashes, dry skin and anxiety...don't face the 65+ symptoms of perimenopause and menopause alone. <span className="text-[#fc9a53]">Talk to Clarra.</span>
+              Daily brain fog, 4:00 AM hot flashes, dry skin and anxiety...don't
+              face the 65+ symptoms of perimenopause and menopause alone.{" "}
+              <span className="text-[#fc9a53]">Talk to Clarra.</span>
             </p>
           </div>
         </div>
@@ -369,10 +419,15 @@ export default function Index() {
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight mb-4">
                 Clinical precision,
-                <span className="block font-serif italic font-light text-[#fc9a53] mt-2">designed for simplicity</span>
+                <span className="block font-serif italic font-light text-[#fc9a53] mt-2">
+                  designed for simplicity
+                </span>
               </h2>
               <p className="text-base sm:text-lg text-foreground/80 leading-relaxed max-w-xl">
-                Experience conversational health insights at your fingertips. Clarra's interface makes complex health data feel simple and actionable, designed specifically for how women think about their health and bodies.
+                Experience conversational health insights at your fingertips.
+                Clarra's interface makes complex health data feel simple and
+                actionable, designed specifically for how women think about
+                their health and bodies.
               </p>
             </div>
           </div>
@@ -409,15 +464,21 @@ export default function Index() {
                       <div className="space-y-1.5 h-full flex flex-col justify-between overflow-hidden">
                         <div className="flex gap-2 items-end">
                           <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0"></div>
-                          <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block max-w-[145px] truncate">How's your sleep...</p>
+                          <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block max-w-[145px] truncate">
+                            How's your sleep...
+                          </p>
                         </div>
                         <div className="flex gap-2 justify-end items-end">
-                          <p className="text-white text-xs bg-primary/40 rounded-lg px-2 py-1 inline-block max-w-[130px] truncate">Better this week...</p>
+                          <p className="text-white text-xs bg-primary/40 rounded-lg px-2 py-1 inline-block max-w-[130px] truncate">
+                            Better this week...
+                          </p>
                           <div className="w-6 h-6 rounded-full bg-secondary flex-shrink-0"></div>
                         </div>
                         <div className="flex gap-2 items-end">
                           <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0"></div>
-                          <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block">...</p>
+                          <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block">
+                            ...
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -429,10 +490,18 @@ export default function Index() {
                         Symptom Capture
                       </span>
                       <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-primary-foreground hover:bg-white/30 transition">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                        <svg
+                          className="w-6 h-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                        </svg>
                       </button>
                     </div>
-                    <p className="font-serif text-primary-foreground text-lg italic font-light leading-tight">Log your experience by talking</p>
+                    <p className="font-serif text-primary-foreground text-lg italic font-light leading-tight">
+                      Log your experience by talking
+                    </p>
                   </div>
                 </div>
               </DialogTrigger>
@@ -447,14 +516,28 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-primary-foreground mb-3">Log your experience by talking</h2>
-                        <p className="text-lg text-primary-foreground/90">Clarra turns natural conversation into structured data</p>
+                        <h2 className="text-5xl font-bold text-primary-foreground mb-3">
+                          Log your experience by talking
+                        </h2>
+                        <p className="text-lg text-primary-foreground/90">
+                          Clarra turns natural conversation into structured data
+                        </p>
                       </div>
                       <DialogClose className="text-primary-foreground hover:opacity-80 flex-shrink-0">
-                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                        <svg
+                          className="w-8 h-8"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                        </svg>
                       </DialogClose>
                     </div>
-                    <p className="text-primary-foreground/90 text-base leading-relaxed">Talk naturally about how you're feeling. Clarra listens, understands context, and captures your symptoms as structured health data automatically.</p>
+                    <p className="text-primary-foreground/90 text-base leading-relaxed">
+                      Talk naturally about how you're feeling. Clarra listens,
+                      understands context, and captures your symptoms as
+                      structured health data automatically.
+                    </p>
                   </div>
                 </div>
               </DialogContent>
@@ -475,26 +558,54 @@ export default function Index() {
                     {/* Correlation Graph Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="h-full flex flex-col justify-between">
-                        <svg className="w-full h-10" viewBox="0 0 200 50" preserveAspectRatio="none">
+                        <svg
+                          className="w-full h-10"
+                          viewBox="0 0 200 50"
+                          preserveAspectRatio="none"
+                        >
                           {/* Sleep line - smooth wave pattern */}
-                          <polyline points="0,25 10,20 20,15 30,12 40,18 50,25 60,32 70,36 80,33 90,28 100,25 110,20 120,15 130,12 140,18 150,25 160,32 170,36 180,33 190,28 200,25" fill="none" stroke="#4fb7b3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                          <polyline
+                            points="0,25 10,20 20,15 30,12 40,18 50,25 60,32 70,36 80,33 90,28 100,25 110,20 120,15 130,12 140,18 150,25 160,32 170,36 180,33 190,28 200,25"
+                            fill="none"
+                            stroke="#4fb7b3"
+                            strokeWidth="4"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
                           {/* Brain fog line - inverse wave pattern */}
-                          <polyline points="0,25 10,30 20,35 30,38 40,32 50,25 60,18 70,14 80,17 90,22 100,25 110,30 120,35 130,38 140,32 150,25 160,18 170,14 180,17 190,22 200,25" fill="none" stroke="#fc9a53" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                          <polyline
+                            points="0,25 10,30 20,35 30,38 40,32 50,25 60,18 70,14 80,17 90,22 100,25 110,30 120,35 130,38 140,32 150,25 160,18 170,14 180,17 190,22 200,25"
+                            fill="none"
+                            stroke="#fc9a53"
+                            strokeWidth="4"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
                           {/* Intersection points */}
                           <circle cx="50" cy="25" r="5.5" fill="#56d257" />
                           <circle cx="150" cy="25" r="5.5" fill="#56d257" />
                         </svg>
                         <div className="flex justify-between items-center text-white px-1">
                           <div className="flex items-center gap-1">
-                            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#4fb7b3' }}></div>
+                            <div
+                              className="w-2 h-2 rounded-full"
+                              style={{ backgroundColor: "#4fb7b3" }}
+                            ></div>
                             <p className="text-[0.65rem] font-medium">Sleep</p>
                           </div>
                           <div className="flex items-center gap-1">
-                            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#fc9a53' }}></div>
-                            <p className="text-[0.65rem] font-medium">Brain Fog</p>
+                            <div
+                              className="w-2 h-2 rounded-full"
+                              style={{ backgroundColor: "#fc9a53" }}
+                            ></div>
+                            <p className="text-[0.65rem] font-medium">
+                              Brain Fog
+                            </p>
                           </div>
                         </div>
-                        <p className="text-white text-[0.6rem] opacity-70 text-center">73% Correlation</p>
+                        <p className="text-white text-[0.6rem] opacity-70 text-center">
+                          73% Correlation
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -505,10 +616,18 @@ export default function Index() {
                         Pattern Recognition
                       </span>
                       <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-secondary-foreground hover:bg-white/30 transition">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                        <svg
+                          className="w-6 h-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                        </svg>
                       </button>
                     </div>
-                    <p className="font-serif text-secondary-foreground text-lg italic font-light leading-tight">See patterns across sleep, stress, mood, cognition</p>
+                    <p className="font-serif text-secondary-foreground text-lg italic font-light leading-tight">
+                      See patterns across sleep, stress, mood, cognition
+                    </p>
                   </div>
                 </div>
               </DialogTrigger>
@@ -523,14 +642,29 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-secondary-foreground mb-3">See patterns across sleep, stress, mood, cognition</h2>
-                        <p className="text-lg text-secondary-foreground/90">Clarra connects your signals automatically</p>
+                        <h2 className="text-5xl font-bold text-secondary-foreground mb-3">
+                          See patterns across sleep, stress, mood, cognition
+                        </h2>
+                        <p className="text-lg text-secondary-foreground/90">
+                          Clarra connects your signals automatically
+                        </p>
                       </div>
                       <DialogClose className="text-secondary-foreground hover:opacity-80 flex-shrink-0">
-                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                        <svg
+                          className="w-8 h-8"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                        </svg>
                       </DialogClose>
                     </div>
-                    <p className="text-secondary-foreground/90 text-base leading-relaxed">Our AI analyzes correlations across all your health dimensions. Discover how sleep impacts mood, how stress affects cognition, and uncover connections you never noticed before.</p>
+                    <p className="text-secondary-foreground/90 text-base leading-relaxed">
+                      Our AI analyzes correlations across all your health
+                      dimensions. Discover how sleep impacts mood, how stress
+                      affects cognition, and uncover connections you never
+                      noticed before.
+                    </p>
                   </div>
                 </div>
               </DialogContent>
@@ -552,7 +686,10 @@ export default function Index() {
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="space-y-2">
                         <div className="bg-accent/30 rounded-lg px-3 py-2">
-                          <p className="text-white text-xs leading-relaxed">Your energy dips correlate with lower sleep quality. Consider a consistent bedtime.</p>
+                          <p className="text-white text-xs leading-relaxed">
+                            Your energy dips correlate with lower sleep quality.
+                            Consider a consistent bedtime.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -564,10 +701,18 @@ export default function Index() {
                         AI Insights
                       </span>
                       <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-accent-foreground hover:bg-white/30 transition">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                        <svg
+                          className="w-6 h-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                        </svg>
                       </button>
                     </div>
-                    <p className="font-serif text-accent-foreground text-lg italic font-light leading-tight">Insights that actually explain what's happening</p>
+                    <p className="font-serif text-accent-foreground text-lg italic font-light leading-tight">
+                      Insights that actually explain what's happening
+                    </p>
                   </div>
                 </div>
               </DialogTrigger>
@@ -582,14 +727,30 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-accent-foreground mb-3">Insights that actually explain what's happening</h2>
-                        <p className="text-lg text-accent-foreground/90">Clear, clinically meaningful interpretation—no generic tips</p>
+                        <h2 className="text-5xl font-bold text-accent-foreground mb-3">
+                          Insights that actually explain what's happening
+                        </h2>
+                        <p className="text-lg text-accent-foreground/90">
+                          Clear, clinically meaningful interpretation—no generic
+                          tips
+                        </p>
                       </div>
                       <DialogClose className="text-accent-foreground hover:opacity-80 flex-shrink-0">
-                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                        <svg
+                          className="w-8 h-8"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                        </svg>
                       </DialogClose>
                     </div>
-                    <p className="text-accent-foreground/90 text-base leading-relaxed">Receive insights grounded in clinical evidence. Every recommendation explains the "why"—connecting your data to meaningful health outcomes based on peer-reviewed research and your personal patterns.</p>
+                    <p className="text-accent-foreground/90 text-base leading-relaxed">
+                      Receive insights grounded in clinical evidence. Every
+                      recommendation explains the "why"—connecting your data to
+                      meaningful health outcomes based on peer-reviewed research
+                      and your personal patterns.
+                    </p>
                   </div>
                 </div>
               </DialogContent>
@@ -611,12 +772,20 @@ export default function Index() {
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="space-y-2">
                         <div className="flex gap-2 items-start">
-                          <div className="w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">✓</div>
-                          <p className="text-white text-xs">Today: Try magnesium before bed</p>
+                          <div className="w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">
+                            ✓
+                          </div>
+                          <p className="text-white text-xs">
+                            Today: Try magnesium before bed
+                          </p>
                         </div>
                         <div className="flex gap-2 items-start">
-                          <div className="w-5 h-5 rounded bg-white/20 flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">2</div>
-                          <p className="text-white text-xs">Tomorrow: 20-min morning walk</p>
+                          <div className="w-5 h-5 rounded bg-white/20 flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">
+                            2
+                          </div>
+                          <p className="text-white text-xs">
+                            Tomorrow: 20-min morning walk
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -628,10 +797,18 @@ export default function Index() {
                         Daily Guidance
                       </span>
                       <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-emerald-900 hover:bg-white/30 transition">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                        <svg
+                          className="w-6 h-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                        </svg>
                       </button>
                     </div>
-                    <p className="font-serif text-emerald-900 text-lg italic font-light leading-tight">Know what to do next</p>
+                    <p className="font-serif text-emerald-900 text-lg italic font-light leading-tight">
+                      Know what to do next
+                    </p>
                   </div>
                 </div>
               </DialogTrigger>
@@ -646,14 +823,29 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-white mb-3">Know what to do next</h2>
-                        <p className="text-lg text-white/90">Actionable steps based on your real-world patterns</p>
+                        <h2 className="text-5xl font-bold text-white mb-3">
+                          Know what to do next
+                        </h2>
+                        <p className="text-lg text-white/90">
+                          Actionable steps based on your real-world patterns
+                        </p>
                       </div>
                       <DialogClose className="text-white hover:opacity-80 flex-shrink-0">
-                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                        <svg
+                          className="w-8 h-8"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                        </svg>
                       </DialogClose>
                     </div>
-                    <p className="text-white/90 text-base leading-relaxed">Get prioritized, specific recommendations for today and beyond. Clarra translates insights into concrete steps you can take right now—tailored to your schedule, preferences, and health goals.</p>
+                    <p className="text-white/90 text-base leading-relaxed">
+                      Get prioritized, specific recommendations for today and
+                      beyond. Clarra translates insights into concrete steps you
+                      can take right now—tailored to your schedule, preferences,
+                      and health goals.
+                    </p>
                   </div>
                 </div>
               </DialogContent>
@@ -676,13 +868,22 @@ export default function Index() {
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold leading-tight mb-8">
                 Women's health
-                <span className="block text-[#fc9a53] font-serif italic font-light">deserves better.</span>
+                <span className="block text-[#fc9a53] font-serif italic font-light">
+                  deserves better.
+                </span>
               </h2>
               <p className="text-lg text-white/80 leading-relaxed mb-6">
-                Midlife can feel like a black box. Women are told their symptoms are "just stress" or "part of aging," when the reality is far more nuanced. Our bodies are changing in profound ways, and we deserve clarity, not dismissal.
+                Midlife can feel like a black box. Women are told their symptoms
+                are "just stress" or "part of aging," when the reality is far
+                more nuanced. Our bodies are changing in profound ways, and we
+                deserve clarity, not dismissal.
               </p>
               <p className="text-lg text-white/80 leading-relaxed mb-8">
-                Clarra was built to change that. By combining biomarker testing, wearable data, and conversational AI, we're creating a partner that actually understands the complexity of midlife health. Not a symptom checker. Not a generic wellness app. A real partner in your health journey.
+                Clarra was built to change that. By combining biomarker testing,
+                wearable data, and conversational AI, we're creating a partner
+                that actually understands the complexity of midlife health. Not
+                a symptom checker. Not a generic wellness app. A real partner in
+                your health journey.
               </p>
               <p className="text-base text-white/60 italic">
                 — Meghan White, Founder & CEO
@@ -709,16 +910,24 @@ export default function Index() {
             Ready to take control of your midlife health?
           </h2>
           <p className="text-xl sm:text-2xl text-foreground/70 mb-10 leading-relaxed max-w-2xl mx-auto">
-            Get personalized insights, proactive care, and a partner that stays with you every step of the way.
+            Get personalized insights, proactive care, and a partner that stays
+            with you every step of the way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-10 py-7 text-xl rounded-full shadow-xl hover:scale-105 transition-transform">
+              <Button
+                size="lg"
+                className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-10 py-7 text-xl rounded-full shadow-xl hover:scale-105 transition-transform"
+              >
                 Get Started Today
               </Button>
             </Link>
             <Link to="/how-it-works">
-              <Button variant="outline" size="lg" className="bg-transparent border-[#1f2d3a] text-[#1f2d3a] hover:bg-[#1f2d3a] hover:text-white px-10 py-7 text-xl rounded-full">
+              <Button
+                variant="outline"
+                size="lg"
+                className="bg-transparent border-[#1f2d3a] text-[#1f2d3a] hover:bg-[#1f2d3a] hover:text-white px-10 py-7 text-xl rounded-full"
+              >
                 Learn More
               </Button>
             </Link>
@@ -796,7 +1005,9 @@ function Testimonial({
           <IconStar key={i} />
         ))}
       </div>
-      <p className="text-lg text-foreground/80 mb-6 leading-relaxed">"{quote}"</p>
+      <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
+        "{quote}"
+      </p>
       <div>
         <p className="font-semibold text-foreground">{author}</p>
         <p className="text-sm text-muted-foreground">{role}</p>
@@ -819,12 +1030,18 @@ function Feature({
   return (
     <div className="group rounded-2xl border border-primary/20 bg-gradient-to-br from-white to-primary/5 p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-primary/40 hover:from-white hover:to-primary/10">
       {icon && (
-        <div className={`inline-flex h-16 w-16 items-center justify-center rounded-2xl text-white ${iconBg} shadow-lg mb-4 group-hover:scale-110 transition-transform`}>
+        <div
+          className={`inline-flex h-16 w-16 items-center justify-center rounded-2xl text-white ${iconBg} shadow-lg mb-4 group-hover:scale-110 transition-transform`}
+        >
           {icon}
         </div>
       )}
-      <h3 className="font-display text-lg font-bold text-[#1f2d3a] mb-2 group-hover:text-primary transition-colors">{title}</h3>
-      <p className="text-sm text-foreground/70 leading-relaxed">{description}</p>
+      <h3 className="font-display text-lg font-bold text-[#1f2d3a] mb-2 group-hover:text-primary transition-colors">
+        {title}
+      </h3>
+      <p className="text-sm text-foreground/70 leading-relaxed">
+        {description}
+      </p>
     </div>
   );
 }

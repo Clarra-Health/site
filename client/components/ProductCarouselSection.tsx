@@ -1,63 +1,109 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { ChevronLeft, ChevronRight, Mic, Zap, Lightbulb, Compass } from 'lucide-react';
+import { useState } from "react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Mic,
+  Zap,
+  Lightbulb,
+  Compass,
+} from "lucide-react";
 
 const features = [
   {
     id: 1,
     title: "Conversational Symptom Capture",
-    description: "Your lived experience becomes structured health insight — no tracking apps, no forms, no friction. Clarra listens to your story and translates it into actionable data.",
+    description:
+      "Your lived experience becomes structured health insight — no tracking apps, no forms, no friction. Clarra listens to your story and translates it into actionable data.",
     icon: Mic,
     shortTitle: "Symptom Capture",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=800&fit=crop",
     metrics: {
-      primary: { label: "MOOD TRACKING", value: "92", subtitle: "Positive trend" },
-      secondary: { label: "RESPONSE TIME", value: "2.3s", subtitle: "Quick analysis" }
-    }
+      primary: {
+        label: "MOOD TRACKING",
+        value: "92",
+        subtitle: "Positive trend",
+      },
+      secondary: {
+        label: "RESPONSE TIME",
+        value: "2.3s",
+        subtitle: "Quick analysis",
+      },
+    },
   },
   {
     id: 2,
     title: "Pattern Intelligence",
-    description: "Clarra finds relationships across sleep, stress, mood, cognition, and temperature changes that no wearable or lab test can see. Discover the hidden connections shaping your midlife.",
+    description:
+      "Clarra finds relationships across sleep, stress, mood, cognition, and temperature changes that no wearable or lab test can see. Discover the hidden connections shaping your midlife.",
     icon: Zap,
     shortTitle: "Pattern Intelligence",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=800&fit=crop",
     metrics: {
       primary: { label: "SLEEP SCORE", value: "86", subtitle: "Optimal rest" },
-      secondary: { label: "BODY TEMP", value: "+1.8°F", subtitle: "Normal range" }
-    }
+      secondary: {
+        label: "BODY TEMP",
+        value: "+1.8°F",
+        subtitle: "Normal range",
+      },
+    },
   },
   {
     id: 3,
     title: "AI Insights",
-    description: "Personalized interpretations of your health patterns delivered in plain language. Understand not just what's happening, but why — and what it means for you.",
+    description:
+      "Personalized interpretations of your health patterns delivered in plain language. Understand not just what's happening, but why — and what it means for you.",
     icon: Lightbulb,
     shortTitle: "AI Insights",
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&h=800&fit=crop",
     metrics: {
       primary: { label: "INSIGHTS", value: "7", subtitle: "New findings" },
-      secondary: { label: "ACCURACY", value: "94%", subtitle: "High confidence" }
+      secondary: {
+        label: "ACCURACY",
+        value: "94%",
+        subtitle: "High confidence",
+      },
     },
-    insight: "Elevated cortisol during sleep disruption suggests hormonal transition. Consistent sleep timing and magnesium support can help regulate your cycle."
+    insight:
+      "Elevated cortisol during sleep disruption suggests hormonal transition. Consistent sleep timing and magnesium support can help regulate your cycle.",
   },
   {
     id: 4,
     title: "Personalized Guidance",
-    description: "Clear, actionable next steps tailored to your unique patterns and preferences. Get recommendations that actually fit your life, not generic advice.",
+    description:
+      "Clear, actionable next steps tailored to your unique patterns and preferences. Get recommendations that actually fit your life, not generic advice.",
     icon: Compass,
     shortTitle: "Personalized Guidance",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=800&fit=crop",
     metrics: {
-      primary: { label: "RECOMMENDATIONS", value: "5", subtitle: "Personalized" },
-      secondary: { label: "SUCCESS RATE", value: "88%", subtitle: "Following advice" }
+      primary: {
+        label: "RECOMMENDATIONS",
+        value: "5",
+        subtitle: "Personalized",
+      },
+      secondary: {
+        label: "SUCCESS RATE",
+        value: "88%",
+        subtitle: "Following advice",
+      },
     },
     guidance: [
       { label: "Today: Prioritize consistent sleep schedule", status: "today" },
-      { label: "Tomorrow: Add 30-min evening walk for stress relief", status: "upcoming" },
-      { label: "This week: Schedule vitamin D and iron labs", status: "upcoming" }
-    ]
-  }
+      {
+        label: "Tomorrow: Add 30-min evening walk for stress relief",
+        status: "upcoming",
+      },
+      {
+        label: "This week: Schedule vitamin D and iron labs",
+        status: "upcoming",
+      },
+    ],
+  },
 ];
 
 export default function ProductCarouselSection() {
@@ -89,8 +135,8 @@ export default function ProductCarouselSection() {
               onClick={() => setCurrentIndex(index)}
               className={`whitespace-nowrap font-semibold text-sm md:text-base transition-all duration-300 pb-4 border-b-2 ${
                 index === currentIndex
-                  ? 'text-white border-white'
-                  : 'text-white/50 border-transparent hover:text-white/70'
+                  ? "text-white border-white"
+                  : "text-white/50 border-transparent hover:text-white/70"
               }`}
             >
               {feature.shortTitle}
@@ -104,7 +150,10 @@ export default function ProductCarouselSection() {
           <div className="flex flex-col justify-center space-y-10">
             {/* Icon */}
             <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white/10 border border-white/20">
-              <IconComponent className="w-10 h-10 text-white" strokeWidth={1.5} />
+              <IconComponent
+                className="w-10 h-10 text-white"
+                strokeWidth={1.5}
+              />
             </div>
 
             {/* Title */}
@@ -125,15 +174,15 @@ export default function ProductCarouselSection() {
               >
                 <ChevronLeft className="h-6 w-6" />
               </button>
-              
+
               <div className="flex gap-2">
                 {features.map((_, index) => (
                   <div
                     key={index}
                     className={`transition-all duration-300 ${
                       index === currentIndex
-                        ? 'h-1.5 w-8 bg-white rounded'
-                        : 'h-1.5 w-2 bg-white/30 rounded'
+                        ? "h-1.5 w-8 bg-white rounded"
+                        : "h-1.5 w-2 bg-white/30 rounded"
                     }`}
                   />
                 ))}
@@ -169,43 +218,92 @@ export default function ProductCarouselSection() {
                     {/* User Message 1 */}
                     <div className="flex justify-end">
                       <div className="bg-white/20 backdrop-blur rounded-2xl rounded-tr-lg px-4 py-3 max-w-xs">
-                        <p className="text-white text-sm">How's your sleep lately?</p>
+                        <p className="text-white text-sm">
+                          How's your sleep lately?
+                        </p>
                       </div>
                     </div>
 
                     {/* User Message 2 */}
                     <div className="flex justify-end">
                       <div className="bg-white/20 backdrop-blur rounded-2xl rounded-tr-lg px-4 py-3 max-w-xs">
-                        <p className="text-white text-sm">Been struggling, feeling foggy during the day</p>
+                        <p className="text-white text-sm">
+                          Been struggling, feeling foggy during the day
+                        </p>
                       </div>
                     </div>
 
                     {/* Clarra Message with Graph */}
                     <div className="flex justify-start">
                       <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl rounded-tl-lg p-4 max-w-xs shadow-lg">
-                        <p className="text-white text-xs font-semibold mb-3">I've noticed a pattern in your sleep:</p>
-                        <svg className="w-full h-16 mb-3" viewBox="0 0 200 60" preserveAspectRatio="none">
+                        <p className="text-white text-xs font-semibold mb-3">
+                          I've noticed a pattern in your sleep:
+                        </p>
+                        <svg
+                          className="w-full h-16 mb-3"
+                          viewBox="0 0 200 60"
+                          preserveAspectRatio="none"
+                        >
                           <defs>
-                            <linearGradient id="sleepGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                              <stop offset="0%" stopColor="#4fb7b3" stopOpacity="0.3" />
-                              <stop offset="100%" stopColor="#4fb7b3" stopOpacity="0" />
+                            <linearGradient
+                              id="sleepGrad"
+                              x1="0%"
+                              y1="0%"
+                              x2="0%"
+                              y2="100%"
+                            >
+                              <stop
+                                offset="0%"
+                                stopColor="#4fb7b3"
+                                stopOpacity="0.3"
+                              />
+                              <stop
+                                offset="100%"
+                                stopColor="#4fb7b3"
+                                stopOpacity="0"
+                              />
                             </linearGradient>
                           </defs>
                           {/* Sleep quality line chart */}
-                          <polyline points="10,45 30,38 50,42 70,35 90,40 110,28 130,32 150,25 170,35 190,20" fill="none" stroke="#4fb7b3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                          <polyline
+                            points="10,45 30,38 50,42 70,35 90,40 110,28 130,32 150,25 170,35 190,20"
+                            fill="none"
+                            stroke="#4fb7b3"
+                            strokeWidth="3"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
                           {/* Filled area under line */}
-                          <polygon points="10,45 30,38 50,42 70,35 90,40 110,28 130,32 150,25 170,35 190,20 190,60 10,60" fill="url(#sleepGrad)" />
+                          <polygon
+                            points="10,45 30,38 50,42 70,35 90,40 110,28 130,32 150,25 170,35 190,20 190,60 10,60"
+                            fill="url(#sleepGrad)"
+                          />
                           {/* Baseline */}
-                          <line x1="10" y1="50" x2="190" y2="50" stroke="white" strokeWidth="1" strokeDasharray="4" opacity="0.3" />
+                          <line
+                            x1="10"
+                            y1="50"
+                            x2="190"
+                            y2="50"
+                            stroke="white"
+                            strokeWidth="1"
+                            strokeDasharray="4"
+                            opacity="0.3"
+                          />
                         </svg>
-                        <p className="text-white text-xs">Consistent decline through the week. Let's explore why.</p>
+                        <p className="text-white text-xs">
+                          Consistent decline through the week. Let's explore
+                          why.
+                        </p>
                       </div>
                     </div>
 
                     {/* Clarra Message 2 */}
                     <div className="flex justify-start">
                       <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl rounded-tl-lg px-4 py-3 max-w-xs">
-                        <p className="text-white text-sm">Your sleep timing and caffeine intake might be connected. Can we dig deeper?</p>
+                        <p className="text-white text-sm">
+                          Your sleep timing and caffeine intake might be
+                          connected. Can we dig deeper?
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -232,9 +330,7 @@ export default function ProductCarouselSection() {
                       <p className="text-xs font-semibold text-emerald-200/70 uppercase tracking-wider mb-2">
                         Correlations Found
                       </p>
-                      <p className="text-4xl font-bold text-white mb-1">
-                        7
-                      </p>
+                      <p className="text-4xl font-bold text-white mb-1">7</p>
                       <p className="text-sm text-emerald-100/60">
                         Connected patterns
                       </p>
@@ -244,25 +340,63 @@ export default function ProductCarouselSection() {
                   {/* Bottom - Correlation Graph */}
                   <div className="flex justify-center">
                     <div className="bg-gradient-to-br from-slate-900/60 to-slate-950/60 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-xl max-w-md w-full">
-                      <p className="text-white text-sm font-semibold uppercase tracking-wider mb-6 text-center">Sleep vs Mood Correlation</p>
+                      <p className="text-white text-sm font-semibold uppercase tracking-wider mb-6 text-center">
+                        Sleep vs Mood Correlation
+                      </p>
 
                       {/* Correlation Graph */}
-                      <svg className="w-full h-48 mb-6" viewBox="0 0 220 120" preserveAspectRatio="xMidYMid meet">
+                      <svg
+                        className="w-full h-48 mb-6"
+                        viewBox="0 0 220 120"
+                        preserveAspectRatio="xMidYMid meet"
+                      >
                         <defs>
-                          <linearGradient id="correlationGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stopColor="#4fb7b3" stopOpacity="0.3" />
-                            <stop offset="100%" stopColor="#4fb7b3" stopOpacity="0.05" />
+                          <linearGradient
+                            id="correlationGrad"
+                            x1="0%"
+                            y1="0%"
+                            x2="0%"
+                            y2="100%"
+                          >
+                            <stop
+                              offset="0%"
+                              stopColor="#4fb7b3"
+                              stopOpacity="0.3"
+                            />
+                            <stop
+                              offset="100%"
+                              stopColor="#4fb7b3"
+                              stopOpacity="0.05"
+                            />
                           </linearGradient>
                         </defs>
 
                         {/* Main correlation line (Sleep) */}
-                        <polyline points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110" fill="none" stroke="#4fb7b3" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <polyline
+                          points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110"
+                          fill="none"
+                          stroke="#4fb7b3"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
 
                         {/* Secondary correlation line (Mood) */}
-                        <polyline points="15,85 35,65 55,45 75,50 95,60 115,55 135,45 155,35 175,45 195,55" fill="none" stroke="#fc9a53" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="4 4" />
+                        <polyline
+                          points="15,85 35,65 55,45 75,50 95,60 115,55 135,45 155,35 175,45 195,55"
+                          fill="none"
+                          stroke="#fc9a53"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeDasharray="4 4"
+                        />
 
                         {/* Fill under line */}
-                        <polygon points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110 195,115 15,115" fill="url(#correlationGrad)" />
+                        <polygon
+                          points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110 195,115 15,115"
+                          fill="url(#correlationGrad)"
+                        />
 
                         {/* Key points */}
                         <circle cx="35" cy="75" r="4" fill="#56d257" />
@@ -270,7 +404,16 @@ export default function ProductCarouselSection() {
                         <circle cx="175" cy="100" r="4" fill="#56d257" />
 
                         {/* Baseline */}
-                        <line x1="10" y1="105" x2="200" y2="105" stroke="white" strokeWidth="1" strokeDasharray="3" opacity="0.2" />
+                        <line
+                          x1="10"
+                          y1="105"
+                          x2="200"
+                          y2="105"
+                          stroke="white"
+                          strokeWidth="1"
+                          strokeDasharray="3"
+                          opacity="0.2"
+                        />
                       </svg>
 
                       <div className="flex items-center justify-between text-sm">
@@ -284,7 +427,9 @@ export default function ProductCarouselSection() {
                             <span className="text-white/70">Mood</span>
                           </div>
                         </div>
-                        <span className="text-white font-semibold">73% Correlation</span>
+                        <span className="text-white font-semibold">
+                          73% Correlation
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -306,15 +451,22 @@ export default function ProductCarouselSection() {
                 {/* Guidance Steps Container */}
                 <div className="relative z-10 flex flex-col justify-end h-full p-6 md:p-8 gap-3">
                   {currentFeature.guidance.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-3 bg-white/10 backdrop-blur-md rounded-lg px-4 py-3 border border-white/10">
-                      <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-white font-bold text-sm ${
-                        item.status === 'today'
-                          ? 'bg-gradient-to-br from-orange-500 to-orange-600'
-                          : 'bg-gradient-to-br from-slate-600 to-slate-700'
-                      }`}>
-                        {item.status === 'today' ? '✓' : idx + 1}
+                    <div
+                      key={idx}
+                      className="flex items-start gap-3 bg-white/10 backdrop-blur-md rounded-lg px-4 py-3 border border-white/10"
+                    >
+                      <div
+                        className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-white font-bold text-sm ${
+                          item.status === "today"
+                            ? "bg-gradient-to-br from-orange-500 to-orange-600"
+                            : "bg-gradient-to-br from-slate-600 to-slate-700"
+                        }`}
+                      >
+                        {item.status === "today" ? "✓" : idx + 1}
                       </div>
-                      <p className="text-white text-sm leading-snug">{item.label}</p>
+                      <p className="text-white text-sm leading-snug">
+                        {item.label}
+                      </p>
                     </div>
                   ))}
                   <div className="h-1 bg-gradient-to-r from-orange-500 to-orange-400 rounded-full mt-2" />
@@ -409,7 +561,6 @@ export default function ProductCarouselSection() {
             )}
           </div>
         </div>
-
       </div>
     </section>
   );

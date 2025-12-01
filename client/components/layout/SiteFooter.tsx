@@ -12,7 +12,9 @@ export default function SiteFooter() {
                 Let's talk.
               </h3>
               <p className="text-base sm:text-lg text-foreground/70 leading-relaxed mb-6">
-                Investors, researchers, media, builders — we'd love to connect. We're forming partnerships to bring Clarra to life, and no question is too small.
+                Investors, researchers, media, builders — we'd love to connect.
+                We're forming partnerships to bring Clarra to life, and no
+                question is too small.
               </p>
               <p className="text-base text-foreground/70">
                 <a
@@ -33,7 +35,7 @@ export default function SiteFooter() {
             </div>
           </div>
         )}
-        
+
         <div className="grid grid-cols-2 gap-12 md:grid-cols-4 mb-16">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
@@ -44,10 +46,11 @@ export default function SiteFooter() {
               />
             </div>
             <p className="text-sm text-foreground/60 leading-relaxed">
-              AI-native digital health for midlife care: personalized support for perimenopause and menopause by Clarra.
+              AI-native digital health for midlife care: personalized support
+              for perimenopause and menopause by Clarra.
             </p>
           </div>
-          
+
           <div>
             <p className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4 opacity-60">
               Product
@@ -70,20 +73,26 @@ export default function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-sm text-foreground/70 hover:text-primary transition">
+                <Link
+                  to="/about"
+                  className="text-sm text-foreground/70 hover:text-primary transition"
+                >
                   Meet Clarra
                 </Link>
               </li>
             </ul>
           </div>
-          
+
           <div>
             <p className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4 opacity-60">
               Company
             </p>
             <ul className="space-y-3">
               <li>
-                <Link to="/about" className="text-sm text-foreground/70 hover:text-primary transition">
+                <Link
+                  to="/about"
+                  className="text-sm text-foreground/70 hover:text-primary transition"
+                >
                   About
                 </Link>
               </li>
@@ -96,17 +105,21 @@ export default function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-foreground/70 hover:text-primary transition">
+                <Link
+                  to="/contact"
+                  className="text-sm text-foreground/70 hover:text-primary transition"
+                >
                   Contact
                 </Link>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-border pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <p className="text-xs text-foreground/50">
-            © {new Date().getFullYear()} Clarra Health, Inc. All rights reserved.
+            © {new Date().getFullYear()} Clarra Health, Inc. All rights
+            reserved.
           </p>
           <Link
             to="/how-we-protect-your-data"
