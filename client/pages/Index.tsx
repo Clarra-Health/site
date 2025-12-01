@@ -231,12 +231,7 @@ export default function Index() {
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
                       <div className="space-y-2">
                         <div className="flex gap-2 items-start">
-                          <svg className="w-8 h-8 flex-shrink-0" viewBox="0 0 100 100" fill="none">
-                            <circle cx="50" cy="35" r="20" fill="#56d257"/>
-                            <circle cx="30" cy="65" r="20" fill="#b9e3e2"/>
-                            <circle cx="70" cy="65" r="20" fill="#b9e3e2"/>
-                            <circle cx="50" cy="75" r="18" fill="#4fb7b3"/>
-                          </svg>
+                          <div className="w-8 h-8 rounded-full bg-primary flex-shrink-0"></div>
                           <div className="flex-1">
                             <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block">How's your sleep been?</p>
                           </div>
@@ -245,12 +240,7 @@ export default function Index() {
                           <div className="flex-1">
                             <p className="text-white text-xs bg-primary/40 rounded-lg px-2 py-1 text-right inline-block">Better this week</p>
                           </div>
-                          <svg className="w-8 h-8 flex-shrink-0" viewBox="0 0 100 100" fill="none">
-                            <circle cx="50" cy="35" r="20" fill="#56d257"/>
-                            <circle cx="30" cy="65" r="20" fill="#b9e3e2"/>
-                            <circle cx="70" cy="65" r="20" fill="#b9e3e2"/>
-                            <circle cx="50" cy="75" r="18" fill="#4fb7b3"/>
-                          </svg>
+                          <div className="w-8 h-8 rounded-full bg-secondary flex-shrink-0"></div>
                         </div>
                       </div>
                     </div>
