@@ -258,7 +258,7 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
                 {/* Cycle Tracker Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-3 z-20">
+                <div className="absolute bottom-0 left-0 right-0 p-3 z-20 backdrop-blur-sm">
                   <div className="flex gap-1 flex-wrap justify-center">
                     {[1,2,3,4,5,6,7].map((i) => (
                       <div key={i} className="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold" style={{
