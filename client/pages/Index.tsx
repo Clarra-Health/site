@@ -367,7 +367,7 @@ export default function Index() {
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9a9ed01d4a7047f2a11b8c75b2b5a097?format=webp&width=800"
                       alt="Personalized Insights"
-                      className="absolute inset-0 w-full h-full object-cover scale-[1.25] transition-transform duration-300 group-hover:scale-[1.3]"
+                      className="absolute inset-0 w-full h-full object-cover scale-[1.5] transition-transform duration-300 group-hover:scale-[1.56]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
