@@ -615,7 +615,7 @@ export default function Index() {
                 </div>
               </div>
               <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
-                Personalized Nutrition Guidance
+                Cognitive & Emotional Clarity
               </h3>
             </div>
 
