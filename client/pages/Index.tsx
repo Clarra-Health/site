@@ -265,6 +265,36 @@ export default function Index() {
 
 
 
+      {/* New Section from Screenshot */}
+      <section className="py-24 bg-white">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-1">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-square lg:aspect-auto lg:h-[600px]">
+                <img
+                  src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80"
+                  alt="New section image"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div className="order-2">
+              <h2 className="font-display text-4xl sm:text-5xl font-bold text-[#1f2d3a] mb-6 leading-tight">
+                [Headline from screenshot]
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                [Body text from screenshot. Please provide the text you'd like to appear here.]
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-14 text-lg rounded-full">
+                  Get Started
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Core capabilities - New section above Support at Every Stage */}
       <section className="relative py-12">
         <div className="container">
