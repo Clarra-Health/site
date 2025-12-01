@@ -347,32 +347,23 @@ export default function Index() {
               </DialogContent>
             </Dialog>
 
-            {/* Stress Card */}
+            {/* Personalized, Contextual Insights Card */}
             <Dialog>
               <DialogTrigger asChild>
                 <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
                   <div className="relative overflow-hidden flex-[2]">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4cc404f3fb3249c4a7bd17e00ebc5f27?format=webp&width=800"
-                      alt="Stress Management"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9a9ed01d4a7047f2a11b8c75b2b5a097?format=webp&width=800"
+                      alt="Personalized Insights"
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-                    {/* Stress Metrics Overlay */}
+                    {/* Insight Bubble Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
-                      <div className="flex justify-around">
-                        <div className="text-center">
-                          <p className="text-white text-xl font-bold">68%</p>
-                          <p className="text-white text-xs">Energy</p>
-                        </div>
-                        <div className="text-center">
-                          <p className="text-white text-xl font-bold">85%</p>
-                          <p className="text-white text-xs">Focus</p>
-                        </div>
-                        <div className="text-center">
-                          <p className="text-white text-xl font-bold">42%</p>
-                          <p className="text-white text-xs">Stress</p>
+                      <div className="space-y-2">
+                        <div className="bg-accent/30 rounded-lg px-3 py-2">
+                          <p className="text-white text-xs leading-relaxed">Your energy dips correlate with lower sleep quality. Consider a consistent bedtime.</p>
                         </div>
                       </div>
                     </div>
@@ -381,51 +372,35 @@ export default function Index() {
                   <div className="relative z-10 bg-accent p-6">
                     <div className="flex justify-between items-start mb-4">
                       <span className="text-accent-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
-                        Stress
+                        AI Insights
                       </span>
                       <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-accent-foreground hover:bg-white/30 transition">
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
                       </button>
                     </div>
-                    <p className="font-serif text-accent-foreground text-lg italic font-light leading-tight">Quantify how your body is feeling</p>
+                    <p className="font-serif text-accent-foreground text-lg italic font-light leading-tight">Insights that actually explain what's happening</p>
                   </div>
                 </div>
               </DialogTrigger>
               <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
                 <div className="relative w-full rounded-3xl overflow-hidden">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4cc404f3fb3249c4a7bd17e00ebc5f27?format=webp&width=1000"
-                    alt="Stress Management"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9a9ed01d4a7047f2a11b8c75b2b5a097?format=webp&width=1000"
+                    alt="Personalized Insights"
                     className="w-full h-96 object-cover blur-sm opacity-40"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-accent via-accent/80 to-accent/60" />
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-accent-foreground mb-3">Stress Management</h2>
-                        <p className="text-lg text-accent-foreground/90">Monitor stress levels and optimize your wellbeing</p>
+                        <h2 className="text-5xl font-bold text-accent-foreground mb-3">Insights that actually explain what's happening</h2>
+                        <p className="text-lg text-accent-foreground/90">Clear, clinically meaningful interpretation—no generic tips</p>
                       </div>
                       <DialogClose className="text-accent-foreground hover:opacity-80 flex-shrink-0">
                         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
                       </DialogClose>
                     </div>
-                    <div className="space-y-6">
-                      <div className="grid grid-cols-3 gap-6">
-                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
-                          <p className="text-accent-foreground/75 text-base mb-2">Energy</p>
-                          <p className="text-4xl font-bold text-accent-foreground">68%</p>
-                        </div>
-                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
-                          <p className="text-accent-foreground/75 text-base mb-2">Focus</p>
-                          <p className="text-4xl font-bold text-accent-foreground">85%</p>
-                        </div>
-                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
-                          <p className="text-accent-foreground/75 text-base mb-2">Stress</p>
-                          <p className="text-4xl font-bold text-accent-foreground">42%</p>
-                        </div>
-                      </div>
-                      <p className="text-accent-foreground/90 text-base leading-relaxed">Track your energy, focus, and stress levels throughout the day. Get actionable insights and personalized recommendations to reduce stress and improve your overall wellbeing.</p>
-                    </div>
+                    <p className="text-accent-foreground/90 text-base leading-relaxed">Receive insights grounded in clinical evidence. Every recommendation explains the "why"—connecting your data to meaningful health outcomes based on peer-reviewed research and your personal patterns.</p>
                   </div>
                 </div>
               </DialogContent>
