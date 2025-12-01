@@ -173,12 +173,12 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="group relative p-6 rounded-2xl bg-gradient-to-br from-blue-500/5 to-primary/5 border border-blue-400/10 hover:border-blue-400/30 transition-all duration-300 hover:shadow-lg">
-                  <div className="absolute -top-3 -right-3 h-6 w-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="group relative p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
+                  <div className="absolute -top-3 -right-3 h-6 w-6 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">
                     ✓
                   </div>
                   <div className="flex gap-4">
-                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shrink-0 text-white shadow-lg">
+                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shrink-0 text-white shadow-lg">
                       <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
                       </svg>
