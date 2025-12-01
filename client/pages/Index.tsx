@@ -79,6 +79,14 @@ export default function Index() {
                       loading="eager"
                     />
                   </div>
+                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[4/3]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F97825b00a3d1450281c7bbf01263a153?format=webp&width=800"
+                      alt="Community"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                      loading="eager"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
