@@ -132,7 +132,7 @@ export default function Index() {
               <div className="flex justify-center lg:justify-start relative">
                 <div className="relative inline-block">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F697e624f98a54afdbafa72a5d6333685?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9fb0c4cad14c482dac22f89276880946?format=webp&width=800"
                     alt="Clarra app showcasing sleep tracking and AI assistant"
                     className="w-full max-w-sm drop-shadow-2xl"
                   />
