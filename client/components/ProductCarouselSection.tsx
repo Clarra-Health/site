@@ -9,28 +9,48 @@ const features = [
     title: "Conversational Symptom Capture",
     description: "Your lived experience becomes structured health insight — no tracking apps, no forms, no friction. Clarra listens to your story and translates it into actionable data.",
     icon: Mic,
-    shortTitle: "Symptom Capture"
+    shortTitle: "Symptom Capture",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=800&fit=crop",
+    metrics: {
+      primary: { label: "MOOD TRACKING", value: "92", subtitle: "Positive trend" },
+      secondary: { label: "RESPONSE TIME", value: "2.3s", subtitle: "Quick analysis" }
+    }
   },
   {
     id: 2,
     title: "Pattern Intelligence",
     description: "Clarra finds relationships across sleep, stress, mood, cognition, and temperature changes that no wearable or lab test can see. Discover the hidden connections shaping your midlife.",
     icon: Zap,
-    shortTitle: "Pattern Intelligence"
+    shortTitle: "Pattern Intelligence",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=800&fit=crop",
+    metrics: {
+      primary: { label: "SLEEP SCORE", value: "86", subtitle: "Optimal rest" },
+      secondary: { label: "BODY TEMP", value: "+1.8°F", subtitle: "Normal range" }
+    }
   },
   {
     id: 3,
     title: "AI Insights",
     description: "Personalized interpretations of your health patterns delivered in plain language. Understand not just what's happening, but why — and what it means for you.",
     icon: Lightbulb,
-    shortTitle: "AI Insights"
+    shortTitle: "AI Insights",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop",
+    metrics: {
+      primary: { label: "INSIGHTS", value: "7", subtitle: "New findings" },
+      secondary: { label: "ACCURACY", value: "94%", subtitle: "High confidence" }
+    }
   },
   {
     id: 4,
     title: "Personalized Guidance",
     description: "Clear, actionable next steps tailored to your unique patterns and preferences. Get recommendations that actually fit your life, not generic advice.",
     icon: Compass,
-    shortTitle: "Personalized Guidance"
+    shortTitle: "Personalized Guidance",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=800&fit=crop",
+    metrics: {
+      primary: { label: "RECOMMENDATIONS", value: "5", subtitle: "Personalized" },
+      secondary: { label: "SUCCESS RATE", value: "88%", subtitle: "Following advice" }
+    }
   }
 ];
 
