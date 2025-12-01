@@ -193,7 +193,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="text-right mt-16">
+            <div className="text-left mt-16">
               <Link to="/about">
                 <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-12 h-14 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                   Experience Clarra
