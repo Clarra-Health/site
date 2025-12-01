@@ -404,12 +404,12 @@ export default function Index() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div className="order-first lg:order-first flex justify-center lg:justify-start items-center -ml-full lg:-ml-96">
-              <div className="w-full h-auto">
+            <div className="order-first lg:order-first flex justify-center lg:justify-start items-center">
+              <div className="w-full h-auto max-w-xs">
                 <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc9f5883300134c1790f17441286b029a?format=webp&width=800"
                 alt="Clarra app mockup"
-                className="w-full h-auto scale-[2] origin-left"
+                className="w-full h-auto"
               />
               </div>
             </div>
