@@ -445,41 +445,79 @@ export default function Index() {
             </Dialog>
 
             {/* Personal Insights Card */}
-            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
-              <div className="relative overflow-hidden flex-[2]">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F079c308ae6b842d3930759bba6ba2867?format=webp&width=800"
-                  alt="Personalized Insights"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
+                  <div className="relative overflow-hidden flex-[2]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F079c308ae6b842d3930759bba6ba2867?format=webp&width=800"
+                      alt="Personalized Insights"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-                {/* Data Visualization Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
-                  <div className="flex gap-2 justify-between items-end">
-                    {[{label: 'Energy', value: 85}, {label: 'Sleep', value: 72}, {label: 'Stress', value: 42}, {label: 'Mood', value: 68}, {label: 'Activity', value: 91}].map((item, i) => (
-                      <div key={i} className="flex flex-col items-center flex-1 gap-1">
-                        <div className="w-2 rounded-t transition-all" style={{ height: `${item.value/2}px`, backgroundColor: ['#4fb7b3', '#7cc9a2', '#fc9a53', '#b9e3e2', '#4fb7b3'][i] }}></div>
-                        <p className="text-white text-xs font-semibold">{item.value}%</p>
-                        <p className="text-white text-[0.65rem] opacity-75">{item.label}</p>
+                    {/* Data Visualization Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
+                      <div className="flex gap-2 justify-between items-end">
+                        {[{label: 'Energy', value: 85}, {label: 'Sleep', value: 72}, {label: 'Stress', value: 42}, {label: 'Mood', value: 68}, {label: 'Activity', value: 91}].map((item, i) => (
+                          <div key={i} className="flex flex-col items-center flex-1 gap-1">
+                            <div className="w-2 rounded-t transition-all" style={{ height: `${item.value/2}px`, backgroundColor: ['#4fb7b3', '#7cc9a2', '#fc9a53', '#b9e3e2', '#4fb7b3'][i] }}></div>
+                            <p className="text-white text-xs font-semibold">{item.value}%</p>
+                            <p className="text-white text-[0.65rem] opacity-75">{item.label}</p>
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    </div>
+                  </div>
+
+                  <div className="relative z-10 bg-destructive p-6">
+                    <div className="flex justify-between items-start mb-4">
+                      <span className="text-destructive-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                        Personal Insights
+                      </span>
+                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-destructive-foreground hover:bg-white/30 transition">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                      </button>
+                    </div>
+                    <p className="font-serif text-destructive-foreground text-lg italic font-light leading-tight">Get personalized insights tailored for you</p>
                   </div>
                 </div>
-              </div>
-
-              <div className="relative z-10 bg-destructive p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <span className="text-destructive-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
-                    Personal Insights
-                  </span>
-                  <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-destructive-foreground hover:bg-white/30 transition">
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-                  </button>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-2xl overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F079c308ae6b842d3930759bba6ba2867?format=webp&width=1000"
+                    alt="Personalized Insights"
+                    className="w-full h-64 object-cover blur-sm opacity-40"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-destructive via-destructive/80 to-destructive/60" />
+                  <div className="absolute inset-0 p-8 flex flex-col justify-between">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h2 className="text-3xl font-bold text-destructive-foreground mb-2">Personal Insights</h2>
+                        <p className="text-destructive-foreground/90">AI-powered recommendations tailored to your health</p>
+                      </div>
+                      <DialogClose className="text-destructive-foreground hover:opacity-80">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      </DialogClose>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
+                          <p className="text-destructive-foreground/75 text-sm">Insights This Week</p>
+                          <p className="text-2xl font-bold text-destructive-foreground">7</p>
+                        </div>
+                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
+                          <p className="text-destructive-foreground/75 text-sm">Actions Taken</p>
+                          <p className="text-2xl font-bold text-destructive-foreground">5</p>
+                        </div>
+                      </div>
+                      <p className="text-destructive-foreground/90 text-sm">Receive AI-powered recommendations based on your unique health data. Get personalized advice on nutrition, exercise, sleep, and wellness strategies designed specifically for your needs.</p>
+                    </div>
+                  </div>
                 </div>
-                <p className="font-serif text-destructive-foreground text-lg italic font-light leading-tight">Get personalized insights tailored for you</p>
-              </div>
-            </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </section>
