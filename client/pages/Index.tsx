@@ -404,11 +404,11 @@ export default function Index() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div className="flex justify-center lg:justify-end items-center">
+            <div className="flex justify-center lg:justify-start items-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc9f5883300134c1790f17441286b029a?format=webp&width=800"
                 alt="Clarra app mockup"
-                className="w-4/5 h-auto"
+                className="w-full h-auto"
               />
             </div>
             <div>
