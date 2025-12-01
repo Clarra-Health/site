@@ -753,13 +753,12 @@ export default function Index() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-24 bg-[#1f2d3a] text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+      <section className="py-24 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative overflow-hidden">
         <div className="container relative z-10 text-center max-w-4xl mx-auto">
-          <h2 className="font-display text-5xl sm:text-6xl font-bold mb-6 tracking-tight">
+          <h2 className="font-display text-5xl sm:text-6xl font-bold mb-6 tracking-tight text-[#1f2d3a]">
             Ready to take control of your midlife health?
           </h2>
-          <p className="text-xl sm:text-2xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl sm:text-2xl text-foreground/70 mb-10 leading-relaxed max-w-2xl mx-auto">
             Get personalized insights, proactive care, and a partner that stays with you every step of the way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
