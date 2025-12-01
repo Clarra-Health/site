@@ -363,7 +363,7 @@ export default function Index() {
                 className="w-full h-auto scale-[2.5]"
               />
             </div>
-            <div className="mt-12 lg:mt-0">
+            <div className="mt-24 lg:mt-0">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
                 Insights That Matter
               </p>
