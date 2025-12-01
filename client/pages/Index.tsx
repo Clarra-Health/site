@@ -299,13 +299,13 @@ export default function Index() {
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="h-full flex flex-col justify-between">
                         <svg className="w-full h-12" viewBox="0 0 200 50" preserveAspectRatio="none">
-                          {/* Sleep line */}
-                          <polyline points="0,35 30,15 60,28 90,12 120,25 150,18 200,30" fill="none" stroke="#4fb7b3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                          {/* Brain fog line */}
-                          <polyline points="0,20 30,32 60,18 90,28 120,15 150,26 200,20" fill="none" stroke="#fc9a53" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                          {/* Sleep line - smooth curve */}
+                          <path d="M 0,32 Q 50,8 100,24 T 200,28" fill="none" stroke="#4fb7b3" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                          {/* Brain fog line - smooth curve */}
+                          <path d="M 0,18 Q 50,38 100,22 T 200,18" fill="none" stroke="#fc9a53" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                           {/* Intersection points */}
-                          <circle cx="60" cy="23" r="3" fill="#56d257" opacity="0.9" />
-                          <circle cx="120" cy="20" r="3" fill="#56d257" opacity="0.9" />
+                          <circle cx="65" cy="24" r="2.5" fill="#56d257" />
+                          <circle cx="135" cy="22" r="2.5" fill="#56d257" />
                         </svg>
                         <div className="flex justify-between items-center text-white px-1">
                           <div className="flex items-center gap-1">
