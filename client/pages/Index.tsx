@@ -337,11 +337,13 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
                 {/* Data Visualization Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-2 z-20">
-                  <div className="flex gap-1 justify-between">
-                    {[45, 62, 38, 75, 55].map((h, i) => (
-                      <div key={i} className="flex flex-col items-center flex-1">
-                        <div className="w-1.5 rounded-t" style={{ height: `${h/3}px`, backgroundColor: ['#ff6b6b', '#4fb7b3', '#ff9f43', '#5f27cd', '#00d2d3'][i] }}></div>
+                <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
+                  <div className="flex gap-2 justify-between items-end">
+                    {[{label: 'Energy', value: 85}, {label: 'Sleep', value: 72}, {label: 'Stress', value: 42}, {label: 'Mood', value: 68}, {label: 'Activity', value: 91}].map((item, i) => (
+                      <div key={i} className="flex flex-col items-center flex-1 gap-1">
+                        <div className="w-2 rounded-t transition-all" style={{ height: `${item.value/2}px`, backgroundColor: ['#4fb7b3', '#7cc9a2', '#fc9a53', '#b9e3e2', '#4fb7b3'][i] }}></div>
+                        <p className="text-white text-xs font-semibold">{item.value}%</p>
+                        <p className="text-white text-[0.65rem] opacity-75">{item.label}</p>
                       </div>
                     ))}
                   </div>
