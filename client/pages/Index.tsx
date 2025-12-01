@@ -49,11 +49,11 @@ export default function Index() {
               />
 
               {/* App Mockups Overlay - Large and positioned to match reference */}
-              <div className="absolute inset-0 flex items-end justify-end pr-0 pb-0 overflow-hidden rounded-3xl">
+              <div className="absolute inset-0 overflow-hidden rounded-3xl pointer-events-none">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1481f9ea7add407ca9a17c90d9698254?format=webp&width=800"
                   alt="Clarra app mockups"
-                  className="h-[110%] w-auto object-contain translate-y-[10%] translate-x-[10%] drop-shadow-2xl"
+                  className="absolute -bottom-[5%] -right-[5%] w-[85%] md:w-[80%] h-auto object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
