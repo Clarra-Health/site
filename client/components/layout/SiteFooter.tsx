@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function SiteFooter() {
   return (
     <footer className="border-t border-border bg-white text-foreground">
@@ -20,6 +22,14 @@ export default function SiteFooter() {
                 hello@clarrahealth.com
               </a>
             </p>
+          </div>
+          <div className="flex md:justify-end">
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center rounded-full bg-primary px-10 py-4 text-base font-semibold text-primary-foreground hover:bg-primary/90 transition shadow-sm"
+            >
+              Contact us
+            </Link>
           </div>
         </div>
 
