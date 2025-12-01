@@ -380,7 +380,7 @@ export default function Index() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-[#1f2d3a] leading-relaxed">
-              Midlife health isn't confusing, it's undermeasured, under discussed, and undertreated. Clarra changes the script.
+              Daily brain fog, 4:00 AM hot flashes, dry skin and anxiety...don't face the 65+ symptoms of perimenopause and menopause alone. <span className="text-[#4fb7b3]">Talk to Clarra.</span>
             </p>
           </div>
         </div>
