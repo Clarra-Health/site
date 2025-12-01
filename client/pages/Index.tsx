@@ -540,11 +540,11 @@ export default function Index() {
                   </DialogContent>
                 </Dialog>
 
-                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
-                  <p className="font-display text-3xl font-bold leading-none mb-2">
+                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
+                  <p className="font-display text-2xl font-bold leading-tight">
                     Sleep & Mood Harmony
                   </p>
-                  <p className="font-serif text-lg italic opacity-90 font-light">
+                  <p className="font-serif text-base italic opacity-90 font-light">
                     Restore your natural rhythm
                   </p>
                 </div>
@@ -605,11 +605,11 @@ export default function Index() {
                   </DialogContent>
                 </Dialog>
 
-                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
-                  <p className="font-display text-3xl font-bold leading-none mb-2">
+                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
+                  <p className="font-display text-2xl font-bold leading-tight">
                     Cognitive & Emotional Clarity
                   </p>
-                  <p className="font-serif text-lg italic opacity-90 font-light">
+                  <p className="font-serif text-base italic opacity-90 font-light">
                     Understand your emotional and mental patterns
                   </p>
                 </div>
@@ -670,11 +670,11 @@ export default function Index() {
                   </DialogContent>
                 </Dialog>
 
-                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
-                  <p className="font-display text-3xl font-bold leading-none mb-2">
+                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
+                  <p className="font-display text-2xl font-bold leading-tight">
                     Stress, Energy & Daily Performance
                   </p>
-                  <p className="font-serif text-lg italic opacity-90 font-light">
+                  <p className="font-serif text-base italic opacity-90 font-light">
                     Plan your days with confidence
                   </p>
                 </div>
@@ -735,11 +735,11 @@ export default function Index() {
                   </DialogContent>
                 </Dialog>
 
-                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
-                  <p className="font-display text-3xl font-bold leading-none mb-2">
+                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
+                  <p className="font-display text-2xl font-bold leading-tight">
                     Hormone-Adaptive Guidance
                   </p>
-                  <p className="font-serif text-lg italic opacity-90 font-light">
+                  <p className="font-serif text-base italic opacity-90 font-light">
                     Make sense of shifting patterns through midlife change
                   </p>
                 </div>
