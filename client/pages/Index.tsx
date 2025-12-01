@@ -544,7 +544,7 @@ export default function Index() {
                   <p className="font-display text-2xl font-bold leading-tight hidden">
                     Sleep & Mood Harmony
                   </p>
-                  <p className="font-serif text-base italic opacity-90 font-light">
+                  <p className="font-serif text-lg italic opacity-90 font-light">
                     Restore your natural rhythm
                   </p>
                 </div>
@@ -609,7 +609,7 @@ export default function Index() {
                   <p className="font-display text-2xl font-bold leading-tight hidden">
                     Cognitive & Emotional Clarity
                   </p>
-                  <p className="font-serif text-base italic opacity-90 font-light">
+                  <p className="font-serif text-lg italic opacity-90 font-light">
                     Understand your emotional and mental patterns
                   </p>
                 </div>
@@ -674,7 +674,7 @@ export default function Index() {
                   <p className="font-display text-2xl font-bold leading-tight hidden">
                     Stress, Energy & Daily Performance
                   </p>
-                  <p className="font-serif text-base italic opacity-90 font-light">
+                  <p className="font-serif text-lg italic opacity-90 font-light">
                     Plan your days with confidence
                   </p>
                 </div>
@@ -739,7 +739,7 @@ export default function Index() {
                   <p className="font-display text-2xl font-bold leading-tight hidden">
                     Hormone-Adaptive Guidance
                   </p>
-                  <p className="font-serif text-base italic opacity-90 font-light">
+                  <p className="font-serif text-lg italic opacity-90 font-light">
                     Make sense of shifting patterns through midlife change
                   </p>
                 </div>
