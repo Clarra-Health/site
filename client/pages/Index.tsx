@@ -65,7 +65,7 @@ export default function Index() {
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa363af82f5f14461ae882311697aaeff?format=webp&width=800"
                       alt="Woman smiling"
-                      className="w-full h-full object-cover scale-[1.95] hover:scale-[2.0] transition-transform duration-700"
+                      className="w-full h-full object-cover object-center scale-[1.95] hover:scale-[2.0] transition-transform duration-700"
                       loading="eager"
                     />
                   </div>
