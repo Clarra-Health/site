@@ -33,11 +33,6 @@ export default function Index() {
                   <Button variant="outline" size="lg" className="w-full sm:w-auto text-base px-8 h-14">How it works</Button>
                 </Link>
               </div>
-
-              <div className="mt-10 flex items-center gap-3 text-sm font-medium text-muted-foreground bg-secondary/20 px-4 py-2 rounded-full">
-                <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
-                Trusted by clinicians & women worldwide
-              </div>
             </div>
 
             <div className="lg:col-span-6 w-full mx-auto lg:max-w-none lg:pl-8">
