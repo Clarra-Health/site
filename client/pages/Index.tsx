@@ -221,7 +221,7 @@ export default function Index() {
                 <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
                   <div className="relative overflow-hidden flex-[2]">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F429ad88eb72a4abcb04956a8b0be8eef?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F11809448be4748f185c39cbba643e589?format=webp&width=800"
                       alt="Conversational Symptom Capture"
                       className="absolute inset-0 w-full h-full object-cover scale-[1.25] transition-transform duration-300 group-hover:scale-[1.3]"
                     />
@@ -262,7 +262,7 @@ export default function Index() {
               <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
                 <div className="relative w-full rounded-3xl overflow-hidden">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F429ad88eb72a4abcb04956a8b0be8eef?format=webp&width=1000"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F11809448be4748f185c39cbba643e589?format=webp&width=1000"
                     alt="Conversational Symptom Capture"
                     className="w-full h-96 object-cover blur-sm opacity-40"
                   />
