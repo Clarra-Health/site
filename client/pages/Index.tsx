@@ -297,15 +297,16 @@ export default function Index() {
 
                     {/* Correlation Graph Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
-                      <div className="space-y-2">
-                        <div className="grid grid-cols-4 gap-2 text-center">
-                          {[{label: 'Sleep', value: 85}, {label: 'Stress', value: 42}, {label: 'Mood', value: 72}, {label: 'Cognition', value: 88}].map((item, i) => (
-                            <div key={i} className="flex flex-col items-center">
-                              <div className="text-white text-xs font-bold">{item.value}%</div>
-                              <div className="text-white text-[0.65rem] opacity-75">{item.label}</div>
+                      <div className="h-full flex items-end justify-around gap-1 px-1">
+                        {[{label: 'Sleep', value: 85, color: '#4fb7b3'}, {label: 'Stress', value: 42, color: '#fc9a53'}, {label: 'Mood', value: 72, color: '#7cc9a2'}, {label: 'Cognition', value: 88, color: '#b9e3e2'}].map((item, i) => (
+                          <div key={i} className="flex flex-col items-center gap-1 flex-1">
+                            <div className="w-full flex flex-col items-center gap-0.5">
+                              <div className="w-2 rounded-t" style={{ height: `${item.value * 0.4}px`, backgroundColor: item.color }}></div>
+                              <p className="text-white text-xs font-bold leading-none">{item.value}%</p>
+                              <p className="text-white text-[0.6rem] opacity-75 leading-none">{item.label}</p>
                             </div>
-                          ))}
-                        </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
