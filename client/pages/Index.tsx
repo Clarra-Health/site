@@ -414,7 +414,7 @@ export default function Index() {
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd1cf7468180245bba323e597d3ae9953?format=webp&width=800"
                       alt="Daily Guidance"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="absolute inset-0 w-full h-full object-cover scale-[1.75] group-hover:scale-[1.8] transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
