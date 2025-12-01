@@ -65,14 +65,24 @@ export default function Index() {
                       </div>
 
                       {/* AI Message 1 */}
-                      <div className="flex justify-start">
+                      <div className="flex justify-start gap-2 items-end">
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F36749a2f89314dc5b35ffa554852de74?format=webp&width=800"
+                          alt="Clarra"
+                          className="w-6 h-6 rounded-full flex-shrink-0"
+                        />
                         <div className="bg-[#4fb7b3] text-white rounded-2xl px-3 py-2 max-w-[150px]">
                           <p className="text-xs">That makes complete sense. Energy fluctuations are really common.</p>
                         </div>
                       </div>
 
                       {/* AI Message 2 */}
-                      <div className="flex justify-start">
+                      <div className="flex justify-start gap-2 items-end">
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F36749a2f89314dc5b35ffa554852de74?format=webp&width=800"
+                          alt="Clarra"
+                          className="w-6 h-6 rounded-full flex-shrink-0"
+                        />
                         <div className="bg-[#4fb7b3] text-white rounded-2xl px-3 py-2 max-w-[150px]">
                           <p className="text-xs">Let's work together to understand what's going on.</p>
                         </div>
