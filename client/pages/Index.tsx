@@ -399,18 +399,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Midlife Health Quote Section */}
-      <section className="py-12 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5]">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-[#1f2d3a] leading-relaxed">
-              Longevity isn't just more years — it's more good years.{" "}
-              <span className="text-[#fc9a53]">Clarra helps you create them.</span>
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* App Features Section */}
       <section className="py-24 md:py-32 bg-white">
         <div className="container">
