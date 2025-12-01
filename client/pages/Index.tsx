@@ -74,7 +74,7 @@ export default function Index() {
             </p>
             <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight max-w-3xl mx-auto">
               Understand your whole
-              <span className="block text-primary">wellness journey.</span>
+              <span className="block text-[#fc9a53]">wellness journey.</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
@@ -369,7 +369,7 @@ export default function Index() {
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight mb-4">
                 Clinical precision,
-                <span className="block font-serif italic font-light text-primary mt-2">designed for simplicity</span>
+                <span className="block font-serif italic font-light text-[#fc9a53] mt-2">designed for simplicity</span>
               </h2>
               <p className="text-base sm:text-lg text-foreground/80 leading-relaxed max-w-xl">
                 Experience conversational health insights at your fingertips. Clarra's interface makes complex health data feel simple and actionable, designed specifically for how women think about their health and bodies.
@@ -676,7 +676,7 @@ export default function Index() {
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold leading-tight mb-8">
                 Women's health
-                <span className="block text-primary font-serif italic font-light">deserves better.</span>
+                <span className="block text-[#fc9a53] font-serif italic font-light">deserves better.</span>
               </h2>
               <p className="text-lg text-white/80 leading-relaxed mb-6">
                 Midlife can feel like a black box. Women are told their symptoms are "just stress" or "part of aging," when the reality is far more nuanced. Our bodies are changing in profound ways, and we deserve clarity, not dismissal.
