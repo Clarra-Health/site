@@ -659,8 +659,6 @@ export default function Index() {
         </div>
       </section>
 
-
-
       {/* Final CTA Section */}
       <section className="py-24 bg-[#1f2d3a] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
