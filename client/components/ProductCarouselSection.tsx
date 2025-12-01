@@ -243,7 +243,7 @@ export default function ProductCarouselSection() {
 
                   {/* Bottom - Correlation Graph */}
                   <div className="flex justify-center">
-                    <div className="bg-gradient-to-br from-slate-900/90 to-slate-950/90 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-xl max-w-md w-full">
+                    <div className="bg-gradient-to-br from-slate-900/60 to-slate-950/60 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-xl max-w-md w-full">
                       <p className="text-white text-xs font-semibold uppercase tracking-wider mb-4 text-center">Sleep vs Mood Correlation</p>
 
                       {/* Correlation Graph */}
@@ -255,8 +255,11 @@ export default function ProductCarouselSection() {
                           </linearGradient>
                         </defs>
 
-                        {/* Main correlation line */}
+                        {/* Main correlation line (Sleep) */}
                         <polyline points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110" fill="none" stroke="#4fb7b3" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+
+                        {/* Secondary correlation line (Mood) */}
+                        <polyline points="15,85 35,65 55,45 75,50 95,60 115,55 135,45 155,35 175,45 195,55" fill="none" stroke="#fc9a53" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="4 4" />
 
                         {/* Fill under line */}
                         <polygon points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110 195,115 15,115" fill="url(#correlationGrad)" />
@@ -271,9 +274,15 @@ export default function ProductCarouselSection() {
                       </svg>
 
                       <div className="flex items-center justify-between text-xs">
-                        <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 rounded-full bg-teal-400"></div>
-                          <span className="text-white/70">Sleep Quality</span>
+                        <div className="flex items-center gap-4">
+                          <div className="flex items-center gap-2">
+                            <div className="w-2 h-2 rounded-full bg-teal-400"></div>
+                            <span className="text-white/70">Sleep</span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <div className="w-2 h-2 rounded-full bg-[#fc9a53]"></div>
+                            <span className="text-white/70">Mood</span>
+                          </div>
                         </div>
                         <span className="text-white font-semibold">73% Correlation</span>
                       </div>
