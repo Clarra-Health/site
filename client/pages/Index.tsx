@@ -69,7 +69,7 @@ export default function Index() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-[#1f2d3a] leading-tight mb-8">
-              Clarra turns every symptom into a <span className="text-primary">signal.</span>
+              Your symptoms become <span className="text-primary">signals</span> that bring clarity to your midlife health.
             </h2>
           </div>
         </div>
