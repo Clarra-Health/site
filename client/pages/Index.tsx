@@ -300,12 +300,12 @@ export default function Index() {
                       <div className="h-full flex flex-col justify-between">
                         <svg className="w-full h-10" viewBox="0 0 200 50" preserveAspectRatio="none">
                           {/* Sleep line - clear wave pattern */}
-                          <polyline points="0,28 15,25 30,18 45,25 60,32 75,25 90,15 105,25 120,35 135,25 150,12 165,25 180,36 200,28" fill="none" stroke="#4fb7b3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                          <polyline points="0,28 50,15 100,28 150,12 200,28" fill="none" stroke="#4fb7b3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                           {/* Brain fog line - inverse wave pattern */}
-                          <polyline points="0,22 15,25 30,32 45,25 60,18 75,25 90,35 105,25 120,15 135,25 150,38 165,25 180,14 200,22" fill="none" stroke="#fc9a53" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                          <polyline points="0,22 50,35 100,22 150,38 200,22" fill="none" stroke="#fc9a53" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                           {/* Intersection points */}
-                          <circle cx="45" cy="25" r="5.5" fill="#56d257" />
-                          <circle cx="135" cy="25" r="5.5" fill="#56d257" />
+                          <circle cx="50" cy="25" r="5.5" fill="#56d257" />
+                          <circle cx="150" cy="25" r="5.5" fill="#56d257" />
                         </svg>
                         <div className="flex justify-between items-center text-white px-1">
                           <div className="flex items-center gap-1">
