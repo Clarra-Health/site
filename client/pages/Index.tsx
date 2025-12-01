@@ -90,7 +90,7 @@ export default function Index() {
       <ProductCarouselSection />
 
       {/* Form Meets Function Section */}
-      <section className="pt-15 pb-20 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative z-10">
+      <section className="pt-[4.5rem] pb-20 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative z-10">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
