@@ -423,9 +423,6 @@ export default function Index() {
               <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
                 Understanding Your Sleep Patterns
               </h3>
-              <p className="text-base text-foreground/70 leading-relaxed">
-                Discover how hormonal changes impact your rest and wake cycles. Our advanced tracking helps identify patterns you might miss, giving you the clarity needed to reclaim restful nights.
-              </p>
             </div>
 
             {/* Card 2 */}
@@ -483,9 +480,6 @@ export default function Index() {
               <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
                 Personalized Nutrition Guidance
               </h3>
-              <p className="text-base text-foreground/70 leading-relaxed">
-                Fuel your body with what it actually needs during midlife. We provide tailored nutritional advice that adapts to your metabolic shifts, supporting energy levels and overall well-being.
-              </p>
             </div>
 
             {/* Card 3 */}
@@ -543,9 +537,6 @@ export default function Index() {
               <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
                 Emotional Balance & Support
               </h3>
-              <p className="text-base text-foreground/70 leading-relaxed">
-                Navigate mood fluctuations with confidence. Our tools and community support help you maintain emotional equilibrium, ensuring you feel heard, understood, and empowered every day.
-              </p>
             </div>
           </div>
         </div>
