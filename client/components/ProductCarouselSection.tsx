@@ -281,6 +281,36 @@ export default function ProductCarouselSection() {
                   </div>
                 </div>
               </div>
+            ) : currentIndex === 3 ? (
+              // Personalized Guidance - Show actionable steps
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20 flex flex-col">
+                {/* Background Image */}
+                <img
+                  src={currentFeature.image}
+                  alt={currentFeature.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+                {/* Guidance Steps Container */}
+                <div className="relative z-10 flex flex-col justify-end h-full p-6 md:p-8 gap-3">
+                  {currentFeature.guidance.map((item, idx) => (
+                    <div key={idx} className="flex items-start gap-3 bg-white/10 backdrop-blur-md rounded-lg px-4 py-3 border border-white/10">
+                      <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-white font-bold text-sm ${
+                        item.status === 'today'
+                          ? 'bg-gradient-to-br from-orange-500 to-orange-600'
+                          : 'bg-gradient-to-br from-slate-600 to-slate-700'
+                      }`}>
+                        {item.status === 'today' ? '✓' : idx + 1}
+                      </div>
+                      <p className="text-white text-sm leading-snug">{item.label}</p>
+                    </div>
+                  ))}
+                  <div className="h-1 bg-gradient-to-r from-orange-500 to-orange-400 rounded-full mt-2" />
+                </div>
+              </div>
             ) : currentIndex === 2 ? (
               // AI Insights - Show insight text with metrics
               <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
