@@ -683,6 +683,46 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Founder's Note Section */}
+      <section className="py-24 md:py-40 bg-[#1f2d3a] text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/50 rounded-full blur-3xl"></div>
+        </div>
+        <div className="container relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div className="order-2 lg:order-1">
+              <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-6">
+                A Founder's Note
+              </p>
+              <h2 className="font-display text-5xl sm:text-6xl font-bold leading-tight mb-8">
+                Women's health
+                <span className="block text-primary">deserves better.</span>
+              </h2>
+              <p className="text-lg text-white/80 leading-relaxed mb-6">
+                Midlife can feel like a black box. Women are told their symptoms are "just stress" or "part of aging," when the reality is far more nuanced. Our bodies are changing in profound ways, and we deserve clarity, not dismissal.
+              </p>
+              <p className="text-lg text-white/80 leading-relaxed mb-8">
+                Clarra was built to change that. By combining biomarker testing, wearable data, and conversational AI, we're creating a partner that actually understands the complexity of midlife health. Not a symptom checker. Not a generic wellness app. A real partner in your health journey.
+              </p>
+              <p className="text-base text-white/60 italic">
+                — Meghan White, Founder & CEO
+              </p>
+            </div>
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-sm">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/0 rounded-2xl blur-2xl"></div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F400c9b0b1cbe465881954d3479803557?format=webp&width=800"
+                  alt="Meghan White, Founder & CEO"
+                  className="relative w-full h-auto rounded-2xl shadow-2xl border border-white/10"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Form Meets Function Section */}
       <section className="pt-[4.5rem] pb-20 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative z-10">
         <div className="container">
