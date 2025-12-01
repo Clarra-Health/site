@@ -85,6 +85,9 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Product Features Carousel */}
+      <ProductCarouselSection />
+
       {/* Form Meets Function Section */}
       <section className="pt-15 pb-20 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative z-10">
         <div className="container">
