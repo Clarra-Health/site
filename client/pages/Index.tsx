@@ -680,7 +680,7 @@ export default function Index() {
                 </div>
               </div>
               <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
-                Emotional Balance & Support
+                Stress, Energy & Daily Performance
               </h3>
             </div>
           </div>
