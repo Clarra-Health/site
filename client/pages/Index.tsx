@@ -132,7 +132,7 @@ export default function Index() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9fb0c4cad14c482dac22f89276880946?format=webp&width=800"
                     alt="Clarra app showcasing sleep tracking and AI assistant"
-                    className="w-full max-w-4xl scale-[3.5] origin-top -translate-y-[65%] -translate-x-[15%]"
+                    className="w-full max-w-4xl scale-[3.5] origin-top -translate-y-[32.5%] -translate-x-[15%]"
                   />
                 </div>
               </div>
