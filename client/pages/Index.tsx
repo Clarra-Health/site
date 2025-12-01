@@ -115,12 +115,7 @@ export default function Index() {
       </section>
 
       {/* Product Showcase Section */}
-      <section className="py-32 bg-gradient-to-br from-white via-primary/5 to-secondary/8 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-screen h-screen bg-gradient-to-br from-primary/20 via-transparent to-secondary/15 pointer-events-none" />
-          <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-gradient-to-br from-primary/40 to-transparent rounded-full blur-3xl opacity-40" />
-          <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-gradient-to-tl from-secondary/35 to-transparent rounded-full blur-3xl opacity-40" />
-        </div>
+      <section className="py-32 bg-white relative overflow-hidden">
         <div className="container relative z-10">
           <div className="mx-auto max-w-5xl pt-9">
             <h2 className="font-display text-6xl sm:text-7xl font-bold text-[#1f2d3a] mb-4 text-center leading-tight">
