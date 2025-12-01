@@ -24,31 +24,17 @@ export default function SiteHeader() {
         </div>
 
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          {nav.map((item) =>
-            item && (item as any).children ? (
-              <div key={item.to} className="relative">
-                <NavigationMenu>
-                  <NavigationMenuList>
-                    <NavigationMenuItem>
-                      <NavigationMenuTrigger className="bg-transparent p-0 hover:bg-transparent text-muted-foreground data-[state=open]:text-primary">
-                        {item.label}
-                      </NavigationMenuTrigger>
-                    </NavigationMenuItem>
-                  </NavigationMenuList>
-                </NavigationMenu>
-              </div>
-            ) : (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                className={({ isActive }) =>
-                  `transition-colors hover:text-primary ${isActive ? "text-primary" : "text-muted-foreground"}`
-                }
-              >
-                {item.label}
-              </NavLink>
-            ),
-          )}
+          {nav.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              className={({ isActive }) =>
+                `transition-colors hover:text-primary ${isActive ? "text-primary" : "text-muted-foreground"}`
+              }
+            >
+              {item.label}
+            </NavLink>
+          ))}
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
