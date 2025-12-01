@@ -899,36 +899,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-      {/* Final CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative overflow-hidden">
-        <div className="container relative z-10 text-center max-w-4xl mx-auto">
-          <h2 className="font-display text-5xl sm:text-6xl font-bold mb-6 tracking-tight text-[#1f2d3a]">
-            Ready to take control of your midlife health?
-          </h2>
-          <p className="text-xl sm:text-2xl text-foreground/70 mb-10 leading-relaxed max-w-2xl mx-auto">
-            Get personalized insights, proactive care, and a partner that stays
-            with you every step of the way.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact">
-              <Button
-                size="lg"
-                className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-10 py-7 text-xl rounded-full shadow-xl hover:scale-105 transition-transform"
-              >
-                Get Started Today
-              </Button>
-            </Link>
-            <Button
-              variant="outline"
-              size="lg"
-              className="bg-transparent border-[#1f2d3a] text-[#1f2d3a] hover:bg-[#1f2d3a] hover:text-white px-10 py-7 text-xl rounded-full"
-            >
-              Learn More
-            </Button>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
