@@ -133,26 +133,28 @@ export default function ProductCarouselSection() {
 
           {/* Right Side - Product Mockup Placeholder */}
           <div className="relative">
-            <div className="relative w-full aspect-square rounded-2xl bg-gradient-to-br from-white to-primary/5 border-2 border-primary/20 flex items-center justify-center overflow-hidden group">
-              {/* Placeholder with gradient background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-secondary/20 to-orange-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              
+            <div className="relative w-full aspect-square rounded-3xl bg-white/15 backdrop-blur-md border-2 border-white/30 flex items-center justify-center overflow-hidden group shadow-2xl">
+              {/* Placeholder with gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
               {/* Placeholder content */}
-              <div className="relative z-10 text-center space-y-4">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-primary/20 text-4xl">
+              <div className="relative z-10 text-center space-y-6">
+                <div className="inline-flex items-center justify-center w-24 h-24 rounded-3xl bg-white/20 text-5xl shadow-lg">
                   {currentFeature.icon}
                 </div>
-                <p className="text-sm font-semibold text-foreground/60 px-6">
-                  Product Screenshot Placeholder
-                </p>
-                <p className="text-xs text-foreground/40 px-6">
-                  {currentFeature.title}
-                </p>
+                <div>
+                  <p className="text-lg font-semibold text-white/90 px-8">
+                    Product Screenshot
+                  </p>
+                  <p className="text-sm text-white/70 px-8 mt-2">
+                    {currentFeature.title}
+                  </p>
+                </div>
               </div>
 
               {/* Decorative corner accents */}
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary/20 to-transparent rounded-bl-3xl" />
-              <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-secondary/20 to-transparent rounded-tr-3xl" />
+              <div className="absolute -top-20 -right-20 w-40 h-40 bg-white/10 rounded-full blur-3xl" />
+              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-white/10 rounded-full blur-3xl" />
             </div>
           </div>
         </div>
