@@ -711,7 +711,7 @@ export default function Index() {
                   <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc6430d723a174d20b04dd625cef5c7f4?format=webp&width=1200"
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fdcae153309b3411183a24e7b381cd42c?format=webp&width=1200"
                         alt="Hormone-adaptive guidance expanded"
                         className="w-full h-auto"
                       />
