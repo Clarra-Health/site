@@ -51,7 +51,12 @@ const features = [
     metrics: {
       primary: { label: "RECOMMENDATIONS", value: "5", subtitle: "Personalized" },
       secondary: { label: "SUCCESS RATE", value: "88%", subtitle: "Following advice" }
-    }
+    },
+    guidance: [
+      { label: "Today: Prioritize consistent sleep schedule", status: "today" },
+      { label: "Tomorrow: Add 30-min evening walk for stress relief", status: "upcoming" },
+      { label: "This week: Schedule vitamin D and iron labs", status: "upcoming" }
+    ]
   }
 ];
 
