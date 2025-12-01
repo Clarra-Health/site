@@ -378,6 +378,14 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
+                {/* Sleep Icon Badge */}
+                <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/40 backdrop-blur-sm rounded-lg px-4 py-2">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 1 21 12.79z" />
+                  </svg>
+                  <span className="text-white text-sm font-semibold">7.2h Last night</span>
+                </div>
+
                 <Dialog>
                   <DialogTrigger asChild>
                     <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors hover:bg-black/70 cursor-pointer">
