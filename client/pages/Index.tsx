@@ -65,7 +65,7 @@ export default function Index() {
       </section>
 
       {/* Sleep & Wellness Features Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-[#f0f9ff] to-white">
         <div className="container">
           <div className="mb-16 text-center">
             <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
