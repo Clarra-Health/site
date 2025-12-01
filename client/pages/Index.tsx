@@ -2,6 +2,13 @@ import { Link } from "react-router-dom";
 import NotInYourHead from "@/components/layout/NotInYourHead";
 import AutoPlayVideo from "../components/media/AutoPlayVideo";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogClose,
+} from "@/components/ui/dialog";
+import { Plus } from "lucide-react";
 
 export default function Index() {
   return (
@@ -99,82 +106,148 @@ export default function Index() {
         <div className="container">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ff20cc42fde714790a312a776c03efbaf?format=webp&width=800"
-                  alt="Sleep and mood"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <p className="font-display text-3xl font-bold leading-none mb-2">
-                    Sleep & Mood
-                  </p>
-                  <p className="font-serif text-lg italic opacity-90 font-light">
-                    Restoring your natural rhythm
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="group cursor-pointer">
+                  <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ff20cc42fde714790a312a776c03efbaf?format=webp&width=800"
+                      alt="Sleep and mood"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                    <div className="absolute top-4 right-4 z-10">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-colors group-hover:bg-white/30">
+                        <Plus className="h-6 w-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="absolute bottom-6 left-6 right-6 text-white">
+                      <p className="font-display text-3xl font-bold leading-none mb-2">
+                        Sleep & Mood
+                      </p>
+                      <p className="font-serif text-lg italic opacity-90 font-light">
+                        Restoring your natural rhythm
+                      </p>
+                    </div>
+                  </div>
+                  <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
+                    Understanding Your Sleep Patterns
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Discover how hormonal changes impact your rest and wake cycles. Our advanced tracking helps identify patterns you might miss, giving you the clarity needed to reclaim restful nights.
                   </p>
                 </div>
-              </div>
-              <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
-                Understanding Your Sleep Patterns
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Discover how hormonal changes impact your rest and wake cycles. Our advanced tracking helps identify patterns you might miss, giving you the clarity needed to reclaim restful nights.
-              </p>
-            </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full h-full">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb9780068e7d3401aa2fdfaed00903992?format=webp&width=1200"
+                    alt="Sleep and mood expanded"
+                    className="w-full h-auto rounded-lg shadow-2xl"
+                  />
+                  <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 transition-colors">
+                    <Plus className="h-6 w-6 rotate-45" />
+                    <span className="sr-only">Close</span>
+                  </DialogClose>
+                </div>
+              </DialogContent>
+            </Dialog>
 
             {/* Card 2 */}
-            <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7e067e93c3de475ba747062aadfe0c6f?format=webp&width=800"
-                  alt="Healthy lifestyle"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <p className="font-display text-3xl font-bold leading-none mb-2">
-                    Nutrition
-                  </p>
-                  <p className="font-serif text-lg italic opacity-90 font-light">
-                    Fueling your body's new needs
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="group cursor-pointer">
+                  <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7e067e93c3de475ba747062aadfe0c6f?format=webp&width=800"
+                      alt="Healthy lifestyle"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                    <div className="absolute top-4 right-4 z-10">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-colors group-hover:bg-white/30">
+                        <Plus className="h-6 w-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="absolute bottom-6 left-6 right-6 text-white">
+                      <p className="font-display text-3xl font-bold leading-none mb-2">
+                        Nutrition
+                      </p>
+                      <p className="font-serif text-lg italic opacity-90 font-light">
+                        Fueling your body's new needs
+                      </p>
+                    </div>
+                  </div>
+                  <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
+                    Personalized Nutrition Guidance
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Fuel your body with what it actually needs during midlife. We provide tailored nutritional advice that adapts to your metabolic shifts, supporting energy levels and overall well-being.
                   </p>
                 </div>
-              </div>
-              <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
-                Personalized Nutrition Guidance
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Fuel your body with what it actually needs during midlife. We provide tailored nutritional advice that adapts to your metabolic shifts, supporting energy levels and overall well-being.
-              </p>
-            </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full h-full">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb9780068e7d3401aa2fdfaed00903992?format=webp&width=1200"
+                    alt="Nutrition expanded"
+                    className="w-full h-auto rounded-lg shadow-2xl"
+                  />
+                  <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 transition-colors">
+                    <Plus className="h-6 w-6 rotate-45" />
+                    <span className="sr-only">Close</span>
+                  </DialogClose>
+                </div>
+              </DialogContent>
+            </Dialog>
 
             {/* Card 3 */}
-            <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4fa85bca2bdf42f6a8835703155227c0?format=webp&width=800"
-                  alt="Woman smiling"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <p className="font-display text-3xl font-bold leading-none mb-2">
-                    Emotional Health
-                  </p>
-                  <p className="font-serif text-lg italic opacity-90 font-light">
-                    Finding balance in the shift
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="group cursor-pointer">
+                  <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4fa85bca2bdf42f6a8835703155227c0?format=webp&width=800"
+                      alt="Woman smiling"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                    <div className="absolute top-4 right-4 z-10">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-colors group-hover:bg-white/30">
+                        <Plus className="h-6 w-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="absolute bottom-6 left-6 right-6 text-white">
+                      <p className="font-display text-3xl font-bold leading-none mb-2">
+                        Emotional Health
+                      </p>
+                      <p className="font-serif text-lg italic opacity-90 font-light">
+                        Finding balance in the shift
+                      </p>
+                    </div>
+                  </div>
+                  <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
+                    Emotional Balance & Support
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Navigate mood fluctuations with confidence. Our tools and community support help you maintain emotional equilibrium, ensuring you feel heard, understood, and empowered every day.
                   </p>
                 </div>
-              </div>
-              <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
-                Emotional Balance & Support
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Navigate mood fluctuations with confidence. Our tools and community support help you maintain emotional equilibrium, ensuring you feel heard, understood, and empowered every day.
-              </p>
-            </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full h-full">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb9780068e7d3401aa2fdfaed00903992?format=webp&width=1200"
+                    alt="Emotional Health expanded"
+                    className="w-full h-auto rounded-lg shadow-2xl"
+                  />
+                  <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 transition-colors">
+                    <Plus className="h-6 w-6 rotate-45" />
+                    <span className="sr-only">Close</span>
+                  </DialogClose>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </section>
