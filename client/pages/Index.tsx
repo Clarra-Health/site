@@ -556,7 +556,7 @@ export default function Index() {
 
             {/* Card 2 */}
             <div className="group relative">
-              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+              <div className="relative overflow-hidden rounded-2xl mb-8 aspect-[3/4]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6bb2493097a4497da3c80210e2d3dbf6?format=webp&width=800"
                   alt="Cognitive and emotional clarity"
@@ -621,7 +621,7 @@ export default function Index() {
 
             {/* Card 3 */}
             <div className="group relative">
-              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+              <div className="relative overflow-hidden rounded-2xl mb-8 aspect-[3/4]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1ca7edaae6d047fe8f9d4b11440157ba?format=webp&width=800"
                   alt="Stress and energy"
@@ -686,7 +686,7 @@ export default function Index() {
 
             {/* Card 4 */}
             <div className="group relative">
-              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+              <div className="relative overflow-hidden rounded-2xl mb-8 aspect-[3/4]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc6430d723a174d20b04dd625cef5c7f4?format=webp&width=800"
                   alt="Hormone-adaptive guidance"
