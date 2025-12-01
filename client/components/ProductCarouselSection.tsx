@@ -160,8 +160,8 @@ export default function ProductCarouselSection() {
         </div>
 
         {/* CTA Button */}
-        <div className="flex justify-center mt-16">
-          <a href="/about" className="inline-flex items-center justify-center px-10 h-14 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 hover:shadow-xl transition-all hover:scale-105">
+        <div className="flex justify-center mt-20">
+          <a href="/about" className="inline-flex items-center justify-center px-12 py-4 bg-white text-[#1f2d3a] font-bold text-lg rounded-full hover:bg-white/95 hover:shadow-2xl transition-all hover:scale-105 drop-shadow-lg">
             Explore All Features
           </a>
         </div>
