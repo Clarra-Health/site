@@ -19,7 +19,7 @@ export default function Index() {
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-[#1f2d3a] leading-tight mb-6">
-                Midlife health, made clear.
+                Midlife health, made <EmUnderline>clear.</EmUnderline>
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-10 max-w-lg">
                 Clarra connects your symptoms, patterns, and daily experience into meaningful insights you can trust.
