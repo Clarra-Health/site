@@ -869,8 +869,8 @@ export default function Index() {
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/50 rounded-full blur-3xl"></div>
         </div>
         <div className="container relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div className="order-2 lg:order-1">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div>
               <p className="text-lg font-semibold text-primary uppercase tracking-widest mb-6">
                 A Founder's Note
               </p>
@@ -897,7 +897,7 @@ export default function Index() {
                 — Meghan White, Founder & CEO
               </p>
             </div>
-            <div className="order-1 lg:order-2 flex justify-center lg:justify-start lg:pl-16">
+            <div className="flex justify-center md:justify-end">
               <div className="relative w-full max-w-sm">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/0 rounded-2xl blur-2xl"></div>
                 <img
