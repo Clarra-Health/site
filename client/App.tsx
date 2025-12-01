@@ -22,6 +22,7 @@ const App = () => (
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<Index />} />
+            <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
