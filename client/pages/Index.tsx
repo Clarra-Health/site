@@ -98,15 +98,17 @@ export default function Index() {
                 <span className="block font-serif italic font-light text-primary mt-2">designed for simplicity</span>
               </h2>
             </div>
-            <div className="space-y-6 pt-4">
+            <div className="space-y-8 pt-4">
               <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
                 Hormonal health is complex. Understanding it shouldn't be. Clarra translates sophisticated biomarker data into clear, actionable insights delivered through conversational AI that feels like talking to a trusted health partner.
               </p>
-              <Link to="/how-it-works">
-                <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-14 rounded-full text-base">
-                  How It Works
-                </Button>
-              </Link>
+              <div>
+                <Link to="/how-it-works">
+                  <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-14 rounded-full text-base">
+                    How It Works
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
