@@ -38,13 +38,13 @@ export default function Index() {
             </div>
 
             {/* Right Column - Image with App Mockups */}
-            <div className="relative h-[600px] md:h-[700px]">
+            <div className="relative h-[600px] md:h-[700px] w-full">
               {/* Background Image */}
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c?format=webp&width=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c?format=webp&width=2000"
                 alt="Woman using Clarra app"
                 className="absolute inset-0 w-full h-full object-cover rounded-3xl"
-                style={{ objectPosition: 'center 20%' }}
+                style={{ objectPosition: 'center top' }}
                 loading="eager"
               />
             </div>
