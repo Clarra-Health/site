@@ -400,7 +400,7 @@ export default function Index() {
       </section>
 
       {/* App Features Section */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5]">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="flex justify-center lg:justify-start items-center">
