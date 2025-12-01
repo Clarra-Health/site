@@ -275,7 +275,7 @@ export default function Index() {
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] mb-6 leading-tight">
                 Hormones shift,
-                <span className="block text-primary italic font-light mt-2">your health story does too...</span>
+                <span className="block text-primary font-serif text-5xl sm:text-6xl italic font-light mt-2">your health story does too...</span>
               </h2>
               <p className="text-base sm:text-lg text-foreground/70 mb-8 leading-relaxed">
                 Hormones shift. Sleep changes. Energy fluctuates. Clarra translates those changes into clarity, not confusion — giving you a view of your health that finally makes sense.
