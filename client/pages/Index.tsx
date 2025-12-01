@@ -55,7 +55,7 @@ export default function Index() {
 
         {/* Mobile Image - Constrained and Centered */}
         <div className="lg:hidden px-4 sm:px-8 pb-8 sm:pb-12">
-          <div className="w-full max-w-sm mx-auto">
+          <div className="w-full max-w-[460px] mx-auto">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
               alt="Clarra app and user"
