@@ -50,7 +50,7 @@ export default function Index() {
                     style={{ objectPosition: '78% center', filter: 'brightness(1.3)' }}
                     loading="eager"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/15 to-transparent" />
 
                   {/* Chat Overlay */}
                   <div className="absolute top-1/2 -translate-y-1/2 right-0 z-20 pr-8 md:pr-12 lg:pr-16 w-full md:w-auto">
