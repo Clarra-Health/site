@@ -646,20 +646,20 @@ export default function Index() {
                   <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4fa85bca2bdf42f6a8835703155227c0?format=webp&width=1200"
-                        alt="Emotional Health expanded"
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1ca7edaae6d047fe8f9d4b11440157ba?format=webp&width=1200"
+                        alt="Stress and energy expanded"
                         className="w-full h-auto"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
                       <div className="absolute bottom-6 left-6 right-6 text-white">
                         <p className="font-display text-3xl font-bold leading-none mb-2">
-                          Emotional Health
+                          Stress, Energy & Daily Performance
                         </p>
                         <p className="font-serif text-lg italic opacity-90 font-light mb-4">
-                          Finding balance in the shift
+                          Plan your days with confidence
                         </p>
                         <p className="text-base leading-relaxed max-w-lg opacity-95">
-                          Navigate mood fluctuations with confidence. Our tools and community support help you maintain emotional equilibrium, ensuring you feel heard, understood, and empowered every day.
+                          Optimize your energy levels and manage stress cycles. Know when to push and when to rest, so you can plan workouts, work projects, and social commitments aligned with your natural rhythms.
                         </p>
                       </div>
                       <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
@@ -672,10 +672,10 @@ export default function Index() {
 
                 <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
                   <p className="font-display text-3xl font-bold leading-none mb-2">
-                    Emotional Health
+                    Stress, Energy & Daily Performance
                   </p>
                   <p className="font-serif text-lg italic opacity-90 font-light">
-                    Finding balance in the shift
+                    Plan your days with confidence
                   </p>
                 </div>
               </div>
