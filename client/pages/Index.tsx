@@ -409,7 +409,7 @@ export default function Index() {
                       <div className="space-y-1.5 h-full flex flex-col justify-between overflow-hidden">
                         <div className="flex gap-2 items-end">
                           <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0"></div>
-                          <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block max-w-[145px] truncate">How's your sleep...</p>
+                          <p className="text-white text-xs bg-[#fc9a53] rounded-lg px-2 py-1 inline-block max-w-[145px] truncate">How's your sleep...</p>
                         </div>
                         <div className="flex gap-2 justify-end items-end">
                           <p className="text-white text-xs bg-primary/40 rounded-lg px-2 py-1 inline-block max-w-[130px] truncate">Better this week...</p>
