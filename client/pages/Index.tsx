@@ -672,16 +672,16 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Emotional Health Icon Badge */}
-                <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/40 backdrop-blur-sm rounded-lg px-4 py-2">
+                <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
                   <div className="flex gap-2">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-7 h-7 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M20 2H4c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H4V4h16v16zm-5.04-6.71l-2.75 3.54-2.96-3.83c-.38-.49-1.12-.49-1.5 0l-2.41 3.1V6h12v7.07l-2.38-3.07c-.38-.49-1.12-.49-1.5 0z" />
                     </svg>
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-7 h-7 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                     </svg>
                   </div>
-                  <span className="text-white text-sm font-semibold">Understanding</span>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">Understanding</span>
                 </div>
 
                 <Dialog>
