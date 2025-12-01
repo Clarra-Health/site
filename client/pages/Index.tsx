@@ -13,54 +13,56 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-white py-8 sm:py-16 md:py-24 overflow-hidden">
-        <div className="container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
+      <section className="relative bg-white">
+        <div className="container py-8 sm:py-16 md:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
               <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground-dark leading-tight mb-4 sm:mb-6">
                 Midlife health, made clear.
               </h1>
-              <p className="text-base sm:text-lg md:text-xl text-foreground/75 leading-relaxed mb-6 sm:mb-8 max-w-lg">
+              <p className="text-base sm:text-lg text-foreground/70 leading-relaxed mb-8 max-w-lg">
                 Clarra connects your symptoms, patterns, and daily experience
                 into meaningful insights you can trust.
               </p>
 
-              <div className="flex flex-col gap-3 sm:flex-row sm:gap-6 items-stretch sm:items-start">
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 items-stretch sm:items-start">
                 <Link to="/contact" className="flex-1 sm:flex-none">
                   <Button
                     size="lg"
-                    className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 h-11 sm:h-12 text-sm sm:text-base font-semibold rounded-lg"
+                    className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 h-12 text-base font-semibold rounded-lg transition-all"
                   >
                     Start with clarity
                   </Button>
                 </Link>
-                <button className="text-sm sm:text-base font-semibold text-foreground-dark hover:text-primary transition-colors py-2 sm:pt-2">
+                <button className="text-base font-semibold text-foreground-dark hover:text-primary transition-colors h-12 flex items-center justify-center sm:justify-start">
                   Join the waitlist
                 </button>
               </div>
             </div>
+
+            {/* Right Column - Image */}
+            <div className="hidden lg:flex items-center justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
+                alt="Clarra app and user"
+                className="w-full max-w-md h-auto object-contain"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
 
-        {/* Right Column - Full Bleed Image */}
-        <div className="hidden lg:block absolute bottom-0 right-[-12%] w-[84%] h-full">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
-            alt="Clarra app and user"
-            className="w-full h-full object-contain"
-            loading="eager"
-          />
-        </div>
-
-        {/* Mobile Image */}
-        <div className="lg:hidden relative h-[520px] sm:h-[680px] w-full -mt-4 sm:-mt-6">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
-            alt="Clarra app and user"
-            className="w-full h-full object-contain"
-            loading="eager"
-          />
+        {/* Mobile Image - Constrained and Centered */}
+        <div className="lg:hidden px-4 sm:px-8 pb-8 sm:pb-12">
+          <div className="w-full max-w-sm mx-auto">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
+              alt="Clarra app and user"
+              className="w-full h-auto object-contain"
+              loading="eager"
+            />
+          </div>
         </div>
       </section>
 
