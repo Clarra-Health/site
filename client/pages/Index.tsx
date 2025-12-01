@@ -216,36 +216,74 @@ export default function Index() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Heart Health Card */}
-            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
-              <div className="relative overflow-hidden flex-[2]">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd8f861e3b08e4df7aa27b88c2a9d8561?format=webp&width=800"
-                  alt="Heart Health"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 scale-[2.28]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
+                  <div className="relative overflow-hidden flex-[2]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd8f861e3b08e4df7aa27b88c2a9d8561?format=webp&width=800"
+                      alt="Heart Health"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 scale-[2.28]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-                {/* ECG Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
-                  <svg className="w-full h-10" viewBox="0 0 200 40" preserveAspectRatio="none">
-                    <polyline points="0,20 20,20 30,5 40,35 50,20 70,20 80,10 90,30 100,20 130,20 150,20" fill="none" stroke="#4fb7b3" strokeWidth="2" />
-                  </svg>
-                  <p className="text-white text-xs font-medium mt-1">Heart Rate: 72 bpm</p>
-                </div>
-              </div>
+                    {/* ECG Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
+                      <svg className="w-full h-10" viewBox="0 0 200 40" preserveAspectRatio="none">
+                        <polyline points="0,20 20,20 30,5 40,35 50,20 70,20 80,10 90,30 100,20 130,20 150,20" fill="none" stroke="#4fb7b3" strokeWidth="2" />
+                      </svg>
+                      <p className="text-white text-xs font-medium mt-1">Heart Rate: 72 bpm</p>
+                    </div>
+                  </div>
 
-              <div className="relative z-10 bg-primary p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <span className="text-primary-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
-                    Heart Health
-                  </span>
-                  <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-primary-foreground hover:bg-white/30 transition">
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-                  </button>
+                  <div className="relative z-10 bg-primary p-6">
+                    <div className="flex justify-between items-start mb-4">
+                      <span className="text-primary-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                        Heart Health
+                      </span>
+                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-primary-foreground hover:bg-white/30 transition">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                      </button>
+                    </div>
+                    <p className="font-serif text-primary-foreground text-lg italic font-light leading-tight">Stay connected to your heart health</p>
+                  </div>
                 </div>
-                <p className="font-serif text-primary-foreground text-lg italic font-light leading-tight">Stay connected to your heart health</p>
-              </div>
-            </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-2xl overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd8f861e3b08e4df7aa27b88c2a9d8561?format=webp&width=1000"
+                    alt="Heart Health"
+                    className="w-full h-64 object-cover blur-sm opacity-40"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-primary/60" />
+                  <div className="absolute inset-0 p-8 flex flex-col justify-between">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h2 className="text-3xl font-bold text-primary-foreground mb-2">Heart Health</h2>
+                        <p className="text-primary-foreground/90">Monitor and optimize your cardiovascular wellness</p>
+                      </div>
+                      <DialogClose className="text-primary-foreground hover:opacity-80">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      </DialogClose>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
+                          <p className="text-primary-foreground/75 text-sm">Current HR</p>
+                          <p className="text-2xl font-bold text-primary-foreground">72 bpm</p>
+                        </div>
+                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
+                          <p className="text-primary-foreground/75 text-sm">Trend</p>
+                          <p className="text-2xl font-bold text-primary-foreground">↓ 5%</p>
+                        </div>
+                      </div>
+                      <p className="text-primary-foreground/90 text-sm">Track heart rate patterns, detect irregularities, and receive personalized recommendations to maintain optimal cardiovascular health throughout your day.</p>
+                    </div>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
 
             {/* Cycle Insights Card */}
             <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
