@@ -97,9 +97,6 @@ export default function Index() {
       {/* Logo Strip */}
       <section className="py-10 border-y border-border/50 bg-secondary/5">
         <div className="container">
-          <p className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-8">
-            Featured In
-          </p>
           <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
             <span className="text-2xl font-display font-bold">VOGUE</span>
             <span className="text-2xl font-display font-bold">Forbes</span>
