@@ -11,22 +11,6 @@ import { Button } from "@/components/ui/button";
 
 const nav = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "Meet Clarra" },
-  { to: "/how-it-works", label: "Our Tech" },
-  {
-    to: "/who-we-help",
-    label: "Who We Help",
-    children: [
-      { to: "/who-we-help/you", label: "For Woman" },
-      {
-        to: "/who-we-help/clinicians-researchers",
-        label: "For Clinicians/ Researchers",
-      },
-      { to: "/who-we-help/payers", label: "For Payers" },
-    ],
-  },
-  { to: "/how-we-protect-your-data", label: "Data Privacy" },
-  { to: "/contact", label: "Contact" },
 ] as const;
 
 export default function SiteHeader() {
