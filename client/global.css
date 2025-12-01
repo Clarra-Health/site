@@ -17,6 +17,7 @@
     /* Exact brand palette (converted from hex) */
     --background: 195 23% 97%; /* #f4f7f8 */
     --foreground: 210 29% 24%; /* #2c3e50 */
+    --foreground-dark: 210 29% 18%; /* #1f2d3a */
 
     --card: 0 0% 100%;
     --card-foreground: 210 29% 24%;
@@ -119,19 +120,34 @@
 
   .font-display {
     /* Primary display font for bold headings */
-    font-family: "Poppins", "Bebas Neue", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-family:
+      "Poppins",
+      "Bebas Neue",
+      Inter,
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      "Noto Sans",
+      sans-serif;
     letter-spacing: 0.01em;
     font-weight: 700;
   }
 
   /* Hero gradient helper for large hero CTA backgrounds */
   .hero-gradient {
-    background-image: linear-gradient(90deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    background-image: linear-gradient(
+      90deg,
+      hsl(var(--primary)) 0%,
+      hsl(var(--secondary)) 100%
+    );
   }
 
   .hero-image-panel {
     border-radius: 1.25rem;
-    box-shadow: 0 25px 50px -12px rgba(44,62,80,0.12);
+    box-shadow: 0 25px 50px -12px rgba(44, 62, 80, 0.12);
     overflow: hidden;
   }
 }

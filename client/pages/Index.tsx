@@ -13,15 +13,15 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-white pt-20 md:pt-32 pb-20 md:pb-32 overflow-hidden">
+      <section className="relative bg-white py-16 md:py-24 overflow-hidden">
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-[#1f2d3a] leading-tight mb-6">
-                Midlife health, made <EmUnderline>clear.</EmUnderline>
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-tight mb-6">
+                Midlife health, made clear.
               </h1>
-              <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-10 max-w-lg">
+              <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
                 Clarra connects your symptoms, patterns, and daily experience
                 into meaningful insights you can trust.
               </p>
@@ -30,12 +30,12 @@ export default function Index() {
                 <Link to="/contact">
                   <Button
                     size="lg"
-                    className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
+                    className="bg-primary hover:bg-primary/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
                   >
                     Start with clarity
                   </Button>
                 </Link>
-                <button className="text-base font-semibold text-[#1f2d3a] hover:text-primary transition-colors pt-2">
+                <button className="text-base font-semibold text-foreground-dark hover:text-primary transition-colors pt-2">
                   Join the waitlist
                 </button>
               </div>
@@ -44,39 +44,47 @@ export default function Index() {
         </div>
 
         {/* Right Column - Full Bleed Image */}
-        <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full">
+        <div className="hidden lg:block absolute bottom-0 right-[-12%] w-[84%] h-full">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c"
-            alt="Woman using Clarra app"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: "center top" }}
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
+            alt="Clarra app and user"
+            className="w-full h-full object-contain"
             loading="eager"
           />
         </div>
 
         {/* Mobile Image */}
-        <div className="lg:hidden relative h-[500px] w-full mt-12">
+        <div className="lg:hidden relative h-[840px] w-full mt-12">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c"
-            alt="Woman using Clarra app"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: "center top" }}
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
+            alt="Clarra app and user"
+            className="w-full h-full object-contain"
             loading="eager"
           />
         </div>
       </section>
 
-      {/* Product Features Carousel */}
-      <ProductCarouselSection />
+      {/* Signal Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-8">
+              Clarra is where your symptoms become{" "}
+              <span className="text-primary">signals</span> that bring clarity
+              to your midlife health.
+            </h2>
+          </div>
+        </div>
+      </section>
 
       {/* Sleep & Wellness Features Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-[#f0f9ff] to-white">
         <div className="container">
           <div className="mb-16 text-center">
-            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
+            <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
               Health Dimensions
             </p>
-            <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight max-w-3xl mx-auto">
+            <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight max-w-3xl mx-auto">
               Understand your whole
               <span className="block text-primary">wellness journey.</span>
             </h2>
@@ -154,7 +162,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
+              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-4 group-hover:text-primary transition-colors leading-tight">
                 Sleep & Mood Harmony
               </h3>
             </div>
@@ -228,7 +236,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
+              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-4 group-hover:text-primary transition-colors leading-tight">
                 Cognitive & Emotional Clarity
               </h3>
             </div>
@@ -304,7 +312,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
+              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-4 group-hover:text-primary transition-colors leading-tight">
                 Stress, Energy & Daily Performance
               </h3>
             </div>
@@ -381,7 +389,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
+              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-4 group-hover:text-primary transition-colors leading-tight">
                 Hormone-Adaptive Guidance
               </h3>
             </div>
@@ -389,21 +397,25 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Product Features Carousel */}
+      <ProductCarouselSection />
+
       {/* Midlife Health Quote Section */}
-      <section className="py-12 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5]">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-[#1f2d3a] leading-relaxed">
-              Daily brain fog, 4:00 AM hot flashes, dry skin and anxiety...don't
-              face the 65+ symptoms of perimenopause and menopause alone.{" "}
-              <span className="text-[#fc9a53]">Talk to Clarra.</span>
+            <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-foreground-dark leading-relaxed">
+              Longevity isn't just more years — it's more good years.{" "}
+              <span className="text-[#fc9a53]">
+                Clarra helps you create them.
+              </span>
             </p>
           </div>
         </div>
       </section>
 
       {/* App Features Section */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="flex justify-center lg:justify-start items-center">
@@ -414,10 +426,10 @@ export default function Index() {
               />
             </div>
             <div>
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
+              <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
                 Insights That Matter
               </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight mb-4">
+              <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight mb-4">
                 Clinical precision,
                 <span className="block font-serif italic font-light text-[#fc9a53] mt-2">
                   designed for simplicity
@@ -438,10 +450,10 @@ export default function Index() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
           <div className="mb-16 text-center">
-            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
+            <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
               How Clarra Works
             </p>
-            <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight max-w-3xl mx-auto">
+            <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight max-w-3xl mx-auto">
               Four pillars of
               <span className="block text-primary">personalized care.</span>
             </h2>
@@ -516,7 +528,7 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-primary-foreground mb-3">
+                        <h2 className="text-5xl font-bold text-primary-foreground mb-4">
                           Log your experience by talking
                         </h2>
                         <p className="text-lg text-primary-foreground/90">
@@ -642,7 +654,7 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-secondary-foreground mb-3">
+                        <h2 className="text-5xl font-bold text-secondary-foreground mb-4">
                           See patterns across sleep, stress, mood, cognition
                         </h2>
                         <p className="text-lg text-secondary-foreground/90">
@@ -727,7 +739,7 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-accent-foreground mb-3">
+                        <h2 className="text-5xl font-bold text-accent-foreground mb-4">
                           Insights that actually explain what's happening
                         </h2>
                         <p className="text-lg text-accent-foreground/90">
@@ -823,7 +835,7 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-white mb-3">
+                        <h2 className="text-5xl font-bold text-white mb-4">
                           Know what to do next
                         </h2>
                         <p className="text-lg text-white/90">
@@ -855,15 +867,15 @@ export default function Index() {
       </section>
 
       {/* Founder's Note Section */}
-      <section className="py-24 md:py-40 bg-[#1f2d3a] text-white relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-foreground-dark text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/50 rounded-full blur-3xl"></div>
         </div>
         <div className="container relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div className="order-2 lg:order-1">
-              <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-6">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div>
+              <p className="text-lg font-semibold text-primary uppercase tracking-widest mb-6">
                 A Founder's Note
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold leading-tight mb-8">
@@ -889,7 +901,7 @@ export default function Index() {
                 — Meghan White, Founder & CEO
               </p>
             </div>
-            <div className="order-1 lg:order-2 flex justify-center lg:justify-start lg:pl-16">
+            <div className="flex justify-center md:justify-end">
               <div className="relative w-full max-w-sm">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/0 rounded-2xl blur-2xl"></div>
                 <img
@@ -899,38 +911,6 @@ export default function Index() {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative overflow-hidden">
-        <div className="container relative z-10 text-center max-w-4xl mx-auto">
-          <h2 className="font-display text-5xl sm:text-6xl font-bold mb-6 tracking-tight text-[#1f2d3a]">
-            Ready to take control of your midlife health?
-          </h2>
-          <p className="text-xl sm:text-2xl text-foreground/70 mb-10 leading-relaxed max-w-2xl mx-auto">
-            Get personalized insights, proactive care, and a partner that stays
-            with you every step of the way.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact">
-              <Button
-                size="lg"
-                className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-10 py-7 text-xl rounded-full shadow-xl hover:scale-105 transition-transform"
-              >
-                Get Started Today
-              </Button>
-            </Link>
-            <Link to="/how-it-works">
-              <Button
-                variant="outline"
-                size="lg"
-                className="bg-transparent border-[#1f2d3a] text-[#1f2d3a] hover:bg-[#1f2d3a] hover:text-white px-10 py-7 text-xl rounded-full"
-              >
-                Learn More
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
@@ -1036,7 +1016,7 @@ function Feature({
           {icon}
         </div>
       )}
-      <h3 className="font-display text-lg font-bold text-[#1f2d3a] mb-2 group-hover:text-primary transition-colors">
+      <h3 className="font-display text-lg font-bold text-foreground-dark mb-2 group-hover:text-primary transition-colors">
         {title}
       </h3>
       <p className="text-sm text-foreground/70 leading-relaxed">
