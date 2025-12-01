@@ -142,28 +142,51 @@ export default function ProductCarouselSection() {
             </div>
           </div>
 
-          {/* Right Side - Product Mockup Placeholder */}
+          {/* Right Side - Product Mockup with Image and Metrics */}
           <div className="relative">
-            <div className="relative w-full aspect-square rounded-3xl bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm flex items-center justify-center overflow-hidden group">
-              {/* Placeholder content */}
-              <div className="relative z-10 text-center space-y-8 px-8">
-                <div className="inline-flex items-center justify-center w-24 h-24 rounded-3xl bg-white/10 border border-white/20">
-                  <IconComponent className="w-12 h-12 text-white/70" strokeWidth={1.5} />
+            <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
+              {/* Background Image */}
+              <img
+                src={currentFeature.image}
+                alt={currentFeature.title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+
+              {/* Overlay gradient for contrast */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+
+              {/* Metric Cards Overlay */}
+              <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between pointer-events-none">
+                {/* Primary Metric Card - Top Right */}
+                <div className="flex justify-end">
+                  <div className="bg-gradient-to-br from-amber-700/70 to-amber-900/70 backdrop-blur-md rounded-2xl p-6 border border-amber-600/40 max-w-xs shadow-xl">
+                    <p className="text-xs font-semibold text-amber-200/70 uppercase tracking-wider mb-2">
+                      {currentFeature.metrics.primary.label}
+                    </p>
+                    <p className="text-4xl font-bold text-white mb-1">
+                      {currentFeature.metrics.primary.value}
+                    </p>
+                    <p className="text-sm text-amber-100/60">
+                      {currentFeature.metrics.primary.subtitle}
+                    </p>
+                  </div>
                 </div>
-                
-                <div className="space-y-4">
-                  <p className="text-base font-semibold text-white/80">
-                    Product Screenshot
-                  </p>
-                  <p className="text-sm text-white/50">
-                    {currentFeature.title}
-                  </p>
+
+                {/* Secondary Metric Card - Bottom Right */}
+                <div className="flex justify-end">
+                  <div className="bg-gradient-to-br from-teal-700/60 to-teal-900/60 backdrop-blur-md rounded-2xl p-5 border border-teal-600/40 max-w-xs shadow-lg">
+                    <p className="text-xs font-semibold text-teal-200/70 uppercase tracking-wider mb-2">
+                      {currentFeature.metrics.secondary.label}
+                    </p>
+                    <p className="text-3xl font-bold text-white mb-1">
+                      {currentFeature.metrics.secondary.value}
+                    </p>
+                    <p className="text-sm text-teal-100/60">
+                      {currentFeature.metrics.secondary.subtitle}
+                    </p>
+                  </div>
                 </div>
               </div>
-
-              {/* Decorative corner accents */}
-              <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/5 rounded-full blur-2xl" />
-              <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-white/5 rounded-full blur-2xl" />
             </div>
           </div>
         </div>
