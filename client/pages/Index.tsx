@@ -9,6 +9,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 import { Plus } from "lucide-react";
+import ProductCarouselSection from "@/components/ProductCarouselSection";
 
 export default function Index() {
   return (
