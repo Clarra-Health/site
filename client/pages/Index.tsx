@@ -115,10 +115,10 @@ export default function Index() {
       </section>
 
       {/* Product Showcase Section */}
-      <section className="py-32 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
+      <section className="py-32 bg-white relative overflow-visible">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 pointer-events-none" />
         <div className="container relative z-10">
-          <div className="mx-auto max-w-5xl">
+          <div className="mx-auto max-w-5xl pt-40">
             <h2 className="font-display text-6xl sm:text-7xl font-bold text-[#1f2d3a] mb-12 text-center leading-tight">
               Meet Clarra
             </h2>
