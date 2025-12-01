@@ -9,32 +9,40 @@ const features = [
     title: "Conversational Symptom Capture",
     description: "Your lived experience becomes structured health insight — no tracking apps, no forms, no friction. Clarra listens to your story and translates it into actionable data.",
     icon: "🎤",
-    accentColor: "from-primary/20 to-primary/5",
-    borderColor: "border-primary/30"
+    bgColor: "bg-gradient-to-br from-primary to-primary/80",
+    accentColor: "from-primary/40 to-primary/20",
+    textColor: "text-white",
+    descColor: "text-white/90"
   },
   {
     id: 2,
     title: "Pattern Intelligence",
     description: "Clarra finds relationships across sleep, stress, mood, cognition, and temperature changes that no wearable or lab test can see. Discover the hidden connections shaping your midlife.",
     icon: "⚡",
-    accentColor: "from-green-400/20 to-green-400/5",
-    borderColor: "border-green-400/30"
+    bgColor: "bg-gradient-to-br from-green-500 to-green-600",
+    accentColor: "from-green-500/40 to-green-400/20",
+    textColor: "text-white",
+    descColor: "text-white/90"
   },
   {
     id: 3,
     title: "AI Insights",
     description: "Personalized interpretations of your health patterns delivered in plain language. Understand not just what's happening, but why — and what it means for you.",
     icon: "✨",
-    accentColor: "from-orange-400/20 to-orange-400/5",
-    borderColor: "border-orange-400/30"
+    bgColor: "bg-gradient-to-br from-orange-500 to-orange-600",
+    accentColor: "from-orange-500/40 to-orange-400/20",
+    textColor: "text-white",
+    descColor: "text-white/90"
   },
   {
     id: 4,
     title: "Personalized Guidance",
     description: "Clear, actionable next steps tailored to your unique patterns and preferences. Get recommendations that actually fit your life, not generic advice.",
     icon: "🧭",
-    accentColor: "from-secondary/20 to-secondary/5",
-    borderColor: "border-secondary/30"
+    bgColor: "bg-gradient-to-br from-secondary to-secondary/80",
+    accentColor: "from-secondary/40 to-secondary/20",
+    textColor: "text-white",
+    descColor: "text-white/90"
   }
 ];
 
