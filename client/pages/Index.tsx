@@ -41,7 +41,7 @@ export default function Index() {
             <div className="relative h-[600px] md:h-[700px]">
               {/* Background Image */}
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2d339653a5634123b272544d72091840?format=webp&width=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c?format=webp&width=1200"
                 alt="Woman using Clarra app"
                 className="absolute inset-0 w-full h-full object-cover rounded-3xl"
                 style={{ objectPosition: 'center 20%' }}
