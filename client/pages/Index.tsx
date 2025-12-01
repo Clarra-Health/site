@@ -64,9 +64,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Product Features Carousel */}
-      <ProductCarouselSection />
-
       {/* Sleep & Wellness Features Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
