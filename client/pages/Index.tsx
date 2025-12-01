@@ -70,8 +70,8 @@ export default function Index() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-8">
               Clarra is where your symptoms become{" "}
-              <span className="text-primary">signals</span>, bringing clarity
-              to your midlife health.
+              <span className="text-primary">signals</span>, bringing clarity to
+              your midlife health.
             </h2>
           </div>
         </div>
