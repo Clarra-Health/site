@@ -249,36 +249,36 @@ export default function Index() {
                   </div>
                 </div>
               </DialogTrigger>
-              <DialogContent className="max-w-2xl p-0 overflow-hidden bg-transparent border-none shadow-none">
-                <div className="relative w-full rounded-2xl overflow-hidden">
+              <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-3xl overflow-hidden">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd8f861e3b08e4df7aa27b88c2a9d8561?format=webp&width=1000"
                     alt="Heart Health"
-                    className="w-full h-64 object-cover blur-sm opacity-40"
+                    className="w-full h-96 object-cover blur-sm opacity-40"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-primary/60" />
-                  <div className="absolute inset-0 p-8 flex flex-col justify-between">
+                  <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-3xl font-bold text-primary-foreground mb-2">Heart Health</h2>
-                        <p className="text-primary-foreground/90">Monitor and optimize your cardiovascular wellness</p>
+                        <h2 className="text-5xl font-bold text-primary-foreground mb-3">Heart Health</h2>
+                        <p className="text-lg text-primary-foreground/90">Monitor and optimize your cardiovascular wellness</p>
                       </div>
-                      <DialogClose className="text-primary-foreground hover:opacity-80">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      <DialogClose className="text-primary-foreground hover:opacity-80 flex-shrink-0">
+                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
                       </DialogClose>
                     </div>
-                    <div className="space-y-4">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                          <p className="text-primary-foreground/75 text-sm">Current HR</p>
-                          <p className="text-2xl font-bold text-primary-foreground">72 bpm</p>
+                    <div className="space-y-6">
+                      <div className="grid grid-cols-2 gap-6">
+                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                          <p className="text-primary-foreground/75 text-base mb-2">Current HR</p>
+                          <p className="text-4xl font-bold text-primary-foreground">72 bpm</p>
                         </div>
-                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                          <p className="text-primary-foreground/75 text-sm">Trend</p>
-                          <p className="text-2xl font-bold text-primary-foreground">↓ 5%</p>
+                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                          <p className="text-primary-foreground/75 text-base mb-2">Trend</p>
+                          <p className="text-4xl font-bold text-primary-foreground">↓ 5%</p>
                         </div>
                       </div>
-                      <p className="text-primary-foreground/90 text-sm">Track heart rate patterns, detect irregularities, and receive personalized recommendations to maintain optimal cardiovascular health throughout your day.</p>
+                      <p className="text-primary-foreground/90 text-base leading-relaxed">Track heart rate patterns, detect irregularities, and receive personalized recommendations to maintain optimal cardiovascular health throughout your day.</p>
                     </div>
                   </div>
                 </div>
@@ -324,36 +324,36 @@ export default function Index() {
                   </div>
                 </div>
               </DialogTrigger>
-              <DialogContent className="max-w-2xl p-0 overflow-hidden bg-transparent border-none shadow-none">
-                <div className="relative w-full rounded-2xl overflow-hidden">
+              <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-3xl overflow-hidden">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F190a557ffbdb44f8a3e663d5d571eb36?format=webp&width=1000"
                     alt="Cycle Insights"
-                    className="w-full h-64 object-cover blur-sm opacity-40"
+                    className="w-full h-96 object-cover blur-sm opacity-40"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-secondary/60" />
-                  <div className="absolute inset-0 p-8 flex flex-col justify-between">
+                  <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-3xl font-bold text-secondary-foreground mb-2">Cycle Insights</h2>
-                        <p className="text-secondary-foreground/90">Understand your unique menstrual and hormonal patterns</p>
+                        <h2 className="text-5xl font-bold text-secondary-foreground mb-3">Cycle Insights</h2>
+                        <p className="text-lg text-secondary-foreground/90">Understand your unique menstrual and hormonal patterns</p>
                       </div>
-                      <DialogClose className="text-secondary-foreground hover:opacity-80">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      <DialogClose className="text-secondary-foreground hover:opacity-80 flex-shrink-0">
+                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
                       </DialogClose>
                     </div>
-                    <div className="space-y-4">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                          <p className="text-secondary-foreground/75 text-sm">Cycle Phase</p>
-                          <p className="text-2xl font-bold text-secondary-foreground">Luteal</p>
+                    <div className="space-y-6">
+                      <div className="grid grid-cols-2 gap-6">
+                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                          <p className="text-secondary-foreground/75 text-base mb-2">Cycle Phase</p>
+                          <p className="text-4xl font-bold text-secondary-foreground">Luteal</p>
                         </div>
-                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                          <p className="text-secondary-foreground/75 text-sm">Days Left</p>
-                          <p className="text-2xl font-bold text-secondary-foreground">5 days</p>
+                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                          <p className="text-secondary-foreground/75 text-base mb-2">Days Left</p>
+                          <p className="text-4xl font-bold text-secondary-foreground">5 days</p>
                         </div>
                       </div>
-                      <p className="text-secondary-foreground/90 text-sm">Track cycle phases, hormonal fluctuations, and mood patterns. Receive personalized insights on energy, nutrition, and wellness recommendations tailored to your cycle.</p>
+                      <p className="text-secondary-foreground/90 text-base leading-relaxed">Track cycle phases, hormonal fluctuations, and mood patterns. Receive personalized insights on energy, nutrition, and wellness recommendations tailored to your cycle.</p>
                     </div>
                   </div>
                 </div>
@@ -404,40 +404,40 @@ export default function Index() {
                   </div>
                 </div>
               </DialogTrigger>
-              <DialogContent className="max-w-2xl p-0 overflow-hidden bg-transparent border-none shadow-none">
-                <div className="relative w-full rounded-2xl overflow-hidden">
+              <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-3xl overflow-hidden">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4cc404f3fb3249c4a7bd17e00ebc5f27?format=webp&width=1000"
                     alt="Stress Management"
-                    className="w-full h-64 object-cover blur-sm opacity-40"
+                    className="w-full h-96 object-cover blur-sm opacity-40"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-accent via-accent/80 to-accent/60" />
-                  <div className="absolute inset-0 p-8 flex flex-col justify-between">
+                  <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-3xl font-bold text-accent-foreground mb-2">Stress Management</h2>
-                        <p className="text-accent-foreground/90">Monitor stress levels and optimize your wellbeing</p>
+                        <h2 className="text-5xl font-bold text-accent-foreground mb-3">Stress Management</h2>
+                        <p className="text-lg text-accent-foreground/90">Monitor stress levels and optimize your wellbeing</p>
                       </div>
-                      <DialogClose className="text-accent-foreground hover:opacity-80">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      <DialogClose className="text-accent-foreground hover:opacity-80 flex-shrink-0">
+                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
                       </DialogClose>
                     </div>
-                    <div className="space-y-4">
-                      <div className="grid grid-cols-3 gap-4">
-                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                          <p className="text-accent-foreground/75 text-sm">Energy</p>
-                          <p className="text-2xl font-bold text-accent-foreground">68%</p>
+                    <div className="space-y-6">
+                      <div className="grid grid-cols-3 gap-6">
+                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                          <p className="text-accent-foreground/75 text-base mb-2">Energy</p>
+                          <p className="text-4xl font-bold text-accent-foreground">68%</p>
                         </div>
-                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                          <p className="text-accent-foreground/75 text-sm">Focus</p>
-                          <p className="text-2xl font-bold text-accent-foreground">85%</p>
+                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                          <p className="text-accent-foreground/75 text-base mb-2">Focus</p>
+                          <p className="text-4xl font-bold text-accent-foreground">85%</p>
                         </div>
-                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                          <p className="text-accent-foreground/75 text-sm">Stress</p>
-                          <p className="text-2xl font-bold text-accent-foreground">42%</p>
+                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                          <p className="text-accent-foreground/75 text-base mb-2">Stress</p>
+                          <p className="text-4xl font-bold text-accent-foreground">42%</p>
                         </div>
                       </div>
-                      <p className="text-accent-foreground/90 text-sm">Track your energy, focus, and stress levels throughout the day. Get actionable insights and personalized recommendations to reduce stress and improve your overall wellbeing.</p>
+                      <p className="text-accent-foreground/90 text-base leading-relaxed">Track your energy, focus, and stress levels throughout the day. Get actionable insights and personalized recommendations to reduce stress and improve your overall wellbeing.</p>
                     </div>
                   </div>
                 </div>
@@ -483,36 +483,36 @@ export default function Index() {
                   </div>
                 </div>
               </DialogTrigger>
-              <DialogContent className="max-w-2xl p-0 overflow-hidden bg-transparent border-none shadow-none">
-                <div className="relative w-full rounded-2xl overflow-hidden">
+              <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-3xl overflow-hidden">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F079c308ae6b842d3930759bba6ba2867?format=webp&width=1000"
                     alt="Personalized Insights"
-                    className="w-full h-64 object-cover blur-sm opacity-40"
+                    className="w-full h-96 object-cover blur-sm opacity-40"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-destructive via-destructive/80 to-destructive/60" />
-                  <div className="absolute inset-0 p-8 flex flex-col justify-between">
+                  <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-3xl font-bold text-destructive-foreground mb-2">Personal Insights</h2>
-                        <p className="text-destructive-foreground/90">AI-powered recommendations tailored to your health</p>
+                        <h2 className="text-5xl font-bold text-destructive-foreground mb-3">Personal Insights</h2>
+                        <p className="text-lg text-destructive-foreground/90">AI-powered recommendations tailored to your health</p>
                       </div>
-                      <DialogClose className="text-destructive-foreground hover:opacity-80">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      <DialogClose className="text-destructive-foreground hover:opacity-80 flex-shrink-0">
+                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
                       </DialogClose>
                     </div>
-                    <div className="space-y-4">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                          <p className="text-destructive-foreground/75 text-sm">Insights This Week</p>
-                          <p className="text-2xl font-bold text-destructive-foreground">7</p>
+                    <div className="space-y-6">
+                      <div className="grid grid-cols-2 gap-6">
+                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                          <p className="text-destructive-foreground/75 text-base mb-2">Insights This Week</p>
+                          <p className="text-4xl font-bold text-destructive-foreground">7</p>
                         </div>
-                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                          <p className="text-destructive-foreground/75 text-sm">Actions Taken</p>
-                          <p className="text-2xl font-bold text-destructive-foreground">5</p>
+                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                          <p className="text-destructive-foreground/75 text-base mb-2">Actions Taken</p>
+                          <p className="text-4xl font-bold text-destructive-foreground">5</p>
                         </div>
                       </div>
-                      <p className="text-destructive-foreground/90 text-sm">Receive AI-powered recommendations based on your unique health data. Get personalized advice on nutrition, exercise, sleep, and wellness strategies designed specifically for your needs.</p>
+                      <p className="text-destructive-foreground/90 text-base leading-relaxed">Receive AI-powered recommendations based on your unique health data. Get personalized advice on nutrition, exercise, sleep, and wellness strategies designed specifically for your needs.</p>
                     </div>
                   </div>
                 </div>
