@@ -7,10 +7,10 @@ export default function SiteFooter() {
         {/* CTA Section */}
         <div className="mb-20 rounded-2xl bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] p-12 md:p-16 text-center">
           <h2 className="font-serif text-4xl sm:text-5xl italic font-light text-[#1f2d3a] mb-6">
-            Let's talk.
+            Ready to get started?
           </h2>
           <p className="text-base sm:text-lg text-foreground/70 leading-relaxed mb-8 max-w-2xl mx-auto">
-            Investors, researchers, media, builders — we'd love to connect. We're forming partnerships to bring Clarra to life, and no question is too small.
+            Take the first step towards better health insights and personalized care for your midlife journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
@@ -68,7 +68,7 @@ export default function SiteFooter() {
             </div>
           </div>
 
-          {/* Product Links */}
+          {/* Product Section */}
           <div>
             <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">Product</h3>
             <ul className="space-y-4">
@@ -82,49 +82,41 @@ export default function SiteFooter() {
               </li>
               <li>
                 <a
-                  href="#how-it-works"
-                  className="text-sm text-foreground/60 hover:text-primary transition font-medium"
-                >
-                  How It Works
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#features"
+                  href="/#features"
                   className="text-sm text-foreground/60 hover:text-primary transition font-medium"
                 >
                   Features
                 </a>
               </li>
+              <li>
+                <a
+                  href="/#how-it-works"
+                  className="text-sm text-foreground/60 hover:text-primary transition font-medium"
+                >
+                  How It Works
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Company Links */}
+          {/* Company Section */}
           <div>
             <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">Company</h3>
             <ul className="space-y-4">
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-sm text-foreground/60 hover:text-primary transition font-medium"
+                >
+                  Contact
+                </Link>
+              </li>
               <li>
                 <a
                   href="mailto:hello@clarrahealth.com"
                   className="text-sm text-foreground/60 hover:text-primary transition font-medium"
                 >
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="text-sm text-foreground/60 hover:text-primary transition font-medium"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#privacy"
-                  className="text-sm text-foreground/60 hover:text-primary transition font-medium"
-                >
-                  Privacy
+                  Email
                 </a>
               </li>
             </ul>
