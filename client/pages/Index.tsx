@@ -247,8 +247,8 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Women's Health Card */}
-            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-96">
+            {/* Cycle Insights Card */}
+            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
               <div className="relative overflow-hidden flex-[2]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F190a557ffbdb44f8a3e663d5d571eb36?format=webp&width=800"
@@ -285,7 +285,7 @@ export default function Index() {
             </div>
 
             {/* Stress Card */}
-            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-96">
+            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
               <div className="relative overflow-hidden flex-[2]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4cc404f3fb3249c4a7bd17e00ebc5f27?format=webp&width=800"
@@ -327,7 +327,7 @@ export default function Index() {
             </div>
 
             {/* Personal Insights Card */}
-            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-96">
+            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
               <div className="relative overflow-hidden flex-[2]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F079c308ae6b842d3930759bba6ba2867?format=webp&width=800"
