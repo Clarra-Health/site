@@ -408,7 +408,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2351232003334bb9adec1c25cc301c3e?format=webp&width=800"
                 alt="Clarra app mockup"
-                className="max-w-sm w-full h-auto"
+                className="max-w-2xl w-full h-auto"
               />
             </div>
             <div>
