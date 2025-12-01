@@ -660,65 +660,6 @@ export default function Index() {
       </section>
 
 
-      {/* Mission Section */}
-      <section className="py-12 md:py-24">
-        <div className="container">
-          <div className="mx-auto max-w-5xl text-center">
-            {/* Desktop / tablet version unchanged */}
-            <h2 className="hidden sm:inline-block font-display relative text-6xl font-extrabold tracking-[0.01em] text-[#1f2d3a]">
-              Clarra’s mission is to harness{" "}
-              <span className="text-[#4fb7b3]">the power of AI</span> to{" "}
-              <EmUnderline stroke="#2c3e50">
-                <span className="whitespace-nowrap text-[#56d257]">
-                  transform women’s health
-                </span>
-              </EmUnderline>
-              —{" "}
-              <EmUnderline stroke="#4fb7b3" showOnMobile>
-                47 million women
-              </EmUnderline>{" "}
-              worldwide enter menopause each year without the <span>care</span>{" "}
-              they need.
-            </h2>
-            {/* Mobile exact layout */}
-            <h2 className="sm:hidden font-display text-[#1f2d3a] uppercase font-extrabold tracking-[0.01em] text-5xl leading-[1.02]">
-              <span>Clarra’s mission is to harness </span>
-              <span className="text-[#4fb7b3]">the power of AI</span>
-              <span> to</span>
-              <br />
-              <EmUnderline stroke="#2c3e50" showOnMobile mobileOffsetEm={0.17}>
-                <span className="text-[#56d257]">TRANSFORM WOMEN’S HEALTH</span>
-              </EmUnderline>
-              —{" "}
-              <EmUnderline
-                stroke="#4fb7b3"
-                offsetScale={0.85}
-                showOnMobile
-                mobileOffsetEm={0.194}
-              >
-                47 MILLION WOMEN
-              </EmUnderline>{" "}
-              WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT <span>THE CARE</span>{" "}
-              THEY NEED.
-            </h2>
-            <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85 max-w-3xl mx-auto">
-              <p>
-                By combining biomarkers, wearable data, and lived symptoms,
-                Clarra builds a whole view of health that goes beyond fragmented
-                tracking. Our AI turns this data into actionable
-                insights—detecting risks earlier, anticipating challenges, and
-                guiding next steps.
-              </p>
-              <p>
-                Designed to be accurate, accessible, and scalable, Clarra puts
-                technology to work for women and providers, enabling faster
-                action, better outcomes, and a new standard of care for midlife
-                and beyond.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Final CTA Section */}
       <section className="py-24 bg-[#1f2d3a] text-white relative overflow-hidden">
