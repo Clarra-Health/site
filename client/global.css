@@ -17,6 +17,7 @@
     /* Exact brand palette (converted from hex) */
     --background: 195 23% 97%; /* #f4f7f8 */
     --foreground: 210 29% 24%; /* #2c3e50 */
+    --foreground-dark: 210 29% 18%; /* #1f2d3a */
 
     --card: 0 0% 100%;
     --card-foreground: 210 29% 24%;
