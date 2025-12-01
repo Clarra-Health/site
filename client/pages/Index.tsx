@@ -286,41 +286,79 @@ export default function Index() {
             </Dialog>
 
             {/* Cycle Insights Card */}
-            <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
-              <div className="relative overflow-hidden flex-[2]">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F190a557ffbdb44f8a3e663d5d571eb36?format=webp&width=800"
-                  alt="Cycle Insights"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
+                  <div className="relative overflow-hidden flex-[2]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F190a557ffbdb44f8a3e663d5d571eb36?format=webp&width=800"
+                      alt="Cycle Insights"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
-                {/* Cycle Tracker Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
-                  <div className="flex gap-1 flex-wrap justify-center">
-                    {[1,2,3,4,5,6,7].map((i) => (
-                      <div key={i} className="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold" style={{
-                        backgroundColor: i <= 2 ? '#4fb7b3' : i <= 4 ? '#7cc9a2' : '#fc9a53'
-                      }}>
-                        {i}
+                    {/* Cycle Tracker Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
+                      <div className="flex gap-1 flex-wrap justify-center">
+                        {[1,2,3,4,5,6,7].map((i) => (
+                          <div key={i} className="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold" style={{
+                            backgroundColor: i <= 2 ? '#4fb7b3' : i <= 4 ? '#7cc9a2' : '#fc9a53'
+                          }}>
+                            {i}
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    </div>
+                  </div>
+
+                  <div className="relative z-10 bg-secondary p-6">
+                    <div className="flex justify-between items-start mb-4">
+                      <span className="text-secondary-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                        Cycle Insights
+                      </span>
+                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-secondary-foreground hover:bg-white/30 transition">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                      </button>
+                    </div>
+                    <p className="font-serif text-secondary-foreground text-lg italic font-light leading-tight">Understand your unique cycle</p>
                   </div>
                 </div>
-              </div>
-
-              <div className="relative z-10 bg-secondary p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <span className="text-secondary-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
-                    Cycle Insights
-                  </span>
-                  <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-secondary-foreground hover:bg-white/30 transition">
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
-                  </button>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-2xl overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F190a557ffbdb44f8a3e663d5d571eb36?format=webp&width=1000"
+                    alt="Cycle Insights"
+                    className="w-full h-64 object-cover blur-sm opacity-40"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-secondary/60" />
+                  <div className="absolute inset-0 p-8 flex flex-col justify-between">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h2 className="text-3xl font-bold text-secondary-foreground mb-2">Cycle Insights</h2>
+                        <p className="text-secondary-foreground/90">Understand your unique menstrual and hormonal patterns</p>
+                      </div>
+                      <DialogClose className="text-secondary-foreground hover:opacity-80">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      </DialogClose>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
+                          <p className="text-secondary-foreground/75 text-sm">Cycle Phase</p>
+                          <p className="text-2xl font-bold text-secondary-foreground">Luteal</p>
+                        </div>
+                        <div className="bg-white/10 backdrop-blur rounded-lg p-4">
+                          <p className="text-secondary-foreground/75 text-sm">Days Left</p>
+                          <p className="text-2xl font-bold text-secondary-foreground">5 days</p>
+                        </div>
+                      </div>
+                      <p className="text-secondary-foreground/90 text-sm">Track cycle phases, hormonal fluctuations, and mood patterns. Receive personalized insights on energy, nutrition, and wellness recommendations tailored to your cycle.</p>
+                    </div>
+                  </div>
                 </div>
-                <p className="font-serif text-secondary-foreground text-lg italic font-light leading-tight">Understand your unique cycle</p>
-              </div>
-            </div>
+              </DialogContent>
+            </Dialog>
 
             {/* Stress Card */}
             <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
