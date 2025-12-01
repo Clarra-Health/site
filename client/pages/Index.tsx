@@ -697,7 +697,7 @@ export default function Index() {
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold leading-tight mb-8">
                 Women's health
-                <span className="block text-primary">deserves better.</span>
+                <span className="block text-primary font-serif italic font-light">deserves better.</span>
               </h2>
               <p className="text-lg text-white/80 leading-relaxed mb-6">
                 Midlife can feel like a black box. Women are told their symptoms are "just stress" or "part of aging," when the reality is far more nuanced. Our bodies are changing in profound ways, and we deserve clarity, not dismissal.
