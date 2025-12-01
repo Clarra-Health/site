@@ -291,7 +291,7 @@ export default function Index() {
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F06dec3eeaf2f47ce8637e6c8af7fb803?format=webp&width=800"
                       alt="Pattern Recognition"
-                      className="absolute inset-0 w-full h-full object-cover scale-[0.875] transition-transform duration-300 group-hover:scale-[0.91]"
+                      className="absolute inset-0 w-full h-full object-cover scale-[1.0] transition-transform duration-300 group-hover:scale-[1.05]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
