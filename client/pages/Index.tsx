@@ -21,7 +21,7 @@ export default function Index() {
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-tight mb-6">
                 Midlife health, made clear.
               </h1>
-              <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-10 max-w-lg">
+              <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
                 Clarra connects your symptoms, patterns, and daily experience
                 into meaningful insights you can trust.
               </p>
@@ -160,7 +160,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-3 group-hover:text-primary transition-colors leading-tight">
+              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-4 group-hover:text-primary transition-colors leading-tight">
                 Sleep & Mood Harmony
               </h3>
             </div>
@@ -234,7 +234,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-3 group-hover:text-primary transition-colors leading-tight">
+              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-4 group-hover:text-primary transition-colors leading-tight">
                 Cognitive & Emotional Clarity
               </h3>
             </div>
@@ -310,7 +310,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-3 group-hover:text-primary transition-colors leading-tight">
+              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-4 group-hover:text-primary transition-colors leading-tight">
                 Stress, Energy & Daily Performance
               </h3>
             </div>
@@ -387,7 +387,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-3 group-hover:text-primary transition-colors leading-tight">
+              <h3 className="font-display text-3xl font-bold text-foreground-dark mb-4 group-hover:text-primary transition-colors leading-tight">
                 Hormone-Adaptive Guidance
               </h3>
             </div>
@@ -524,7 +524,7 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-primary-foreground mb-3">
+                        <h2 className="text-5xl font-bold text-primary-foreground mb-4">
                           Log your experience by talking
                         </h2>
                         <p className="text-lg text-primary-foreground/90">
@@ -650,7 +650,7 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-secondary-foreground mb-3">
+                        <h2 className="text-5xl font-bold text-secondary-foreground mb-4">
                           See patterns across sleep, stress, mood, cognition
                         </h2>
                         <p className="text-lg text-secondary-foreground/90">
@@ -735,7 +735,7 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-accent-foreground mb-3">
+                        <h2 className="text-5xl font-bold text-accent-foreground mb-4">
                           Insights that actually explain what's happening
                         </h2>
                         <p className="text-lg text-accent-foreground/90">
@@ -831,7 +831,7 @@ export default function Index() {
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-white mb-3">
+                        <h2 className="text-5xl font-bold text-white mb-4">
                           Know what to do next
                         </h2>
                         <p className="text-lg text-white/90">
