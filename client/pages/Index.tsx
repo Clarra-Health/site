@@ -68,7 +68,7 @@ export default function Index() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
           <div className="mb-16 text-center">
-            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
+            <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
               Health Dimensions
             </p>
             <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight max-w-3xl mx-auto">
