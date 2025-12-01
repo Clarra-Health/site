@@ -94,6 +94,64 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Three-Column Feature Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="group cursor-pointer">
+              <div className="overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ff20cc42fde714790a312a776c03efbaf?format=webp&width=800"
+                  alt="Sleep and mood"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
+                Understanding Your Sleep Patterns
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Discover how hormonal changes impact your rest and wake cycles. Our advanced tracking helps identify patterns you might miss, giving you the clarity needed to reclaim restful nights.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="group cursor-pointer">
+              <div className="overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7e067e93c3de475ba747062aadfe0c6f?format=webp&width=800"
+                  alt="Healthy lifestyle"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
+                Personalized Nutrition Guidance
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Fuel your body with what it actually needs during midlife. We provide tailored nutritional advice that adapts to your metabolic shifts, supporting energy levels and overall well-being.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="group cursor-pointer">
+              <div className="overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4fa85bca2bdf42f6a8835703155227c0?format=webp&width=800"
+                  alt="Woman smiling"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
+                Emotional Balance & Support
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Navigate mood fluctuations with confidence. Our tools and community support help you maintain emotional equilibrium, ensuring you feel heard, understood, and empowered every day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Logo Strip */}
       <section className="py-10 border-y border-border/50 bg-secondary/5">
         <div className="container">
