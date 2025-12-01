@@ -35,58 +35,24 @@ export default function Index() {
             </div>
 
             <div className="lg:col-span-6 w-full mx-auto lg:max-w-none lg:pl-8">
-              <div className="overflow-hidden rounded-3xl shadow-2xl bg-muted w-full h-[600px] md:h-[700px]">
+              <div className="overflow-hidden rounded-3xl shadow-2xl bg-muted w-full h-[600px] md:h-[700px] relative">
                 <div className="relative w-full h-full">
+                  {/* Woman Background Image */}
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb5e28fd0173c4fc5a9f55558831a5aa1?format=webp&width=1200"
-                    alt="Woman with phone"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2d339653a5634123b272544d72091840?format=webp&width=1200"
+                    alt="Woman using Clarra app"
                     className="w-full h-full object-cover"
-                    style={{ objectPosition: '50% center', filter: 'brightness(1.3)' }}
+                    style={{ objectPosition: '50% center' }}
                     loading="eager"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/15 to-transparent" />
 
-                  {/* Chat Overlay */}
-                  <div className="absolute top-2/3 -translate-y-1/2 right-0 z-20 pr-8 md:pr-12 lg:pr-16 w-full md:w-auto">
-                    <div className="space-y-2 ml-auto md:max-w-xs">
-                      {/* User Message 1 */}
-                      <div className="flex justify-end">
-                        <p className="text-white text-xs bg-white/40 backdrop-blur rounded-2xl px-3 py-2 max-w-[140px]">I'm worried about my energy levels</p>
-                      </div>
-
-                      {/* User Message 2 */}
-                      <div className="flex justify-end">
-                        <p className="text-white text-xs bg-white/40 backdrop-blur rounded-2xl px-3 py-2 max-w-[140px]">It's affecting my daily life</p>
-                      </div>
-
-                      {/* AI Message 1 */}
-                      <div className="flex justify-start gap-2 items-end">
-                        <div className="w-6 h-6 rounded-full flex-shrink-0 overflow-hidden bg-white/20">
-                          <img
-                            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F36749a2f89314dc5b35ffa554852de74?format=webp&width=800"
-                            alt="Clarra"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-3 py-2 max-w-[150px]">
-                          <p className="text-xs">That makes complete sense. Energy fluctuations are really common.</p>
-                        </div>
-                      </div>
-
-                      {/* AI Message 2 */}
-                      <div className="flex justify-start gap-2 items-end">
-                        <div className="w-6 h-6 rounded-full flex-shrink-0 overflow-hidden bg-white/20">
-                          <img
-                            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F36749a2f89314dc5b35ffa554852de74?format=webp&width=800"
-                            alt="Clarra"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-3 py-2 max-w-[150px]">
-                          <p className="text-xs">Let's work together to understand what's going on.</p>
-                        </div>
-                      </div>
-                    </div>
+                  {/* App Mockups Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1481f9ea7add407ca9a17c90d9698254?format=webp&width=800"
+                      alt="Clarra app mockups"
+                      className="w-auto h-4/5 max-w-xs object-contain drop-shadow-2xl"
+                    />
                   </div>
                 </div>
               </div>
