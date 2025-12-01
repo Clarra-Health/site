@@ -228,7 +228,7 @@ export default function Index() {
                 {/* ECG Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
                   <svg className="w-full h-10" viewBox="0 0 200 40" preserveAspectRatio="none">
-                    <polyline points="0,20 20,20 30,5 40,35 50,20 70,20 80,10 90,30 100,20 130,20 150,20" fill="none" stroke="#b366ff" strokeWidth="2" />
+                    <polyline points="0,20 20,20 30,5 40,35 50,20 70,20 80,10 90,30 100,20 130,20 150,20" fill="none" stroke="#4fb7b3" strokeWidth="2" />
                   </svg>
                   <p className="text-white text-xs font-medium mt-1">Heart Rate: 72 bpm</p>
                 </div>
