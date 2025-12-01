@@ -602,16 +602,16 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Nutrition Icon Badge */}
-                <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/40 backdrop-blur-sm rounded-lg px-4 py-2">
+                <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
                   <div className="flex gap-2">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-7 h-7 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
                     </svg>
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-7 h-7 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M13 2h-2v6h2V2zm0 12h-2v6h2v-6zM6.22 5.63L4.81 4.22C3.71 5.32 3 6.93 3 8.72h6V7c0-1.35-.45-2.6-1.22-3.63zm10.56 0C17.45 5.4 18 6.65 18 8v1.72h6c0-1.79-.71-3.4-1.81-4.53l-1.41 1.41zM3 18.72h6V17H3c0 1.79.71 3.4 1.81 4.53l1.41-1.41L6.22 18.63zM17.78 18.63l-1.41 1.41C18.71 22.12 19.5 23.5 21 24h2V17h-6v1.72c1.35 0 2.6.45 3.78 1.22zM13 10h-2v2h2v-2zm0 4h-2v2h2v-2zm-6-2h2V10H7v2zm12 0h2v-2h-2v2z" />
                     </svg>
                   </div>
-                  <span className="text-white text-sm font-semibold">Calories & Energy</span>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">Calories & Energy</span>
                 </div>
 
                 <Dialog>
