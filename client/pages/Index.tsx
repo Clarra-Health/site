@@ -409,39 +409,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Founder's Note Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-white to-gray-50">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div className="flex justify-center lg:justify-start">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F400c9b0b1cbe465881954d3479803557?format=webp&width=800"
-                alt="Meghan White, Founder & CEO"
-                className="w-full h-auto rounded-2xl shadow-lg max-w-sm"
-              />
-            </div>
-            <div>
-              <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-6">
-                A Founder's Note
-              </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight mb-8">
-                Women's health
-                <span className="block text-primary">deserves better.</span>
-              </h2>
-              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                Midlife can feel like a black box. Women are told their symptoms are "just stress" or "part of aging," when the reality is far more nuanced. Our bodies are changing in profound ways, and we deserve clarity, not dismissal.
-              </p>
-              <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-                Clarra was built to change that. By combining biomarker testing, wearable data, and conversational AI, we're creating a partner that actually understands the complexity of midlife health. Not a symptom checker. Not a generic wellness app. A real partner in your health journey.
-              </p>
-              <p className="text-sm text-foreground/60 italic">
-                — Meghan, Founder & CEO
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Three-Column Feature Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
