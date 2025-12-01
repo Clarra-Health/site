@@ -54,15 +54,13 @@ export default function Index() {
         </div>
 
         {/* Mobile Image */}
-        <div className="lg:hidden mt-8 sm:mt-10 mx-4 sm:mx-0">
-          <div className="relative h-[420px] sm:h-[540px] w-full rounded-2xl overflow-hidden bg-gradient-to-br from-[#f0f9ff] to-[#ecfdf5] flex items-center justify-center">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
-              alt="Clarra app and user"
-              className="w-full h-full object-contain"
-              loading="eager"
-            />
-          </div>
+        <div className="lg:hidden relative h-[520px] sm:h-[680px] w-full -mt-4 sm:-mt-6">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
+            alt="Clarra app and user"
+            className="w-full h-full object-contain"
+            loading="eager"
+          />
         </div>
       </section>
 
