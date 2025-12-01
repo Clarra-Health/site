@@ -74,7 +74,7 @@ export default function Index() {
             </p>
             <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight max-w-3xl mx-auto">
               Understand your whole
-              <span className="block text-[#fc9a53]">wellness journey.</span>
+              <span className="block text-primary">wellness journey.</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
@@ -388,7 +388,7 @@ export default function Index() {
             </p>
             <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight max-w-3xl mx-auto">
               Four pillars of
-              <span className="block text-[#fc9a53]">personalized care.</span>
+              <span className="block text-primary">personalized care.</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
