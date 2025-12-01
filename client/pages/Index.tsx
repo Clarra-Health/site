@@ -221,7 +221,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd8f861e3b08e4df7aa27b88c2a9d8561?format=webp&width=800"
                   alt="Heart Health"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 scale-[1.75]"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 scale-[2.28]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
