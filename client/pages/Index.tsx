@@ -317,7 +317,7 @@ export default function Index() {
                             <p className="text-[0.65rem] font-medium">Brain Fog</p>
                           </div>
                         </div>
-                        <p className="text-white text-[0.6rem] opacity-50 text-center">73% Correlation</p>
+                        <p className="text-white text-[0.6rem] opacity-70 text-center">73% Correlation</p>
                       </div>
                     </div>
                   </div>
