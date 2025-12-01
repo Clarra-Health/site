@@ -14,7 +14,7 @@ export default function Index() {
     <>
       {/* Hero */}
       <section className="relative bg-white pt-20 md:pt-32 pb-20 md:pb-32 overflow-hidden">
-        <div className="container">
+        <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
@@ -36,19 +36,29 @@ export default function Index() {
                 </button>
               </div>
             </div>
-
-            {/* Right Column - Image with App Mockups */}
-            <div className="relative h-[600px] md:h-[700px] w-full">
-              {/* Background Image */}
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c?format=webp&width=2000"
-                alt="Woman using Clarra app"
-                className="absolute inset-0 w-full h-full object-cover rounded-3xl"
-                style={{ objectPosition: 'center top' }}
-                loading="eager"
-              />
-            </div>
           </div>
+        </div>
+
+        {/* Right Column - Full Bleed Image */}
+        <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c?format=webp&width=2000"
+            alt="Woman using Clarra app"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center top' }}
+            loading="eager"
+          />
+        </div>
+
+        {/* Mobile Image */}
+        <div className="lg:hidden relative h-[500px] w-full mt-12">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c?format=webp&width=2000"
+            alt="Woman using Clarra app"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center top' }}
+            loading="eager"
+          />
         </div>
       </section>
 
