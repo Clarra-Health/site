@@ -52,29 +52,29 @@ export default function Index() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
 
                   {/* Chat Overlay */}
-                  <div className="absolute inset-x-0 bottom-0 p-6 z-20 bg-gradient-to-t from-black/80 to-transparent">
-                    <div className="space-y-3 max-w-sm">
+                  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-64 p-4">
+                    <div className="space-y-2">
                       {/* User Message 1 */}
                       <div className="flex justify-end">
-                        <p className="text-white text-sm bg-white/30 backdrop-blur rounded-2xl px-4 py-2 max-w-[220px]">I'm worried about my energy levels</p>
+                        <p className="text-white text-xs bg-white/40 backdrop-blur rounded-2xl px-3 py-2 max-w-[140px]">I'm worried about my energy levels</p>
                       </div>
 
                       {/* User Message 2 */}
                       <div className="flex justify-end">
-                        <p className="text-white text-sm bg-white/30 backdrop-blur rounded-2xl px-4 py-2 max-w-[220px]">It's affecting my daily life</p>
+                        <p className="text-white text-xs bg-white/40 backdrop-blur rounded-2xl px-3 py-2 max-w-[140px]">It's affecting my daily life</p>
                       </div>
 
                       {/* AI Message 1 */}
                       <div className="flex justify-start">
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2 max-w-[240px]">
-                          <p className="text-sm">That makes complete sense. Energy fluctuations are really common, and you're right to pay attention.</p>
+                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-3 py-2 max-w-[150px]">
+                          <p className="text-xs">That makes complete sense. Energy fluctuations are really common.</p>
                         </div>
                       </div>
 
                       {/* AI Message 2 */}
                       <div className="flex justify-start">
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2 max-w-[240px]">
-                          <p className="text-sm">Let's work together to understand what's really going on with your body.</p>
+                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-3 py-2 max-w-[150px]">
+                          <p className="text-xs">Let's work together to understand what's going on.</p>
                         </div>
                       </div>
                     </div>
