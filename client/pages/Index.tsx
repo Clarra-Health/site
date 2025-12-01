@@ -695,12 +695,12 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <div className="relative z-10 bg-accent p-6">
+                  <div className="relative z-10 bg-[#fc9a53] p-6">
                     <div className="flex justify-between items-start mb-4">
-                      <span className="text-accent-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                      <span className="text-white text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
                         AI Insights
                       </span>
-                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-accent-foreground hover:bg-white/30 transition">
+                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-white hover:bg-white/30 transition">
                         <svg
                           className="w-6 h-6"
                           fill="currentColor"
@@ -710,7 +710,7 @@ export default function Index() {
                         </svg>
                       </button>
                     </div>
-                    <p className="font-serif text-accent-foreground text-lg italic font-light leading-tight">
+                    <p className="font-serif text-white text-lg italic font-light leading-tight">
                       Insights that actually explain what's happening
                     </p>
                   </div>
@@ -723,7 +723,7 @@ export default function Index() {
                     alt="Personalized Insights"
                     className="w-full h-96 object-cover blur-sm opacity-40"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-accent via-accent/80 to-accent/60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#fc9a53] via-[#fc9a53]/90 to-[#fca469]" />
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
