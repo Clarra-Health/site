@@ -131,7 +131,6 @@ export default function Index() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="flex justify-center lg:justify-start relative">
                 <div className="relative inline-block">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl -z-10 scale-110" />
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F697e624f98a54afdbafa72a5d6333685?format=webp&width=800"
                     alt="Clarra app showcasing sleep tracking and AI assistant"
