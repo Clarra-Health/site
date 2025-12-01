@@ -86,6 +86,289 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Features Section */}
+      <section className="py-24 bg-white">
+        <div className="container">
+          <div className="mx-auto max-w-4xl text-center mb-20">
+            <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] mb-6 leading-tight">
+              Technology that understands you
+            </h2>
+            <p className="text-xl text-foreground/70">
+              Intelligent systems designed for your midlife journey.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Conversational Symptom Capture Card */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
+                  <div className="relative overflow-hidden flex-[2]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F11809448be4748f185c39cbba643e589?format=webp&width=800"
+                      alt="Conversational Symptom Capture"
+                      className="absolute inset-0 w-full h-full object-cover scale-[1.25] transition-transform duration-300 group-hover:scale-[1.3]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+                    {/* Chat Badge Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
+                      <div className="space-y-1.5 h-full flex flex-col justify-between overflow-hidden">
+                        <div className="flex gap-2 items-end">
+                          <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0"></div>
+                          <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block max-w-[145px] truncate">How's your sleep...</p>
+                        </div>
+                        <div className="flex gap-2 justify-end items-end">
+                          <p className="text-white text-xs bg-primary/40 rounded-lg px-2 py-1 inline-block max-w-[130px] truncate">Better this week...</p>
+                          <div className="w-6 h-6 rounded-full bg-secondary flex-shrink-0"></div>
+                        </div>
+                        <div className="flex gap-2 items-end">
+                          <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0"></div>
+                          <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block">...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative z-10 bg-primary p-6">
+                    <div className="flex justify-between items-start mb-4">
+                      <span className="text-primary-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                        Symptom Capture
+                      </span>
+                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-primary-foreground hover:bg-white/30 transition">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                      </button>
+                    </div>
+                    <p className="font-serif text-primary-foreground text-lg italic font-light leading-tight">Log your experience by talking</p>
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-3xl overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F11809448be4748f185c39cbba643e589?format=webp&width=1000"
+                    alt="Conversational Symptom Capture"
+                    className="w-full h-96 object-cover blur-sm opacity-40"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-primary/60" />
+                  <div className="absolute inset-0 p-12 flex flex-col justify-between">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h2 className="text-5xl font-bold text-primary-foreground mb-3">Log your experience by talking</h2>
+                        <p className="text-lg text-primary-foreground/90">Clarra turns natural conversation into structured data</p>
+                      </div>
+                      <DialogClose className="text-primary-foreground hover:opacity-80 flex-shrink-0">
+                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      </DialogClose>
+                    </div>
+                    <p className="text-primary-foreground/90 text-base leading-relaxed">Talk naturally about how you're feeling. Clarra listens, understands context, and captures your symptoms as structured health data automatically.</p>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
+
+            {/* Pattern Recognition Across Midlife Systems Card */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
+                  <div className="relative overflow-hidden flex-[2]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F06dec3eeaf2f47ce8637e6c8af7fb803?format=webp&width=800"
+                      alt="Pattern Recognition"
+                      className="absolute inset-0 w-full h-full object-cover scale-[1.0] transition-transform duration-300 group-hover:scale-[1.05]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+                    {/* Correlation Graph Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
+                      <div className="h-full flex flex-col justify-between">
+                        <svg className="w-full h-10" viewBox="0 0 200 50" preserveAspectRatio="none">
+                          {/* Sleep line - smooth wave pattern */}
+                          <polyline points="0,25 10,20 20,15 30,12 40,18 50,25 60,32 70,36 80,33 90,28 100,25 110,20 120,15 130,12 140,18 150,25 160,32 170,36 180,33 190,28 200,25" fill="none" stroke="#4fb7b3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                          {/* Brain fog line - inverse wave pattern */}
+                          <polyline points="0,25 10,30 20,35 30,38 40,32 50,25 60,18 70,14 80,17 90,22 100,25 110,30 120,35 130,38 140,32 150,25 160,18 170,14 180,17 190,22 200,25" fill="none" stroke="#fc9a53" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                          {/* Intersection points */}
+                          <circle cx="50" cy="25" r="5.5" fill="#56d257" />
+                          <circle cx="150" cy="25" r="5.5" fill="#56d257" />
+                        </svg>
+                        <div className="flex justify-between items-center text-white px-1">
+                          <div className="flex items-center gap-1">
+                            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#4fb7b3' }}></div>
+                            <p className="text-[0.65rem] font-medium">Sleep</p>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#fc9a53' }}></div>
+                            <p className="text-[0.65rem] font-medium">Brain Fog</p>
+                          </div>
+                        </div>
+                        <p className="text-white text-[0.6rem] opacity-70 text-center">73% Correlation</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative z-10 bg-secondary p-6">
+                    <div className="flex justify-between items-start mb-4">
+                      <span className="text-secondary-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                        Pattern Recognition
+                      </span>
+                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-secondary-foreground hover:bg-white/30 transition">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                      </button>
+                    </div>
+                    <p className="font-serif text-secondary-foreground text-lg italic font-light leading-tight">See patterns across sleep, stress, mood, cognition</p>
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-3xl overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F06dec3eeaf2f47ce8637e6c8af7fb803?format=webp&width=1000"
+                    alt="Pattern Recognition"
+                    className="w-full h-96 object-cover blur-sm opacity-40"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-secondary/60" />
+                  <div className="absolute inset-0 p-12 flex flex-col justify-between">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h2 className="text-5xl font-bold text-secondary-foreground mb-3">See patterns across sleep, stress, mood, cognition</h2>
+                        <p className="text-lg text-secondary-foreground/90">Clarra connects your signals automatically</p>
+                      </div>
+                      <DialogClose className="text-secondary-foreground hover:opacity-80 flex-shrink-0">
+                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      </DialogClose>
+                    </div>
+                    <p className="text-secondary-foreground/90 text-base leading-relaxed">Our AI analyzes correlations across all your health dimensions. Discover how sleep impacts mood, how stress affects cognition, and uncover connections you never noticed before.</p>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
+
+            {/* Personalized, Contextual Insights Card */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
+                  <div className="relative overflow-hidden flex-[2]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fe10470d39ce946388edb3e937d9cca34?format=webp&width=800"
+                      alt="Personalized Insights"
+                      className="absolute inset-0 w-full h-full object-cover object-center scale-[1.05] transition-transform duration-300 group-hover:scale-[1.09]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+                    {/* Insight Bubble Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
+                      <div className="space-y-2">
+                        <div className="bg-accent/30 rounded-lg px-3 py-2">
+                          <p className="text-white text-xs leading-relaxed">Your energy dips correlate with lower sleep quality. Consider a consistent bedtime.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative z-10 bg-accent p-6">
+                    <div className="flex justify-between items-start mb-4">
+                      <span className="text-accent-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                        AI Insights
+                      </span>
+                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-accent-foreground hover:bg-white/30 transition">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                      </button>
+                    </div>
+                    <p className="font-serif text-accent-foreground text-lg italic font-light leading-tight">Insights that actually explain what's happening</p>
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-3xl overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fe10470d39ce946388edb3e937d9cca34?format=webp&width=1000"
+                    alt="Personalized Insights"
+                    className="w-full h-96 object-cover blur-sm opacity-40"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent via-accent/80 to-accent/60" />
+                  <div className="absolute inset-0 p-12 flex flex-col justify-between">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h2 className="text-5xl font-bold text-accent-foreground mb-3">Insights that actually explain what's happening</h2>
+                        <p className="text-lg text-accent-foreground/90">Clear, clinically meaningful interpretation—no generic tips</p>
+                      </div>
+                      <DialogClose className="text-accent-foreground hover:opacity-80 flex-shrink-0">
+                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      </DialogClose>
+                    </div>
+                    <p className="text-accent-foreground/90 text-base leading-relaxed">Receive insights grounded in clinical evidence. Every recommendation explains the "why"—connecting your data to meaningful health outcomes based on peer-reviewed research and your personal patterns.</p>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
+
+            {/* Daily Guidance & Next Steps Card */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
+                  <div className="relative overflow-hidden flex-[2]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd1cf7468180245bba323e597d3ae9953?format=webp&width=800"
+                      alt="Daily Guidance"
+                      className="absolute inset-0 w-full h-full object-cover scale-[2.15] transition-transform duration-300 group-hover:scale-[2.2]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+                    {/* Recommendation Steps Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
+                      <div className="space-y-2">
+                        <div className="flex gap-2 items-start">
+                          <div className="w-5 h-5 rounded-full bg-destructive flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">✓</div>
+                          <p className="text-white text-xs">Today: Try magnesium before bed</p>
+                        </div>
+                        <div className="flex gap-2 items-start">
+                          <div className="w-5 h-5 rounded bg-white/20 flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">2</div>
+                          <p className="text-white text-xs">Tomorrow: 20-min morning walk</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative z-10 bg-destructive p-6">
+                    <div className="flex justify-between items-start mb-4">
+                      <span className="text-destructive-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                        Daily Guidance
+                      </span>
+                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-destructive-foreground hover:bg-white/30 transition">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                      </button>
+                    </div>
+                    <p className="font-serif text-destructive-foreground text-lg italic font-light leading-tight">Know what to do next</p>
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                <div className="relative w-full rounded-3xl overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd1cf7468180245bba323e597d3ae9953?format=webp&width=1000"
+                    alt="Daily Guidance"
+                    className="w-full h-96 object-cover blur-sm opacity-40"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-destructive via-destructive/80 to-destructive/60" />
+                  <div className="absolute inset-0 p-12 flex flex-col justify-between">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h2 className="text-5xl font-bold text-destructive-foreground mb-3">Know what to do next</h2>
+                        <p className="text-lg text-destructive-foreground/90">Actionable steps based on your real-world patterns</p>
+                      </div>
+                      <DialogClose className="text-destructive-foreground hover:opacity-80 flex-shrink-0">
+                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
+                      </DialogClose>
+                    </div>
+                    <p className="text-destructive-foreground/90 text-base leading-relaxed">Get prioritized, specific recommendations for today and beyond. Clarra translates insights into concrete steps you can take right now—tailored to your schedule, preferences, and health goals.</p>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
+          </div>
+        </div>
+      </section>
+
       {/* Product Features Carousel */}
       <ProductCarouselSection />
 
