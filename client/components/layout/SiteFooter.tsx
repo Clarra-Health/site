@@ -6,7 +6,7 @@ export default function SiteFooter() {
       <div className="container py-24 md:py-32">
         {/* CTA Section */}
         <div className="mb-20 rounded-2xl bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] p-12 md:p-16 text-center">
-          <h2 className="font-serif text-4xl sm:text-5xl italic font-light text-[#1f2d3a] mb-6">
+          <h2 className="font-serif text-4xl sm:text-5xl italic font-light text-foreground-dark mb-6">
             Ready to get started?
           </h2>
           <p className="text-base sm:text-lg text-foreground/70 leading-relaxed mb-8 max-w-2xl mx-auto">
