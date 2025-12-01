@@ -396,8 +396,11 @@ export default function Index() {
                         <p className="font-display text-3xl font-bold leading-none mb-2">
                           Sleep & Mood
                         </p>
-                        <p className="font-serif text-lg italic opacity-90 font-light">
+                        <p className="font-serif text-lg italic opacity-90 font-light mb-4">
                           Restoring your natural rhythm
+                        </p>
+                        <p className="text-base leading-relaxed max-w-lg opacity-95">
+                          Discover how hormonal changes impact your rest and wake cycles. Our advanced tracking helps identify patterns you might miss, giving you the clarity needed to reclaim restful nights.
                         </p>
                       </div>
                       <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
