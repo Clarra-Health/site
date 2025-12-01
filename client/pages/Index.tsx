@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import NotInYourHead from "@/components/layout/NotInYourHead";
-import AutoPlayVideo from "../components/media/AutoPlayVideo";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
