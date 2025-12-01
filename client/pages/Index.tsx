@@ -411,7 +411,7 @@ export default function Index() {
       </section>
 
       {/* App Features Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5]">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="flex justify-center lg:justify-start items-center">
@@ -422,7 +422,7 @@ export default function Index() {
               />
             </div>
             <div>
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
+              <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
                 Insights That Matter
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight mb-4">
@@ -446,7 +446,7 @@ export default function Index() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
           <div className="mb-16 text-center">
-            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
+            <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
               How Clarra Works
             </p>
             <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight max-w-3xl mx-auto">
