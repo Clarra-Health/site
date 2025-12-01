@@ -142,52 +142,116 @@ export default function ProductCarouselSection() {
             </div>
           </div>
 
-          {/* Right Side - Product Mockup with Image and Metrics */}
+          {/* Right Side - Product Mockup with Image and Metrics or Chat */}
           <div className="relative">
-            <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
-              {/* Background Image */}
-              <img
-                src={currentFeature.image}
-                alt={currentFeature.title}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
+            {currentIndex === 0 ? (
+              // Chat Interface for first tab
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20 flex flex-col">
+                {/* Background Image */}
+                <img
+                  src={currentFeature.image}
+                  alt={currentFeature.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
 
-              {/* Overlay gradient for contrast */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
 
-              {/* Metric Cards Overlay */}
-              <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between pointer-events-none">
-                {/* Primary Metric Card - Top Right */}
-                <div className="flex justify-end">
-                  <div className="bg-gradient-to-br from-amber-700/70 to-amber-900/70 backdrop-blur-md rounded-2xl p-6 border border-amber-600/40 max-w-xs shadow-xl">
-                    <p className="text-xs font-semibold text-amber-200/70 uppercase tracking-wider mb-2">
-                      {currentFeature.metrics.primary.label}
-                    </p>
-                    <p className="text-4xl font-bold text-white mb-1">
-                      {currentFeature.metrics.primary.value}
-                    </p>
-                    <p className="text-sm text-amber-100/60">
-                      {currentFeature.metrics.primary.subtitle}
-                    </p>
-                  </div>
-                </div>
+                {/* Chat Container */}
+                <div className="relative z-10 flex flex-col justify-end h-full p-6 md:p-8 overflow-hidden">
+                  <div className="flex flex-col gap-4 overflow-y-auto max-h-96 scrollbar-hide">
+                    {/* User Message 1 */}
+                    <div className="flex justify-end">
+                      <div className="bg-white/20 backdrop-blur rounded-2xl rounded-tr-lg px-4 py-3 max-w-xs">
+                        <p className="text-white text-sm">How's your sleep lately?</p>
+                      </div>
+                    </div>
 
-                {/* Secondary Metric Card - Bottom Right */}
-                <div className="flex justify-end">
-                  <div className="bg-gradient-to-br from-teal-700/60 to-teal-900/60 backdrop-blur-md rounded-2xl p-5 border border-teal-600/40 max-w-xs shadow-lg">
-                    <p className="text-xs font-semibold text-teal-200/70 uppercase tracking-wider mb-2">
-                      {currentFeature.metrics.secondary.label}
-                    </p>
-                    <p className="text-3xl font-bold text-white mb-1">
-                      {currentFeature.metrics.secondary.value}
-                    </p>
-                    <p className="text-sm text-teal-100/60">
-                      {currentFeature.metrics.secondary.subtitle}
-                    </p>
+                    {/* User Message 2 */}
+                    <div className="flex justify-end">
+                      <div className="bg-white/20 backdrop-blur rounded-2xl rounded-tr-lg px-4 py-3 max-w-xs">
+                        <p className="text-white text-sm">Been struggling, feeling foggy during the day</p>
+                      </div>
+                    </div>
+
+                    {/* Clarra Message with Graph */}
+                    <div className="flex justify-start">
+                      <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl rounded-tl-lg p-4 max-w-xs shadow-lg">
+                        <p className="text-white text-xs font-semibold mb-3">I've noticed a pattern in your sleep:</p>
+                        <svg className="w-full h-16 mb-3" viewBox="0 0 200 60" preserveAspectRatio="none">
+                          <defs>
+                            <linearGradient id="sleepGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                              <stop offset="0%" stopColor="#4fb7b3" stopOpacity="0.3" />
+                              <stop offset="100%" stopColor="#4fb7b3" stopOpacity="0" />
+                            </linearGradient>
+                          </defs>
+                          {/* Sleep quality line chart */}
+                          <polyline points="10,45 30,38 50,42 70,35 90,40 110,28 130,32 150,25 170,35 190,20" fill="none" stroke="#4fb7b3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                          {/* Filled area under line */}
+                          <polygon points="10,45 30,38 50,42 70,35 90,40 110,28 130,32 150,25 170,35 190,20 190,60 10,60" fill="url(#sleepGrad)" />
+                          {/* Baseline */}
+                          <line x1="10" y1="50" x2="190" y2="50" stroke="white" strokeWidth="1" strokeDasharray="4" opacity="0.3" />
+                        </svg>
+                        <p className="text-white text-xs">Consistent decline through the week. Let's explore why.</p>
+                      </div>
+                    </div>
+
+                    {/* Clarra Message 2 */}
+                    <div className="flex justify-start">
+                      <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl rounded-tl-lg px-4 py-3 max-w-xs">
+                        <p className="text-white text-sm">Your sleep timing and caffeine intake might be connected. Can we dig deeper?</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ) : (
+              // Metric Cards for other tabs
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
+                {/* Background Image */}
+                <img
+                  src={currentFeature.image}
+                  alt={currentFeature.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+
+                {/* Overlay gradient for contrast */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+
+                {/* Metric Cards Overlay */}
+                <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between pointer-events-none">
+                  {/* Primary Metric Card - Top Right */}
+                  <div className="flex justify-end">
+                    <div className="bg-gradient-to-br from-amber-700/70 to-amber-900/70 backdrop-blur-md rounded-2xl p-6 border border-amber-600/40 max-w-xs shadow-xl">
+                      <p className="text-xs font-semibold text-amber-200/70 uppercase tracking-wider mb-2">
+                        {currentFeature.metrics.primary.label}
+                      </p>
+                      <p className="text-4xl font-bold text-white mb-1">
+                        {currentFeature.metrics.primary.value}
+                      </p>
+                      <p className="text-sm text-amber-100/60">
+                        {currentFeature.metrics.primary.subtitle}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Secondary Metric Card - Bottom Right */}
+                  <div className="flex justify-end">
+                    <div className="bg-gradient-to-br from-teal-700/60 to-teal-900/60 backdrop-blur-md rounded-2xl p-5 border border-teal-600/40 max-w-xs shadow-lg">
+                      <p className="text-xs font-semibold text-teal-200/70 uppercase tracking-wider mb-2">
+                        {currentFeature.metrics.secondary.label}
+                      </p>
+                      <p className="text-3xl font-bold text-white mb-1">
+                        {currentFeature.metrics.secondary.value}
+                      </p>
+                      <p className="text-sm text-teal-100/60">
+                        {currentFeature.metrics.secondary.subtitle}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
