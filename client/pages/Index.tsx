@@ -36,8 +36,8 @@ export default function Index() {
             <div className="md:col-span-6 flex justify-end md:pl-8">
               <div className="w-full max-w-md hero-image-panel">
                 <picture>
-                  <source media="(max-width: 639px)" srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd9fb58517264408daf1f6098c20a3d8d?format=webp&width=800" />
-                  <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd9fb58517264408daf1f6098c20a3d8d?format=webp&width=1200" alt="Woman smiling" className="w-full h-auto object-cover" loading="eager" decoding="async" />
+                  <source media="(max-width: 639px)" srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa35f5d9c1cd44c1ba052e7289525e987?format=webp&width=800" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa35f5d9c1cd44c1ba052e7289525e987?format=webp&width=1200" alt="Hero visual" className="w-full h-auto object-cover" loading="eager" decoding="async" />
                 </picture>
               </div>
             </div>
