@@ -115,7 +115,7 @@ export default function Index() {
       </section>
 
       {/* Product Showcase Section */}
-      <section className="py-12 bg-white relative overflow-visible">
+      <section className="py-12 bg-transparent relative overflow-visible">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 pointer-events-none" />
         <div className="container relative z-10">
           <div className="mx-auto max-w-5xl pt-12">
