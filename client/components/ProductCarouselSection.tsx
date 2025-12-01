@@ -84,19 +84,19 @@ export default function ProductCarouselSection() {
         </div>
 
         {/* Main Carousel */}
-        <div className={`grid lg:grid-cols-2 gap-12 items-center rounded-3xl p-12 bg-gradient-to-br ${currentFeature.accentColor} border-2 ${currentFeature.borderColor} transition-all duration-500`}>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center transition-all duration-500">
           {/* Left Side - Content */}
-          <div className="flex flex-col justify-center space-y-6">
+          <div className="flex flex-col justify-center space-y-8">
             {/* Icon & Title */}
             <div>
-              <div className="text-6xl mb-4">{currentFeature.icon}</div>
-              <h2 className="font-display text-4xl sm:text-5xl font-bold text-[#1f2d3a] leading-tight">
+              <div className="text-7xl mb-6 drop-shadow-lg">{currentFeature.icon}</div>
+              <h2 className={`font-display text-5xl sm:text-6xl font-bold ${currentFeature.textColor} leading-tight drop-shadow-lg`}>
                 {currentFeature.title}
               </h2>
             </div>
 
             {/* Description */}
-            <p className="text-lg text-foreground/80 leading-relaxed max-w-lg">
+            <p className={`text-xl ${currentFeature.descColor} leading-relaxed max-w-2xl drop-shadow`}>
               {currentFeature.description}
             </p>
 
