@@ -604,7 +604,7 @@ export default function Index() {
                 {/* Nutrition Icon Badge */}
                 <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
                   <svg className="w-7 h-7 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2c-.5 0-1 .2-1.4.6-.8.8-.8 2 0 2.8L5 11H3c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-9c0-1.1-.9-2-2-2h-2l4.4-5.6c.8-.8.8-2 0-2.8-.8-.8-2-.8-2.8 0L12 7l-4.6-5.4c-.4-.4-.9-.6-1.4-.6z" />
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                   </svg>
                   <span className="text-white text-base font-semibold whitespace-nowrap">Calories & Energy</span>
                 </div>
