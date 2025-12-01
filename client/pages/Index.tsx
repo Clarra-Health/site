@@ -21,15 +21,15 @@ export default function Index() {
                 Midlife health, made clear.
               </h1>
               <p className="mt-6 text-lg sm:text-xl text-foreground/85 max-w-xl leading-relaxed">
-                A new way to understand your symptoms, patterns, and daily experience to help you navigate midlife with confidence.
+                Clarra connects your symptoms, patterns, and daily experience into meaningful insights you can trust.
               </p>
 
-              <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                <Link to="/about" className="w-full sm:w-auto">
-                  <Button size="lg" className="w-full sm:w-auto text-base px-8 h-14">Meet Clarra</Button>
+              <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-start">
+                <Link to="/contact" className="w-full sm:w-auto">
+                  <Button size="lg" className="w-full sm:w-auto text-base px-8 h-14 bg-[#4fb7b3] hover:bg-[#4fb7b3]/90">Start with clarity</Button>
                 </Link>
-                <Link to="/how-it-works" className="w-full sm:w-auto">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto text-base px-8 h-14">How it works</Button>
+                <Link to="#" className="w-full sm:w-auto">
+                  <button className="text-base font-semibold text-[#1f2d3a] hover:text-primary transition-colors underline">Join the waitlist</button>
                 </Link>
               </div>
             </div>
