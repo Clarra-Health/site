@@ -262,7 +262,7 @@ export default function Index() {
               <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
                 <div className="relative w-full rounded-3xl overflow-hidden">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F124db781b8434e488e69be53fa141056?format=webp&width=1000"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa594ed11752046e5b819c92c2f518c03?format=webp&width=1000"
                     alt="Conversational Symptom Capture"
                     className="w-full h-96 object-cover blur-sm opacity-40"
                   />
