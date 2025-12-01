@@ -723,35 +723,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Form Meets Function Section */}
-      <section className="pt-[4.5rem] pb-20 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative z-10">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div>
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
-                Insights That Matter
-              </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight">
-                Clinical precision,
-                <span className="block font-serif italic font-light text-primary mt-2">designed for simplicity</span>
-              </h2>
-            </div>
-            <div className="space-y-8 pt-4">
-              <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
-                Hormonal health is complex. Understanding it shouldn't be. Clarra translates sophisticated biomarker data into clear, actionable insights delivered through conversational AI that feels like talking to a trusted health partner.
-              </p>
-              <div>
-                <Link to="/how-it-works">
-                  <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-14 rounded-full text-base">
-                    How It Works
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA Section */}
       <section className="py-24 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5] relative overflow-hidden">
         <div className="container relative z-10 text-center max-w-4xl mx-auto">
