@@ -75,14 +75,14 @@ export default function ProductCarouselSection() {
   const IconComponent = currentFeature.icon;
 
   return (
-    <section className="w-full py-24 bg-[#1f2d3a] relative overflow-hidden">
+    <section className="w-full py-12 bg-[#1f2d3a] relative overflow-hidden">
       {/* Decorative blur elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl -z-10" />
 
-      <div className="w-full px-6 md:px-12 lg:px-20">
+      <div className="w-full px-3 md:px-6 lg:px-10">
         {/* Tab Navigation */}
-        <div className="flex items-center gap-8 mb-20 border-b border-white/20 pb-4 overflow-x-auto">
+        <div className="flex items-center gap-4 mb-10 border-b border-white/20 pb-2 overflow-x-auto">
           {features.map((feature, index) => (
             <button
               key={feature.id}
@@ -401,12 +401,6 @@ export default function ProductCarouselSection() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <div className="flex justify-start mt-20">
-          <a href="/about" className="inline-flex items-center justify-center px-8 py-3 bg-white/90 text-[#2a1a2e] font-semibold rounded-lg hover:bg-white hover:shadow-xl transition-all hover:scale-105">
-            Explore All Features
-          </a>
-        </div>
       </div>
     </section>
   );
