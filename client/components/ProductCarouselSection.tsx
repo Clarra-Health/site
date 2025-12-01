@@ -205,6 +205,72 @@ export default function ProductCarouselSection() {
                   </div>
                 </div>
               </div>
+            ) : currentIndex === 1 ? (
+              // Pattern Intelligence - Correlation Graph
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20 flex flex-col">
+                {/* Background Image */}
+                <img
+                  src={currentFeature.image}
+                  alt={currentFeature.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+
+                {/* Correlation Graph Container */}
+                <div className="relative z-10 flex flex-col justify-center items-center h-full p-6 md:p-8">
+                  <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl max-w-sm">
+                    <p className="text-white text-xs font-semibold uppercase tracking-widest mb-6 text-center">Pattern Correlations</p>
+
+                    {/* Correlation Graph */}
+                    <svg className="w-full h-48 mb-6" viewBox="0 0 250 200" preserveAspectRatio="xMidYMid meet">
+                      {/* Grid lines */}
+                      <defs>
+                        <linearGradient id="graphGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" stopColor="#4fb7b3" stopOpacity="0.4" />
+                          <stop offset="100%" stopColor="#4fb7b3" stopOpacity="0.1" />
+                        </linearGradient>
+                        <linearGradient id="graphGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" stopColor="#fc9a53" stopOpacity="0.4" />
+                          <stop offset="100%" stopColor="#fc9a53" stopOpacity="0.1" />
+                        </linearGradient>
+                      </defs>
+
+                      {/* Sleep vs Mood Correlation */}
+                      <polyline points="30,150 60,110 90,80 120,60 150,50 180,60 210,80" fill="none" stroke="#4fb7b3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                      <polygon points="30,150 60,110 90,80 120,60 150,50 180,60 210,80 210,180 30,180" fill="url(#graphGrad1)" />
+
+                      {/* Stress vs Cognition Correlation */}
+                      <polyline points="30,80 60,100 90,130 120,150 150,160 180,140 210,100" fill="none" stroke="#fc9a53" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                      <polygon points="30,80 60,100 90,130 120,150 150,160 180,140 210,100 210,20 30,20" fill="url(#graphGrad2)" />
+
+                      {/* Correlation points */}
+                      <circle cx="60" cy="105" r="6" fill="#56d257" />
+                      <circle cx="120" cy="105" r="6" fill="#56d257" />
+                      <circle cx="180" cy="100" r="6" fill="#56d257" />
+
+                      {/* Axes */}
+                      <line x1="20" y1="170" x2="230" y2="170" stroke="white" strokeWidth="2" opacity="0.3" />
+                      <line x1="20" y1="30" x2="20" y2="170" stroke="white" strokeWidth="2" opacity="0.3" />
+                    </svg>
+
+                    {/* Legend */}
+                    <div className="space-y-2 text-xs">
+                      <div className="flex items-center gap-2">
+                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#4fb7b3' }}></div>
+                        <span className="text-white/80">Sleep ↔ Mood</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#fc9a53' }}></div>
+                        <span className="text-white/80">Stress ↔ Cognition</span>
+                      </div>
+                    </div>
+
+                    <p className="text-white text-xs mt-4 text-center opacity-80">73% avg correlation detected</p>
+                  </div>
+                </div>
+              </div>
             ) : (
               // Metric Cards for other tabs
               <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
