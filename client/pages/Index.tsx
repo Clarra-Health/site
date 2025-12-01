@@ -261,7 +261,9 @@ export default function Index() {
                 <div className="absolute bottom-0 left-0 right-0 p-3 z-20">
                   <div className="flex gap-1 flex-wrap justify-center">
                     {[1,2,3,4,5,6,7].map((i) => (
-                      <div key={i} className={`w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold ${i <= 3 ? 'bg-red-500' : i <= 5 ? 'bg-purple-500' : 'bg-blue-500'}`}>
+                      <div key={i} className="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold" style={{
+                        backgroundColor: i <= 2 ? '#4fb7b3' : i <= 4 ? '#7cc9a2' : '#fc9a53'
+                      }}>
                         {i}
                       </div>
                     ))}
