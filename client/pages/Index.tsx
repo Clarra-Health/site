@@ -413,11 +413,11 @@ export default function Index() {
             </div>
             <div>
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
-                Features & Experience
+                Insights That Matter
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight mb-4">
-                Intuitive,
-                <span className="block font-serif italic font-light text-primary mt-2">designed for clarity</span>
+                Clinical precision,
+                <span className="block font-serif italic font-light text-primary mt-2">designed for simplicity</span>
               </h2>
               <p className="text-base sm:text-lg text-foreground/80 leading-relaxed max-w-xl">
                 Experience conversational health insights at your fingertips. Clarra's interface makes complex health data feel simple and actionable, designed specifically for how women think about their health and bodies.
