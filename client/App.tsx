@@ -8,16 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Index from "./pages/Index";
-import Solutions from "./pages/Solutions";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
-import DataPrivacy from "./pages/DataPrivacy";
-import WhoWeHelp from "./pages/WhoWeHelp";
-import WhoWeHelpYou from "./pages/WhoWeHelpYou";
-import WhoWeHelpCliniciansResearchers from "./pages/WhoWeHelpCliniciansResearchers";
-import WhoWeHelpPayers from "./pages/WhoWeHelpPayers";
 
 const queryClient = new QueryClient();
 
