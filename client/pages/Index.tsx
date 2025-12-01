@@ -632,7 +632,7 @@ export default function Index() {
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="space-y-2">
                         <div className="flex gap-2 items-start">
-                          <div className="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">✓</div>
+                          <div className="w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">✓</div>
                           <p className="text-white text-xs">Today: Try magnesium before bed</p>
                         </div>
                         <div className="flex gap-2 items-start">
