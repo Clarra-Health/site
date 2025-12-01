@@ -134,8 +134,9 @@ export default function Index() {
               <div className="flex justify-center lg:justify-start relative h-full items-center">
                 <div className="absolute -inset-32 bg-gradient-to-br from-primary/20 via-secondary/10 to-transparent rounded-full blur-3xl -z-10" />
                 <div className="absolute -inset-16 bg-gradient-to-tr from-secondary/15 to-primary/10 rounded-full blur-2xl -z-10" />
-                <div className="relative inline-block translate-y-[25%] drop-shadow-2xl">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/20 rounded-3xl blur-2xl -z-10 scale-110" />
+                <div className="relative inline-block translate-y-[25%]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/50 to-secondary/40 rounded-3xl blur-3xl scale-125 -z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-secondary/30 to-primary/20 rounded-3xl blur-2xl -z-10 opacity-60" />
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F223e62b63b4545cfbb4a6baad23f675e?format=webp&width=800"
                     alt="Clarra app showcasing sleep tracking and AI assistant"
