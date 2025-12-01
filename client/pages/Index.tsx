@@ -701,17 +701,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Midlife Health Quote Section */}
-      <section className="py-24 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5]">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-[#1f2d3a] leading-relaxed">
-              Midlife health isn't confusing, it's undermeasured, under discussed, and undertreated. Clarra changes the script.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA Section */}
       <section className="py-24 bg-[#1f2d3a] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
