@@ -44,7 +44,7 @@ export default function Index() {
               <div className="overflow-hidden rounded-3xl shadow-2xl bg-muted w-full h-[600px] md:h-[700px]">
                 <div className="relative w-full h-full">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F02348608eec14ffdabb1a3f4f94d62b7?format=webp&width=1200"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb5e28fd0173c4fc5a9f55558831a5aa1?format=webp&width=1200"
                     alt="Woman with phone"
                     className="w-full h-full object-cover"
                     style={{ objectPosition: '78% center', filter: 'brightness(1.3)' }}
