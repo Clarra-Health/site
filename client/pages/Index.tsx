@@ -215,13 +215,22 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Heart Health Card */}
             <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-96 cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1512862532381-8c71a3db07a8?auto=format&fit=crop&w=500&q=80"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd8f861e3b08e4df7aa27b88c2a9d8561?format=webp&width=800"
                 alt="Heart Health"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+              {/* ECG Overlay */}
+              <div className="absolute bottom-12 left-6 right-6 bg-white/10 backdrop-blur rounded-lg p-3 z-20">
+                <svg className="w-full h-10" viewBox="0 0 200 40" preserveAspectRatio="none">
+                  <polyline points="0,20 20,20 30,5 40,35 50,20 70,20 80,10 90,30 100,20 130,20 150,20" fill="none" stroke="#b366ff" strokeWidth="2" />
+                </svg>
+                <p className="text-white text-xs font-medium mt-1">Heart Rate: 72 bpm</p>
+              </div>
 
               <div className="relative z-10 h-full flex flex-col justify-between p-6">
                 <div className="flex justify-between items-start">
@@ -234,18 +243,30 @@ export default function Index() {
                 </div>
 
                 <div>
-                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Listen to what your heart is <span className="italic">telling</span> you</p>
+                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Stay connected to your heart health</p>
                 </div>
               </div>
             </div>
 
+            {/* Women's Health Card */}
             <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-96 cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1533292182?auto=format&fit=crop&w=500&q=80"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F190a557ffbdb44f8a3e663d5d571eb36?format=webp&width=800"
                 alt="Women's Health"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+              {/* Cycle Tracker Overlay */}
+              <div className="absolute bottom-8 left-6 right-6 z-20">
+                <div className="flex gap-1 flex-wrap justify-center">
+                  {[1,2,3,4,5,6,7].map((i) => (
+                    <div key={i} className={`w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold ${i <= 3 ? 'bg-red-500' : i <= 5 ? 'bg-purple-500' : 'bg-blue-500'}`}>
+                      {i}
+                    </div>
+                  ))}
+                </div>
+              </div>
 
               <div className="relative z-10 h-full flex flex-col justify-between p-6">
                 <div className="flex justify-between items-start">
@@ -258,18 +279,37 @@ export default function Index() {
                 </div>
 
                 <div>
-                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Understand the ins and outs of women's health</p>
+                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Understand your unique cycle</p>
                 </div>
               </div>
             </div>
 
+            {/* Stress Card */}
             <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-96 cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4cc404f3fb3249c4a7bd17e00ebc5f27?format=webp&width=800"
                 alt="Stress Management"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+              {/* Stress Metrics Overlay */}
+              <div className="absolute bottom-8 left-6 right-6 bg-white/10 backdrop-blur rounded-lg p-3 z-20">
+                <div className="flex justify-around">
+                  <div className="text-center">
+                    <p className="text-white text-xl font-bold">68%</p>
+                    <p className="text-white text-xs">Energy</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-white text-xl font-bold">85%</p>
+                    <p className="text-white text-xs">Focus</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-white text-xl font-bold">42%</p>
+                    <p className="text-white text-xs">Stress</p>
+                  </div>
+                </div>
+              </div>
 
               <div className="relative z-10 h-full flex flex-col justify-between p-6">
                 <div className="flex justify-between items-start">
@@ -282,18 +322,30 @@ export default function Index() {
                 </div>
 
                 <div>
-                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Put your stress to the test</p>
+                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Quantify how your body is feeling</p>
                 </div>
               </div>
             </div>
 
+            {/* Personal Insights Card */}
             <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-96 cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F079c308ae6b842d3930759bba6ba2867?format=webp&width=800"
                 alt="Personalized Insights"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+              {/* Data Visualization Overlay */}
+              <div className="absolute bottom-8 left-6 right-6 bg-white/10 backdrop-blur rounded-lg p-2 z-20">
+                <div className="flex gap-1 justify-between">
+                  {[45, 62, 38, 75, 55].map((h, i) => (
+                    <div key={i} className="flex flex-col items-center flex-1">
+                      <div className="w-1.5 rounded-t" style={{ height: `${h/3}px`, backgroundColor: ['#ff6b6b', '#4fb7b3', '#ff9f43', '#5f27cd', '#00d2d3'][i] }}></div>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
               <div className="relative z-10 h-full flex flex-col justify-between p-6">
                 <div className="flex justify-between items-start">
@@ -306,7 +358,7 @@ export default function Index() {
                 </div>
 
                 <div>
-                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Get insights tailored just for you</p>
+                  <p className="font-serif text-white text-2xl italic font-light leading-tight">Get personalized insights tailored for you</p>
                 </div>
               </div>
             </div>
