@@ -541,7 +541,7 @@ export default function Index() {
                 </Dialog>
 
                 <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
-                  <p className="font-display text-2xl font-bold leading-tight">
+                  <p className="font-display text-2xl font-bold leading-tight hidden">
                     Sleep & Mood Harmony
                   </p>
                   <p className="font-serif text-base italic opacity-90 font-light">
@@ -606,7 +606,7 @@ export default function Index() {
                 </Dialog>
 
                 <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
-                  <p className="font-display text-2xl font-bold leading-tight">
+                  <p className="font-display text-2xl font-bold leading-tight hidden">
                     Cognitive & Emotional Clarity
                   </p>
                   <p className="font-serif text-base italic opacity-90 font-light">
@@ -671,7 +671,7 @@ export default function Index() {
                 </Dialog>
 
                 <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
-                  <p className="font-display text-2xl font-bold leading-tight">
+                  <p className="font-display text-2xl font-bold leading-tight hidden">
                     Stress, Energy & Daily Performance
                   </p>
                   <p className="font-serif text-base italic opacity-90 font-light">
@@ -736,7 +736,7 @@ export default function Index() {
                 </Dialog>
 
                 <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none space-y-2">
-                  <p className="font-display text-2xl font-bold leading-tight">
+                  <p className="font-display text-2xl font-bold leading-tight hidden">
                     Hormone-Adaptive Guidance
                   </p>
                   <p className="font-serif text-base italic opacity-90 font-light">
