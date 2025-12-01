@@ -1,48 +1,36 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Mic, Zap, Lightbulb, Compass } from 'lucide-react';
 
 const features = [
   {
     id: 1,
     title: "Conversational Symptom Capture",
     description: "Your lived experience becomes structured health insight — no tracking apps, no forms, no friction. Clarra listens to your story and translates it into actionable data.",
-    icon: "🎤",
-    bgColor: "bg-gradient-to-br from-primary to-primary/80",
-    accentColor: "from-primary/40 to-primary/20",
-    textColor: "text-white",
-    descColor: "text-white/90"
+    icon: Mic,
+    shortTitle: "Symptom Capture"
   },
   {
     id: 2,
     title: "Pattern Intelligence",
     description: "Clarra finds relationships across sleep, stress, mood, cognition, and temperature changes that no wearable or lab test can see. Discover the hidden connections shaping your midlife.",
-    icon: "⚡",
-    bgColor: "bg-gradient-to-br from-green-500 to-green-600",
-    accentColor: "from-green-500/40 to-green-400/20",
-    textColor: "text-white",
-    descColor: "text-white/90"
+    icon: Zap,
+    shortTitle: "Pattern Intelligence"
   },
   {
     id: 3,
     title: "AI Insights",
     description: "Personalized interpretations of your health patterns delivered in plain language. Understand not just what's happening, but why — and what it means for you.",
-    icon: "✨",
-    bgColor: "bg-gradient-to-br from-orange-500 to-orange-600",
-    accentColor: "from-orange-500/40 to-orange-400/20",
-    textColor: "text-white",
-    descColor: "text-white/90"
+    icon: Lightbulb,
+    shortTitle: "AI Insights"
   },
   {
     id: 4,
     title: "Personalized Guidance",
     description: "Clear, actionable next steps tailored to your unique patterns and preferences. Get recommendations that actually fit your life, not generic advice.",
-    icon: "🧭",
-    bgColor: "bg-gradient-to-br from-secondary to-secondary/80",
-    accentColor: "from-secondary/40 to-secondary/20",
-    textColor: "text-white",
-    descColor: "text-white/90"
+    icon: Compass,
+    shortTitle: "Personalized Guidance"
   }
 ];
 
@@ -58,65 +46,68 @@ export default function ProductCarouselSection() {
   };
 
   const currentFeature = features[currentIndex];
+  const IconComponent = currentFeature.icon;
 
   return (
-    <section className="w-full py-32 relative overflow-hidden">
-      {/* Background */}
-      <div className={`absolute inset-0 ${currentFeature.bgColor} transition-all duration-500 -z-10`} />
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-black/10 -z-10" />
+    <section className="w-full py-24 bg-gradient-to-b from-[#2a1a2e] via-[#3d2645] to-[#2a1a2e] relative overflow-hidden">
+      {/* Decorative blur elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-red-600/20 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-600/15 rounded-full blur-3xl -z-10" />
 
-      <div className="w-full px-4 md:px-12 lg:px-20">
+      <div className="w-full px-6 md:px-12 lg:px-20">
         {/* Tab Navigation */}
-        <div className="flex items-center justify-center gap-3 mb-20 flex-wrap">
+        <div className="flex items-center gap-8 mb-20 border-b border-white/20 pb-4 overflow-x-auto">
           {features.map((feature, index) => (
             <button
               key={feature.id}
               onClick={() => setCurrentIndex(index)}
-              className={`px-6 py-3 rounded-full font-bold text-base transition-all duration-300 ${
+              className={`whitespace-nowrap font-semibold text-sm md:text-base transition-all duration-300 pb-4 border-b-2 ${
                 index === currentIndex
-                  ? 'bg-white text-[#1f2d3a] shadow-2xl scale-110'
-                  : 'bg-white/20 border-2 border-white/40 text-white hover:bg-white/30 hover:border-white/60'
+                  ? 'text-white border-white'
+                  : 'text-white/50 border-transparent hover:text-white/70'
               }`}
             >
-              {index + 1}. {feature.title.split(' ')[0]}
+              {feature.shortTitle}
             </button>
           ))}
         </div>
 
-        {/* Main Carousel */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center transition-all duration-500">
+        {/* Main Content Grid */}
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left Side - Content */}
-          <div className="flex flex-col justify-center space-y-8">
-            {/* Icon & Title */}
-            <div>
-              <div className="text-7xl mb-6 drop-shadow-lg">{currentFeature.icon}</div>
-              <h2 className={`font-display text-5xl sm:text-6xl font-bold ${currentFeature.textColor} leading-tight drop-shadow-lg`}>
-                {currentFeature.title}
-              </h2>
+          <div className="flex flex-col justify-center space-y-10">
+            {/* Icon */}
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white/10 border border-white/20">
+              <IconComponent className="w-10 h-10 text-white" strokeWidth={1.5} />
             </div>
 
+            {/* Title */}
+            <h2 className="font-serif text-5xl md:text-6xl font-light text-white leading-tight">
+              {currentFeature.title}
+            </h2>
+
             {/* Description */}
-            <p className={`text-xl ${currentFeature.descColor} leading-relaxed max-w-2xl drop-shadow`}>
+            <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
               {currentFeature.description}
             </p>
 
             {/* Navigation Controls */}
-            <div className="flex items-center gap-6 pt-12">
+            <div className="flex items-center gap-8 pt-8">
               <button
                 onClick={goToPrevious}
-                className="h-16 w-16 rounded-full bg-white/20 border-2 border-white/40 hover:bg-white hover:text-[#1f2d3a] shadow-xl hover:shadow-2xl hover:scale-110 transition-all flex items-center justify-center text-white"
+                className="h-14 w-14 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 hover:scale-110 transition-all flex items-center justify-center text-white/70 hover:text-white"
               >
-                <ChevronLeft className="h-7 w-7" />
+                <ChevronLeft className="h-6 w-6" />
               </button>
-
-              <div className="flex gap-3">
+              
+              <div className="flex gap-2">
                 {features.map((_, index) => (
                   <div
                     key={index}
                     className={`transition-all duration-300 ${
                       index === currentIndex
-                        ? 'h-3 w-10 bg-white rounded-full'
-                        : 'h-3 w-3 bg-white/40 rounded-full hover:bg-white/60'
+                        ? 'h-1.5 w-8 bg-white rounded'
+                        : 'h-1.5 w-2 bg-white/30 rounded'
                     }`}
                   />
                 ))}
@@ -124,44 +115,42 @@ export default function ProductCarouselSection() {
 
               <button
                 onClick={goToNext}
-                className="h-16 w-16 rounded-full bg-white/20 border-2 border-white/40 hover:bg-white hover:text-[#1f2d3a] shadow-xl hover:shadow-2xl hover:scale-110 transition-all flex items-center justify-center text-white"
+                className="h-14 w-14 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 hover:scale-110 transition-all flex items-center justify-center text-white/70 hover:text-white"
               >
-                <ChevronRight className="h-7 w-7" />
+                <ChevronRight className="h-6 w-6" />
               </button>
             </div>
           </div>
 
           {/* Right Side - Product Mockup Placeholder */}
           <div className="relative">
-            <div className="relative w-full aspect-square rounded-3xl bg-white/15 backdrop-blur-md border-2 border-white/30 flex items-center justify-center overflow-hidden group shadow-2xl">
-              {/* Placeholder with gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
+            <div className="relative w-full aspect-square rounded-3xl bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-sm flex items-center justify-center overflow-hidden group">
               {/* Placeholder content */}
-              <div className="relative z-10 text-center space-y-6">
-                <div className="inline-flex items-center justify-center w-24 h-24 rounded-3xl bg-white/20 text-5xl shadow-lg">
-                  {currentFeature.icon}
+              <div className="relative z-10 text-center space-y-8 px-8">
+                <div className="inline-flex items-center justify-center w-24 h-24 rounded-3xl bg-white/10 border border-white/20">
+                  <IconComponent className="w-12 h-12 text-white/70" strokeWidth={1.5} />
                 </div>
-                <div>
-                  <p className="text-lg font-semibold text-white/90 px-8">
+                
+                <div className="space-y-4">
+                  <p className="text-base font-semibold text-white/80">
                     Product Screenshot
                   </p>
-                  <p className="text-sm text-white/70 px-8 mt-2">
+                  <p className="text-sm text-white/50">
                     {currentFeature.title}
                   </p>
                 </div>
               </div>
 
               {/* Decorative corner accents */}
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-white/10 rounded-full blur-3xl" />
-              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-white/10 rounded-full blur-3xl" />
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/5 rounded-full blur-2xl" />
+              <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-white/5 rounded-full blur-2xl" />
             </div>
           </div>
         </div>
 
         {/* CTA Button */}
-        <div className="flex justify-center mt-20">
-          <a href="/about" className="inline-flex items-center justify-center px-12 py-4 bg-white text-[#1f2d3a] font-bold text-lg rounded-full hover:bg-white/95 hover:shadow-2xl transition-all hover:scale-105 drop-shadow-lg">
+        <div className="flex justify-start mt-20">
+          <a href="/about" className="inline-flex items-center justify-center px-8 py-3 bg-white/90 text-[#2a1a2e] font-semibold rounded-lg hover:bg-white hover:shadow-xl transition-all hover:scale-105">
             Explore All Features
           </a>
         </div>
