@@ -269,32 +269,40 @@ export default function Index() {
       <section className="py-24 bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-1">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-square lg:aspect-auto lg:h-[600px]">
+            <div className="order-1 lg:order-1">
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-6">
+                Health Tracking Reimagined
+              </p>
+              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] mb-6 leading-tight">
+                Hormones shift,
+                <span className="block text-primary italic font-light mt-2">your health story does too...</span>
+              </h2>
+              <p className="text-base sm:text-lg text-foreground/70 mb-8 leading-relaxed">
+                Hormones shift. Sleep changes. Energy fluctuates. Clarra translates those changes into clarity, not confusion — giving you a view of your health that finally makes sense.
+              </p>
+            </div>
+            <div className="order-2 lg:order-2">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-square lg:aspect-auto lg:h-[500px]">
                 <img
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
                   alt="Woman in professional setting"
                   className="w-full h-full object-cover"
                 />
-              </div>
-            </div>
-            <div className="order-2">
-              <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
-                Health Tracking Reimagined
-              </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] mb-6 leading-tight">
-                Hormones shift,
-                <span className="block text-primary mt-2">your health story does too...</span>
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Hormones shift. Sleep changes. Energy fluctuates. Clarra translates those changes into clarity, not confusion — giving you a view of your health that finally makes sense.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/about">
-                  <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-14 text-lg rounded-full">
-                    Meet Clarra
-                  </Button>
-                </Link>
+                <div className="absolute bottom-8 left-8 right-8 grid grid-cols-2 gap-4 pointer-events-none">
+                  <div className="bg-[#2c3e50]/90 backdrop-blur-sm rounded-xl p-4 text-white">
+                    <p className="text-xs font-semibold uppercase tracking-widest mb-2">Sleep Score</p>
+                    <p className="text-4xl font-bold">86</p>
+                    <p className="text-xs mt-1">Optimal</p>
+                    <p className="text-xs mt-2 opacity-70">Bring it on</p>
+                  </div>
+                  <div className="bg-[#2c3e50]/90 backdrop-blur-sm rounded-xl p-4 text-white">
+                    <p className="text-xs font-semibold uppercase tracking-widest mb-2">Your body temperature for the past 7 days</p>
+                    <svg className="w-full h-16" viewBox="0 0 100 40" preserveAspectRatio="none">
+                      <polyline points="0,30 20,20 40,25 60,15 80,18 100,22" fill="none" stroke="#4fb7b3" strokeWidth="2" />
+                    </svg>
+                    <p className="text-xs mt-1 opacity-70">+1.8</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
