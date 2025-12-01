@@ -1,13 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import {
-  NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuItem,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
-} from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
+import { NavLink } from "react-router-dom";
 
 const nav = [
   { to: "/", label: "Home" },
