@@ -683,6 +683,71 @@ export default function Index() {
                 Stress, Energy & Daily Performance
               </h3>
             </div>
+
+            {/* Card 4 */}
+            <div className="group relative">
+              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc6430d723a174d20b04dd625cef5c7f4?format=webp&width=800"
+                  alt="Hormone-adaptive guidance"
+                  className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+
+                {/* Understanding Change Icon Badge */}
+                <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
+                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
+                  </svg>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">Understanding Change</span>
+                </div>
+
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors hover:bg-black/70 cursor-pointer">
+                      <Plus className="h-6 w-6 text-white" />
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                    <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc6430d723a174d20b04dd625cef5c7f4?format=webp&width=1200"
+                        alt="Hormone-adaptive guidance expanded"
+                        className="w-full h-auto"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                      <div className="absolute bottom-6 left-6 right-6 text-white">
+                        <p className="font-display text-3xl font-bold leading-none mb-2">
+                          Hormone-Adaptive Guidance
+                        </p>
+                        <p className="font-serif text-lg italic opacity-90 font-light mb-4">
+                          Make sense of shifting patterns through midlife change
+                        </p>
+                        <p className="text-base leading-relaxed max-w-lg opacity-95">
+                          Understand the hormonal shifts driving your symptoms and changes. Clarra's adaptive guidance evolves with your body, recognizing patterns across your cycle and supporting you through every phase of midlife transformation.
+                        </p>
+                      </div>
+                      <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
+                        <Plus className="h-6 w-6 rotate-45" />
+                        <span className="sr-only">Close</span>
+                      </DialogClose>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+
+                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
+                  <p className="font-display text-3xl font-bold leading-none mb-2">
+                    Hormone-Adaptive Guidance
+                  </p>
+                  <p className="font-serif text-lg italic opacity-90 font-light">
+                    Make sense of shifting patterns through midlife change
+                  </p>
+                </div>
+              </div>
+              <h3 className="font-display text-3xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors leading-tight">
+                Hormone-Adaptive Guidance
+              </h3>
+            </div>
           </div>
         </div>
       </section>
