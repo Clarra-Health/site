@@ -44,8 +44,8 @@ export default function Index() {
               <div className="overflow-hidden rounded-3xl shadow-2xl bg-muted w-full h-[600px] md:h-[700px]">
                 <div className="relative w-full h-full">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1c5ad9986971464083fcd137d2d19bc5?format=webp&width=1000"
-                    alt="Woman with sleep insights"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fe064ccf808ba438f9716eebfb3df3e24?format=webp&width=1000"
+                    alt="Woman holding phone"
                     className="w-full h-full object-cover"
                     loading="eager"
                   />
@@ -53,34 +53,32 @@ export default function Index() {
 
                   {/* Chat Overlay */}
                   <div className="absolute inset-x-0 bottom-0 p-6 z-20">
-                    <div className="space-y-3 max-w-md">
-                      {/* User Message 1 */}
-                      <div className="flex justify-end">
-                        <p className="text-white text-sm bg-white/20 rounded-2xl px-4 py-2 max-w-[250px]">How's your sleep lately?</p>
-                      </div>
-
-                      {/* User Message 2 */}
-                      <div className="flex justify-end">
-                        <p className="text-white text-sm bg-white/20 rounded-2xl px-4 py-2 max-w-[250px]">Been struggling, feeling foggy during the day</p>
-                      </div>
-
+                    <div className="space-y-2 max-w-md">
                       {/* AI Message 1 */}
                       <div className="flex justify-start">
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-3 max-w-[280px]">
-                          <p className="text-sm font-medium mb-2">I've noticed a pattern in your sleep:</p>
-                          <div className="bg-white/20 rounded-lg h-12 mb-2 flex items-center justify-center">
-                            <svg className="w-20 h-6" viewBox="0 0 100 24" preserveAspectRatio="none">
-                              <polyline points="5,15 15,12 25,18 35,8 45,14 55,10 65,16 75,9 85,13 95,11" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                          </div>
-                          <p className="text-sm">Consistent decline through the week. Let's explore why.</p>
+                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2">
+                          <p className="text-sm">You're not alone in what you're feeling.</p>
                         </div>
                       </div>
 
                       {/* AI Message 2 */}
                       <div className="flex justify-start">
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-3 max-w-[280px]">
-                          <p className="text-sm">Your sleep timing and caffeine intake might be connected. Can we dig deeper?</p>
+                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2">
+                          <p className="text-sm">Together, we can uncover what's really going on with your health.</p>
+                        </div>
+                      </div>
+
+                      {/* AI Message 3 */}
+                      <div className="flex justify-start">
+                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2">
+                          <p className="text-sm">Let's start by understanding your patterns.</p>
+                        </div>
+                      </div>
+
+                      {/* AI Message 4 */}
+                      <div className="flex justify-start">
+                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2">
+                          <p className="text-sm">Every conversation brings us closer to real answers.</p>
                         </div>
                       </div>
                     </div>
