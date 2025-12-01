@@ -384,6 +384,9 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Product Features Carousel */}
+      <ProductCarouselSection />
+
       {/* Midlife Health Quote Section */}
       <section className="py-12 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5]">
         <div className="container">
