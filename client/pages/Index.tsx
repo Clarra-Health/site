@@ -720,37 +720,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-secondary/30">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="font-display text-4xl sm:text-5xl font-bold text-[#1f2d3a] mb-4">
-              Trusted by women everywhere
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Join the community of women finding clarity and confidence with Clarra.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Testimonial
-              quote="Finally, a solution that actually listens. Clarra helped me understand my symptoms in a way no doctor ever has."
-              author="Sarah M."
-              role="Early Access Member"
-            />
-            <Testimonial
-              quote="The insights from my wearable data combined with the hormone tracking gave me a complete picture of my health."
-              author="Dr. Emily R."
-              role="Clinical Partner"
-            />
-            <Testimonial
-              quote="I feel more in control of my body than I have in years. The AI guidance is surprisingly empathetic and spot-on."
-              author="Jessica K."
-              role="Beta User"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA Section */}
       <section className="py-24 bg-[#1f2d3a] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
