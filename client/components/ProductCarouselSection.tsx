@@ -47,7 +47,7 @@ const features = [
     description: "Clear, actionable next steps tailored to your unique patterns and preferences. Get recommendations that actually fit your life, not generic advice.",
     icon: Compass,
     shortTitle: "Personalized Guidance",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1544723795-3fb0b90cffc6?w=800&h=800&fit=crop",
     metrics: {
       primary: { label: "RECOMMENDATIONS", value: "5", subtitle: "Personalized" },
       secondary: { label: "SUCCESS RATE", value: "88%", subtitle: "Following advice" }
