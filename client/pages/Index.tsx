@@ -52,36 +52,50 @@ export default function Index() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
 
                   {/* Chat Overlay */}
-                  <div className="absolute inset-x-0 bottom-0 p-6 z-20">
-                    <div className="space-y-3 max-w-md">
+                  <div className="absolute inset-x-0 bottom-0 p-6 z-20 bg-gradient-to-t from-black/80 to-transparent">
+                    <div className="space-y-4 max-w-sm">
                       {/* User Message 1 */}
-                      <div className="flex justify-end">
-                        <p className="text-white text-sm bg-white/20 backdrop-blur rounded-2xl px-4 py-2 max-w-[250px]">How's your sleep lately?</p>
+                      <div className="flex justify-end gap-2 items-end">
+                        <div className="flex flex-col items-end gap-1">
+                          <p className="text-white text-sm bg-white/30 backdrop-blur rounded-2xl px-4 py-2 max-w-[220px]">How's your sleep lately?</p>
+                        </div>
+                        <div className="w-7 h-7 rounded-full bg-white/40 flex-shrink-0 flex items-center justify-center">
+                          <span className="text-xs text-white font-bold">You</span>
+                        </div>
                       </div>
 
                       {/* User Message 2 */}
-                      <div className="flex justify-end">
-                        <p className="text-white text-sm bg-white/20 backdrop-blur rounded-2xl px-4 py-2 max-w-[250px]">Been struggling, feeling foggy during the day</p>
+                      <div className="flex justify-end gap-2 items-end">
+                        <div className="flex flex-col items-end gap-1">
+                          <p className="text-white text-sm bg-white/30 backdrop-blur rounded-2xl px-4 py-2 max-w-[220px]">Been struggling, feeling foggy during the day</p>
+                        </div>
+                        <div className="w-7 h-7 rounded-full bg-white/40 flex-shrink-0" />
                       </div>
 
                       {/* AI Message with Chart */}
-                      <div className="flex justify-start">
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-3 max-w-[280px]">
-                          <p className="text-sm font-medium mb-3">I've noticed a pattern in your sleep:</p>
-                          <div className="bg-white/20 rounded-lg h-14 mb-3 flex items-center justify-center px-2">
+                      <div className="flex gap-2 items-start">
+                        <div className="w-7 h-7 rounded-full bg-[#4fb7b3] flex-shrink-0 flex items-center justify-center">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                          </svg>
+                        </div>
+                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-3 max-w-[240px]">
+                          <p className="text-sm font-medium mb-2">I've noticed a pattern in your sleep:</p>
+                          <div className="bg-white/20 rounded-lg h-12 mb-2 flex items-center justify-center px-2">
                             <svg className="w-full h-full" viewBox="0 0 120 40" preserveAspectRatio="none">
                               <polyline points="5,25 15,22 25,20 35,18 45,22 55,28 65,32 75,30 85,26 95,24 105,22 115,20" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                               <line x1="5" y1="35" x2="115" y2="35" stroke="white" strokeWidth="1" strokeDasharray="2,2" opacity="0.5" />
                             </svg>
                           </div>
-                          <p className="text-sm leading-snug">Consistent decline through the week. Let's explore why.</p>
+                          <p className="text-xs leading-snug">Consistent decline through the week. Let's explore why.</p>
                         </div>
                       </div>
 
                       {/* AI Follow-up Message */}
-                      <div className="flex justify-start">
-                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2 max-w-[280px]">
-                          <p className="text-sm">Your sleep timing and caffeine intake might be connected. Can we dig deeper?</p>
+                      <div className="flex gap-2 items-start">
+                        <div className="w-7 h-7 rounded-full bg-[#4fb7b3] flex-shrink-0" />
+                        <div className="bg-[#4fb7b3] text-white rounded-2xl px-4 py-2 max-w-[240px]">
+                          <p className="text-xs">Your sleep timing and caffeine intake might be connected. Can we dig deeper?</p>
                         </div>
                       </div>
                     </div>
