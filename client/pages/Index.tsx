@@ -284,7 +284,7 @@ export default function Index() {
             <div className="order-2 lg:order-2">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-square lg:aspect-auto lg:h-[500px]">
                 <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4e263f2dafc64dcc9d70e0898943b02d?format=webp&width=800"
                   alt="Woman in professional setting"
                   className="w-full h-full object-cover"
                 />
