@@ -42,7 +42,7 @@ export default function Index() {
         {/* Right Column - Full Bleed Image */}
         <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c?width=3000&quality=100"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c"
             alt="Woman using Clarra app"
             className="w-full h-full object-cover"
             style={{ objectPosition: 'center top' }}
@@ -53,7 +53,7 @@ export default function Index() {
         {/* Mobile Image */}
         <div className="lg:hidden relative h-[500px] w-full mt-12">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c?width=2000&quality=100"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c"
             alt="Woman using Clarra app"
             className="w-full h-full object-cover"
             style={{ objectPosition: 'center top' }}
