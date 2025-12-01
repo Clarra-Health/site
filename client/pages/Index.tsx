@@ -72,9 +72,9 @@ export default function Index() {
                   </div>
                   <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[4/3]">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F8ee0c1c9a0d04391aada4ef04b4065f5?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F158ff49eec9646b58110a237143353c1?format=webp&width=800"
                       alt="Healthy lifestyle"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover object-top scale-125 hover:scale-150 transition-transform duration-700"
                       loading="eager"
                     />
                   </div>
