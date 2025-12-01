@@ -643,16 +643,16 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <div className="relative z-10 bg-destructive p-6">
+                  <div className="relative z-10 bg-primary p-6">
                     <div className="flex justify-between items-start mb-4">
-                      <span className="text-destructive-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                      <span className="text-primary-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
                         Daily Guidance
                       </span>
-                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-destructive-foreground hover:bg-white/30 transition">
+                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-primary-foreground hover:bg-white/30 transition">
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
                       </button>
                     </div>
-                    <p className="font-serif text-destructive-foreground text-lg italic font-light leading-tight">Know what to do next</p>
+                    <p className="font-serif text-primary-foreground text-lg italic font-light leading-tight">Know what to do next</p>
                   </div>
                 </div>
               </DialogTrigger>
@@ -663,18 +663,18 @@ export default function Index() {
                     alt="Daily Guidance"
                     className="w-full h-96 object-cover blur-sm opacity-40"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-destructive via-destructive/80 to-destructive/60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-primary/60" />
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-destructive-foreground mb-3">Know what to do next</h2>
-                        <p className="text-lg text-destructive-foreground/90">Actionable steps based on your real-world patterns</p>
+                        <h2 className="text-5xl font-bold text-primary-foreground mb-3">Know what to do next</h2>
+                        <p className="text-lg text-primary-foreground/90">Actionable steps based on your real-world patterns</p>
                       </div>
-                      <DialogClose className="text-destructive-foreground hover:opacity-80 flex-shrink-0">
+                      <DialogClose className="text-primary-foreground hover:opacity-80 flex-shrink-0">
                         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
                       </DialogClose>
                     </div>
-                    <p className="text-destructive-foreground/90 text-base leading-relaxed">Get prioritized, specific recommendations for today and beyond. Clarra translates insights into concrete steps you can take right now—tailored to your schedule, preferences, and health goals.</p>
+                    <p className="text-primary-foreground/90 text-base leading-relaxed">Get prioritized, specific recommendations for today and beyond. Clarra translates insights into concrete steps you can take right now—tailored to your schedule, preferences, and health goals.</p>
                   </div>
                 </div>
               </DialogContent>
