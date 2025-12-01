@@ -382,27 +382,33 @@ export default function Index() {
         </div>
       </section>
 
-      {/* App Features Section */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* Founder's Note Section */}
+      <section className="py-20 md:py-32 bg-white">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div className="flex justify-center lg:justify-start items-center">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div className="flex justify-center lg:justify-start">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc9f5883300134c1790f17441286b029a?format=webp&width=2000"
-                alt="Clarra app mockup"
-                className="w-full h-auto scale-[2.5]"
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F400c9b0b1cbe465881954d3479803557?format=webp&width=800"
+                alt="Founder"
+                className="w-full h-auto rounded-2xl shadow-lg max-w-sm"
               />
             </div>
             <div>
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
-                Insights That Matter
+              <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-6">
+                A Founder's Note
               </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight mb-4">
-                Clinical precision,
-                <span className="block font-serif italic font-light text-primary mt-2">designed for simplicity</span>
+              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight mb-8">
+                Women's health
+                <span className="block text-primary">deserves better.</span>
               </h2>
-              <p className="text-base sm:text-lg text-foreground/80 leading-relaxed max-w-xl">
-                Experience conversational health insights at your fingertips. Clarra's interface makes complex health data feel simple and actionable, designed specifically for how women think about their health and bodies.
+              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+                Midlife can feel like a black box. Women are told their symptoms are "just stress" or "part of aging," when the reality is far more nuanced. Our bodies are changing in profound ways, and we deserve clarity, not dismissal.
+              </p>
+              <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+                Clarra was built to change that. By combining biomarker testing, wearable data, and conversational AI, we're creating a partner that actually understands the complexity of midlife health. Not a symptom checker. Not a generic wellness app. A real partner in your health journey.
+              </p>
+              <p className="text-sm text-foreground/60 italic">
+                — Meghan, Founder & CEO
               </p>
             </div>
           </div>
