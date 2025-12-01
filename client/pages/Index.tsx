@@ -401,7 +401,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Three-Column Feature Section */}
       <section className="py-24 bg-white">
         <div className="container">
           <div className="mx-auto max-w-4xl text-center mb-20">
