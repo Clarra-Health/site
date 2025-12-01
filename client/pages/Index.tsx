@@ -47,6 +47,7 @@ export default function Index() {
                     src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F02348608eec14ffdabb1a3f4f94d62b7?format=webp&width=800"
                     alt="Woman with phone"
                     className="w-full h-full object-cover"
+                    style={{ objectPosition: '22% center' }}
                     loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
