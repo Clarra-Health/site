@@ -207,7 +207,7 @@ export default function ProductCarouselSection() {
               </div>
             ) : currentIndex === 1 ? (
               // Pattern Intelligence - Correlation Graph
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20 flex flex-col">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
@@ -216,58 +216,62 @@ export default function ProductCarouselSection() {
                 />
 
                 {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-                {/* Correlation Graph Container */}
-                <div className="relative z-10 flex flex-col justify-center items-center h-full p-6 md:p-8">
-                  <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl max-w-sm">
-                    <p className="text-white text-xs font-semibold uppercase tracking-widest mb-6 text-center">Pattern Correlations</p>
+                {/* Metric Cards Overlay */}
+                <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between pointer-events-none">
+                  {/* Top Right - Correlation Metric */}
+                  <div className="flex justify-end">
+                    <div className="bg-gradient-to-br from-emerald-600/70 to-emerald-800/70 backdrop-blur-md rounded-2xl p-5 border border-emerald-500/40 max-w-xs shadow-lg">
+                      <p className="text-xs font-semibold text-emerald-200/70 uppercase tracking-wider mb-2">
+                        Correlations Found
+                      </p>
+                      <p className="text-4xl font-bold text-white mb-1">
+                        7
+                      </p>
+                      <p className="text-sm text-emerald-100/60">
+                        Connected patterns
+                      </p>
+                    </div>
+                  </div>
 
-                    {/* Correlation Graph */}
-                    <svg className="w-full h-48 mb-6" viewBox="0 0 250 200" preserveAspectRatio="xMidYMid meet">
-                      {/* Grid lines */}
-                      <defs>
-                        <linearGradient id="graphGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
-                          <stop offset="0%" stopColor="#4fb7b3" stopOpacity="0.4" />
-                          <stop offset="100%" stopColor="#4fb7b3" stopOpacity="0.1" />
-                        </linearGradient>
-                        <linearGradient id="graphGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
-                          <stop offset="0%" stopColor="#fc9a53" stopOpacity="0.4" />
-                          <stop offset="100%" stopColor="#fc9a53" stopOpacity="0.1" />
-                        </linearGradient>
-                      </defs>
+                  {/* Bottom - Correlation Graph */}
+                  <div className="flex justify-center">
+                    <div className="bg-gradient-to-br from-slate-900/90 to-slate-950/90 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-xl max-w-md w-full">
+                      <p className="text-white text-xs font-semibold uppercase tracking-wider mb-4 text-center">Sleep vs Mood Correlation</p>
 
-                      {/* Sleep vs Mood Correlation */}
-                      <polyline points="30,150 60,110 90,80 120,60 150,50 180,60 210,80" fill="none" stroke="#4fb7b3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                      <polygon points="30,150 60,110 90,80 120,60 150,50 180,60 210,80 210,180 30,180" fill="url(#graphGrad1)" />
+                      {/* Correlation Graph */}
+                      <svg className="w-full h-32 mb-4" viewBox="0 0 220 120" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                          <linearGradient id="correlationGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stopColor="#4fb7b3" stopOpacity="0.3" />
+                            <stop offset="100%" stopColor="#4fb7b3" stopOpacity="0.05" />
+                          </linearGradient>
+                        </defs>
 
-                      {/* Stress vs Cognition Correlation */}
-                      <polyline points="30,80 60,100 90,130 120,150 150,160 180,140 210,100" fill="none" stroke="#fc9a53" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                      <polygon points="30,80 60,100 90,130 120,150 150,160 180,140 210,100 210,20 30,20" fill="url(#graphGrad2)" />
+                        {/* Main correlation line */}
+                        <polyline points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110" fill="none" stroke="#4fb7b3" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
 
-                      {/* Correlation points */}
-                      <circle cx="60" cy="105" r="6" fill="#56d257" />
-                      <circle cx="120" cy="105" r="6" fill="#56d257" />
-                      <circle cx="180" cy="100" r="6" fill="#56d257" />
+                        {/* Fill under line */}
+                        <polygon points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110 195,115 15,115" fill="url(#correlationGrad)" />
 
-                      {/* Axes */}
-                      <line x1="20" y1="170" x2="230" y2="170" stroke="white" strokeWidth="2" opacity="0.3" />
-                      <line x1="20" y1="30" x2="20" y2="170" stroke="white" strokeWidth="2" opacity="0.3" />
-                    </svg>
+                        {/* Key points */}
+                        <circle cx="35" cy="75" r="4" fill="#56d257" />
+                        <circle cx="95" cy="35" r="4" fill="#56d257" />
+                        <circle cx="175" cy="100" r="4" fill="#56d257" />
 
-                    {/* Legend */}
-                    <div className="space-y-2 text-xs">
-                      <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#4fb7b3' }}></div>
-                        <span className="text-white/80">Sleep ↔ Mood</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#fc9a53' }}></div>
-                        <span className="text-white/80">Stress ↔ Cognition</span>
+                        {/* Baseline */}
+                        <line x1="10" y1="105" x2="200" y2="105" stroke="white" strokeWidth="1" strokeDasharray="3" opacity="0.2" />
+                      </svg>
+
+                      <div className="flex items-center justify-between text-xs">
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 rounded-full bg-teal-400"></div>
+                          <span className="text-white/70">Sleep Quality</span>
+                        </div>
+                        <span className="text-white font-semibold">73% Correlation</span>
                       </div>
                     </div>
-
-                    <p className="text-white text-xs mt-4 text-center opacity-80">73% avg correlation detected</p>
                   </div>
                 </div>
               </div>
