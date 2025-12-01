@@ -100,12 +100,18 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 */}
             <div className="group cursor-pointer">
-              <div className="overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ff20cc42fde714790a312a776c03efbaf?format=webp&width=800"
                   alt="Sleep and mood"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <p className="font-display text-3xl font-bold text-white leading-none drop-shadow-md">
+                    Sleep & Mood
+                  </p>
+                </div>
               </div>
               <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
                 Understanding Your Sleep Patterns
@@ -117,12 +123,18 @@ export default function Index() {
 
             {/* Card 2 */}
             <div className="group cursor-pointer">
-              <div className="overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7e067e93c3de475ba747062aadfe0c6f?format=webp&width=800"
                   alt="Healthy lifestyle"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <p className="font-display text-3xl font-bold text-white leading-none drop-shadow-md">
+                    Nutrition
+                  </p>
+                </div>
               </div>
               <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
                 Personalized Nutrition Guidance
@@ -134,12 +146,18 @@ export default function Index() {
 
             {/* Card 3 */}
             <div className="group cursor-pointer">
-              <div className="overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4fa85bca2bdf42f6a8835703155227c0?format=webp&width=800"
                   alt="Woman smiling"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <p className="font-display text-3xl font-bold text-white leading-none drop-shadow-md">
+                    Emotional Health
+                  </p>
+                </div>
               </div>
               <h3 className="font-display text-2xl font-bold text-[#1f2d3a] mb-3 group-hover:text-primary transition-colors">
                 Emotional Balance & Support
