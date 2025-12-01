@@ -683,20 +683,14 @@ function Feature({
   iconBg?: string;
 }) {
   return (
-    <div className="rounded-2xl border border-border bg-card/90 p-6 shadow-xl shadow-black/20 transition hover:shadow-2xl hover:shadow-black/30">
-      {icon ? (
-        <div className="flex items-center gap-4">
-          <span
-            className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl text-white ${iconBg} ring-2 ring-white/80 shadow-md`}
-          >
-            {icon}
-          </span>
-          <p className="font-semibold">{title}</p>
+    <div className="group rounded-2xl border border-primary/20 bg-gradient-to-br from-white to-primary/5 p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-primary/40 hover:from-white hover:to-primary/10">
+      {icon && (
+        <div className={`inline-flex h-16 w-16 items-center justify-center rounded-2xl text-white ${iconBg} shadow-lg mb-4 group-hover:scale-110 transition-transform`}>
+          {icon}
         </div>
-      ) : (
-        <p className="font-semibold text-lg">{title}</p>
       )}
-      <p className="mt-3 text-sm text-foreground/80">{description}</p>
+      <h3 className="font-display text-lg font-bold text-[#1f2d3a] mb-2 group-hover:text-primary transition-colors">{title}</h3>
+      <p className="text-sm text-foreground/70 leading-relaxed">{description}</p>
     </div>
   );
 }
