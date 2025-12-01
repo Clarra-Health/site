@@ -497,7 +497,7 @@ export default function Index() {
                   alt="Sleep and mood"
                   className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
                 />
-                <div className="absolute inset-0 backdrop-blur-sm bg-white/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Sleep Icon Badge */}
                 <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
@@ -520,7 +520,7 @@ export default function Index() {
                         alt="Sleep and mood expanded"
                         className="w-full h-auto"
                       />
-                      <div className="absolute inset-0 backdrop-blur-sm bg-white/10" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
                       <div className="absolute bottom-6 left-6 right-6 text-white">
                         <p className="font-display text-3xl font-bold leading-none mb-2">
                           Sleep & Mood Harmony
@@ -562,7 +562,7 @@ export default function Index() {
                   alt="Cognitive and emotional clarity"
                   className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
                 />
-                <div className="absolute inset-0 backdrop-blur-sm bg-white/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Cognitive Health Icon Badge */}
                 <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
@@ -585,7 +585,7 @@ export default function Index() {
                         alt="Cognitive clarity expanded"
                         className="w-full h-auto"
                       />
-                      <div className="absolute inset-0 backdrop-blur-sm bg-white/10" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
                       <div className="absolute bottom-6 left-6 right-6 text-white">
                         <p className="font-display text-3xl font-bold leading-none mb-2">
                           Cognitive & Emotional Clarity
@@ -627,7 +627,7 @@ export default function Index() {
                   alt="Stress and energy"
                   className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
                 />
-                <div className="absolute inset-0 backdrop-blur-sm bg-white/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Stress & Energy Icon Badge */}
                 <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
@@ -650,7 +650,7 @@ export default function Index() {
                         alt="Stress and energy expanded"
                         className="w-full h-auto"
                       />
-                      <div className="absolute inset-0 backdrop-blur-sm bg-white/10" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
                       <div className="absolute bottom-6 left-6 right-6 text-white">
                         <p className="font-display text-3xl font-bold leading-none mb-2">
                           Stress, Energy & Daily Performance
@@ -692,7 +692,7 @@ export default function Index() {
                   alt="Hormone-adaptive guidance"
                   className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
                 />
-                <div className="absolute inset-0 backdrop-blur-sm bg-white/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Understanding Change Icon Badge */}
                 <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
@@ -715,7 +715,7 @@ export default function Index() {
                         alt="Hormone-adaptive guidance expanded"
                         className="w-full h-auto"
                       />
-                      <div className="absolute inset-0 backdrop-blur-sm bg-white/10" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
                       <div className="absolute bottom-6 left-6 right-6 text-white">
                         <p className="font-display text-3xl font-bold leading-none mb-2">
                           Hormone-Adaptive Guidance
