@@ -400,6 +400,33 @@ export default function Index() {
         </div>
       </section>
 
+      {/* App Features Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center lg:justify-start">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2351232003334bb9adec1c25cc301c3e?format=webp&width=800"
+                alt="Clarra app mockup"
+                className="max-w-sm w-full h-auto"
+              />
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
+                Features & Experience
+              </p>
+              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight mb-4">
+                Intuitive,
+                <span className="block font-serif italic font-light text-primary mt-2">designed for clarity</span>
+              </h2>
+              <p className="text-base sm:text-lg text-foreground/80 leading-relaxed max-w-xl">
+                Experience conversational health insights at your fingertips. Clarra's interface makes complex health data feel simple and actionable, designed specifically for how women think about their health and bodies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Three-Column Feature Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
