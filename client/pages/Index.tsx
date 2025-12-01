@@ -1,134 +1,51 @@
 import { Link } from "react-router-dom";
 import NotInYourHead from "@/components/layout/NotInYourHead";
 import AutoPlayVideo from "../components/media/AutoPlayVideo";
+import { Button } from "@/components/ui/button";
 
 export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate z-10 overflow-hidden bg-transparent pt-16 md:pt-20 pb-0">
+      <section className="relative isolate z-10 overflow-hidden bg-transparent pt-16 md:pt-24 pb-6">
         <div className="container">
-          <div className="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-12 items-start">
-            <div className="sm:col-span-12 sm:col-start-1">
-              <h1 className="font-display text-[#1f2d3a] text-[3.6rem] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-[0.01em] sm:tracking-[0.015em] md:tracking-[0.02em] leading-[0.95]">
-                AI-POWERED {""}
-                <span className="relative inline-block px-0 sm:px-2 align-baseline">
-                  <span className="relative z-10 text-[#4fb7b3]">
-                    COMPASSIONATE
-                  </span>
-                  <svg
-                    aria-hidden
-                    className="hidden"
-                    viewBox="0 0 100 40"
-                    preserveAspectRatio="none"
-                  >
-                    <ellipse
-                      cx="52"
-                      cy="20"
-                      rx="47"
-                      ry="15"
-                      fill="none"
-                      stroke="hsl(25 97% 66%)"
-                      strokeWidth="2.65"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>{" "}
-                <EmUnderline stroke="#2c3e50">
-                  <span className="text-[#56d257]">CARE</span>
-                </EmUnderline>{" "}
-                FOR PERIMENOPAUSE, MENOPAUSE & MIDLIFE.
+          <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-12 items-center gap-8">
+            <div className="md:col-span-6">
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-extrabold text-foreground">
+                Midlife care designed for you —
+                <span className="block text-primary mt-2">compassionate, modern, and personalised.</span>
               </h1>
-              <p className="mt-3 sm:mt-4 text-[1.35rem] sm:text-xl font-medium text-[hsl(210_29%_24%)]/95 max-w-xl">
-                Clarra connects the dots between symptoms, insights, and
-                support—so midlife health finally makes sense.
+              <p className="mt-6 text-lg text-foreground/85 max-w-xl">
+                Combining biomarker testing, wearable data and conversational AI to give women clarity and confidence through perimenopause and beyond.
               </p>
-              <div className="mt-6 sm:mt-6 mb-6 relative z-20 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  to="/about"
-                  className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white/90"
-                >
-                  Meet Clarra
+
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <Link to="/about">
+                  <Button size="lg">Meet Clarra</Button>
                 </Link>
-                <Link
-                  to="/how-it-works"
-                  className="inline-flex items-center justify-center rounded-md bg-white/95 px-8 py-4 text-lg font-semibold text-[hsl(210_29%_24%)] shadow-sm ring-1 ring-black/5 transition hover:bg-white"
-                >
-                  Our Tech
+                <Link to="/how-it-works">
+                  <Button variant="outline" size="lg">How it works</Button>
                 </Link>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Hero split: features left, image right */}
-      <section className="py-8 pt-16 sm:pt-8">
-        <div className="container">
-          <div className="grid items-center gap-8 md:grid-cols-2">
-            <div className="order-2 md:order-1 md:translate-x-[10%] text-center md:text-left">
-              <h3 className="relative z-30 mb-8 text-3xl font-semibold text-foreground/90 mt-[10%] sm:mt-0">
-                Clarra Features
-              </h3>
-              <ul className="space-y-4 max-w-xl mx-auto sm:mx-0">
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
-                    <IconCheck />
-                  </span>
-                  <p className="text-xl text-foreground/90">
-                    Tracks four key hormones (LH, E3G, PdG, FSH) to give the
-                    most complete view of midlife health.
-                  </p>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
-                    <IconCheck />
-                  </span>
-                  <p className="text-xl text-foreground/90">
-                    Forecasts risks early to shift care from reactive to
-                    preventative.
-                  </p>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
-                    <IconCheck />
-                  </span>
-                  <p className="text-xl text-foreground/90">
-                    Delivers guidance through natural conversation — not
-                    dashboards or data dumps.
-                  </p>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 inline-flex h-8 w-8 aspect-square shrink-0 items-center justify-center rounded-full bg-[#22c55e] text-white">
-                    <IconCheck />
-                  </span>
-                  <p className="text-xl text-foreground/90">
-                    Integrates with wearables to turn everyday data into
-                    personalized insights.
-                  </p>
-                </li>
-              </ul>
+              <div className="mt-8 flex items-center gap-4">
+                <div className="text-sm text-muted-foreground">Trusted by clinicians & women worldwide</div>
+              </div>
             </div>
-            <div className="order-1 md:order-2 flex justify-center w-full md:justify-end md:-translate-x-[30%] relative overflow-visible mx-0">
-              <div className="relative block w-screen md:w-auto translate-y-0 md:-translate-y-[6%] mx-[calc(50%-50vw)] md:mx-0">
+
+            <div className="md:col-span-6 flex justify-end md:pl-8">
+              <div className="w-full max-w-md hero-image-panel">
                 <picture>
-                  <source
-                    media="(max-width: 639px)"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6915630e2bd3451e87a425dbfa50715a?format=webp&width=800"
-                  />
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9006179a8c0745988cf8fa5fccfa0e0e?format=webp&width=800"
-                    alt="Chat with Clarra phone mockup"
-                    className="relative z-10 w-full max-w-none md:max-w-md h-auto drop-shadow-2xl scale-[1.2] md:scale-[1.7] origin-center mx-auto"
-                    loading="eager"
-                    decoding="async"
-                  />
+                  <source media="(max-width: 639px)" srcSet="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=60" />
+                  <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="Woman smiling" className="w-full h-auto object-cover" loading="eager" decoding="async" />
                 </picture>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Features section (kept) */}
 
       {/* Core capabilities - New section above Support at Every Stage */}
       <section className="relative py-12">
