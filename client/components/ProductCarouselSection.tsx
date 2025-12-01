@@ -34,7 +34,7 @@ const features = [
     description: "Personalized interpretations of your health patterns delivered in plain language. Understand not just what's happening, but why — and what it means for you.",
     icon: Lightbulb,
     shortTitle: "AI Insights",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&h=800&fit=crop",
     metrics: {
       primary: { label: "INSIGHTS", value: "7", subtitle: "New findings" },
       secondary: { label: "ACCURACY", value: "94%", subtitle: "High confidence" }
