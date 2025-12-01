@@ -27,14 +27,12 @@ export default function Index() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
-                <Link to="/contact">
-                  <Button
-                    size="lg"
-                    className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
-                  >
-                    Start with clarity
-                  </Button>
-                </Link>
+                <Button
+                  size="lg"
+                  className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
+                >
+                  Start with clarity
+                </Button>
                 <button className="text-base font-semibold text-[#1f2d3a] hover:text-primary transition-colors pt-2">
                   Join the waitlist
                 </button>
@@ -911,23 +909,19 @@ export default function Index() {
             with you every step of the way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact">
-              <Button
-                size="lg"
-                className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-10 py-7 text-xl rounded-full shadow-xl hover:scale-105 transition-transform"
-              >
-                Get Started Today
-              </Button>
-            </Link>
-            <Link to="/how-it-works">
-              <Button
-                variant="outline"
-                size="lg"
-                className="bg-transparent border-[#1f2d3a] text-[#1f2d3a] hover:bg-[#1f2d3a] hover:text-white px-10 py-7 text-xl rounded-full"
-              >
-                Learn More
-              </Button>
-            </Link>
+            <Button
+              size="lg"
+              className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-10 py-7 text-xl rounded-full shadow-xl hover:scale-105 transition-transform"
+            >
+              Get Started Today
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="bg-transparent border-[#1f2d3a] text-[#1f2d3a] hover:bg-[#1f2d3a] hover:text-white px-10 py-7 text-xl rounded-full"
+            >
+              Learn More
+            </Button>
           </div>
         </div>
       </section>
