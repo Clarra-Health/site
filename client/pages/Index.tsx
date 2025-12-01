@@ -402,19 +402,10 @@ export default function Index() {
       </section>
 
       {/* Three-Column Feature Section */}
-      <section className="py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <div className="mx-auto max-w-4xl text-center mb-20">
-            <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] mb-6 leading-tight">
-              Technology that understands you
-            </h2>
-            <p className="text-xl text-foreground/70">
-              Intelligent systems designed for your midlife journey.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Conversational Symptom Capture Card */}
+          <div className="grid md:grid-cols-4 gap-8">
+            {/* Card 1 */}
             <Dialog>
               <DialogTrigger asChild>
                 <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
