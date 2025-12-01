@@ -34,11 +34,39 @@ export default function Index() {
             </div>
 
             <div className="md:col-span-6 flex justify-end md:pl-8">
-              <div className="w-full max-w-md hero-image-panel">
-                <picture>
-                  <source media="(max-width: 639px)" srcSet="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa35f5d9c1cd44c1ba052e7289525e987?format=webp&width=800" />
-                  <img src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa35f5d9c1cd44c1ba052e7289525e987?format=webp&width=1200" alt="Hero visual" className="w-full h-auto object-cover" loading="eager" decoding="async" />
-                </picture>
+              <div className="w-full max-w-md grid grid-cols-2 gap-4">
+                <div className="space-y-4 mt-8">
+                  <div className="overflow-hidden rounded-2xl shadow-lg">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1032b528b95f49c3aa2bd1f410d418fb?format=webp&width=800"
+                      alt="Sleep and mood"
+                      className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="overflow-hidden rounded-2xl shadow-lg">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F691c8343a44543aba27bccf71813cf7d?format=webp&width=800"
+                      alt="Hormone Health"
+                      className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="overflow-hidden rounded-2xl shadow-lg">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa363af82f5f14461ae882311697aaeff?format=webp&width=800"
+                      alt="Woman smiling"
+                      className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="overflow-hidden rounded-2xl shadow-lg">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F8ee0c1c9a0d04391aada4ef04b4065f5?format=webp&width=800"
+                      alt="Healthy lifestyle"
+                      className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
