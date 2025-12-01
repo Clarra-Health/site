@@ -392,9 +392,8 @@ export default function Index() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-[#1f2d3a] leading-relaxed">
-              Daily brain fog, 4:00 AM hot flashes, dry skin and anxiety...don't
-              face the 65+ symptoms of perimenopause and menopause alone.{" "}
-              <span className="text-[#fc9a53]">Talk to Clarra.</span>
+              Longevity isn't just more years — it's more good years.{" "}
+              <span className="text-[#fc9a53]">Clarra helps you create them.</span>
             </p>
           </div>
         </div>
