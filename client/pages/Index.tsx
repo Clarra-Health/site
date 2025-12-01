@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-white pt-20 md:pt-32 pb-20 md:pb-32 overflow-hidden">
+      <section className="relative bg-white py-16 md:py-24 overflow-hidden">
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
@@ -65,7 +65,7 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="pt-12 pb-9 md:pt-[4rem] md:pb-12 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-[#1f2d3a] leading-tight mb-8">
@@ -76,7 +76,7 @@ export default function Index() {
       </section>
 
       {/* Sleep & Wellness Features Section */}
-      <section className="pt-11 pb-16 md:pt-16 md:pb-24 bg-gradient-to-b from-[#f0f9ff] to-white">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-[#f0f9ff] to-white">
         <div className="container">
           <div className="mb-16 text-center">
             <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
@@ -399,7 +399,7 @@ export default function Index() {
       <ProductCarouselSection />
 
       {/* Midlife Health Quote Section */}
-      <section className="py-12 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-[#1f2d3a] leading-relaxed">
@@ -411,7 +411,7 @@ export default function Index() {
       </section>
 
       {/* App Features Section */}
-      <section className="py-24 md:py-32 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5]">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5]">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="flex justify-center lg:justify-start items-center">
@@ -863,7 +863,7 @@ export default function Index() {
       </section>
 
       {/* Founder's Note Section */}
-      <section className="py-24 md:py-40 bg-[#1f2d3a] text-white relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-[#1f2d3a] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/50 rounded-full blur-3xl"></div>
