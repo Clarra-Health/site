@@ -61,6 +61,10 @@ export default function SiteHeader() {
               <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5Zm.02 6.5H2v11h3V10ZM9 10H6v11h3v-5.5c0-3 4-3.2 4 0V21h3v-6.5c0-6-6.5-5.8-7-2.8V10Z" />
             </svg>
           </a>
+
+          <Link to="/contact" className="inline-block">
+            <button className="inline-flex items-center justify-center rounded-full px-5 py-2 text-sm font-semibold bg-gradient-to-r from-primary to-secondary text-white shadow">Get started</button>
+          </Link>
         </div>
 
         <button
