@@ -141,7 +141,7 @@ export default function Index() {
       <NotInYourHead />
 
       {/* Mission Section */}
-      <section className="py-12">
+      <section className="py-12 md:py-24">
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
             {/* Desktop / tablet version unchanged */}
@@ -181,7 +181,7 @@ export default function Index() {
               WORLDWIDE ENTER MENOPAUSE EACH YEAR WITHOUT <span>THE CARE</span>{" "}
               THEY NEED.
             </h2>
-            <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85">
+            <div className="mt-6 space-y-5 text-base sm:text-lg text-foreground/85 max-w-3xl mx-auto">
               <p>
                 By combining biomarkers, wearable data, and lived symptoms,
                 Clarra builds a whole view of health that goes beyond fragmented
@@ -196,6 +196,62 @@ export default function Index() {
                 and beyond.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 bg-secondary/30">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="font-display text-4xl sm:text-5xl font-bold text-[#1f2d3a] mb-4">
+              Trusted by women everywhere
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Join the community of women finding clarity and confidence with Clarra.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Testimonial
+              quote="Finally, a solution that actually listens. Clarra helped me understand my symptoms in a way no doctor ever has."
+              author="Sarah M."
+              role="Early Access Member"
+            />
+            <Testimonial
+              quote="The insights from my wearable data combined with the hormone tracking gave me a complete picture of my health."
+              author="Dr. Emily R."
+              role="Clinical Partner"
+            />
+            <Testimonial
+              quote="I feel more in control of my body than I have in years. The AI guidance is surprisingly empathetic and spot-on."
+              author="Jessica K."
+              role="Beta User"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="py-24 bg-[#1f2d3a] text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+        <div className="container relative z-10 text-center max-w-4xl mx-auto">
+          <h2 className="font-display text-5xl sm:text-6xl font-bold mb-6 tracking-tight">
+            Ready to take control of your midlife health?
+          </h2>
+          <p className="text-xl sm:text-2xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
+            Get personalized insights, proactive care, and a partner that stays with you every step of the way.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/contact">
+              <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-10 py-7 text-xl rounded-full shadow-xl hover:scale-105 transition-transform">
+                Get Started Today
+              </Button>
+            </Link>
+            <Link to="/how-it-works">
+              <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-[#1f2d3a] px-10 py-7 text-xl rounded-full">
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -239,6 +295,43 @@ function Avatar({ color = "bg-primary" }: { color?: string }) {
     >
       AI
     </span>
+  );
+}
+
+function IconStar() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-5 w-5 text-yellow-400 fill-current"
+      aria-hidden="true"
+    >
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+    </svg>
+  );
+}
+
+function Testimonial({
+  quote,
+  author,
+  role,
+}: {
+  quote: string;
+  author: string;
+  role: string;
+}) {
+  return (
+    <div className="rounded-2xl bg-white p-8 shadow-sm border border-border/50">
+      <div className="flex gap-1 mb-4">
+        {[...Array(5)].map((_, i) => (
+          <IconStar key={i} />
+        ))}
+      </div>
+      <p className="text-lg text-foreground/80 mb-6 leading-relaxed">"{quote}"</p>
+      <div>
+        <p className="font-semibold text-foreground">{author}</p>
+        <p className="text-sm text-muted-foreground">{role}</p>
+      </div>
+    </div>
   );
 }
 
