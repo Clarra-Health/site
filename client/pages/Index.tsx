@@ -300,12 +300,12 @@ export default function Index() {
                       <div className="h-full flex flex-col justify-between">
                         <svg className="w-full h-10" viewBox="0 0 200 50" preserveAspectRatio="none">
                           {/* Sleep line - wave pattern */}
-                          <polyline points="0,25 10,23 20,20 30,18 40,20 50,25 60,28 70,27 80,23 90,20 100,22 110,26 120,28 130,25 140,20 150,18 160,22 170,27 180,28 190,25 200,25" fill="none" stroke="#4fb7b3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                          <polyline points="0,25 10,23 20,20 30,18 40,20 50,25 60,28 70,27 80,23 90,20 100,22 110,26 120,28 130,25 140,20 150,18 160,22 170,27 180,28 190,25 200,25" fill="none" stroke="#4fb7b3" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
                           {/* Brain fog line - inverse wave pattern */}
-                          <polyline points="0,27 10,29 20,32 30,34 40,32 50,27 60,24 70,25 80,29 90,32 100,30 110,26 120,24 130,27 140,32 150,34 160,30 170,25 180,24 190,27 200,27" fill="none" stroke="#fc9a53" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                          <polyline points="0,27 10,29 20,32 30,34 40,32 50,27 60,24 70,25 80,29 90,32 100,30 110,26 120,24 130,27 140,32 150,34 160,30 170,25 180,24 190,27 200,27" fill="none" stroke="#fc9a53" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
                           {/* Intersection points */}
-                          <circle cx="50" cy="26" r="2.5" fill="#56d257" />
-                          <circle cx="130" cy="26" r="2.5" fill="#56d257" />
+                          <circle cx="50" cy="26" r="3.5" fill="#56d257" />
+                          <circle cx="130" cy="26" r="3.5" fill="#56d257" />
                         </svg>
                         <div className="flex justify-between items-center text-white px-1">
                           <div className="flex items-center gap-1">
