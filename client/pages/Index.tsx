@@ -253,7 +253,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F190a557ffbdb44f8a3e663d5d571eb36?format=webp&width=800"
                   alt="Cycle Insights"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 blur-sm"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
