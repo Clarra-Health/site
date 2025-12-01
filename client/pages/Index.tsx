@@ -911,12 +911,14 @@ export default function Index() {
             with you every step of the way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-10 py-7 text-xl rounded-full shadow-xl hover:scale-105 transition-transform"
-            >
-              Get Started Today
-            </Button>
+            <Link to="/contact">
+              <Button
+                size="lg"
+                className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-10 py-7 text-xl rounded-full shadow-xl hover:scale-105 transition-transform"
+              >
+                Get Started Today
+              </Button>
+            </Link>
             <Button
               variant="outline"
               size="lg"
