@@ -10,7 +10,8 @@ export default function SiteFooter() {
             Ready to get started?
           </h2>
           <p className="text-base sm:text-lg text-foreground/70 leading-relaxed mb-8 max-w-2xl mx-auto">
-            Take the first step towards better health insights and personalized care for your midlife journey.
+            Take the first step towards better health insights and personalized
+            care for your midlife journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
@@ -40,7 +41,8 @@ export default function SiteFooter() {
               />
             </div>
             <p className="text-sm text-foreground/60 leading-relaxed">
-              AI-native digital health for midlife care. Personalized support for perimenopause and menopause.
+              AI-native digital health for midlife care. Personalized support
+              for perimenopause and menopause.
             </p>
             <div className="flex gap-3 mt-6">
               <a
@@ -50,7 +52,11 @@ export default function SiteFooter() {
                 aria-label="Instagram"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border text-foreground hover:bg-accent/30 transition"
               >
-                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-5 w-5"
+                  fill="currentColor"
+                >
                   <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2.5A2.5 2.5 0 1 1 12 16a2.5 2.5 0 0 1 0-5.5zM18 6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
                 </svg>
               </a>
@@ -61,7 +67,11 @@ export default function SiteFooter() {
                 aria-label="LinkedIn"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border text-foreground hover:bg-accent/30 transition"
               >
-                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-5 w-5"
+                  fill="currentColor"
+                >
                   <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5Zm.02 6.5H2v11h3V10ZM9 10H6v11h3v-5.5c0-3 4-3.2 4 0V21h3v-6.5c0-6-6.5-5.8-7-2.8V10Z" />
                 </svg>
               </a>
@@ -70,7 +80,9 @@ export default function SiteFooter() {
 
           {/* Product Section */}
           <div>
-            <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">Product</h3>
+            <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">
+              Product
+            </h3>
             <ul className="space-y-4">
               <li>
                 <Link
@@ -101,7 +113,9 @@ export default function SiteFooter() {
 
           {/* Company Section */}
           <div>
-            <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">Company</h3>
+            <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">
+              Company
+            </h3>
             <ul className="space-y-4">
               <li>
                 <Link
@@ -126,7 +140,8 @@ export default function SiteFooter() {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8">
           <p className="text-xs text-foreground/50 text-center">
-            © {new Date().getFullYear()} Clarra Health, Inc. All rights reserved.
+            © {new Date().getFullYear()} Clarra Health, Inc. All rights
+            reserved.
           </p>
         </div>
       </div>

@@ -69,7 +69,9 @@ export default function Index() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-8">
-              Clarra is where your symptoms become <span className="text-primary">signals</span> that bring clarity to your midlife health.
+              Clarra is where your symptoms become{" "}
+              <span className="text-primary">signals</span> that bring clarity
+              to your midlife health.
             </h2>
           </div>
         </div>
@@ -404,7 +406,9 @@ export default function Index() {
           <div className="max-w-3xl mx-auto text-center">
             <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-foreground-dark leading-relaxed">
               Longevity isn't just more years — it's more good years.{" "}
-              <span className="text-[#fc9a53]">Clarra helps you create them.</span>
+              <span className="text-[#fc9a53]">
+                Clarra helps you create them.
+              </span>
             </p>
           </div>
         </div>
