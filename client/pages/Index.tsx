@@ -643,16 +643,16 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <div className="relative z-10 bg-amber-600 p-6">
+                  <div className="relative z-10 bg-emerald-100 p-6">
                     <div className="flex justify-between items-start mb-4">
-                      <span className="text-white text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
+                      <span className="text-emerald-900 text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
                         Daily Guidance
                       </span>
-                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-white hover:bg-white/30 transition">
+                      <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-emerald-900 hover:bg-white/30 transition">
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
                       </button>
                     </div>
-                    <p className="font-serif text-white text-lg italic font-light leading-tight">Know what to do next</p>
+                    <p className="font-serif text-emerald-900 text-lg italic font-light leading-tight">Know what to do next</p>
                   </div>
                 </div>
               </DialogTrigger>
