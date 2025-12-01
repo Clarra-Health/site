@@ -119,14 +119,12 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
         <div className="container relative z-10">
           <div className="mx-auto max-w-5xl">
-            <div className="text-center mb-14">
-              <h2 className="font-display text-6xl sm:text-7xl font-bold text-[#1f2d3a] mb-6 leading-tight">
-                Meet Clarra
-              </h2>
-              <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-                Your AI health companion that listens, learns, and guides you toward your best midlife.
-              </p>
-            </div>
+            <h2 className="font-display text-6xl sm:text-7xl font-bold text-[#1f2d3a] mb-12 text-center leading-tight">
+              Meet Clarra
+            </h2>
+            <p className="text-xl text-foreground/70 max-w-2xl mx-auto text-center mb-16">
+              Your AI health companion that listens, learns, and guides you toward your best midlife.
+            </p>
 
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div className="flex justify-center lg:justify-start relative">
