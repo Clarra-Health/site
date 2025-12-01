@@ -119,7 +119,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
         <div className="container relative z-10">
           <div className="mx-auto max-w-5xl">
-            <div className="text-center mb-16">
+            <div className="text-center mb-14">
               <h2 className="font-display text-6xl sm:text-7xl font-bold text-[#1f2d3a] mb-6 leading-tight">
                 Meet Clarra
               </h2>
@@ -128,7 +128,7 @@ export default function Index() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div className="flex justify-center lg:justify-start relative">
                 <div className="relative inline-block">
                   <img
@@ -139,7 +139,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="space-y-5">
+              <div className="space-y-4">
                 <div className="group relative p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
                   <div className="absolute -top-3 -right-3 h-6 w-6 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">
                     ✓
@@ -193,7 +193,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="flex justify-end mt-16">
+            <div className="flex justify-end mt-14">
               <Link to="/about">
                 <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-12 h-14 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                   Experience Clarra
