@@ -27,12 +27,14 @@ export default function Index() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
-                <Button
-                  size="lg"
-                  className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
-                >
-                  Start with clarity
-                </Button>
+                <Link to="/contact">
+                  <Button
+                    size="lg"
+                    className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
+                  >
+                    Start with clarity
+                  </Button>
+                </Link>
                 <button className="text-base font-semibold text-[#1f2d3a] hover:text-primary transition-colors pt-2">
                   Join the waitlist
                 </button>
