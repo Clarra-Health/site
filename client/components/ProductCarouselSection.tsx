@@ -243,11 +243,11 @@ export default function ProductCarouselSection() {
 
                   {/* Bottom - Correlation Graph */}
                   <div className="flex justify-center">
-                    <div className="bg-gradient-to-br from-slate-900/60 to-slate-950/60 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-xl max-w-md w-full">
-                      <p className="text-white text-xs font-semibold uppercase tracking-wider mb-4 text-center">Sleep vs Mood Correlation</p>
+                    <div className="bg-gradient-to-br from-slate-900/60 to-slate-950/60 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-xl max-w-md w-full">
+                      <p className="text-white text-sm font-semibold uppercase tracking-wider mb-6 text-center">Sleep vs Mood Correlation</p>
 
                       {/* Correlation Graph */}
-                      <svg className="w-full h-32 mb-4" viewBox="0 0 220 120" preserveAspectRatio="xMidYMid meet">
+                      <svg className="w-full h-48 mb-6" viewBox="0 0 220 120" preserveAspectRatio="xMidYMid meet">
                         <defs>
                           <linearGradient id="correlationGrad" x1="0%" y1="0%" x2="0%" y2="100%">
                             <stop offset="0%" stopColor="#4fb7b3" stopOpacity="0.3" />
@@ -273,7 +273,7 @@ export default function ProductCarouselSection() {
                         <line x1="10" y1="105" x2="200" y2="105" stroke="white" strokeWidth="1" strokeDasharray="3" opacity="0.2" />
                       </svg>
 
-                      <div className="flex items-center justify-between text-xs">
+                      <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center gap-4">
                           <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full bg-teal-400"></div>
