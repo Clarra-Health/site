@@ -343,7 +343,7 @@ export default function ProductCarouselSection() {
 
                   {/* Insight Box - Bottom Right (replaces accuracy card) */}
                   <div className="flex justify-end">
-                    <div className="bg-gradient-to-br from-teal-600/80 to-teal-800/80 backdrop-blur-md rounded-2xl p-5 border border-teal-500/40 max-w-xs shadow-lg">
+                    <div className="bg-gradient-to-br from-[#fc9a53] to-[#e88b42] backdrop-blur-md rounded-2xl p-5 border border-white/20 max-w-xs shadow-lg">
                       <p className="text-white text-xs leading-snug">
                         {currentFeature.insight}
                       </p>
