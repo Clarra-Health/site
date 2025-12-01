@@ -412,6 +412,15 @@ export default function Index() {
       {/* Three-Column Feature Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
+          <div className="mb-16 text-center">
+            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
+              How Clarra Works
+            </p>
+            <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight max-w-3xl mx-auto">
+              Four pillars of
+              <span className="block text-primary">personalized care.</span>
+            </h2>
+          </div>
           <div className="grid md:grid-cols-4 gap-8">
             {/* Card 1 */}
             <Dialog>
