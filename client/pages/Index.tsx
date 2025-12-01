@@ -491,7 +491,7 @@ export default function Index() {
           <div className="grid md:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="group relative">
-              <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+              <div className="relative overflow-hidden rounded-2xl mb-8 aspect-[3/4]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc60a637f7c7842128abe93525dc2096c?format=webp&width=800"
                   alt="Sleep and mood"
