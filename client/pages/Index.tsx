@@ -106,10 +106,13 @@ export default function Index() {
                   alt="Sleep and mood"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="font-display text-3xl font-bold text-white leading-none drop-shadow-md">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <p className="font-display text-3xl font-bold leading-none mb-2">
                     Sleep & Mood
+                  </p>
+                  <p className="font-serif text-lg italic opacity-90 font-light">
+                    Restoring your natural rhythm
                   </p>
                 </div>
               </div>
@@ -129,10 +132,13 @@ export default function Index() {
                   alt="Healthy lifestyle"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="font-display text-3xl font-bold text-white leading-none drop-shadow-md">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <p className="font-display text-3xl font-bold leading-none mb-2">
                     Nutrition
+                  </p>
+                  <p className="font-serif text-lg italic opacity-90 font-light">
+                    Fueling your body's new needs
                   </p>
                 </div>
               </div>
@@ -152,10 +158,13 @@ export default function Index() {
                   alt="Woman smiling"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="font-display text-3xl font-bold text-white leading-none drop-shadow-md">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <p className="font-display text-3xl font-bold leading-none mb-2">
                     Emotional Health
+                  </p>
+                  <p className="font-serif text-lg italic opacity-90 font-light">
+                    Finding balance in the shift
                   </p>
                 </div>
               </div>
