@@ -215,71 +215,69 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Heart Health Card */}
+            {/* Conversational Symptom Capture Card */}
             <Dialog>
               <DialogTrigger asChild>
                 <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
                   <div className="relative overflow-hidden flex-[2]">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd8f861e3b08e4df7aa27b88c2a9d8561?format=webp&width=800"
-                      alt="Heart Health"
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 scale-[2.28]"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa594ed11752046e5b819c92c2f518c03?format=webp&width=800"
+                      alt="Conversational Symptom Capture"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-                    {/* ECG Overlay */}
+                    {/* Chat Badge Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
-                      <svg className="w-full h-10" viewBox="0 0 200 40" preserveAspectRatio="none">
-                        <polyline points="0,20 20,20 30,5 40,35 50,20 70,20 80,10 90,30 100,20 130,20 150,20" fill="none" stroke="#4fb7b3" strokeWidth="2" />
-                      </svg>
-                      <p className="text-white text-xs font-medium mt-1">Heart Rate: 72 bpm</p>
+                      <div className="space-y-2">
+                        <div className="flex gap-2 items-start">
+                          <div className="w-8 h-8 rounded-full bg-primary/30 flex-shrink-0"></div>
+                          <div className="flex-1">
+                            <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block">How's your sleep been?</p>
+                          </div>
+                        </div>
+                        <div className="flex gap-2 justify-end items-start">
+                          <div className="flex-1">
+                            <p className="text-white text-xs bg-primary/40 rounded-lg px-2 py-1 text-right inline-block">Better this week</p>
+                          </div>
+                          <div className="w-8 h-8 rounded-full bg-primary/30 flex-shrink-0"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <div className="relative z-10 bg-primary p-6">
                     <div className="flex justify-between items-start mb-4">
                       <span className="text-primary-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
-                        Heart Health
+                        Symptom Capture
                       </span>
                       <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-primary-foreground hover:bg-white/30 transition">
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
                       </button>
                     </div>
-                    <p className="font-serif text-primary-foreground text-lg italic font-light leading-tight">Stay connected to your heart health</p>
+                    <p className="font-serif text-primary-foreground text-lg italic font-light leading-tight">Log your experience by talking</p>
                   </div>
                 </div>
               </DialogTrigger>
               <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
                 <div className="relative w-full rounded-3xl overflow-hidden">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd8f861e3b08e4df7aa27b88c2a9d8561?format=webp&width=1000"
-                    alt="Heart Health"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa594ed11752046e5b819c92c2f518c03?format=webp&width=1000"
+                    alt="Conversational Symptom Capture"
                     className="w-full h-96 object-cover blur-sm opacity-40"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-primary/60" />
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-primary-foreground mb-3">Heart Health</h2>
-                        <p className="text-lg text-primary-foreground/90">Monitor and optimize your cardiovascular wellness</p>
+                        <h2 className="text-5xl font-bold text-primary-foreground mb-3">Log your experience by talking</h2>
+                        <p className="text-lg text-primary-foreground/90">Clarra turns natural conversation into structured data</p>
                       </div>
                       <DialogClose className="text-primary-foreground hover:opacity-80 flex-shrink-0">
                         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
                       </DialogClose>
                     </div>
-                    <div className="space-y-6">
-                      <div className="grid grid-cols-2 gap-6">
-                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
-                          <p className="text-primary-foreground/75 text-base mb-2">Current HR</p>
-                          <p className="text-4xl font-bold text-primary-foreground">72 bpm</p>
-                        </div>
-                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
-                          <p className="text-primary-foreground/75 text-base mb-2">Trend</p>
-                          <p className="text-4xl font-bold text-primary-foreground">↓ 5%</p>
-                        </div>
-                      </div>
-                      <p className="text-primary-foreground/90 text-base leading-relaxed">Track heart rate patterns, detect irregularities, and receive personalized recommendations to maintain optimal cardiovascular health throughout your day.</p>
-                    </div>
+                    <p className="text-primary-foreground/90 text-base leading-relaxed">Talk naturally about how you're feeling. Clarra listens, understands context, and captures your symptoms as structured health data automatically.</p>
                   </div>
                 </div>
               </DialogContent>
