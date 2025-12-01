@@ -60,14 +60,6 @@ export default function Index() {
                       loading="eager"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[4/3]">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2688a08a9ab949c7a06076e7a9daece3?format=webp&width=800"
-                      alt="Woman portrait"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                      loading="eager"
-                    />
-                  </div>
                 </div>
                 <div className="space-y-3 sm:space-y-4">
                   <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[3/4]">
@@ -82,14 +74,6 @@ export default function Index() {
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F8ee0c1c9a0d04391aada4ef04b4065f5?format=webp&width=800"
                       alt="Healthy lifestyle"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                      loading="eager"
-                    />
-                  </div>
-                  <div className="overflow-hidden rounded-2xl shadow-lg bg-muted aspect-[4/3]">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F240538a352cc4c02858f7b7466798a40?format=webp&width=800"
-                      alt="Community"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                       loading="eager"
                     />
