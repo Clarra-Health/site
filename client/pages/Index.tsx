@@ -122,7 +122,7 @@ export default function Index() {
             <h2 className="font-display text-6xl sm:text-7xl font-bold text-[#1f2d3a] mb-12 text-center leading-tight">
               Meet Clarra
             </h2>
-            <p className="text-xl text-foreground/70 max-w-2xl mx-auto text-center mb-1">
+            <p className="text-xl text-foreground/70 max-w-2xl mx-auto text-center mb-0 whitespace-nowrap">
               Your AI health companion that listens, learns, and guides you toward your best midlife.
             </p>
 
