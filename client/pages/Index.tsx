@@ -101,7 +101,7 @@ export default function Index() {
 
                 <Dialog>
                   <DialogTrigger asChild>
-                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-colors hover:bg-white/30 cursor-pointer">
+                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors hover:bg-black/70 cursor-pointer">
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
@@ -121,7 +121,7 @@ export default function Index() {
                           Restoring your natural rhythm
                         </p>
                       </div>
-                      <DialogClose className="absolute top-4 right-4 rounded-full bg-white/20 backdrop-blur-sm p-2 text-white hover:bg-white/30 transition-colors">
+                      <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
                         <Plus className="h-6 w-6 rotate-45" />
                         <span className="sr-only">Close</span>
                       </DialogClose>
@@ -158,7 +158,7 @@ export default function Index() {
 
                 <Dialog>
                   <DialogTrigger asChild>
-                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-colors hover:bg-white/30 cursor-pointer">
+                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors hover:bg-black/70 cursor-pointer">
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
@@ -178,7 +178,7 @@ export default function Index() {
                           Fueling your body's new needs
                         </p>
                       </div>
-                      <DialogClose className="absolute top-4 right-4 rounded-full bg-white/20 backdrop-blur-sm p-2 text-white hover:bg-white/30 transition-colors">
+                      <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
                         <Plus className="h-6 w-6 rotate-45" />
                         <span className="sr-only">Close</span>
                       </DialogClose>
@@ -215,7 +215,7 @@ export default function Index() {
 
                 <Dialog>
                   <DialogTrigger asChild>
-                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-colors hover:bg-white/30 cursor-pointer">
+                    <button className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors hover:bg-black/70 cursor-pointer">
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
@@ -235,7 +235,7 @@ export default function Index() {
                           Finding balance in the shift
                         </p>
                       </div>
-                      <DialogClose className="absolute top-4 right-4 rounded-full bg-white/20 backdrop-blur-sm p-2 text-white hover:bg-white/30 transition-colors">
+                      <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
                         <Plus className="h-6 w-6 rotate-45" />
                         <span className="sr-only">Close</span>
                       </DialogClose>
