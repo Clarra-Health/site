@@ -104,9 +104,18 @@ export default function Index() {
       {/* Product Features Carousel */}
       <ProductCarouselSection />
 
-      {/* Three-Column Feature Section */}
+      {/* Sleep & Wellness Features Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
+          <div className="mb-16 text-center">
+            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4">
+              Health Dimensions
+            </p>
+            <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] leading-tight max-w-3xl mx-auto">
+              Understand your whole
+              <span className="block text-primary">wellness journey.</span>
+            </h2>
+          </div>
           <div className="grid md:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="group relative">
