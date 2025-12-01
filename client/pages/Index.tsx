@@ -48,12 +48,12 @@ export default function Index() {
                 loading="eager"
               />
 
-              {/* App Mockups Overlay - Positioned naturally */}
-              <div className="absolute inset-0 flex items-center justify-end pr-6 md:pr-12 rounded-3xl overflow-hidden">
+              {/* App Mockups Overlay - Large and prominent */}
+              <div className="absolute inset-0 flex items-center justify-center rounded-3xl overflow-hidden">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1481f9ea7add407ca9a17c90d9698254?format=webp&width=800"
                   alt="Clarra app mockups"
-                  className="h-2/3 w-auto object-contain drop-shadow-xl"
+                  className="h-4/5 w-auto object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
