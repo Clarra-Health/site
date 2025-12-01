@@ -13,29 +13,29 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-white py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-white py-8 sm:py-16 md:py-24 overflow-hidden">
         <div className="container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-tight mb-6">
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground-dark leading-tight mb-4 sm:mb-6">
                 Midlife health, made clear.
               </h1>
-              <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
+              <p className="text-base sm:text-lg md:text-xl text-foreground/75 leading-relaxed mb-6 sm:mb-8 max-w-lg">
                 Clarra connects your symptoms, patterns, and daily experience
                 into meaningful insights you can trust.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-6 items-start">
-                <Link to="/contact">
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-6 items-stretch sm:items-start">
+                <Link to="/contact" className="flex-1 sm:flex-none">
                   <Button
                     size="lg"
-                    className="bg-primary hover:bg-primary/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
+                    className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 h-11 sm:h-12 text-sm sm:text-base font-semibold rounded-lg"
                   >
                     Start with clarity
                   </Button>
                 </Link>
-                <button className="text-base font-semibold text-foreground-dark hover:text-primary transition-colors pt-2">
+                <button className="text-sm sm:text-base font-semibold text-foreground-dark hover:text-primary transition-colors py-2 sm:pt-2">
                   Join the waitlist
                 </button>
               </div>
@@ -54,7 +54,7 @@ export default function Index() {
         </div>
 
         {/* Mobile Image */}
-        <div className="lg:hidden relative h-[840px] w-full mt-12">
+        <div className="lg:hidden relative h-[420px] sm:h-[540px] w-full mt-8 sm:mt-10">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
             alt="Clarra app and user"
