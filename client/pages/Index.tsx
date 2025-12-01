@@ -581,20 +581,20 @@ export default function Index() {
                   <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7e067e93c3de475ba747062aadfe0c6f?format=webp&width=1200"
-                        alt="Nutrition expanded"
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6bb2493097a4497da3c80210e2d3dbf6?format=webp&width=1200"
+                        alt="Cognitive clarity expanded"
                         className="w-full h-auto"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
                       <div className="absolute bottom-6 left-6 right-6 text-white">
                         <p className="font-display text-3xl font-bold leading-none mb-2">
-                          Nutrition
+                          Cognitive & Emotional Clarity
                         </p>
                         <p className="font-serif text-lg italic opacity-90 font-light mb-4">
-                          Fueling your body's new needs
+                          Understand your emotional and mental patterns
                         </p>
                         <p className="text-base leading-relaxed max-w-lg opacity-95">
-                          Fuel your body with what it actually needs during midlife. We provide tailored nutritional advice that adapts to your metabolic shifts, supporting energy levels and overall well-being.
+                          Navigate brain fog, mood shifts, and emotional fluctuations with data-driven insights. Recognize how your cycle influences focus, memory, and emotional resilience.
                         </p>
                       </div>
                       <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
@@ -607,10 +607,10 @@ export default function Index() {
 
                 <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
                   <p className="font-display text-3xl font-bold leading-none mb-2">
-                    Nutrition
+                    Cognitive & Emotional Clarity
                   </p>
                   <p className="font-serif text-lg italic opacity-90 font-light">
-                    Fueling your body's new needs
+                    Understand your emotional and mental patterns
                   </p>
                 </div>
               </div>
