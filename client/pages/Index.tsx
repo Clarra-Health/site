@@ -13,10 +13,10 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate z-10 overflow-hidden bg-transparent pt-12 md:pt-24 pb-12 md:pb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+      <section className="relative isolate z-10 overflow-hidden bg-transparent pt-12 md:pt-24 pb-12 md:pb-24 min-h-[600px] md:min-h-[700px]">
+        <div className="relative h-full">
           {/* Left Content */}
-          <div className="px-4 md:px-6 flex flex-col items-center lg:items-start text-center lg:text-left justify-center">
+          <div className="px-4 md:px-6 container relative z-10 flex flex-col items-center lg:items-start text-center lg:text-left justify-center h-full">
             <div className="mx-auto max-w-xl">
               <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] font-extrabold text-foreground tracking-tight">
                 Midlife health, made clear.
@@ -37,7 +37,7 @@ export default function Index() {
           </div>
 
           {/* Right Image - Full Bleed */}
-          <div className="overflow-hidden bg-muted w-full h-[600px] md:h-[700px]">
+          <div className="absolute right-0 top-0 bottom-0 w-full lg:w-1/2 overflow-hidden bg-muted">
             <div className="relative w-full h-full">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fb5e28fd0173c4fc5a9f55558831a5aa1?format=webp&width=1200"
