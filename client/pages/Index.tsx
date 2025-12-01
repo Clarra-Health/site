@@ -94,7 +94,80 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Features section (kept) */}
+      {/* Logo Strip */}
+      <section className="py-10 border-y border-border/50 bg-secondary/5">
+        <div className="container">
+          <p className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-8">
+            Featured In
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+            <span className="text-2xl font-display font-bold">VOGUE</span>
+            <span className="text-2xl font-display font-bold">Forbes</span>
+            <span className="text-2xl font-display font-bold">TechCrunch</span>
+            <span className="text-2xl font-display font-bold">Wired</span>
+            <span className="text-2xl font-display font-bold">Goop</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature Highlight Section */}
+      <section className="py-24 bg-white">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-square lg:aspect-auto lg:h-[600px]">
+                <img
+                  src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80"
+                  alt="Woman looking at phone"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <div className="absolute bottom-8 left-8 right-8 text-white">
+                  <p className="font-medium text-lg">"It feels like having a doctor in my pocket."</p>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="font-display text-4xl sm:text-5xl font-bold text-[#1f2d3a] mb-6 leading-tight">
+                Understand your body like never before.
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Stop guessing. Clarra translates your body's signals into clear, actionable insights so you can feel like yourself again.
+              </p>
+
+              <div className="space-y-8">
+                <div className="flex gap-5">
+                  <div className="h-14 w-14 rounded-2xl bg-[#e8f6fa] flex items-center justify-center shrink-0 text-primary shadow-sm">
+                    <IconFlask />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-[#1f2d3a]">Clinical-grade accuracy</h3>
+                    <p className="text-muted-foreground mt-2 leading-relaxed">Lab-quality hormone tracking from the comfort of home, validated by experts.</p>
+                  </div>
+                </div>
+                <div className="flex gap-5">
+                  <div className="h-14 w-14 rounded-2xl bg-[#e8f6fa] flex items-center justify-center shrink-0 text-primary shadow-sm">
+                    <IconChat />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-[#1f2d3a]">Always-on support</h3>
+                    <p className="text-muted-foreground mt-2 leading-relaxed">Ask questions and get instant, evidence-based answers 24/7 from our AI health companion.</p>
+                  </div>
+                </div>
+                <div className="flex gap-5">
+                  <div className="h-14 w-14 rounded-2xl bg-[#e8f6fa] flex items-center justify-center shrink-0 text-primary shadow-sm">
+                    <IconSpark />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-[#1f2d3a]">Personalized for you</h3>
+                    <p className="text-muted-foreground mt-2 leading-relaxed">Recommendations that adapt to your unique hormonal profile and lifestyle goals.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Core capabilities - New section above Support at Every Stage */}
       <section className="relative py-12">
