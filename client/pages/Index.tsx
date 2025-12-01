@@ -405,7 +405,7 @@ export default function Index() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="order-first lg:order-first flex justify-center lg:justify-start items-center">
-              <div className="w-full h-auto max-w-xs">
+              <div className="w-full h-auto max-w-2xl">
                 <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc9f5883300134c1790f17441286b029a?format=webp&width=800"
                 alt="Clarra app mockup"
