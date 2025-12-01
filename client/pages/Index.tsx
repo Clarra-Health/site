@@ -85,6 +85,76 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Product Showcase Section */}
+      <section className="py-24 bg-gradient-to-b from-secondary/10 to-white">
+        <div className="container">
+          <div className="mx-auto max-w-4xl text-center mb-16">
+            <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] mb-6 leading-tight">
+              Meet Clarra
+            </h2>
+            <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
+              Your AI health companion that listens, learns, and guides you toward your best midlife.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="flex justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F697e624f98a54afdbafa72a5d6333685?format=webp&width=800"
+                alt="Clarra app showcasing sleep tracking and AI assistant"
+                className="w-full max-w-md"
+              />
+            </div>
+
+            <div className="space-y-8">
+              <div className="flex gap-4">
+                <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0 text-primary">
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-display text-xl font-bold text-[#1f2d3a] mb-2">Clinical Insights</h3>
+                  <p className="text-foreground/70">Lab-grade hormone tracking delivered daily, deciphered in plain language.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0 text-primary">
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-display text-xl font-bold text-[#1f2d3a] mb-2">AI Conversations</h3>
+                  <p className="text-foreground/70">Ask anything. Get personalized answers 24/7 from an AI that truly understands midlife.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0 text-primary">
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-display text-xl font-bold text-[#1f2d3a] mb-2">Wearable Integration</h3>
+                  <p className="text-foreground/70">Connect your smartwatch for continuous insights. Clarra synthesizes all your data into one clear view.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link to="/about">
+              <Button size="lg" className="bg-[#4fb7b3] hover:bg-[#4fb7b3]/90 text-white px-10 h-14 text-lg rounded-full">
+                Experience Clarra
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Three-Column Feature Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
