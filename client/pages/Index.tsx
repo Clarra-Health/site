@@ -228,7 +228,7 @@ export default function Index() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
                     {/* Chat Badge Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="space-y-2">
                         <div className="flex gap-2 items-start">
                           <div className="w-8 h-8 rounded-full bg-primary flex-shrink-0"></div>
@@ -296,7 +296,7 @@ export default function Index() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
                     {/* Correlation Graph Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="space-y-2">
                         <div className="grid grid-cols-4 gap-2 text-center">
                           {[{label: 'Sleep', value: 85}, {label: 'Stress', value: 42}, {label: 'Mood', value: 72}, {label: 'Cognition', value: 88}].map((item, i) => (
@@ -360,7 +360,7 @@ export default function Index() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
                     {/* Insight Bubble Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="space-y-2">
                         <div className="bg-accent/30 rounded-lg px-3 py-2">
                           <p className="text-white text-xs leading-relaxed">Your energy dips correlate with lower sleep quality. Consider a consistent bedtime.</p>
@@ -419,7 +419,7 @@ export default function Index() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
                     {/* Recommendation Steps Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
+                    <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="space-y-2">
                         <div className="flex gap-2 items-start">
                           <div className="w-5 h-5 rounded-full bg-destructive flex items-center justify-center flex-shrink-0 text-white text-xs font-bold">✓</div>
