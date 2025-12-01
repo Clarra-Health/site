@@ -488,7 +488,7 @@ export default function Index() {
       {/* Three-Column Feature Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="group relative">
               <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
