@@ -456,8 +456,11 @@ export default function Index() {
                         <p className="font-display text-3xl font-bold leading-none mb-2">
                           Nutrition
                         </p>
-                        <p className="font-serif text-lg italic opacity-90 font-light">
+                        <p className="font-serif text-lg italic opacity-90 font-light mb-4">
                           Fueling your body's new needs
+                        </p>
+                        <p className="text-base leading-relaxed max-w-lg opacity-95">
+                          Fuel your body with what it actually needs during midlife. We provide tailored nutritional advice that adapts to your metabolic shifts, supporting energy levels and overall well-being.
                         </p>
                       </div>
                       <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
@@ -513,8 +516,11 @@ export default function Index() {
                         <p className="font-display text-3xl font-bold leading-none mb-2">
                           Emotional Health
                         </p>
-                        <p className="font-serif text-lg italic opacity-90 font-light">
+                        <p className="font-serif text-lg italic opacity-90 font-light mb-4">
                           Finding balance in the shift
+                        </p>
+                        <p className="text-base leading-relaxed max-w-lg opacity-95">
+                          Navigate mood fluctuations with confidence. Our tools and community support help you maintain emotional equilibrium, ensuring you feel heard, understood, and empowered every day.
                         </p>
                       </div>
                       <DialogClose className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-sm p-2 text-white hover:bg-black/70 transition-colors">
