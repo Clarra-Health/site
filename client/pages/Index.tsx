@@ -18,11 +18,10 @@ export default function Index() {
           <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-16">
             <div className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left">
               <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] font-extrabold text-foreground tracking-tight">
-                Midlife care designed for you —
-                <span className="block text-primary mt-2">compassionate, modern, and personalised.</span>
+                Midlife health, made clear.
               </h1>
               <p className="mt-6 text-lg sm:text-xl text-foreground/85 max-w-xl leading-relaxed">
-                Combining biomarker testing, wearable data and conversational AI to give women clarity and confidence through perimenopause and beyond.
+                A new way to understand your symptoms, patterns, and daily experience to help you navigate midlife with confidence.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
