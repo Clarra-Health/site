@@ -64,6 +64,17 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Signal Section */}
+      <section className="py-20 md:py-28 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-[#1f2d3a] leading-tight mb-8">
+              Clarra turns every symptom into a <span className="text-primary">signal.</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+
       {/* Sleep & Wellness Features Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-[#f0f9ff] to-white">
         <div className="container">
