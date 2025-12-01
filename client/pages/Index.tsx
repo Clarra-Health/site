@@ -760,50 +760,6 @@ export default function Index() {
 
 
 
-      {/* Health Tracking Reimagined Section */}
-      <section className="py-24 bg-white">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-1 lg:order-1">
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-6">
-                Health Tracking Reimagined
-              </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] mb-6 leading-tight">
-                Hormones shift,
-                <span className="block text-primary font-serif text-5xl sm:text-6xl italic font-light mt-2">your health story does too...</span>
-              </h2>
-              <p className="text-base sm:text-lg text-foreground/70 mb-8 leading-relaxed">
-                Hormones shift. Sleep changes. Energy fluctuates. Clarra translates those changes into clarity, not confusion — giving you a view of your health that finally makes sense.
-              </p>
-            </div>
-            <div className="order-2 lg:order-2">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-square lg:aspect-auto lg:h-[500px]">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4e263f2dafc64dcc9d70e0898943b02d?format=webp&width=800"
-                  alt="Woman in professional setting"
-                  className="w-full h-full object-cover object-center"
-                />
-                <div className="absolute bottom-8 left-8 right-8 grid grid-cols-2 gap-4 pointer-events-none">
-                  <div className="bg-[#2c3e50]/90 backdrop-blur-sm rounded-xl p-4 text-white">
-                    <p className="text-xs font-semibold uppercase tracking-widest mb-2">Sleep Score</p>
-                    <p className="text-4xl font-bold">86</p>
-                    <p className="text-xs mt-1">Optimal</p>
-                    <p className="text-xs mt-2 opacity-70">Bring it on</p>
-                  </div>
-                  <div className="bg-[#2c3e50]/90 backdrop-blur-sm rounded-xl p-4 text-white">
-                    <p className="text-xs font-semibold uppercase tracking-widest mb-2">Your body temperature for the past 7 days</p>
-                    <svg className="w-full h-16" viewBox="0 0 100 40" preserveAspectRatio="none">
-                      <polyline points="0,30 20,20 40,25 60,15 80,18 100,22" fill="none" stroke="#4fb7b3" strokeWidth="2" />
-                    </svg>
-                    <p className="text-xs mt-1 opacity-70">+1.8</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
 
       {/* 47 Million image (home only) */}
       <section className="py-0">
