@@ -202,15 +202,15 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Features Section */}
       <section className="py-24 bg-white">
         <div className="container">
           <div className="mx-auto max-w-4xl text-center mb-20">
             <h2 className="font-display text-5xl sm:text-6xl font-bold text-[#1f2d3a] mb-6 leading-tight">
-              Unlock more good days with Clarra
+              Technology that understands you
             </h2>
             <p className="text-xl text-foreground/70">
-              Spot changes by building data evidence over time.
+              Intelligent systems designed for your midlife journey.
             </p>
           </div>
 
