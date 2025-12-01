@@ -537,11 +537,11 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                 {/* Sleep Icon Badge */}
-                <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/40 backdrop-blur-sm rounded-lg px-4 py-2">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <div className="absolute top-6 left-6 z-10 flex items-center gap-3 bg-black/60 backdrop-blur rounded-xl px-5 py-3">
+                  <svg className="w-7 h-7 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 1 21 12.79z" />
                   </svg>
-                  <span className="text-white text-sm font-semibold">7.2h Last night</span>
+                  <span className="text-white text-base font-semibold whitespace-nowrap">7.2h Last night</span>
                 </div>
 
                 <Dialog>
