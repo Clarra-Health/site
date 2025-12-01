@@ -48,8 +48,7 @@ export default function Index() {
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c"
             alt="Woman using Clarra app"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: "center top" }}
+            className="w-full h-full object-contain"
             loading="eager"
           />
         </div>
@@ -59,8 +58,7 @@ export default function Index() {
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1b976233a57a4fc6a86f76e8d4fdad6c"
             alt="Woman using Clarra app"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: "center top" }}
+            className="w-full h-full object-contain"
             loading="eager"
           />
         </div>
