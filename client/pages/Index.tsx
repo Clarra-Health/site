@@ -283,28 +283,29 @@ export default function Index() {
               </DialogContent>
             </Dialog>
 
-            {/* Cycle Insights Card */}
+            {/* Pattern Recognition Across Midlife Systems Card */}
             <Dialog>
               <DialogTrigger asChild>
                 <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col h-[28.8rem]">
                   <div className="relative overflow-hidden flex-[2]">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F190a557ffbdb44f8a3e663d5d571eb36?format=webp&width=800"
-                      alt="Cycle Insights"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F33c09d6bd8e5441d97642bc35c8a8186?format=webp&width=800"
+                      alt="Pattern Recognition"
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
-                    {/* Cycle Tracker Overlay */}
+                    {/* Correlation Graph Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20">
-                      <div className="flex gap-1 flex-wrap justify-center">
-                        {[1,2,3,4,5,6,7].map((i) => (
-                          <div key={i} className="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold" style={{
-                            backgroundColor: i <= 2 ? '#4fb7b3' : i <= 4 ? '#7cc9a2' : '#fc9a53'
-                          }}>
-                            {i}
-                          </div>
-                        ))}
+                      <div className="space-y-2">
+                        <div className="grid grid-cols-4 gap-2 text-center">
+                          {[{label: 'Sleep', value: 85}, {label: 'Stress', value: 42}, {label: 'Mood', value: 72}, {label: 'Cognition', value: 88}].map((item, i) => (
+                            <div key={i} className="flex flex-col items-center">
+                              <div className="text-white text-xs font-bold">{item.value}%</div>
+                              <div className="text-white text-[0.65rem] opacity-75">{item.label}</div>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -312,47 +313,35 @@ export default function Index() {
                   <div className="relative z-10 bg-secondary p-6">
                     <div className="flex justify-between items-start mb-4">
                       <span className="text-secondary-foreground text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
-                        Cycle Insights
+                        Pattern Recognition
                       </span>
                       <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-secondary-foreground hover:bg-white/30 transition">
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
                       </button>
                     </div>
-                    <p className="font-serif text-secondary-foreground text-lg italic font-light leading-tight">Understand your unique cycle</p>
+                    <p className="font-serif text-secondary-foreground text-lg italic font-light leading-tight">See patterns across sleep, stress, mood, cognition</p>
                   </div>
                 </div>
               </DialogTrigger>
               <DialogContent className="max-w-5xl p-0 overflow-hidden bg-transparent border-none shadow-none">
                 <div className="relative w-full rounded-3xl overflow-hidden">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F190a557ffbdb44f8a3e663d5d571eb36?format=webp&width=1000"
-                    alt="Cycle Insights"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F33c09d6bd8e5441d97642bc35c8a8186?format=webp&width=1000"
+                    alt="Pattern Recognition"
                     className="w-full h-96 object-cover blur-sm opacity-40"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-secondary/60" />
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-secondary-foreground mb-3">Cycle Insights</h2>
-                        <p className="text-lg text-secondary-foreground/90">Understand your unique menstrual and hormonal patterns</p>
+                        <h2 className="text-5xl font-bold text-secondary-foreground mb-3">See patterns across sleep, stress, mood, cognition</h2>
+                        <p className="text-lg text-secondary-foreground/90">Clarra connects your signals automatically</p>
                       </div>
                       <DialogClose className="text-secondary-foreground hover:opacity-80 flex-shrink-0">
                         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" /></svg>
                       </DialogClose>
                     </div>
-                    <div className="space-y-6">
-                      <div className="grid grid-cols-2 gap-6">
-                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
-                          <p className="text-secondary-foreground/75 text-base mb-2">Cycle Phase</p>
-                          <p className="text-4xl font-bold text-secondary-foreground">Luteal</p>
-                        </div>
-                        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
-                          <p className="text-secondary-foreground/75 text-base mb-2">Days Left</p>
-                          <p className="text-4xl font-bold text-secondary-foreground">5 days</p>
-                        </div>
-                      </div>
-                      <p className="text-secondary-foreground/90 text-base leading-relaxed">Track cycle phases, hormonal fluctuations, and mood patterns. Receive personalized insights on energy, nutrition, and wellness recommendations tailored to your cycle.</p>
-                    </div>
+                    <p className="text-secondary-foreground/90 text-base leading-relaxed">Our AI analyzes correlations across all your health dimensions. Discover how sleep impacts mood, how stress affects cognition, and uncover connections you never noticed before.</p>
                   </div>
                 </div>
               </DialogContent>
