@@ -409,7 +409,7 @@ export default function Index() {
                 <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd99976510c574ecfb23cd401c35d529d?format=webp&width=800"
                 alt="Clarra app mockup"
-                className="w-full h-auto scale-90 origin-left"
+                className="w-full h-auto scale-125 origin-left"
               />
               </div>
             </div>
