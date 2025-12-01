@@ -229,18 +229,18 @@ export default function Index() {
 
                     {/* Chat Badge Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
-                      <div className="space-y-2">
-                        <div className="flex gap-2 items-start">
-                          <div className="w-8 h-8 rounded-full bg-primary flex-shrink-0"></div>
-                          <div className="flex-1">
-                            <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block">How's your sleep been?</p>
-                          </div>
+                      <div className="space-y-1.5 h-full flex flex-col justify-between overflow-hidden">
+                        <div className="flex gap-2 items-end">
+                          <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0"></div>
+                          <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block max-w-[120px] truncate">How's your sleep been?</p>
                         </div>
-                        <div className="flex gap-2 justify-end items-start">
-                          <div className="flex-1">
-                            <p className="text-white text-xs bg-primary/40 rounded-lg px-2 py-1 text-right inline-block">Better this week</p>
-                          </div>
-                          <div className="w-8 h-8 rounded-full bg-secondary flex-shrink-0"></div>
+                        <div className="flex gap-2 justify-end items-end">
+                          <p className="text-white text-xs bg-primary/40 rounded-lg px-2 py-1 inline-block max-w-[100px] truncate">Better this week</p>
+                          <div className="w-6 h-6 rounded-full bg-secondary flex-shrink-0"></div>
+                        </div>
+                        <div className="flex gap-2 items-end">
+                          <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0"></div>
+                          <p className="text-white text-xs bg-white/10 rounded-lg px-2 py-1 inline-block">...</p>
                         </div>
                       </div>
                     </div>
