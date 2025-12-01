@@ -298,7 +298,10 @@ export default function Index() {
                     {/* Correlation Graph Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur p-3 z-20 h-20">
                       <div className="h-full flex flex-col justify-between">
-                        <svg className="w-full h-12" viewBox="0 0 200 50" preserveAspectRatio="none">
+                        <div className="text-white text-center">
+                          <p className="text-xs font-bold">73% Correlation</p>
+                        </div>
+                        <svg className="w-full h-8" viewBox="0 0 200 50" preserveAspectRatio="none">
                           {/* Sleep line - wave pattern */}
                           <polyline points="0,25 10,23 20,20 30,18 40,20 50,25 60,28 70,27 80,23 90,20 100,22 110,26 120,28 130,25 140,20 150,18 160,22 170,27 180,28 190,25 200,25" fill="none" stroke="#4fb7b3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                           {/* Brain fog line - inverse wave pattern */}
