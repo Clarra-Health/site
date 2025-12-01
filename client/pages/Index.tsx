@@ -388,7 +388,7 @@ export default function Index() {
       <ProductCarouselSection />
 
       {/* Midlife Health Quote Section */}
-      <section className="py-12 bg-gradient-to-r from-[#f0f9ff] to-[#ecfdf5]">
+      <section className="py-12 bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-[#1f2d3a] leading-relaxed">
