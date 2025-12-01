@@ -119,7 +119,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 pointer-events-none" />
         <div className="container relative z-10">
           <div className="mx-auto max-w-5xl pt-9">
-            <h2 className="font-display text-6xl sm:text-7xl font-bold text-[#1f2d3a] mb-12 text-center leading-tight">
+            <h2 className="font-display text-6xl sm:text-7xl font-bold text-[#1f2d3a] mb-3 text-center leading-tight">
               Meet Clarra
             </h2>
             <p className="text-xl text-foreground/70 max-w-2xl mx-auto text-center mb-0 whitespace-nowrap">
