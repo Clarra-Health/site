@@ -905,7 +905,7 @@ export default function Index() {
               <div className="relative w-full max-w-sm">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/0 rounded-2xl blur-2xl"></div>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fbedc467b43594880942db59fe3344b14?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7fc7517bdf4a4a6791cf97b1cd501967?format=webp&width=800"
                   alt="Clarra app and user"
                   className="relative w-full h-auto rounded-2xl shadow-2xl border border-white/10"
                 />
