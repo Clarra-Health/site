@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-white py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] py-16 md:py-24 overflow-hidden">
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
@@ -44,11 +44,11 @@ export default function Index() {
         </div>
 
         {/* Right Column - Full Bleed Image */}
-        <div className="hidden lg:block absolute bottom-0 right-[-12%] w-[84%] h-full">
+        <div className="hidden lg:block absolute bottom-0 right-[-2%] w-[84%] h-full">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7fc7517bdf4a4a6791cf97b1cd501967?format=webp&width=2000"
             alt="Clarra app and user"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain mix-blend-multiply"
             loading="eager"
           />
         </div>
@@ -56,9 +56,9 @@ export default function Index() {
         {/* Mobile Image */}
         <div className="lg:hidden relative h-[840px] w-full mt-12">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7fc7517bdf4a4a6791cf97b1cd501967?format=webp&width=2000"
             alt="Clarra app and user"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain mix-blend-multiply"
             loading="eager"
           />
         </div>
