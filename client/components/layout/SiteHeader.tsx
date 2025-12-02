@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const nav = [{ to: "/", label: "Home" }] as const;
+const nav = [] as const;
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
