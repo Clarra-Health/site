@@ -22,8 +22,10 @@ export default function Index() {
                 Midlife health, made clear.
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
-                AI-native digital health platform for midlife care. Personalized
-                support for perimenopause and menopause.
+                The Midlife Intelligence Layer — AI-native infrastructure for
+                women’s midlife health, transforming lived experience into
+                structured data, pattern intelligence, and clinical-grade
+                insights.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
@@ -32,12 +34,9 @@ export default function Index() {
                     size="lg"
                     className="bg-primary hover:bg-primary/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
                   >
-                    Start with clarity
+                    Join the waitlist
                   </Button>
                 </Link>
-                <button className="text-base font-semibold text-foreground-dark hover:text-primary transition-colors pt-2">
-                  Join the waitlist
-                </button>
               </div>
             </div>
           </div>
@@ -68,7 +67,7 @@ export default function Index() {
       <section className="py-16 md:py-24 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-8">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-7">
               Clarra is where your symptoms become{" "}
               <span className="text-primary">signals</span> that bring clarity
               to your midlife health.
@@ -401,7 +400,7 @@ export default function Index() {
       <ProductCarouselSection />
 
       {/* Midlife Health Quote Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-foreground-dark leading-relaxed">

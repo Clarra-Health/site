@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const nav = [{ to: "/", label: "Home" }] as const;
+const nav = [] as const;
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -72,7 +72,7 @@ export default function SiteHeader() {
 
           <Link to="/contact" className="inline-block">
             <button className="inline-flex items-center justify-center rounded-full px-5 py-2 text-sm font-semibold bg-gradient-to-r from-primary to-secondary text-white shadow">
-              Get started
+              Get in touch
             </button>
           </Link>
         </div>
