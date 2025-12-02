@@ -12,7 +12,7 @@ import ProductCarouselSection from "@/components/ProductCarouselSection";
 export default function Index() {
   return (
     <>
-      {/* Hero */}
+      {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] py-16 md:py-24 overflow-hidden">
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
