@@ -48,7 +48,7 @@ export default function Index() {
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7fc7517bdf4a4a6791cf97b1cd501967?format=webp&width=2000"
             alt="Clarra app and user"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain mix-blend-multiply"
             loading="eager"
           />
         </div>
@@ -58,7 +58,7 @@ export default function Index() {
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7fc7517bdf4a4a6791cf97b1cd501967?format=webp&width=2000"
             alt="Clarra app and user"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain mix-blend-multiply"
             loading="eager"
           />
         </div>
