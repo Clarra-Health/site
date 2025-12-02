@@ -64,7 +64,7 @@ export default function Index() {
       <section className="py-16 md:py-24 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-8">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-7">
               Clarra is where your symptoms become{" "}
               <span className="text-primary">signals</span> that bring clarity
               to your midlife health.
