@@ -31,12 +31,9 @@ export default function Index() {
                     size="lg"
                     className="bg-primary hover:bg-primary/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
                   >
-                    Start with clarity
+                    Join the waitlist
                   </Button>
                 </Link>
-                <button className="text-base font-semibold text-foreground-dark hover:text-primary transition-colors pt-2">
-                  Join the waitlist
-                </button>
               </div>
             </div>
           </div>
