@@ -68,9 +68,8 @@ export default function Index() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-7">
-              Clarra is where your symptoms become{" "}
-              <span className="text-primary">signals</span> that bring clarity
-              to your midlife health.
+              Longevity isn't just more years — it's more good years.{" "}
+              <span className="text-primary">Clarra helps you create them.</span>
             </h2>
           </div>
         </div>
