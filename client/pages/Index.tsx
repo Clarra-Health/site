@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-white py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] py-16 md:py-24 overflow-hidden">
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
