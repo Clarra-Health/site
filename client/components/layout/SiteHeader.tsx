@@ -72,7 +72,7 @@ export default function SiteHeader() {
 
           <Link to="/contact" className="inline-block">
             <button className="inline-flex items-center justify-center rounded-full px-5 py-2 text-sm font-semibold bg-gradient-to-r from-primary to-secondary text-white shadow">
-              Get started
+              Get in touch
             </button>
           </Link>
         </div>
