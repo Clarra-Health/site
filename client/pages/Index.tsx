@@ -22,7 +22,10 @@ export default function Index() {
                 Midlife health, made clear.
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
-                The Midlife Intelligence Layer — AI-native infrastructure for women’s midlife health, transforming lived experience into structured data, pattern intelligence, and clinical-grade insights.
+                The Midlife Intelligence Layer — AI-native infrastructure for
+                women’s midlife health, transforming lived experience into
+                structured data, pattern intelligence, and clinical-grade
+                insights.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
