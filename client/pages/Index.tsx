@@ -46,7 +46,7 @@ export default function Index() {
         {/* Right Column - Full Bleed Image */}
         <div className="hidden lg:block absolute bottom-0 right-[-12%] w-[84%] h-full">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7fc7517bdf4a4a6791cf97b1cd501967?format=webp&width=800"
             alt="Clarra app and user"
             className="w-full h-full object-contain"
             loading="eager"
@@ -56,7 +56,7 @@ export default function Index() {
         {/* Mobile Image */}
         <div className="lg:hidden relative h-[840px] w-full mt-12">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F9f1eda34a9ac415bb8080e9f340685d2?format=webp&width=2000"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7fc7517bdf4a4a6791cf97b1cd501967?format=webp&width=800"
             alt="Clarra app and user"
             className="w-full h-full object-contain"
             loading="eager"
@@ -905,8 +905,8 @@ export default function Index() {
               <div className="relative w-full max-w-sm">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/0 rounded-2xl blur-2xl"></div>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F7fc7517bdf4a4a6791cf97b1cd501967?format=webp&width=800"
-                  alt="Clarra app and user"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F400c9b0b1cbe465881954d3479803557?format=webp&width=800"
+                  alt="Meghan White, Founder & CEO"
                   className="relative w-full h-auto rounded-2xl shadow-2xl border border-white/10"
                 />
               </div>
