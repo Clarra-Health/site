@@ -22,8 +22,8 @@ export default function Index() {
                 Midlife health, made clear.
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
-                Clarra connects your symptoms, patterns, and daily experience
-                into meaningful insights you can trust.
+                AI-native digital health platform for midlife care. Personalized
+                support for perimenopause and menopause.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
