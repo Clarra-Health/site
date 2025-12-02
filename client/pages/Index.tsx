@@ -22,8 +22,10 @@ export default function Index() {
                 Midlife health, made clear.
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
-                AI-native digital health platform for midlife care. Personalized
-                support for perimenopause and menopause.
+                The Midlife Intelligence Layer — AI-native infrastructure for
+                women’s midlife health, transforming lived experience into
+                structured data, pattern intelligence, and clinical-grade
+                insights.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
@@ -70,8 +72,8 @@ export default function Index() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-8">
               Clarra is where your symptoms become{" "}
-              <span className="text-primary">signals</span> that bring clarity
-              to your midlife health.
+              <span className="text-primary">signals</span> bringing clarity to
+              your midlife health journey
             </h2>
           </div>
         </div>
