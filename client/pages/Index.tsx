@@ -26,8 +26,8 @@ export default function Index() {
 
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Right Column - Text (Moved to right to balance left-heavy image) */}
-            <div className="flex flex-col justify-center lg:col-start-2">
+            {/* Left Column - Text */}
+            <div className="flex flex-col justify-center">
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-snug mb-6">
                 Clarity in perimenopause{" "}
                 <span className="font-serif italic font-light text-primary">
