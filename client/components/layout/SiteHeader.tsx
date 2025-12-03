@@ -7,8 +7,8 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full bg-background/30 backdrop-blur-sm">
-      <div className="container flex h-20 items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full bg-transparent">
+      <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-3">
           <Link to="/" aria-label="Home" className="flex items-center gap-2">
             <img
