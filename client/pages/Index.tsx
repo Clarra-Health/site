@@ -76,11 +76,6 @@ export default function Index() {
       {/* Sleep & Wellness Features Section */}
       <section className="pt-12 pb-16 md:pt-20 md:pb-24 bg-gradient-to-b from-[#f0f9ff] to-white">
         <div className="container">
-          <div className="mb-16 text-center">
-            <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
-              YOUR HEALTH DIMENSIONS
-            </p>
-          </div>
           <div className="grid md:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="group relative">
