@@ -31,7 +31,7 @@ export default function Index() {
             <div className="flex flex-col justify-center">
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
                 Clarity in perimenopause{" "}
-                <span className="font-serif italic font-medium text-primary drop-shadow-sm">
+                <span className="font-serif italic font-medium text-foreground-dark drop-shadow-sm">
                   starts here.
                 </span>
               </h1>
