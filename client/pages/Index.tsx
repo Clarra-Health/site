@@ -22,10 +22,9 @@ export default function Index() {
                 Midlife health, made clear.
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
-                The Midlife Intelligence Layer — AI-native infrastructure for
-                women’s midlife health, transforming lived experience into
-                structured data, pattern intelligence, and clinical-grade
-                insights.
+                With Clarra’s intelligent health insights, your symptoms become
+                meaningful patterns you can see, track, and act on — bringing
+                clarity to a transition most women navigate alone.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
