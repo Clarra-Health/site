@@ -7,21 +7,21 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full bg-transparent">
-      <div className="container flex h-8 items-center justify-between">
-        <div className="flex items-center gap-3">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full h-[65px] bg-white/60 backdrop-blur-[10px]">
+      <div className="container flex h-full items-center justify-between gap-6 md:gap-8 flex-nowrap">
+        <div className="flex items-center flex-none">
           <Link to="/" aria-label="Home" className="flex items-center gap-2">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fcb13d8bd4dd54d4c9b3a6b34a08291d1?format=webp&width=320"
               alt="Clarra"
-              className="h-6 w-auto bg-transparent"
+              className="w-[115px] h-auto bg-transparent flex-none"
               loading="eager"
               decoding="async"
             />
           </Link>
         </div>
 
-        <nav className="hidden md:flex items-center gap-6 text-sm">
+        <nav className="hidden md:flex items-center gap-6 text-sm flex-none">
           {nav.map((item) => (
             <NavLink
               key={item.to}
@@ -35,7 +35,7 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-6 md:gap-8 flex-none">
           <a
             href="https://www.instagram.com/clarrahealth/"
             target="_blank"
@@ -71,7 +71,7 @@ export default function SiteHeader() {
           </a>
 
           <Link to="/contact" className="inline-block">
-            <button className="inline-flex items-center justify-center rounded-full px-5 py-2 text-sm font-semibold bg-gradient-to-r from-primary to-secondary text-white shadow">
+            <button className="inline-flex items-center justify-center rounded-full px-5 h-[40px] text-sm font-semibold bg-gradient-to-r from-primary to-secondary text-white shadow">
               Get in touch
             </button>
           </Link>
