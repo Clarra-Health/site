@@ -414,7 +414,7 @@ export default function Index() {
       {/* App Features Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center bg-slate-50 p-6 rounded-2xl lg:bg-transparent lg:p-0">
             <div className="flex justify-center lg:justify-start items-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc9f5883300134c1790f17441286b029a?format=webp&width=2000"
@@ -422,7 +422,7 @@ export default function Index() {
                 className="w-full h-auto scale-[2.5]"
               />
             </div>
-            <div className="bg-slate-50 p-6 rounded-2xl lg:bg-transparent lg:p-0">
+            <div>
               <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
                 Insights That Matter
               </p>
