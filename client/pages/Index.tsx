@@ -393,7 +393,7 @@ export default function Index() {
           <div className="max-w-4xl mr-auto text-left">
             <p className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
               Longevity isn't just more years — it's more good years.{" "}
-              <span className="text-primary">
+              <span className="text-primary font-serif italic font-light">
                 Clarra helps you create them.
               </span>
             </p>
