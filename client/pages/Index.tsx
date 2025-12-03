@@ -59,12 +59,12 @@ export default function Index() {
       {/* Signal Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
         <div className="container">
-          <div className="max-w-4xl ml-auto text-right">
+          <div className="max-w-4xl mr-auto text-left">
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-6">
               A few minutes with Clarra each day can change your understanding
               of midlife health.
             </h2>
-            <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl ml-auto">
+            <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mr-auto">
               With 24/7 support and intelligent insight across your symptoms,
               sleep, mood, and cycles, Clarra gives you a clearer picture of
               perimenopause — so you can make more informed decisions every day.
