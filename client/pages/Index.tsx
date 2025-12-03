@@ -14,21 +14,30 @@ export default function Index() {
     <>
       {/* Hero */}
       <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] py-16 md:py-24 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6198e84560664016af3ee94dd8bc8576?format=webp&width=800"
+            alt="Clarra app and user"
+            className="w-full h-full object-cover mix-blend-multiply opacity-50 lg:opacity-100"
+            loading="eager"
+          />
+        </div>
+
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-snug mb-6">
-                Clarity in midlife{" "}
+                Clarity in perimenopause{" "}
                 <span className="font-serif italic font-light text-primary">
                   starts here.
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
-                With Clarra’s intelligent health insights, your symptoms become
-                meaningful patterns you can see, track, and act on — bringing
-                clarity to perimenopause, a transition most women still navigate
-                alone.
+                With Clarra’s intelligent insights, your daily symptoms become
+                meaningful patterns you can track and act on — giving you
+                clarity through a transition most women still navigate alone.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
@@ -43,26 +52,6 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Right Column - Full Bleed Image */}
-        <div className="hidden lg:block absolute bottom-0 right-[-2%] w-[84%] h-full">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6198e84560664016af3ee94dd8bc8576?format=webp&width=800"
-            alt="Clarra app and user"
-            className="w-full h-full object-contain mix-blend-multiply"
-            loading="eager"
-          />
-        </div>
-
-        {/* Mobile Image */}
-        <div className="lg:hidden relative h-[840px] w-full mt-12">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6198e84560664016af3ee94dd8bc8576?format=webp&width=800"
-            alt="Clarra app and user"
-            className="w-full h-full object-contain mix-blend-multiply"
-            loading="eager"
-          />
         </div>
       </section>
 
