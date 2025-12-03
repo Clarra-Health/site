@@ -57,7 +57,7 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="pt-16 pb-12 md:pt-24 md:pb-20 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
+      <section className="pt-16 pb-10 md:pt-24 md:pb-[4.25rem] bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
         <div className="container">
           <div className="max-w-4xl mr-auto text-left">
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-6">
