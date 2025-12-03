@@ -8,33 +8,34 @@ import {
 } from "@/components/ui/dialog";
 import { Plus } from "lucide-react";
 import ProductCarouselSection from "@/components/ProductCarouselSection";
+import AutoPlayVideo from "@/components/media/AutoPlayVideo";
 
 export default function Index() {
   return (
     <>
       {/* Hero */}
       <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden">
-        {/* Background Image */}
+        {/* Background Video */}
         <div className="absolute inset-0 w-full h-full">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6198e84560664016af3ee94dd8bc8576?format=webp&width=800"
-            alt="Clarra app and user"
-            className="w-full h-full object-cover mix-blend-multiply opacity-50 lg:opacity-100"
-            loading="eager"
+          <AutoPlayVideo
+            src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F67106f22cff14b62b6a824e4ead7a767?alt=media&token=49ff6f2e-51da-4815-b6fc-0b79b7a1cc18&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
+            className="w-full h-full object-cover"
+            ariaLabel="Background video"
           />
+          <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px]" />
         </div>
 
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-snug mb-6">
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
                 Clarity in perimenopause{" "}
-                <span className="font-serif italic font-light text-primary">
+                <span className="font-serif italic font-medium text-primary drop-shadow-sm">
                   starts here.
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
+              <p className="text-lg sm:text-xl text-foreground font-medium leading-relaxed mb-8 max-w-lg drop-shadow-sm">
                 With Clarra’s intelligent insights, your daily symptoms become
                 meaningful patterns you can track and act on — giving you
                 clarity through a transition most women still navigate alone.
