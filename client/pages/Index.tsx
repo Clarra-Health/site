@@ -390,10 +390,10 @@ export default function Index() {
       {/* Midlife Health Quote Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="font-serif text-3xl sm:text-4xl md:text-5xl italic font-light text-foreground-dark leading-relaxed">
+          <div className="max-w-4xl mr-auto text-left">
+            <p className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
               Longevity isn't just more years — it's more good years.{" "}
-              <span className="text-[#fc9a53]">
+              <span className="text-primary">
                 Clarra helps you create them.
               </span>
             </p>
