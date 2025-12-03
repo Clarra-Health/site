@@ -36,8 +36,8 @@ export default function Index() {
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
                 With Clarra’s intelligent insights, your daily symptoms become
-                meaningful patterns you can track and act on — giving you clarity
-                through a transition most women still navigate alone.
+                meaningful patterns you can track and act on — giving you
+                clarity through a transition most women still navigate alone.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
