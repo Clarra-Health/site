@@ -59,7 +59,7 @@ const features = [
     icon: Lightbulb,
     shortTitle: "AI Insights",
     image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&h=800&fit=crop",
+      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F55b9ca56078f44dfa97225350b00c7eb?format=webp&width=800",
     metrics: {
       primary: { label: "INSIGHTS", value: "7", subtitle: "New findings" },
       secondary: {
