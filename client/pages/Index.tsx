@@ -45,21 +45,21 @@ export default function Index() {
         </div>
 
         {/* Right Column - Full Bleed Image */}
-        <div className="hidden lg:block absolute bottom-0 right-[-2%] w-[84%] h-full">
+        <div className="hidden lg:block absolute inset-y-0 right-0 w-1/2 h-full">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6198e84560664016af3ee94dd8bc8576?format=webp&width=800"
             alt="Clarra app and user"
-            className="w-full h-full object-contain mix-blend-multiply"
+            className="w-full h-full object-cover mix-blend-multiply"
             loading="eager"
           />
         </div>
 
         {/* Mobile Image */}
-        <div className="lg:hidden relative h-[840px] w-full mt-12">
+        <div className="lg:hidden relative w-full mt-12 aspect-square">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6198e84560664016af3ee94dd8bc8576?format=webp&width=800"
             alt="Clarra app and user"
-            className="w-full h-full object-contain mix-blend-multiply"
+            className="w-full h-full object-cover mix-blend-multiply"
             loading="eager"
           />
         </div>
