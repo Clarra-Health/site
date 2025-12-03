@@ -18,14 +18,17 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-tight mb-6">
-                Midlife health, made clear.
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-snug mb-6">
+                Clarity in midlife{" "}
+                <span className="font-serif italic font-light text-primary">
+                  starts here.
+                </span>
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
-                The Midlife Intelligence Layer — AI-native infrastructure for
-                women’s midlife health, transforming lived experience into
-                structured data, pattern intelligence, and clinical-grade
-                insights.
+                With Clarra’s intelligent health insights, your symptoms become
+                meaningful patterns you can see, track, and act on — bringing
+                clarity to perimenopause, a transition most women still navigate
+                alone.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
