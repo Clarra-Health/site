@@ -19,7 +19,7 @@ const features = [
     icon: Mic,
     shortTitle: "Symptom Capture",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=800&fit=crop",
+      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6cafa9845c344ca7b2180f3318786662?format=webp&width=800",
     metrics: {
       primary: {
         label: "MOOD TRACKING",
@@ -41,7 +41,7 @@ const features = [
     icon: Zap,
     shortTitle: "Pattern Intelligence",
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=800&fit=crop",
+      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F3f65f374e9b443d496fd67664adf5774?format=webp&width=800",
     metrics: {
       primary: { label: "SLEEP SCORE", value: "86", subtitle: "Optimal rest" },
       secondary: {
@@ -59,7 +59,7 @@ const features = [
     icon: Lightbulb,
     shortTitle: "AI Insights",
     image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&h=800&fit=crop",
+      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F55b9ca56078f44dfa97225350b00c7eb?format=webp&width=800",
     metrics: {
       primary: { label: "INSIGHTS", value: "7", subtitle: "New findings" },
       secondary: {
@@ -79,7 +79,7 @@ const features = [
     icon: Compass,
     shortTitle: "Personalized Guidance",
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=800&fit=crop",
+      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F4f66301e028c49b09f4606c334073c51?format=webp&width=800",
     metrics: {
       primary: {
         label: "RECOMMENDATIONS",
@@ -206,7 +206,7 @@ export default function ProductCarouselSection() {
                 <img
                   src={currentFeature.image}
                   alt={currentFeature.title}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-cover scale-[1.35]"
                 />
 
                 {/* Overlay gradient */}
@@ -339,14 +339,14 @@ export default function ProductCarouselSection() {
 
                   {/* Bottom - Correlation Graph */}
                   <div className="flex justify-center">
-                    <div className="bg-gradient-to-br from-slate-900/60 to-slate-950/60 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-xl max-w-md w-full">
-                      <p className="text-white text-sm font-semibold uppercase tracking-wider mb-6 text-center">
+                    <div className="bg-gradient-to-br from-slate-900/30 to-slate-950/30 backdrop-blur-md rounded-2xl p-5 border border-white/20 shadow-xl max-w-sm w-full">
+                      <p className="text-white text-xs font-semibold uppercase tracking-wider mb-4 text-center">
                         Sleep vs Mood Correlation
                       </p>
 
                       {/* Correlation Graph */}
                       <svg
-                        className="w-full h-48 mb-6"
+                        className="w-full h-32 mb-4"
                         viewBox="0 0 220 120"
                         preserveAspectRatio="xMidYMid meet"
                       >
