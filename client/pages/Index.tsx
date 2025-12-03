@@ -18,7 +18,7 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-tight mb-6">
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-snug mb-6">
                 Clarity in midlife{" "}
                 <span className="font-serif italic font-light text-primary">
                   starts here.
