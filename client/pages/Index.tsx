@@ -24,7 +24,8 @@ export default function Index() {
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
                 With Clarra’s intelligent health insights, your symptoms become
                 meaningful patterns you can see, track, and act on — bringing
-                clarity to a transition most women navigate alone.
+                clarity to perimenopause, a transition most women still navigate
+                alone.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
