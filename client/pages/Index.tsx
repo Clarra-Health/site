@@ -22,7 +22,7 @@ export default function Index() {
             className="w-full h-full object-cover brightness-[0.95] contrast-[1.1] saturate-[1.15]"
             ariaLabel="Background video"
           />
-          <div className="absolute inset-0 bg-white/15 backdrop-blur-[2px]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent" />
         </div>
 
         <div className="container relative z-10">
