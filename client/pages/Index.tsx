@@ -81,7 +81,7 @@ export default function Index() {
             <div className="group relative">
               <div className="relative overflow-hidden rounded-2xl mb-8 aspect-[3/4]">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc60a637f7c7842128abe93525dc2096c?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffa53940440d748e09e2d266b51cfc958?format=webp&width=800"
                   alt="Sleep and mood"
                   className="w-full h-full object-cover scale-[1.25] transition-transform duration-700 group-hover:scale-[1.3]"
                 />
@@ -113,7 +113,7 @@ export default function Index() {
                   <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fc60a637f7c7842128abe93525dc2096c?format=webp&width=1200"
+                        src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffa53940440d748e09e2d266b51cfc958?format=webp&width=1200"
                         alt="Sleep and mood expanded"
                         className="w-full h-auto"
                       />
