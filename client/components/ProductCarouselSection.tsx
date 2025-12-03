@@ -339,14 +339,14 @@ export default function ProductCarouselSection() {
 
                   {/* Bottom - Correlation Graph */}
                   <div className="flex justify-center">
-                    <div className="bg-gradient-to-br from-slate-900/60 to-slate-950/60 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-xl max-w-md w-full">
-                      <p className="text-white text-sm font-semibold uppercase tracking-wider mb-6 text-center">
+                    <div className="bg-gradient-to-br from-slate-900/30 to-slate-950/30 backdrop-blur-md rounded-2xl p-5 border border-white/20 shadow-xl max-w-sm w-full">
+                      <p className="text-white text-xs font-semibold uppercase tracking-wider mb-4 text-center">
                         Sleep vs Mood Correlation
                       </p>
 
                       {/* Correlation Graph */}
                       <svg
-                        className="w-full h-48 mb-6"
+                        className="w-full h-32 mb-4"
                         viewBox="0 0 220 120"
                         preserveAspectRatio="xMidYMid meet"
                       >
