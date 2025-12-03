@@ -78,11 +78,8 @@ export default function Index() {
         <div className="container">
           <div className="mb-16 text-center">
             <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
-              Health Dimensions
+              YOUR HEALTH DIMENSIONS
             </p>
-            <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight max-w-3xl mx-auto">
-              <span className="block text-primary">Wellness journey.</span>
-            </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             {/* Card 1 */}
