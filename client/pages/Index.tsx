@@ -81,8 +81,7 @@ export default function Index() {
               Health Dimensions
             </p>
             <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight max-w-3xl mx-auto">
-              Understand your whole
-              <span className="block text-primary">wellness journey.</span>
+              <span className="block text-primary">Wellness journey.</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
