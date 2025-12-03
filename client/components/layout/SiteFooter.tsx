@@ -30,21 +30,21 @@ export default function SiteFooter() {
         </div>
 
         {/* Footer Content */}
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="mb-12">
           {/* Brand */}
-          <div>
-            <div className="flex items-center gap-2 mb-4">
+          <div className="flex flex-col items-center text-center">
+            <div className="flex items-center justify-center gap-2 mb-4">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fcb13d8bd4dd54d4c9b3a6b34a08291d1?format=webp&width=320"
                 alt="Clarra"
                 className="h-10 w-auto"
               />
             </div>
-            <p className="text-sm text-foreground/60 leading-relaxed">
+            <p className="text-sm text-foreground/60 leading-relaxed max-w-md mx-auto">
               AI-native digital health for midlife care. Personalized support
               for perimenopause and menopause.
             </p>
-            <div className="flex gap-3 mt-6">
+            <div className="flex justify-center gap-3 mt-6">
               <a
                 href="https://www.instagram.com/clarrahealth/"
                 target="_blank"
@@ -76,64 +76,6 @@ export default function SiteFooter() {
                 </svg>
               </a>
             </div>
-          </div>
-
-          {/* Product Section */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">
-              Product
-            </h3>
-            <ul className="space-y-4">
-              <li>
-                <Link
-                  to="/"
-                  className="text-sm text-foreground/60 hover:text-primary transition font-medium"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="/#features"
-                  className="text-sm text-foreground/60 hover:text-primary transition font-medium"
-                >
-                  Features
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/#how-it-works"
-                  className="text-sm text-foreground/60 hover:text-primary transition font-medium"
-                >
-                  How It Works
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company Section */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">
-              Company
-            </h3>
-            <ul className="space-y-4">
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-sm text-foreground/60 hover:text-primary transition font-medium"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="mailto:hello@clarrahealth.com"
-                  className="text-sm text-foreground/60 hover:text-primary transition font-medium"
-                >
-                  Email
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
 

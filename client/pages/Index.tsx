@@ -393,7 +393,7 @@ export default function Index() {
           <div className="max-w-4xl mr-auto text-left">
             <p className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
               Longevity isn't just more years — it's more good years.{" "}
-              <span className="text-primary">
+              <span className="font-serif italic font-medium text-primary">
                 Clarra helps you create them.
               </span>
             </p>
@@ -418,7 +418,7 @@ export default function Index() {
               </p>
               <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight mb-4">
                 Clinical precision,
-                <span className="block font-serif italic font-light text-[#fc9a53] mt-2">
+                <span className="block font-serif italic font-light text-foreground-dark mt-2">
                   designed for simplicity
                 </span>
               </h2>
