@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full">
           <img
