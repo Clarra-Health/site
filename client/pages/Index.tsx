@@ -422,7 +422,7 @@ export default function Index() {
                 className="w-full h-auto scale-[2.5]"
               />
             </div>
-            <div>
+            <div className="bg-slate-50 p-6 rounded-2xl lg:bg-transparent lg:p-0">
               <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
                 Insights That Matter
               </p>
