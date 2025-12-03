@@ -206,7 +206,7 @@ export default function ProductCarouselSection() {
                 <img
                   src={currentFeature.image}
                   alt={currentFeature.title}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-cover scale-[1.35]"
                 />
 
                 {/* Overlay gradient */}
