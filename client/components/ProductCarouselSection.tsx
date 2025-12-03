@@ -41,7 +41,7 @@ const features = [
     icon: Zap,
     shortTitle: "Pattern Intelligence",
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=800&fit=crop",
+      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F3f65f374e9b443d496fd67664adf5774?format=webp&width=800",
     metrics: {
       primary: { label: "SLEEP SCORE", value: "86", subtitle: "Optimal rest" },
       secondary: {
