@@ -57,18 +57,27 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="pt-16 pb-12 md:pt-24 md:pb-20 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
+      <section className="pt-16 pb-12 md:pt-24 md:pb-20 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5] overflow-hidden">
         <div className="container">
-          <div className="max-w-4xl mr-auto text-left">
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-6">
-              A few minutes with Clarra each day can change your understanding
-              of midlife health.
-            </h2>
-            <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mr-auto">
-              With 24/7 support and intelligent insight across your symptoms,
-              sleep, mood, and cycles, Clarra gives you a clearer picture of
-              perimenopause — so you can make more informed decisions every day.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-left relative z-10">
+              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-6">
+                A few minutes with Clarra each day can change your understanding
+                of midlife health.
+              </h2>
+              <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mr-auto">
+                With 24/7 support and intelligent insight across your symptoms,
+                sleep, mood, and cycles, Clarra gives you a clearer picture of
+                perimenopause — so you can make more informed decisions every day.
+              </p>
+            </div>
+            <div className="relative flex justify-center lg:justify-end">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffd5ad7ebdaed4699adc9a9bc4bae7a68?format=webp&width=800"
+                alt="Clarra insights"
+                className="w-full max-w-md lg:max-w-full object-contain scale-150 origin-center mix-blend-multiply"
+              />
+            </div>
           </div>
         </div>
       </section>
