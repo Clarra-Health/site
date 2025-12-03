@@ -68,7 +68,8 @@ export default function Index() {
               <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mr-auto">
                 With 24/7 support and intelligent insight across your symptoms,
                 sleep, mood, and cycles, Clarra gives you a clearer picture of
-                perimenopause — so you can make more informed decisions every day.
+                perimenopause — so you can make more informed decisions every
+                day.
               </p>
             </div>
             <div className="relative flex justify-center lg:justify-end">
