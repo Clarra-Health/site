@@ -8,33 +8,34 @@ import {
 } from "@/components/ui/dialog";
 import { Plus } from "lucide-react";
 import ProductCarouselSection from "@/components/ProductCarouselSection";
+import AutoPlayVideo from "@/components/media/AutoPlayVideo";
 
 export default function Index() {
   return (
     <>
       {/* Hero */}
       <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden">
-        {/* Background Image */}
+        {/* Background Video */}
         <div className="absolute inset-0 w-full h-full">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6198e84560664016af3ee94dd8bc8576?format=webp&width=800"
-            alt="Clarra app and user"
-            className="w-full h-full object-cover mix-blend-multiply opacity-50 lg:opacity-100"
-            loading="eager"
+          <AutoPlayVideo
+            src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F71c587237e214d258640241c1363f8b2?alt=media&token=26129477-8002-497a-939f-f3a41fd2ba5f&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
+            className="w-full h-full object-cover brightness-[0.95] contrast-[1.1] saturate-[1.15]"
+            ariaLabel="Background video"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 via-35% to-transparent" />
         </div>
 
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-snug mb-6">
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
                 Clarity in perimenopause{" "}
-                <span className="font-serif italic font-light text-primary">
+                <span className="font-serif italic font-medium text-foreground-dark drop-shadow-sm">
                   starts here.
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
+              <p className="text-lg sm:text-xl text-foreground font-medium leading-relaxed mb-8 max-w-lg drop-shadow-sm">
                 With Clarra’s intelligent insights, your daily symptoms become
                 meaningful patterns you can track and act on — giving you
                 clarity through a transition most women still navigate alone.
@@ -56,30 +57,25 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
+      <section className="pt-16 pb-12 md:pt-24 md:pb-20 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5]">
         <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-7">
-              Clarra is where your symptoms become{" "}
-              <span className="text-primary">signals</span> that bring clarity
-              to your midlife health.
+          <div className="max-w-4xl mr-auto text-left">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-6">
+              A few minutes with Clarra each day can change your understanding
+              of midlife health.
             </h2>
+            <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mr-auto">
+              With 24/7 support and intelligent insight across your symptoms,
+              sleep, mood, and cycles, Clarra gives you a clearer picture of
+              perimenopause — so you can make more informed decisions every day.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Sleep & Wellness Features Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-[#f0f9ff] to-white">
+      <section className="pt-12 pb-16 md:pt-20 md:pb-24 bg-gradient-to-b from-[#f0f9ff] to-white">
         <div className="container">
-          <div className="mb-16 text-center">
-            <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
-              Health Dimensions
-            </p>
-            <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight max-w-3xl mx-auto">
-              Understand your whole
-              <span className="block text-primary">wellness journey.</span>
-            </h2>
-          </div>
           <div className="grid md:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="group relative">
