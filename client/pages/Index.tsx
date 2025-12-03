@@ -19,16 +19,15 @@ export default function Index() {
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-foreground-dark leading-snug mb-6">
-                Clarity in midlife{" "}
+                Clarity in perimenopause{" "}
                 <span className="font-serif italic font-light text-primary">
                   starts here.
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-foreground/75 leading-relaxed mb-8 max-w-lg">
-                With Clarra’s intelligent health insights, your symptoms become
-                meaningful patterns you can see, track, and act on — bringing
-                clarity to perimenopause, a transition most women still navigate
-                alone.
+                With Clarra’s intelligent insights, your daily symptoms become
+                meaningful patterns you can track and act on — giving you clarity
+                through a transition most women still navigate alone.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
