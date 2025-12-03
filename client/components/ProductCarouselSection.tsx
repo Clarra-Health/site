@@ -19,7 +19,7 @@ const features = [
     icon: Mic,
     shortTitle: "Symptom Capture",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=800&fit=crop",
+      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd8cf464e2b6d4c0d94e74748e094e897?format=webp&width=800",
     metrics: {
       primary: {
         label: "MOOD TRACKING",
