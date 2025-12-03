@@ -18,8 +18,8 @@ export default function Index() {
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full">
           <AutoPlayVideo
-            src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F71c587237e214d258640241c1363f8b2?alt=media&token=26129477-8002-497a-939f-f3a41fd2ba5f&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
-            className="w-full h-full object-cover brightness-[0.95] contrast-[1.1] saturate-[1.15]"
+            src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd65cbe74c32546549f053948a0c2c09b?alt=media&token=cf578405-3198-4260-8a54-fc26c6005b05&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
+            className="w-full h-full object-cover brightness-[0.95] contrast-[1.15] saturate-[1.3]"
             ariaLabel="Background video"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 via-35% to-transparent" />
