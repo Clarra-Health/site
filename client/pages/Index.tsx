@@ -19,23 +19,23 @@ export default function Index() {
         <div className="absolute inset-0 w-full h-full">
           <AutoPlayVideo
             src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd65cbe74c32546549f053948a0c2c09b?alt=media&token=cf578405-3198-4260-8a54-fc26c6005b05&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
-            className="w-full h-full object-cover brightness-[0.95] contrast-[1.15] saturate-[1.3]"
+            className="w-full h-full object-cover brightness-100 contrast-[1.05] saturate-[0.9]"
             ariaLabel="Background video"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 via-35% to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/15 via-35% to-transparent" />
         </div>
 
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-snug mb-6 drop-shadow-sm">
                 Clarity in perimenopause{" "}
-                <span className="font-serif italic font-medium text-foreground-dark drop-shadow-sm">
+                <span className="font-serif italic font-medium text-white drop-shadow-sm">
                   starts here.
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-foreground font-medium leading-relaxed mb-8 max-w-lg drop-shadow-sm">
+              <p className="text-lg sm:text-xl text-white font-medium leading-relaxed mb-8 max-w-lg drop-shadow-sm">
                 With Clarra’s intelligent insights, your daily symptoms become
                 meaningful patterns you can track and act on — giving you
                 clarity through a transition most women still navigate alone.
@@ -76,7 +76,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffd5ad7ebdaed4699adc9a9bc4bae7a68?format=webp&width=2000"
                 alt="Clarra insights"
-                className="w-full max-w-md lg:max-w-full object-contain scale-[2.0] -translate-x-[76%] -translate-y-[15%] origin-center mix-blend-multiply"
+                className="w-full max-w-md lg:max-w-full object-contain scale-[2.0] -translate-x-[66%] -translate-y-[15%] origin-center mix-blend-multiply"
               />
             </div>
           </div>
