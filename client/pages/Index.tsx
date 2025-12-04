@@ -22,20 +22,20 @@ export default function Index() {
             className="w-full h-full object-cover brightness-[0.95] contrast-[1.15] saturate-[1.3]"
             ariaLabel="Background video"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 via-35% to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 via-35% to-transparent" />
         </div>
 
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-snug mb-6 drop-shadow-sm">
                 Clarity in perimenopause{" "}
-                <span className="font-serif italic font-medium text-foreground-dark drop-shadow-sm">
+                <span className="font-serif italic font-medium text-white drop-shadow-sm">
                   starts here.
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-foreground font-medium leading-relaxed mb-8 max-w-lg drop-shadow-sm">
+              <p className="text-lg sm:text-xl text-white font-medium leading-relaxed mb-8 max-w-lg drop-shadow-sm">
                 With Clarra’s intelligent insights, your daily symptoms become
                 meaningful patterns you can track and act on — giving you
                 clarity through a transition most women still navigate alone.
