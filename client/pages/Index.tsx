@@ -18,14 +18,12 @@ export default function Index() {
         <div className="absolute inset-0 w-full h-full overflow-visible">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fad61ae606c6b402e9e3942e4f23fbe55?format=webp&width=2000"
-            className="w-full h-full object-cover brightness-[1.02] saturate-[1.1] contrast-[1.05] shadow-[0px_0px_40px_rgba(0,0,0,0.06)] mix-blend-multiply"
+            className="w-full h-full object-cover brightness-[1.05] saturate-[1.05] contrast-[1.08]"
             style={{ objectPosition: "center 46px" }}
             alt="Hero background"
           />
           {/* Light Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/0" />
-          {/* Vignette */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/5 opacity-15 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/0" />
         </div>
 
         <div className="container relative z-10">
