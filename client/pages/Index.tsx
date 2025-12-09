@@ -17,7 +17,7 @@ export default function Index() {
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full overflow-visible">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F68c8d30ff3e94e77ac6dd733aab33055?format=webp&width=2000"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fad61ae606c6b402e9e3942e4f23fbe55?format=webp&width=2000"
             className="w-full h-full object-cover brightness-[1.02] saturate-[1.1] contrast-[1.05] shadow-[0px_0px_40px_rgba(0,0,0,0.06)] mix-blend-multiply"
             style={{ objectPosition: "center 46px" }}
             alt="Hero background"
