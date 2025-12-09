@@ -325,7 +325,7 @@ export default function ProductCarouselSection() {
               </div>
             ) : currentIndex === 1 ? (
               // Pattern Intelligence - Correlation Graph
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50 flex flex-col">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
@@ -336,14 +336,17 @@ export default function ProductCarouselSection() {
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-                {/* Metric Cards Overlay */}
-                <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between pointer-events-none">
+                {/* Content Container */}
+                <div className="relative z-10 flex flex-col justify-between h-full p-6 md:p-8">
                   {/* Top Right - Correlation Metric */}
                   <div className="flex justify-end">
                     <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl p-5 border border-teal-500/40 max-w-xs shadow-lg">
-                      <p className="text-xs font-semibold text-teal-100 uppercase tracking-wider mb-2">
-                        Correlations Found
-                      </p>
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="w-2 h-2 rounded-full bg-teal-200 animate-pulse" />
+                        <p className="text-xs font-semibold text-teal-100 uppercase tracking-wider">
+                          Correlations Found
+                        </p>
+                      </div>
                       <p className="text-4xl font-bold text-white mb-1">7</p>
                       <p className="text-sm text-teal-50/80">
                         Connected patterns
@@ -351,100 +354,105 @@ export default function ProductCarouselSection() {
                     </div>
                   </div>
 
-                  {/* Bottom - Correlation Graph */}
-                  <div className="flex justify-center">
-                    <div className="bg-gradient-to-br from-slate-900/30 to-slate-950/30 backdrop-blur-md rounded-2xl p-5 border border-white/20 shadow-xl max-w-sm w-full">
-                      <p className="text-white text-xs font-semibold uppercase tracking-wider mb-4 text-center">
+                  {/* Bottom - Correlation Graph Widget */}
+                  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 shadow-xl w-full">
+                    <div className="flex justify-between items-center mb-4">
+                      <p className="text-white text-xs font-semibold uppercase tracking-wider">
                         Sleep vs Mood Correlation
                       </p>
-
-                      {/* Correlation Graph */}
-                      <svg
-                        className="w-full h-32 mb-4"
-                        viewBox="0 0 220 120"
-                        preserveAspectRatio="xMidYMid meet"
-                      >
-                        <defs>
-                          <linearGradient
-                            id="correlationGrad"
-                            x1="0%"
-                            y1="0%"
-                            x2="0%"
-                            y2="100%"
-                          >
-                            <stop
-                              offset="0%"
-                              stopColor="#4fb7b3"
-                              stopOpacity="0.3"
-                            />
-                            <stop
-                              offset="100%"
-                              stopColor="#4fb7b3"
-                              stopOpacity="0.05"
-                            />
-                          </linearGradient>
-                        </defs>
-
-                        {/* Main correlation line (Sleep) */}
-                        <polyline
-                          points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110"
-                          fill="none"
-                          stroke="#4fb7b3"
-                          strokeWidth="2.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-
-                        {/* Secondary correlation line (Mood) */}
-                        <polyline
-                          points="15,85 35,65 55,45 75,50 95,60 115,55 135,45 155,35 175,45 195,55"
-                          fill="none"
-                          stroke="#fc9a53"
-                          strokeWidth="2.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeDasharray="4 4"
-                        />
-
-                        {/* Fill under line */}
-                        <polygon
-                          points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110 195,115 15,115"
-                          fill="url(#correlationGrad)"
-                        />
-
-                        {/* Key points */}
-                        <circle cx="35" cy="75" r="4" fill="#56d257" />
-                        <circle cx="95" cy="35" r="4" fill="#56d257" />
-                        <circle cx="175" cy="100" r="4" fill="#56d257" />
-
-                        {/* Baseline */}
-                        <line
-                          x1="10"
-                          y1="105"
-                          x2="200"
-                          y2="105"
-                          stroke="white"
-                          strokeWidth="1"
-                          strokeDasharray="3"
-                          opacity="0.2"
-                        />
-                      </svg>
-
-                      <div className="flex items-center justify-between text-sm">
-                        <div className="flex items-center gap-4">
-                          <div className="flex items-center gap-2">
-                            <div className="w-2 h-2 rounded-full bg-teal-400"></div>
-                            <span className="text-white/70">Sleep</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <div className="w-2 h-2 rounded-full bg-[#fc9a53]"></div>
-                            <span className="text-white/70">Mood</span>
-                          </div>
-                        </div>
-                        <span className="text-white font-semibold">
-                          73% Correlation
-                        </span>
+                      <div className="bg-white/20 rounded-full px-2 py-1">
+                        <p className="text-[10px] text-white font-medium">
+                          Last 30 Days
+                        </p>
                       </div>
+                    </div>
+
+                    {/* Correlation Graph */}
+                    <svg
+                      className="w-full h-32 mb-4"
+                      viewBox="0 0 220 120"
+                      preserveAspectRatio="xMidYMid meet"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="correlationGrad"
+                          x1="0%"
+                          y1="0%"
+                          x2="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#4fb7b3"
+                            stopOpacity="0.3"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#4fb7b3"
+                            stopOpacity="0.05"
+                          />
+                        </linearGradient>
+                      </defs>
+
+                      {/* Main correlation line (Sleep) */}
+                      <polyline
+                        points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110"
+                        fill="none"
+                        stroke="#4fb7b3"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+
+                      {/* Secondary correlation line (Mood) */}
+                      <polyline
+                        points="15,85 35,65 55,45 75,50 95,60 115,55 135,45 155,35 175,45 195,55"
+                        fill="none"
+                        stroke="#fc9a53"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeDasharray="4 4"
+                      />
+
+                      {/* Fill under line */}
+                      <polygon
+                        points="15,95 35,75 55,55 75,40 95,35 115,45 135,65 155,85 175,100 195,110 195,115 15,115"
+                        fill="url(#correlationGrad)"
+                      />
+
+                      {/* Key points */}
+                      <circle cx="35" cy="75" r="4" fill="#56d257" />
+                      <circle cx="95" cy="35" r="4" fill="#56d257" />
+                      <circle cx="175" cy="100" r="4" fill="#56d257" />
+
+                      {/* Baseline */}
+                      <line
+                        x1="10"
+                        y1="105"
+                        x2="200"
+                        y2="105"
+                        stroke="white"
+                        strokeWidth="1"
+                        strokeDasharray="3"
+                        opacity="0.2"
+                      />
+                    </svg>
+
+                    <div className="flex items-center justify-between text-sm">
+                      <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 rounded-full bg-teal-400"></div>
+                          <span className="text-white/70">Sleep</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 rounded-full bg-[#fc9a53]"></div>
+                          <span className="text-white/70">Mood</span>
+                        </div>
+                      </div>
+                      <span className="text-white font-semibold bg-white/10 px-2 py-1 rounded-lg">
+                        73% Correlation
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -464,26 +472,49 @@ export default function ProductCarouselSection() {
 
                 {/* Guidance Steps Container */}
                 <div className="relative z-10 flex flex-col justify-end h-full p-6 md:p-8 gap-3">
-                  {currentFeature.guidance.map((item, idx) => (
-                    <div
-                      key={idx}
-                      className="flex items-start gap-3 bg-white/10 backdrop-blur-md rounded-lg px-4 py-3 border border-white/10"
-                    >
-                      <div
-                        className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-white font-bold text-sm ${
-                          item.status === "today"
-                            ? "bg-gradient-to-br from-orange-500 to-orange-600"
-                            : "bg-gradient-to-br from-slate-600 to-slate-700"
-                        }`}
-                      >
-                        {item.status === "today" ? "✓" : idx + 1}
-                      </div>
-                      <p className="text-white text-sm leading-snug">
-                        {item.label}
-                      </p>
+                  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 shadow-xl">
+                    <div className="flex items-center justify-between mb-4">
+                      <p className="text-white font-semibold">Today's Plan</p>
+                      <span className="text-xs bg-white/20 text-white px-2 py-1 rounded-full">
+                        3 Tasks
+                      </span>
                     </div>
-                  ))}
-                  <div className="h-1 bg-gradient-to-r from-orange-500 to-orange-400 rounded-full mt-2" />
+                    <div className="space-y-3">
+                      {currentFeature.guidance.map((item, idx) => (
+                        <div
+                          key={idx}
+                          className="flex items-center gap-3 group cursor-pointer"
+                        >
+                          <div
+                            className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-white font-bold text-xs transition-all duration-300 ${
+                              item.status === "today"
+                                ? "bg-gradient-to-br from-orange-500 to-orange-600 shadow-lg scale-110"
+                                : "bg-white/10 border border-white/20 group-hover:border-white/40"
+                            }`}
+                          >
+                            {item.status === "today" ? "✓" : ""}
+                          </div>
+                          <p
+                            className={`text-sm leading-snug transition-colors ${
+                              item.status === "today"
+                                ? "text-white font-medium"
+                                : "text-white/70 group-hover:text-white/90"
+                            }`}
+                          >
+                            {item.label.replace(/^(Today|Tomorrow|This week): /, "")}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="mt-4 pt-3 border-t border-white/10 flex justify-between items-center">
+                      <p className="text-xs text-white/50">
+                        Updated 2 hours ago
+                      </p>
+                      <div className="h-1 w-16 bg-white/10 rounded-full overflow-hidden">
+                        <div className="h-full w-1/3 bg-orange-500 rounded-full" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             ) : currentIndex === 2 ? (
@@ -504,9 +535,12 @@ export default function ProductCarouselSection() {
                   {/* Primary Metric Card - Top Right */}
                   <div className="flex justify-end">
                     <div className="bg-gradient-to-br from-amber-700/70 to-amber-900/70 backdrop-blur-md rounded-2xl p-6 border border-amber-600/40 max-w-xs shadow-xl">
-                      <p className="text-xs font-semibold text-amber-200/70 uppercase tracking-wider mb-2">
-                        {currentFeature.metrics.primary.label}
-                      </p>
+                      <div className="flex items-center gap-2 mb-2">
+                        <Lightbulb className="w-4 h-4 text-amber-200" />
+                        <p className="text-xs font-semibold text-amber-200/70 uppercase tracking-wider">
+                          {currentFeature.metrics.primary.label}
+                        </p>
+                      </div>
                       <p className="text-4xl font-bold text-white mb-1">
                         {currentFeature.metrics.primary.value}
                       </p>
@@ -518,10 +552,23 @@ export default function ProductCarouselSection() {
 
                   {/* Insight Box - Bottom Right (replaces accuracy card) */}
                   <div className="flex justify-end">
-                    <div className="bg-gradient-to-br from-teal-600/80 to-teal-800/80 backdrop-blur-md rounded-2xl p-5 border border-teal-500/40 max-w-xs shadow-lg">
-                      <p className="text-white text-xs leading-snug">
+                    <div className="bg-gradient-to-br from-teal-600/80 to-teal-800/80 backdrop-blur-md rounded-2xl p-5 border border-teal-500/40 max-w-xs shadow-lg relative overflow-hidden">
+                      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-300 to-transparent opacity-50" />
+                      <div className="flex gap-3 mb-2">
+                        <div className="bg-white/20 p-1.5 rounded-lg">
+                          <Zap className="w-4 h-4 text-white" />
+                        </div>
+                        <p className="text-teal-100 text-xs font-semibold uppercase tracking-wider mt-1">
+                          New Insight
+                        </p>
+                      </div>
+                      <p className="text-white text-sm leading-relaxed font-medium">
                         {currentFeature.insight}
                       </p>
+                      <div className="mt-3 flex items-center gap-2 text-xs text-teal-200/80">
+                        <span>Tap to learn more</span>
+                        <ChevronRight className="w-3 h-3" />
+                      </div>
                     </div>
                   </div>
                 </div>
