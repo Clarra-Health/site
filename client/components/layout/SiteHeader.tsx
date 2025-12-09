@@ -116,7 +116,7 @@ export default function SiteHeader() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-border text-foreground"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-border text-[#1A2A33]"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -132,7 +132,7 @@ export default function SiteHeader() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-border text-foreground"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-border text-[#1A2A33]"
               >
                 <svg
                   viewBox="0 0 24 24"
