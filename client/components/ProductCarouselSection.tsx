@@ -127,7 +127,7 @@ export default function ProductCarouselSection() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -z-10" />
 
       <div className="w-full px-3 md:px-6 lg:px-10">
-        <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4 text-left">
+        <p className="text-[17px] font-semibold text-muted-foreground uppercase tracking-widest mb-4 text-left">
           HOW CLARRA WORKS
         </p>
         {/* Tab Navigation */}
@@ -136,7 +136,7 @@ export default function ProductCarouselSection() {
             <button
               key={feature.id}
               onClick={() => setCurrentIndex(index)}
-              className={`whitespace-nowrap font-semibold text-sm md:text-base transition-all duration-300 pb-4 border-b-2 ${
+              className={`whitespace-nowrap font-semibold text-[15px] md:text-[17px] transition-all duration-300 pb-4 border-b-2 ${
                 index === currentIndex
                   ? "text-primary border-primary"
                   : "text-muted-foreground border-transparent hover:text-foreground"
