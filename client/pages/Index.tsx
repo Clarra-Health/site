@@ -13,17 +13,17 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-[120px] pb-20 md:pt-[150px] md:pb-24 min-h-[620px] overflow-visible">
+      <section className="relative bg-gradient-to-b from-[#FAFDFD] to-[#EAF7F5] pt-[90px] pb-20 md:pt-[120px] md:pb-24 min-h-[620px] overflow-visible">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full overflow-visible">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F018a3eff115049a584b3bf45c4b857a3?format=webp&width=3000"
-            className="w-full h-full object-cover brightness-96 saturate-[1.15] contrast-[1.12] shadow-[0px_0px_40px_rgba(0,0,0,0.06)]"
+            className="w-full h-full object-cover brightness-[0.97] saturate-[1.05] contrast-[1.10] shadow-[0px_0px_40px_rgba(0,0,0,0.06)] mix-blend-multiply"
             style={{ objectPosition: "center 40px" }}
             alt="Hero background"
           />
           {/* Light Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/45 to-white/5" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/0" />
           {/* Vignette */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/5 opacity-15 pointer-events-none" />
         </div>
@@ -32,8 +32,8 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
-                <span className="font-serif italic font-light block mb-2">
+              <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-foreground-dark leading-[1.05] mb-6 drop-shadow-sm">
+                <span className="font-serif italic font-light block mb-2 leading-[1.1]">
                   Make sense of
                 </span>
                 perimenopause
