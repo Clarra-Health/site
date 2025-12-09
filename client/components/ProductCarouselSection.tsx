@@ -310,6 +310,17 @@ export default function ProductCarouselSection() {
                       </div>
                     </div>
                   </div>
+
+                  {/* Input Area */}
+                  <div className="mt-4 flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-full px-4 py-3 border border-white/20">
+                    <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse shadow-[0_0_8px_rgba(239,68,68,0.6)]" />
+                    <p className="text-white/80 text-sm flex-1 font-medium">
+                      Listening...
+                    </p>
+                    <div className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors cursor-pointer">
+                      <Mic className="w-4 h-4 text-white" />
+                    </div>
+                  </div>
                 </div>
               </div>
             ) : currentIndex === 1 ? (
