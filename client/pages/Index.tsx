@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-[120px] pb-20 md:pt-[150px] md:pb-24 min-h-[620px] overflow-visible">
+      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-[90px] pb-20 md:pt-[120px] md:pb-24 min-h-[620px] overflow-visible">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full overflow-visible">
           <img
@@ -32,8 +32,8 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
-                <span className="font-serif italic font-light block mb-2">
+              <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-foreground-dark leading-[1.05] mb-6 drop-shadow-sm">
+                <span className="font-serif italic font-light block mb-2 leading-[1.1]">
                   Make sense of
                 </span>
                 perimenopause
