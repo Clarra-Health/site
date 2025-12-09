@@ -13,13 +13,13 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[linear-gradient(120deg,#FEF8F3,#FFFFFF)] pt-[152px] pb-20 md:pb-24 min-h-[620px] overflow-visible">
+      <section className="relative bg-[linear-gradient(120deg,#FEF8F3,#FFFFFF)] pt-[175px] pb-20 md:pb-24 min-h-[620px] overflow-visible">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full overflow-visible">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F68c8d30ff3e94e77ac6dd733aab33055?format=webp&width=2000"
             className="w-full h-full object-cover brightness-[1.02] saturate-[1.1] contrast-[1.05] shadow-[0px_0px_40px_rgba(0,0,0,0.06)] mix-blend-multiply"
-            style={{ objectPosition: "center 40px" }}
+            style={{ objectPosition: "center 46px" }}
             alt="Hero background"
           />
           {/* Light Gradient Overlay */}
