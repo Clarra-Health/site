@@ -17,15 +17,19 @@ export default function Index() {
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full overflow-visible">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F68c8d30ff3e94e77ac6dd733aab33055?format=webp&width=2000"
-            className="w-full h-full object-cover brightness-[1.02] saturate-[1.1] contrast-[1.05] shadow-[0px_0px_40px_rgba(0,0,0,0.06)] mix-blend-multiply"
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fad61ae606c6b402e9e3942e4f23fbe55?format=webp&width=2000"
+            className="w-full h-full object-cover brightness-[1.03] saturate-[1.15] contrast-[1.18]"
             style={{ objectPosition: "center 46px" }}
             alt="Hero background"
           />
-          {/* Light Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/0" />
-          {/* Vignette */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/5 opacity-15 pointer-events-none" />
+          {/* White Gradient Overlay - fades out at 55% */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to right, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.35) 35%, rgba(255,255,255,0) 55%)",
+            }}
+          />
         </div>
 
         <div className="container relative z-10">
@@ -33,7 +37,7 @@ export default function Index() {
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
               <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-foreground-dark leading-[1.05] mb-6 drop-shadow-sm">
-                <span className="font-serif italic font-light block mb-2 leading-[1.1]">
+                <span className="font-serif italic font-light block mb-2 leading-[1.1] text-[48px] sm:text-[60px] md:text-[73px]">
                   Make sense of
                 </span>
                 perimenopause
