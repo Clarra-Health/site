@@ -22,8 +22,10 @@ export default function Index() {
             style={{ objectPosition: "center 46px" }}
             alt="Hero background"
           />
-          {/* Light Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/0" />
+          {/* White Gradient Overlay - fades out at 55% */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/40 to-transparent" style={{
+            background: 'linear-gradient(to right, white 0%, rgba(255,255,255,0.7) 35%, rgba(255,255,255,0) 55%)'
+          }} />
         </div>
 
         <div className="container relative z-10">
