@@ -73,7 +73,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffd5ad7ebdaed4699adc9a9bc4bae7a68?format=webp&width=2000"
                 alt="Clarra insights"
-                className="w-full max-w-[460px] object-contain -translate-x-[25%] scale-[1.4] mix-blend-multiply"
+                className="w-full max-w-[460px] object-contain -translate-x-[50%] scale-[1.4] mix-blend-multiply"
               />
             </div>
           </div>
