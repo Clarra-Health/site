@@ -39,9 +39,7 @@ export default function Index() {
                 perimenopause
               </h1>
               <p className="text-lg sm:text-xl text-foreground/80 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
-                Clarra interprets your daily experiences as meaningful patterns
-                you can understand and act on — offering guidance through a
-                transition most women are left to navigate alone.
+                Clarra interprets your symptoms, hormone fluctuations, and daily experiences as clear, meaningful patterns — guiding you through a transition most women still navigate without support.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
