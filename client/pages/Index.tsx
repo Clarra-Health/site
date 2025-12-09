@@ -63,8 +63,7 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-left relative z-10">
               <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-6">
-                A few minutes with Clarra each day can change your understanding
-                of midlife health.
+                See the patterns behind your symptoms.
               </h2>
               <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mr-auto">
                 With 24/7 support and intelligent insight across your symptoms,
