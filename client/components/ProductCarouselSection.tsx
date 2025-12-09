@@ -217,7 +217,7 @@ export default function ProductCarouselSection() {
                   <div className="flex flex-col gap-4 overflow-y-auto max-h-96 scrollbar-hide">
                     {/* User Message 1 */}
                     <div className="flex justify-end">
-                      <div className="bg-white/20 backdrop-blur rounded-2xl rounded-tr-lg px-4 py-3 max-w-xs">
+                      <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl rounded-tr-lg px-4 py-3 max-w-xs">
                         <p className="text-white text-sm">
                           How's your sleep lately?
                         </p>
@@ -326,12 +326,12 @@ export default function ProductCarouselSection() {
                 <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between pointer-events-none">
                   {/* Top Right - Correlation Metric */}
                   <div className="flex justify-end">
-                    <div className="bg-gradient-to-br from-emerald-600/70 to-emerald-800/70 backdrop-blur-md rounded-2xl p-5 border border-emerald-500/40 max-w-xs shadow-lg">
-                      <p className="text-xs font-semibold text-emerald-200/70 uppercase tracking-wider mb-2">
+                    <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl p-5 border border-teal-500/40 max-w-xs shadow-lg">
+                      <p className="text-xs font-semibold text-teal-100 uppercase tracking-wider mb-2">
                         Correlations Found
                       </p>
                       <p className="text-4xl font-bold text-white mb-1">7</p>
-                      <p className="text-sm text-emerald-100/60">
+                      <p className="text-sm text-teal-50/80">
                         Connected patterns
                       </p>
                     </div>

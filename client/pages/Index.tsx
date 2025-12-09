@@ -60,7 +60,7 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-[#f7fbfa] to-white overflow-hidden">
+      <section className="py-16 md:py-24 bg-white overflow-hidden">
         <div className="container max-w-[1280px] px-6 md:px-8 mx-auto">
           <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             <div className="text-left relative z-10">
@@ -705,7 +705,7 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <div className="relative z-10 bg-[#fc9a53] p-6">
+                  <div className="relative z-10 bg-teal-600 p-6">
                     <div className="flex justify-between items-start mb-4">
                       <span className="text-white text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
                         AI Insights
@@ -733,19 +733,19 @@ export default function Index() {
                     alt="Personalized Insights"
                     className="w-full h-96 object-cover blur-sm opacity-40"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#fc9a53] via-[#fc9a53]/90 to-[#fca469]" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-teal-600 via-teal-600/90 to-teal-400" />
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-accent-foreground mb-4">
+                        <h2 className="text-5xl font-bold text-white mb-4">
                           Insights that actually explain what's happening
                         </h2>
-                        <p className="text-lg text-accent-foreground/90">
+                        <p className="text-lg text-white/90">
                           Clear, clinically meaningful interpretation—no generic
                           tips
                         </p>
                       </div>
-                      <DialogClose className="text-accent-foreground hover:opacity-80 flex-shrink-0">
+                      <DialogClose className="text-white hover:opacity-80 flex-shrink-0">
                         <svg
                           className="w-8 h-8"
                           fill="currentColor"
@@ -755,7 +755,7 @@ export default function Index() {
                         </svg>
                       </DialogClose>
                     </div>
-                    <p className="text-accent-foreground/90 text-base leading-relaxed">
+                    <p className="text-white/90 text-base leading-relaxed">
                       Receive insights grounded in clinical evidence. Every
                       recommendation explains the "why"—connecting your data to
                       meaningful health outcomes based on peer-reviewed research
@@ -865,7 +865,7 @@ export default function Index() {
       </section>
 
       {/* Founder's Note Section */}
-      <section className="py-16 md:py-24 bg-foreground-dark text-white relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-[#f0f9ff] relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/50 rounded-full blur-3xl"></div>
@@ -876,26 +876,26 @@ export default function Index() {
               <p className="text-lg font-semibold text-primary uppercase tracking-widest mb-6">
                 A Founder's Note
               </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold leading-tight tracking-tight mb-8">
+              <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight tracking-tight mb-8">
                 Women's health
-                <span className="block text-[#fc9a53] font-serif italic font-light">
+                <span className="block text-primary font-serif italic font-light">
                   deserves better.
                 </span>
               </h2>
-              <p className="text-lg text-white/80 leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Midlife can feel like a black box. Women are told their symptoms
                 are "just stress" or "part of aging," when the reality is far
                 more nuanced. Our bodies are changing in profound ways, and we
                 deserve clarity, not dismissal.
               </p>
-              <p className="text-lg text-white/80 leading-relaxed mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Clarra was built to change that. By combining biomarker testing,
                 wearable data, and conversational AI, we're creating a partner
                 that actually understands the complexity of midlife health. Not
                 a symptom checker. Not a generic wellness app. A real partner in
                 your health journey.
               </p>
-              <p className="text-base text-white/60 italic">
+              <p className="text-base text-muted-foreground italic">
                 — Meghan White, Founder & CEO
               </p>
             </div>
@@ -905,7 +905,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F400c9b0b1cbe465881954d3479803557?format=webp&width=800"
                   alt="Meghan White, Founder & CEO"
-                  className="relative w-full h-auto rounded-2xl shadow-2xl border border-white/10"
+                  className="relative w-full h-auto rounded-2xl shadow-2xl border border-border"
                 />
               </div>
             </div>
