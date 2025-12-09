@@ -33,7 +33,7 @@ export default function Index() {
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
               <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-foreground-dark leading-[1.05] mb-6 drop-shadow-sm">
-                <span className="font-serif italic font-light block mb-2 leading-[1.1]">
+                <span className="font-serif italic font-light block mb-2 leading-[1.1] text-[48px] sm:text-[60px] md:text-[73px]">
                   Make sense of
                 </span>
                 perimenopause
