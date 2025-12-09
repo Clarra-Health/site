@@ -58,10 +58,10 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="py-20 md:py-24 bg-gradient-to-b from-[#f7fbfa] to-white overflow-hidden">
+      <section className="py-20 md:py-24 bg-gradient-to-b from-[#f7fbfa] to-white overflow-hidden min-h-[550px] flex items-center">
         <div className="container max-w-[1280px] px-6 md:px-8 mx-auto">
-          <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
-            <div className="text-left relative z-10">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            <div className="text-left relative z-10 w-full lg:w-[55%]">
               <h2 className="font-serif text-4xl md:text-[50px] italic font-normal text-foreground-dark leading-[1.2] tracking-tight mb-5 max-w-[660px]">
                 See the patterns behind your symptoms.
               </h2>
@@ -69,11 +69,11 @@ export default function Index() {
                 With intelligent insight across your symptoms, hormones, sleep, mood, and cycles, Clarra gives you a clearer picture of what’s changing — so you can understand your midlife health day by day.
               </p>
             </div>
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end w-full lg:w-[45%]">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffd5ad7ebdaed4699adc9a9bc4bae7a68?format=webp&width=2000"
                 alt="Clarra insights"
-                className="w-full max-w-[460px] object-contain translate-x-8 mix-blend-multiply"
+                className="w-full max-w-[420px] object-contain mix-blend-multiply"
               />
             </div>
           </div>
