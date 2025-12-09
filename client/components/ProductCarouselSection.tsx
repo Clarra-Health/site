@@ -121,7 +121,7 @@ export default function ProductCarouselSection() {
   const IconComponent = currentFeature.icon;
 
   return (
-    <section className="w-full py-12 bg-[#1f2d3a] relative overflow-hidden">
+    <section className="w-full py-16 md:py-24 bg-[#1f2d3a] relative overflow-hidden">
       {/* Decorative blur elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl -z-10" />

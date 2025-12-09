@@ -7,7 +7,7 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full h-[65px] bg-white shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full h-[65px] bg-white/80 backdrop-blur-sm shadow-sm">
       <div className="container flex h-full items-center justify-between gap-6 md:gap-8 flex-nowrap">
         <div className="flex items-center flex-none">
           <Link to="/" aria-label="Home" className="flex items-center gap-2">
@@ -41,7 +41,7 @@ export default function SiteHeader() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="inline-flex h-6 items-center justify-center rounded-md border border-border text-foreground hover:bg-accent/30 px-2"
+            className="inline-flex h-6 items-center justify-center rounded-md border border-border text-[#1A2A33] hover:bg-accent/30 px-2"
           >
             <svg
               viewBox="0 0 24 24"
@@ -58,7 +58,7 @@ export default function SiteHeader() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="inline-flex h-6 items-center justify-center rounded-md border border-border text-foreground hover:bg-accent/30 px-2"
+            className="inline-flex h-6 items-center justify-center rounded-md border border-border text-[#1A2A33] hover:bg-accent/30 px-2"
           >
             <svg
               viewBox="0 0 24 24"
@@ -79,7 +79,7 @@ export default function SiteHeader() {
 
         <button
           aria-label="Toggle navigation"
-          className="md:hidden inline-flex h-6 w-6 items-center justify-center rounded-md border border-border text-foreground"
+          className="md:hidden inline-flex h-6 w-6 items-center justify-center rounded-md border border-border text-[#1A2A33]"
           onClick={() => setOpen((v) => !v)}
         >
           <svg
@@ -116,7 +116,7 @@ export default function SiteHeader() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-border text-foreground"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-border text-[#1A2A33]"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -132,7 +132,7 @@ export default function SiteHeader() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-border text-foreground"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-border text-[#1A2A33]"
               >
                 <svg
                   viewBox="0 0 24 24"
