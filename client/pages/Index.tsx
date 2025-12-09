@@ -60,7 +60,7 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-[#f7fbfa] to-white overflow-hidden">
+      <section className="py-16 md:py-24 bg-white overflow-hidden">
         <div className="container max-w-[1280px] px-6 md:px-8 mx-auto">
           <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             <div className="text-left relative z-10">
