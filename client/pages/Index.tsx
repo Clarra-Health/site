@@ -33,10 +33,7 @@ export default function Index() {
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-7 drop-shadow-sm">
-                Clarity in perimenopause{" "}
-                <span className="font-serif italic font-medium text-foreground-dark drop-shadow-sm">
-                  starts here.
-                </span>
+                Make sense of perimenopause
               </h1>
               <p className="text-lg sm:text-xl text-foreground/80 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
                 With Clarra’s intelligent insights, your daily symptoms become
