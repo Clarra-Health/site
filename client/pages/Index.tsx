@@ -402,7 +402,6 @@ export default function Index() {
         </div>
       </section>
 
-
       {/* App Features Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
