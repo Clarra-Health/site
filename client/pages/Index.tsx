@@ -66,7 +66,7 @@ export default function Index() {
                 See the patterns behind your symptoms.
               </h2>
               <p className="text-lg md:text-[20px] text-[#425466] font-normal leading-[1.5] mb-10 max-w-[600px]">
-                With intelligent insight across your symptoms, hormones, sleep, mood, and cycles, Clarra gives you a clearer picture of what’s changing — so you can understand your midlife health day by day.
+                Clarra weaves together your symptoms, hormones, sleep, and mood into one coherent picture — so you can finally see the patterns behind what you're experiencing.
               </p>
             </div>
             <div className="relative flex justify-center lg:justify-end">
