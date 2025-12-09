@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[linear-gradient(120deg,#FEF8F3,#FFFFFF)] pt-[121px] pb-20 md:pb-24 min-h-[620px] overflow-visible">
+      <section className="relative bg-[linear-gradient(120deg,#FEF8F3,#FFFFFF)] pt-[138px] pb-20 md:pb-24 min-h-[620px] overflow-visible">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full overflow-visible">
           <img
