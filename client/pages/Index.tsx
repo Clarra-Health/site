@@ -8,37 +8,40 @@ import {
 } from "@/components/ui/dialog";
 import { Plus } from "lucide-react";
 import ProductCarouselSection from "@/components/ProductCarouselSection";
-import AutoPlayVideo from "@/components/media/AutoPlayVideo";
 
 export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden">
-        {/* Background Video */}
-        <div className="absolute inset-0 w-full h-full">
-          <AutoPlayVideo
-            src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd65cbe74c32546549f053948a0c2c09b?alt=media&token=cf578405-3198-4260-8a54-fc26c6005b05&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
-            className="w-full h-full object-cover brightness-100 contrast-[1.05] saturate-[0.9]"
-            ariaLabel="Background video"
+      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-28 pb-16 md:pt-32 md:pb-24 min-h-[620px] overflow-visible">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full overflow-visible">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F018a3eff115049a584b3bf45c4b857a3?format=webp&width=3000"
+            className="w-full h-full object-cover brightness-96 saturate-[1.15] contrast-[1.12] shadow-[0px_0px_40px_rgba(0,0,0,0.06)]"
+            style={{ objectPosition: "center 40px" }}
+            alt="Hero background"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/15 via-35% to-transparent" />
+          {/* Light Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white/45 to-white/5" />
+          {/* Vignette */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/5 opacity-15 pointer-events-none" />
         </div>
 
         <div className="container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-snug mb-6 drop-shadow-sm">
-                Clarity in perimenopause{" "}
-                <span className="font-serif italic font-medium text-white drop-shadow-sm">
-                  starts here.
-                </span>
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-7 drop-shadow-sm">
+                <span className="font-serif italic font-light">
+                  Make sense of
+                </span>{" "}
+                perimenopause
               </h1>
-              <p className="text-lg sm:text-xl text-white font-medium leading-relaxed mb-8 max-w-lg drop-shadow-sm">
-                With Clarra’s intelligent insights, your daily symptoms become
-                meaningful patterns you can track and act on — giving you
-                clarity through a transition most women still navigate alone.
+              <p className="text-lg sm:text-xl text-foreground/80 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
+                Clarra interprets your daily experiences as meaningful patterns
+                you can understand and act on — offering guidance through a
+                transition most women are left to navigate alone.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
