@@ -58,7 +58,7 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="pt-16 pb-12 md:pt-24 md:pb-20 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5] overflow-hidden">
+      <section className="pt-16 pb-12 md:pt-24 md:pb-20 bg-gradient-to-r from-[#c5e4ff] via-[#dbeafe] to-[#c4f5e1] overflow-hidden">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-left relative z-10">
