@@ -19,7 +19,7 @@ const features = [
     icon: Mic,
     shortTitle: "Symptom Capture",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6cafa9845c344ca7b2180f3318786662?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa41f3ec5df3a4e6eb6ce29ee8ac2fe9e?format=webp&width=1600",
     metrics: {
       primary: {
         label: "MOOD TRACKING",
@@ -121,22 +121,22 @@ export default function ProductCarouselSection() {
   const IconComponent = currentFeature.icon;
 
   return (
-    <section className="w-full py-16 md:py-24 bg-[#1f2d3a] relative overflow-hidden">
+    <section className="w-full py-16 md:py-24 bg-gradient-to-b from-[#f0f9ff] to-white relative overflow-hidden">
       {/* Decorative blur elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl -z-10" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -z-10" />
 
       <div className="w-full px-3 md:px-6 lg:px-10">
         {/* Tab Navigation */}
-        <div className="flex items-center gap-4 mb-10 border-b border-white/20 pb-2 overflow-x-auto">
+        <div className="flex items-center gap-4 mb-10 border-b border-border pb-2 overflow-x-auto">
           {features.map((feature, index) => (
             <button
               key={feature.id}
               onClick={() => setCurrentIndex(index)}
               className={`whitespace-nowrap font-semibold text-sm md:text-base transition-all duration-300 pb-4 border-b-2 ${
                 index === currentIndex
-                  ? "text-white border-white"
-                  : "text-white/50 border-transparent hover:text-white/70"
+                  ? "text-primary border-primary"
+                  : "text-muted-foreground border-transparent hover:text-foreground"
               }`}
             >
               {feature.shortTitle}
@@ -149,20 +149,20 @@ export default function ProductCarouselSection() {
           {/* Left Side - Content */}
           <div className="flex flex-col justify-center space-y-10">
             {/* Icon */}
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white/10 border border-white/20">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-primary/10 border border-primary/20">
               <IconComponent
-                className="w-10 h-10 text-white"
+                className="w-10 h-10 text-primary"
                 strokeWidth={1.5}
               />
             </div>
 
             {/* Title */}
-            <h2 className="font-serif text-5xl md:text-6xl font-light text-white leading-tight">
+            <h2 className="font-serif text-5xl md:text-6xl font-light text-foreground-dark leading-tight">
               {currentFeature.title}
             </h2>
 
             {/* Description */}
-            <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
               {currentFeature.description}
             </p>
 
@@ -170,7 +170,7 @@ export default function ProductCarouselSection() {
             <div className="flex items-center gap-8 pt-8">
               <button
                 onClick={goToPrevious}
-                className="h-14 w-14 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 hover:scale-110 transition-all flex items-center justify-center text-white/70 hover:text-white"
+                className="h-14 w-14 rounded-full bg-white border border-border shadow-sm hover:bg-gray-50 hover:scale-110 transition-all flex items-center justify-center text-muted-foreground hover:text-foreground"
               >
                 <ChevronLeft className="h-6 w-6" />
               </button>
@@ -181,8 +181,8 @@ export default function ProductCarouselSection() {
                     key={index}
                     className={`transition-all duration-300 ${
                       index === currentIndex
-                        ? "h-1.5 w-8 bg-white rounded"
-                        : "h-1.5 w-2 bg-white/30 rounded"
+                        ? "h-1.5 w-8 bg-primary rounded"
+                        : "h-1.5 w-2 bg-primary/20 rounded"
                     }`}
                   />
                 ))}
@@ -190,7 +190,7 @@ export default function ProductCarouselSection() {
 
               <button
                 onClick={goToNext}
-                className="h-14 w-14 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 hover:scale-110 transition-all flex items-center justify-center text-white/70 hover:text-white"
+                className="h-14 w-14 rounded-full bg-white border border-border shadow-sm hover:bg-gray-50 hover:scale-110 transition-all flex items-center justify-center text-muted-foreground hover:text-foreground"
               >
                 <ChevronRight className="h-6 w-6" />
               </button>
@@ -201,12 +201,12 @@ export default function ProductCarouselSection() {
           <div className="relative">
             {currentIndex === 0 ? (
               // Chat Interface for first tab
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20 flex flex-col">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50 flex flex-col">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
                   alt={currentFeature.title}
-                  className="absolute inset-0 w-full h-full object-cover scale-[1.35]"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
 
                 {/* Overlay gradient */}
@@ -311,7 +311,7 @@ export default function ProductCarouselSection() {
               </div>
             ) : currentIndex === 1 ? (
               // Pattern Intelligence - Correlation Graph
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
@@ -437,7 +437,7 @@ export default function ProductCarouselSection() {
               </div>
             ) : currentIndex === 3 ? (
               // Personalized Guidance - Show actionable steps
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20 flex flex-col">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50 flex flex-col">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
@@ -474,7 +474,7 @@ export default function ProductCarouselSection() {
               </div>
             ) : currentIndex === 2 ? (
               // AI Insights - Show insight text with metrics
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
@@ -514,7 +514,7 @@ export default function ProductCarouselSection() {
               </div>
             ) : (
               // Metric Cards for other tabs
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
