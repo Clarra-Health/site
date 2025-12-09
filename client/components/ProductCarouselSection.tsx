@@ -127,7 +127,7 @@ export default function ProductCarouselSection() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -z-10" />
 
       <div className="w-full px-3 md:px-6 lg:px-10">
-        <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4 text-right">
+        <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4 text-left">
           HOW CLARRA WORKS
         </p>
         {/* Tab Navigation */}
