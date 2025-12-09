@@ -19,7 +19,7 @@ const features = [
     icon: Mic,
     shortTitle: "Symptom Capture",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa41f3ec5df3a4e6eb6ce29ee8ac2fe9e?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fa41f3ec5df3a4e6eb6ce29ee8ac2fe9e?format=webp&width=1600",
     metrics: {
       primary: {
         label: "MOOD TRACKING",
@@ -206,7 +206,7 @@ export default function ProductCarouselSection() {
                 <img
                   src={currentFeature.image}
                   alt={currentFeature.title}
-                  className="absolute inset-0 w-full h-full object-cover scale-[1.35]"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
 
                 {/* Overlay gradient */}
