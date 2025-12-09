@@ -33,7 +33,9 @@ export default function Index() {
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-7 drop-shadow-sm">
-                <span className="font-serif italic font-light">Make sense of</span>{" "}
+                <span className="font-serif italic font-light">
+                  Make sense of
+                </span>{" "}
                 perimenopause
               </h1>
               <p className="text-lg sm:text-xl text-foreground/80 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
