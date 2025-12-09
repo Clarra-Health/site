@@ -865,7 +865,7 @@ export default function Index() {
       </section>
 
       {/* Founder's Note Section */}
-      <section className="py-16 md:py-24 bg-foreground-dark text-white relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-[#f0f9ff] relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/50 rounded-full blur-3xl"></div>
@@ -876,26 +876,26 @@ export default function Index() {
               <p className="text-lg font-semibold text-primary uppercase tracking-widest mb-6">
                 A Founder's Note
               </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold leading-tight tracking-tight mb-8">
+              <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight tracking-tight mb-8">
                 Women's health
-                <span className="block text-[#fc9a53] font-serif italic font-light">
+                <span className="block text-primary font-serif italic font-light">
                   deserves better.
                 </span>
               </h2>
-              <p className="text-lg text-white/80 leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Midlife can feel like a black box. Women are told their symptoms
                 are "just stress" or "part of aging," when the reality is far
                 more nuanced. Our bodies are changing in profound ways, and we
                 deserve clarity, not dismissal.
               </p>
-              <p className="text-lg text-white/80 leading-relaxed mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Clarra was built to change that. By combining biomarker testing,
                 wearable data, and conversational AI, we're creating a partner
                 that actually understands the complexity of midlife health. Not
                 a symptom checker. Not a generic wellness app. A real partner in
                 your health journey.
               </p>
-              <p className="text-base text-white/60 italic">
+              <p className="text-base text-muted-foreground italic">
                 — Meghan White, Founder & CEO
               </p>
             </div>
@@ -905,7 +905,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F400c9b0b1cbe465881954d3479803557?format=webp&width=800"
                   alt="Meghan White, Founder & CEO"
-                  className="relative w-full h-auto rounded-2xl shadow-2xl border border-white/10"
+                  className="relative w-full h-auto rounded-2xl shadow-2xl border border-border"
                 />
               </div>
             </div>
