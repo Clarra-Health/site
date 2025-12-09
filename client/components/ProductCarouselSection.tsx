@@ -311,7 +311,7 @@ export default function ProductCarouselSection() {
               </div>
             ) : currentIndex === 1 ? (
               // Pattern Intelligence - Correlation Graph
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
@@ -437,7 +437,7 @@ export default function ProductCarouselSection() {
               </div>
             ) : currentIndex === 3 ? (
               // Personalized Guidance - Show actionable steps
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20 flex flex-col">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50 flex flex-col">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
@@ -474,7 +474,7 @@ export default function ProductCarouselSection() {
               </div>
             ) : currentIndex === 2 ? (
               // AI Insights - Show insight text with metrics
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
@@ -514,7 +514,7 @@ export default function ProductCarouselSection() {
               </div>
             ) : (
               // Metric Cards for other tabs
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-white/20">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-2xl border border-border/50">
                 {/* Background Image */}
                 <img
                   src={currentFeature.image}
