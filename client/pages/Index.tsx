@@ -60,11 +60,11 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="py-20 md:py-24 bg-gradient-to-b from-[#f7fbfa] to-white overflow-hidden">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-[#f7fbfa] to-white overflow-hidden">
         <div className="container max-w-[1280px] px-6 md:px-8 mx-auto">
           <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             <div className="text-left relative z-10">
-              <h2 className="font-serif text-4xl md:text-[50px] italic font-normal text-foreground-dark leading-[1.2] tracking-tight mb-5 max-w-[660px]">
+              <h2 className="font-serif text-5xl sm:text-6xl italic font-normal text-foreground-dark leading-tight tracking-tight mb-5 max-w-[660px]">
                 See the patterns behind your symptoms.
               </h2>
               <p className="text-lg md:text-[20px] text-[#425466] font-normal leading-[1.5] mb-10 max-w-[600px]">
@@ -85,7 +85,7 @@ export default function Index() {
       </section>
 
       {/* Sleep & Wellness Features Section */}
-      <section className="pt-12 pb-16 md:pt-20 md:pb-24 bg-gradient-to-b from-[#f0f9ff] to-white">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-[#f0f9ff] to-white">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8">
             {/* Card 1 */}
@@ -427,7 +427,7 @@ export default function Index() {
               <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
                 Insights That Matter
               </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight mb-4">
+              <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight tracking-tight mb-4">
                 Clinical precision,
                 <span className="block font-serif italic font-light text-foreground-dark mt-2">
                   designed for simplicity
@@ -451,7 +451,7 @@ export default function Index() {
             <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4">
               How Clarra Works
             </p>
-            <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight max-w-3xl mx-auto">
+            <h2 className="font-display text-5xl sm:text-6xl font-bold text-foreground-dark leading-tight tracking-tight max-w-3xl mx-auto">
               Four pillars of
               <span className="block text-primary">personalized care.</span>
             </h2>
@@ -876,7 +876,7 @@ export default function Index() {
               <p className="text-lg font-semibold text-primary uppercase tracking-widest mb-6">
                 A Founder's Note
               </p>
-              <h2 className="font-display text-5xl sm:text-6xl font-bold leading-tight mb-8">
+              <h2 className="font-display text-5xl sm:text-6xl font-bold leading-tight tracking-tight mb-8">
                 Women's health
                 <span className="block text-[#fc9a53] font-serif italic font-light">
                   deserves better.
