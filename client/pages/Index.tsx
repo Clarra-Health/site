@@ -128,7 +128,7 @@ export default function Index() {
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-y-auto bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
                         src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffa53940440d748e09e2d266b51cfc958?format=webp&width=1200"
@@ -202,7 +202,7 @@ export default function Index() {
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-y-auto bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
                         src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6bb2493097a4497da3c80210e2d3dbf6?format=webp&width=1200"
@@ -278,7 +278,7 @@ export default function Index() {
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-y-auto bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
                         src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1ca7edaae6d047fe8f9d4b11440157ba?format=webp&width=1200"
@@ -354,7 +354,7 @@ export default function Index() {
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-y-auto bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
                         src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fdcae153309b3411183a24e7b381cd42c?format=webp&width=1200"
