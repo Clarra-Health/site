@@ -36,9 +36,9 @@ export default function Index() {
                 Make sense of perimenopause
               </h1>
               <p className="text-lg sm:text-xl text-foreground/80 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
-                With Clarra’s intelligent insights, your daily symptoms become
-                meaningful patterns you can track and act on — giving you
-                clarity through a transition most women still navigate alone.
+                Clarra interprets your daily experiences as meaningful patterns
+                you can understand and act on — offering guidance through a
+                transition most women are left to navigate alone.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
