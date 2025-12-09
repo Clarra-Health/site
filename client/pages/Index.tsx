@@ -36,13 +36,13 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-foreground-dark leading-[1.05] mb-6 drop-shadow-sm">
+              <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-[hsl(210_29%_16%)] leading-[1.05] mb-6 drop-shadow-sm">
                 <span className="font-serif italic font-light block mb-2 leading-[1.1] text-[48px] sm:text-[60px] md:text-[73px]">
                   Make sense of
                 </span>
                 perimenopause
               </h1>
-              <p className="text-lg sm:text-xl text-foreground/80 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
+              <p className="text-lg sm:text-xl text-foreground/90 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
                 Clarra interprets your symptoms, hormones, sleep, mood, and
                 cycles — giving you a clear picture of what’s changing and what
                 to do next.
@@ -128,7 +128,7 @@ export default function Index() {
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-y-auto bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
                         src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffa53940440d748e09e2d266b51cfc958?format=webp&width=1200"
@@ -202,7 +202,7 @@ export default function Index() {
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-y-auto bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
                         src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F6bb2493097a4497da3c80210e2d3dbf6?format=webp&width=1200"
@@ -278,7 +278,7 @@ export default function Index() {
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-y-auto bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
                         src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F1ca7edaae6d047fe8f9d4b11440157ba?format=webp&width=1200"
@@ -354,7 +354,7 @@ export default function Index() {
                       <Plus className="h-6 w-6 text-white" />
                     </button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-y-auto bg-transparent border-none shadow-none">
                     <div className="relative w-full h-full rounded-2xl overflow-hidden">
                       <img
                         src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fdcae153309b3411183a24e7b381cd42c?format=webp&width=1200"
