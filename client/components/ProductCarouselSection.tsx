@@ -127,6 +127,9 @@ export default function ProductCarouselSection() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -z-10" />
 
       <div className="w-full px-3 md:px-6 lg:px-10">
+        <p className="text-base font-semibold text-muted-foreground uppercase tracking-widest mb-4 text-right">
+          HOW CLARRA WORKS
+        </p>
         {/* Tab Navigation */}
         <div className="flex items-center gap-4 mb-10 border-b border-border pb-2 overflow-x-auto">
           {features.map((feature, index) => (
