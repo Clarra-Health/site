@@ -23,8 +23,8 @@ export default function Index() {
             alt="Hero background"
           />
           {/* White Gradient Overlay - fades out at 55% */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/40 to-transparent" style={{
-            background: 'linear-gradient(to right, white 0%, rgba(255,255,255,0.7) 35%, rgba(255,255,255,0) 55%)'
+          <div className="absolute inset-0" style={{
+            background: 'linear-gradient(to right, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.35) 35%, rgba(255,255,255,0) 55%)'
           }} />
         </div>
 
