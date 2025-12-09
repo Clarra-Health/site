@@ -903,7 +903,7 @@ export default function Index() {
               <div className="relative w-full max-w-sm">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/0 rounded-2xl blur-2xl"></div>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F2745d7415fb9429fa59689a564824103?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F400c9b0b1cbe465881954d3479803557?format=webp&width=800"
                   alt="Meghan White, Founder & CEO"
                   className="relative w-full h-auto rounded-2xl shadow-2xl border border-white/10"
                 />
