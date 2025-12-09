@@ -58,14 +58,14 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="pt-16 pb-12 md:pt-24 md:pb-20 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5] overflow-hidden">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="py-20 md:py-24 bg-gradient-to-b from-[#f7fbfa] to-white overflow-hidden">
+        <div className="container max-w-[1280px] px-6 md:px-8 mx-auto">
+          <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             <div className="text-left relative z-10">
-              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-6">
+              <h2 className="font-serif text-4xl md:text-[50px] italic font-normal text-foreground-dark leading-[1.2] tracking-tight mb-5 max-w-[660px]">
                 See the patterns behind your symptoms.
               </h2>
-              <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mr-auto">
+              <p className="text-lg md:text-[20px] text-[#425466] font-normal leading-[1.5] mb-10 max-w-[600px]">
                 With intelligent insight across your symptoms, hormones, sleep, mood, and cycles, Clarra gives you a clearer picture of what’s changing — so you can understand your midlife health day by day.
               </p>
             </div>
@@ -73,7 +73,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffd5ad7ebdaed4699adc9a9bc4bae7a68?format=webp&width=2000"
                 alt="Clarra insights"
-                className="w-full max-w-md lg:max-w-full object-contain scale-[2.0] -translate-x-[66%] -translate-y-[15%] origin-center mix-blend-multiply"
+                className="w-full max-w-[460px] object-contain translate-x-8 mix-blend-multiply"
               />
             </div>
           </div>
