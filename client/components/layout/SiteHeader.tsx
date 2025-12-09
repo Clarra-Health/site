@@ -71,7 +71,7 @@ export default function SiteHeader() {
           </a>
 
           <Link to="/contact" className="inline-block">
-            <button className="inline-flex items-center justify-center rounded-full px-5 h-[40px] text-sm font-semibold bg-gradient-to-r from-primary to-secondary text-white shadow">
+            <button className="inline-flex items-center justify-center rounded-full px-5 h-[40px] text-sm font-semibold hero-gradient text-white shadow">
               Get in touch
             </button>
           </Link>

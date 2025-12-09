@@ -52,7 +52,7 @@ export default function Index() {
                 <Link to="/contact">
                   <Button
                     size="lg"
-                    className="bg-primary hover:bg-primary/90 text-white px-8 h-12 text-base font-semibold rounded-lg"
+                    className="text-white px-8 h-12 text-base font-semibold rounded-lg"
                   >
                     Join the waitlist
                   </Button>
