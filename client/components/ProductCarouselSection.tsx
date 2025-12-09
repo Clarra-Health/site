@@ -218,18 +218,18 @@ export default function ProductCarouselSection() {
                 {/* Chat Container */}
                 <div className="relative z-10 flex flex-col justify-end h-full p-6 md:p-8 overflow-hidden">
                   <div className="flex flex-col gap-4 overflow-y-auto max-h-96 scrollbar-hide">
-                    {/* User Message 1 */}
-                    <div className="flex justify-end">
-                      <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl rounded-tr-lg px-4 py-3 max-w-xs">
+                    {/* System Message 1 */}
+                    <div className="flex justify-start">
+                      <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl rounded-tl-lg px-4 py-3 max-w-xs shadow-lg">
                         <p className="text-white text-sm">
                           How's your sleep lately?
                         </p>
                       </div>
                     </div>
 
-                    {/* User Message 2 */}
+                    {/* User Message */}
                     <div className="flex justify-end">
-                      <div className="bg-white/20 backdrop-blur rounded-2xl rounded-tr-lg px-4 py-3 max-w-xs">
+                      <div className="bg-white/20 backdrop-blur rounded-2xl rounded-tr-lg px-4 py-3 max-w-xs border border-white/10">
                         <p className="text-white text-sm">
                           Been struggling, feeling foggy during the day
                         </p>
