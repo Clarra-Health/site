@@ -705,7 +705,7 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <div className="relative z-10 bg-[#fc9a53] p-6">
+                  <div className="relative z-10 bg-teal-600 p-6">
                     <div className="flex justify-between items-start mb-4">
                       <span className="text-white text-sm font-medium bg-white/20 backdrop-blur px-3 py-1 rounded-full">
                         AI Insights
@@ -733,19 +733,19 @@ export default function Index() {
                     alt="Personalized Insights"
                     className="w-full h-96 object-cover blur-sm opacity-40"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#fc9a53] via-[#fc9a53]/90 to-[#fca469]" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-teal-600 via-teal-600/90 to-teal-400" />
                   <div className="absolute inset-0 p-12 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h2 className="text-5xl font-bold text-accent-foreground mb-4">
+                        <h2 className="text-5xl font-bold text-white mb-4">
                           Insights that actually explain what's happening
                         </h2>
-                        <p className="text-lg text-accent-foreground/90">
+                        <p className="text-lg text-white/90">
                           Clear, clinically meaningful interpretation—no generic
                           tips
                         </p>
                       </div>
-                      <DialogClose className="text-accent-foreground hover:opacity-80 flex-shrink-0">
+                      <DialogClose className="text-white hover:opacity-80 flex-shrink-0">
                         <svg
                           className="w-8 h-8"
                           fill="currentColor"
@@ -755,7 +755,7 @@ export default function Index() {
                         </svg>
                       </DialogClose>
                     </div>
-                    <p className="text-accent-foreground/90 text-base leading-relaxed">
+                    <p className="text-white/90 text-base leading-relaxed">
                       Receive insights grounded in clinical evidence. Every
                       recommendation explains the "why"—connecting your data to
                       meaningful health outcomes based on peer-reviewed research
