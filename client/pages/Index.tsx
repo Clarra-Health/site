@@ -39,7 +39,7 @@ export default function Index() {
                 perimenopause
               </h1>
               <p className="text-lg sm:text-xl text-foreground/80 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
-                Clarra interprets your symptoms, hormone fluctuations, and daily experiences as clear, meaningful patterns — helping you understand what’s changing and what to do next.
+                Clarra interprets your symptoms, hormones, sleep, mood, and cycles — giving you a clear picture of what’s changing and what to do next.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
