@@ -32,7 +32,7 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-7 drop-shadow-sm">
+              <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-foreground-dark leading-snug mb-7 drop-shadow-sm">
                 <span className="font-serif italic font-light">
                   Make sense of
                 </span>{" "}
