@@ -8,19 +8,19 @@ import {
 } from "@/components/ui/dialog";
 import { Plus } from "lucide-react";
 import ProductCarouselSection from "@/components/ProductCarouselSection";
-import AutoPlayVideo from "@/components/media/AutoPlayVideo";
 
 export default function Index() {
   return (
     <>
       {/* Hero */}
       <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden">
-        {/* Background Video */}
+        {/* Background Image */}
         <div className="absolute inset-0 w-full h-full">
-          <AutoPlayVideo
-            src="https://cdn.builder.io/o/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd65cbe74c32546549f053948a0c2c09b?alt=media&token=cf578405-3198-4260-8a54-fc26c6005b05&apiKey=553c8106b9f84f1a91a6549e0008f0fd"
-            className="w-full h-full object-cover brightness-100 contrast-[1.05] saturate-[0.9]"
-            ariaLabel="Background video"
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F05b4bea6741540788fad7dd39ac20aab?format=webp&width=800"
+            className="w-full h-full object-cover brightness-[1.03] saturate-[1.12] contrast-[1.05]"
+            style={{ objectPosition: "center top" }}
+            alt="Hero background"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/15 via-35% to-transparent" />
         </div>
