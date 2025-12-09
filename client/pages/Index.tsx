@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-28 pb-16 md:pt-32 md:pb-24 min-h-[620px] overflow-visible">
+      <section className="relative bg-gradient-to-b from-white to-[#F0FAF9] pt-[120px] pb-20 md:pt-[150px] md:pb-24 min-h-[620px] overflow-visible">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full overflow-visible">
           <img
@@ -32,16 +32,16 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-7 drop-shadow-sm">
-                <span className="font-serif italic font-light">
+              <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-foreground-dark leading-snug mb-6 drop-shadow-sm">
+                <span className="font-serif italic font-light block mb-2">
                   Make sense of
-                </span>{" "}
+                </span>
                 perimenopause
               </h1>
               <p className="text-lg sm:text-xl text-foreground/80 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
-                Clarra interprets your daily experiences as meaningful patterns
-                you can understand and act on — offering guidance through a
-                transition most women are left to navigate alone.
+                Clarra interprets your symptoms, hormones, sleep, mood, and
+                cycles — giving you a clear picture of what’s changing and what
+                to do next.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-start">
@@ -60,26 +60,24 @@ export default function Index() {
       </section>
 
       {/* Signal Section */}
-      <section className="pt-16 pb-12 md:pt-24 md:pb-20 bg-gradient-to-r from-[#f0f9ff] via-[#f5fafe] to-[#ecfdf5] overflow-hidden">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="py-20 md:py-24 bg-gradient-to-b from-[#f7fbfa] to-white overflow-hidden">
+        <div className="container max-w-[1280px] px-6 md:px-8 mx-auto">
+          <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             <div className="text-left relative z-10">
-              <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl italic font-light text-foreground-dark leading-tight mb-6">
-                A few minutes with Clarra each day can change your understanding
-                of midlife health.
+              <h2 className="font-serif text-4xl md:text-[50px] italic font-normal text-foreground-dark leading-[1.2] tracking-tight mb-5 max-w-[660px]">
+                See the patterns behind your symptoms.
               </h2>
-              <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mr-auto">
-                With 24/7 support and intelligent insight across your symptoms,
-                sleep, mood, and cycles, Clarra gives you a clearer picture of
-                perimenopause — so you can make more informed decisions every
-                day.
+              <p className="text-lg md:text-[20px] text-[#425466] font-normal leading-[1.5] mb-10 max-w-[600px]">
+                Clarra weaves together your symptoms, hormones, sleep, and mood
+                into one coherent picture — so you can finally see the patterns
+                behind what you're experiencing.
               </p>
             </div>
             <div className="relative flex justify-center lg:justify-end">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffd5ad7ebdaed4699adc9a9bc4bae7a68?format=webp&width=2000"
                 alt="Clarra insights"
-                className="w-full max-w-md lg:max-w-full object-contain scale-[2.0] -translate-x-[66%] -translate-y-[15%] origin-center mix-blend-multiply"
+                className="w-full max-w-[460px] object-contain -translate-x-[82%] scale-[1.75] mix-blend-multiply"
               />
             </div>
           </div>
