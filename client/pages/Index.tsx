@@ -18,24 +18,27 @@ export default function Index() {
         <div className="absolute inset-0 w-full h-full">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F018a3eff115049a584b3bf45c4b857a3?format=webp&width=2000"
-            className="w-full h-full object-cover brightness-[1.03] saturate-[1.12] contrast-[1.05]"
-            style={{ objectPosition: "center top" }}
+            className="w-full h-full object-cover brightness-96 saturate-[1.15] contrast-[1.12] shadow-[0px_0px_40px_rgba(0,0,0,0.06)]"
+            style={{ objectPosition: "right 40px" }}
             alt="Hero background"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/15 via-35% to-transparent" />
+          {/* Light Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white/45 to-white/5" />
+          {/* Vignette */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/5 opacity-15 pointer-events-none" />
         </div>
 
         <div className="container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-snug mb-6 drop-shadow-sm">
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground-dark leading-snug mb-7 drop-shadow-sm">
                 Clarity in perimenopause{" "}
-                <span className="font-serif italic font-medium text-white drop-shadow-sm">
+                <span className="font-serif italic font-medium text-foreground-dark drop-shadow-sm">
                   starts here.
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-white font-medium leading-relaxed mb-8 max-w-lg drop-shadow-sm">
+              <p className="text-lg sm:text-xl text-foreground/80 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
                 With Clarra’s intelligent insights, your daily symptoms become
                 meaningful patterns you can track and act on — giving you
                 clarity through a transition most women still navigate alone.
