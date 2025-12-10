@@ -87,11 +87,11 @@ export default function Index() {
                 behind what you're experiencing.
               </p>
             </div>
-            <div className="relative flex justify-center lg:justify-center">
+            <div className="relative flex justify-center lg:justify-end">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Ffd5ad7ebdaed4699adc9a9bc4bae7a68?format=webp&width=2000"
                 alt="Clarra insights"
-                className="w-full max-w-[460px] object-contain scale-[1.925] mix-blend-multiply"
+                className="w-full max-w-[460px] object-contain -translate-x-[82%] scale-[1.925] mix-blend-multiply"
               />
             </div>
           </div>
