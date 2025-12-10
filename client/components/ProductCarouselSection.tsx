@@ -59,7 +59,7 @@ const features = [
     icon: Lightbulb,
     shortTitle: "AI Insights",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F55b9ca56078f44dfa97225350b00c7eb?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2F331af129cb884188827bcbf366cf43ac?format=webp&width=800",
     metrics: {
       primary: { label: "INSIGHTS", value: "7", subtitle: "New findings" },
       secondary: {
@@ -488,7 +488,7 @@ export default function ProductCarouselSection() {
                           <div
                             className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-white font-bold text-xs transition-all duration-300 ${
                               item.status === "today"
-                                ? "bg-gradient-to-br from-orange-500 to-orange-600 shadow-lg scale-110"
+                                ? "bg-gradient-to-br from-teal-500 to-teal-600 shadow-lg scale-110"
                                 : "bg-white/10 border border-white/20 group-hover:border-white/40"
                             }`}
                           >
@@ -514,7 +514,7 @@ export default function ProductCarouselSection() {
                         Updated 2 hours ago
                       </p>
                       <div className="h-1 w-16 bg-white/10 rounded-full overflow-hidden">
-                        <div className="h-full w-1/3 bg-orange-500 rounded-full" />
+                        <div className="h-full w-1/3 bg-teal-500 rounded-full" />
                       </div>
                     </div>
                   </div>
@@ -537,17 +537,17 @@ export default function ProductCarouselSection() {
                 <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between pointer-events-none">
                   {/* Primary Metric Card - Top Right */}
                   <div className="flex justify-end">
-                    <div className="bg-gradient-to-br from-amber-700/70 to-amber-900/70 backdrop-blur-md rounded-2xl p-6 border border-amber-600/40 max-w-xs shadow-xl">
+                    <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl p-6 border border-teal-500/40 max-w-xs shadow-xl">
                       <div className="flex items-center gap-2 mb-2">
-                        <Lightbulb className="w-4 h-4 text-amber-200" />
-                        <p className="text-xs font-semibold text-amber-200/70 uppercase tracking-wider">
+                        <Lightbulb className="w-4 h-4 text-teal-100" />
+                        <p className="text-xs font-semibold text-teal-100/70 uppercase tracking-wider">
                           {currentFeature.metrics.primary.label}
                         </p>
                       </div>
                       <p className="text-4xl font-bold text-white mb-1">
                         {currentFeature.metrics.primary.value}
                       </p>
-                      <p className="text-sm text-amber-100/60">
+                      <p className="text-sm text-teal-50/80">
                         {currentFeature.metrics.primary.subtitle}
                       </p>
                     </div>
