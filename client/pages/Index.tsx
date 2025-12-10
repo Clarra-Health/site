@@ -18,8 +18,10 @@ export default function Index() {
         <div className="absolute inset-0 w-full h-full overflow-visible">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fad61ae606c6b402e9e3942e4f23fbe55?format=webp&width=2000"
-            className="w-full h-full object-cover brightness-[1.03] saturate-[1.15] contrast-[1.18]"
-            style={{ objectPosition: "center 46px" }}
+            className="w-full h-full object-cover brightness-[1.03] saturate-[1.15] contrast-[1.18] scale-90 sm:scale-100"
+            style={{
+              objectPosition: "calc(50% + 25px) 46px",
+            }}
             alt="Hero background"
           />
           {/* White Gradient Overlay - fades out at 55% */}
@@ -30,14 +32,22 @@ export default function Index() {
                 "linear-gradient(to right, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.35) 35%, rgba(255,255,255,0) 55%)",
             }}
           />
+          {/* Desktop-only override for object position */}
+          <style>{`
+            @media (min-width: 640px) {
+              img[alt="Hero background"] {
+                object-position: center 46px !important;
+              }
+            }
+          `}</style>
         </div>
 
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-[54px] sm:text-[67px] md:text-[81px] font-extrabold text-[hsl(210_29%_16%)] leading-[1.05] mb-6 drop-shadow-sm">
-                <span className="font-serif italic font-light block mb-2 leading-[1.1] text-[48px] sm:text-[60px] md:text-[73px]">
+              <h1 className="font-display text-[44px] sm:text-[67px] md:text-[81px] font-extrabold text-[hsl(210_29%_16%)] leading-[1.0] sm:leading-[1.05] mb-6 drop-shadow-sm">
+                <span className="font-serif italic font-light block mb-2 leading-[1.05] sm:leading-[1.1] text-[39px] sm:text-[60px] md:text-[73px]">
                   Make sense of
                 </span>
                 perimenopause
@@ -68,7 +78,7 @@ export default function Index() {
         <div className="container max-w-[1280px] px-6 md:px-8 mx-auto">
           <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             <div className="text-left relative z-10">
-              <h2 className="font-serif text-5xl sm:text-6xl italic font-normal text-foreground-dark leading-tight tracking-tight mb-5 max-w-[660px]">
+              <h2 className="font-serif text-[34px] sm:text-6xl italic font-normal text-foreground-dark leading-[1.1] sm:leading-tight tracking-tight mb-5 max-w-[660px]">
                 See the patterns behind your symptoms.
               </h2>
               <p className="text-lg md:text-[20px] text-[#425466] font-normal leading-[1.5] mb-10 max-w-[600px]">
