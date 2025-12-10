@@ -501,7 +501,10 @@ export default function ProductCarouselSection() {
                                 : "text-white/70 group-hover:text-white/90"
                             }`}
                           >
-                            {item.label.replace(/^(Today|Tomorrow|This week): /, "")}
+                            {item.label.replace(
+                              /^(Today|Tomorrow|This week): /,
+                              "",
+                            )}
                           </p>
                         </div>
                       ))}
