@@ -78,7 +78,7 @@ export default function Index() {
         <div className="container max-w-[1280px] px-6 md:px-8 mx-auto">
           <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             <div className="text-left relative z-10">
-              <h2 className="font-serif text-[40px] sm:text-6xl italic font-normal text-foreground-dark leading-[1.15] sm:leading-tight tracking-tight mb-5 max-w-[660px]">
+              <h2 className="font-serif text-[34px] sm:text-6xl italic font-normal text-foreground-dark leading-[1.1] sm:leading-tight tracking-tight mb-5 max-w-[660px]">
                 See the patterns behind your symptoms.
               </h2>
               <p className="text-lg md:text-[20px] text-[#425466] font-normal leading-[1.5] mb-10 max-w-[600px]">
