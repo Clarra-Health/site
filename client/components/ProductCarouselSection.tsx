@@ -537,17 +537,17 @@ export default function ProductCarouselSection() {
                 <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between pointer-events-none">
                   {/* Primary Metric Card - Top Right */}
                   <div className="flex justify-end">
-                    <div className="bg-gradient-to-br from-amber-700/70 to-amber-900/70 backdrop-blur-md rounded-2xl p-6 border border-amber-600/40 max-w-xs shadow-xl">
+                    <div className="bg-gradient-to-br from-teal-500/70 to-teal-700/70 backdrop-blur-md rounded-2xl p-6 border border-teal-500/40 max-w-xs shadow-xl">
                       <div className="flex items-center gap-2 mb-2">
-                        <Lightbulb className="w-4 h-4 text-amber-200" />
-                        <p className="text-xs font-semibold text-amber-200/70 uppercase tracking-wider">
+                        <Lightbulb className="w-4 h-4 text-teal-100" />
+                        <p className="text-xs font-semibold text-teal-100/70 uppercase tracking-wider">
                           {currentFeature.metrics.primary.label}
                         </p>
                       </div>
                       <p className="text-4xl font-bold text-white mb-1">
                         {currentFeature.metrics.primary.value}
                       </p>
-                      <p className="text-sm text-amber-100/60">
+                      <p className="text-sm text-teal-50/80">
                         {currentFeature.metrics.primary.subtitle}
                       </p>
                     </div>
