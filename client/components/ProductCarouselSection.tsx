@@ -488,7 +488,7 @@ export default function ProductCarouselSection() {
                           <div
                             className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-white font-bold text-xs transition-all duration-300 ${
                               item.status === "today"
-                                ? "bg-gradient-to-br from-orange-500 to-orange-600 shadow-lg scale-110"
+                                ? "bg-gradient-to-br from-teal-500 to-teal-600 shadow-lg scale-110"
                                 : "bg-white/10 border border-white/20 group-hover:border-white/40"
                             }`}
                           >
@@ -514,7 +514,7 @@ export default function ProductCarouselSection() {
                         Updated 2 hours ago
                       </p>
                       <div className="h-1 w-16 bg-white/10 rounded-full overflow-hidden">
-                        <div className="h-full w-1/3 bg-orange-500 rounded-full" />
+                        <div className="h-full w-1/3 bg-teal-500 rounded-full" />
                       </div>
                     </div>
                   </div>
