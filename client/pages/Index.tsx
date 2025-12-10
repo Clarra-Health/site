@@ -46,13 +46,13 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-[44px] sm:text-[67px] md:text-[81px] font-extrabold text-[hsl(210_29%_16%)] leading-[1.0] sm:leading-[1.05] mb-6 drop-shadow-sm">
-                <span className="font-serif italic font-light block mb-2 leading-[1.05] sm:leading-[1.1] text-[39px] sm:text-[60px] md:text-[73px]">
+              <h1 className="font-display text-[33px] sm:text-[67px] md:text-[81px] font-extrabold text-[hsl(210_29%_16%)] leading-[1.0] sm:leading-[1.05] mb-6 drop-shadow-sm">
+                <span className="font-serif italic font-light block mb-2 leading-[1.05] sm:leading-[1.1] text-[29px] sm:text-[60px] md:text-[73px]">
                   Make sense of
                 </span>
                 perimenopause
               </h1>
-              <p className="text-lg sm:text-xl text-foreground/90 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
+              <p className="text-sm sm:text-xl text-foreground/90 font-medium leading-relaxed mb-8 max-w-[520px] drop-shadow-sm">
                 Clarra interprets your symptoms, hormones, sleep, mood, and
                 cycles — giving you a clear picture of what’s changing and what
                 to do next.
