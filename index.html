@@ -46,7 +46,7 @@
 
   /* nav */
   header{position:fixed;inset:0 0 auto;z-index:30;transition:background .3s,color .3s,border-color .3s;color:#fff;border-bottom:1px solid transparent}
-  header.scrolled{background:rgba(247,246,242,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--slate);border-color:var(--line)}
+  header.scrolled{background:rgba(247,246,242,.8);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--slate);border-color:var(--line)}
   nav{display:flex;align-items:center;justify-content:space-between;height:76px}
   .logo{display:flex;align-items:center}
   .logo img{height:28px;width:auto;transition:filter .3s}
@@ -280,7 +280,16 @@
     .portrait{max-width:420px}
     section{padding:96px 0}
   }
-  @media (max-width:760px){.hero-media::after{background:linear-gradient(0deg,#1B2833 30%,rgba(27,40,51,.6) 55%,rgba(27,40,51,0) 80%)}.hero-media img{width:100%;height:62%;object-position:50% 25%;-webkit-mask-image:linear-gradient(0deg,transparent 0%,#000 45%);mask-image:linear-gradient(0deg,transparent 0%,#000 45%)}}
+  @media (max-width:760px){
+    .hero{display:block;min-height:0;background:radial-gradient(90% 60% at 0% 100%,rgba(79,183,179,.45),rgba(79,183,179,0) 70%),linear-gradient(180deg,#1B2833,#1B3640)}
+    .hero-media{position:relative;inset:auto;height:56svh;min-height:360px;background:none}
+    .hero-media img{width:100%!important;height:100%!important;object-position:50% 18%!important;-webkit-mask-image:linear-gradient(0deg,transparent 0%,#000 30%)!important;mask-image:linear-gradient(0deg,transparent 0%,#000 30%)!important}
+    .hero-media::after{display:none}
+    .hero-shade{display:none}
+    .hero-in{padding-top:0;margin-top:-56px;padding-bottom:72px}
+    .hero h1{font-size:2.9rem;margin:18px 0 18px}
+    .hero .lede{font-size:1.05rem}
+  }
   @media (max-width:560px){
     .gal figure{width:40vw;margin:0 -5vw}
     .gal-caps{grid-template-columns:1fr;gap:18px;margin-top:48px}
@@ -300,7 +309,7 @@
 </head>
 <body>
 
-<header id="top">
+<header id="top" class="scrolled">
   <nav class="wrap">
     <a href="#" class="logo" aria-label="Clarra home"><img class="lw" src="img/logo-white.svg" alt="Clarra"><img class="ld" src="img/logo-dark.svg" alt=""></a>
     <div class="navlinks">
@@ -418,7 +427,7 @@
     <div class="wrap">
       <div class="gal-head rv">
         <span class="eyebrow">A look inside</span>
-        <h2>Built around <em class="s">how women actually talk.</em></h2>
+        <h2>Built around <em class="s">how women actually communicate.</em></h2>
       </div>
       <div class="gal">
         <figure class="rv"><div class="phone"><div class="screen scr-chat" data-chat>
@@ -508,7 +517,6 @@
 
   <!-- CTA -->
   <section id="join" class="cta">
-    <div class="cta-bg ph"><img src="img/calm.jpg" alt="" style="object-position:70% 35%" loading="lazy"></div>
     <div class="wrap cta-in" style="padding-left:32px;padding-right:32px">
       <span class="eyebrow">Early access</span>
       <h2>Be first to <em class="s">try Clarra.</em></h2>
@@ -566,9 +574,53 @@
     });
   });
 
+  // ---------- app screen animations ----------
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+  // Voice logging: live waveform + transcript typed word by word
+  document.querySelectorAll('[data-listen]').forEach(el => {
+    const wave = el.querySelector('.wave'), said = el.querySelector('.said');
+    const bars = Array.from({length: 52}, () => wave.appendChild(document.createElement('span')));
+    const lines = ['"Clarra, log that I slept five hours last night"', '"I\'ve had brain fog all afternoon"', '"Hot flash again at 3am. Third this week."'];
+    let talking = false;
+    const env = i => 0.35 + 0.65 * Math.sin(Math.PI * (i + 0.5) / bars.length);
+    if (reduce) { said.textContent = lines[0]; bars.forEach((b, i) => b.style.height = 10 + 70 * env(i) * Math.abs(Math.sin(i * 1.7)) + '%'); return; }
+    setInterval(() => bars.forEach((b, i) => {
+      b.style.height = (talking ? 12 + Math.random() * 88 * env(i) : 6 + Math.random() * 6) + '%';
+    }), 140);
+    (async () => {
+      for (let n = 0; ; n = (n + 1) % lines.length) {
+        said.innerHTML = lines[n].split(' ').map(w => '<span>' + w + '</span>').join(' ');
+        talking = true;
+        for (const w of said.querySelectorAll('span')) { w.classList.add('on'); await sleep(260 + Math.random() * 160); }
+        talking = false; await sleep(2600);
+        said.querySelectorAll('span').forEach(w => w.classList.remove('on')); await sleep(700);
+      }
+    })();
+  });
+
+  // Chat: messages arrive in order, with typing dots before each Clarra reply
+  document.querySelectorAll('[data-chat]').forEach(el => {
+    const items = [...el.querySelectorAll('.cb')], dots = el.querySelector('.typing');
+    if (reduce) { items.forEach(i => i.classList.add('on')); return; }
+    (async () => {
+      for (;;) {
+        items.forEach(i => i.classList.remove('on')); await sleep(900);
+        for (const it of items) {
+          if (it.dataset.who === 'c') {
+            dots.style.top = `calc(${it.style.top} + 1.2%)`; dots.style.left = it.dataset.x + '%';
+            dots.classList.add('on'); await sleep(it === items[items.length - 1] ? 1800 : 1100); dots.classList.remove('on');
+          }
+          it.classList.add('on'); await sleep(it.dataset.who === 'c' ? 1500 : 1000);
+        }
+        await sleep(4000);
+      }
+    })();
+  });
+
   const header = document.getElementById('top');
-  const onScroll = () => header.classList.toggle('scrolled', scrollY > innerHeight * 0.6);
-  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
 
   const rail = document.getElementById('rail');
   document.querySelectorAll('.rail-ctrl button').forEach(b => b.addEventListener('click', () => {
