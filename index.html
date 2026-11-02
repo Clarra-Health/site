@@ -304,13 +304,14 @@
   }
   @media (max-width:760px){
     .hero{display:block;min-height:0;background:radial-gradient(90% 60% at 0% 100%,rgba(79,183,179,.45),rgba(79,183,179,0) 70%),linear-gradient(180deg,#1B2833,#1B3640)}
-    .hero-media{position:relative;inset:auto;height:56svh;min-height:360px;background:none}
+    .hero-media{position:relative;inset:auto;height:46svh;min-height:300px;max-height:440px;background:none}
     .hero-media img{width:100%!important;height:100%!important;object-position:50% 18%!important;-webkit-mask-image:linear-gradient(0deg,transparent 0%,#000 30%)!important;mask-image:linear-gradient(0deg,transparent 0%,#000 30%)!important}
     .hero-media::after{display:none}
     .hero-shade{display:none}
-    .hero .hero-in{padding-top:0;margin-top:-56px;padding-bottom:64px}
+    .hero .hero-in{padding-top:0;margin-top:-48px;padding-bottom:56px}
     .hero .consent{padding-left:4px}
-    .hero h1{font-size:2.9rem;margin:18px 0 18px}
+    .hero h1{font-size:2.7rem;margin:14px 0 14px}
+    .hero .form{margin-top:26px}
     .hero .lede{font-size:1.05rem}
   }
   @media (max-width:560px){
@@ -320,8 +321,10 @@
     .wrap{padding:0 20px}
     .rail{padding:0 20px 8px}
     .fcard{scroll-margin-left:20px}
-    .form{flex-direction:column;border-radius:22px;padding:8px}
-    .form input{padding:13px 14px}
+    .form{flex-direction:column;gap:10px;background:none;padding:0;border-radius:0;box-shadow:none}
+    .form input{background:#fff;border-radius:999px;padding:16px 22px;font-size:1rem;box-shadow:0 10px 30px -14px rgba(79,183,179,.6)}
+    .form .btn{width:100%;padding:16px 24px;font-size:1rem}
+    .form-note.consent{padding-left:4px}
     .float{display:none}
     .chips{grid-template-columns:1fr}
     .rail-ctrl{display:none}
