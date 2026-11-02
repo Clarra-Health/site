@@ -1,73 +1,583 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clarra — AI Midlife Care</title>
-    <meta
-      name="description"
-      content="Clarra is an AI-native digital health app for midlife care, offering compassionate, personalized support for perimenopause and menopause."
-    />
-    <meta name="theme-color" content="#4fb7b3" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd361d3393e074edeb3ae4bdb02c9f57a?format=png&width=32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="48x48"
-      href="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd361d3393e074edeb3ae4bdb02c9f57a?format=png&width=48"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd361d3393e074edeb3ae4bdb02c9f57a?format=png&width=96"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="128x128"
-      href="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd361d3393e074edeb3ae4bdb02c9f57a?format=png&width=128"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd361d3393e074edeb3ae4bdb02c9f57a?format=png&width=192"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="256x256"
-      href="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd361d3393e074edeb3ae4bdb02c9f57a?format=png&width=256"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd361d3393e074edeb3ae4bdb02c9f57a?format=png&width=512"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd361d3393e074edeb3ae4bdb02c9f57a?format=png&width=180"
-    />
-    <link rel="mask-icon" href="/favicon.svg" color="#4fb7b3" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="https://cdn.builder.io/api/v1/image/assets%2F553c8106b9f84f1a91a6549e0008f0fd%2Fd361d3393e074edeb3ae4bdb02c9f57a?format=png&width=32"
-    />
-  </head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clarra | Make sense of perimenopause</title>
+<meta name="description" content="Clarra is an AI health companion for perimenopause. Talk about how you feel. Clarra connects your symptoms, sleep, mood, cycles and hormones and tells you what to do next. Join the waitlist.">
+<meta property="og:title" content="Clarra | Make sense of perimenopause">
+<meta property="og:description" content="Talk about how you feel. Clarra connects the dots and tells you what to do next. Join the waitlist.">
+<link rel="icon" type="image/svg+xml" href="img/mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Manrope:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#4FB7B3;        /* Clarra Teal: fills, accents */
+    --teal-ink:#2A7F7B;    /* teal dark enough for text on light */
+    --slate:#2C3E50;       /* Deep Slate: type */
+    --aqua:#B8E3E3;        /* Soft Aqua: secondary backgrounds */
+    --night:#17222C;       /* dark sections */
+    --cream:#F7F6F2;       /* warm page background */
+    --mist:#EEF6F5;
+    --line:#E3E6E2;
+    --muted:#5E6B75;
+    --coral:#E8916B;       /* data accent only */
+    --serif:'Newsreader', Georgia, serif;
+    --sans:'Manrope', system-ui, sans-serif;
+    --r:24px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--slate);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+  .eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-ink)}
+  em.s{font-family:var(--serif);font-style:italic;font-weight:300;letter-spacing:-.01em}
+  h1,h2,h3{font-weight:400;letter-spacing:-.035em;line-height:1.02}
+  h2{font-size:clamp(2.2rem,4.6vw,4rem)}
 
-  <body>
-    <div id="root"></div>
+  /* photo placeholders: swap each .ph for <img src="..." alt="..."> */
+  .ph{position:relative;background:linear-gradient(150deg,#9FC9C7 0%,#5E8E92 55%,#2F4A58 100%);overflow:hidden}
+  .ph::before{content:"";position:absolute;inset:14px;border:1.5px dashed rgba(255,255,255,.45);border-radius:calc(var(--r) - 8px)}
+  .ph::after{content:attr(data-label);position:absolute;top:28px;right:28px;max-width:60%;text-align:right;font:600 .72rem/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+  .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .ph:has(img)::before,.ph:has(img)::after{display:none}
 
-    <script type="module" src="/client/App.tsx"></script>
-  </body>
+  /* nav */
+  header{position:fixed;inset:0 0 auto;z-index:30;transition:background .3s,color .3s,border-color .3s;color:#fff;border-bottom:1px solid transparent}
+  header.scrolled{background:rgba(247,246,242,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--slate);border-color:var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .logo{display:flex;align-items:center}
+  .logo img{height:28px;width:auto;transition:filter .3s}
+  header .ld,header.scrolled .lw{display:none}
+  header.scrolled .ld{display:block}
+  .navlinks{display:flex;align-items:center;gap:34px;font-size:.92rem;font-weight:500}
+  .navlinks a{text-decoration:none;opacity:.85}
+  .navlinks a:hover{opacity:1}
+  .btn{display:inline-flex;align-items:center;justify-content:center;font:600 .95rem var(--sans);border:0;border-radius:999px;padding:15px 26px;cursor:pointer;text-decoration:none;transition:transform .15s,background .2s,color .2s;opacity:1!important}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-light{background:#fff;color:var(--slate)}
+  .btn-dark{background:var(--slate);color:#fff}
+  .btn-teal{background:linear-gradient(135deg,#5FD3CC,#3FA9A5);color:#10202A}
+  .btn-sm{padding:10px 20px;font-size:.88rem}
+  header.scrolled .btn-light{background:var(--slate);color:#fff}
+
+  /* hero */
+  .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff}
+  .hero-media{position:absolute;inset:0;overflow:hidden;background:radial-gradient(60% 70% at 8% 105%,rgba(79,183,179,.55) 0%,rgba(79,183,179,0) 70%),radial-gradient(40% 50% at 46% 8%,rgba(79,183,179,.22) 0%,rgba(79,183,179,0) 70%),linear-gradient(160deg,#16222D 0%,#1B2E3B 55%,#1E4148 100%)}
+  .hero-media img{position:absolute;top:0;right:0;height:100%;width:56%;object-fit:cover;object-position:4% 30%;-webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.08) 6%,rgba(0,0,0,.25) 12%,rgba(0,0,0,.5) 18%,rgba(0,0,0,.75) 24%,rgba(0,0,0,.92) 30%,#000 36%);mask-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.08) 6%,rgba(0,0,0,.25) 12%,rgba(0,0,0,.5) 18%,rgba(0,0,0,.75) 24%,rgba(0,0,0,.92) 30%,#000 36%)}
+  .hero-media::after{content:"";position:absolute;inset:0;background:radial-gradient(28% 55% at 50% 72%,rgba(79,183,179,.38) 0%,rgba(79,183,179,0) 70%),linear-gradient(90deg,rgba(23,38,48,.0) 0%,rgba(23,38,48,0) 40%,rgba(23,46,56,.35) 47%,rgba(23,46,56,.08) 54%,rgba(23,46,56,0) 58%);mix-blend-mode:normal}
+  .hero .ph::before{display:none}
+  .hero .ph::after{top:110px;right:32px}
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+  .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,34,44,.55) 0%,rgba(23,34,44,0) 16%),linear-gradient(0deg,rgba(23,34,44,.35),rgba(23,34,44,0) 30%)}
+  .hero-in{position:relative;padding-bottom:96px;padding-top:140px;width:100%}
+  .pill{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(8px);border-radius:999px;padding:7px 15px;font-size:.8rem;font-weight:600}
+  .pill i{width:7px;height:7px;border-radius:50%;background:#5FD3CC;box-shadow:0 0 10px #5FD3CC;animation:pulse 2s infinite}
+  @keyframes pulse{50%{opacity:.35}}
+  h1{font-size:clamp(3.2rem,6.4vw,6rem);font-weight:300;letter-spacing:-.05em;line-height:.95;margin:26px 0 26px;max-width:9em}
+  .hero h1 em.s{color:#8FDCD7}
+  h1 em.s{display:block;font-size:.72em;letter-spacing:-.02em;margin-bottom:.08em}
+  .lede{font-size:1.2rem;font-weight:400;max-width:31em;opacity:.92}
+  .form{display:flex;gap:8px;margin-top:36px;max-width:480px;background:#fff;border-radius:999px;padding:6px;box-shadow:0 18px 50px -12px rgba(79,183,179,.55)}
+  .form input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:500 1rem var(--sans);color:var(--slate);padding:0 20px}
+  .form input::placeholder{color:#8E9AA3}
+  .form-note{font-size:.84rem;margin-top:14px;padding-left:20px;opacity:.8}
+  .consent{font-size:.76rem;max-width:34em;line-height:1.5}
+  .consent a{text-decoration:underline;text-underline-offset:2px}
+  .form-ok{display:none;margin-top:36px;max-width:480px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(8px);border-radius:18px;padding:18px 22px;font-weight:600}
+  .done .form,.done .form-note{display:none}
+  .form-err{display:none;margin-top:12px;padding-left:20px;font-size:.86rem;color:#FFB8A3}
+  .err .form-err{display:block}
+  .done .form-ok{display:block}
+
+  section{padding:128px 0}
+
+  /* statement */
+  .statement{padding:140px 0 120px}
+  .statement h2{max-width:15em;font-weight:300}
+  .statement h2 .dim{color:#9AA5AD}
+  .dismiss{display:flex;flex-wrap:wrap;gap:12px;margin-top:44px}
+  .dismiss span{border:1px solid #CFD5D2;border-radius:999px;padding:10px 20px;font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--muted);text-decoration:line-through;text-decoration-color:var(--teal);text-decoration-thickness:2px}
+
+  /* feature cards (Oura-style rail) */
+  .rail-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px}
+  .rail-ctrl{display:flex;gap:10px}
+  .rail-ctrl button{width:48px;height:48px;border-radius:50%;border:1px solid #CFD5D2;background:transparent;cursor:pointer;display:grid;place-items:center;color:var(--slate)}
+  .rail-ctrl button:hover{background:#fff}
+  .rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(300px,30%);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(32px,calc((100vw - 1240px)/2 + 32px)) 8px;scrollbar-width:none}
+  .rail::-webkit-scrollbar{display:none}
+  .fcard{scroll-snap-align:start;scroll-margin-left:max(32px,calc((100vw - 1240px)/2 + 32px));border-radius:var(--r);height:560px;position:relative;color:#fff;display:flex;flex-direction:column;justify-content:flex-end}
+  .fcard .ph{position:absolute;inset:0;border-radius:var(--r)}
+  .fcard-txt{position:relative;padding:30px;background:linear-gradient(0deg,rgba(23,34,44,.75),rgba(23,34,44,0));border-radius:0 0 var(--r) var(--r);padding-top:90px}
+  .fcard .eyebrow{color:var(--aqua)}
+  .fcard h3{font-size:1.75rem;font-weight:400;margin-top:10px;letter-spacing:-.025em;line-height:1.12}
+  .fcard p{font-size:.95rem;opacity:.85;margin-top:10px}
+
+  /* spotlight */
+  .spot{background:var(--night);color:#fff;overflow:hidden}
+  .spot-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+  .spot .eyebrow{color:var(--aqua)}
+  .spot h2{margin:18px 0 22px;font-weight:300}
+  .spot p.big{font-size:1.15rem;color:#B9C6CF;max-width:28em}
+  .steps{margin-top:44px;border-top:1px solid rgba(255,255,255,.12)}
+  .stp{display:grid;grid-template-columns:56px 1fr;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .stp span{font-family:var(--serif);font-style:italic;color:var(--teal);font-size:1.1rem}
+  .stp b{font-weight:600;font-size:1.08rem}
+  .stp p{color:#9FB0BB;font-size:.95rem;margin-top:4px}
+
+  .stage{position:relative;display:flex;justify-content:center;padding:30px 0}
+  .stage::before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(79,183,179,.35),rgba(79,183,179,0) 65%);top:50%;left:50%;transform:translate(-50%,-50%)}
+  .phone{position:relative;width:300px;border-radius:48px;background:#0E151C;padding:10px;box-shadow:0 50px 100px -30px rgba(0,0,0,.7),inset 0 0 0 2px #2F3D4A}
+  .screen{border-radius:39px;background:#FDFAF5;overflow:hidden;position:relative}
+  .screen img{display:block;width:100%;height:auto}
+  .island{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:84px;height:24px;border-radius:20px;background:#0E151C;z-index:2}
+  .notch{width:92px;height:24px;border-radius:20px;background:#0E151C;margin:-6px auto 14px}
+  .app-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+  .app-top small{display:block;font-size:.7rem;color:var(--muted)}
+  .app-top b{font-size:1rem;font-weight:600}
+  .avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--aqua),var(--teal))}
+  .card{background:#fff;border:1px solid #E1ECEB;border-radius:18px;padding:14px;margin-bottom:10px}
+  .score{background:linear-gradient(135deg,#2E6F7E,var(--teal));color:#fff;border:0;display:flex;align-items:center;gap:14px}
+  .ring{width:64px;height:64px;flex:none}
+  .score small{font-size:.68rem;opacity:.85;display:block}
+  .score b{font-size:.92rem;font-weight:600;line-height:1.35;display:block}
+  .bubble{font-size:.78rem;line-height:1.4;padding:10px 13px;border-radius:16px;max-width:85%;margin-bottom:8px}
+  .me{background:var(--slate);color:#fff;margin-left:auto;border-bottom-right-radius:5px}
+  .her{background:var(--mist);border:1px solid var(--aqua);border-bottom-left-radius:5px}
+  .mini-h{font-size:.64rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-ink);margin-bottom:6px}
+  .mic{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);width:54px;height:54px;border-radius:50%;background:var(--slate);display:grid;place-items:center;box-shadow:0 0 0 10px rgba(79,183,179,.15),0 0 0 20px rgba(79,183,179,.07)}
+  .float{position:absolute;background:rgba(255,255,255,.96);color:var(--slate);border-radius:18px;padding:14px 16px;box-shadow:0 24px 50px -20px rgba(0,0,0,.5);font-size:.82rem;width:200px}
+  .f1{left:-60px;top:240px}
+  .f2{right:-30px;bottom:30px}
+  .float .eyebrow{color:var(--teal-ink)}
+  .float b{font-size:1.6rem;font-weight:500;display:block;line-height:1.1;margin:4px 0}
+
+  /* gallery: fanned, overlapping phones */
+  #app{overflow:hidden}
+  .gal-head{text-align:center;max-width:640px;margin:0 auto 72px}
+  .gal-head h2{font-weight:300;margin-top:16px}
+  .gal{display:flex;justify-content:center;align-items:flex-start;padding:10px 0 20px}
+  .gal figure{flex:none;width:262px;margin:0 -8px;position:relative}
+  .gal figure:nth-child(1){transform:rotate(-7deg) translateY(36px);z-index:1}
+  .gal figure:nth-child(2){z-index:3}
+  .gal figure:nth-child(3){transform:rotate(7deg) translateY(36px);z-index:1}
+  .gal .phone{width:100%;border-radius:42px;padding:8px;box-shadow:0 50px 80px -40px rgba(23,34,44,.55),inset 0 0 0 2px #2F3D4A}
+  .gal .screen{border-radius:35px}
+  .gal .island{width:72px;height:20px;top:8px}
+  .gal-caps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:880px;margin:72px auto 0;text-align:center}
+  .gal-caps b{display:block;font-weight:600;font-size:1.1rem}
+  .gal-caps span{color:var(--muted);font-size:.95rem}
+
+  /* animated screens */
+  .screen{aspect-ratio:1125/2436;container-type:inline-size}
+  .screen > .base{display:block;width:100%;height:auto}
+  .cb{position:absolute;left:0;width:100%;height:auto;opacity:0;transform:translateY(10px);transition:opacity .45s ease,transform .45s ease}
+  .cb.on{opacity:1;transform:none}
+  .typing{position:absolute;display:flex;gap:1.4cqw;padding:3.2cqw 4.2cqw;border-radius:6cqw;background:#F3EFE5;opacity:0;transition:opacity .25s}
+  .typing.on{opacity:1}
+  .typing i{width:2cqw;height:2cqw;border-radius:50%;background:#8C949C;animation:dot 1s infinite}
+  .typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+  @keyframes dot{0%,60%,100%{transform:none;opacity:.5}30%{transform:translateY(-1cqw);opacity:1}}
+  .scroller{position:absolute;inset:0}
+  .scroller img{animation:scrollv 16s ease-in-out infinite}
+  @keyframes scrollv{0%,16%{transform:translateY(0)}46%,60%{transform:translateY(-32.45%)}90%,100%{transform:translateY(0)}}
+  .ovl{position:absolute;left:0;width:100%;display:block;z-index:1}
+  .ovl.top{top:0}.ovl.bot{bottom:0}
+  .island{z-index:3}
+  .wave{position:absolute;left:0;right:0;top:54.4%;height:6%;display:flex;align-items:center;justify-content:space-between;padding:0 .6%}
+  .wave span{width:1.05%;border-radius:2cqw;background:#4FB7B3;height:8%;transition:height .14s ease}
+  .said{position:absolute;top:63.6%;left:5%;right:5%;text-align:center;font:400 3.9cqw/1.3 'Archivo',sans-serif;color:#151515;min-height:1em}
+  .said span{opacity:0;transition:opacity .2s}.said span.on{opacity:1}
+  .ping{position:absolute;left:50.2%;top:91.95%;width:17cqw;height:17cqw;margin:-8.5cqw 0 0 -8.5cqw;border-radius:50%;border:.6cqw solid rgba(79,183,179,.55);animation:ping 2.2s ease-out infinite}
+  @keyframes ping{0%{transform:scale(1);opacity:.9}100%{transform:scale(3.2);opacity:0}}
+  .toast{position:absolute;top:6.5%;left:3.5%;right:3.5%;z-index:2;display:flex;gap:3cqw;align-items:flex-start;background:rgba(255,255,255,.97);border-radius:5cqw;padding:3.6cqw 4cqw;box-shadow:0 3cqw 8cqw -2cqw rgba(23,34,44,.35);font:400 3.5cqw/1.35 'Archivo',sans-serif;color:#1d242b;transform:translateY(-160%);animation:toast 9s cubic-bezier(.2,.8,.2,1) infinite 1.5s}
+  .toast img{width:8cqw;height:auto;flex:none;margin-top:.5cqw}
+  .toast b{font-weight:600;display:flex;justify-content:space-between}
+  .toast small{font-weight:400;color:#8C949C}
+  @keyframes toast{0%,8%{transform:translateY(-160%)}14%,62%{transform:translateY(0)}70%,100%{transform:translateY(-160%)}}
+
+  /* how it works: tilted duo */
+  .duo{position:relative;height:660px}
+  .duo::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(79,183,179,.3),rgba(79,183,179,0) 65%);top:50%;left:50%;transform:translate(-50%,-50%)}
+  .tilt{position:absolute;width:255px}
+  .t1{left:-2%;top:10px;z-index:2;transform:perspective(1800px) rotateX(10deg) rotateY(-14deg) rotateZ(-12deg)}
+  .t2{right:-3%;top:150px;z-index:1;width:245px;transform:perspective(1800px) rotateX(10deg) rotateY(14deg) rotateZ(10deg)}
+  .t1 .phone{box-shadow:12px 10px 0 -1px #262d35,40px 60px 80px -30px rgba(0,0,0,.7),inset 0 0 0 2px #2F3D4A}
+  .t2 .phone{box-shadow:-12px 10px 0 -1px #262d35,-30px 60px 80px -30px rgba(0,0,0,.7),inset 0 0 0 2px #2F3D4A}
+  .duo .phone{width:100%}
+  .bob{animation:bob 6s ease-in-out infinite alternate}
+  .t2 .bob{animation-delay:-3s}
+  @keyframes bob{from{transform:translateY(0)}to{transform:translateY(-14px)}}
+  @media (prefers-reduced-motion:reduce){.bob,.scroller img,.ping,.typing i{animation:none}.toast{animation:none;transform:none}.cb{opacity:1;transform:none}}
+
+  /* signals */
+  .sig-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+  .sig-grid h2{font-weight:300}
+  .sig-grid p{color:var(--muted);font-size:1.1rem;margin-top:18px;max-width:26em}
+  .sig-photo{aspect-ratio:3/2;border-radius:var(--r);margin-top:32px}
+  .chips{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .chip{background:#fff;border-radius:18px;padding:20px 22px;display:flex;align-items:center;gap:14px;font-weight:600}
+  .chip small{display:block;font-weight:400;color:var(--muted);font-size:.84rem}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--teal);flex:none}
+
+  /* founder */
+  .founder{background:#fff}
+  .founder-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}
+  .portrait{aspect-ratio:4/5;border-radius:var(--r)}
+  blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(1.45rem,2.4vw,2.05rem);line-height:1.25;letter-spacing:-.015em;margin:22px 0 28px}
+  .founder p{color:var(--muted);font-size:1.08rem;margin-bottom:16px;max-width:34em}
+  .sig{margin-top:30px;padding-top:26px;border-top:1px solid var(--line)}
+  .sig b{font-weight:600;font-size:1.05rem}
+  .creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .creds span{font-size:.8rem;font-weight:600;background:var(--mist);color:var(--teal-ink);border-radius:999px;padding:7px 13px}
+
+  /* investors */
+  .inv{background:var(--mist);padding:112px 0}
+  .inv-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:center}
+  .inv h2{font-weight:300;margin:16px 0 20px}
+  .inv p{color:var(--muted);font-size:1.1rem;max-width:30em}
+  .inv-card{background:#fff;border-radius:var(--r);padding:36px;box-shadow:0 30px 60px -40px rgba(23,34,44,.4)}
+  .inv-card dl div{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+  .inv-card dt{color:var(--muted)}
+  .inv-card dd{font-weight:600;text-align:right}
+  .inv-card .btn{width:100%;margin-top:28px}
+  .inv-mail{text-align:center;font-size:.86rem!important;margin:12px auto 0}
+
+  /* closing cta */
+  .cta{position:relative;color:#fff;padding:0;min-height:560px;display:flex;align-items:center;overflow:hidden;background:radial-gradient(circle at 85% 110%,rgba(79,183,179,.55),rgba(79,183,179,0) 55%),linear-gradient(135deg,#17222C 0%,#2C3E50 60%,#2E5F6B 100%)}
+  .cta .ph{position:absolute;inset:0;--r:0px}
+  .cta-bg{position:absolute;inset:0;--r:0px}
+  .cta-bg::after{content:""!important;display:block!important;position:absolute;inset:0;max-width:none;background:linear-gradient(90deg,rgba(23,34,44,.88) 0%,rgba(23,34,44,.6) 45%,rgba(23,34,44,.15) 100%)}
+  .cta .hero-shade{background:linear-gradient(90deg,rgba(23,34,44,.8) 0%,rgba(23,34,44,.4) 55%,rgba(23,34,44,.1) 100%)}
+  .cta-in{position:relative;padding:120px 32px;width:100%}
+  .cta h2{font-weight:300;max-width:10em;margin:16px 0 18px}
+  .cta .eyebrow{color:var(--aqua)}
+  .cta p.sub{font-size:1.12rem;opacity:.9;max-width:28em}
+
+  footer{background:var(--night);color:#9FB0BB;padding:56px 0 60px;font-size:.88rem}
+  .foot{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
+  .foot .logo img{height:26px;margin-bottom:14px}
+  .foot-links{display:flex;gap:26px;font-weight:500;flex-wrap:wrap}
+  .foot-links a{text-decoration:none}
+  .foot-links a:hover{color:#fff}
+  .fine{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:.78rem;max-width:64em}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+  .rv.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.pill i{animation:none}html{scroll-behavior:auto}}
+
+  @media (max-width:960px){
+    .inv-grid{grid-template-columns:1fr;gap:40px}
+    .spot-grid,.sig-grid,.founder-grid{grid-template-columns:1fr;gap:56px}
+    .duo{height:560px;max-width:520px;margin:0 auto;width:100%}
+    .tilt{width:220px}.t2{width:205px;top:120px}
+    .navlinks a:not(.btn){display:none}
+    .rail{grid-auto-columns:78%}
+    .fcard{height:480px}
+    .portrait{max-width:420px}
+    section{padding:96px 0}
+  }
+  @media (max-width:760px){.hero-media::after{background:linear-gradient(0deg,#1B2833 30%,rgba(27,40,51,.6) 55%,rgba(27,40,51,0) 80%)}.hero-media img{width:100%;height:62%;object-position:50% 25%;-webkit-mask-image:linear-gradient(0deg,transparent 0%,#000 45%);mask-image:linear-gradient(0deg,transparent 0%,#000 45%)}}
+  @media (max-width:560px){
+    .gal figure{width:40vw;margin:0 -5vw}
+    .gal-caps{grid-template-columns:1fr;gap:18px;margin-top:48px}
+    .duo{height:470px}.tilt{width:175px}.t1{left:0}.t2{width:165px;top:100px;right:0}
+    .wrap{padding:0 20px}
+    .rail{padding:0 20px 8px}
+    .fcard{scroll-margin-left:20px}
+    .form{flex-direction:column;border-radius:22px;padding:8px}
+    .form input{padding:13px 14px}
+    .float{display:none}
+    .chips{grid-template-columns:1fr}
+    .rail-ctrl{display:none}
+    .cta-in{padding:96px 20px}
+    .hero .ph::after{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header id="top">
+  <nav class="wrap">
+    <a href="#" class="logo" aria-label="Clarra home"><img class="lw" src="img/logo-white.svg" alt="Clarra"><img class="ld" src="img/logo-dark.svg" alt=""></a>
+    <div class="navlinks">
+      <a href="#features">What it does</a>
+      <a href="#how">How it works</a>
+      <a href="#founder">Our story</a>
+      <a href="#investors">Investors</a>
+      <a href="#join" class="btn btn-light btn-sm">Join the waitlist</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" style="padding:0">
+    <div class="hero-media"><img src="img/hero.jpg" alt="Smiling woman in her forties at home"></div>
+    <div class="hero-shade"></div>
+    <div class="wrap hero-in">
+      <span class="pill"><i></i>Coming soon. Waitlist now open.</span>
+      <h1><em class="s">Make sense of</em>perimenopause.</h1>
+      <p class="lede">Tell Clarra how you feel, in your own words. It connects your symptoms, sleep, mood, cycles and hormones, then tells you what's changing and what to do next.</p>
+      <div class="signup">
+        <form class="form" data-waitlist>
+          <input type="email" name="email" placeholder="Your email" aria-label="Email address" required><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+          <button class="btn btn-teal" type="submit">Join the waitlist</button>
+        </form>
+        <p class="form-note consent">By joining, you agree to get emails from Clarra Health about early access. Unsubscribe anytime. <a href="privacy.html">Privacy policy</a></p>
+        <p class="form-err" role="alert">Something went wrong. Try again or email hello@clarrahealth.com.</p>
+        <div class="form-ok" role="status">You're on the list. We'll be in touch before launch.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="statement">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow rv">Why Clarra</span>
+        <h2 class="rv" style="margin-top:20px">Broken sleep. Brain fog. Mood swings. Cycles that stop making sense. <span class="dim">The signals are all there. Nobody connects them.</span></h2>
+        <div class="dismiss rv"><span>It's just stress</span><span>It's part of aging</span><span>Your labs look normal</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE RAIL -->
+  <section id="features" style="padding-top:0">
+    <div class="wrap rail-head rv">
+      <div>
+        <span class="eyebrow">What Clarra does</span>
+        <h2 style="margin-top:16px;font-weight:300">Understand your body. <em class="s">Own your midlife.</em></h2>
+      </div>
+      <div class="rail-ctrl">
+        <button type="button" aria-label="Previous" data-dir="-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button type="button" aria-label="Next" data-dir="1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+    <div class="rail rv" id="rail">
+      <article class="fcard">
+        <div class="ph"><img src="img/sleep.jpg" alt="Woman smiling in bed after a good night's sleep" style="object-position:center 30%" loading="lazy"></div>
+        <div class="fcard-txt"><span class="eyebrow">Sleep</span><h3>Find out why you're up at 3am.</h3><p>Night waking, sweats and timing, read against your cycle and your day.</p></div>
+      </article>
+      <article class="fcard">
+        <div class="ph"><img src="img/focus.jpg" alt="Woman reading her phone at a table by the window" style="object-position:58% center" loading="lazy"></div>
+        <div class="fcard-txt"><span class="eyebrow">Brain fog</span><h3>Get your focus back.</h3><p>See what lines up with your foggiest days so you can plan around them.</p></div>
+      </article>
+      <article class="fcard">
+        <div class="ph"><img src="img/mood.jpg" alt="Woman smiling on the couch with her phone" style="object-position:55% center" loading="lazy"></div>
+        <div class="fcard-txt"><span class="eyebrow">Mood</span><h3>Know it's not just you.</h3><p>Irritability and anxiety mapped to hormones, sleep and stress.</p></div>
+      </article>
+      <article class="fcard">
+        <div class="ph"><img src="img/energy.jpg" alt="Woman holding a yoga mat after a workout" style="object-position:50% 20%" loading="lazy"></div>
+        <div class="fcard-txt"><span class="eyebrow">Energy</span><h3>Plan your days with confidence.</h3><p>Know your good days and your hard days before they happen.</p></div>
+      </article>
+      <article class="fcard">
+        <div class="ph"><img src="img/cycles.jpg" alt="Woman on a green couch checking her phone" style="object-position:52% center" loading="lazy"></div>
+        <div class="fcard-txt"><span class="eyebrow">Cycles</span><h3>Know where you are in the transition.</h3><p>Cycle changes tracked as they shift, not just when your period is due.</p></div>
+      </article>
+      <article class="fcard">
+        <div class="ph"><img src="img/wearables.jpg" alt="Woman with headphones and a smartwatch checking her phone after a run" style="object-position:55% center" loading="lazy"></div>
+        <div class="fcard-txt"><span class="eyebrow">Wearables</span><h3>Your watch already knows.</h3><p>Clarra syncs your sleep, heart rate and activity, then makes sense of them.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SPOTLIGHT -->
+  <section id="how" class="spot">
+    <div class="wrap spot-grid">
+      <div class="rv">
+        <span class="eyebrow">How it works</span>
+        <h2>Just talk. <em class="s">Clarra does the rest.</em></h2>
+        <p class="big">Conversational AI, wearable data and biomarker testing, working together to build one clear picture of your midlife health.</p>
+        <div class="steps">
+          <div class="stp"><span>01</span><div><b>Talk, don't track</b><p>Log by voice or text, the way you'd tell a friend. No forms, no sliders.</p></div></div>
+          <div class="stp"><span>02</span><div><b>See the pattern</b><p>Clarra links sleep, stress, mood, cognition and temperature over time.</p></div></div>
+          <div class="stp"><span>03</span><div><b>Know what's next</b><p>Plain-language insight and a short, realistic plan built around you.</p></div></div>
+        </div>
+      </div>
+
+      <div class="duo rv" aria-label="Clarra app: home screen and voice logging">
+        <div class="tilt t1"><div class="bob"><div class="phone"><div class="screen scr-home">
+          <span class="island"></span><img class="base" src="img/home.jpg" alt="Clarra home screen with sleep score, mood, temperature, insights and cycle tracking">
+          <div class="toast"><img src="img/mark.svg" alt=""><div><b>Clarra <small>now</small></b><p>Night waking peaks the week before your period. Tap to see why.</p></div></div>
+        </div></div></div></div>
+        <div class="tilt t2"><div class="bob"><div class="phone"><div class="screen scr-listen" data-listen>
+          <span class="island"></span><img class="base" src="img/listen-base.jpg" alt="Clarra listening to a voice log">
+          <div class="wave" aria-hidden="true"></div><p class="said" aria-live="off"></p><span class="ping" aria-hidden="true"></span>
+        </div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- APP GALLERY -->
+  <section id="app">
+    <div class="wrap">
+      <div class="gal-head rv">
+        <span class="eyebrow">A look inside</span>
+        <h2>Built around <em class="s">how women actually talk.</em></h2>
+      </div>
+      <div class="gal">
+        <figure class="rv"><div class="phone"><div class="screen scr-chat" data-chat>
+          <span class="island"></span><img class="base" src="img/chat-base.jpg" alt="Chat: uploading a hormone panel and Clarra flagging lower progesterone">
+          <img class="cb" src="img/chat-0.jpg" style="top:16.831%" alt="">
+          <img class="cb" data-who="c" data-x="14.7" src="img/chat-1.jpg" style="top:22.373%" alt="">
+          <img class="cb" src="img/chat-2.jpg" style="top:31.609%" alt="">
+          <img class="cb" data-who="c" data-x="4.3" src="img/chat-3.jpg" style="top:41.461%" alt="">
+          <img class="cb" src="img/chat-4.jpg" style="top:50.411%" alt="">
+          <img class="cb" data-who="c" data-x="13.3" src="img/chat-5.jpg" style="top:72.989%" alt="">
+          <div class="typing"><i></i><i></i><i></i></div>
+        </div></div></figure>
+        <figure class="rv"><div class="phone"><div class="screen scr-insight">
+          <span class="island"></span><div class="scroller"><img class="base" src="img/insight-tall.jpg" alt="Insight screen: weekly findings, mood, sleep duration and body temperature charts"></div>
+          <img class="ovl top" src="img/insight-status.jpg" alt=""><img class="ovl bot" src="img/insight-nav.jpg" alt="">
+        </div></div></figure>
+        <figure class="rv"><div class="phone"><div class="screen">
+          <span class="island"></span><img class="base" src="img/tracking.jpg" alt="Choosing what to track: sleep, mood, nutrition, period, temperature, energy">
+        </div></div></figure>
+      </div>
+      <div class="gal-caps rv">
+        <div><b>Bring your labs</b><span>Clarra reads them and flags what changed.</span></div>
+        <div><b>See the pattern</b><span>Weekly insights in plain language.</span></div>
+        <div><b>Track what matters</b><span>Pick your focus. Clarra connects the rest.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNALS -->
+  <section>
+    <div class="wrap sig-grid">
+      <div class="rv">
+        <span class="eyebrow">One picture</span>
+        <h2 style="margin-top:16px">Every signal, <em class="s">finally in one place.</em></h2>
+        <p>Your apps, your wearable and your lab results each see a sliver. Clarra reads them together.</p>
+        <div class="sig-photo ph"><img src="img/signals.jpg" alt="Hands holding a phone, smartwatch on the wrist" style="object-position:center 45%" loading="lazy"></div>
+      </div>
+      <div class="chips rv">
+        <div class="chip"><span class="dot"></span><div>Symptoms<small>in your own words</small></div></div>
+        <div class="chip"><span class="dot"></span><div>Sleep<small>quality and timing</small></div></div>
+        <div class="chip"><span class="dot"></span><div>Mood<small>and stress</small></div></div>
+        <div class="chip"><span class="dot"></span><div>Cycles<small>as they shift</small></div></div>
+        <div class="chip"><span class="dot"></span><div>Cognition<small>focus and memory</small></div></div>
+        <div class="chip"><span class="dot"></span><div>Temperature<small>flashes and night sweats</small></div></div>
+        <div class="chip"><span class="dot" style="background:var(--slate)"></span><div>Biomarkers<small>hormone testing</small></div></div>
+        <div class="chip"><span class="dot" style="background:var(--slate)"></span><div>Wearables<small>synced automatically</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section id="founder" class="founder">
+    <div class="wrap founder-grid">
+      <div class="portrait ph rv"><img src="img/meghan.jpg" alt="Meghan White, founder and CEO of Clarra" style="object-position:60% 30%" loading="lazy"></div>
+      <div class="rv">
+        <span class="eyebrow">A note from our founder</span>
+        <blockquote>&ldquo;We are living through the biggest wave of midlife transition in history, and it&rsquo;s happening without a data infrastructure. Clarra is building it.&rdquo;</blockquote>
+        <p>Perimenopause is the most consequential health transition in a woman&rsquo;s life, yet it remains chronically under-researched, under-funded and poorly supported. Women are navigating dozens of symptoms with fragmented care, dismissive providers and misinformation. The result: delayed diagnoses, worsening long-term health risks and millions of women managing midlife blindly and alone.</p>
+        <p>Not a symptom checker. Not another wellness app. The intelligence layer for midlife health.</p>
+        <div class="sig">
+          <b>Meghan White</b>, Founder &amp; CEO
+          <div class="creds"><span>4x women's health founder</span><span>17 years in healthcare</span><span>Helped secure Canada's $25M Menstrual Equity Fund</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTORS -->
+  <section id="investors" class="inv">
+    <div class="wrap inv-grid">
+      <div class="rv">
+        <span class="eyebrow">For investors</span>
+        <h2>The data layer for <em class="s">midlife health.</em></h2>
+        <p>Clarra is raising a pre-seed round. We're building relationships with investors who see midlife health as the next major category in women's health, and who want to back the company that builds its dataset.</p>
+      </div>
+      <div class="inv-card rv">
+        <dl>
+          <div><dt>Stage</dt><dd>Pre-seed, raising</dd></div>
+          <div><dt>Product</dt><dd>In development, waitlist open</dd></div>
+          <div><dt>Founder</dt><dd>Meghan White, 4x women's health founder</dd></div>
+        </dl>
+        <a class="btn btn-teal" href="mailto:hello@clarrahealth.com?subject=Clarra%20deck%20request">Request the deck</a>
+        <p class="inv-mail">or email hello@clarrahealth.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="join" class="cta">
+    <div class="cta-bg ph"><img src="img/calm.jpg" alt="" style="object-position:70% 35%" loading="lazy"></div>
+    <div class="wrap cta-in" style="padding-left:32px;padding-right:32px">
+      <span class="eyebrow">Early access</span>
+      <h2>Be first to <em class="s">try Clarra.</em></h2>
+      <p class="sub">Join the waitlist and we'll tell you the moment early access opens.</p>
+      <div class="signup">
+        <form class="form" data-waitlist>
+          <input type="email" name="email" placeholder="Your email" aria-label="Email address" required><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+          <button class="btn btn-teal" type="submit">Join the waitlist</button>
+        </form>
+        <p class="form-note consent">By joining, you agree to get emails from Clarra Health about early access. Unsubscribe anytime. <a href="privacy.html">Privacy policy</a></p>
+        <p class="form-err" role="alert">Something went wrong. Try again or email hello@clarrahealth.com.</p>
+        <div class="form-ok" role="status">You're on the list. We'll be in touch before launch.</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#" class="logo"><img src="img/logo-white.svg" alt="Clarra"></a>
+        <div>AI-native health for midlife women.</div>
+      </div>
+      <div class="foot-links">
+        <a href="https://www.instagram.com/clarrahealth/">Instagram</a>
+        <a href="https://www.linkedin.com/company/clarra-health/">LinkedIn</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:hello@clarrahealth.com">hello@clarrahealth.com</a>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 Clarra Health. Clarra is in development and the screens shown are product previews. Clarra is for general wellness and does not provide medical advice, diagnosis or treatment.</p>
+  </div>
+</footer>
+
+<script>
+  // Waitlist: paste your Formspree form ID between the quotes (the part after /f/ in your form URL).
+  const FORMSPREE_ID = "";
+
+  document.querySelectorAll('[data-waitlist]').forEach(form => {
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const box = form.closest('.signup'), btn = form.querySelector('button'), label = btn.textContent;
+      box.classList.remove('err'); btn.disabled = true; btn.textContent = 'Joining...';
+      try {
+        if (!FORMSPREE_ID) throw new Error('No form ID set');
+        const data = new FormData(form); data.append('source', form.closest('#join') ? 'footer' : 'hero');
+        const res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {method:'POST', body:data, headers:{Accept:'application/json'}});
+        if (!res.ok) throw new Error('Send failed');
+        box.classList.add('done');
+      } catch (err) {
+        console.warn('Waitlist:', err.message);
+        box.classList.add('err'); btn.disabled = false; btn.textContent = label;
+      }
+    });
+  });
+
+  const header = document.getElementById('top');
+  const onScroll = () => header.classList.toggle('scrolled', scrollY > innerHeight * 0.6);
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  const rail = document.getElementById('rail');
+  document.querySelectorAll('.rail-ctrl button').forEach(b => b.addEventListener('click', () => {
+    const card = rail.querySelector('.fcard');
+    rail.scrollBy({left: (card.offsetWidth + 18) * +b.dataset.dir, behavior:'smooth'});
+  }));
+
+  const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } }), {threshold:.12});
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+</script>
+</body>
 </html>
