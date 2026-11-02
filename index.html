@@ -225,12 +225,12 @@
   @media (prefers-reduced-motion:reduce){.bob,.scroller img,.ping,.typing i{animation:none}.toast{animation:none;transform:none}.cb{opacity:1;transform:none}}
 
   /* signals */
-  .sig-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+  .sig-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:stretch}
   .sig-grid h2{font-weight:300}
-  .sig-grid p{color:var(--muted);font-size:1.1rem;margin-top:18px;max-width:26em}
-  .sig-photo{aspect-ratio:3/2;border-radius:var(--r);margin-top:32px}
-  .chips{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-  .chip{background:#fff;border-radius:18px;padding:20px 22px;display:flex;align-items:center;gap:14px;font-weight:600}
+  .sig-grid p{color:var(--muted);font-size:1.1rem;margin-top:18px;max-width:28em}
+  .sig-photo{border-radius:var(--r);min-height:520px}
+  .chips{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:40px}
+  .chip{background:#fff;border-radius:16px;padding:16px 18px;display:flex;align-items:center;gap:12px;font-weight:600;font-size:.98rem}
   .chip small{display:block;font-weight:400;color:var(--muted);font-size:.84rem}
   .dot{width:10px;height:10px;border-radius:50%;background:var(--teal);flex:none}
 
@@ -327,7 +327,8 @@
     .form .btn{width:100%;padding:16px 24px;font-size:1rem}
     .form-note.consent{padding-left:4px}
     .float{display:none}
-    .chips{grid-template-columns:1fr}
+    .chips{grid-template-columns:1fr 1fr}
+    .sig-photo{min-height:0;aspect-ratio:4/3}
     .rail-ctrl{display:none}
     .cta-in{padding:96px 20px}
     .hero .ph::after{display:none}
@@ -486,18 +487,18 @@
         <span class="eyebrow">One picture</span>
         <h2 style="margin-top:16px">Every signal, <em class="s">finally in one place.</em></h2>
         <p>Your apps, your wearable and your lab results each see a sliver. Clarra reads them together.</p>
-        <div class="sig-photo ph"><img src="img/signals.jpg" alt="Hands holding a phone, smartwatch on the wrist" style="object-position:center 45%" loading="lazy"></div>
+        <div class="chips">
+          <div class="chip"><span class="dot"></span><div>Symptoms<small>in your own words</small></div></div>
+          <div class="chip"><span class="dot"></span><div>Sleep<small>quality and timing</small></div></div>
+          <div class="chip"><span class="dot"></span><div>Mood<small>and stress</small></div></div>
+          <div class="chip"><span class="dot"></span><div>Cycles<small>as they shift</small></div></div>
+          <div class="chip"><span class="dot"></span><div>Cognition<small>focus and memory</small></div></div>
+          <div class="chip"><span class="dot"></span><div>Temperature<small>flashes and night sweats</small></div></div>
+          <div class="chip"><span class="dot" style="background:var(--slate)"></span><div>Biomarkers<small>hormone testing</small></div></div>
+          <div class="chip"><span class="dot" style="background:var(--slate)"></span><div>Wearables<small>synced automatically</small></div></div>
+        </div>
       </div>
-      <div class="chips rv">
-        <div class="chip"><span class="dot"></span><div>Symptoms<small>in your own words</small></div></div>
-        <div class="chip"><span class="dot"></span><div>Sleep<small>quality and timing</small></div></div>
-        <div class="chip"><span class="dot"></span><div>Mood<small>and stress</small></div></div>
-        <div class="chip"><span class="dot"></span><div>Cycles<small>as they shift</small></div></div>
-        <div class="chip"><span class="dot"></span><div>Cognition<small>focus and memory</small></div></div>
-        <div class="chip"><span class="dot"></span><div>Temperature<small>flashes and night sweats</small></div></div>
-        <div class="chip"><span class="dot" style="background:var(--slate)"></span><div>Biomarkers<small>hormone testing</small></div></div>
-        <div class="chip"><span class="dot" style="background:var(--slate)"></span><div>Wearables<small>synced automatically</small></div></div>
-      </div>
+      <div class="sig-photo ph rv"><img src="img/signals.jpg" alt="Hands holding a phone, smartwatch on the wrist" style="object-position:40% 45%" loading="lazy"></div>
     </div>
   </section>
 
