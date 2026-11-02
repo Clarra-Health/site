@@ -242,7 +242,16 @@
   .inv-card dl div{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:.95rem}
   .inv-card dt{color:var(--muted)}
   .inv-card dd{font-weight:600;text-align:right}
-  .inv-card .btn{width:100%;margin-top:28px}
+  .inv-card .btn{width:100%}
+  .cform{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+  .cform-h{font-weight:600;color:var(--slate)!important;font-size:1rem!important;margin-bottom:4px}
+  .cform input,.cform textarea{font:500 .95rem var(--sans);color:var(--slate);background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:13px 16px;outline:0;resize:vertical}
+  .cform input:focus,.cform textarea:focus{border-color:var(--teal)}
+  .cform .btn{width:100%;margin-top:6px}
+  .inv-card .form-ok{display:none;background:var(--mist);border:1px solid var(--aqua);color:var(--slate);margin-top:24px}
+  .inv-card .done .cform{display:none}
+  .inv-card .done .form-ok{display:block}
+  .inv-card .form-err{color:#B4432A}
   .inv-mail{text-align:center;font-size:.86rem!important;margin:12px auto 0}
 
   /* closing cta */
@@ -337,7 +346,7 @@
           <button class="btn btn-teal" type="submit">Join the waitlist</button>
         </form>
         <p class="form-note consent">By joining, you agree to get emails from Clarra Health about early access. Unsubscribe anytime. <a href="privacy.html">Privacy policy</a></p>
-        <p class="form-err" role="alert">Something went wrong. Try again or email hello@clarrahealth.com.</p>
+        <p class="form-err" role="alert">Something went wrong. Please try again in a moment.</p>
         <div class="form-ok" role="status">You're on the list. We'll be in touch before launch.</div>
       </div>
     </div>
@@ -509,8 +518,18 @@
           <div><dt>Product</dt><dd>In development, waitlist open</dd></div>
           <div><dt>Founder</dt><dd>Meghan White, 4x women's health founder</dd></div>
         </dl>
-        <a class="btn btn-teal" href="mailto:hello@clarrahealth.com?subject=Clarra%20deck%20request">Request the deck</a>
-        <p class="inv-mail">or email hello@clarrahealth.com</p>
+<div class="signup" id="contact">
+          <form class="cform" data-waitlist data-kind="contact">
+            <p class="cform-h">Request the deck or get in touch</p>
+            <input type="text" name="name" placeholder="Your name" aria-label="Your name" required autocomplete="name">
+            <input type="email" name="email" placeholder="Your email" aria-label="Your email" required autocomplete="email">
+            <textarea name="message" rows="3" placeholder="Fund or organization, and what you'd like to talk about" aria-label="Message"></textarea>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+            <button class="btn btn-teal" type="submit">Send</button>
+          </form>
+          <p class="form-err" role="alert">Something went wrong. Please try again in a moment.</p>
+          <div class="form-ok" role="status">Thanks. Meghan will be in touch.</div>
+        </div>
       </div>
     </div>
   </section>
@@ -527,7 +546,7 @@
           <button class="btn btn-teal" type="submit">Join the waitlist</button>
         </form>
         <p class="form-note consent">By joining, you agree to get emails from Clarra Health about early access. Unsubscribe anytime. <a href="privacy.html">Privacy policy</a></p>
-        <p class="form-err" role="alert">Something went wrong. Try again or email hello@clarrahealth.com.</p>
+        <p class="form-err" role="alert">Something went wrong. Please try again in a moment.</p>
         <div class="form-ok" role="status">You're on the list. We'll be in touch before launch.</div>
       </div>
     </div>
@@ -545,7 +564,7 @@
         <a href="https://www.instagram.com/clarrahealth/">Instagram</a>
         <a href="https://www.linkedin.com/company/clarra-health/">LinkedIn</a>
         <a href="privacy.html">Privacy</a>
-        <a href="mailto:hello@clarrahealth.com">hello@clarrahealth.com</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
     <p class="fine">&copy; 2026 Clarra Health. Clarra is in development and the screens shown are product previews. Clarra is for general wellness and does not provide medical advice, diagnosis or treatment.</p>
@@ -563,7 +582,8 @@
       box.classList.remove('err'); btn.disabled = true; btn.textContent = 'Joining...';
       try {
         if (!FORMSPREE_ID) throw new Error('No form ID set');
-        const data = new FormData(form); data.append('source', form.closest('#join') ? 'footer' : 'hero');
+        const data = new FormData(form); const kind = form.dataset.kind || (form.closest('#join') ? 'waitlist-footer' : 'waitlist-hero');
+        data.append('source', kind); data.append('_subject', kind === 'contact' ? 'Clarra: new contact message' : 'Clarra: new waitlist signup');
         const res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {method:'POST', body:data, headers:{Accept:'application/json'}});
         if (!res.ok) throw new Error('Send failed');
         box.classList.add('done');
