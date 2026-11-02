@@ -3,48 +3,32 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-    
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '22'
-        
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v4
-      with:
-        version: 10.14.0
-
-    - name: Install dependencies
-      run: pnpm install
-
-    - name: Build for production
-      run: pnpm run build:client
-
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
-      
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: './dist/spa'
-
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+      - name: Collect site files
+        run: |
+          mkdir _site
+          cp -r index.html privacy.html img CNAME .nojekyll _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+      - id: deployment
+        uses: actions/deploy-pages@v4
